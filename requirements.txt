@@ -1,0 +1,24 @@
+# Core dependencies
+langchain>=0.1.0
+langchain-community>=0.0.20
+langchain-openai>=0.0.5
+chromadb>=0.4.22
+sentence-transformers>=2.3.1
+faiss-cpu>=1.7.4
+
+# PDF processing
+pypdf>=4.0.0
+pymupdf>=1.23.0
+
+# Embedding and Reranking
+FlagEmbedding>=1.2.0
+
+# LLM
+openai>=1.12.0
+
+# Utils
+tqdm>=4.66.0
+pydantic>=2.5.0
+python-dotenv>=1.0.0
+numpy>=1.24.0
+tiktoken>=0.5.2
