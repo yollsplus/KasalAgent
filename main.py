@@ -1,13 +1,16 @@
 """
-示例脚本：演示如何使用QA Agent
+主程序：演示如何使用QA Agent
+支持交互式问答和JSON答题卡模式
 """
 from agent import QAAgent
+from json_handler import AnswerCard, create_sample_query
 from utils.difficulty_judge import DifficultyLevel
 from config import config
+import json
 
 
-def main():
-    """主函数"""
+def interactive_mode():
+    """交互式问答模式"""
     print("="*60)
     print("欢迎使用基于难度分级的RAG问答系统")
     print("="*60)
@@ -50,6 +53,82 @@ def main():
             save_result(result)
     
     print("\n谢谢使用！")
+
+
+def json_card_mode():
+    """JSON答题卡模式"""
+    print("="*60)
+    print("JSON答题卡模式")
+    print("="*60)
+    
+    card_handler = AnswerCard()
+    
+    while True:
+        print("\n1. 处理JSON查询文件")
+        print("2. 直接输入问题（生成JSON）")
+        print("3. 创建示例查询文件")
+        print("0. 返回主菜单")
+        
+        choice = input("\n请选择: ").strip()
+        
+        if choice == '1':
+            input_file = input("输入JSON文件路径: ").strip()
+            output_file = input("输出JSON文件路径: ").strip()
+            
+            try:
+                card_handler.process_query_file(input_file, output_file)
+                print("\n处理成功！")
+            except Exception as e:
+                print(f"\n错误: {e}")
+        
+        elif choice == '2':
+            question = input("请输入问题: ").strip()
+            question_id = input("请输入题号（可选，直接回车跳过）: ").strip() or "Q_AUTO"
+            
+            query_json = {"query": question, "question_id": question_id}
+            answer_card = card_handler.process_query(query_json)
+            
+            print("\n生成的答题卡：")
+            print(json.dumps(answer_card, ensure_ascii=False, indent=2))
+            
+            save = input("\n是否保存到文件？(y/n): ").strip()
+            if save.lower() == 'y':
+                filename = input("文件名: ").strip()
+                card_handler.save_answer_card(answer_card, filename)
+        
+        elif choice == '3':
+            filename = input("文件名（默认sample_query.json）: ").strip() or "sample_query.json"
+            create_sample_query(filename)
+        
+        elif choice == '0':
+            break
+
+
+def main():
+    """主函数"""
+    while True:
+        print("\n" + "="*60)
+        print("基于难度分级的RAG问答系统")
+        print("="*60)
+        print("1. 交互式问答模式")
+        print("2. JSON答题卡模式")
+        print("3. 文档索引管理")
+        print("0. 退出")
+        
+        choice = input("\n请选择模式: ").strip()
+        
+        if choice == '1':
+            interactive_mode()
+        elif choice == '2':
+            json_card_mode()
+        elif choice == '3':
+            agent = QAAgent()
+            agent.index_documents()
+        elif choice == '0':
+            print("\n再见！")
+            break
+        else:
+            print("无效选择！")
 
 
 def save_result(result: dict):

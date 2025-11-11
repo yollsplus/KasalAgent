@@ -55,10 +55,10 @@ class QAAgent:
         print("\n清空现有索引...")
         self.vector_store.clear_all()
         
-        # 处理PDF文档
-        print("\n步骤1: 处理PDF文档")
+        # 处理TXT文档
+        print("\n步骤1: 处理TXT文档")
         processor = DocumentProcessor(config.AI_DATABASE_PATH)
-        documents = processor.process_all_pdfs()
+        documents = processor.process_all_txts()
         
         if not documents:
             print("警告：未找到任何文档！")

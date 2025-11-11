@@ -37,18 +37,18 @@ def check_database_structure():
         print(f"错误：目录不存在 - {db_path}")
 
 
-def count_pdf_files():
-    """统计PDF文件数量"""
+def count_txt_files():
+    """统计TXT文件数量"""
     db_path = Path(config.AI_DATABASE_PATH)
-    pdf_files = list(db_path.rglob("*.pdf"))
+    txt_files = list(db_path.rglob("*.txt"))
     
-    print(f"\nPDF文件统计：")
-    print(f"总数：{len(pdf_files)}")
+    print(f"\nTXT文件统计：")
+    print(f"总数：{len(txt_files)}")
     
     # 按目录分类统计
     by_category = {}
-    for pdf in pdf_files:
-        parts = pdf.parts
+    for txt in txt_files:
+        parts = txt.parts
         try:
             db_index = parts.index("AI_database")
             if db_index + 1 < len(parts):
@@ -78,24 +78,24 @@ def export_sample_documents(n=5):
     from utils.document_processor import DocumentProcessor
     
     processor = DocumentProcessor(config.AI_DATABASE_PATH)
-    pdf_files = list(config.AI_DATABASE_PATH.rglob("*.pdf"))[:n]
+    txt_files = list(config.AI_DATABASE_PATH.rglob("*.txt"))[:n]
     
-    print(f"\n导出前{n}个PDF的样本内容：\n")
+    print(f"\n导出前{n}个TXT的样本内容：\n")
     
-    for pdf_file in pdf_files:
+    for txt_file in txt_files:
         print(f"\n{'='*60}")
-        print(f"文件：{pdf_file.name}")
+        print(f"文件：{txt_file.name}")
         print('='*60)
         
-        documents = processor.pdf_to_text(pdf_file)
+        documents = processor.txt_to_documents(txt_file)
         
         if documents:
-            # 只显示第一页的前500字符
+            # 只显示前500字符
             sample = documents[0].content[:500]
-            print(f"\n第1页内容样本：\n{sample}...")
+            print(f"\n内容样本：\n{sample}...")
             print(f"\n元数据：{json.dumps(documents[0].metadata, ensure_ascii=False, indent=2)}")
         else:
-            print("无法提取文本")
+            print("无法读取文本")
 
 
 def test_retrieval(query: str):
@@ -181,7 +181,7 @@ def main():
         print("数据库管理工具")
         print("="*60)
         print("1. 查看目录结构")
-        print("2. 统计PDF文件")
+        print("2. 统计TXT文件")
         print("3. 检查向量数据库")
         print("4. 导出样本文档")
         print("5. 测试检索功能")
@@ -195,7 +195,7 @@ def main():
         if choice == '1':
             check_database_structure()
         elif choice == '2':
-            count_pdf_files()
+            count_txt_files()
         elif choice == '3':
             check_vector_db()
         elif choice == '4':

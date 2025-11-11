@@ -2,7 +2,23 @@
 
 本指南将帮助你在5分钟内启动并运行RAG问答系统。
 
-## 步骤1：安装依赖 (2分钟)
+## 步骤1：准备文档数据
+
+**重要**：系统读取的是TXT文件，不是PDF！
+
+请确保 `AI_database` 目录下有TXT格式的文档文件（与PDF同名的txt文件）。
+
+例如：
+```
+AI_database/
+  标准规范/
+    document1.txt
+    document2.txt
+  技术报告/
+    report1.txt
+```
+
+## 步骤2：安装依赖 (2分钟)
 
 打开PowerShell，进入项目目录：
 
@@ -19,7 +35,7 @@ pip install -r requirements.txt
 
 **注意**：首次安装会下载较大的模型文件（约2-3GB），请确保网络畅通。
 
-## 步骤2：配置环境 (1分钟)
+## 步骤3：配置环境 (1分钟)
 
 1. 复制环境变量模板：
 ```powershell
@@ -33,7 +49,7 @@ OPENAI_API_KEY=sk-your-key-here
 
 其他配置保持默认即可。
 
-## 步骤3：索引文档 (根据文档数量，可能需要5-30分钟)
+## 步骤4：索引文档 (根据文档数量，可能需要5-30分钟)
 
 首次运行需要建立索引：
 
@@ -43,42 +59,80 @@ from agent import QAAgent
 # 初始化Agent
 agent = QAAgent()
 
-# 索引所有PDF文档
+# 索引所有TXT文档
 agent.index_documents()
 ```
 
-或者运行工具脚本：
-
-```powershell
-python tools.py
-# 选择选项 3 检查数据库状态
-```
-
-## 步骤4：开始问答 (立即)
-
-### 方式1：交互式命令行
+或者运行主程序：
 
 ```powershell
 python main.py
+# 选择模式3: 文档索引管理
 ```
 
-按提示输入题号和问题即可。
+## 步骤5：开始问答 (立即)
 
-### 方式2：编程方式
+### 方式1：JSON答题卡模式（推荐）
+
+1. 创建查询JSON文件 `query.json`：
+```json
+{
+  "query": "什么是CBTC系统？",
+  "question_id": "B001"
+}
+```
+
+2. 运行处理：
+```powershell
+python json_handler.py query.json answer.json
+```
+
+3. 查看结果 `answer.json`：
+```json
+{
+  "query": "什么是CBTC系统？",
+  "result": [
+    {
+      "position": 1,
+      "content": "召回的文档内容...",
+      "source": "文件名.txt",
+      "page": 1
+    }
+  ],
+  "answer": "CBTC（基于通信的列车控制）系统是...",
+  "metadata": {
+    "difficulty": "basic",
+    "sources": ["【文件名.txt, P1】"]
+  }
+}
+```
+
+### 方式2：交互式命令行
+
+```powershell
+python main.py
+# 选择模式1: 交互式问答
+# 或选择模式2: JSON答题卡模式（图形界面）
+```
+
+### 方式3：编程方式
 
 ```python
-from agent import QAAgent
+from json_handler import AnswerCard
 
-agent = QAAgent()
+# 初始化
+card_handler = AnswerCard()
 
-# 基础题示例
-result = agent.answer_question(
-    question_id="B001",
-    question="什么是CBTC系统？"
-)
+# 处理查询
+query_json = {
+    "query": "什么是CBTC系统？",
+    "question_id": "B001"
+}
 
-print(result['answer'])
-print(result['sources'])
+answer_card = card_handler.process_query(query_json)
+
+print(answer_card["answer"])
+print(answer_card["result"])  # 召回的文档
 ```
 
 ## 常见问题

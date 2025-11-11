@@ -6,10 +6,6 @@ chromadb>=0.4.22
 sentence-transformers>=2.3.1
 faiss-cpu>=1.7.4
 
-# PDF processing
-pypdf>=4.0.0
-pymupdf>=1.23.0
-
 # Embedding and Reranking
 FlagEmbedding>=1.2.0
 

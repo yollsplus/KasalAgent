@@ -1,11 +1,10 @@
 """
-文档处理模块：负责PDF转换、文本分块、元数据提取
+文档处理模块：负责TXT文件读取、文本分块、元数据提取
 """
 import re
 from pathlib import Path
 from typing import List, Dict, Any, Optional
 from dataclasses import dataclass
-import pymupdf  # PyMuPDF
 from tqdm import tqdm
 
 
@@ -23,65 +22,102 @@ class DocumentProcessor:
     def __init__(self, database_path: Path):
         self.database_path = Path(database_path)
         
-    def pdf_to_text(self, pdf_path: Path) -> List[Document]:
+    def txt_to_documents(self, txt_path: Path) -> List[Document]:
         """
-        将PDF转换为文本，保留页码信息
+        读取TXT文件并转换为文档
         
         Args:
-            pdf_path: PDF文件路径
+            txt_path: TXT文件路径
             
         Returns:
-            文档列表，每个文档对应一页
+            文档列表
         """
         documents = []
         
         try:
-            doc = pymupdf.open(pdf_path)
+            # 读取文本文件
+            with open(txt_path, 'r', encoding='utf-8', errors='ignore') as f:
+                text = f.read()
             
-            for page_num in range(len(doc)):
-                page = doc[page_num]
-                text = page.get_text()
+            # 清理文本
+            text = self._clean_text(text)
+            
+            if text.strip():
+                # 尝试按页面分割（如果文本中有页面标记）
+                pages = self._split_by_pages(text)
                 
-                # 清理文本
-                text = self._clean_text(text)
-                
-                if text.strip():  # 只保留非空页面
+                if len(pages) > 1:
+                    # 有页面标记，按页面创建文档
+                    for page_num, page_content in enumerate(pages, 1):
+                        if page_content.strip():
+                            documents.append(Document(
+                                content=page_content,
+                                metadata={
+                                    "source": txt_path.name,
+                                    "file_path": str(txt_path),
+                                    "page": page_num,
+                                    "category": self._extract_category(txt_path)
+                                },
+                                page_number=page_num
+                            ))
+                else:
+                    # 没有页面标记，作为单个文档
                     documents.append(Document(
                         content=text,
                         metadata={
-                            "source": str(pdf_path.name),
-                            "file_path": str(pdf_path),
-                            "page": page_num + 1,  # 页码从1开始
-                            "category": self._extract_category(pdf_path)
+                            "source": txt_path.name,
+                            "file_path": str(txt_path),
+                            "page": 1,
+                            "category": self._extract_category(txt_path)
                         },
-                        page_number=page_num + 1
+                        page_number=1
                     ))
             
-            doc.close()
-            
         except Exception as e:
-            print(f"处理PDF文件 {pdf_path} 时出错: {e}")
+            print(f"处理TXT文件 {txt_path} 时出错: {e}")
             
         return documents
     
-    def process_all_pdfs(self) -> List[Document]:
+    def process_all_txts(self) -> List[Document]:
         """
-        处理AI_database目录下的所有PDF文件
+        处理AI_database目录下的所有TXT文件
         
         Returns:
             所有文档的列表
         """
         all_documents = []
-        pdf_files = list(self.database_path.rglob("*.pdf"))
+        txt_files = list(self.database_path.rglob("*.txt"))
         
-        print(f"发现 {len(pdf_files)} 个PDF文件")
+        print(f"发现 {len(txt_files)} 个TXT文件")
         
-        for pdf_file in tqdm(pdf_files, desc="处理PDF文件"):
-            docs = self.pdf_to_text(pdf_file)
+        for txt_file in tqdm(txt_files, desc="处理TXT文件"):
+            docs = self.txt_to_documents(txt_file)
             all_documents.extend(docs)
             
-        print(f"共处理 {len(all_documents)} 个文档页面")
+        print(f"共处理 {len(all_documents)} 个文档")
         return all_documents
+    
+    def _split_by_pages(self, text: str) -> List[str]:
+        """
+        尝试按页面标记分割文本
+        常见的页面标记：\f, ---PAGE---, 第X页等
+        """
+        # 方式1：\f (form feed) 字符
+        if '\f' in text:
+            return [p.strip() for p in text.split('\f') if p.strip()]
+        
+        # 方式2：---PAGE--- 标记
+        if '---PAGE---' in text:
+            return [p.strip() for p in text.split('---PAGE---') if p.strip()]
+        
+        # 方式3：第X页标记
+        page_pattern = r'\n第\s*\d+\s*页\n'
+        if re.search(page_pattern, text):
+            pages = re.split(page_pattern, text)
+            return [p.strip() for p in pages if p.strip()]
+        
+        # 没有页面标记，返回整个文本
+        return [text]
     
     def _clean_text(self, text: str) -> str:
         """清理文本"""
