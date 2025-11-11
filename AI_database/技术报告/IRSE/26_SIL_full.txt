@@ -1,0 +1,238 @@
+1 RSE /
+Institution Of Railway Signal Engineers
+Back to basics: SIL
+explained
+RL
+Paul Darlington and Ian Mitchell
+Safety Integrity Level (SIL)is an
+indicator of the relative risk-
+reduction provided by a safety
+functionin a device.
+A SIL number
+Safer
+between 1and 4 (SIL 1 being the
+lowest levelof safety protection and
+SIL 4 the highest) is used to describe
+the degree of safety protection
+required and the safety reliability of
+system Whichis needed to achieve
+that protection. It should be noted
+that safety reliability is not the same
+a5
+performance reliability, as this
+back-to-basics article Will explain.
+For traditional hardware-based
+systems, safety is typically specified
+and demonstrated in terms of Mean
+Time Between Wrong Side Failure
+(MTBWSF), which can be calculated
+quantified,and instead it is necessary
+EN 50126: The specification
+from the observed random failure rates
+to demonstrate safety by means of
+and demonstration of Reliability,
+ofthe individual components
+When
+the rigour ofthe design and validation
+Availability, Maintainability
+programmable systems began to be
+process for the system and the software_
+and Safety (RAMS).
+usedin
+safety critical applications
+This is
+inevitably
+qualitative (as
+duplicated or triplicated system
+opposed to
+quantitative) approach and
+EN 50128: Railway applications
+architectures were adopted to give very
+the SIL system provides an internationally
+Communication, signalling
+high MTBWSF as a result of random
+recognised approach to managing this
+and processing systems
+Software for railway controland
+hardware failures
+But What about failure
+issue for
+safety critical systems。
+ofthe software embedded in these
+protection systems。
+systems? Software failures may appear
+The concept of SIL originated in
+EN 50129: Railway applications
+to be random, but in fact they are always
+the International Electrotechnical
+Communication, signalling and
+systematic; if the circumstances are
+Committee standard IEC 61508:
+processing systems
+Safety related
+repeated the result will be the same
+This
+Functional Safety of Electricall
+electronic systems for signalling.
+means that any attempt to predict safety
+Electronic /Programmable Electronic
+Safety Integrity Levels can be assigned to
+from observed failure rates of the system
+Safety-related Systems. IEC 61508 is
+virtually any function presenting
+safety
+is futile
+small change in operating
+not railway specific and applies to all
+risk. Typical examples of SIL functions
+circumstances can reveal or hide a latent
+safety engineering disciplines. For the rail
+for railare: SIL 1 light metro train speed
+defect in the software:
+industry CENELEC (European Committee
+monitoring and display, SIL 2 monitoring
+for Electrotechnical Standardisation)
+The solution is to recognise that the
+derived the following standards
+Of axle box bearing temperature; SIL 3
+hazardous failure rate as
+a result of
+from IEC 61508 to meet railway
+depot protection, SIL 4 interlocking of
+these 'systematic failures' cannot be
+points and signals: The allocation of SIL
+specific requirements。
+12
+BACK
+TO
+BASICS
+
+舄
+
+IRSE News
+Issue 292
+October 2022
+Safety integrity level
+Tolerable Functional
+Failure Rate per hour
+SIL 1
+10-5to 10-6
+SIL 2
+10-6to 10-7
+SIL 3
+10-7to 10-8
+SIL 4
+10
+to 10
+What the SIL levels mean in terms of tolerable failure rates
+takes into account the frequency and severity ofthe risk that
+is being managed, and whether there are other systems or
+manual processes that can mitigate the effect of a hazardous
+system failure。
+When
+developing systems to
+required SIL, techniques are
+selected from a list of recommended or mandatory techniques
+dependent upon the level of SIL. For example, when creating
+the software requirements specification for a SIL 4 system the
+techniques include: formal methods, modelling, structured
+methodology, and decision tables。
+A common
+misconception is that individual products or
+components have SIL ratings. But simply buying a SIL suitable
+component (if possible) does not ensure a SIL system. Rather
+products and components may be suitable for use within
+given SIL system, but they are not individually SIL rated。
+SILlevels apply to safety functions and safety systems, and
+A complex railway system will typically employ systems with different
+products and components are only suitable for use in specific
+SIL levels. Interlocking, train absence detection and automatic train
+SILapplications if the end user can ensure that the overall
+protection for example may be SIL 4 systems, Whilst the automatic
+safety system is implemented correctly. The equipment
+train operation and control centre systems may be configured to
+or system must also be operated and used in the way i
+meet the failure rates ofSIL 2_
+WaS
+designed in order to achieve the required safety risk
+Photo Pixabay /Jan Hlousek。
+reduction level
+is complicated, time-consuming and expensive; and can lead
+The owner/operator must determine the acceptable level of
+to lower levels of overall system performance reliability Which
+risk based on standards or other factors such as ALARPand
+has cost implications.It can also bean obstacle to future
+society acceptance of the risk。
+A risk level that one owner
+enhancements of the system to meet new requirements and
+determines is tolerable may be unacceptable to another。
+operational circumstances。
+Unfortunately, the requirements for a given SlLare not
+consistent among allof the functional safety standards across
+For example; some industries outside of rail with
+a lower
+safety
+different industries, which does cause some confusion
+risk requirement (for example factory production) companies
+Will typically accept designs up to SIL 2. Ifan assessment
+Some asset owners and project managers may be tempted
+indicates a requirement for a higher SIL, owners Will usually
+to specify a
+high SIL simply for availability reasons, and SIL
+require the redesign of the process to lower the intrinsic
+is sometimes mistakenly used to imply that a product has
+process risk, rather than design the system to achieve SIL 3。
+better quality and higher reliability, but this is incorrect. Some
+products may be described as 'SIL rated' , suggesting that
+In modern railway signalling systems the use of SIL 4is
+are suitable for use in safety systems, but this depends on
+usually restricted to those parts of the signalling Whichare
+many other aspects of the overall system design. Even when
+safety critical, for example the interlocking:
+Other
+ofthe
+product genuinely complies with SIL requirements, this only
+signalling system, suchas the control panel or workstation, are
+provides assurance that it is capable of performing
+specific
+usually ofa lower SIL value (typically SIL 0 to SIL 2). Network
+role within
+safety system. Its safety reliability may be high, but
+Rail in the UK has recently reviewed its standards to determine
+its general reliability may not be.
+Where the SIL 4 interlocking could be simplified by deploying
+lower SIL functions in another part of the system。
+An item is highly available if it does not fail
+often and,
+When it does, it can be quickly returned to service:
+system
+Further reading
+is considered to be safe if it is reliably performing its safety
+Understanding Safety Integrity Levels (SIL) International
+function. However, the system may fail much more frequently
+Technical Committee (ITC) IRSE News October 2015.
+in ways that are considered not to be dangerous (fail safe)。
+irse.infolyahut
+Therefore;
+safety system may be less reliable overall (i.e. with
+The Use and Misuse of SILs (2009) Roger Short IRSE News
+a lower mean time between failures) than
+a non-
+safety system
+February 2009. irse.info/Os8vc
+performing
+a similar function
+Understanding the Use, Misuse and Abuse of Safety
+Selecting the appropriate SIL level must be done carefully.
+Integrity Levels (2000). Felix Redmill Proceedings of the
+Whole life costs are generally considerably higher in order to
+Eighth Safety-critical Systems Symposium, Southampton
+achieve higher SIL levels
+This is because designing, testing
+UK, February 2000. irse.infolljsow
+and
+maintaining systems to meet high levels of safety integrity
+13
+they
+parts
+Very

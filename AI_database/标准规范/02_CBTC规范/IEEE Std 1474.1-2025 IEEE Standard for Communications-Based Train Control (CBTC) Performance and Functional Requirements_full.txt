@@ -1,0 +1,3592 @@
+IEEE SA
+STANDARDS
+ASSOCIATION
+IEEE Standard for Communications-
+Based Train Control (CBTC) Performance
+and Functional Requirements
+IEEE Vehicular Technology Society
+|
+Developed by the
+Rail Transportation Standards Committee
+IEEE Std 1474.Ir-2025
+Revision OfIEEE Std 1474.1-2004)
+IEE
+
+IEEE Std 1474.1 TM -2025
+(Revision of IEEE Std 1474.1-2004)
+IEE Standard for Communications
+Based Train Control (CBTC) Performance
+and Functional Requirements
+Developed by the
+Rail Transportation Standards Committee
+Ofthe
+IEEE Vehicular Technology Society
+Approved 27 March 2025
+IEEE SA Standards Board
+
+Abstract: Performance and functional requirements for a
+communications-based train control
+(CBTC) system are established in this standard.A CBTC system is a continuous, automatic train
+control system utilizing high-resolution train location determination, independent of track circuits;
+continuous, high-capacity, bidirectional train-to-wayside data communications; and train-borne and
+wayside processors capable of implementing automatic train protection (ATP) functions, as well
+35
+optional automatic train operation (ATO) and automatic train supervision (ATS) functions。 In
+addition to CBTC functional requirements; this standard also defines headway criteria, system
+safety criteria, and system availability criteria for a CBTC system. This standard is applicable to the
+full range of transit applications including automated people movers:
+This standard establishes a
+setof performance and functional requirements necessary for enhancing performance, availability;
+operations, and train protection using a CBTC System.
+Keywords: automation, CBTC, communications, IEEE 1474.1, signaling, train control
+The Institute of Electrical and Electronics Engineers, Inc.
+3 Park Avenue; New York; NY 10016-5997, USA
+Copyright @ 2025 by
+Institute of Electrical and Electronics Engineers; Inc.
+AIl rights reserved.
+Published 13 June 2025. Printed in the United States of America。
+IEEE is a registered trademark in the U.S. Patent & Trademark Office, owned by The Institute of Electrical and Electronics Engineers;
+Incorporated.
+PDF:
+ISBN 979-8-8557-1565-1
+ST027822
+Print:
+ISBN 979-8-8557-1566-8
+STDP027822
+IEEE prohibits discrimination, harassment; and bullying。
+For more information, visit https:/www.ieee.orglaboutlcorporatelgovernance/pg-26.html。
+No part of this publication may be reproduced in any form, in an electronic retrieval system or otherwise, without the prior written permission
+of the publisher。
+The
+
+Important Notices and Disclaimers Concerning IEEE Standards Documents
+IEE Standards documents are made available for use subjectto importantnotices and legal disclaimers. These
+notices and disclaimers, or a reference to this page (https: /Istandards.ieee.orgliprldisclaimers .html), appear i
+allIEEE standards and may be found under the heading 'Important Notices and Disclaimers Concerning IEEE
+Standards Documents _
+Notice and Disclaimer of Liability Concerning the Use of IEEE Standards
+Documents
+IEE Standards documents
+aTC
+developed within IEEE Societies and subcommittees of IEEE Standards
+Association (IEE SA) Board of Goverors. IEEE develops its standards through an accredited consensus
+development Process,
+Which
+brings together volunteers representing varied viewpoints
+and
+mnterests
+to
+achieve the final product. IEEE standards are documents developed by volunteers with scientific, academic,
+and
+industry-based expertise in technical working groups。
+Volunteers involved in technical working groups
+are not necessarily members Of IEE or IEEE SA and participate without compensation from IEEE. While
+IEEE administers the process and establishes rules to promote fairness in the consensus development process,
+IEEE does not independently evaluate, test, or verify the accuracy Ofany Ofthe information Or the soundness
+ofany judgments contained in its standards。
+IEEE makes no warranties or representations concerning its standards, and expressly disclaims all warranties;
+express Or implied,
+concerning all standards; including but not limited to the warranties Of merchantability;
+ftness for
+particular purpose and
+non-infringement IEEE Standards documents do not guarantee safety。
+security, health, Or environmental protection; Or
+compliance with law, Or guarantee
+interference with
+Or fromn other devices or networks. In addition, IEEE does not warrant or represent that the use ofthe material
+contained i its standards is free from patent
+infringement. IEE Standards documents are supplied
+AS IS'
+and CWITHALL FAULTS.
+Use Of an IEEE standard is wholly voluntary. The existence Of an IEEE standard does not imply that there
+are Io other ways to produce, test, measure, purchase, market, Or provide other
+and services related to
+the scope ofthe IEE standard. Furthermore, the viewpoint expressed at the time a standard is approved and
+issued is subject to change brought about through developments in the state ofthe art and comments received
+fromn users of the standard.
+I
+publishing and making is standards available, IEEE is not suggesting Or rendering professional or other
+services for; Or on behalfof, any Person Or entity, nor is IEEE
+undertaking to perform any duty owed by any
+other person Or
+entity to another:
+person utilizing any IEEE Standards document should rely upon their
+OWI
+independent judgment in the exercise Of reasonable care i any given circumstances 0r, as appropriate,
+seek the advice ofa competent professional in determining the appropriateness Ofa given IEEE standard.
+IN NO EVENT SHALL IEE BE LIABLE FOR ANY DIRECI, INDIRECI, INCIDENTAL, SPECIAL,
+EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING,
+BUI
+NOT LIMITED
+T0:
+TE
+NEED TO PROCURE SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA,
+OR PROFITS;
+OR BUSINESS INTERRUPTION) HOWEVER CAUSED
+AND ON ANY
+THEORY OF LIABILITY,
+WHETHER
+I
+CONTRACI,
+STRICT
+LIABILITY,
+OR
+TORT (WNCLUDING
+NEGLIGENCE
+OR
+OTHERWISE) ARISING
+I
+ANY
+WAY OUI OF
+THE PUBLICATION,
+USE OE, OR RELIANCE
+UPON
+ANY STANDARD, EVEN
+正
+ADVISED OF
+TE POSSIBILITY OF SUCH DAMAGE AND
+REGARDLESS OF WHETHER SUCHDAMAGE WAS FORESEEABLE.
+Copyright@ 2025 IEEE.AIl rights reserved.
+against
+goods
+Any
+
+Translations
+The IEE consensus
+balloting process ivolves the review Of documents in English only. In the event that
+an IEEE standard is translated, only the English language version published by IEEE is the approved IEEE
+standard。
+Use by artificial intelligence systems
+I no event shall material in any IEEE Standards documents be used for the purpose Of creating; training,
+enhancing, developing, maintaining, or contributing to any artificialintelligence systems without the express,
+written consent of IEE SA i advance
+Artificial intelligence '' refers to any software, application, or other
+system that uses artificial
+intelligence, machine learning; or similar technologies, to analyze, train, process, Or
+generate content. Requests for consent can be submitted using the Contact Us form。
+Official statements
+Astatement, written or oral, thatis not processed in accordance with the IEEE SA Standards Board Operations
+Manual is not, and shall not be considered
+Or inferred to
+the official position of IEEE Or any Of its
+committees and shall not be considered to be, or be relied upon a5, a formal position Of IEEE or IEEE SA. At
+lectures, symposia, seminars, Or educational courses, an individual presenting information on IEEE standards
+shall make it clear that the presenter s views should be considered the personal views ofthat individual rather
+than the formal position Of IEEE, IEE SA, the Standards Committee, or the Working Group. Statements
+made by volunteers may not represent the formal position of their employer(s)
+Or affiliation(s). News releases
+about IEEE standards issued by entities other than IEEE SAshould be considered the view ofthe entity issuing
+the release rather tan the formal
+position OfIEEE or IEEE SA.
+Comments on standards
+Comments for revision Of IEEE Standards documents are welcome from any interested party, regardless Of
+membership affiliation with IEEEor IEEE SA. However; 1EE does notprovide interpretations, consulting
+information, or advice pertaining t0 IEEE Standards documents_
+Suggestions for changes i documents should be in the form Of a proposed change of text, together with
+appropriate supporting comments. Since IEEE standards represent a consensus Of concerned interests, it is
+important that any responses to comments and questions also receive the concurrence Ofa balance ofinterests_
+For this reason; IEE and the members ofits Societies and subcommittees ofthe IEE SA Board of Governors
+arC not able to
+provide an instant response to comments Or questions, except in those cases Where the matter
+has previously been addressed. For the same reason IEEE does not respond to interpretation requests。
+person who would like to participate in evaluating comments or revisions to an IEEE standard is welcome to
+join the relevant IEEE SA working group. You can indicate interest in a working group using the Interests tab
+i the Manage Profile and Interests area of the IEEE SA myProject system.
+An IEE Account is needed to
+access the application.
+Comments on standards should be submitted using the Contact Us form_
+Lawsand
+regulations
+Users Of IEEE Standards documents should consult all applicable laws and regulations. Compliance with
+the provisions ofany IEEE Standards document does not constitute compliance to any
+applicable regulatory
+Available at: https: / Idevelopment.standards.ieee.org/myproject-weblpublic/view.html#flanding-
+Available at:
+https:/lstandards.ieee.org/aboutlcontactl .
+Copyright @ 2025 IEEE
+All rights reserved 
+be,
+Any
+
+requirements
+Implementers of the standard are responsible for observing Or referring to the
+applicable
+regulatory requirements. IEEE does not, by the publication of its standards, intend to urge action that is not i
+compliance with applicable laws, and these documents may not be construed as doing $0.
+Data privacy
+Users Of IEEE Standards documents should evaluate the standards for considerations Of data privacy and
+data ownership in the context Of assessing and using the standards in compliance with applicable laws and
+regulations。
+Copyrights
+IEE draft and approved standards are copyrighted by IEEE under US and international copyright laws.
+are made available by IEEE and are adopted for a wide variety Of both
+public and private uses. These include
+both use by reference; i laws and regulations, and use i private self-regulation, standardization, and the
+promotion of engineering practices and methods. By making these documents available for use and adoption
+by public authorities and private users, neither IEEE nor its licensors waive any rights in copyright to the
+documents_
+Photocopies
+Subject to payment of the appropriate licensing fees, IEEE willgrant users a limited, non-exclusive license to
+photocopy portions Of any individual standard for company or organizational internal use or individual, non-
+commercial use only. To alrange for payment Of licensing fees, please contact Copyright Clearance Center;
+Customer Service, 222 Rosewood Drive, Danvers, MA 01923 USA; +1978 750 8400; https: /Lwww.copyright
+com/. Permission to photocopy portions of any individual standard for educational classroom use can also be
+obtained through the Copyright Clearance Center:
+Updating of IEEE Standards documents
+Users Of IEEE Standards documents should be aware that these documents may be superseded at any time
+by the issuance ofnew editions or may be amended from time to time through the issuance of amendments,
+corrigenda, Or errata. An official IEEE document at any point in time consists Of the current edition Of the
+documenttogether with any amendments, corrigenda, or errata then in effect。
+Every IEEE standard is subjected to review at least every 10 years. When a documentis more than 10 years old
+and has not undergone a revision process, it is reasonable to conclude that its contents, although stillof some
+value, do not wholly reflect the present state ofthe art. Users are cautioned to check to determine that they have
+the latest edition ofany IEEE standard。
+I order to determine whether a given documentis the current edition and whetherit has been amended through
+the issuance Ofamendments, corrigenda, Orerrata, visit IEEE Xplore or contact IEEE。
+more information
+about the IEEE SAor IEE s standards development process, visit the IEEE SA Website.
+Errata
+Errata, jany; forall IEEE standards can be accessed on the IEEE SA Website. 4 Search for standard numberand
+year ofapproval to access the web page of the published standard. Errata links are located under the Additional
+Resources Details section_
+Errata are also available i IEEE Xplore。
+Users are
+encouraged to periodically
+Check for errata
+Available at: https: /lieeexplore.ieee.org/browselstandardslcollectionlieee _
+Available at: https: /standards.ieee.org/standardlindex.html.
+Copyright @ 2025 IEEE
+All rights reserved 
+They
+For
+
+Patents
+IEE standards are developed in compliance with the IEEE SA Patent Policy s
+Attention is called to the possibility that implementation of this standard may require use Of subject matter
+covered by patent rights. By publication Of this standard, no position is taken by the IEEE with respect to the
+existence Or
+validity Of any patent rights in connection therewith. If a patent holder or patent applicant has
+filed a statement of assurance via an Accepted Letter Of Assurance, then the statement is listed on the IEE
+SA Website at https:/standards.ieee.orglaboutlsasblpatcompatents html. Letters of Assurance may indicate
+whether the Submitter is willing or unwilling to grant licenses under patent rights without compensation
+Or under reasonable rates; with reasonable terms and conditions that are demonstrably
+Of any unfair
+discrimination to applicants desiring to obtain such licenses.
+Essential Patent Claims may exist for which a Letter Of Assurance has not been received. The IEE is not
+responsible foridentifying EssentialPatentClaims for whichalicense may berequired, forconductinginquiries
+into the legal validity Or scope of Patents Claims, Or determining whether any licensing terms Or conditions
+provided in connection with submission Of a Letter Of Assurance, 迕 any, Or i any licensing agreements are
+reasonable Or
+non-discriminatory。
+Users Of this standard are expressly advised that determination Of the
+validity Of any patent rights, and the risk of infringement Of such rights, is entirely their own responsibility。
+Further information may be obtained from the IEE Standards Association.
+IMPORTANT NOTICE
+Technologies; application of technologies; and recommended procedures in various industries evolve over
+time. The IEEE standards development process allows participants to review developments in industries,
+technologies, and practices, and to determine what, 让 any, updates should be made to the IEEE standard。
+During this evolution, the technologies and recommendations in IEEE standards may be implemented in ways
+not foreseen during the standard's development. IEE standards development activities consider research
+and information presented to the standards development group i developing any safety recommendations
+Other information about safety practices, changes in technology or technology implementation or impact
+by peripheral systems also may be pertinent to safety considerations during implementation of the standard。
+Implementers and users OfIEEE Standards documents are responsible for determining and complying with all
+appropriate safety, security, environmental, health, data privacy, and interference protection practices and all
+applicable laws and regulations。
+Available at: https: /Istandards.ieee.orglaboutlsasblpatcoml materials.html。
+Copyright @ 2025 IEEE
+All rights reserved 
+free
+
+Participants
+Atthe time this IEEE standard was completed, the Communications-Based Train Control Working Group had
+the following membership:
+Yousef
+Kimiagar; Chair
+Dave Keevill, Vice Chair
+Rajee Alexander
+Neil Glennie
+Ajay Nayyar
+Kurt Andersen
+Ivan Grigorchenkov
+Kourosh Noori
+Ridhzuan Awang
+John Hofbauer
+Lisaidyn Perez
+Philippe Ayrault
+Kenneth
+Lou Sanders
+Yarah IsmailAli
+Srinivas Kumar
+Will Serrano
+Basyoni
+Katreddi
+Ali Siadati
+Nicholas Columnbare
+Benjamin Koers
+Narayana Sundaram
+Muamer Dedovic
+Robert Major
+Dan Testa
+Kenneth Diemunsch
+David Male
+Carl Thompson
+David Dimmer
+Wilson Milian
+Michael Thornburg
+Stephane Dubois
+Venugopal Nair
+David Thurston
+Alireza Edraki
+Mehmet Turan
+Antonio
+Soylemez
+Gaite De Las Heras
+Lamont Ward
+The
+following members Of the individual Standards Association balloting group voted
+On this standard_
+Balloters
+have voted for approval, disapproval, or abstention。
+Rajee Alexander
+Andrew Jones
+Stephan Sand
+David Dimmer
+Kenneth
+Carl Schwellnus
+Marc Emlelmaln
+Piotr Karocki
+Jhony Sembiring
+Antonio
+Srinivas Kumar
+CarlThompson
+Gaite De Las Heras
+Katreddi
+Michael Thornburg
+Marco Hernandez
+Yousef Kimiagar
+David Thurston
+Werer Hoelzl
+Wilson Milian
+John Vergis
+Oliver Holland
+Kourosh Noori
+Weiping Wu
+Paul
+When the 亚E SA Standards Board approved this standard
+On 27
+March 2025,i had the following
+membership:
+Lei Wang, Chair
+Jon Walter Rosdahl Vice Chair
+David J.Law, Past Chaii
+Alpesh Shah, Secretary
+EdwardAu
+Guido R Hiertz
+Daleep C. Mohla
+Ted Burse
+Ronald W.Hotchkiss
+Annette D. Reilly
+Xiaofeng (Alfred) Chen
+Tyler L. Jaynes
+Robby Robson
+Doug Edwards
+Thomas Koshy
+Daniel Sabin
+Nehad El-Sherif
+Howard Li
+E. Keith Waters
+J. Travis Griffith
+Xiaohui Liu
+Sha Wei
+Deborah R. Hagar
+Kevin WLu
+Luyang (Eric) Zhang
+Hiroshi Mano
+Copyright @ 2025 IEEE
+All rights reserved 
+Karg
+may
+Karg
+Dev
+
+Introduction
+This introduction Is not part of IEE Std 1474.1-2025
+IEE Standard for Communications-Based Train Control
+(CBTC) Performance and Functional Requirements _
+This introduction provides some background on the rationale used to develop this standard. This information
+Is meant to aid j the
+understanding, usage, and applicability ofthis standard.
+Conventionalsignalingltrain control systems rely almost exclusively on track circuits to detect the presence of
+tains. Information on the status ofthe track ahead is provided to train operators either through
+wayside signals
+Or train-borne cab
+signals. Ensuring compliance with the signals is achieved through operating procedures,
+wayside automatic train stops, or train-borne supervisory equipment linked to the train s braking system。
+These conventional systems are effective in providing train protection; but are
+Iot
+particularly efficient
+边
+maximizing the utilization Of the rail transit infrastructure; as
+result Of a few fundamental limitations。
+specifically, the following:
+The location of trains can only be determined to the resolution of the track circuits; i any part Ofa
+track circuit is
+occupied by
+train, the whole track circuit shall be assumed to be occupied by the
+train. Track circuits can be made shorter; but each additional track circuit requires additional wayside
+hardware, so there is an economical and practical limit to the number Of track circuits that can be
+provided。
+b)
+The information that can be provided to a train is limited to a smallnumber Of
+wayside signalaspects
+Or a
+smallnumber ofspeed codes in a cab signal system。
+wayside signal system
+with automatic train stops but without continuous cab signaling。
+Cnforcement is intermittent。
+Communications-basedtrain control (CBTC) systems overcome these fundamentallimitations ofconventional
+track circuit-based systems, and therefore; permit more effective utilization Of the transit infrastructure. This
+Is
+accomplished, for example, by allowing trains to operate safely at much closer headways, by permitting
+greater fexibility and greater precision i train control,
+and by providing continuous safe train separation
+aSSUrance
+and overspeed protection:
+Additional benefits of CBTC technology include the economical
+support of automatic train operations (both on the mainline and in maintenance yards), improved
+reliability;
+and reductions i maintenance costs through
+reduction j wayside equipment and real-time diagnostic
+information. The basic characteristics Ofa CBTC system include the following:
+Determination oftrain location, to a high degree ofprecision, idependent oftrack circuits。
+geographically continuous train-to-wayside and wayside-to-train data communications network
+to permit the tansfer Of significantly more control and status information than is possible with
+conventional systens。
+Wayside and train-borne vital processors to process the train status and control data and provide
+continuous automatic train protection (ATP). Automatic train operation (ATO) and automatic train
+supervision (ATS) functions can also be provided, as required by the particular application。
+There are currently no independent standards
+defining the performance and functional requirements to be
+satisfied by CBTC systems. This standard enhances performance, availability, operations, and train protection;
+and facilitates design, development, deployment and commissioning ofnew CBTC applications。
+This standard provides standards for Communications Based Train Control functionality. It provides
+consistent approach for design and development of these transit control systems. This revision allows for
+driverless train operation;
+icluding automatic people movers。
+As technology changes and evolves the architecture and functionality, and subsequently the standards, Of
+Communications-Based Train Control require modification. This revision provides the vehicle to modify
+CBTC standards to comply with changing needs in function and safety。
+Copyright @ 2025 IEEE.All rights reserved
+For
+
+Contents
+1
+Overview
+1.1
+Scope _
+1.2 Purpose
+11
+1.3 Range OfApplications
+11
+1.4 ExistingApplications
+11
+1.5
+Word usage
+12
+2.
+Normative references
+12
+3
+Definitions, acronyms, and abbreviations
+13
+3.1
+Definitions
+13
+3.2 Acronyms and abbreviations
+16
+4
+Generalrequirements
+7
+4.1
+Characteristics Of CBTC systems
+17
+4.2 Categorizationof CBTC systems
+17
+4.3
+Train Confgurations。
+17
+4.4
+Train operating modes
+17
+4.5 Enteringlexiting CBTC territory.
+20
+4.6
+Train operating speeds _
+20
+5
+Performance requirements
+21
+5.1
+CBTC factors contributing to achievable headways .
+21
+5.2
+CBTC factors contributing to achievable trip times _
+21
+5.3
+System safety requirements_
+22
+5.4 System assurance requirements_
+25
+5.5
+Environmental requirements
+27
+6
+Functional requirements_
+27
+6.1
+ATP functions
+27
+6.2
+ATO functions_
+35
+ATS functions
+37
+6.4
+Interoperability interface requirements
+41
+Annex A (informative) Bibliography.
+42
+Annex B (informative) Example functional block diagram for a typical CBTC system _
+43
+Annex C (informative) Typical CBTC parameters
+44
+Annex D
+(informative) Typicalsafe braking model
+45
+Annex E (normative) System Safety and Security Program requirements
+48
+Annex F (informative) Typical approaches to specifying CBTC system availability _
+58
+Copyright @ 2025 IEEE
+All rights reserved 
+6.3
+
+List of Figures
+Figure B.1一Example functional block diagram for a typical CBTC system
+43
+Figure D.I-Typical safe braking model
+47
+List of Tables
+Table C.I-Iypical CBTC parameters_
+44
+Table E.I-Risk assessment
+56
+10
+Copyright @ 2025 IEEE.All rights reserved
+
+IEEE Standard for Communications
+Based Train Control (CBTC) Performance
+and Functional Requirements
+1.
+Overview
+This standard establishes performance and functional requirements for a communications-based train control
+(CBTC) system。
+It is divided into six clauses。 Clause
+describes the scope and purpose Of this standard。
+Clause
+2 lists references that are useful i applying this standard. Clause
+3
+provides definitions that are
+either not found 边 other standards Or have been modified for use with this standard. Clause 4 defines the
+generaloperating requirements for CBTC systems, including train operating modes to be supported. Clause 5
+defines the performance requirements for CBTC systems, icluding headway criteria, system safety criteria,
+and system availability criteria. Clause 6 defines the functional requirements for CBTC systems; including
+automatic train protection (ATP) functions, automatic train operation (ATO) functions, and automatic train
+supervision (ATS) functions_
+1.1 Scope
+This  standard
+establishes
+sct
+Of performance
+and
+functional requirements
+necessary
+for enhancing
+performance, availability, operations, and train protection using a CBTC system
+1.2 Purpose
+There are currently no independent standards defining the performance and functional requirements to be
+satisfied by CBTC systems. This standard enhances performance, availability, operations, andtrain protection
+and facilitates new CBTC applications。
+1.3 Range of Applications
+The CBTC performance and functional requirements defined in this standard are intended to be applicable
+to the full range of transit applications,
+icluding commuter rail, heavy rail, light rail, and monorail transit
+Systems, and shall be
+applicable to other transit applications; such as automated people movers (APMs) a
+CBTCis used for automated train control (ATC).
+1.4 Existing Applications
+Existing CBTC installations and projects in progress
+to the publication of this standard need not comply
+with the new OI revised
+requirements Of this standard, IEEE Std 1474.1-20xx, except where specifically
+required by the authority having jurisdiction。
+Copyright @ 2025 IEEE
+All rights reserved 
+Prior
+
+IEEE Std 1474.1TM-2025
+IEEE Standard for Communications-Based Train Control (CBTC) Performance and Functional Requirements
+1.5
+Word usage
+The word shall indicates mandatory requirements strictly to be followed in order to conform to the standard
+and
+which no deviation is permitted (shall equals is required to).
+The word should indicates that among several possibilities one is recommended
+35
+particularly suitable;
+without mentioning Or excluding others; Or that
+certain CouISC Of action is preferred but not necessarily
+required (should equals is recommended that).
+The word may is used to indicate a course Of action permissible within the limits Of the standard (may
+is permitted to) 
+The word cal is used for statements of possibility and capability, whether material, Physical, or causal (can
+equals is able to)
+2.
+Normative references
+The following referenced documents are indispensable for the application of this document (i.e.,
+Iust
+be understood and used, so each referenced document is cited in text and its relationship to this document is
+explained). For dated references, only the edition cited applies. For undated references, the latest edition ofthe
+referenced document (including any amendments or corrigenda) applies。
+IEEE Std 1474.2TM-2025 , IEEE Standard for User Interface Requirements i Communications-Based Train
+8.9
+Control (CBTC) Systems.
+IEE Std 1475TM-2012, IEEE Standard for the Functioning Of and Interfaces Among Propulsion; Friction
+Brake and Train-bore Master Control on Rail Rapid Transit Vehicles。
+IEEE Std 1477TM-1998, IEEE Standard for Passenger Information System for Rail Transit Vehicles.
+IEE Std 1478T-2013, IEE Standard for Environmental Conditions for
+Transit Rail
+Car Electronic
+Equipment
+IEEE Std 1483TM-2000, IEE Standard for Verification of Vital Functions in Processor-Based Systems Used
+i Rail Transit Control.
+IEE Std 1570TM-2002, IEEE Standard for the Interface Between the Rail Subsystem and the Highway Sub-
+system at a Highway Rail Intersection。
+The use of the word must is deprecated and cannot be used when stating mandatory requirements; nust is used only to describe
+unavoidable situations _
+The use Of willis deprecated and cannot be used when stating mandatory requirements; willis only used in statements Of fact。
+The IEEE standards or products referred to in this clause are trademarks of The Institute of Electricaland Electronics Engineers, Inc.
+IEE publications are available frol The Institute of Electrical and Electronics Engineers, Inc., http: /Istandards.ieee.orgl _
+12
+Copyright @ 2025 IEEE
+All rights reserved 
+from
+equals
+they
+
+IEEE Std 1474.
+2025
+IEEE Standard for Communications-Based Train Control (CBTC) Performance and Functional Requirements
+3
+Definitions, acronyms, and abbreviations
+3.1
+Deflinitions
+For the purposes of this document, the following terms and definitions apply. The IEEE Standards Dictionary
+Online should be consulted for terms not defined j this clause. 10
+authority having jurisdiction (AHJ): An entity that has the power to make decisions relating to the direct or
+delegated responsibilities assumed in conjunction with the application of a standard or recommended practice.
+automated people
+Iovers
+(APMs): A guided transit mode with fully automated operations, featuring
+vehicles that operate On
+guideways with exclusive right-of-way。
+automatic train
+control (ATC): The system for automatically controlling train
+Iovemcnt
+enforcing
+train safety, and directing train operations. ATC includes automatic train protection (ATP) and may include
+automatic train operation (ATO) and/or automatic train supervision (ATS)。
+automatic train operation (AT0): The subsystem within the automatic train control (ATC) system that
+performs any Or all Of the functions Of
+regulation, programmed stopping;, door control, performance
+levelregulation, or other functions otherwise assigned to the train operator:
+automatic train protection (ATP): The subsystem within the automatic train control (ATC)
+that
+maintains fail-safe protection against collisions, excessive speed, and other hazardous conditions through a
+combination oftrain detection, train separation, and
+interlocking:
+automatic train supervision (ATS): The subsystem within the automatic train control (ATC)
+that
+monitors trains, adjusts the performance ofindividual trains to maintain schedules , and provides data to adjust
+service to minimize inconveniences otherwise caused by iregularities。
+NOTE
+The ATS subsystem also typically includes manual and automatic
+fuhctions
+basic operating unit: (A) A single vehicle designed for independent operation. (B) A permanent Or semi-
+permanent combination, designed for independent operation, consisting Of two Or more vehicles Of one or
+more types
+brake, (maximum) service: Anon-emergency brake
+application that obtains the (maximum二
+brake rate thatis
+consistent with the design ofthe brake system, retrievable under the controlof master control。
+brake, emergency: Fail-safe, open-loop braking to
+complete stop, with an assured maximum stopping
+distance considering all relevant factors. Once the brake application is initiated, it is typically irretrievable
+(i.e.,it cannot be released until the train has stopped and a predefined time has passed):
+car: See:vehicle。
+civil speed limit: The maximum speed authorized for each section Of track, as determined primarily by the
+alignment, profile, and structure。
+communications-based train control (CBTC):
+A continuous ATC system utilizing high-resolution train
+location determination, idependent Of track circuits; continuous, high capacity, bidirectional train-to-
+wayside low-latency data communications; and train-borne and wayside processors capable ofimplementing
+Vital functions
+IOIEEE Standards Dictionary Online is available at: http: /Idictionary.ieee.org. An IEEE account is required for access to the dictionary;
+and one can be created at no charge on the
+dictionary sign-in page.
+Notes in text, tables and figures are given for information only and do not contain requirements needed to implement the standard.
+13
+Copyright @ 2025 IEEE.All rights reserved
+TM _
+speed
+System
+System
+routing
+
+IEEE Std 1474.
+TM-2025
+IEEE Standard for Communications-Based Train Control (CBTC) Performance and Functional Requirements
+communications-based train control (CBTC) territory: the geographicalarea(s) ofa railnetwork equipped
+for CBTC operation.
+communications-based
+train
+control (CBTC)
+USeI:
+authority-authorized personnel
+WhO
+receive
+information from, provide information to, orperform repairs or maintenance on, a CBTC system。
+communications-based train control (CBTC) user interface: That portion of the human machine interface
+i Which the CBTC user interacts with the CBTC system to observe andlor perform finctions implemented by
+the CBTC system. Includes, butis not limited to, displays, audible indicators, tactile entries, cursor positioning
+device implementations, and voice input devices.
+communications-based train control (CBTC) user profiles: A definition of the vision; hearing; language
+and physical characteristics ofthe CBTC user。
+commuter rail: A passenger railroad service that operates within metropolitan areas on trackage that usually
+is part Of the general railroad system. The operations, primarily for commuters, are generally run as part Ofa
+regionalsystem thatis publicly owned or by a railroad company as part ofits overall service.
+consist: The makeup or composition (number and specific identity) ofa basic operating unit or combination of
+basic operating units ofa train_
+control action: A request by
+communications-based train control (CBTC) user for the CBTC system to
+perform an operation。
+A control action may
+require
+Single user input, Or
+sequence Of user inputs, and
+USEI
+requested control action
+be subject to verification checks
+to the CBTC system performing the
+requested operation
+coupling: the function Of combining two consists into
+a new communications-based train control (CBTC)
+functional consist
+display screen: The surface of a display device on Which the visual representation of data is presented.
+driving mode: characterization of the manner in Which human train operators interact with the train control
+system for operating
+tain ranging from manual operation without reliance on the train control system to
+fully automatic operation without reliance on human train operators_
+dwell time: The tme
+transit unit (vehicle or train) spends at a station Or StoP, measured as the interval
+between its stopping and starting.
+fail-safe: A design philosophy applied to safety-critical systems such that the result of hardware failure or the
+effect Of software error shall either prohibit the system from assuming Or maintaining an unsafe state Or shall
+cause the system to assume a state known to be safe.
+function key: Assignable special purpose keys (e.8., on a computer keyboard, keypad or touchscreen) which
+the communications-based train control (CBTC) user employs to interact with the CBTC system
+headway: The time interval between the passing of the front ends of successive vehicles or trains moving
+along the same lane or track in the same direction。
+heavy rail transit: A mode ofrail rapid transit generally characterized by fully grade-separated construction,
+operating on exclusive rights-of-way and station platforms at the
+levelofthe vehicles。
+human machine interface: an interface employing audible, visual andlor tactile devices, provide users with
+access to the CBTC system to receive information and/or to enter commands。
+14
+Copyright @ 2025 IEEE.All rights reserved
+Any
+Prior
+may
+Hoor
+
+IEEE Std 1474.
+TM
+2025
+IEEE Standard for Communications-Based Train Control (CBTC) Performance and Functional Requirements
+interlocking: An arrangement Of switch, lock, and signal devices that is located where rail tracks cross, join;
+separate, and so on. The devices are intercomnected in such a way that their movements succeed each other ia
+predefined order; thereby preventing opposing or conflicting train movements。
+Iight rail transit: A mode Of rail transit characterized by its ability to operate On exclusive rights-Of- way。
+street
+running, center reservation running, and grade crossings, and to board and discharge passengers at track
+Or vehicle foor level.
+location reference:
+unique and unambiguous identifier Of a geospatial location within a reference location
+system
+mandatory: The referenced item is required to claim compliance with this standard
+master control: The train-bore device or system directly providing the control signals (propulsion, coast;
+and brake) to the train.
+monorail: a railroad in Which the track consists Ofa single rail, typically elevated, with the trains suspended
+from it or balancing On it。
+movement
+authority: The permission for a train to enter and travel through a specific section Of track, i a
+given travel direction. Movement authorities are assigned, supervised, and enforced by a CBTC system to
+maintain safe train separation and to provide protection of the train as it travels
+the track。
+movement authority limit: The boundaries within which the movement authority is permitted。
+optional: The referenced item is not required to claim compliance with this standard. Implementation Of an
+optionalitem shall be as defined in this standard。
+page: A visual representation of data, graphics or text, that is presented on a display screen。
+redundancy: The existence in a system Of more than one means Of accomplishing a given function。
+reliability: The probability that a system Will perform its intended functions without failure, within design
+parameters, under specific operating conditions, and for a specific period oftime_
+safe braking model: An analytical representation of a train '$ performance while decelerating to a complete
+StOP,
+allowing for a combination Of worst-case influencing factors and failure scenarios。
+CBTC-equipped
+train shall stop in a distance equal to or less than that guaranteed by the safe braking model。
+Safety critical: (A)
+A term
+t0
+system Or function; the correct performance Of which is critical to
+safety ofpersonnelandlor equipment. (B) Aterm applied to a system or function, the incorrect performance Of
+Which may result in 8 hazard
+NOTE
+Vital functions are a subset of safety-critical functions
+safety-related: Carries responsibility for safety。
+self-revealing failure: Failures whose effects on system operation are immediately and clearly apparent。
+service, revenue: (A-
+Transit service excluding deadheading or layovers. (B)
+Service scheduled for
+passengertrips。
+system safety: The application of engineering and management principles, criteria, and techniques to optimize
+allaspects Ofsafety within the constraints of operationaleffectiveness, time, and cost, throughout allphases Of
+the system life
+15
+Copyright @ 2025 IEEE.All rights reserved
+along
+applied
+Any
+cycle。
+
+IEEE Std 1474.
+2025
+IEEE Standard for Communications-Based Train Control (CBTC) Performance and Functional Requirements
+system safety program: The combined tasks and activities of system safety management and system safety
+engineering that enhance operational effectiveness by satisfying the system safety requirements in a timely。
+cost-effective manner throughout the system life
+train: A consist ofone or more basic operating units_
+traffic locking: Electric locking which prevents the manipulation of levers or other devices for changing the
+direction oftraffic into a section oftrack on which a route is lined, occupied, or locked。
+Un-coupling: the function Ofsplitting a consist into two new and separate CBTC functional consists。
+unit: See:basic operating unit。
+vehicle: A land conveyance assembly for
+carrying Or transporting people and objects capable of traversing a
+guideway, having structural integrity and general mechanical completeness, but not necessarily designed for
+idependent operation.
+vital function: A function in a safety-critical system that is required to be implemented in a fail-safe manner。
+window: In graphical user interfaces, a defined portion of the display screen that is separated by a frame from
+the rest ofthe screen and which may be opened, closed, resized and moved by the user。
+3.2 Acronyms andabbreviations
+APM
+automated people mover
+ATC
+automatic train control
+ATO
+automatic train operation
+ATP
+automatic train protection
+ATS
+automatic train supervision
+CBTC
+Communications-based train control
+GEBR
+guaranteed emergency brake rate
+MTBE
+mean time between failure
+MTBFE
+mean time between functional failure
+MTBHE
+mcan time between hazardous event
+MTTR
+mean time to repair
+MTTRS
+mCan time tO restore service
+O&SHA
+operating and support hazard analysis
+PHA
+preliminary hazard analysis
+SHA
+system hazard analysis
+SSHA
+subsystem hazard analysis
+SSPP
+System Safety Program Plan
+16
+Copyright @ 2025 IEEE.All rights reserved
+TM _
+cycle:
+
+IEEE Std 1474.1TM-2025
+IEEE Standard for Communications-Based Train Control (CBTC) Performance and Functional Requirements
+4.
+General
+requirements
+4.1
+Characteristics of CBTC systems
+The primary characteristics Ofa CBTC system include the following:
+High-resolution train location determination, independent of track circuits
+b)
+Continuous, high capacity, bidirectional train-to-wayside low-latency data communications
+Train-borne and wayside processors performing vital functions
+4.2 Categorization of CBTC systems
+This standard recognizes that different configurations of CBTC systems are possible; depending on the
+specific application. For example, a CBTC system may provide the following:
+Automatic train protection (ATP) functions only, withno automatic train operation (ATO)or automatic
+train supervision (ATS) functions
+b)
+ATP functions, as well as certain ATO andlor ATS functions, as
+required to satisfy the operational
+needs ofthe specific application
+typical functional block diagram for a CBTC system is given i Annex B。
+4.3
+Train Configurations
+ACBTC system shallbe capable ofsupporting a variety oftrain configurations, including the following:
+3 )
+Fixed-length unidirectional trains comprised of one or more basic operating units
+b)
+Fixed-length bidirectional trains comprised of one or more basic operating units
+Variable-length unidirectionaltrains
+Variable-length bidirectional trains
+ACBTC system shall be capable of supporting a mixed fleet oftrains, where specific trains, andlor classes Of
+trains, have different performance characteristics.
+4.4
+Train operating modes
+CBTC-equipped trains may be operated by either a single person Or a multi-person crew.A CBTC system may
+also be required to support operation oftrains without crews
+For operation oftrains with crews, the train operator will typically be stationed in the lead car of the train and
+willbe responsible for moving the train from station to station. With a multi-person crew, the conductor(s 
+will
+normally operate from conductor position(s) within the train to operate the train 's doors_
+ACBTC system shall
+support single-person train operation by combining the conductor and train operator display information On
+the train operator's
+display. For multi-person crews, conductor display information shall also be provided on
+separate conductor displays。
+For the purposes Of this standard, operation of trains without crews includes both unattended and driverless
+train operations. With unattended train operations, there would normally be no crew member onboard the
+train. With driverless train operations, there may be a crew member onboard the train, but normally not in the
+driving cab. This crew member, 让 present, would normally have no responsibility for operation of the train
+except for failure recovery。
+17
+Copyright @ 2025 IEEE
+All rights reserved 
+
+IEEE Std 1474.
+2025
+IEEE Standard for Communications-Based Train Control (CBTC) Performance and Functional Requirements
+CBTC-equipped trains (including CBTC-equipped maintenance vehicles)
+shall be capable of operating "
+various modes, depending On whether the train is operating 证 CBTC territory Or non-CBTC territory, and
+depending on the operational status ofthe train-borne andlor wayside CBTC equipment。
+Mixed-mode operation shall also be considered
+normal operating mode; to the extent specified by the
+authority having jurisdiction. Mixed-mode operation is defined as the simultaneous operation within CBTC
+territory of CBTC-equipped trains and trains that
+arC
+Iot
+equipped with functional train-borne CBTC
+equipment (icluding maintenance vehicles)。
+Mixed-mode operation may be used 边 One Or more Of the
+following ways:
+A
+regularly scheduled mode ofoperation within CBTC territory
+b)
+An
+infrequent, unscheduled mode of operation within CBTC territory
+During the transition period only, as a new CBTC system is cut-in
+As a result oftrain-borne CBTC
+equipment failures
+4.4.1
+Normal train operating modes in CBTC territory
+4.4.1.1 CBTC-equipped trains
+CBTC-equipped trains operating in CBTC territory shall operate, within ATP limits, under the protection Of
+the CBTC system. The train shallbe capable ofbeing controlled manually by a train operator Or automatically
+by the CBTC system (supervised by the train operator; 迕 present)。
+35
+specified by the authority having
+jurisdiction.
+When operating automatically,
+some functions (such as door operation
+and train departure
+iitiation) may continue to be the responsibility of the train operator and/or conductor(s) , ifpresent
+4.4.1.2 Non-CBTC-equipped trains
+Trains not equipped with train-borne CBTC equipment andlor trains with inoperative train-bore CBTC
+equipment that are operating i CBTC territory shall operate under the protection of the CBTC system using
+secondary train detection。
+OI
+supplementary systems andlor operating procedures, as specified by the
+authority havingjurisdiction。
+4.4.2 Failure mode train operations in CBTC territory
+For light rail, heavy rail, monorail and commuter rail applications operating with crews, it is an operational
+requirement to continue to move trains safely j the event Of CBTC equipment andlor data communication
+failures, possibly at reduced operating speeds andlor increased operating headways when compared to normal
+tain Operations. Consequently, a CBTC system shall be designed to support degraded modes of operation
+i the event Of failure and to continue to provide ATP with minimum reliance On adherence to operating
+procedures as specified by authority having jurisdiction。
+For fully automated
+applications operating without crews; the extent to which the CBTC system shall be
+designed to support degraded modes Of operation in the event of failure shall be as defned by the authority
+having jurisdiction, and may include an ability to remotely reset train-borne equipment and the ability to
+support automatic pushlpull train recovery。 as well
+as the
+ability to support manual train operations and
+alternative
+routing strategies。
+For al1
+applications。
+fallback plan; based on failure analysis and operating procedures, shall identify train
+operating modes that will take advantage Of the degraded modes Of operation and recovery capabilities ofthe
+CBTC system. The goalof the plan shall be to eliminate hazards to passengers and staff in accordance with
+5.3, While continuing to provide passenger service。
+18
+Copyright @ 2025 IEEE.All rights reserved
+TM _
+
+IEEE Std 1474.
+TM
+2025
+IEEE Standard for Communications-Based Train Control (CBTC) Performance and Functional Requirements
+Specifically, failure mode train operations 证 CBTC territory shall address those CBTC system failures
+affecting the following:
+Alltrains operating within a particular area Ofcontrol
+b)
+Aparticular train operating within any area Of control
+4.4.2.1
+CBTC system failures affecting all trains operating within a particular area of control
+In the event ofa CBTC system failure that affects all CBTC-equipped trains operating within a particular area
+Of control within CBTC territory (e.8:, wayside CBTC equipment or wayside-to-train data communications
+failure), trains shall have the capability to provide continued safe operations under the controlof an operator;
+and the
+following:
+With the protection of a supplementary system (ifspecified by the authority havingjurisdiction); Or
+b)
+With the train
+limited by the propulsion system; Or
+Through strict adherence to operating procedures (as defined by authority havingjurisdiction); Or
+Acombination ofany or allofitems a), b), and c).
+When operating in this failure mode, ATP functions that reside within individual train-borne CBTC equipment
+shall continue to function to the extent safety can be assured。
+4.4.2.2 CBTC system failures affecting a particular train operating within any area of control
+In the event ofa CBTC system failure
+affecting
+particular CBTC-equipped train operating within any area
+Of control within CBTC territory (e.8., train-borne CBTC equipment failure), that train shall be capable Of
+continued safe operations under the controlof an operator; and the following:
+With the protection Ofa supplementary system (i specified by the authority having jurisdiction); Or
+6)
+With the train speed limited by the propulsion system; Or
+Through strict adherence to operating procedures; Or
+Acombination ofany or allofitems a), b), and c).
+When operating in this failure mode, ATP functions that reside within wayside CBTC equipment and within
+other train-borne CBTC
+equipment shall continue to function to the extent safety can be assured。
+4.4.3 Normal train operating modes in non CBTC territory
+CBTC equipment installed on trains operating in non-CBTC territory shall include the necessary capabilities
+to support transitions into CBTC territory. In addition, 迕
+specified by the authority having jurisdiction, train
+borne CBTC
+equipmentmay also perform other ATP functions while operating in non-CBTC territory, such as
+limiting train
+andlor providing zero
+detection。
+Ifspecified by the authority havingjurisdiction, train-borne CBTC equipment operating in non-CBTCterritory
+may also interface with wayside equipment thatis not fully compatible with the train-bome CBTC equipment。
+Inno case, however, shall the train-bore CBTC equipment provide an indication ofstandard CBTC operation
+when operating in non-CBTC territory, unless the
+applicable authority
+Or authorities
+having jurisdiction
+over the train-bornc and
+wayside equipment have ensured that standard CBTC operation is supported by the
+integrated train-bore and wayside systems_
+19
+Copyright @ 2025 IEEE.All rights reserved
+speed
+speed
+speed
+
+IEEE Std 1474.
+TM
+2025
+IEEE Standard for Communications-Based Train Control (CBTC) Performance and Functional Requirements
+4.4.4 Failure mode train operations in non-CBTC territory
+Except where specified to perform certain ATP functions while operating in non-CBTC territory, failure ofthe
+tain-borne CBTC equipment shall have minimal impact on train operation. The failure shall be indicated to
+the train operator; i present
+4.5 Enteringlexiting CBTC territory
+4.5.1
+Entering into CBTC territory
+ACBTC system shall have precise knowledge of the limits of CBTC territory and shall include the capability
+to perform verification checks Of the train-borne CBTC equipment
+to
+entering CBTC territory. The
+checks shall be performed sufficiently in advance Of
+into CBTC territory to verify the proper operation
+ofthe train-borne CBTC equipment (including any wayside CBTC equipment dependencies):
+Ifthe verification check is passed, an indication to this effect shall be provided. Under normal circumstances
+and subject to ATP constraints, i shall not be necessary for a train to come to
+Stop When entering CBTC
+territory unless required for other operational reasons
+In the event that the verification check fails, an indication of the CBTC system failure shall be provided, and
+the train Shall be
+capable of continued safe operations under the controlofan operator; and
+With the protection of a supplementary system (ifspecified by the authority havingjurisdiction); Or
+b)
+With the train
+limited by the propulsion system; Or
+Through strict adherence to operating procedures (as defined by authority having jurisdiction); Or
+Acombination ofany or allofitems a), b), and c).
+'The results of the verification checks shall be displayed on the ATS user interface. For trains operating with
+crewS, the results ofthe verification checks shall also be indicated to the train operator:
+4.5.2 Exiting from CBTC territory
+For trains operating with crews,
+t0
+exiting CBTC territory。
+CBTC system may provide a visual
+indication to the train operator oftime and/or distance until the train willbe
+exiting the CBTC territory. When
+known by the CBTC system, the train operator may also receive an indication Of the type of train control
+system into Which the train will be traversing:
+NOTE
+Indications to the train operator may not be required 让 the transition between CBTC territory and non-CBTC
+territory is operationally transparent to the train operator. Under normal circumstances and subject to ATP constraints, i
+is not necessary for a train to come to a Stop When
+CBTC territory unless required for other operationalreasons。
+4.6
+Train operating speeds
+ACBTC system shall be capable of meeting the performance and functional requirements of this standard,
+over the fullrange of_
+possible train operating speeds specified by the authority havingjurisdiction。
+20
+Copyright @ 2025 IEEE.All rights reserved
+Prior
+entry
+speed
+Prior
+exiting
+
+IEEE Std 1474.1TM-2025
+IEEE Standard for Communications-Based Train Control (CBTC) Performance and Functional Requirements
+5.
+Performance requirements
+5.1
+CBTC factors contributing to achievable headways
+The required design and operating headways (i.e., the minimum and scheduled headways) for both normal
+and reverse directions shall be specified by the authority having jurisdiction. Headway may be specified as
+uninterfered andlor interfered.
+In all cases, the design headway shall be constrained by the safe train separation requirements and the safe
+braking modelof 6.1.2.1.
+In the case Of an uninterfered headway, a train speed profile shall not be affected by a preceding train. All
+trains shall, therefore, perform at the maximum allowed speed, depending on the civil speed limits and the
+acceleration and braking capabilities ofthe trains themselves. Operation at uninterfered headways facilitates a
+minimum end-to-end trip time for a given set ofstation dwelltimes。
+Headways may be reduced (at the expense Of increased trip times) with an interfered headway where a train
+speed profile is affected by a preceding train such that a following train decelerates on the approach to a station
+and enters the station area at a reduced speed. Interfered headway may also be specified to support multiple
+berthings at a station platform。
+The design headway for a particular line and a particular set of vehicles involves many factors that are out-
+side the controlof the CBTC system (e.8:, track alignment, gradients, civilspeed limits, train acceleration and
+braking rates, station dwell times, terminal track configurations, driver reaction times).
+These factors shall be
+specified by the authority havingjurisdiction . These standard addresses only those CBTC factors contributing
+to achievable headways, Of which the most significant are the following:
+Location (both accuracy Of measured end-of-train locations and resolution of movement authority
+limits for a given train), including the frequency at which location reports and movement authorities
+aTC
+updated.
+b)
+Speed, including both accuracy of speed measurement and resolution of speed limits established for a
+given train at a given location。
+Communications
+including nominal and worst-case transmission times Of commandlstatus
+Iessages
+between
+wayside and train; and
+Vice
+Versa。 (Commandlstatus
+mnessages  include; for
+example, messages related to movement authority updates andlor location report updates:.)
+CBTC equipmentreaction times, including maximum error accumulation, for both wayside and train-
+borne equipment, and for various operating modes, as
+applicable. (CBTC equipment reaction times
+include, for example, the time required to establish new movement authority limits following location
+report updates, the time to establish new movement authority limits through an interlocking, and the
+time to determine a new ATP
+profile following movement authority update.)
+CBTC system performance limitations
+the maximum number oftrains that can be processed by
+the CBTC system, within a given area ofcontrol)_
+CBTC automatic speed regulation algorithm。
+Typical values for the CBTC parameters in items a) through e) are given in Amnex C.
+5.2 CBTCfactors contributing to achievable trip times
+Triptimerequirements shallbe specified by the authority havingjurisdiction, consistent with train performance
+and track alignment characteristics。
+21
+Copyright @ 2025 IEEE.All rights reserved
+delays,
+(e.8,
+
+IEEE Std 1474.
+TM
+2025
+IEEE Standard for Communications-Based Train Control (CBTC) Performance and Functional Requirements
+The minimum end-to-end trip times for a defined set ofstation dwell times results from uninterfered
+headway
+profiles. The CBTC factors contributing to achievable headways, as identified in 5.1, are also factors
+contributing to the minimum achievable trip times。
+5.3 System safety requirements
+5.3.1
+CBTC System Safety Program requirements
+System Safety Program shall be instituted during the CBTC system planningldesign phase and shall
+continue throughout the system life
+The CBTC System Safety Program shall emphasize the prevention
+Ofaccidents by identifying and resolving hazards 边
+systematic manner. A CBTC System Safety Program
+Plan (SSPP) shall be developed for each CBTC application. The CBTC SSPP;as a minimum, shall be prepared
+i accordance with the requirements OfE.1of Annex E_
+Implementation of the CBTC SSPP shall specifically recognize configuration management issues, given the
+importance Of software and hardware configuration control in maintaining system safety。
+5.3.2 CBTChazard identification and risk assessment process
+Hazard analyses shall be
+employed during the design Ofa CBTC system to assist in the identification and
+evaluation of potential hazards to assess their likelihood and severity and to document their resolution_
+As a
+minimum, 8 preliminary hazard analysis (PHA 
+shall be conducted for each new CBTC system project. Other
+detailed analyses, including systemlsubsystem hazard analyses, failure modes, effects and criticality analyses;
+fault tree analyses, and operational and support hazard analyses, shall also be conducted if man- dated by
+the CBTC SSPR. These analyses shall be conducted in accordance with E.2,E.3,E.4, and E.5 Of Annex E Or
+equivalentrequirements, as approved by the authority having jurisdiction。
+Allhazards identified through the CBTC System Safety Program shall be assessed in terms of the severity Or
+consequence ofthe hazard and the probability ofoccurrence. This shallbe accomplished in generalaccordance
+with the criteria outlined in E.6 of Annex Eor the equivalent, as approved by the authority having jurisdiction。
+Risk assessment estimates shall be used as the basis 证 the
+decision-making process to determine whether
+individual system or subsystem hazards shall be eliminated, mitigated, or accepted . This process shallinclude
+full documentation of the hazard resolution activities.
+Hazards shall be resolved through
+design process that emphasizes the elimination of the hazard。
+The
+effectiveness ofthe hazard resolution strategies and countermeasures shall be monitored to determine that no
+ICW hazards are
+introduced. In addition, whenever substantive changes are made to the system, analyses shall
+be conducted to identify and resolve any new hazards_
+As a
+minimum, a CBTC system shall address the following criticallcatastrophic system hazards through the
+implementation ofthe ATP functions defined i 6.1
+Train-to-train
+collisions
+(rear-end, sideswipe, head-on);
+hazard
+t0
+be addressed through
+train
+separation assurance (see 6.1.2), rollback protection (see 6.1.4), parted train protection (see 6.1.6),
+route
+interlocking protection (see 6.1.11), and travel direction reversal interlocks (see 6.1.12)
+b)
+Train-to-structure collisions; hazard to be addressed through end-of-track protection (see 6.1.5) and
+restricted route protection (see 6.1.16)
+Irain derailments; hazard to be addressed through overspeed protection (see 6.1.3 ), route interlocking
+protection (see 6.1.11), and (where specified by the authority havingjurisdiction) broken rail detection
+(see 6.1.14)
+22
+Copyright @ 2025 IEEE.All rights reserved
+Speed
+cycle。
+
+IEEE Std 1474.
+2025
+IEEE Standard for Communications-Based Train Control (CBTC) Performance and Functional Requirements
+Collisions between trains and highway vehicles
+where highway crossing at grade exists within the
+limits Of CBTC territory); hazard to be addressed through grade-crossing warning devices that may
+include interfaces to the CBTC system (see 6.1.15)
+Hazards to work crews and work trains; hazards to be addressed through CBTC work zone protection
+functions (see 6.1.13 )
+Hazards to passengers associated with train movement with train doors open; hazards to be addressed
+throughinterface between the CBTC system and the train door system ( where required by the authority
+having jurisdiction) to provide door opening control protection interlocks (see 6.1.8),
+ZCIO
+detection (see 6.1.7), platform interlocks (see 6.1.9) and where applicable, hazards to passengers
+associated withtrain movement with platform edge doors open
+Hazards associated with collisions with objects on the track; hazards to be addressed through interfaces
+between the CBTC system and restricted route protections
+where specified by the authority having
+jurisdiction) (see 6.1.16)
+5.3.3 CBTC vital functions
+To eliminate Or control to
+level acceptable to the authority having jurisdiction those hazards judged to be
+unacceptable or undesirable through the risk assessment process Of 5.3.2,a CBTC system shall include, as a
+minimumm, the Vital functions identified i 6.1.
+All vital functions of
+CBTC system shall be designed and implemented i accordance
+with fail-safe
+principles. Documentation ofthe means used, and Proof that fail-safe principles have been met and the mean
+time between hazardous event (MTBHE) requirements 0f 5.3.4 have been satisfied, shallbe required for every
+CBTC system。
+Verification that the processor-based Portions
+Of
+CBTC
+meet these
+minimum system safety
+requirements shallbe completed in accordance with IEEE Std 1483-2000.12
+5.3.4
+Quantitative CBTC safety performance requirements
+For any CBTC system application, the CBTC wayside and train-borne equipment located within any
+contiguous portion Of a one-way route that can be traversed by a train traveling at the specified maximum
+authorized speed for one hour or less shall have a total calculated aggregate MTBHE (total ofall critical and
+catastrophic hazards) ofat least 109 operating hours. This includes the maximum number ofother trains that
+can be located in this contiguous portion Of a one-way route under the specified peak operating headway。
+System safety documentation shall support these calculations and substantiate the
+methodology used to arrive
+at the result. For the purposes of MTBHE calculations,
+3 hazardous event shall
+iclude, as a minimum, the
+occurrence Ofany ofthe specific hazards identified in 5.3.2。
+NOTE
+Ifthe end-to-end trip time for a given route is
+than
+h, the MTBHE requirement for that route would be
+adjusted proportionately. As an illustrative example, i the specified end-to-end trip time (per 5.2) for a given one-way
+route is 2h, and i the route includes 4 sets of
+wayside CBTC equipment, and ia maximum Of 10 trains can be operating
+on the route at a given time (when operating at the specified peak headway, per 5.1), then the MTBHE of the combined
+4 sets of
+wayside CBTC equipment and 10 sets of train-bore CBTC equipment on that route would be at least 0.5
+109
+operating hours
+Inforration on references can be found in Clause 2
+23
+Copyright @ 2025 IEEE.All rights reserved
+TM _
+speed
+System
+greater
+
+IEEE Std 1474.1TM-2025
+IEEE Standard for Communications-Based Train Control (CBTC) Performance and Functional Requirements
+5.3.5 Basic safety design principles
+5.3.5.1
+Normal transit system operations with no CBTC hardware failures
+A CBTC system shall respond safely and correctly perform all ATP functions within the normal range Of
+inputs and other operating and environmental conditions
+All conditions necessary for the existence Of any
+permissive state Or action shall be verified to be present
+before the permissive state Or action is initiated by a CBTC system. The requisite conditions shall be verified
+to be continuously present for the permissive state Or action to be maintained.
+System safety shallnot depend on the correctness ofactions taken or procedures used by operating personnel。
+Procedures shall not be considered
+substitute for safety functions that are to be vested i specific CBTC
+components or equipment, or secondary train detection systems_
+5.3.52
+Abnormal transit system operations with no CBTC hardware failures
+ACBTC system shallrespond safely under conditions of abnormalsystem loading, abnormallimproper inputs,
+and other abnormal external influences such as electrical, mechanical, and environmental factors.
+ACBTC system shallrespond safely to abnormal conditions as required by the authority having jurisdiction。
+5.3.5.3 Responseto CBTC hardware failures
+ACBTC system shallrespond safely under conditions of credible hardware failure.
+NOTE
+The AREMA Communications and Signals Manual, Part 17.3.3 [B1]13, provides examples of credible hardware
+failures
+Failure to perform
+logical operation or absence Of a logical input, output, or decision shall not cause an
+unsafe condition, i.e., system safety shallnot depend upon the occurrence Of an action or logical decision。
+Hazard analyses shall consider all credible CBTC hardware failure modes. Justification shall be provided
+for conceivable failure modes that are not considered credible. Each credible CBTC failure mode shall be
+classified as a combination Of either self-revealing Or non-self-revealing; and the effect shall be considered as
+followS:
+3 )
+No credible single
+CBTC hardware failure, whether self-revealing Or non-self-revealing; shall
+CauSC an unsafc condition_
+b)
+No credible CBTC hardware failure i combination with one Or more
+non-self-revealing failure shall
+Cause an unsafe condition. In the instance ofa
+non-self-revealing failure;
+subsequent failure shallnot
+be considered independent。
+The probability Ofa criticalor catastrophic hazard arising as a result Of combinations of simultaneous
+idependent self-revealing failures shall be considered in the calculated CBTC MTBHE.
+5.3.5.4 Recovery from CBTC hardware failures
+combination Of functional elements of the CBTC system itself;, supplementary systems (i specified by the
+authority having jurisdiction ), andlor operating procedures shall provide for the safety Of train movement
+under failure conditions, including failure recovery:
+The numbers in brackets correspond to those ofthe bibliography i AnnexA-
+24
+Copyright @ 2025 IEEE
+All rights reserved 
+point
+
+IEEE Std 1474.1TM-2025
+IEEE Standard for Communications-Based Train Control (CBTC) Performance and Functional Requirements
+5.4 Systemassurance requirements
+5.4.1
+General
+The ability Of a CBTC system to accomplish the functional requirements Of this standard, under normal
+conditions and under conditions of equipment failure, is of paramount importance to the authority having
+jurisdiction. This sub clause establishes qualitative reliability, availability, and maintainability criteria for
+CBTC systems and
+equipment i order to
+mect Or exceed the on-time
+performance and fleet availability
+objectives Of the authority having jurisdiction, and thereby minimize delays experienced by passengers. 皿
+addressing CBTC equipment failures, a distinction shall be made between the following failure types:
+Type 1: Those failures, or combination Of failures, that impact on-time performance Of the transit
+system。
+b)
+Type 2: Those failures, or combination of failures, that do not impact on-time performance Of the
+transit system, but do result in some other Ioss of
+specified CBTC functionality。
+Type 3: Those failures that do not impact on-time performance Of the transit system or result in a loss
+ofany
+specifed CBTC functionality
+because Ofequipment redundancy).
+The CBTC system availability requirement (see 5.4.2) shall include consideration Of all Type 1 failures, as
+wellas the mean time to restore service (MTTRS) for Type 1 failures。
+The CBTC system mean time between functional failure (MTBFE) requirement (see 5.4.3) shall include
+considerationofall Type 1 and Type 2 failures。
+The CBTC system mean time between failure (MTBE ) requirement (see 5.4.3 ) shall include consideration Of
+all Type 1, Type 2, and Type 3 failures。
+While system availability。
+MTBFE, and system MTBF predictions traditionally consider only hard-
+WarC
+failures, measurements Of achieved system availability, system MTBFE, and system MTBF shall also
+consider software errors (i.e., software fails to perform intended function) as well as hardware failures。
+The
+following generalrecommended practices apply:
+Components and materials should be selected and appropriate standards of quality control and test
+procedures should be employed to obtain the lowest practical hardware failure rates for individual
+iems OfCBTC equipment (i.e., maximize the hardware portion ofthe system MTBF)。
+Unless non-redundant
+equipment is sufficiently reliable to satisfy the overall system availability
+requirements, appropriate levels Of equipment redundancy should be employed such that the failure
+Of
+Single component, Processor;
+Or device does not render the CBTC system unavailable Or an
+operationally-critical function nonoperative (i.e., maximize the system MTBFF):
+ACBTC system should incorporate degraded modes Of operation to minimize the operational impacts
+Of equipment failures and
+to
+permit train movements
+to continue safely (i.e., maximize system
+availability)。
+CBTC system downtime or unavailability Of an operationally-critical function should be minimized
+through the use Oflocal and remote diagnostic capabilities and appropriate operating and maintenance
+procedures [i.e., minimize mean time to repair (MTTR)].
+25
+Copyright @ 2025 IEEE.All rights reserved
+(e.8,
+System
+
+IEEE Std 1474.1TM-2025
+IEEE Standard for Communications-Based Train Control (CBTC) Performance and Functional Requirements
+5.4.2 System availability requirements
+Quantitative CBTC system availability requirements shall be established by the authority having jurisdiction
+with
+appropriate consideration ofthe impacts of CBTC system and subsystem failures on the operation ofthe
+transit system. Typical methods for defining CBTC system availability are provided in Annex E。
+As
+specified by the authority havingjurisdiction, system availability analysislmodeling shall be used to predict
+the system availability for a given CBTC system configuration, based on equipmentreliability/ maintainability
+calculations, equipment redundancy provisions, and other defined assumptions_
+As
+specified by the authority havingjurisdiction, system availability demonstration tests shall be performed to
+determine actual CBTC system availability over a defined period, to a given confidence level。
+5.4.3 Equipment reliability requirements
+Quantitative CBTC system and subsystem MTBF and MTBFF requirements shall be established by the
+authority havingjurisdiction, consistent with the CBTC system availability requirement of5.4.2.
+5.4.3.1
+Design life
+CBTC system shallhave a design life ofa minimum 30 years。
+NOTE
+The
+ability Ofa CBTC system to remain in operation to the end of its design life is driven largely by long-term
+availability Of spare parts and the state Of
+repair and maintenance plans. Specific requirements with respect to spare
+part availability are defined by the authority having jurisdiction and do not form part of this standard。
+5.4.4 Equipment maintainability requirements
+ACBTC system shall be designed to minimize required maintenance (predictive, preventive, and corrective)
+by maximizing the system MTBE and by including features that provide for
+eaSe
+Of maintenance by
+maintenance Personnel.
+The mean time to repairlreplace a failed piece of in-service CBTC equipment (i.e., first-level repair) shall
+include on-site diagnostics, the replacement of failed components, and the testing Of the repaired units, sub-
+system, Or system, but shall exclude travel time to the site_
+A separate MTTR requirement may be defined for
+second-levelrepair (ie.,
+repairofa failed line replaceable unit).
+The first-level MTTR shallbe no greater than 30 min. The second-level MTTR,ifspecified, shallbe no greater
+than 2h
+Achievable repair times is driven by equipment diagnostic provisions and available test equipment, as wellas
+the quality Ofthe maintenance manuals and training:ACBTC system shall, therefore, iclude maintenance and
+diagnostic capabilities to detect and react to CBTC equipment failures. This shall include remote diagnostics
+capabilities as well as local built-in test equipment and other fault displays for trouble- shooting; and the
+timely identification of failed components and functions。
+Data logging capabilities shallalso be provided in wayside and train-borne CBTC equipment. The logged data
+Shall be
+capable of being analyzed to be able to recreate the sequence Of events leading to an incident. This
+allows maintenance personnel to identify the cause Of any failure andlor mis-operation Of CBTC equipment
+that cannot be identified by the in-built diagnostics of the equipment. The scope and duration of logged CBTC
+events shallbe established by the authority having jurisdiction。
+A CBTC system design shall include capabilities to permit periodic verification Of ATP hardware, software;
+and data, including verification Of correct response to interference on the train-to-wayside data link. To the
+extent
+specified by the authority having jurisdiction;
+CBTC system shallalso include capabilities to facilitate
+26
+Copyright @ 2025 IEEE
+All rights reserved 
+good
+shop '
+
+IEEE Std 1474.
+TM
+2025
+IEEE Standard for Communications-Based Train Control (CBTC) Performance and Functional Requirements
+modifications (by the user) to CBTC system parameters, track databases, and
+applications software. The
+supplierofthe CBTC system shallidentify to the authority havingjurisdiction those specific changes to CBTC
+system parameters, track databases, and applications software that have no impact on system safety。
+WARNING
+Changes made to CBTC system parameters, track databases, and
+application software, other than those
+identified by the supplier as not impacting safety, can affect safe system operation. Prior to implementing
+any such changes, applicable hazard analyses 0f 5.3.2 shall be reassessed to verify that the modified system
+willstillmeet allrequirements ofthis standard
+including, but not limited to, 5.3.3,5.3.4, and 5.3.5. Changes
+shallbe implemented in accordance with the CBTC SSPP 0f 5.3.1.
+5.5 Environmental requirements
+Train-borne CBTC equipment shall comply with the requirements Of IEEE Std 1478-2013.
+Wayside CBTC equipment shallbe in accordance with requirements set by authority having jurisdiction。
+6.
+Functional requirements
+ACBTC system shall include the capability for providing ATP,ATO, and ATS functions. ATP functions shall
+provide fail-safe protection
+collisions, excessive speed, and other hazardous conditions. ATP functions
+shallhave precedence over both the ATO and ATS functions. ATO functions shall control basic operations that
+would otherwise be performed by a train operator and shall do so within the protection limits imposed by ATR:
+ATS functions shall provide system status information and the means to monitor and over- ride the automatic
+control for various functions ofthe system
+The CBTC train-to-
+wayside communications interface shall be sufficient to support all required ATP; ATO
+and ATS functions
+The data link shall provide continuous geographic coverage within CBTC territory and
+shall support train operations i tunnels, tubes, and cuts, on elevated structures, and at grade. The data link
+shall support bidirectional data transfer and shall exhibit sufficiently low latency to support the defined
+performance requirements. Ihe data link shall include a protocol structure to support safe, timely, and secure
+delivery oftrain control messages.
+6.1
+ATP functions
+AllATP functions shall be vital functions and shall be designed and implemented in accordance with 5.3.A
+CBTC system shall be capable ofproviding bidirectionalATP:
+6.1.1
+Train locationltrain speed determination
+6.1.1.1 CBTCtrain locationltrain speed determination
+CBTC train locationltrain speed determination shall be
+required ATP function for any CBTC system
+configuration
+ACBTC system shallestablish the location, speed, and travel direction ofeach CBTC-equipped train operating
+证 CBTC territory。
+CBTC train location determination shall safely and accurately establish the location of both the front and rear
+ofthe train. The CBTC train location determination function shall provide sufficient train location resolution
+and accuracy to support the performance and safety requirements Of this standard. Train location resolution
+and accuracy parameters for typical CBTC systems are included in Annex C
+27
+Copyright @ 2025 IEEE
+All rights reserved 
+against
+
+IEEE Std 1474.
+TM-2025
+IEEE Standard for Communications-Based Train Control (CBTC) Performance and Functional Requirements
+The CBTC train location determination function shall be
+self-initializing and shall automatically detect and
+establish the location and length of each CBTC-equipped train as it enters CBTC territory and on recovery
+from CBTC equipment failures, without requiring manual input oftrain location or train length data。
+When awakening from sleep mode, CBTC equipment shallmaintain or vitally re-establish train location。
+The CBTC train
+determination function shall provide sufficient speed measurement resolution and
+accuracy to support the performance and safety requirements of this standard. Speed measurement resolution
+and accuracy parameters for typical CBTC systems are included in Amnex C_
+CBTC system shall compensate
+the effects of measurement inaccuracies On train location and
+determination. Specifically, ithe CBTC train locationlspeed determination function is dependent upon wheel
+rotation, the CBTC system shall correct for position errors induced by the slipping or
+sliding Of wheels and
+shallcorrect for position errors caused by variation in wheelsize due to wear, trueing; orreplacement_
+6.1.1.2 Secondary train location determination
+Ifspecified by the authority having jurisdiction, secondary train detection technology may be used to establish
+ia section Oftrack is occupied by one or more trains,
+icluding trains not equipped with train-bore CBTC
+equipment and/or trains with inoperative train-borne CBTC equipment. This may be provided as part Of
+supplementary systems or directly input or integrated into the CBTC system. It will not be necessary to
+determine the location ofnon-CBTC-equipped trains, ortrains with inoperative train-borne CBTC equipment,
+to the same accuracy as CBTC-equipped trains。
+6.1.2 Safetrain
+separation
+Safe train separation shallbe a
+required ATP function for any CBTC system configuration_
+Safe train separation shall be provided between alltrains operating in CBTC territory, whether or not the trains
+are CBTC equipped。
+ACBTC system shallprovide safe train separation between CBTC-equipped trains. Safe train separation shall
+be based upon the principle ofan instantaneous (brick wall) stop ofthe preceding train.
+For mixed-mode operation (see 4.4), safe train separation shall be provided through supplementary systems
+andlor through strict adherence to operating procedures, as specified by the authority havingjurisdiction。
+Ifsecondary train location determination is provided (see 6.1.1.2), then for a CBTC-equipped train following
+non-CBTC-equipped train or a train with inoperative train-borne CBTC equipment, a CBTC system shall
+limit the movement authority Of the following train to the boundary Of the section of track occupied by the
+IOn-
+CBTC-equipped or failed train. If specified by the authority having jurisdiction, the CBTC system may
+further limit the movement authority to the route
+point ofa route occupied by the non-CBTC-equipped
+train Or failed train_
+The CBTC safe train separation finction shall consist of the following:
+The calculation ofthe ATP profile (i.e., the profile of safe speed as a function oftrain location), derived
+from fixed ATP data
+permanent speed limits) and variable ATP data
+temporary speed limits
+and movement authority limit)
+b)
+The supervision and enforcement ofthe ATP profile calculated by the CBTC system
+The ATP profile shall be governed by
+safe braking model (see 6.1.2.1) and shall ensure that under no
+circumstances (including failures) will the movement authority limit be exceeded by a CBTC-equipped train。
+28
+Copyright @ 2025 IEEE.All rights reserved
+Speed
+for
+Speed
+entry
+(e.8,
+(C.8,
+
+IEEE Std 1474.
+TM-2025
+IEEE Standard for Communications-Based Train Control (CBTC) Performance and Functional Requirements
+The movement
+authority limit shall be the most restrictive of the following:
+The rear Of
+CBTC-equipped train ahead (as determined by the CBTC train location function 边
+6.1.1.1), with allowance for any location uncertainty
+b)
+The boundary ofa section oftrack occupied by anon-CBTC-equipped train or a train with inoperative
+train-borne CBTC equipment
+as determined by a secondary train detection system, i provided, per
+6.1.1.2)
+The end-of-track (see 6.1.5)
+The entrance tO an
+interlocking; when the route is not verified as aligned and locked (see 6.1.11)
+The boundary of a section Of track with an opposing authorized travel direction or conflicting routing
+established
+see 6.1.12)
+廿
+The boundary Ofa blocked track (see 6.1.13)
+8
+If specified by the authority having jurisdiction, the entrance tO
+highway
+crossing where
+warning devices are not confirmed to be operating (see 6.1.15)
+h)
+The entrance to a route that is detected to be unsafe for train movement (see 6.1.16)
+I
+specified by the authority having jurisdiction; the CBTC safe train separation function shall support
+automatic close-up oftrains and automatic coupling and uncoupling oftrains in designated areas_
+I
+specified by the authority having jurisdiction, facilities may be provided to bypass the CBTC safe train
+separation function to allow
+train, under the control of
+8 train Operator; to travel
+beyond its movement
+authority limit (e.8., at a restricted speed).
+I specified by the authority having jurisdiction, facilities may be provided to
+back (i.e., make more
+restrictive) a movement authority limit previously granted to a train. If the train were approaching Or braking
+toward the original movement authority limit, the train may be in violation of the new ATP profile. Under
+such circumstances, a CBTC system shall initiate an immediate brake application. The brake
+application may
+be an immediate emergency brake application Or a
+supervised service brake application, as specified by the
+authority having jurisdiction (see 6.1.3).
+6.1.2.1
+Safe braking model
+safe braking model shall be developed for each CBTC
+application。
+The safe braking modelshall, as a minimum, include consideration of the following:
+Location uncertainty Of lead train (including rollback tolerance)
+b)
+Train length
+Train configuration (see 4.3)
+4)
+Allowable overspeed permitted by the CBTC system
+Maximum CBTC speed measurement error
+廿
+CBTC system reaction times and latencies
+8)
+Maximum train acceleration rate possible at the time an overspeed condition is detected by the CBTC
+system
+h)
+Worst-case reaction times to disable the propulsion system and apply the emergency brakes following
+detection ofan overspeed condition by the CBTC system
+j
+Guaranteed emergency brake rate (GEBR)
+j
+Grade
+29
+Copyright @ 2025 IEEE
+All rights reserved 
+grade
+Pull
+
+IEEE Std 1474.
+TM
+2025
+IEEE Standard for Communications-Based Train Control (CBTC) Performance and Functional Requirements
+The GEBR shall be the minimum emergency brake rate achieved by a train on level tangent track under the
+range Of environmental conditions and worst-case credible latent brake equipment failure modes, Which can
+be anticipated to exist for that train in the specific application. The GEBR shall be specified by the authority
+having jurisdiction and shall include consideration Of maximum train load, minimum anticipated adhesion
+levels, and maximum design tailwind。
+typicalsafe braking modelis provided in Annex D.
+ACBTC system shall have the capability to support multiple safe braking models to accommodate different
+train
+acceleration/braking rates for different classes and configurations Of trains operating simultaneously
+within CBTC territory
+and
+t0
+accomnmodate
+automatic   close-UP
+and
+automatic   couplingluncoupling
+capabilities, as specified by the authority having jurisdiction. A CBTC system shall incorporate appropriate
+protection to ensure that the correct safe
+braking modelis
+for a
+giventrain at a given location。
+6.1.3 Overspeed protection and brake assurance
+Overspeed protection shall be a required ATP function for any CBTC system configuration.
+I
+establishing; supervising, and enforcing the ATP profile, as governed by the safe braking modelof 6.1.2.1,a
+CBTC system shallensure that under no circumstances, including failures, the train 's actualspeed exceeds its
+safe speed. The safe speed shallbe derived by considering the most restrictive ofthe following:
+The permanent
+limits on sections Oftrack within the ATP profile
+b)
+temporary
+restrictions on sections oftrack within the ATP profile
+Permanent
+restriction applicable to the particular class or configuration oftrain
+restrictions enforced on the train because oftrain-borne failure conditions
+The maximum
+that would allow the train to stop safely prior to the limit ofthe train s movement
+authority Or to slow down sufficiently to meet
+appropriate permanent or temporary
+restrictions
+UPon
+entering that section oftrack
+Speed limits and restrictions shall apply When any portion of the train is within the
+limit area. Speed
+limitlspeed restriction resolution parameters for typical CBTC systems are included in Annex C.
+Enforcement of the calculated ATP profile shall be achieved by comparing the CBTC-determined train speed
+with the ATP profile speed at the CBTC-determined train location. If the ATP profile
+at that location is
+exceeded, the CBTC system shallinitiate an immediate brake application。
+The brake
+application may be an immediate emergency brake
+application
+OI
+supervised service brake
+application, as specified by the authority having jurisdiction. In the latter case, a CBTC system shall monitor
+te achieved brake rate to determine that a1
+acceptable brake rate is achieved within
+predetermined
+time frame; if not, it shall immediately apply the emergency brakes。
+The safe
+braking model shall include
+appropriate allowances for reaction times associated with this brake assurance function。
+6.1.4 Rollback protection
+Rollback protection shall be a required ATP function for any CBTC system configuration。
+ACBTC system shall monitor actual train travel direction and shall compare measured travel direction with
+te authorized travel direction. Train motion against the authorized travel direction for more than a specified
+rollback tolerance (distance, optional velocity) shallresult in the CBTC system initiating an emergency brake
+application. Rollback detection criteria for typical CBTC systems are included in Annex C
+30
+Copyright @ 2025 IEEE.All rights reserved
+applied
+Speed
+Any
+Speed
+Any
+speed
+Any
+speed
+speed
+speed
+Speed
+speed
+
+IEEE Std 1474.1TM-2025
+IEEE Standard for Communications-Based Train Control (CBTC) Performance and Functional Requirements
+6.1.5 End-of-track protection
+End-of-track protection shall be a required ATP function for any CBTC system configuration that permits the
+operation oftrains uP to, or in close proximity to, an end-of-track terminus。
+End-of-track protection shall be incorporated
+Or function i conjunction with, overspeed protection to
+prevent trains
+over-traveling the end-of-track or, if buffers are specified, to prevent trains from exceeding
+the design limits for impact with an end-of-track buffer. End-of-track protection design shall be based on the
+safe braking modelof 6.1.2.1.
+6.1.6 Parted train protection and coupling and uncoupling of trains
+Where separate vehicles can be coupled together in a consist oftwo or more vehicles or units to form a train, a
+CBTC system shall have the capability Of detecting and protecting
+trains. Parted train protection shall
+be required regardless of whether the individual vehicles or units are considered to be permanently coupled or
+whether
+are
+routinely uncoupled for maintenance or operationalpurposes。
+A CBTC system shall also support operating requirements for coupling and uncoupling Of trains, including
+automatic update ofthe consist length within the CBTC system_
+Ifspecified by the authority having jurisdiction, a CBTC system may assume a fixed, worst-case, maximum
+tain length for a given class oftrains operating 证 CBTC territory, with a reliance on operating procedures to
+ensure this maximum train length is not exceeded.
+6.1.7
+Zero speed detection
+Zero
+detection Shall be a
+required ATP function for any CBTC system configuration and shall be i
+accordance with the
+requirements 0f5.10 OfIEEE Std 1475-2012.
+Zero
+detection criteria for typical CBTC systems and applications are included in Annex C.
+6.1.8 Train door protection
+6.1.8.1
+Door opening control protection interlocks
+Iftrains are operated with crews, door open control protection interlocks may be a required ATP function, at the
+option of the authority having jurisdiction. For operation oftrains without crews, door open control protection
+interlocks shall be mandatory. These interlocks, if provided, shall be such that the following conditions are
+satisfied
+t0
+enabling the opening Ofthe train doors (and platform doors, i fitted):
+Thetrainis "properly aligned' ata designated stopping point, where the designated stopping pointand
+required tolerances shall be as specified by the authority havingjurisdiction。
+b)
+There is a platform (or other location specified by the authority having jurisdiction) on the side of the
+train for which the door opening is allowed。
+Zero speed is detected, in accordance with 6.1.7.
+The train is constrained against motion。
+For
+applications where the train length exceeds usable platform length, selective door open enable
+shallprevent enabling doors not aligned with platform。
+If specified by the authority having jurisdiction, facilities may be provided for a local manual bypass Of the
+preceding door open control protection interlocks, for failure recovery purposes
+31
+Copyright @ 2025 IEEE.All rights reserved
+into,
+from
+parted
+they
+speed
+Speed
+Prior
+
+IEEE Std 1474.1TM-2025
+IEEE Standard for Communications-Based Train Control (CBTC) Performance and Functional Requirements
+6.1.8.2 Emergency Evacuation Door Release
+Ifrequired by the authority having jurisdiction, a CBTC system shall support emergency evacuation in areas
+between stations. Door release shallonly be allowed for side with a designated emergency walkway。
+6.1.8.3 Uncommandedtrain door opening
+Automatic response to an uncommanded train door opening event may be a
+required ATP function, at the
+option ofthe authority having jurisdiction。
+This function, i provided, shall continuously monitor the closed and locked status Of all passenger doors On
+each car Of the train and shall provide a safe reaction 让 at any time 让 cannot be confirmed that all passenger
+doors are closed and locked when
+are
+being commanded closed。
+The safe reaction to be taken by the CBTC system upon detection of an uncommanded train door opening
+event shallbe specified by the authority having jurisdiction。
+6.1.9
+Platform Interlocks
+6.1.9.1
+Departure Interlocks
+I trains are operated with crews, departure interlocks may be 8
+ required ATP function, at the option Ofthe
+authority havingjurisdiction。
+For operation of trains without crews, departure interlocks shall be mandatory。
+These interlocks, where required, shallprevent a stationary train
+moving
+by disablingthepropulsion
+system and apply brakes) unless all train doors (and platform edge doors, i fitted) are properly closed and
+locked, in accordance with the requirements Of 5.14 OfIEEE Std 1475-2012.
+Ifa platform edge door to train door intrusion system is provided for a gap between train and platform edge
+door; in the event ofintrusion detected, the CBTC system shall prevent train from departing:
+If specified by the authority having jurisdiction, facilities may be provided for a local manual bypass Of the
+preceding departure interlocks, for failure recovery purposes_
+6.1.9.2
+Arrival Interlocks
+I trains are operated with crews, arrival interlocks may be
+required ATP function, at the Option Of the
+authority having jurisdiction。
+For operation of trains without crews, arrival interlocks shall be mandatory。
+These interlocks, where required shall function as follows:
+Ifplatform edge doors are not closed and locked, train movement into station shall be prevented。
+b)
+Ifan intrusion system is provided, in the event of intrusion detected, the CBTC system shall prevent
+train
+entering station
+Ifs
+specified by the authority having jurisdiction, facilities may be provided for a local manual bypass
+Ofthe preceding arrival interlocks, for failure recovery purposes。
+32
+Copyright @ 2025 IEEE.All rights reserved
+they
+fron
+(e.8,
+from
+
+IEEE Std 1474.1TM-2025
+IEEE Standard for Communications-Based Train Control (CBTC) Performance and Functional Requirements
+6.1.10Emergency braking
+The train 's emergency brake system shall be capable ofbringing the train to a stop within the assured stopping
+distance determined by the safe braking model of 6.1.2.1. Specific criteria for resetting the emergency brakes
+to allow normal operation to resume shall be
+specified by the authority having jurisdiction. If conditions (as
+determined by ATP) are not correct for train movement, the emergency braking shallremain
+regardless
+Of any reset signals or actions, except that facilities may be provided for
+local manual bypass of the ATP
+functions for that train to permit manual train operation for failure recovery purposes. Use Of such facilities
+shall require strict adherence to operating procedures to provide for the safety oftrain movements. If correct
+ATP conditions exist after the emergency brakes have been reset, the train shall be permitted to move Or
+continue to move; however; i the actual train speed
+exceeds the ATP profile speed or
+subsequent
+malfunction OcCUrS, emergency
+braking shallbe
+as before.
+6.1.11
+Route interlocking
+CBTC system shall provide route interlocking functions equivalent to conventional interlocking practice
+to prevent train collisions and derailments. These functions shall include locking of the route 边 advance Of
+the train entering the interlocking (time or approach locking) and once the train is i the interlocking (route
+locking). The switches shall also be locked when the track section containing the switch is occupied by a
+train (detector
+locking). Locking functions shall also apply to moveable bridges and similar right-of-way
+apparatus. Sectionalrelease (ofroutes behind a train ) may be provided where specified by the authority having
+jurisdiction.
+NOTE
+The AREMA Communications and Signals Manual, Sections 2 and 16 [81], provides examples ofrecommended
+practices for use in interlocking design。
+A movement
+authority shallnot be advanced into an interlocking until the
+appropriate route is set and locked。
+Once
+3 Iovement
+authority has been advanced through an interlocking; the affected route shall not be
+released, and
+conflicting routes cleared unless either the train has traveled through and is verified clear of the
+interlocking orthe movement authority is pulled back short ofthe interlocking andis in effect。
+When
+specified by the authority having jurisdiction, interlocking functions may be provided by separate
+interlocking equipment, which is based on train position established by a secondary train detection subsystem。
+In this case, a CBTC system shall interface to and may modify the conventional interlocking functions based
+ontrain position established by the CBTC train location determination function, to safely enable the enhanced
+performance capabilities Ofa CBTC system to be realized。
+6.1.11.1
+CBTC interfaces to a separate interlocking
+Ifa separate interlocking is specified, a CBTC system shallinterface to interlockings as follows:
+Time or approach locking shallapply, except in the event ofa route being canceled for a1 approaching
+CBTC train (i.e., the movement authority is pulled back short of the interlocking and is in effect). 皿
+this case, if the train is greater than
+safe
+braking distance from the entrance to the
+interlocking (as
+determined by the safe braking modelof 6.1.2.1) or the train stops
+to
+entering the interlocking;
+the route shall be released without running further time_
+b)
+Iraffic locking
+be overridden So that
+CBTC-equipped trains may move in opposing directions
+within their respective movement authorities on the same track at the same time。
+Wayside signals and their aspects may be provided as specified by the authority having jurisdiction.A
+CBTC system may override the conventional aspects to cause the signal(s) to display CBTC aspect(s)
+only to CBTC-equipped trains
+33
+Copyright @ 2025 IEEE.All rights reserved
+applied 
+again
+applied
+Prior
+may
+
+IEEE Std 1474.
+2025
+IEEE Standard for Communications-Based Train Control (CBTC) Performance and Functional Requirements
+6.1.11.2 Responses to CBTC train location failures
+In the event ofa failure ofthe CBTC train location determination function, route
+locking shallremain in effect
+until the train is proven to be clear of the interlocking by the CBTC system (i.e., the train is subsequently
+determined to be clear Of the interlocking limits ), or through operating procedures, Or a combination Of both
+approaches。
+I the event Of a failure Of the CBTC train location determination function 边 an
+interlocking where train
+location is also capable of being detected by means Of a secondary system CBTC system overrides of the
+interlocking functions may be released, provided route and other locking functions are maintained by
+separate interlocking system so as to prevent the movement ofa switch in front ofand under the train until the
+train is Proven to be clear ofthe
+interlocking:
+6.1.11.3 Response to loss of switch indication
+In the event ofa loss ofswitch idication once a movement
+authority has been issued across a switch, a CBTC
+system shallpull back the movement authority to a
+ prior to the switch。
+6.1.12 Travel direction reversal interlocks
+Travel direction reversal interlocks Shall be
+required ATP function for any CBTC system application
+requiring bidirectional operations, in order to support reversal of train direction at terminal stations and to
+support intermediate turn backs and shuttle modes of operation, for example
+Itshallnotbe possible to extend the movementauthority for a train into a section oftrack for which an opposing
+authorized travel direction has already been established。
+A reversal Of authorized travel direction within
+section Of track shall not be possible unless both Of the
+following
+are true:
+Alltrains within that section oftrack are at zerO
+and constrained against motion in the original
+authorized travel direction。
+b)
+The movement authorities for all trains outside of that section of track do not extend into the section
+and are constrained from
+being extended into the section in the original authorized travel direction。
+6.1.13 Workzone protection
+ACBTC system shallnot grant movement authorities to trains to operate into out-of-service (blocked) tracks
+OI
+through switches blocked in other than the required position and shallenforce restricted speeds on approach
+to and through defined work zones (see 6.3.6.4). A CBTC system may also include capabilities to preclude
+ATO mode ofoperation through a work zone_
+6.1.14
+Broken rail detection
+Where
+specified by the authority having jurisdiction, a CBTC system may interface to an external system for
+purposes Ofbroken rail detection. ACBTC system s reaction to a detected broken rail shall be as specified by
+the
+authority havingjurisdiction。
+6.1.15 Highway grade-crossing warning
+Where highway crossings at grade exist within the limits OfCBTCterritory and where specified by the authority
+havingjurisdiction, a CBTC system may interface to grade-crossing warning devices to permit controlofsuch
+devices based on CBTC location reports and to coordinate movement authorities through the crossing based
+34
+Copyright @ 2025 IEEE.All rights reserved
+TM _
+Point
+Sspeed
+
+IEEE Std 1474.
+TM
+2025
+IEEE Standard for Communications-Based Train Control (CBTC) Performance and Functional Requirements
+On the status from such devices.
+Specific requirements shalladhere to local
+crossing standards and shall
+be further defined by the authority having jurisdiction and may include any Of the following:
+Constant
+and consistent) warning times, independent oftrain speed or accelerationldeceleration
+b)
+For trains making station stops prior to crossings, delayed activation Of the warning devices until the
+train is ready to depart the station
+An external subsystem providing status Of
+crossing may modify CBTC operation, such
+35
+movement authority limit
+When a train clears
+crossing i multiple track areas, continued activation Of the warning devices 迕
+the CBTC system predicts a second train will reactivate the devices within a predefined time interval
+Advance warning for priority control of highway traffic signals or other highway signage, (e.8:, as
+described in IEEE Std 1570-2002)
+6.1.16 Restricted route protections
+Where specified by the authority having jurisdiction, a CBTC system shall include capabilities to prevent a
+train from
+entering_
+a route that is unsafe for movement of that type oftrain due to mechanical, civil, electrical,
+Or other
+predefined temporary Or permanent conditions Of the train Or route, Or through interfaces to intrusion
+detection devices, platform edge doors
+where fitted), andlor other devices capable of detecting hazards that
+impact route integrity。
+6.2
+ATO functions
+For operation oftrains without crews, a CBTC system shall, as a minimul, be capable Of providing allofthe
+ATO functions as defined in this sub clause, to automatically operate trains i accordance with prescribed
+operating criteria within the safety constraints imposed by ATP。
+For operation of train with crews, the required ATO functions shall be as specified by the authority having
+jurisdiction.
+The CBTC wayside-to-train and train-to-wayside data communications interface shallbe sufficient to support
+a11
+required ATO functions_
+6.2.1
+Automatic speed regulation
+The
+starting; stopping; and speed regulation Of the train as it travels
+the track shall be automatically
+controlled by a CBTC system so that the speed , acceleration, deceleration, and jerk rates are within specified
+passenger comfort limits (as defined by the authority having jurisdiction) and the train
+Is below the
+overspeed limits imposed by ATR。
+Station stopping accuracy shall be as specified by the authority having jurisdiction。
+ACBTC system may support multiple ATO speeds, acceleration, and service brake rates i accordance with
+the train operator (ifpresent) or ATS inputs。
+6.2.2
+Platform berthing control
+ACBTC system shallbe capable of implementing any Of the following platform berthing control modes=
+Where the platform length is approximately equal to the train length。
+CBTC system shall allow
+train to enter a station platform only if there is sufficient room to fully berth or if the preceding train
+has
+movement authority that shallallow it to fully leave the platform area and it has begun to move
+out of the station (i.e., within ATP constraints, train movement shall be controlled to minimize the
+likelihood ofthe train coming to a stop when only partially within the station platform limits).
+35
+Copyright @ 2025 IEEE
+All rights reserved 
+grade
+grade
+along
+speed
+
+IEEE Std 1474.
+TM
+2025
+IEEE Standard for Communications-Based Train Control (CBTC) Performance and Functional Requirements
+6)
+Where the
+platform length is longer than the train length,
+CBTC system shall support multiple
+stopping positions within the platform area, as defined by the authority having jurisdiction。
+Where the platform length supports multiple train berthings, a CBTC system shall allow
+train to
+enter a
+platform while another train already occupies an alternative berth。
+Where the platform length is shorter than the train length, a CBTC system shall support platform
+berthings consistent with the door opening control protection interlocks Of 6.1.8.
+6.2.3 Door control
+CBTC system shall be capable Of automatically controlling train doors (and platform edge doors, where
+fitted) during passenger boarding and discharging:
+As defined by the authority having jurisdiction, automatic door control may be fully automatic (both open and
+close) or
+be limited to the following:
+Automatic door opening only
+with Or without Passenger door open requests)
+b)
+Automatic door
+closing only
+Neither automatic door opening nor closing
+Ifautomatic platform edge doors are provided,
+Shall be controlled as a set with the
+matching train doors
+Such that the train and
+matching platform edge doors open and close together. It shallbe possible to manually
+disable the operation Of any door set (both the train and the matching platform edge door ) without affecting
+the automatic operation Of other door sets. If a train door is disabled, the corresponding platform edge door
+shallnot open. Ifa
+platform edge door is disabled, the corresponding train door shallnot open. The amount Of
+time the train is to remain in the station with doors open may be established by ATS (6.3.5.1) and automatically
+controlled by ATO.
+6.2.4 Standby mode and Sleep mode
+6.2.4.1 Standby mode
+If required by the authority having jurisdiction, a CBTC system shall be capable to send
+a command to the
+train to turn offnon-essential systems as specified by authority having jurisdiction。
+For a train in standby mode: A CBTC system shall be capable to send a command to the train to turn on non-
+essentialsystems。
+6.2.4.2 Sleep mode
+Ifrequired by the authority having jurisdiction, a CBTC system shall be capable to turn Off (or partially tumn
+0ff) the train-borne CBTC equipment and of
+waking Up when commanded。
+6.2.5 Train Wash
+Ifrequired by the authority havingjurisdiction, a CBTC system shall support train
+functions aS
+specified
+by authority having jurisdiction such as lower speed and accurate stopping:
+6.2.6
+Reduced Performance Due to Environmental Factors
+Ifrequired by the authority havingjurisdiction, a CBTC system shallsupport reduced braking andacceleration
+rates to compensate for non-optimal adhesion due to environmental conditions_
+36
+Copyright @ 2025 IEEE.All rights reserved
+may
+they
+Wash
+
+IEEE Std 1474.1TM-2025
+IEEE Standard for Communications-Based Train Control (CBTC) Performance and Functional Requirements
+6.2.7
+Jogging
+Ifrequired by the authority having jurisdiction, CBTC trains shall have provisions to reverse train movement
+t0
+re-position in order to align with the stopping
+These events shall be alarmed and logged i ATS or as
+specified by authority havingjurisdiction。
+6.2.8
+Automatic Coupling and Uncoupling
+Ifrequired by the authority having jurisdiction, provisions shall be made to command a train to automatically
+with
+stationary train. Coupling
+and operational conditions shall be as defined by authority
+having jurisdiction。
+Provisions shall also
+be made
+to command
+8 train
+t0
+automatically uncouple。
+The
+uncoupling point shall be as commanded by ATS. Uncoupling operational conditions shall be as defined by
+authority having jurisdiction. For coupling and uncoupling, train length and integrity shallbe in accordance
+with 6.1.6.
+6.3 ATS functions
+If specifed by the authority having jurisdiction,
+CBTC system may interface to, or be integrated with;
+a ATS system. Under such circumstances, and to the extent specified by the authority having jurisdiction,
+CBTC- related ATS functions shall be implemented as defined in this sub clause i order to benefit
+tle
+characteristics Ofa CBTC system as defined in 4.1, namely, the availability ofthe
+following:
+Train location information to a high precision, independent oftrack circuits
+b)
+Continuous wayside-to-train and train-to-wayside data communications link
+Train-bornc and
+wayside data processing capabilities
+The CBTC-related ATS functions defined in this sub clause shall be fully integrated with other conventional
+ATS functions and other IOn-ATS functions, as may be specified by the authority having jurisdiction, to
+support overallservice management for the transit system and provide for a single consistent user interface.
+The CBTC data
+communications network; inclusive Of the wayside-to-train
+and train-to-wayside data
+communications interface, shall be sufficient to support those CBTC-related ATS functions specified by the
+authority havingjurisdiction。
+6.3.1
+ATS user interface
+Each ATS user interface shall display all information and implement all control actions, as defined in 6.3,
+within acceptable latencies as specified by the authority having jurisdiction。
+Mandatory display data and user information inputs shall be in accordance with IEEE Std 1474.2-2025. The
+ATS user shallbe able to override any automated CBTC-related ATS functions defined in 6.3.
+Certain ATS functions (such as stopping a train en route and the application and removalof temporary
+restrictions, switchltrack blocking, Or work zones) can potentially introduce system hazards and the specific
+implementation of these functions shall be considered in the hazard analyses required by 5.3.2.ATS functions
+are notrequired to be implemented in a fail-safe manner; however, the hazard analyses shall take into account;
+aS 3 Iinimum, thC
+probability ofthe following:
+Safety-related commands not being executed when initiated by anATS user;
+b)
+The CBTC system prematurely removing safety-related commands initiated by an ATS user;
+The CBTC system executing safety-related commands that were not initiated by an ATS user;
+Incorrect information being displayed by the CBTC system to the ATS user:
+37
+Copyright@ 2025 IEEE
+All rights reserved 
+Point。
+couple
+speed
+fron
+speed
+
+IEEE Std 1474.
+TM-2025
+IEEE Standard for Communications-Based Train Control (CBTC) Performance and Functional Requirements
+The hazard analyses shall give due consideration of the specific transit
+application and whether the trains are
+operated with or without crews_
+Control action confirmation (e.8., separate acknowledgment) shall be provided for any safety-related user
+interfaceslinputs and functions whose inadvertent implementation could have an adverse operational impact
+removalof work zones, removalofspeed restrictions), as defined by the authority having jurisdiction。
+Control
+action
+Comands
+Iay
+be implemented 边
+a Closed
+manner that
+requires
+request and
+acknowledgment between ATS and CBTC system_
+6.3.2
+CBTCtrain identification and train tracking
+Each CBTC-equipped train operating within CBTC territory shall be assigned a train identification. This train
+identification shallindicate the type oftrain and other pertinent information about the train。
+An ATS system shall have the capability to automatically track, maintain records Of, and display on the ATS
+user interface the locations, identities, train schedule, and other pertinent data for all CBTC-equipped trains
+operating i the CBTC territory. The front and rear position of trains shall be tracked based on CBTC train
+location reports, and the train location shall be displayed on the ATS user interface. Variations in train length
+may be displayed either proportionally or as a standard-length icon supplemented by textualtrain length data。
+The ATS systems may also have provisions to display non-CBTC or non-communicating trains_
+6.3.3 Train routing
+An ATS system shall have the capability to permit CBTC-equipped trains operating in CBTC territory to be
+manually and automatically routed based on CBTC train location reports and 证 accordance with the train
+service data, predefined routing rules, and any ATS user-directed service strategy. Where applicable to the
+Specific track configuration, automatic routing shall facilitate the proper merging and diverging Of trains
+at junctions; turn back Of trains, the movement Of trains fromlto storage areas, and the rerouting Of trains
+讧 response to service disruptions andlor planned outages. Train routes shall be indicated on the ATS user
+iterface and may also be indicated to the train operator and/or conductor; 让 present, on their displays, as
+specified by the authority having jurisdiction。
+AnATS system
+also include a means to control and limit movement authorities Of CBTC-equipped trains
+operating in CBTC territory. CBTC movement authority limits shallbe capable ofbeing displayed on the ATS
+user interface, and any uncommanded reductions of authority limits shall be alarmed。
+For trains operated with crews, movement authority limits may also be indicated to the train operator andlor
+conductor on their displays, as specified by the authority having jurisdiction。
+6.3.4
+Automatic train regulation
+6.3.4.1 Schedulelheadway regulation
+An ATS system may have the capability to automatically monitor and regulate the performance Of CBTC-
+equipped trains operating in CBTC territory, in relation to schedule andlor headway adherence。
+An ATS system may include an automatic dispatching function (based on train identities, schedules, CBTC
+train location reports, scheduled and actual headways between trains, and service strategies implemented by
+authorized ATS uSeIS
+Schedule and headway regulation for CBTC-equipped trains shall be by means Of dwell time variance
+(including train holds) and may also be by controlofrun times between stations (e.8., through adjustments to
+train acceleration and service brake rates, and speeds), as specified by the authority having jurisdiction. For
+trains operated with crews, the desired station departure time, dwell time, and desired speed profile between
+38
+Copyright @ 2025 IEEE.All rights reserved
+(e.8
+Ioop
+Iay
+
+IEEE Std 1474.
+TM
+2025
+EEE Standard for Communications-Based Train Control (CBTC) Performance and Functional Requirements
+stations may be indicated to the train operator and/or conductor on their
+displays, and, when operating iATO
+mode, shall be implemented automatically by a CBTC system using the automatic speed regulation function
+Of 6.2.1 and may include dwelltime adjustment。
+AnATS system may provide the capability to adjust the train service braking profiles and tractive effort for
+CBTC-equipped trains (e.8., in response to climatic (e.8., wet rail conditions).ACBTC system shall coordinate
+implementation Of requested changes in service braking profiles to avoid conditions that would result i a
+emergency brake application。
+6.3.4.2 Junction management
+An ATS system may include automatic train
+regulation functions, based on CBTC train location reports, to
+facilitate appropriate train meets (such as transfers between local and express tracks, and at the merge point
+between different lines) in order to optimize overall system operational performance.
+6.3.4.3 Energy optimization
+An ATS system may have the capability to implement energy optimization algorithms for CBTC-equipped
+trains through the real-time control and coordination of train acceleration, train coasting, and train braking:
+The priority given to energy optimization versus schedulelheadway regulation shall be as specified by the
+authority havingjurisdiction.
+6.3.5 Station stop functions
+6.3.5.1
+Stop train at next station
+AnATS system may include the means to direct a single CBTC-equipped train or a group OfCBTC-equipped
+trains to Stop at the next station, even ifthe train is scheduled to bypass that station. For trains operated with
+crews, a CBTC system may indicate the ATS train stop information to the train operator and conductor on their
+displays. In ATO mode, a CBTC-equipped train shall automatically stop at the next station.
+6.3.5.2 Hold train at station
+For trains operated without crews, an ATS systen shall include facilities to hold (and subsequently release) a
+CBTC-equipped train at 3 station。
+For trains operated with crews, this function is optional and shall be as specified by the authority having
+jurisdiction. If this function is provided, a CBTC system may indicate the train hold information to the train
+operator and conductor on their displays, andlor prevent a CBTC-equipped train from departing the station i
+ATO mode。
+6.3.5.3 Skip station stop
+AnATS system may include facilities to direct a CBTC-equipped train Or group Of CBTC-equipped trains to
+pass through a station Or group of stations without stopping: For trains operated with crews, a CBTC system
+may indicate the skip station information to the train operator and conductor on their displays. In ATO mode,
+the train shall automatically skip the designated stations at a
+not
+exceeding
+as defined by authority
+havingjurisdiction. Skip station stop command may inhibit automatic door opening if train happens to stop at
+Platform
+Per movement authority).
+6.3.5.4 Door control inhibit
+AnATS system may include facilities to inhibit (and subsequently permit) CBTC controlofthe train doors, "
+accordance with 6.2.3
+39
+Copyright @ 2025 IEEE.All rights reserved
+speed 二
+speed
+(e.8;
+
+IEEE Std 1474.1TM-2025
+IEEE Standard for Communications-Based Train Control (CBTC) Performance and Functional Requirements
+6.3.6 Restricting train operations
+The
+application and removalof the following restrictive functions can potentially introduce system hazards
+and the specific implementation Of these functions shall be i accordance with 6.3.2 and considered i the
+hazard analyses required by 5.3.2. Stacked (multiple) safety related or restrictive commands shall be removed
+onC at a time i accordance with 6.3.2 So that no unintended
+permissive state is allowed。
+6.3.6.1
+Stopping atrain enroute
+AnATS system shallprovide a means to stop a single CBTC-equipped train or group OfCBTC-equipped trains
+immediately.ACBTC system shallinitiate an immediate brake application on the designated trains and notify
+the train operator and conductor; i present, via their displays. Removal of the ATS initiated stop command
+may be accomplished on a train by train basis for all CBTC-equipped trains_
+6.3.6.2 Temporary speed restrictions
+An ATS system shall include facilities to impose (and remove) temporary speed restrictions for CBTC-
+equipped trains operating On any section oftrack in CBTC territory (see 6.1.3).
+6.3.6.3 Switchltrack blocking
+An ATS system shall include facilities to block
+and subsequently unblock) a switch。
+controlled signal, a
+route
+point, or a section Of track within CBTC territory. A CBTC system shall prohibit CBTC-equipped
+trains from receiving movement authorities over blocked switches not aligned in the required position or into
+routes andlor sections oftrack that have been blocked (see 6.1.2 and 6.1.3 )_
+6.3.6.4 Workzones
+An ATS system shall include facilities to establish
+and subsequently remove) temporary work zones for the
+protection Of work crews and work trains
+ACBTC system shallenforce restricted speeds on approach to and through defined work zones
+see 6.1.13).A
+CBTC systems may also enforce restricted
+on adjacent track through defined work zone as determined
+by authority having jurisdiction。
+A CBTC system may also enforce
+stop prior to entering work zone. For
+trains operated with crews, information indicating that the restriction is due to a work zone shall be displayed
+tO the train operator and conductor on their
+displays, and the CBTC system may preclude ATO mode Of
+operation through a work zone.
+I the authority
+having jurisdiction allows roadway workers
+train operations, the ATSICBTC system
+may provide methods of visually and audibly idicating the approach oftrains
+the
+wayside tO warn OD-
+track roadway workers。
+6.3.6.5 Climatic conditions
+Ifa Climatic condition is a function ofthe service brake calculations, removalofsuch restriction shall be done
+- accordance with 6.3.2.
+6.3.7 Passengerinformation system interfaces
+An ATS system may iterface with
+wayside andlor train-bome passenger information systems to trigger
+automatic passenger information messages, such as train arrival information, based on CBTC train location
+reports. Train-borne passengerinformation systeminterfaces shallbe in accordance with IEE Std 1477-1998.
+40
+Copyright @ 2025 IEEE.All rights reserved
+entry
+speed
+during
+along一
+
+IEEE Std 1474.1TM-2025
+IEEE Standard for Communications-Based Train Control (CBTC) Performance and Functional Requirements
+6.3.8 Fault reporting and logs
+6.3.8.1
+CBTC fault reporting
+Failures and out-of-tolerance conditions detected by, or input to,
+CBTC system that can impact the On-
+time performance Of the transit system Or result i some other loss Of specific CBTC functionality may be
+automatically indicated on the ATS user interface display.
+alarms shall be categorized and prioritized into
+criticaland noncriticalalarms and logged.Allcriticalalarms, as defined by authority having jurisdiction shall
+require acknowledgment。
+6.3.8.2 Train fault reporting
+Train-borne
+CBTC equipment may include interfaces
+t0
+train-borne  subsystems
+for
+the Purposes
+Of
+communicating train health data to the wayside for display on the ATS user interface displays, as specified by
+te authority havingjurisdiction。
+6.3.8.3 CBTC data logging
+CBTC system shall log all communication between all CBTC sub systems in all modes ofoperation and store
+i accordance with requirements as defned by authority havingjurisdiction。
+CBTC logged data shall be available for playback analysis and incident investigation and to aid 边 trouble
+shooting: This data may also be available for external data analysis by 3rd party tools_
+6.4 Interoperability interface requirements
+This performance and functional requirements standard does not include interface design standards for
+interoperability: Where interoperability requirements are specified by the authority havingjurisdiction, it shall
+be the responsibility of that authority to define the required interoperability interface standards_
+NOTE
+Examples of interoperability requirements include the following:
+Trains equipped with CBTC equipment firnished by one supplier to be capable of operating in CBTC territory
+equipped with wayside CBTC equipment furnished by another supplier
+b)
+Wayside equipment furnished by two separate suppliers to communicate with each other in the overlap area and
+with common centralATS
+equipment
+A basic operating unit with train-borne CBTC equipment furnished by one supplier to be capable of operating
+Within a train with another basic
+operating unit equipped with train-borne CBTC equipment furnished by another
+supplier
+future CBTC standard may establish interoperability interface requirements。
+41
+Copyright @ 2025 IEEE.All rights reserved
+Any
+
+IEEE Std 1474.1TM-2025
+IEEE Standard for Communications-Based Train Control (CBTC) Performance and Functional Requirements
+AnnexA
+(informative)
+Bibliography
+Bibliographical references are resources that provide additional or helpful material but do not need to be
+understood or used to implement this standard. Reference to these resources is made for informational use
+only。
+[81] AREMA Communications & Signals Manualof Recommended Practices。
+[82]
+IEEE Std 1698TM-2009, IEE Guide for the Calculation of Braking Distances for Rail Transit Vehicles。
+AREMA publications are available from the American Railway Engineering and Maintenance-OfWay Association, 8201 Corporate
+Drive, Suite 1125 , Landover, MD 20785-2230 USA
+WWW.arema.Org
+42
+Copyright@ 2025 IEEE
+All rights reserved 
+
+IEEE Std 1474.1TM-2025
+IEEE Standard for Communications-Based Train Control (CBTC) Performance and Functional Requirements
+Annex B
+(informative)
+Example functional block diagram for atypical CBTC system
+Figure B.1 illustrates the functional elements within CBTC ATP,ATO, ATS categories
+ATP Functions (6.1)
+Train LocationlTrain Speed
+End-Of Track Protection
+Platform Interlocks
+Work Zone Protection
+Determination
+6.1.
+6.1.5
+6.1.9
+6.1.13
+Parted Train Protection and
+Safe Train Separation
+Coupling and Uncoupling
+Emergency Braking
+Broken Rail Detection
+Of Trains
+6.1,2
+6.1.6
+6.1.10
+6.1.14
+Overspeed Protection and
+Highway Grade-Crossing
+Zero Speed Detection
+Route Interlocking
+Brake Assurance
+Warning
+6.1.3
+6.1.15
+Traffic Direction
+Restricted Route
+Rollback Protection
+Train Door Protection
+Reversal interlocks
+Protections
+6.1.4
+6.1.8
+6.1.12
+6.1.16
+ATO Functions (6.2)
+ATS Functions (6.3)
+Automatic Speed
+Train Wash
+ATS User Interface
+Station Stop Functions
+Regulation
+6,2.5
+6,3.
+3,5
+Reduced Performance Due
+CBTC Train Identification
+Restricting Train
+Platform Berthing Control
+to Environmental Factors
+Train
+Tracking
+Operations
+6.2.2
+6.2.6
+6.3.2
+3.6
+Passenger Information
+Door Control
+Jogging
+Train Routing
+System Interfaces
+6.2.3
+6.3.3
+Standby Mode and
+Automatic Coupling and
+Automatic Train
+Sleep Mode
+Uncoupling
+Regulation
+Fault Reporting and Logs
+6.2.4
+6.2.8
+6.3.4
+6.3.8
+Figure 8.1一Example functional block diagram fora typical CBTC system
+43
+Copyright @ 2025 IEEE.All rights reserved
+and
+
+IEEE Std 1474.1TM-2025
+IEEE Standard for Communications-Based Train Control (CBTC) Performance and Functional Requirements
+Annex C
+(informative)
+Typical CBTC parameters
+Table C.1 provides typical ranges for certain CBTC parameters for general guidance only. Parameter values
+for a
+specific application andlor a specific CBTC system design should be established by the authority having
+jurisdiction andlor the supplier, with due consideration ofallrelevant factors for the specific application。
+Table C.1-Typical CBTC parameters
+Parameter
+Typical range
+Minimuln
+number Of trains tat Can
+be processed by
+single wayside
+10 trains
+controller
+Resolution ofmeasured train location (i.e.,as reported to establish movement
+二 =
+6.251 (20f)
+authority limits for a following train for ATP purposes 二
+Accuracy
+0f
+measured
+train
+location
+during
+Iormal
+(non-degraded)
+士 IOI to 士601
+operations (i.e., maximull error in reported train location for ATP purposes)
+(士33 廿t04197f)
+Stopping accuracy Of programmed station stop (ATO) purposes
+without
+30 cm - 100 cm
+platform edge doors
+(士12-39皿)
+Resolution oftrain movement authority limnits
+士0.25 m to士6.25I
+(士10in to 士20f)
+Resolution oftrain speed measurement for ATP purposes
+士0.5 kmh to 士2 kmh
+(士0.3 milh to 士1.25 milh)
+Accuracy oftrain speed measurement for ATP purposes
+士0.8 klnlh (0.5 milh) + 3%
+ofmeasured speeds
+Resolution oftrain speed commands
+Civil
+limits)
+士0.5 kmlh to+5 kmlh
+(士0.3 milh to 士3 milh)
+Train-to-wayside message communication delays
+0.5 s to 2 s (nominal)
+Wayside-to-train message communication delays
+0.5 s to 2 s (nominal)
+Wayside CBTC equipment reaction times
+0.078 to 1 s (nominal)
+Train-borne CBTC equipment reaction times
+0.07 s to 0.75 s (nomninal)
+Rollback detection criteria
+<二1.0m t0 2.01
+(<3.3 fto 6.6f)
+Zero speed detection criteria
+<0.5 knlh for < = 1s
+(<0.3 milh)
+Maintenance tolerance for field objects
+0.051 to 1.221
+(2jto 48证)
+44
+Copyright @ 2025 IEEE.All rights reserved
+(e.8,
+speed
+
+IEEE Std 1474.1TM-2025
+IEEE Standard for Communications-Based Train Control (CBTC) Performance and Functional Requirements
+Annex D
+(informative)
+Typical safe braking model
+0.1
+Introduction
+typicalsafe braking model for CBTC systems is illustrated in Figure D.1.
+See IEEE1698-2009 for additional information. [82]
+It should be noted that Figure D.1 is not drawn to scale but is
+simplistic representation to assist i the
+understanding Of a typical CBTC safe braking model. It should also be noted that the safe braking model
+outlined here is defined for level tangent track and would need to be adjusted for grades. The safe braking
+parameters may be different depending on covered versus uncovered track.
+皿 Figure D.1,
+the emergency brake curve is the worst-case; open-looP; speedldistance curve
+8 train Will
+follow once the ATP has initiated an emergency brake application. This emergency brake curve is always less
+than Or equal to the safe
+Curve, Where safe
+is defined as the
+above Which a critical hazard
+(derailment or collision) could OcCUI:
+In this model, safety factors are accounted for in the emergency brake curve, train position uncertainties, and
+other additional measurement tolerances incorporated in the CBTC system design, and there is no requirement
+to add additional safety margins。
+The ATP overspeed detection curve is the speed-distance curve that the ATP subsystem uses to immediately
+initiate an emergency brake application, 让 the ATP subsystem detects that the measured
+exceeds this
+Curve at thC measured train Iocation_
+When the ATP subsystem has initiated an emergency brake application,
+the ATP subsystem is no longer i the control loop, and the train will emergency brake at Or below the
+emergency brake curve_
+The emergency brake curve includes an iitial propulsion runaway period, until
+propulsion is disabled.
+The ATP profile curve is the speed-distance curve that is an ATP overspeed allowance below the ATP over-
+detection curve. The ATP profile is the base curve used by the ATP subsystem_
+0.2
+Train-borne CBTC response time (A)
+In Figure D.1,it is assumed that the CBTC system will measure the train speed and train location (relative to
+is movement authority limit) and compare the measured
+with the ATP profile speed at that measured
+location, every A seconds
+WOISt case)
+In Figure D.1, point X represents the situation where the CBTC measured speed is just below the ATP over-
+detection curve at the ATP measured location, i.e., although the ATP measured speed is above the ATP
+profile, it is still within the ATP overspeed allowance. As such, the CBTC system willnot initiate emergency
+braking:
+However, because Of worst-case speed and location measurement errors (position uncertainty ), it is possible
+that the actual speed and actual location of the train could be a point Y。
+At this
+i time, although the train operator andlor ATO subsystem would normally be attempting to
+the train speed down to the ATP profile speed, it is assumed that a failure occurs that results in the train
+accelerating rather than braking:
+45
+Copyright @ 2025 IEEE.All rights reserved
+Speed
+Speed
+speed
+speed
+speed
+speed
+Speed
+point
+bring
+
+IEEE Std 1474.
+2025
+IEEE Standard for Communications-Based Train Control (CBTC) Performance and Functional Requirements
+seconds later; this situation will be detected by the CBTC system (point 乙 in Figure D.1), as the CBTC
+measured speed willnow clearly be in excess ofthe ATP overspeed detection curve, and the CBTC system will
+immediately initiate an open-loop emergency brake application。
+The speed at
+乙 therefore represents the maximum
+that a train can achieve above the ATP profile
+due to CBTC system s worst-case response times and measurement errors_
+Atthis point, theremaining contributions to the safe braking modelare determined by the vehicle characteristics
+only.
+0.3 Propulsion disable response time (B)
+During this component of the safe braking model (labeled B in Figure D.1 ), the train continues to accelerate
+until the train
+propulsion system has been disabled in response to the CBTC system initiating an emergency
+brake application。
+0.4 Coasttime (C)
+During this component ofthe safe braking model (labeled C in Figure D.1), the train is assumed to be coasting
+at thc maximum
+speed achieved as
+a Iesult Of the train
+accelerating
+t0
+propulsion being disabled. This
+componentofthe safe braking modelends when emergency braking begins to take effect。
+0.5 Emergency brake build-up time (D)
+During this component of the safe braking model (labeled D in Figure D.1 ), the emergency brake rate will
+build Up from zero to at least the GEBR.
+0.6 Emergency braking at GEBR (E)
+During this component ofthe safe braking model (labeled E in Figure D.1 ), the train continues to decelerate at
+the GEBR until the train comes to zero speed.
+NOTE
+The components D and E may be integrated
+an equivalent single brake curve
+0.7
+Position uncertainty
+The safe braking model shall include the maximum distance due to measurement inaccuracy by the CBTC
+system for both the leading and following train。
+46
+Copyright @ 2025 IEEE.All rights reserved
+TM _
+Point
+speed
+Prior
+ito
+
+IEEE Std 1474.1TM-2025
+IEEE Standard for Communications-Based Train Control (CBTC) Performance and Functional Requirements
+Emergency Brake
+Curye
+ATP Overspeed
+Point Z: Emergency
+Detection Curve
+Braking Initiated
+Point Y: Actual
+by ATP
+Movement Authority
+speedllocation at
+Limit
+start of propulsion
+runaway
+Speed Measurement Elror
+ATP Overspeed Allowance
+鲁
+Point X:
+Jnositionty
+Speedllocation;
+ATP Profile
+as determined by
+carborne ATP
+Position
+Uncertainty
+Trainborne ATP Reaction Time
+B
+Time to Disable Propulsion after EB
+Initiated
+C.
+Additional Time to Apply EB
+D
+Emergency Brake Build-up Time
+E
+Emergency Braking at GEBR
+DISTANCE (related to Safe Braking Model times)
+Figure D.1-Typical safe braking model
+47
+Copyright @ 2025 IEEE.All rights reserved
+
+IEEE Std 1474.1TM-2025
+IEEE Standard for Communications-Based Train Control (CBTC) Performance and Functional Requirements
+Annex E
+(normative)
+System Safety and Security Program requirements
+System Safety Program Plan may be superseded based on requirement established by regulatory bodies Or
+authority having jurisdiction。
+In addition to SSPP; the
+authority having jurisdiction may also implement a Systems Security Program that
+icludes a Threat and
+Vulnerability Assessment (TVA)。
+E.1
+System Safety Program Plan (SSPP)
+E.1.1 Purpose
+The SSPP shall describe; i detail, tasks and activities Of system safety management and system safety
+engineering required to identify, evaluate, and eliminatelcontrol hazards or reduce the associated risk to alevel
+acceptable to the authority having jurisdiction throughout the system life
+E.1.2 Description
+An SSPP shall be developed to provide a basis ofunderstanding as to how the System Safety Program will be
+accomplished to meet safety requirements_
+The approved plan shall, on an item-by-item basis, account for all
+required tasks and responsibilities. The SSPP shallinclude the following elements。
+E.1.2.1 Program scopeand objectives
+Each SSPP shalldescribe, as a minimum, the five elements ofan effective System Safety Program: defnitionof
+the safety tasks, a planned approach for task accomplishment, qualified people to accomplish tasks, authority
+to implement tasks through all levels ofmanagement, and appropriate commitment ofresources (both
+staffing
+and
+funding) to assure tasks are completed. The SSPP shall define
+program to satisfy the system safety
+requirements
+This section shall cover the
+following:
+Describe the scope of the overallprogram and the related System Safety Program
+b)
+List
+the
+tasks
+and
+activities
+Of system safety  management
+and   engineering;
+describe
+the
+interrelationships between system safety and other functional elements Of the program; list the other
+program requirements and tasks applicable to
+safety and identify where
+arC
+specified or
+described_
+Account for all contractually required safety tasks and responsibilities。
+A matrix shall be provided to
+correlate requirements to the location in the SSPP where the requirementis addressed。
+E.1.2.2 System safety organization
+The SSPP shall describe the
+following:
+The system safety organization Or function within the organization Of the total program using charts
+to Show the
+organizationaland functional relationships and lines of communication. It shallalso show
+the
+organizational relationship between other functional elements having responsibility for tasks
+with system safety impacts and the system safety management and engineering organization. It shall
+identify the review and approval authority Of applicable tasks by system safety。
+48
+Copyright @ 2025 IEEE.All rights reserved
+cycle。
+system
+they
+
+IEEE Std 1474.
+TM
+2025
+IEEE Standard for Communications-Based Train Control (CBTC) Performance and Functional Requirements
+6)
+The responsibility and authority Of system safety personnel, other contractor organizational elements
+involved in the system safety effort, subcontractors, and system safety groups_
+It shall identify the
+methods by which safety personnel
+raise issues Of concern directly to the program manager Or
+the program manager'$ supervisor within the corporation, the organizational unit responsible for
+executing each task, and the authority in regard to resolution ofall identified hazards_
+The staffing Of the system safety organization for the duration Of the contract to include manpower
+loading; control of resources, and
+summary Of the qualifications Of
+system safety personnel
+assigned to the effort。
+icluding those who possess coordinationlapproval authority for contractor
+prepared documentation。
+The procedures by Which the contractor will integrate and coordinate the system safety efforts,
+including assignment Of the system safety requirements to action organizations and subcontractors
+coordination Of subcontractor System Safety Programs, integration of hazard analyses, program and
+design reviews, program status reporting, and system safety groups_
+The Process through Which contractor management decisions
+will be made; including timely
+notification Of unacceptable risks, necessary action; incidents or malfunctions, waivers to safety
+requirements; program deviations, etc.
+Details Of how resolution and action relative to system safety
+will
+be effected
+at the Program
+management level possessing resolution authority。
+E.1.2.3 System Safety Program milestones
+The SSPP milestones shallinclude the following:
+Define System Safety Program milestones. It shall relate these to major program milestones, program
+elementresponsibility, and required inputs and outputs。
+b)
+Provide a program schedule of safety tasks, including start and completion dates, reports, and reviews。
+Identity subsystem, component, and software safety activities as
+well as integrated system level
+activities (i.e., design analyses, tests, and demonstrations) applicable to the System Safety Program;
+but
+specified in other engineering studies and development efforts to preclude duplication。
+Provide the estimated manpower
+loadingrequired to complete each task.
+E.1.2.4 General system safety requirements and criteria
+The SSPP shall describe the following:
+General engineering requirements and design criteria for safety. It shall include safety requirements
+for support equipment and operational safety requirements for allappropriate phases ofthe life
+UP
+and including; disposal. It shall list the safety standards and system specifications containing
+safety requirements that shall be complied with, and iclude titles, dates, and where applicable;
+paragraph numbers。
+b)
+Risk assessment procedures.
+I shall include the hazard severity categories;
+hazard probability
+levels, and the system safety precedence that shall be followed to satisfy the safety requirements
+Of the program. It shall state any qualitative Or quantitative measures Of safety to be used for risk
+asSessment,
+icluding a description Of the acceptablelunacceptable risk levels, and include system
+safety definitions that modify, deviate from, or are in addition to those in this standard。
+Closed-loop procedures for taking action to resolve identified unacceptable risk, including those
+involving non-developmentalitems。
+49
+Copyright @ 2025 IEEE.All rights reserved
+may
+key
+cycle
+t0,
+
+IEEE Std 1474.1TM-2025
+IEEE Standard for Communications-Based Train Control (CBTC) Performance and Functional Requirements
+E.1.2.5 Hazard analysis
+The SSPP shall describe the
+following:
+The analysis techniques and formats to be used i qualitative Or quantitative analysis to identify
+hazards, their causes and effects, hazard elimination, Or risk reduction requirements and how those
+requirements are met。
+b)
+The depth within the system to
+Which each technique is used, including hazard identification
+associated with the system, subsystem, components, software, data, hazardous materials, personnel
+ground support equipment, non-developmental itens, facilities and their interrelationship in logistic
+support, training, maintenance, operational, and disposal (including render safe and
+emergency
+disposal) environments。
+The integration ofsubcontractor hazard analyses with overall system hazard analyses。
+Efforts to identify and control hazards associated with materials used during the system 's life
+E.1.2.6 System safety data
+The SSPP safety data shallinclude the following:
+Describe the approach for collecting and processing pertinent historical hazard data, mishap data, and
+safety lessons-learned data_
+b)
+Identify deliverable data by title and number, and means Of delivery (e.8 , hard copy, electronically).
+Identify non-deliverable system safety data and describe the procedures for accessibility by the
+authority havingjurisdiction and retention Of data ofhistorical value.
+E.1.2.7 Safety verification
+The SSPP shall describe the following:
+The verification (test, analysis, inspection, etc. ) requirements for ensuring that safety is adequately
+demonstrated. It shall identify any certification requirements for software; safety devices, Or other
+special safety features (e.8., render safe and emergency disposal procedures).
+b)
+Procedures for
+making sure safety-related verification information is transmitted to the authority
+havingjurisdiction for review and analysis。
+Procedure for ensuring the safe conduct ofalltests_
+E.1.2.8
+Audit program
+The SSPP shall describe the techniques and procedures to be employed to make sure the objectives and
+requirements ofthe System Safety Program are being accomplished。
+E.1.2.9 Training
+The SSPP shall describe the safety training for engineering, technician operating, and maintenance personnel。
+E.1.2.10 Incident reporting
+The contractor shalldescribe in the SSPP the mishaplincident alertinglnotification, investigation, andreporting
+PrOCCSS,
+icluding notification of the authority having jurisdiction。
+50
+Copyright @ 2025 IEEE.All rights reserved
+cycle。
+
+IEEE Std 1474.1TM-2025
+IEEE Standard for Communications-Based Train Control (CBTC) Performance and Functional Requirements
+E.1.2.11 System safety interfaces
+The SSPP shallidentify, in detail, the following:
+The interface between system safety, systems engineering; and all other support disciplines, such
+35
+maintainability, quality control, reliability, software development, human factors engineering;
+medical support (health hazard assessments ), and any others
+Ihe interface between system safety and allsystem integration and test disciplines
+E.2 Preliminary hazard analysis (PHA)
+E2.1 Purpose
+The PHA shall identify safety-critical areas, provide an initial assessment Of hazards, and identify requisite
+hazard controls and follow-on actions。
+E.2.2 Description
+APHA shall be performed and documented to obtain an initial risk assessment Of a concept or system. Based
+On the best available data,
+icluding mishap data (i assessable) from similar systems and other les- sons
+learned, hazards associated with the proposed design or function shall be evaluated for hazard severity, hazard
+probability, and operational constraint
+Safety provisions and alternatives needed to eliminate hazards Or
+reduce their associated risk to
+level acceptable to the authority having jurisdiction shall be included. The
+PHA shall consider the following for identification and evaluation ofhazards, as a minimum:
+Hazardous components
+fuels, propellants, lasers; toxic substances; hazardous construction
+materials, pressure systems, and other energy sources).
+b)
+Safety-related   interface
+considerations
+among
+various
+elements
+Of the system (e.8.,
+material
+compatibilities, electromagnetic interference, inadvertent activation, firelexplosive initiation and
+propagation, and hardware and software controls ). This shall include consideration Of the potential
+contribution by software (including software developed by other contractorslsources) to subsystem/
+system mishaps. Safety design criteria to control safety-critical software commands and responses
+(e.8.
+iadvertent command, failure to command
+untimely command
+OI respOnsCS,
+inappropriate
+magnitude, or other designated undesired events)
+shall be identified and
+appropriate action taken to
+icorporate them i the software
+and related hardware) specifications。
+Environmental constraints, including the operating environments (e.8:,
+shock。
+vibration_
+extreme temperatures, noise, exposure to toxic substances, health hazards, fire, electrostatic discharge,
+lightning, electromagnetic environmental effects).
+Operating; test, maintenance, built-in-tests, diagnostics, and emergency procedures (e.8.二
+human
+factors engineering; human error analysis of operator functions, tasks, and requirements; effect of
+factors, such
+35
+equipment layout, lighting requirements, potential exposures to toxic materials;
+effects Ofnoise or radiation on human performance)。
+Those test-unique hazards that will be a direct
+result ofthe test and evaluation ofthe article Or vehicle.
+Facilities, realproperty installed equipment, supportequipment (e.8. , provisions for storage, assembly;
+checkout, proofltesting ofhazardous systemslassemblies thatmayinvolve toxic, fammable, explosive,
+corrosive, Or
+cryogenic materials/wastes; radiation or noise emitters; electrical power sources), and
+training (e.8., training and certification pertaining to safety operations and maintenance)-
+Safety-related equipment, safeguards, and possible alternate approaches
+interlocks; system
+redundancy; fail-safe design considerations
+hardware
+OI
+software   controls; subsystem
+protection; fire detection andsuppression systems; personalprotective equipment; heating; ventilation,
+and air-conditioning; and noise or radiation barriers).
+51
+Copyright @ 2025 IEEE
+All rights reserved 
+(e.8,
+drop;
+(e.8,
+using
+
+IEEE Std 1474.
+2025
+IEEE Standard for Communications-Based Train Control (CBTC) Performance and Functional Requirements
+g
+Malfunctions to the system , subsystems, Or software. Each malfunction shall be specified, the causing
+and resulting sequence Of events determined, the degree Of hazard determined, and appropriate
+specification and /or design changes developed。
+E.3 Subsystem hazard analysis (SSHA)
+E.3.1 Purpose
+The subsystem
+hazard analysis (SSHA
+shall verify subsystem
+compliance
+with safety requirements
+contained in subsystem specifications and
+other applicable documents; identify previously unidentified
+hazards associated with the design Of subsystems, including component failure modes; critical human error
+iputs, and hazards resulting from functional relationships between components and equipment comprising
+each subsystem; recommend actions necessary to eliminate identified hazards Or control their associated risk
+t0
+acceptable levels:
+E.3.2 Description
+An SSHA shall be performed and documented to identify allcomponents and equipment that could result in a
+hazard or whose design does not satisfy safety requirements. Areas to consider are performance, performance
+degradation, functional failures,
+errors, design errors Or
+defects, orinadvertent functioning: The human
+shall be considered a component within a subsystem, receiving both inputs and initiating outputs, during the
+conduct ofthis analysis。
+The analysis shallinclude a determination of the following:
+The modes Of failure。
+icluding reasonable human errors as well as single-point and common- mode
+failures, and the effects on safety when failures occur in subsystem components。
+b)
+Potential contribution
+Of hardware
+and
+software (including that
+Which is developed by other
+contractors/sources) events, faults, and occurrences (such as improper timing) on the safety Of the
+subsystem。
+That the safety design criteria in the hardware, software, and facilities specification(s) have been
+satisfied。
+That the method of implementation of hardware, software, and facilities design requirements and
+corrective actions has not impaired or decreased the safety of the subsystem nor has it introduced any
+Iew hazards Orrisks
+Ofthe implementation Of safety design requirements from top level specifications to detailed design
+specifications for the subsystem. The implementation of safety design requirements developed as part
+ofthe PHA shall be analyzed to ensure that it satisfies the intent ofthe requirements.
+Of test plan and procedure recommendations to integrated safety testing into the hardware and
+software test Programs
+That system level hazards attributed to the subsystem are analyzed and that adequate controlof the
+potentialhazard is implemented in the design。
+When software to be used in conjunction with the subsystemis being developed, the contractor performing the
+SSHA shall monitor; obtain, and use the output Of each phase Of the formal software development process i
+evaluating the software contribution to the SSHA.
+The SSHA shall be updated as a result of any system design changes, including software design changes, that
+affect system safety。
+52
+Copyright @ 2025 IEEE.All rights reserved
+TM _
+timing
+
+IEEE Std 1474.1TM-2025
+IEEE Standard for Communications-Based Train Control (CBTC) Performance and Functional Requirements
+E.4 System hazard analysis (SHA)
+E.4.1 Purpose
+The system hazard analysis (SHA) shallinclude the following:
+Verify system compliance with safety requirements contained i system specifications and other
+applicable documents
+b)
+Identify previously unidentified hazards
+associated
+with
+the subsystem
+interfaces
+and system
+functional faults_
+Assess the risk associated with the total system design;
+icluding software, and specifically Of the
+subsystem interfaces.
+Recommend actions necessary to eliminate identified hazards andlor control their associated risk to
+acceptable levels。
+E.4.2 Description
+An SHA shall be performed and documented to identify hazards and assess the risk Of the totalsystem design,
+icluding software, and specifically Of the subsystem interfaces
+This analysis shallinclude a review Of subsystem interrelationships for the following:
+3 )
+Compliance with specified safety design criteria
+b)
+Possible independent, dependent, and simultaneous hazardous events icluding systems failures;
+failures ofsafety devices; common cause failures and events; and system interactions that could create
+hazard Or result in an increase i
+mishap risk
+Degradation i the safety Of
+subsystem
+Or the total system from normal operation Of another
+subsystem
+Design changes that affect subsystems
+Effects ofreasonable human CIrOIS
+廿
+Determination of the following:
+1)
+Potential contribution of hardware and software (including that which is developed by other
+contractors/sources,
+OI
+commercial Off-the-shelf hardware
+Or software) events; faults, and
+Occurrelces (such as
+improper timing) on safety Ofthe system
+That the safety design criteria in the hardware, software, and facilities specification(s) have been
+satisfied
+3)
+That the method of implementation of the hardware, software, and facilities design requirements
+and corrective actions has not impaired or
+degraded the safety Ofthe system nor has it introduced
+any new hazards
+The SHA may be combined with andlor performed using similar techniques to those used for the SSHA.
+When software to be used in conjunction with the
+is being developed, the contractor performing the
+SHA shall monitor, obtain, and use the output of each phase of the formal software development process i
+evaluating the software contribution to the SHA.
+The SHA shall be updated as a result Of any system design changes including software design changes that
+affect system safety。
+53
+Copyright @ 2025 IEEE.All rights reserved
+System
+
+IEEE Std 1474.
+2025
+IEEE Standard for Communications-Based Train Control (CBTC) Performance and Functional Requirements
+E.5 Operating and support hazard analysis (O&SHA)
+E5.1 Purpose
+'The operating and support hazard analysis (O&SHA) shall evaluate activities for hazards or risks introduced
+into the system by operational and support procedures and evaluate adequacy Of operational and support
+procedures used to eliminate, control, or abate identified hazards orrisks.
+E5.2 Description
+An O&SHA shall be performed and documented to examine procedurally controlled activities. The O&SHA
+identifies and evaluates hazards resulting from the following:
+The implementation Of operations or tasks performed by persons, considering the planned system
+configurationlstate at each phase ofactivity
+The facility interfaces; the planned environments (orranges thereof)
+The supporting tools or other equipment;
+icluding software controlled automatic test equipment;
+specified for use; operationalltask sequence, concurrent task effects and limitations
+The potential for unplanned events, including hazards introduced by human errors
+'The human shall be considered an element of the total system, receiving both inputs and
+initiating outputs
+during the conduct ofthis analysis. The O&SHA shallidentify the safety requirements (or alternatives) needed
+to eliminate or control identified hazards Or to reduce the associated risk to a level that is acceptable under
+either regulatory or contractually specified criteria。
+The analysis shallidentify the following:
+Activities that ocCUr under hazardous conditions, their time periods, and the actions required to
+mitigate risk during these activities/time periods
+b)
+Changes needed in functionalor design requirements for system hardwarelsoftware, facilities, tooling;
+Or
+supportltest equipment to eliminate or control hazards or reduce associated risks
+Requirements for safety devices and equipment, includingpersonnelsafety and life support equipment
+Warnings; cautions; and special emergency procedures, including those necessitated by failure Ofa
+computer software-controlled operation, to produce the expected and required safe result orindication
+Requirements
+for packaging; handling; storage; transportation;
+maintenance;
+and
+disposal
+Of
+hazardous materials
+Requirements for safety training and personnel certification
+Effects ofnondevelopmentalhardware and software across the interface with other system components
+Or
+subsystems
+h)
+Potentially hazardous system states under operator control
+The O&SHA shall
+document system safety assessment Of procedures involved in system production;
+deployment;
+installation,
+assembly;
+test;
+operation;
+maintenance。
+servicing; transportation;
+storage;
+modification, and disposal。
+The contractor shall update the O&SHA as a result of any system design or operational changes。
+54
+Copyright @ 2025 IEEE.All rights reserved
+TM _
+
+IEEE Std 1474.1TM-2025
+IEEE Standard for Communications-Based Train Control (CBTC) Performance and Functional Requirements
+E6
+Riskassessment
+The hazard resolution process shall be initiated by defining the physical and functional characteristics of the
+systemto be analyzed. These characteristics shall be presented in terms Ofthe major elements that make up the
+system and its environment, including equipment, facilities; procedures, and people。
+The hazards shall be identified. The techniques and methods used to identify the hazards shall include the
+following:
+Data
+previous accidents or operating experience
+Expert opinion and hazard scenarios
+Checklists ofpotential hazards
+Previous hazard analyses
+Other analysis techniques as appropriate
+Allidentified hazards shallbe assessed in terms ofthe severity or consequence ofthe hazard and the Probability
+Ofoccurrence。
+Riskassessment estimates (see Table E.1) shallbe used as the basis in the decision-making process to determine
+whether individual system or subsystem hazards shall be eliminated, mitigated, or accepted. Hazards shallbe
+resolved through a design process that emphasizes the elimination of the hazard. Resolution strategies or
+countermeasures to be employed, listed in order ofpreference, shall be the following:
+Designto eliminate hazards
+b)
+Design to control hazards
+c)
+Use safety devices
+4)
+Use warning devices
+Implement special procedures
+廿
+Accept the hazard
+Eliminate the subsystemlequipmentlrequirement
+This process shall include full documentation of the hazard resolution activities. The effectiveness Of the
+countermeasures Shall be monitored to determine that no Iew hazards are introduced. In
+addition, whenever
+substantive changes are made to the system, analyses shall be conducted to identify and resolve any new
+hazards_
+Table E.1 provides an example of the relationship between risk, severity, and probability as it may be applied
+when assessing CBTC systems. The authority having jurisdiction may choose to modify this table to reflect
+existing procedures orrequirements_
+55
+Copyright @ 2025 IEEE.All rights reserved
+fron
+
+IEEE Std 1474.
+TM-2025
+IEEE Standard for Communications-Based Train Control (CBTC) Performance and Functional Requirements
+Table E.1-Riskassessment
+Hazard severity
+Frequency of
+1-Catastrophic
+2-Critical
+3-Marginal
+4-Negligible
+OCCUTreICe
+A-Frequent
+Unacceptable
+14)
+Unacceptable (2A)
+Unacceptable (3A
+Undesirable (4A)
+Acceptable with
+B-Probable
+Unacceptable (1B)
+Unacceptable (28)
+Undesirable (3B)
+review (4B)
+Acceptable with
+Acceptable with
+C-Occasional
+Unacceptable (IC)
+Unacceptable (2C)
+review (3C)
+review (4C)
+Acceptable with
+Acceptable without
+D-Remote
+Unacceptable (ID)
+Unacceptable (2D)
+review (3D)
+review (4D)
+Acceptable without
+Acceptable without
+E-Improbable
+Undesirable ( 1E)
+Undesirable (2卫)
+review (3卫)
+review (4)
+Residualrisk levels
+Unacceptable (1AIBIC/D, 2A/B/C/D, and 34)
+CBTC systems with residual risks rated at this level are considered unacceptable; hazards shall be mitigated
+through fail-safe designs.
+Undesirable (1E,2,38, and 4A)
+CBTC systems with residualrisks rated at this level are considered undesirable; depending on economic and
+functional requirements, CBTC systems with hazards rated at this risk level may be considered acceptable
+with explicit agreement
+the authority having jurisdiction。
+Acceptable with review (3C/D and 4B/C)
+CBTC systems with residual risks rated at this level are considered acceptable with review; depending On
+economic and functional requirements, CBTC systems with hazards rated at this risk level may be considered
+acceptable with notification to the authority having jurisdiction。
+Acceptable without review (3E and 4D/)
+CBTC systems with residual risks rated at this level are considered acceptable without review; additional
+design effort or system revision is not required to reduce the severity or probability of hazards with this risk
+level。
+Frequency ofoccurrence
+Frequent
+Likely to occur frequently; MTBHE is less than 1000 operating hours_
+Willoccur several times in the life ofan item; MTBHE is equal to Or greater
+B
+Probable
+than 1000 operating hours and less than 100 000 operating hours_
+Likely to occur sometime in the life ofan item; MTBHE is equal to or greater
+Occasional
+than 100 000 operating hours and less than 10 000 000 operating hours
+Unlikely; but possible to occur in the life ofan item; MTBHIE is equal to Or greater
+D
+Remnote
+than 10 000 000 operating hours and less than
+000 000 000 operating hours
+So unlikely; it can be assumed occurrence Inay not be experienced;
+卫
+Improbable
+MTBHIE is equal to or greater than
+000 000 000 operating hours_
+56
+Copyright @ 2025 IEEE.All rights reserved
+fron
+
+IEEE Std 1474.1TM-2025
+IEEE Standard for Communications-Based Train Control (CBTC) Performance and Functional Requirements
+Hazard Severity
+Catastrophic
+Fatality, system Ioss, or severe environmental damage.
+Critical
+Severe injury, severe occupationalillness, major system or environmental damage.
+Marginal
+Major injury; minor occupational illness, Or minor system Or environmental damage。
+Less than minor injury, occupational illness, or less than
+Negligible
+minor system or environmental damage_
+57
+Copyright @ 2025 IEEE.All rights reserved
+
+IEEE Std 1474.1TM-2025
+IEEE Standard for Communications-Based Train Control (CBTC) Performance and Functional Requirements
+Annex F
+(informative)
+Typical approaches to specifying CBTC system availability
+F1
+Traditional equipment-based approach
+'The traditional approach to
+defining system availability is the probability that the system is capable Of
+operating and performing its intended function at a random point in time, as determined by the system MTBFE
+and MTTRS, as shown in Equation (F.1):
+CBTC system availability = system MTBFF / (system MTBFE + system MTTRS)
+(E1)
+Where
+MTTRS is the sum ofthe system MTTR and the meantraveltimes for maintenance personnelto
+travelto the site ofa failure and meantime to detect failure.
+With this approach, the authority having jurisdiction would typically specify the following:
+The quantitative CBTC system availability requirements
+b)
+The average travel times to be assumed for maintenance personnel to travel to the site ofa failure
+The boundaries of the CBTC system covered by the availability requirement
+The type Of CBTC failures to be included in defning the system MTBFE
+For
+given CBTC system configuration, the predicted CBTC system availability could be determined
+analytically from estimates of subsystem MTBFFs and MTTRs。
+ActualCBTC system availability could be determined
+measurements ofactualin-service system MTBFE
+and MTTRS, with appropriate adjustments for factors that are not included within the specified boundaries Of
+the CBTC system_
+F2
+Alternative delayed trip-based approach
+An alternative approach is to define CBTC system availability in terms Of the system 's contributions to the
+desired on-time performance of the transit system, as shown in Equation (E.2):
+Revenue trips delayed more than 4 by CBTC Type failure
+CBTC system availability
+(F.2)
+Total scheduled revenue trips
+Where
+Revenue trip
+is a scheduled movement Ofa train, Of defined length, from a point oforigin to a
+destination;
+tr
+is a defined
+delay threshold,
+Wr
+is a weighting factor associated with that delay threshold
+With this approach, CBTC system availability would take into account the delays experienced by passengers_
+As the passenger judges transit system availability on the basis Of the wait and travel time variations Of the
+service provided, CBTC system failures that result in longer delays are penalized with a greater weighting
+factor than failures that result in shorter delays. In general, delay thresholds would be related to the operating
+headways, as delays at shorter headways impact on-time performance more significantly。
+58
+Copyright @ 2025 IEEE
+All rights reserved 
+System
+fron
+SW-
+
+IEEE Std 1474.
+TM
+2025
+IEEE Standard for Communications-Based Train Control (CBTC) Performance and Functional Requirements
+The CBTC system availability requirementmay also consider other failure types, to the extent thatsuch failures
+impact feet availability. For example; even i a train-borne CBTC equipment failure does not immediately
+impact the on-time performance ofthe transit system, i
+subsequently result in missed revenue trips ifthe
+failure
+repair time results in the train being unavailable for service:
+With this approach, the authority having jurisdiction would typically specify the following:
+The quantitative CBTC system availability requirements
+b)
+The various delay thresholds and weighting factors
+The average traveltimes to be assumed for maintenance personnel to travel to the site ofa failure
+The boundaries of the CBTC system covered by the availability requirements
+The type Of CBTC failures to be included in defining the system availability
+Fora given CBTC system configuration, the predicted CBTC system availability could be determined through
+computer modeling from estimates Of subsystem MTBEFs and MTTRs, and an assumed system operating
+Plan.
+Actual CBTC system availability could be determined from measurements Of actual in-service
+with
+appropriate adjustments for factors that are not included within the specified boundaries Of the CBTC system。
+59
+Copyright @ 2025 IEEE.All rights reserved
+may
+delays,
+
+IEE SA
+STANDARDS
+ASSOCIATION
+RAISING THE
+WORLDS
+STANDARDS
+Connect with Us on:
+Facebook: facebook.com/ieeesa
+内
+Linkedln: linkedin.com/groups/1791118
+Beyond Standards
+beyondstandards.ieee.org
+YouTube: youtube.com/ieeesa
+standards.jeee.org
+Phone: +1 7329810060
+lEE
+blog:

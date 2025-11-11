@@ -1,0 +1,475 @@
+Glossary of Train Control Terminology v1.2
+This glossary includes many of the terms that you will encounter in the Certificate (Module A)
+Of the IRSE Examination.
+Its focus is on commonly used acronyms and on terms Where; in
+different countries, there are alternative names in English for the same object, role;
+Or
+function.
+It is not a comprehensive list of all train control terminology.
+It does not address
+telecommunications terminology because this tends to be more consistent between
+countries。
+You are not expected to learn the descriptions in the 3rd column。
+Just look down the first
+column and check xf there are any terms that you are not familiar with。
+The term in the first
+column is the one that is usually used in the examination.
+Term
+Alternative Terms &
+Describing
+Aeronyms
+Approach control
+Approach release
+The restriction of the aspect of a
+(approach release)
+signal, to control the speed ofa
+train (e.9.to ensure that the
+driver can comply with the turnout
+Speedatajuction)_
+Approach locking
+Approach locking prevents the
+immediate release of a route
+where it is possible thatan
+approaching train may be unable
+ISeP_
+Aspect
+Signal lamp
+Valid visual indication of a
+Sgnallight_
+Signalas displayed lhhe gryec
+Automatic Train Control
+ATC
+On-board automation that
+contributes to or replaces the
+drivers judgement and actions in
+respect of controlling the train. It
+encompasses ATOandATP
+Automatic Train
+ATO
+A
+system that automatically
+Operation
+operates the train's driving
+controls
+Automatic Train
+ATP
+A Safety System that enforces
+Protection
+either compliance With or
+observation of speed restrictions
+Sdlorsignalaspects bytrains
+Automatic Train
+ATS
+八
+non-safety system (common on
+Supervision
+metros) Which regulates a train
+service; typically to maintain
+intended traffic patterns and to
+minimise the effects of train
+gelays On the gperating Schedule:
+Automatic Route Setting
+ARS
+A system for setting routes
+Without the action of the signaller
+(signalperator)
+Automatic signal
+A signal controlled by the
+passage of trains. It does not
+require any action by the signaller
+(signalperator)
+OrARS.
+4
+Glossary of Train Control Terminology V1.2.docx
+20-Dec- 21
+Any
+
+Term
+Alternative Terms &
+Describing
+Aeronyms
+Axle counter
+^
+method of detecting the
+absence of a train. Track
+mounted wheel sensors detect
+the passing train Wheels (axles)
+and the axle counter evaluator
+counts the number of axles
+entering and leaving a train
+detection section at each
+extremity
+Balise (beacon)
+Transponder
+A track mounted unit that
+exchanges data messages With
+Reacon
+the train
+Cab Secure Radio
+CSR
+八
+Secure radio communication
+system between driver and
+Signaller (signalgperator)
+Colour light signal
+A signal that conveys its
+information_byeoloyred lghts_
+Computer Based
+CBI
+Asafety interlocking System
+Interlocking
+PBI
+based on computers or
+processOrs
+Communications Based
+CBTC
+An Automatic Train Control
+Train Control
+system; mostly used on metro
+railways, with train location
+sensing not requiring track
+cjrcuits.
+The train controlling
+functions are enabled by
+continuous data communications
+between train and wayside sub-
+Systems
+Concentrator
+A
+facility to connect several
+telephone crcuits IoOne handset
+Control centre。
+Signalling centre
+A location Where train operators
+(see also Signal box)
+Operations control centre
+monitor and control the operation
+Dispatch office
+of the railway over a large area。
+Train control centre
+It usually incorporates operational
+Network control centre
+functions beyond simply
+controlling the Signals:
+Control table
+A
+part ofthe signalling system
+specification that defines the
+detail of the signalling interlocking
+controls for each signalling
+function, such as signals, points
+and routes
+Equipment case
+Apparatus case
+A
+housing containing apparatus
+Apparatus cupboard
+Which is intended for unprotected
+Location case
+outdoor Use
+Cubicle
+Signalling Apparatus
+BOX(SAB
+4
+Glossary of Train Control Terminology V1.2.docx
+20-Dec- 21
+Tag
+
+Term
+Alternative Terms &
+Describing
+Aeronyms
+European Rail Traffic
+ERTMS
+A
+System for managing rail traffic,
+Management System
+enabling it to operate on
+compatible signalling systems
+geross Eurgpean_porders
+European Train Control
+ETCS
+The train control part of ERTMS.
+System
+Facing Points
+Facing point switch
+A track switch at a diverging
+jction in fhegirectiongftrevel_
+Fail Safe
+FS
+A characteristic of a system
+Which ensures that known, or
+expected malfunctions will
+maintain or place the equipment
+in a Safe state。
+Flank protection
+Protection from overrunning
+movements approaching on
+convergingtracks:
+Fouling point
+The position at the convergence
+Or
+divergence of two tracks Where
+the structure gauge on each line
+Would come into contact。
+Grade Of Automation
+GOA
+The extent to which the functions
+of the driver are controlled by a
+technical system
+Global System for Mobile
+GSM
+The standard Which describes
+Communications
+the protocols for digital networks
+used by mobile communications
+gevices:
+Global System for Mobile
+GSM R
+The System, based on GSM,
+Communications
+Which delivers digital secure
+Railway
+communications between railway
+USerS
+(e.9. drivers and
+Sgnallers)
+Headway
+The shortest time (or distance
+interval between two trains; SO
+that the second train can run at
+its full permitted speed without
+being restricted by the signal
+gspects:
+Impedance bond
+A device which presents a low
+impedance to traction current and
+a
+higher impedance to track
+circuit current
+Insulated Rail Joint
+IRJ
+A joint of two sections of rail with
+Insulated Block Joint
+insulation between them to
+(IBJ)
+maintain electrical isolation,
+ysyally fortrackCircuit Purposes:
+Interlocking
+A
+general term appliea to the
+system, Which sets, secures and
+releases train routes for the safe
+movement of trains and transmits
+Safe movement authorities to the
+train driver。
+4
+Glossary of Train Control Terminology V1.2.docx
+20-Dec-21
+
+Term
+Alternative Terms &
+Describing
+Aeronyms
+Level crossing.
+Grade crossing
+An intersection at the same
+elevation of a road and one Or
+more rail tracks
+Limit of Shunt
+LOS
+An indicator or sign to instruct the
+driver to terminate a shunting
+movement particularly
+a
+Inein hhe_Wrong directign_
+Line capacity
+For a given section of line, the
+practical maximum number of
+trains per hour permitted by the
+signalling system and operational
+constraints
+Maintainer
+Signal electrician
+A person Who keeps the
+Signal technician
+signalling or communications
+Technician
+Systems in safe and reliable
+working Order
+Maintenance manager
+A person responsible for the safe
+and reliable working of the
+signalling or communications
+systems andlor for supervising
+the maintenance activities:
+Operator
+A person who operates the
+signalling or communications
+systems and is responsible for
+the Safe gperatign Oftraing:
+Overlap
+The distance beyond a signal that
+must be clear before a train is
+permitted oapproachit
+Permissible speed
+Line speed
+The maximum allowable Safe
+Speed gvera sectiongfline
+Point machine
+Point operating
+The equipment for the powered
+mechanism
+gperationgfaSetgfpoints_
+Points
+Switches
+The means by Which a train is
+transferred from one track to
+another。
+Possession (of a line)
+Occupation
+The complete stoppage ofall
+normal train movements on a
+running line or siding, usually for
+engineering purposes:
+Right side failure
+Negligible risk failure
+^
+failure Which does not resultin
+the protection provided by the
+Signalling System being reduced
+Route locking
+Maintained locking
+Maintains the locking associated
+Route holding
+with a route in Use until after the
+train has passed clear of the
+equipment being locked (for
+example; points or opposing
+Signal)
+Running Tine
+Mainline
+A
+railway line that is notin a
+Siding Orgepot
+4
+Glossary of Train Control Terminology V1.2.docx
+20-Dec- 21
+along
+
+Term
+Alternative Terms &
+Describing
+Aeronyms
+Semaphore signal
+Mechanical signal
+A signal which informs a driver by
+means of the position of a
+mechanical arm during daylight
+and coloured lights during
+garkness_
+Signal box
+Signal cabin
+The building in Which the
+(see also Control centre)
+signaller(s) islare situated
+together With the control and
+indication system for the
+Signalling:
+Signaller (signal operator)
+Dispatcher
+A person responsible for the
+(see also train controller)
+Signalman
+operation of the signalling
+Train control operator
+system, to safely control the
+Passage zd reguyletiongftrains
+Signalling Equipment
+SER
+A
+Walk-in'
+room orindependent
+Room
+Bungalow
+building for housing signalling
+REB (Relocatable
+equipment
+Egypmentguilging 
+Signalling panel
+Signalling workstation
+The equipment that displays train
+Train control workstation
+information to the signaller (signal
+Control panel
+operator) and which enables
+Switch panel
+control of the signalling by
+buttons, keyboards or
+touchscreens.
+Toe of
+The end of a switch rail furthest
+from the crossing gftherails:
+Track Circuit
+TC
+An electrical device using the
+rails in an electric circuit, Which
+detects the absence of trains on a
+gefined Section of line:
+Trailing points
+Trailing point switch
+Atrack switch at a converging
+junction in the direction of travel
+Train controller
+Network controller
+A person responsible for safely
+managing a section of railway
+including prioritising train
+movements, authorising track
+possessions and manging
+incidents.
+The person may also
+operate the signalling system as
+Shown foraSignaller' above_
+Train Control System
+TCS
+The System used in the control
+centre to convert operator inputs
+into commands to the signalling
+system and for sending
+indications from the signalling
+system and train descriptions to
+the Signallingpanel
+4
+Glossary of Train Control Terminology V1.2.docx
+20-Dec- 21
+point
+
+Term
+Alternative Terms &
+Describing
+Aeronyms
+Train driver
+Train operator
+The person in the cab of a train
+Locomotive operator
+operating or supervising the
+Engine driver
+braking and acceleration of the
+Motorman
+train under instructions from the
+signalling system, a dispatcher or
+lnesideSigns:
+Wrong Side Failure
+WSF
+A failure that results in the
+protection provided by the
+signalling system
+reduced
+Or removed。
+The far more comprehensive 'Glossary of Signalling Terms' published by the UK Rail Safety
+and Standards Board is acknowledged in the preparation of this appendix。
+4
+Glossary of Train Control Terminology V1.2.docx
+20-Dec- 21
+being

@@ -1,0 +1,883 @@
+IRSE / 
+Institution Of Railway Signal Engineers
+Back to basics: Principles Of
+railway Safety engineering
+David Nicholson
+This article continues the 'back to basics'
+on the general public, it is usual for governments
+series, looking at the principles of safety
+to establish legislation with which those providing
+engineering as applicable to a railway;
+the service must comply. The legislation is usually
+particularly hazard and risk assessment,
+aimed at reducing the amount of potential harm
+identification and analysis techniques。
+to the general public and workers, whether that
+Previous 'back to basic' articles have
+harm is shock, injury, permanent damage
+[OSS
+touched on the safety inherent in each of
+ofalimb or hearing loss) or fatality.
+the systems discussed; this article considers
+This is not a simple action for governments to
+how safety is achieved。
+achieve as the public
+are seeking to protect is
+Definitions
+not consistent in their perceptions ofacceptable
+levels of risk. There is often a large outcry from
+Before We begin, it is necessary to be clear
+the public when
+single train accident results in
+on definitions and What is meant by the
+"Ifwe wish to
+several deaths, but the very many single deaths
+different terms used _
+avoid harm, We
+that occur each day on the roads is felt tolerable_
+Safety: Freedom from unacceptable risk。
+This inconsistency is something that railway, and
+should seek to
+Risk: The combination of the likelihood of
+other, engineers have learnt to live with
+reduce risk"
+occurrence resulting in harm and the degree
+From the definition of 'risk
+We can see that if We
+Ofseverity of that harm.
+Wish to avoid harm,
+We should seek to reduce risk。
+Harm: Physical injury, material damage_
+This is achieved either by reducing the likelihood
+Severity: A measure of the amount of harm_
+of occurrence of harm, reducing the severity of
+Accident: An unintended event or series of
+the harm, or both. Putting it another way, We can
+events that results in harm.
+reduce risk through two different approaches:
+the first is to reduce the likelihood ofan event
+Hazard: A condition that could lead toan
+happening where the outcome may be harm; the
+accident;
+potential source ofharm;an
+second is to reduce the amount of harm should
+accident waiting to happen.
+that event take place.
+Cause:
+event
+state Orother
+factor which might contribute to the
+The definition for
+a hazard can also be expressed
+Occurrence ofa hazard.
+a5
+an accident waiting to happen' . No accident
+has taken place
+but there is a dangerous situation
+Safety measure: An action reducing the
+where i
+something else happens, i can lead to
+risk ofa hazard.
+anaccident. Thus, forany given hazard,
+all that
+The definition of 'safety' introduces the concept
+is needed is
+trigger event to start the process
+that some risk is acceptable. This might seem
+Which ultimately leads to the accident. An
+surprising at first reading, but there are plenty
+example hazard is a level (or at grade) crossing
+of people who indulge in activities that others
+with no form of protection。
+The hazard (the
+consider too dangerous (e.9. bungee jumping or
+accident waiting to happen) occurs When a train is
+flying) . Others can see the benefits that it brings to
+approaching_
+There has not been any accident; but
+them (e.9. thrills or speed oftravel)_
+one could
+happen if there Was a car approaching
+This raises the question of Who determines
+(the trigger event). An approaching car may now
+whether
+a risk is
+acceptable or not. Sometimes
+collide with the train resulting in an accident with
+this is purely personal (whether to bungee jump or
+consequences beyond the railway boundary.
+fly), but when a service (such as rail travel) impacts
+10
+BACK
+TO
+BASICS
+(e.9.
+they
+Any
+
+IRSE News
+Issue 267
+June 2020
+Figure 1
+Hazard to accident
+Figure 2
+Hazard to accident
+reduced risk。
+Elimination
+鼍
+
+Substitution
+
+忌
+
+Engineering Controls
+Administrative
+
+Controls
+
+PPE
+
+Figure 3
+Hierarchy of control.
+This sequence of events is ilustrated in Figure 1
+traffic lights to stop road traffic; provide railway
+Where: the level crossing is the wall; the hazard
+staff to stop traffic; have the train sound its
+is shown as the bucket of stones on
+ofthe
+horn on
+approach; ensure good sight lines。
+Risk reduction
+wall; the trigger event is the hand knocking the
+Reducing the severity of a collision: Reduce
+measures are
+bucket over; and the accident is the stones falling
+the speed of approaching trains; provide
+sometimes
+onto the flowers_
+space fora car to divert into at the last minute;
+expressedin
+Risk reduction
+design cars to survive the impact ofatrain。
+This last point about car design is outside the
+3
+hierarchy of
+From the diagram, we can see the accident can be
+scope of railway projects but indicates how
+control"
+prevented, or limited, quite simply by:
+solutions can lie outside of the expected areas
+Removing the hazard: Design the railway
+ofinterest as shownin
+Figure 2.
+without a level crossing
+Trying to limit the number of falling stones in
+Reducing the frequency With which the hazard
+our illustration in Figures 1and 2is not a perfect
+OCCUrs: Reduce the number oftrains that
+solution。
+ofthe examples given above can fail。
+Use the
+crossing:
+Ifthe means to limit the falling stones is shown as
+barriers with holes, i is obvious that some stones
+Reducing the frequency of the trigger
+still make it through the holes in both layers and
+event: Reduce the number of cars that Use
+crush the flowers underneath
+But the impact, or
+the crossing, for instance by providing an
+severity, of that accident is (hopefully!) smaller
+alternative and more attractive route for Car
+than i
+might have been if no protection was putin
+drivers to use)_
+place
+fewer flowers are crushed!
+Reducing the likelihood of a collision: Design
+a level crossing system that warns ofan
+Risk reduction measures are sometimes expressed
+approaching train; install barriers and road
+in a
+hierarchy of control. This is shown in Figure 3.
+11
+toP
+Any
+
+IRSE News
+Issue 267
+June 2020
+ICNT
+e
+忻
+1
+IWACHT
+IolheTode
+gedoofdis
+erlaa nOg CCn trein komen
+Substitution may see a
+The explanation of the different levels is as follows:
+Safety benefits and costs
+level crossing replaced
+with a bridge, although
+Elimination: design out the hazard (e.9. remove
+It is expected that the engineering and operations
+bridges bring their own
+the need for the road to cross the railway)
+teams Will implement good practice and adopt the
+set of hazards
+Substitution: replace the hazard with
+hierarchy of controls from the outset. Choosing
+Photo Shutterstock/
+something less hazardous. For instance; We
+Which controlin the hierarchy to apply introduces
+Ivonne Wierink。
+could replace the level crossing with a bridge.
+the concept of calculating the costs involved to
+While in this example this might seem very
+introduce a
+safety feature and then comparing
+close to elimination, bridges bring their own
+that with the safety benefit
+set of hazards due to bridge strikes, or vehicles
+Calculating the costs is relatively straightforward
+or objects falling onto the railway from the
+by asking questions such as: How much Will it
+bridge thereby blocking the line).
+cost to provide this extra design feature? How
+Engineering: use work equipment or other
+much do any extra parts oritems ofequipment
+measures to help separate people from
+cost to purchase? How much more Will it cost to
+the hazard. Examples are warnings, alarms;
+operate and maintain the railway With this safety
+guarding dangerous machinery from human
+feature implemented?
+"The temptation
+incursion (e.9. for level crossings, provide lights
+is to rely on the
+and audible alarms as the train approaches) _
+Determining the safety benefit over the lifetime
+Administrative Controls: Identify and
+of the safety measure is
+a little harderand,at
+lower levels of
+times, controversial, not least because in addition
+implement procedures necessary to work
+risk reduction"
+safely With the hazard. For example; we could
+to fatalities, there are so many different types of
+provide instructions and training both for
+(both physical and mental). Does the age
+train driverand road users on how to use the
+of the individual matter? Or the number of their
+different types of level crossing:
+dependants? Does the number of injuries or
+fatalities in any one incident make a difference?
+Personal Protective Equipment (PPE): This is
+why motorcyclists wear crash helmets
+Or
+A number of countries have adopted a method of
+Why people erecting scaffolding are tethered。
+converting injuries and fatalities into a common
+There is no example here for a level crossing:
+measure. One method is shown below as a
+But it is, forexample
+Why many railway
+Comparable Fatality Score (CFS) (note that other
+administrations require their trackside staff
+countries and other railway administrations may
+to wear high-visibility clothing. This makes
+have different conversion rates):
+them more visible to the train driver
+Who
+Determining
+can sound the train's horn, thereby giving the
+10 major injuries to 1fatality.
+trackside staff more time to get clear of the
+100 minor injuries to 1 fatality。
+the safety
+approaching train_
+1000 negligible injuries to 1fatality。
+benefit over the
+The temptation, because it's both inexpensive and
+Each CFS is converted into a monetary Value
+lifetime of the
+quick to implement, is to rely on the lower levels
+figure that is set independently, usually ata
+safety measure
+Of risk reduction, namely administrative controls
+national level, typically with
+figure around EISm
+is a little harder
+Or PPE. People are unreliable at carrying out
+to Ez2m per comparable fatality. By comparing
+instructions and obeying alarms; particularly under
+the risk to life without the safety measure to the
+and, at times,
+stressful conditions_
+Therefore; the reliance on
+risk with the safety measure, a reduction in the
+controversial"
+these lower levels of control should only be used
+CFS can be calculated. This benefit can then be
+Where elimination, or substitution orthe Use of
+compared to the cost of implementing the safety
+engineering controls cannot be achieved。
+measure
+This allows for
+simple Cost-Benefit
+Analysis (CBA).If the cost of implementation
+is much higher than the reduction in CFS,
+12
+licht
+injury
+
+IRSE News
+Issue 267
+June 2020
+then the project does not have to implement
+subroutines and
+self-modifying code can
+the safety measure. In the UK for example;
+result in faults in operation。
+project is obliged by law to reduce risk to As
+Adherence to standards: People have spent a
+LoW As Reasonably Practicable (ALARP)and it is
+lot of time documenting how things should
+this process of comparing project costs with a
+be done so that those Who follow can benefit
+reduction in CFS that enables the project team to
+from their experience
+It also ensures that
+justify its decisions
+people adopt a common approach to their
+The demonstration of sufficient safety level is
+understanding of functional operation。
+complex and challenging process.
+Different
+Configuration Management: We need to
+Demonstration
+countries Will have different approaches to
+ensure that people are working from the
+demonstrate What is acceptable and What is
+correct design information, and that the final
+Of sufficient
+not
+Adopting good practice through adherence
+design drawings are marked correctly So
+Safety levelis
+to standards or qualitative arguments may be
+that the installation, test and commissioning
+3
+complexand
+sufficient; with a CBA only used in the more
+engineers can have confidence they are
+complex situations. However, CBA on its own is
+installing, testing and commissioning the
+challenging
+not sufficient to demonstrate acceptable safety
+correct design。
+process'
+levels. It cannot; for example; be used to claim
+Competence: Ensure those designing
+that adherence to statutory duties is not required _
+the system know What
+are doing!
+or that intolerable risks are somehow acceptable
+Competence is defined as the combination
+just because
+Offera
+good CBA. Legislation
+Of knowledge and experience; Which can
+often weights the decision towards safety,
+be grown through training, mentoring,
+requiring risk reduction measures that may not
+observation and assessment。
+seem necessary when judged bya CBA alone. And
+Error detection: If there is an errorin the
+i should be noted that benefits may not be limited
+design, we want to find it and remove i
+to safety. There may, for example; be efficiency or
+before it is installed. This means designing
+environmental benefits as well。
+for testability and validation, checking and
+Defence in depth
+reviewing designs, performing simulations, doing
+How do we design systems that are 'safe'?
+software code walkthroughs and undertaking
+We consider a process known as 'Defence in
+development testing:
+depth' . This consists of seven sequential steps as
+Fault avoidance: Even where the design is error-
+discussed below。
+free; faults can occur in operational service;and
+So controls must be applied to minimise the risk。
+Error avoidance: We work to prevent design errors
+These controls include:
+occurring in the first place by:
+Design for reliable operation, by ensuring
+Keeping the design simple. An overly
+components are not stressed whenin
+complicated system makes it harder to detect
+Service
+too much current through
+errors in the design of the system. Safety and
+electrical components
+ortoo much load
+non-
+safety elements of the design should be
+kept separate
+Avoid novel design features
+for mechanical elements) and by choosing
+reliable components。
+Personal Protective
+and the Use ofsubtle
+techniques that are not
+Equipment is important
+clearly understood by others. Don't provide
+Perform proactive maintenance when in
+but cannot guarantee
+functionality that isn't required in case itis
+service by maintaining at regular intervals or by
+workers' safety
+inadvertently activated. This is particularly
+having systems that alert the maintainer when
+Photo Shutterstock/
+pertinent for software Where complex
+in need of maintenance。
+lan Stewart。
+440001
+450091
+45
+13
+they
+they
+(e.9.
+ISTOR
+
+IRSE News
+Issue 267
+June 2020
+Figure 4
+Simplified
+station fire panel
+interface diagram
+Lift
+Fire
+damper
+To Safe
+floor
+Fire
+panel
+Actuator
+Now
+hear
+Gatelines
+this!
+Public
+address
+NN
+Fault detection: We are dealing with real-life
+Failure handling: We can ensure that we can
+mechanical and electrical systems which Will wear
+handle failures well through:
+and fail. So We want to ensure that faults can be
+Using known physical or electrical properties
+detected and rectified before any life-threatening
+to ensure that should a fault oCCUr, it fails to a
+situation arises_
+We do this through:
+known state (e.9. gravity returns a signalarm tO
+Specifying appropriate testing and
+the stop
+position).
+maintenance intervals and thresholds
+Provision of alarms or other warning indicators_
+How are hazards
+Where there are several similar items, these
+Instructions for people to follow in the event
+identified before
+can be compared to determine where their
+that something does go wrong:
+resultin
+behaviour diverges。
+Hazard mitigation: Finally, given the system
+accidents?"
+Provision of in-service self-diagnostic facilities。
+may failin an unsafe way despite all the above
+For software; the use of watchdog timers or
+best efforts, we consider implementing other
+plausibility checks on data_
+measures to reduce the overall risk such as crash
+Fault tolerance: Knowing that faults willoccur; we
+worthiness ofvehicles。
+can design our systems to tolerate certain levels of
+Hazard identificationand analysis
+faults. Examples include:
+This is all good theory. But how are hazards
+Redundancy: Providing more than one
+identified before
+result in accidents? There
+channel for the same information or control
+are three areas we need to consider:
+fOW
+A common approach in computer-
+based systems is to have three computers
+1. The functions the system has to perform_
+undertake the same calculation and
+Voting
+2.The users of that system and how
+are
+system checks that at least two ofthem agree_
+expected to interact with i。
+This is known as
+2-out-of-3 voting system).
+3.Interfaces With other systems。
+Note this protects against random hardware
+In order to do this, the system you are analysing
+failures (one channel may fail) but not against
+needs to be comprehensively defined and
+systematic faults Where there is
+a Software
+understood. Consider the introduction ofa
+fault which causes all three channels to
+station fire panelin an underground station as
+produce the same wrong output。
+shownin Figure 4。
+Diversity: This is similar to redundancy except
+that the channels Use different hardware
+The fire panel has one function: upon receipt
+andlor software to avoid many systematic
+ofan input from the actuator, it sends a control
+errors. This can be through design diversity
+signal via each of its interfaces to external systems;
+(the 2-out-of-3 voting system uses different
+S0
+they can perform their functions。
+microprocessors), functional diversity (e.9.
+In this example; there are three groups of people
+automatic braking, but with a driver on board
+firstly the one Who presses the actuator Who
+to act in case the automated system fails),
+may need some instruction or guidance on when
+manufacturing diversity (procure the same
+to press the actuator and what to expect next;
+product but from different suppliers).
+secondly station staff Who need training in the
+14
+they
+they
+they
+
+IRSE News
+Issue 267
+June 2020
+Guideword
+Definition
+No ornot
+No part of the intended result is achieved orthe intended condition is absent
+More (higher)
+Quantitative increase
+Less (lower)
+Quantitative decrease
+As Wellas
+Qualitative modificationlincrease (e.9. additional material)
+Part of
+Qualitative modification/decrease (e.9. only one of two components in
+mixture)
+Reverselopposite
+Logical opposite of the design intent (e.9. backflow)
+Other than
+Complete substitution, something completely different happens (e 9: wrong material)
+Early
+Relative to Clock time
+Late
+Relative to clock time
+Table 1
+Hazard identification guidewords
+Likelihood
+Classification
+Time frame
+Midpoint
+Description
+category
+term
+likelihood estimate
+5
+Frequent
+Less than 1 year
+1in 6 months
+The event is likely to occur frequently
+(probably annually)
+Probable
+1 year to 5 years
+1in 5 years
+The event is likely to occur often
+3
+Occasional
+5 years to 10 years
+1in 10 years
+The event is likely to occur several times。
+2
+Remote
+10 years to 100 years
+1in 50 years
+The event can be expected to occur
+during the lifecycle.
+Improbable
+100 years or greater
+200 years
+The event is unlikely but may by exception ocCUr.
+Table 2
+Likelihood categorisations.
+Severity
+Classification
+CFS equivalence
+Description
+category
+term
+Negligible
+0.001
+Non-reportable injury
+2
+Minor
+0.01
+Minor injury
+3
+Major
+0.1
+Major injury or multiple minor injuries
+4
+Critical
+Single fatality or multiple major injuries. Equivalent to 1 CFS
+5
+Catastrophic
+Multiple fatalities
+Table 3 - Severity
+categorisations。
+event ofanalarm;
+thirdly members of the public
+representation from people Who are experienced
+Who are expected to evacuate the station when
+in the system being considered, the environment
+the alarm is activated. Designers and maintainers
+in Which it Will operate and how things might
+are also important forany system but are not
+90 Wrong
+A HazlD involves systematically
+considered in this particular scenario。
+considering each function, each user operation
+(or reaction in the case of members of the public)
+"A HazlD involves
+Five separate interfaces are identified, each of
+and each interface_
+The conversation is seeded
+Which Will have electrical, mechanical, physical
+systematically
+With guidewords to encourage the meeting to
+and functional properties. These are:
+think about how the function
+User or interface
+considering each
+1. The actuator input。
+might not work as intended. An example of
+function, User
+2.The fire damper Which closes the damper to
+potential guidewords and their meanings are
+operation and
+restrict the flow of oxygen to a fire_
+shownin Table 1.
+interface"
+3. The ticket gates, designed to open to permit
+The Workshop members can consider whether
+the quick and safe exit of passengers_
+each deviation from intended operation represents
+4.Automated public address system Which
+genuine hazard.Once all reasonably foreseeable
+initiates announcements alerting passengers to
+hazards are identified, the hazards can be analysed
+the need to evacuate the station
+to determine their likelihood and severity of
+outcome. This aids understanding of the risk
+5.Lifts Which must move people to
+and enables effort to be focussed on those
+deemed safe floor。
+With the highest risk. This analysis is often done
+It is quite usual to hold a Hazard Identification
+qualitatively, and it is usualto see
+categorisations
+(or HazlD) workshop. It is important to get
+of likelihood and severity similar to Tables 2 and 3.
+15
+
+IRSE News
+Issue 267
+June 2020
+Severity
+Likelihood
+5
+Risk classification
+Negligible
+Minor
+Major
+Critical
+Catastrophic
+5
+Frequent
+Medium
+High
+High
+High
+High
+Intolerable risk: Activity not
+Probable
+Medium
+Medium
+High
+High
+High
+permitted. Hazard to be
+avoided or reduced。
+3
+Occasional
+LOW
+Medium
+Medium
+High
+High
+Tolerable risk: Control measures 
+2
+Remote
+LOW
+LOW
+Medium
+Medium 
+High
+to reduce risk rating to a level 
+Which is as low as reasonably
+practicable (ALARP)。 
+Improbable
+LOW
+LOW
+LOW
+Medium 
+Medium 
+Negligible or low risk: Control
+measures to be maintained and
+reviewed to control residual risk
+as far as reasonably practicable。 
+Table 4
+Risk matrix.
+This allows
+a matrix Of risk Classification to be
+experience teaches us that society requires a
+developed where particular combinations of
+Cadre of concerned citizens
+engineers foremost
+likelihood and severity can yield a risk that is
+among them
+to urge proper action and to
+intolerable, tolerable or negligible. An example is
+persist when rebuffed。
+shownin Table 4.
+"Engineers, being human, are also susceptible
+Note that allof the above tables are examples。
+to the drowsiness that comes in the absence of
+Different railway authorities may have different
+Crisis。
+Perhaps one characteristic of a professional
+categorisations and different acceptable levels
+is the ability and willingness to stay alert while
+Of risk. All such categorisations and levels must
+others doze: Engineering responsibility should not
+be justified, and this is typically done in a safety
+require the stimulation that comes in the wake
+plan.In extreme cases, likelihood and severity
+ofcatastrophe:
+may need to be calculated quantitatively; this is
+much harder to do.
+Staying alert requires the engineer to identify,
+then assess the risks arising from the works being
+Now the hazards are identified and their risk has
+undertaken. As engineers, we need to be alert
+been considered, safety measures can be designed
+to how the design will be operated and how
+to reduce those risks to
+a more acceptable level
+the system Will be maintained 
+We must foresee
+project may need to bring together
+number of
+changes in the operating environment that Will
+representatives to determine if a risk is acceptable
+affect the system's operation and consider how
+based on proposed measures。
+that design will eventually be decommissioned.
+Risks can arise through many areas_
+This includes
+"There Will
+Causes Vs hazards
+the physical aspects, human behaviours, the
+always be
+A common mistake in this process is to confuse
+processes Which govern how tasks are performed
+causes of hazards as hazards. This can result
+and the ability of people to perform
+a task when
+engineering
+in a long list of so-called hazards to manage
+under pressure.
+Having assessed the risks, the
+failures"
+increasing the time and cost involved to complete
+engineer must design the system (consisting of
+the design. Avoiding this confusion is achieved
+people and processes as well as the products
+by being clear about the functions of the system
+themselves) to mitigate against those risks。
+being developed, its users and its interfaces. This
+usually entails developing a diagram showing all
+About the author
+the possible interfaces, making sure this includes
+the human interactions as wellas technical
+David is the professional head of discipline for
+interfaces_
+In the fire panel example; the function
+Engineering Management in SNC-Lavalin Atkins
+f providingan alert to each of its interfaces could
+and Works to grow the skills and knowledge of
+have
+a hazard of 'No alert to the interfaces' 
+This
+those Who provide the technical leadership of
+could happen because the power supply to the
+projects. Beginning with an understanding of
+panel was faulty. The failing power supply is a
+the operational needs, he specifies, designs and
+cause of the hazard.
+changes railways to make them safe; operable
+and fit for purpose_
+Bealert!
+As a railway systems engineer with a broad
+Samuel C Florman was a Civil engineer who
+knowledge of rail systems, disciplines and
+started his careerin the 1950s.In his book
+"The
+operations, coupled with experience across the
+Civilised Engineer" he writes (0149):
+whole development lifecycle; David has taken
+'There Willalways be engineering failures。
+projects from initial concept through design and
+But the worst kinds offailures, the most
+development through to implementation.
+inexcusable;are those that could readily be
+He is currently working in the Engineering
+prevented if only people stayed alert and took
+Management Office of the East Coast
+reasonable precautions。
+Digital Programme, bringing digital railway
+techniques to Network Rails main line from
+London to
+Edinburgh。
+16

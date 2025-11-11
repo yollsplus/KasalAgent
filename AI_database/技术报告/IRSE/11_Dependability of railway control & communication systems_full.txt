@@ -1,0 +1,491 @@
+1RSE/
+Institution Of Railway Signal Engineers
+Dependability of Railway Control
+& Communications Systems
+Version
+4
+An introduction for candidates taking Module
+A ofthe
+IRSE Professional Examination
+Hedley Calderbank FIRSE
+Dependability V4
+
+Dependability
+Composed of 4 elements (giving the RAMS
+acronym):
+Reliability
+the probability that the item Will deliver its required function
+When required。
+Availability
+the proportion of time for Which the item is in a state to
+perform its required function。
+Maintainability
+the ease With Whichan item is kept in working order or
+repaired。
+Safety
+freedom from unacceptable risk of harm。
+Security is sometimes considered separately and cuts across
+the 4 elements above.
+Dependability V4
+
+Maintenance
+Once the system has been designed, installed and tested,
+MAINTENANCE is the process that keeps the system
+DEPENDABLE.
+It can consist of processes such as visual
+inspection, adjustment, lubrication, renewal of parts,
+testing。
+Preventive Maintenance
+to keep the item safe and reliable (usually on a pre-
+determined schedule).
+Predictive Maintenance
+preventive maintenance that is only done When the item is
+predicted to fail or become unsafe (e.8. from remote condition monitoring data).
+Reactive (or Curative, or Corrective) Maintenance (or Repairs)
+restoring the item to
+working order once it has failed or has a defective
+Renewals
+Replacing items before they become worn, unreliable or unsafe.
+preventive maintenance is usually most valuable on items with moving
+parts in a severe environment (e.8. points machines)
+Dependability V4
+part。
+
+Reliability
+Reliability
+The probability that the item will deliver its required function
+When
+required。
+Delivery of correct functions When in service (Will it work
+When it is needed?)
+Often measured as Mean Time Between Failures (MTBF).
+This formula gives a
+good approximation
+MTBF
+二
+Length of Time
+Number of Failures in that time
+e.吕
+At
+population level for 120 items, thereare 50 failures in a year。
+The
+average MTBF for an individual item is 120/50 = 2.4 years。
+This Will typically be measured in years for elements of a railway system (e.8。
+radio transmitter track circuit), but lower for whole systems。
+MTTF (Mean Time To Failure) is a very similar measure used for non-repairable
+systems
+Dependability V4
+
+Sone
+causes of poor Reliability
+Poor design (e.8. software
+component not resilient)
+Maintenance issues not considered at design stage (cost or
+time pressure?)
+Poor build or installation (e.吕. "nicked" wires, stripped
+insulation, inherent weaknesses)
+Poor maintenance (e.8. weakness or fault left after last
+intervention, deficiency not detected at last routine test or
+Visit)
+Abusive operation
+External (e.8. severe weather, power outage, physical
+damage, electromagnetic interference)
+Electronics affected
+the tough rail environment
+Failure to learn from past failures
+!
+Dependability V4
+bug;
+by
+
+Examples of root causes of poor
+Reliability
+Track circuits (with typical symptoms)
+Flooded or contaminated ballast (track showing occupied when
+clear, or variation in test readings)
+Poor insulation oftrack fixings
+(track showing occupied when clear)
+Failure Of Insulated Rail Joint (IRJ) (track showing occupied when
+clear)
+Railhead contamination (failing to detect a train)
+Points (with typical symptoms)
+Unstable track (loss of detection
+
+intermittent or permanent)
+Lineside equipment
+Electromagnetic interference
+Vibbration
+Temperature
+Humidity
+Dependability V4
+
+Examples of Good Reliability
+A
+highly reliable signalling system:
+Will ideally never fail (though may have internal faults or
+deliver degraded outputs)
+Will self-diagnose internal faults before they cause a
+failure of the system (e.8. remote condition monitoring)
+Will cope with the real world railway operating
+environment (both normaland abnormal)
+Few single points of failure
+Will cope with possible failures in other systems (e.8。
+power supply failures or minor interruptions)
+Dependability V4
+
+Availability
+Availability
+The proportion of time for which the item is in a state to perform its
+required function。
+Continuity of correct service (For how much of the time is it usable?)
+At its
+simplest ifcan be expressed as:
+Availability
+二
+Uptime / (Uptime + Downtime)
+This is the equivalent of:
+Availability
+二
+MTTF / (MTTF + MTTR)
+Where MTTF is Mean Time to Failure (or use MTBF instead)
+and MTTR is Mean Time to Repair (from time of failure to rectification).
+Planned outages need to be counted as failure incidents
+This will typically be nearly 100% for most items of railway equipment; but lower for
+Whole systems。
+unplanned system availability less than 100% causes loss and
+customer dissatisfaction.
+Dependability V4
+Any
+
+Some effects
+On
+Availability
+Negative
+Intrusive preventive maintenance
+Taking system out of service (planned)
+System out of service because of failure
+Restricting train movements to safeguard staff
+Positive
+Duplication of system components or back-up systems
+(can increase availability without component reliability
+being increased)
+Dependability V4
+
+Examples of Good Availability
+A
+highlyavailable signalling system:
+Will work 24/7 (orall traffic hours)
+any maintenance routines do not need the system to be
+taken out of service
+will continue to deliver at least minimum functionalityin
+the events of faults
+fault rectification does not need the system to be taken
+out ofservice
+does not require any work on the lineside
+Dependability V4
+
+Maintainability and some issues
+affecting it
+Maintainability
+the ease With Which an item is kept
+in
+working order or repaired.
+Weather protection for maintenance staff
+Ergonomics
+Easy Or zero maintenance routines
+Workflow on mobile device
+Diagnostic tools to quickly identify cause of failure
+Remote testing, configuration & faulting
+Modular replacement (especially on failure)
+Obsolescence (parts, skills, support)
+Dependability V4
+
+Good Maintainability
+A
+highly maintainable signalling system:
+Ideally needs no routine maintenance
+Otherwise, wherever possible; requires routine
+maintenance Which aims ideally to be:
+Minimised
+Easy to
+using normal tools and test equipment
+Not very highly skilled
+Non-disruptive (e.8. can be done While trains run)
+Not on or near the track
+Remote (at central staffed point, or via internet from
+anywhere)
+Is
+to repair (easy access, modular, diagnostics)
+Has lifetime access to spares and technical support
+Dependability V4
+dO,
+quick
+
+Safety
+Safety
+freedom from unacceptable risk ofharm.
+This includes:
+System Safety
+一
+the ability of the control and
+communications system to protect train movements at
+all times (including the associated design, installation,
+maintenance and operating processes & practices).
+Staff Safety
+not exposing people who maintain,
+operate or install control and communications systems
+to danger or harm (including signallers, drivers,
+operating staff as wellas maintenance and installation
+technicians)
+Dependability V4
+
+Some issues affecting System Safety
+Interlockings
+designed,installed and tested to be safe
+inall combinations f circumstances
+Colour light signals
+Visibble in all conditions
+Points
+locked, detected & maintained correctly
+Train detection
+no false clears With a vehicle present
+Axle counters
+assurance of clear track before reset
+Cables
+no false feeds or earths
+Indications
+failures can mislead operators or deny
+them critical knowledge
+Hardware & Software
+designed to fail safe, or (better
+still) to degrade gracefully & safely
+Dependability V4
+
+Maintenance Errors can
+CaUSe
+Unsafe Conditions
+The following help to avoid errors
+Easy-to-follow maintenance instructions
+Avoid the need to refer to a large manual
+Encapsulated checklists or prompts on mobile devices are good
+Staff training
+Acquiring the necessary skills
+Avoiding the need for frequent reference to maintenance instructions
+Staff competence testing (at regular intervals?)
+Design to make errors difficult (e.8: pin coding of
+Iluemodules,
+plug couplers to prevent a wire being connected to
+wrong
+circuit)
+Maintainability issues (e.8. ergonomics, weather protection)
+Allthe above are better than the threat of disciplinary action
+after a mistake is made.
+Dependability V4
+
+Safety
+A
+Safe signalling system:
+Prevents collisions and derailments
+Conveys clear instructions to drivers
+Fault tolerant (or degrades gracefully) so manual
+movement authorities or workarounds are avoided
+Fails safe Where complete failure is unavoidable
+Has software designed to default to the safest state
+Uses plug-in modules that are colour-coded (good) or
+pin-coded (better) to prevent use of the Wrong module
+Does not expose staff to danger (e.8. trains, high
+voltages, hazardous environments)
+Dependability V4
+
+Impact on Safety of Reliability &
+Availability
+Why will a signalling system With poor reliability Or
+availability worsen safety?
+Because the signal operator will have to
+USe manual
+procedures more often to allow trains to run。
+Being open to human error (and not fully protected
+by the fail-safe design of the signalling system)
+manual procedures are inherently less safe。
+Dependability V4
+
+Securityand some issues affecting it
+Security
+Protection against external actions or events (usually
+confined to malicious ones)
+Will it work without being degraded by changes or
+disruptions?
+Cyber security
+IP enabled systems
+Theft
+Vandalism
+Insider threats
+Dependability V4
+
+Good Security
+A
+highly secure signalling system:
+is immune to all forms of cyber attack
+is resistant or unattractive to theft
+is resistant or unattractive to Vandalism
+has protections against malicious actions by insiders
+Dependability V4
+
+Examples of how to Improve Dependability
+Technology
+Axle counters eliminate insulated block joint failures and track
+circuit failures from flooding or rail contamination。
+ETCS
+can eliminate signals and track circuits
+LED signal lamps - longer life and fewer failures
+Redundancy
+Eliminate single points of failure
+Overlap radio coverage
+Duplicate electronic interlockings and lineside modules
+Improve MTBF (Mean Time Between Failures)
+Design and install equipment for high reliability
+Reduce environmental stress (e.8. cooling)
+Improve the preventive maintenance regime
+Introduce remote condition monitoring
+Dependability V4
+
+RAMS Tools forimproving
+Dependability (1)
+FMECA (Failure Modes, Effects, and Criticality Analysis)
+4
+methodology to identify and analyse:
+all potential failure modes of the various parts of a system
+the effects these failures have on the system
+how to avoid the failures and/or mitigate the effects of the
+failure on the system
+RCA (Root Cause Analysis)
+4
+method of problem solving used for identifying the root
+causes offailures and displaying them graphically (e.8
+Fishbone or Ishikawa diagram)
+Dependability V4
+
+RAMS Tools forimproving
+Dependability (2)
+CCF (Common Cause Failure analysis)
+Identifying all the ways in Which a single fault can cause
+9
+system failure, even where system components are
+duplicated to improve reliability: Statistical analysis then
+alloWS a
+meaningful system reliability figure to be calculated。
+FTA (Fault Tree Analysis)
+To identify the best ways to reduce the risk of a system failure
+by tracking the various sequences of events that could lead to
+the failure.
+DRACAS (Data Reporting And Corrective Action System)
+Tracks all failure related data throughout the period from
+manufacturing to in-service
+Dependability V4
+
+RAMS Tools forimproving
+Dependability (3)
+FRACAS (Fault Reporting, Analysis & Corrective Action System)
+Process for reporting and analysing failures。
+then planning
+corrective actions. FRACAS records the problems related %o an item
+and their associated root causes to assist in identifying corrective
+actions. Fault Control desks Would use this。
+RCM (Reliability Centred Maintenance)
+Optimises the frequency and scope Of preventive maintenance
+interventions to reduce failures and their impact on railway
+operations。
+It takes account of factors suchas:
+Typical failure modes
+Probability and consequence of failure
+Safety risk
+Performance risk
+Number of operations
+Operating environment
+Dependability V4
+
+Improving
+Wear-out' Period
+Reliability
+Optimising Maintenance & Renewals:
+Understanding impact of Failures on Safety &
+Performance (FMECA based)
+Collecting key asset information for reliability analysis
+Determining Asset Life Characteristics (point of onset of
+increasing failure rate)
+Checking current and future availability of spares and
+technical support
+Using all the above to inform the maintenance &
+renewals policy
+(i.e. When should we renew? should we
+change the maintenance regime?)
+Dependability V4
+
+Dependability Measurement
+(Operations Phase)
+A few
+examples:
+Mean Time Between Failures (MTBF)
+Length of Time
+No.Of Failures during that time
+Also MTBSAF for service affecting failures
+Number of Signalling Failures (or those causing delay, or safety
+risk)
+Mean Time To Repair (MTTR)
+(from time of failure to rectification)
+Downtime CoSts
+Consider leading indicators
+e.8. Staff competence, asset
+condition
+Dependability V4
+
+Digging Deeper than System
+Failure Rate
+Capturing all relevant data at component level (e.吕:
+points, track circuits, radioaerials) gives the best
+opportunity for Dependability improvement
+Fault rate
+Precise caUse
+Environment
+Fault history of component (use Computerised
+Maintenance Management System
+CMMS)
+Maintenance history of component (CMMS)
+Asset condition
+Data consistency is challenging: Different people Will code
+the same failure; or event gifferently unless the data coding
+structure is simple and foolproof。
+Dependability V4
+
+Remote Condition Monitoring
+Predictive Maintenance is the ideal to aim for (i.e.
+detecting a potential fault before it happens
+and
+early enough to fix it before the system fails)
+Data should be transmitted to a person Who can
+take prompt action
+Examples:
+Points slow to operate
+Error rate on data link
+Signal lamp filament failure
+But not possible forall railway control &
+communications equipment
+Dependability V4
+
+Conclusions
+Dependability is hugely important (impact on Whole life
+costs).
+Operations and maintenance (including cost of failures)
+usually exceed the capital cost of a system overits lifetime
+Does it Work?"
+Is it safe?" are not enough for a project to
+aim for
+Design for Dependability
+Much cheaperand more effective than retro-fitting
+Don't let it be value-engineered out of scope
+40 years system lifetime of regret, ifyou
+i Wrong!
+Focus on Dependability throughout operational lifetime
+Use measurement and analysis
+Dependability V4
+get

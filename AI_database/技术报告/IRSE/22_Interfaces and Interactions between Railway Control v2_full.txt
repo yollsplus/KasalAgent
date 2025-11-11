@@ -1,0 +1,517 @@
+Questions for the Certificate (Module A) will not be set on the text which has been
+struck through but will be set on new reading list editions nos. 24,
+26 &27
+Effective from October 2023 exam
+Interfaces and Interactions between Railway Control & Communications
+and Related Systems
+An introduction for candidates taking Module
+A of the IRSE Professional Examination
+Kimberley Chang; February 2021
+Version 2
+April 2023
+The railway system is made up of various subsystems Which interact to deliver the required outputs;
+normally the movement of passengers and freight. The way these systems interact all have a role to
+playin the safe and efficient running of the overall railway. Railway control and communications
+systems are designed and operated whilst taking into account their interactions with related
+systems. This article gives an overview of the interfaces and interactions between railway control
+and communications systems and the related subsystems in the railway environment。
+Prominent subsystems are:
+Signalling;
+Telecommunications;
+Operations, including control centres, passenger information and public address systems;
+Drivers;
+Rolling stock;
+Permanent way
+track -
+including the rails, fasteners, sleepers and ballast
+Slab trackas
+Wellas on-track train detection & monitoring systems;
+Civil Engineering structures, including bridges, tunnels and stations;
+Electric traction supply;
+Electric power systems;
+Evacuation systems。
+During the life of a railway system, changes will be made either to enhance its capacity and
+capability, renew life expired assets or add new services. When making changes to one part of the
+system it is essential that the impacts of the change on other parts of the system are considered if
+the overall system is to continue to perform its functions safely and correctly
+Interfaces and Interactions with Operations
+Control Centres and Signallers
+The railway is controlled by signallers at signalling control centres who input their instructions via a
+control device, such as a computer screen, control panel or lever frame into the interlocking. After
+checking the instructions are safe, the interlocking passes the instructions on to the trackside
+infrastructure. It is important that the state of the infrastructure is feed back to the signallerin the
+form of indications on the computer display screen, indications panel, positions of the levers or by
+simply looking out of the window!
+The interfaces With the signaller are described in more detail in the Back to Basics Article "Operator
+Interfaces" (IRSE News, Issue 269, September 2020).
+Train Describers
+To set the correct route for a train, the signaller needs to know the identities of the individual trains
+aS
+they enter, pass through and leave the control area. Each train is allocated a train reporting
+Page 1
+25,
+
+Interfaces and Interactions between Railway Control & Communications and Related Systems
+number, to identify the train. The train reporting number allocates each train a unique identity
+which may be based on a combination of the train type, destination, operating company andan
+identity number。
+The train reporting numbers are initially entered into the system by the operator, Which may be a
+signaller, or depot controller at the start of the train's journey. The train describer then uses
+information from the interlocking about the status of the signalling system to "step" the train
+through the control area
+At the fringes of the control area, the information is passed to adjacent
+train describers via a telecoms link。
+The train reporting numbers can be manually altered, or interposed by a signaller if required. This
+may occur when a train has reached the end ofits timetabled service and needs to start a new one;
+When a train divides to form two separate services or two trains join to make one
+The train describer system is not safety critical, as the interlocking protects trains from unsafe
+movements if a train is misrouted.
+Passenger Information & Public Address Systems
+passenger information system delivers real-time information to passengers about the nature and
+state ofthe railway. The customer interface usually consists of:
+visual information display screens at stations and on trains;
+audio announcements at stations and on trains;
+mobile phone applications; and
+railway operator ortravel planner websites。
+Passenger information and automated public address systems usually take their inputs from the
+train describerand the timetable information to create real-time data. More information on
+passenger information systems can be found in the Back to Basics article "Telecoms Part 2" (IRSE
+News, Issue 271, November 2020).
+Interfaces and Interactions with Drivers
+There are several train-borne systems that perform the role of interfacing between the signalling
+system and the train driver。
+Automatic Train Protection
+Automatic train protection systems are designed to prevent or mitigate the consequences of trains
+passing signals at danger, over-speeding or overrunning buffer stops. Examples include: train stops
+on metro systems, the Automatic Warning System used in UK and Australia, or the European Train
+Control System。
+An automatic train protection system take information about the status of the signalling system,
+such as signal aspects, issued movement authorities or permissible speed information. The system
+automatically intervenes if trains are travelling too quickly to safely stop at a signal at danger or
+buffer stop, or decelerate sufficiently for a speed restriction. The intervention may consist ofan
+alarm and/or visual indication in the driver's cab, or go further and automatically apply the brakes
+until either the train has slowed sufficiently or stopped completely, depending on the system
+installed.
+Automatic Train Operation
+Automatic Train Operation is used to help automate the operation of trains and can vary in the
+degree of automation offered. This varies from no automation at the lowest level, to full
+Page 2
+
+Interfaces and Interactions between Railway Control & Communications and Related Systems
+automation, including starting and stopping of trains, operation of doors and handling of emergency
+situations. It is primarily in use in metro systems, but is becoming more widespread on mainline
+railways. Automatic Train Operation takes input from the signalling system to determine how far
+ahead the line is clear, and trackside beacons that transmit brake commands to the train. The trains
+on-board computer calculates the required the braking curve to bring the train to a stand at the
+correct
+position in platforms or at junctions. The braking calculations are updated frequently to
+ensure aCCuracy
+Driver Advisory System
+The driver advisory system aims to optimise the driving of the train, saving energy and improving
+performance. The system consists of a control centre subsystem that evaluates timetable
+information and routing strategies, and sends the processed information to the train. The train's on-
+board subsystem uses this information to calculate energy efficient speed profiles to achieve train
+timings and issues advice to the driver. Some of these systems are static, so the information is
+received by the on-board subsystem at the start of the journey, Whilst others are connected to the
+control centre subsystem during the journey and updated dynamically via radio.
+Secure Train to Signal Box Radio
+Secure train to signal box radio (including GSM-R) is used to communicate between the train and the
+control centre. The driver is provided with an in-cab terminal which can be used to display and send
+messages or voice communications between the driver and operational staff. More information on
+secure train to signal box radio systems can be found in the Back to Basics article "Telecoms Part 1"
+(IRSE News, Issue 270, October 2020).
+Interfaces and Interactions with Rolling Stock
+Braking Characteristics
+The braking characteristics of the rolling stock vary between train types, with some having much
+better braking performance, such as modern passenger trains, than others, such as heavy freight
+trains. Signals are required to be positioned such that the space between the first caution signal and
+signal at danger is sufficient for all train types authorised to run that route, with sufficient warning
+to stop (plus a safety margin).
+1st coution
+Signal ot
+signal
+danger
+signal spacing -
+Service
+braking distance-
+`5寸
+sofety
+margin
+In some cases, the signal spacing would allow for trains with better braking performance to run at
+higher speeds than others, Whilst still maintaining sufficient distances between signals. In these
+cases those trains may be permitted to travel at a higher speed。
+The braking characteristics of the rolling stock authorised to run on a route also impact on signing of
+maximum permissible speeds. Where there is a large reduction in maximum permissible speed,
+sufficient warnings for the speed reduction needs to be given for the trains to slow to the lower
+speed. This may be via lineside signage, or restrictive signal aspects to force a train to slow down。
+Page 3
+
+Interfaces and Interactions between Railway Control & Communications and Related Systems
+The braking characteristics of trains impact on the design and efficacy of automatic train protection
+systems. Some train protection systems evaluate train speed against the distance to a speed
+restriction or signal at danger and intervenes or sounds a warning if the train is travelling too quickly
+to brake sufficiently.
+For trains fitted with in-cab signalling systems, movement authorities are issued via radio and
+displayed in the cab for the driver. The train's on-board system calculates braking curves using speed
+restriction information, train current position and speed, train braking characteristics and the
+distance to the end of movement authority. The system warns the driver of possible over-speeding
+and may intervene by applying the brakes to slow the train if it is necessary。
+Definition of Track Clearance Points
+With track-based train detection systems, such as track circuits, treadles or axle counters, the
+position of the train is determined by the positions of its Wheels. At the front and rear of a train or
+locomotive, there is an overhang between the end of the train and the nearest axle. At junctions or
+conflicts, the position of axle counters or insulated rail joints need to be positioned accounting for
+the overhang so that the signalling system can detect a train fouling an adjacent line。
+direction
+0itravel
+Kovernong-f-s-I
+sofely
+morgin
+trock sCction
+Cleoroce
+point
+#
+troin detectior boungory
+Dlaced 01
+Cr
+0n
+gpgcogshi
+t0
+Cleorarce
+point 50
+that ary
+troin ,hal may
+foUlof
+the junction
+derectcc
+b
+the signolling system。
+Interfaces and Interactions with Permanent
+Gradient
+Gradients affect the ability of trains to accelerate or decelerate because gravity acts on the mass of
+the train. The ability to maintain safe train separation needs to take gradient into account, Which
+affects the lineside signal spacing or the limit of movement authority in in-cab signalling applications.
+Where gradients are falling in the direction of travel (downhill), the spacing between signals needs
+to be increased to allow for longer braking distances. This is of particular importance for freight
+trains. Where gradients are rising (uphill) , the spacing between signals can be reduced due to
+shorter braking distances。
+Positioning
+signalat the bottom or part way up a steep rising gradient should be avoided because
+of the time taken to accelerate and possible Wheel slip during poor adhesion conditions. This is
+particularly important for heavy freight trains or where trains may be required to stop frequently.
+Page 4
+Way
+
+Interfaces and Interactions between Railway Control & Communications and Related Systems
+In metro systems, sometimes the stations are designed to be at the top of a rising gradient. This
+helps to reduce braking effort to stop the train and the consequential heat generation from braking。
+Curvature and Cant
+Track curvature impacts a train driver's ability to see a signal, particularlyinan urban environment
+Or
+underground where there are considerably more obstructions. A straight alignment means that
+drivers can see the signal from some distance away. This may also have its own problems,
+particularly Where there are shorter signal sections and it becomes possible for the driver to see
+several signals
+the line of route and read one further away in error. This problem may be
+mitigated by adjusting the intensity and range of the signals so that signals that are further away
+appear less bright until the train is sufficiently close.
+Another problem arises where there are several lines running in the same direction and it is difficult
+for a driver to identify Which line the signal applies to
+This problem can be mitigated by placing
+signals parallel to one another, by providing additional reading distance for the signals, or by
+mounting signals on the other side of the line to increase separation between signal aspects.
+Cant is the slope of the track across the rails, Where the outer rail of a curve is positioned higher
+than the inner rail, providing a banked turn; thus allowing trains to move through the curve at a
+higher speed than would otherwise be possible. This consequentially affects the maximum
+permissible speed on the line, signal spacing and required sighting distances. The cant can cause
+issues With cable routing or, at level crossings, uneven cross track profiles for road users
+SwftehesaAd CfOsSfRgS
+Swftehesand ErosSfRgS,Or setsofpofnts,aHowtrafns to Change betweenines ortracks. The swfteh
+isthepartofa crossoverthat phYsfCaHy moves whereas the Eressfngfs thefixed element ofthe
+eressover The bladesofthe swtehes are moved va aserfes offeds b electric pofnt machines ef
+hand operated mechanicalfevers:
+Switch roils
+stock
+roils
+check
+roils
+stretcher bars
+Asimple set ofpoints consists offour railsThe to outside rails fstock rails} are fixedThe two
+inside ralls {swtch rallsH canmove from sideto side at one end Foratrainto safely pass thraugh a
+setofpoints one side ofthe swtch must be physically touching the stock railandthe other swteh
+rajlmust aHlow sufficient space forthetrain's Wheelsto pass betweenit andthe otherstock +a
+The crossing sectionofa-set-ofpoints-is usually a cast IumP Of metalwhich-allows hreaksin the
+running rails sufficientto-allow the flange ofthe wheels to cross the running railofthe othertrack A
+check railhelp keep the train's wheels onthe track where there is a fisk that the train could move
+laterally_The check rail simply guides the wheel by applying a barrierto the Wheel
+Acommonarrangementof points connects tWO parallellines ofa doubletrack railwayThis
+combinationis knowR as a 'crossover'and both point ends are Often Workedtogether under one
+controlsothat theyare always in correspondence With one another that is hoth set forthe straight
+Page 5
+along
+
+Interfaces and Interactions between Railway Control & Communications and Related Systems
+fouterorhoth setforthe foute overthe CrossovefCfossovers-andsome otherarrangements of
+crossings are fustrated ontheneyt page
+Flat crossing, where two low speed lines cross.
+There is no useable connection between the
+Simple crossover between two parallel lines。
+tWo lines。
+Switch diamond, for higher speed junctions。
+Single slip, where two tracks cross and it is
+There is no useable connection between the
+possible to move from one line to the other。
+two lines。
+Double slips have a slip on each side。
+Point Agchines
+Points can be controlled by direct connectionto a controHlever such asin a mechanicalsignalhox of
+groundframe Where the movement ofthe points are under the direct controlofa human
+More commonly the points are driven by a point machine powered bY an electric motor of
+hydraulic systemwith the moyements controlled by thefnterlocking An both caseswhen the points
+areiR Use
+are
+fequiredto be lackedin position sothat the points cannot be moved bythe
+signallingsystem orthe vibration ofthetrainThis is particularly important Whenthey are facing
+points andhelps to prevent derailment and damage tothe points
+Theinterlocking must know the position ofthe point bladesto check that the points arein the
+correct position for the safe movementoftrains and have not failed or become obstructedAn
+indwidual detectorfodis attached hetweenthe point blades and point machine that proves the
+position ofthe point blades by makingthe appropriate contacts withinthe point machine Ifthe
+bladesare out by aslittle as a few millimetresthe fods willnot bein the correct positionandWl
+prevent the contacts operating The state ofthe contacts is fed hack to theinterlocking so that the
+signalling system is aware ofthelie ofthe points
+Othertypes ofpoint machine exist that applytocking and prove point le in different Ways, hutthe
+requirement for Aocking and detection ofpoints is essentially the same
+CatchfTrAp Ponts
+Itis sometimes necessaryto derail atrain deliheratelyto protect
+against potentialcollision with
+aothertrajn
+Catch points are designedto derailanything running against the normal direction oftraffic, suchas
+loose Wagons that have no orineffectiye brakes and have "run away"The spring catch point
+consistsofone point blade,normally openin the derailing position Atrain movinginthe normal
+direction WIpushthe point blade cosed against 3 spring and continue unimpeded Atrain moving
+inthe Wrong direction wlLderailat the spring Catch Another type ofcatch point is the Wideto
+Page 6
+theyz
+
+Interfacesandtnteractions hetweeA RaWNaH ContfOl & CoIHHicatiOnSAAARelated Systems
+gaue typeconsistingof tWO switches that workin opposite directions with-the switches either both
+openor both closedThese are operated bythe signalling system andatraintravelling over these
+points Whilst inthe open position wLhe derailed
+spring
+normol
+blodes
+direction
+0f
+trovel
+open
+Spring
+cotch points
+Wide-to-gauge
+cotch points
+Trap points protect lines from trains onadjacentlines that have passed a signalat dangef typically
+attheexitfrom sidings-orfreighttooplines.They are controlled by theinterlocking withlockingand
+detection of point liefed hack tothe signalling system
+to
+point
+f conflict
+AACtOHs
+Where two failway lines meetthereis potential for conflict betweentrains.Signals,orimits of
+A9eHeA
+authority are required-close tojunctions to prevent trains traversing the junction when i
+is not safe to do so and to authorise trains totraverse thejnction Whenitis safe
+Signals are usually placed wth a safety margin foverlap} hetweenthe signal andany potential points
+Of conflict to protect trains traversing thejunction from atrain overrunning one ofthe protecting
+signals duetoan errorin brakingjudgementItis undesirable for signals to be placedat very Iong
+distances from thejunctions because this would reduce thejunction capacity duetotheincreased
+te
+requiredfor atrainto clear the junctionafter
+given a movement authority
+Track Based Train Detection
+Train detection systems are descrihedin more detailinthe Back to Basics Article "Train Detection 
+the Basics" HRSE News,Issue 261, Decemher 2019
+Other Ra AOHHteA EqHpHeAt
+Othereqwipment than can be placed onthetrackf betweenthe rajlsfneludes:
+Axle countersThese count the numherofaxles passing overagiyen pointTheyare
+campedto one ofthe fails andtheirocation can be constrained bH forexamplethe
+Rresence of check fails orthird fails fortraction poNeK
+Train protection systemsThere are many different systems but allinvolve track mounted
+equpment sendinginformationtothetrain Hy electrical magnetic orphysicalmeans
+ETCS fEuropean Train Control Systemy CBTC(Communications Based Train Controlland
+automatic driving systemsThese typically require equipment fixedtothe sleepers hetween
+the falls totransmit to offecejye informationfromtrainsThe equipment cannelude
+heacons ortransmitters foftenknowRas halises ortranspondersHandoops ofcable
+Page7
+being
+
+Interfaces and Interactions between Railway Control & Communications and Related Systems
+Hotaxle box detectorsThese consist ofinfrared scanners that measure theabnormalleyels
+ofheat generated by failing bearings in axle boxes Failed bearings ause the axle to seize
+and can Cause derailmentso early detectionis essential
+Otheritems can be fittedtothe sleepers ratherthanthe rails suchas heacons for on hoard
+trainannouncements-orspeed festrictions andoops-of cable forcoded track Circuits:
+Interfaces and Interactions with Civil Engineering Structures
+There are many structures around a railway line, either forming part of the railway or forming the
+surrounding environment. Sometimes the position, size or nature of those structures impact on how
+the signalling system is designed, constructed, maintained or operated。
+Tunnels, Viaducts and Bridges
+Tunnels impact greatly on the ability to position signalling and telecoms equipment. Sometimes this
+is unavoidable, such as With the underground metro systems found in many cities worldwide. It is
+preferable for trains not to stop within tunnels or on viaducts due to the risks associated with
+evacuating
+train in these places. Where reasonably practical to do sO, signals are placed so that no
+part of the train is within a tunnel, viaduct, oranywhere else with limited clearance。
+Tunnels and viaducts also present a challenge for the installation and maintenance of equipment,
+due to difficult access for staff, particularly if the tunnel or viaduct is long:
+Limited clearance within tunnels can make it very difficult to place signals clear of the train's
+kinematic envelope, and this is sometimes managed by using special, smaller tunnel signals。
+The ability of a driver to see signals at the minimum reading distance can be adversely affected by
+the walls of the tunnels, particularly if clearance within the tunnel is tight, or the tunnel is curved. It
+can be difficult for a driver to see the aspect displayed by a signal against a sunlit background ifitis
+placed close to the exit of a tunnel, especially ifthe tunnelis
+ornarrow.
+Bridges can also affect the ability of drivers to see signals immediately beyond it, as
+may be
+obscured by the walls or span of the bridge。
+Stations and Lineside Buildings
+Ifa passenger train is stopped at a signal and any part of the train is within a station platform,
+passengers may attempt to board or alight the train. This is a particular problem if the train's doors
+are not centrally locked. For this reason, stop signals are generally either positioned at the end of
+platforms or at least a train length beyond the end of the platform. Signals placed at the platform
+ends are preferably 20-25m from the stopping position of the train so that they can easily be seen by
+the driver when the train is stationary。
+driver must be able to read, interpret and understand a signal aspect for a sufficient distance on
+the approach. However, buildings, platform furniture, waiting shelters, canopies and passenger
+standing on the platforms can adversely affect this, particularly if the platform is curved. To aid the
+driver, an additional signal can be provided on the approach to the station, or part-way along the
+platform to give the driver an early indication of the next signal aspect。
+The proximity of platforms to the railway line can make installation, inspection and maintenance of
+lineside equipment difficult. Where practical to do to, equipment such as train detection equipment
+are
+placed clear of the platforms so that staff can work on equipment in a position of safety。
+Page 8
+long
+they
+
+Interfaces and Interactions between Railway Control & Communications and Related Systems
+In built up residential areas, where noise may be a problem for residents nearby, unnecessary
+railway-related noise must be kept to a minimum. The audible alarms on level crossings may sound
+at a lower level at night, or restrictions on the use of train horns on the approach to footpath
+crossings may be imposed, enforced by signage or regional
+national operating instructions。
+Other Limitations on Signalling Equipment
+Other structures that can also impact on the sighting Of lineside signals include electrification
+gantries, large signal gantries or pipe bridges。
+Trains should not stop on level crossings unless it is unavoidable, so signals need to be positioned so
+that they would not cause a train to obstruct the crossing when standing at the signal. Vandalism is
+also a risk at level crossings, so all equipment should be a sufficient distance from the crossing;
+ideally placed beyond security gates and anti-trespass guards
+devices。
+Interfaces and Interactions with Electrification and Power Systems
+Traction Power Supplies
+Traction poweris delivered by means of an overhead wire orat ground level via a third (live) rail
+close to the running rails, and collected by the train by a roof-mounted pantograph or rail-level pick-
+up shoe. To create a complete circuit, there is a traction return, Which can take several forms。
+Third or Fourth Rail Electrification
+Where traction power is delivered by a third rail, the return current is carried by the running rails, Or
+alternatively via a fourth conducting rail. The latter mechanism can be seen in the London
+Underground or Milan Metro.
+One ofthe difficulties with using one of the running rails for traction return is that the running rail
+may also form part of the signalling train detection circuits. In this case there is the need for the
+signalling equipment to be able to distinguish between the traction current and the track circuit
+current. Train detection boundaries must also allow the traction return current to flow past the
+boundary to the next track section, but prevent the flow of track circuit current across the boundary。
+For more information on how this is achieved , refer to the Back to Basics article "Train Detection
+the Basics" (IRSE News, Issue 261, December 2019).
+Overhead Line Electrification
+Early versions of overhead line electrification also used the running rails to carry the traction return
+current. A major issue with this is that any conductor carrying a current generates a magnetic field
+that can induce a voltage in nearby cables, particularly if they run alongside the conductor for great
+distances, as is often the case with signalling and telecoms cables. To overcome this, the running
+rails can be electrically bonded so that the return current is shared amongst all running rails in the
+vicinity, reducing the current in each individual rail. This reduces the level of electromagnetic
+interference in the signalling and telecoms cables. An advantage of this is that traction current takes
+multiple paths so, in the event of a rail break, the traction return can return to its source byan
+alternative path。
+To reduce the amount of electromagnetic interference, a dedicated return conductor wire is
+provided, running parallel to the overhead line at approximately the same height. The return
+conductor is bonded to the running rails so that it carries some of the traction return current
+The
+currentin the return conductor flows in the opposite direction to the overhead line, so the
+electromagnetic fields generated by the return conductor partially cancels that generated by the
+Page 9
+
+Interfaces and Interactions between Railway Control & Communications and Related Systems
+overhead line. The current carried by the return conductor is weaker than the overhead lines, so
+there is still potential for interference in the lineside signalling and telecoms cables。
+Electromagnetic interference in lineside cables can be reduced further by using booster
+transformers, which force nearly allof the traction return current from the rails to the return
+conductor. This increases the distance between potential sources of electromagnetic interference
+and other lineside cables, and consequently reduces the level of interference between them.
+Neutral Sections
+Sources of traction power (feeder stations) need to be electrically insulated from one another, so a
+neutral section is provided where no traction power is supplied. This is sufficiently
+to ensure
+that no train can be electrically connected to two separate supplies simultaneously, but not so
+that a train Will not have enough energy to reach the next live section.
+It is important that the signalling system is designed such that no train ever comes to a stand within
+neutral section, as any electric train would not be able to accelerate away again。
+Immunisation
+The effects of induction in signalling circuits can be limited by designing the signalling circuits and
+equipment to be immune from the unwanted currents. This is particularly important in the design of
+train detection systems where track circuits are
+In areas of AC electrification, DCtrack circuits
+may be used, and vice versa. Alternatively, AC track circuits can be used that have no harmonics in
+common with the traction current, enabling the track circuit receiver to distinguish between the
+track circuit current and any traction current that may be present in the rails.
+Signal Sighting
+Overhead line equipment can affect the ability of a train driver to read and interpret lineside signals
+and signs When they are obscured by equipment;, even if just momentarily. This is a particular
+problem where overhead line masts are on the inside of curves and may be overcome with the use
+of cantilever structures for the overhead line masts or alterations to the positions of signals and
+lineside signs。
+Equipotential Bonding and Earthing
+To protect lineside signalling equipment against contact with the traction supply, either directly,
+such as When overhead wires come down, or indirectly, such as when other equipment is made live
+byan electrical fault, signalling equipment is bonded to earth。
+In areas electrified by overhead line, any metal equipment beneath or near the overhead line is
+bonded to a
+running rail carrying traction return current so that if the wires carrying the traction
+current were to fall, the equipment is earthed via the running rail, protecting the equipment from
+damage and staff and public from electric shock。
+In third /fourth rail electrified and non-electrified areas it is not usual practice to bond all metal
+structures to the traction return rail。
+Signalling & Telecoms Power Supplies
+Signalling and telecoms power supplies must provide a constant, stable supply for the correct
+operation of equipment. It must also be safe for the staff to work on, with measures in place to
+protect staff and the public from electric shock under fault conditions.
+Signalling equipment within apparatus cases must be earthed to protect staff and equipment from
+electric shock from contact with exposed conductive parts, such as circuitry, and other conductive
+Page 10
+long
+long
+used。
+
+Interfaces and Interactions between Railway Control & Communications and Related Systems
+parts that could be made live by an electrical fault. Other protective measures include enclosing high
+voltage equipment in insulated units, providing insulated covers for live parts or insulating
+conductors。
+Signalling and telecoms equipment is commonly powered by a dedicated supply, and may be backed
+up by an uninterruptible power supply in case Of failure of the supply point, to allow time to change
+toan alternative supply.
+Interfaces and Interactions with Evacuation Systems
+Signalling systems must be designed to minimise the risks associated with emergency evacuation of
+trains or railway infrastructure. The system should be designed to minimise the risk thatan
+evacuation takes place in an area where it is difficult for passengers to exit a stricken train. It is also
+important that access to the site is possible for emergency services and rescue teams to provide
+assistance. For this reason, signals within tunnels, viaducts or steep cuttings are avoided if practical
+to do SO
+The signalling system may also be required to respond quickly to protect a hazard, such as a train
+crash orfire. In many cases, trains involved in an incident may already be protected by the signalling
+system. However, there may be a requirement for passengers to exit the train in a hazardous area
+(or indeed they may do it contrary to instructions) and the signaller will require a mechanism for
+protecting the site
+by replacing all signals in the area to danger or sending an "all trains stop"
+command via the radio, for example. Emergency communication and signalling intervention is
+essential to prevent further problems or disaster。
+Page 11

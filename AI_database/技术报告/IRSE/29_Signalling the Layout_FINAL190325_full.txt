@@ -1,0 +1,751 @@
+1 RSE/
+Institution of Railway Signal Engineers
+Signalling the Layout
+Nari Bandi (partly based on the former module 2 study guide)
+Essential reading text for students of the IRSE Certificate in Railway Control
+Engineering Fundamentals (Module A) from October 2025 exam
+Railways require signalling because many trains need to use the same tracks, drivers oftrains cannot
+"steer around" other trains or obstructions, and the braking distance of a train is greater than the
+distance that the driver can see
+The signalling must also deliver the train capacity required for the line。
+Therefore, the signalling of the track layout is critical。
+1
+Pyrposegf Signallingang Fynctigns
+The
+purposes of a signalling system are listed below。
+These include certain functions Which were in
+the past managed largely or entirely by procedure, but are now generally regarded as essential
+functions of the technical signalling system。
+Set up a safe route for the passage of each train over the track that it is to traverse-
+Authorise the train to make the movement。
+Maintain the route While the train is making its movement。
+Supervise andlor enforce the train to
+within its movement authority。
+Release the route (for use by other trains) after the passage of the train".
+Functions have been further added Which may include:
+The train driver (or ATO system) should be provided with appropriate information to control the
+train。
+Sufficient space should be provided between following trains to allow each train to brake to a
+stand safely:
+Controls should be in place to prevent or mitigate the consequences of:
+Trains passing the end point of their movement authority。
+Trains exceeding the maximum permitted speed。
+Trains
+moving Without authorisation。
+Protection should be provided for the public and trains at level (grade) crossings.
+The means should be provided for protecting trains, worksites, and workers during engineering
+WOrks
+The signaller should be provided with appropriate information to enable the safe authorisation
+oftrain movements。
+The system should have facilities to communicate between the signaller and others.
+Means should be provided to prevent trains being signalled onto lines with Which
+are
+incompatible.
+Facilities should be provided to instruct a train to stop in an emergency。
+2
+Movement Authorily
+A Movement Authority (MA) is an authority communicated to the driver (or to the ATO system
+driving the train) by the signalling system after it has checked that the section of line is clear
+and secure. This grants permission for a train to enter a particular section of
+line. Communication to the driver may be by means of lineside signals, or via an in-cab display
+(or sometimes both).
+MA will have some limits associated with i, Which may be:
+Speed at Which the movement may proceed.
+("Speed" signalling systems favoured in many parts of continental Europe)
+Signalling the Layout
+IRSE Certificate essential reading (for October 2025)
+Page 1of 13
+key
+stay
+they
+
+1 RSE/
+Institution of Railway Signal Engineers
+Route and Distance to the end of the movement authority。
+("Route" signalling systems
+favoured in the UK and parts of the world historically
+closely associated).
+Traditionally a movement authority is communicated to a driver by means of a lineside signal
+displaying a "proceed" aspect with the end of a movement authority indicated by a red lineside
+signal aspect。
+The nature of the "proceed" aspect provides information about the limitations associated With
+the movement authority. ("Speed" signalling or
+Route" signalling). Except where the driver can
+always see the end of movement authority from at least the braking distance (slow speeds and
+good braking, start from rest) some form of restrictive (cautionary) aspect is necessary。
+Certain MAs permit a train to enter a section of line that is already occupied by another train to
+allow trains to join, or to share platforms.
+The communication of these MAs to the driver
+includes the fact that the line ahead is occupied . Otherwise train separation is important; see
+section 3
+3.
+Train Separatign
+To avoid collisions, it is essential to maintain a safe distance between trains.
+The most common
+methods are described below。
+3.1 On-sight train control
+On tramways and on certain railways there is little benefit in providing a comprehensive signalling
+system. Rail traffic speeds, frequency, and braking performance may be such that safe operation can
+rely on the driver being able to observe that the track ahead is clear。
+3.2 Fixed block working
+Railway lines are divided into "block sections'
+and in general only one train is permitted to occupy that
+section of line at any one time. On low density lines a block section might be tens of kilometres,
+Whereas at the other extreme, on a very high-density metro line;
+a block section might be much less
+than the length of a train.
+One exception is that certain MAs permit a train to enter a section of line that is already occupied by
+another train to allow trains to join, or to share platforms and sidings。
+Lineside signals usually define the start and end of a block section and provide authority to enter the
+section. Towards the end of a movement authority, lineside signals specify where to stop and also give
+adequate prior warning of this.
+Where signals are not provided , the movement authority and the
+remaining distance to its limit is given via some kind of in-cab display andlor an ATO (automatic train
+operation) system, or by a verbal instruction. The following safe separation methods are based on fixed
+block working. For new projects, Absolute Block Working has been largely superseded by Track Circuit
+Block working, Which is now evolving into ETCS.
+Absolute Block
+working: The signallers at the entrance and exit of the block section must follow
+a strict procedure to authorise a train to enter the block section and to confirm that the complete
+train has left it (e.9. by observing the tail lamp on the back of the train). The length of block
+sections is dependent on spacing between signal boxes, which is often dictated by the distances
+between junctions, stations or level crossings. In most installations, electric block instruments are
+used。
+Typically, these are interlocked with signals and isolated train detection sections on
+approach to the signals at the exit of the block section to enforce elements of the absolute block
+working regulations.
+Track circuit block working: Track circuit block signalling is a development of absolute block
+signalling Where the line is divided into reasonably uniform, and often much shorter, blocks
+between adjacent
+signals, increasing the line capacity compared with absolute block
+signalling. Only one train is permitted per block section, usually defined as between one stop signal
+Signalling the Layout
+IRSE Certificate essential reading (for October 2025)
+Page 2 of 13
+Stop
+
+1 RSE/
+Institution of Railway Signal Engineers
+and the extent of the overlap (which is a safety margin) beyond the next. It requires continuous
+train detection, Which may be by track circuits or axle counters。
+Where movement authority is given to drivers via lineside signals, the signals can only transmit a limited
+number of different instructions to the driver. The meaning of each signal aspect must be clearly defined
+in the driver's rule book. The information presented differs significantly between different countries and
+between route and speed signalling. There is often more than one caution signal before approaching a
+stop aspect。
+Block Section
+Block Section
+Overlap (0)
+Proceed
+Caution
+prepare to
+StOp
+Stop atnext 5Igal
+Figure 1: Track Circuit Block with lineside signalling
+3.3 European Train Control System (ETCS)
+This is the signalling component of the European Rail Traffic Management System (ERTMS). Unlike
+CBTC systems, Which are currently unique to each supplier, the ETCS is designed to be an
+interoperable suite of products allowing trains to operate across borders Without any country-specific
+equipment and for one
+supplier's on-board equipment to work with a different supplier's fixed
+signalling.
+ETCS specifies several different "levels" and variants, the most significant ones are:
+Level 0 is used to refer to an ETCS fitted train using infrastructure not fitted with train protection or
+when operation in higher levels is not possible。
+Level NTC is used by an ETCS fitted train When operating over a line Which is only equipped with
+the National Train Control system (Class B)
+Such systems in the UK are AWSITPWS, in Germany
+LZB and in Belgium CrocodilelTBL.
+Level 1
+provides in-cab signalling and ATP (Automatic Train Protection) in conjunction with fixed
+block lineside signalling including train detection.
+Data is passed to trains from
+switchablelcontrolled balises, inductive loops, or possibly radio。
+Level 2 provides fixed block signalling and in-cab displays With conventional train detection.
+Communication is mostly through radio communication (GSM-R [Global System for Mobile
+Communications
+Railway]), with balises used for fixed information (such as absolute position).
+Lineside signals are only required if used as a solution for migration, or for allowing non-ETCS
+trains to run on the same lines.
+Level 3 is a term Which formally became obsolete in baseline 3 (which subsumed it into Level 2)
+but is frequently still used to distinguish the circumstances in Which conventional train detection is
+not
+required because reliance is placed on the on-board position reporting and train integrity
+monitoring. There are no lineside signals and moving block signalling is possible, although not
+necessarily implemented.
+3.4 Moving Block working
+The signalling system calculates the safe space between a train and the one it is following. This
+requires continuous communication between the central signalling system and the On-Board system
+which supervises the train speed to maintain safety. The "blocks'
+are nOW a
+moving safe zone round
+each train; the length of the safe zone ahead of the following train depends on its speed, along with all
+the other factors that affect its braking distance. Therefore;
+following train can be allowed to approach
+very close to the rear of a stationary preceding train (e.9. when it has stopped in a station) because its
+required braking distance decreases as its speed drops.
+Signalling the Layout
+IRSE Certificate essential reading (for October 2025)
+Page 3 of 13
+
+RSE/
+Institution of Railway Signal Engineers
+Moving block allows trains to safely run closer together because the relative positions of two trains can
+be determined with greater resolution than with track circuits or axle counters。
+This can increase the
+line's overall capacity. It is most beneficial for mass-transit railways Where platform dwell times are
+large component of achievable headway. On mixed traffic lines it can still be valuable, but it provides
+less benefit because the line capacity is more affected by the shared use of the line by trains of different
+speeds, braking characteristics, conflicts at flat junctions (metro railways generally have grade
+separated junctions, mainline railways have far fewer) and station stopping patterns。
+Ocupmy
+Ooowpaney
+Robg
+Foopin
+Fooyntn
+WogE
+Figure 2. Comparison between fixed and moving block (does not show safety margins)
+3.4.1 Communication Based Train Control (CBTC)
+CBTC covers a Wide range of bespoke signalling solutions from a variety of suppliers, particularly used
+on metro lines and generally has these characteristics:
+Automatic Train Protection (ATP) & Automatic Train Operation (ATO)
+Movement authorities are given to drivers via a display in the driving cab instead of lineside
+Signals。
+The train-borne equipment communicates with fixed equipment on the lineside by radio. Other
+communication methods have been used such as inductive loops in the track, these are
+generally referred to as TBTC (Transmission Based Train Control)
+Train position determined by the train itself (via a combination of fixed position references such
+as balises, with subsequent estimation of the distance travelled primarily by Wheel odometry but
+supplemented by an independent method such as accelerometers) and then communicated to
+the central signalling.
+No requirement for lineside train detection (track circuits or axle counters) for normal operation,
+but a certain amount is often provided for use in degraded modes, particularly when any train
+becomes "non-communicative"
+In addition to the capacity increase, a useful benefit of CBTC is the reduction in the quantity of lineside
+equipment Which offers maintenance and availability advantages (since otherwise it is often widespread
+and in places that are difficult to access)
+Within the implementation of CBTC, signalling the layout is a relatively minor consideration compared
+with other
+considerations such as: the reliability and capacity of the communications medium, the
+precision and certainty of a train's footprint and recovery scenarios should a train cease communicating,
+or a failure
+affecting a Whole area。
+Signalling the Layout
+IRSE Certificate essential reading (for October 2025)
+Page 4 of 13
+key
+
+1 RSE/
+Institution of Railway Signal Engineers
+4
+Braking
+4.1 Significance of Braking
+Afeature of railways is the low friction between steel rails and steel wheels; this has energy-saving
+advantages but means long distances to stop are required due to the limited adhesion. This can cause
+slips (as the train accelerates) and slides (as the train decelerates) Which is a factor that onboard
+CBTCIETCS needs to take into account (uncertainty is shown yellow in Fig 2).
+Trains can also be extremely heavy andlor travel at considerable speeds; a moving train therefore has
+significant momentum and there is a lot of kinetic energy to convert to other forms of energy during the
+process Of stopping a train。
+Hence; Braking Distance (BD) (i.e.the distance required for a train to brake to a stand from its highest
+permissible speed at that position) is an important consideration within the design of a railway system to
+realise the
+requirement: "Sufficient space should be provided between following trains to allow each
+train to brake to a stand safely"
+Essentially this means that the signalling system has to communicate to the driver (or entity driving the
+train) that they are approaching the end of their movement authority in sufficient time and distance to
+enable the train to brake safely before it in all circumstances。
+This can be achieved by:
+Lineside signal aspects
+(giving cautionary signal aspects- with speed or distance meaning):
+In cab displays
+(reflecting a braking curve- with speed or distance meaning):
+Communication with an ATO system。
+4.1.1 Factors affecting Braking Distance:
+Braking distance depends upon:
+Permitted speed of the train at the place that braking commences。
+Braking rate of train (The braking performance of trains on a particular route is a key defined
+interface between the rolling stock system and the signalling system).
+Likely adhesion conditions between the train Wheel and the rail (affected by weather or oil
+contamination that might cause sliplslide).
+The likely reaction time of the driver。
+Brake build-up delay, i.e. the time during which the brakes gradually become increasingly
+effective after having been initiated by the driver (this depends on the design of the braking
+system, the length of the train and is a particularly relevant factor for long freight trains).
+Effect of a rising or falling gradient on the effective braking rate. Clearly, a train travelling on a
+rising gradient will be able to stop in a shorter distance and conversely will take a longer
+distance on a falling gradient。
+Train achieving specified performance throughout its life (wear & tear, some brakes potentially
+isolated).
+The comfort of passengers。
+The braking distance of a train in normal operation, taking into account all these factors is usually
+referred to as a Service Braking Distance (SBD), Whereas a train making an Emergency Brake
+application would generally be able to stop in a significantly shorter distance. The SBD is utilised in
+laying out signals but note that the spacing between block signals could be longer or shorter than SBD
+(see Fig 4)
+Signalling the Layout
+IRSE Certificate essential reading (for October 2025)
+Page 5of 13
+key
+
+1 RSE/
+Institution of Railway Signal Engineers
+Block Section
+Block Section
+Overlap (O)
+Droceed
+Caution; prepare to
+Stop
+stop at next signal
+Minimum Braking distance (BD)
+Minimum Braking distance (BD)
+Figure 3: Scenario in Which block sections are longer than Braking Distance
+Eqyationgf  :
+In principle (see 4.2), Braking Distance is proportional to the square of its initial speed
+and dependent on the nominal braking rate of rolling stock (which in reality varies with speed and also
+takes time to reach full effectiveness).
+BD =
+U2
+BD = Braking Distance (assuming level track)
+U = Initial
+speed
+2.b
+b=Braking rate
+4.2 Specification of Braking Rates
+Braking Distances
+In reality braking distance assessment is much more complex than the simplistic example above.
+Different railways use a Variety of approaches, generally based on empirical evidence。
+Mixed traffic railways have to be catered for the often Widely different braking characteristics of modern
+passenger rolling stock and heavy freight trains. This is most commonly done by:
+Calculating braking distances for higher speed passenger trains, laying out signals to suit these
+distances, and then limiting freight trains to a speed at which they can stop Within these
+distances.
+Calculating braking distances for freight trains, laying out signals to suit these distances, and
+then accept that passenger trains Will have excessive braking distance.
+Unless used in conjunction with lineside signals, ETCSICBTC is not constrained to fixed positions, with
+each train determining where to commence braking according to the specific circumstances and thus
+these trade-offs do not need to be made.
+Signalling the Layout
+IRSE Certificate essential reading (for October 2025)
+Page 6 of 13
+
+1 RSE/
+Institution of Railway Signal Engineers
+5
+Aspect Seqyences
+Each railway administration has developed its own bespoke series of signal aspects with defined
+meanings and the permissible sequence of aspects that can be displayed at successive signals. Their
+meanings can be categorised as:
+Stop
+the end of the movement authority
+almost universally Red or Twin Reds
+Proceed, but prepare to stop at the next (or a subsequent) signal (route signalling practice).
+Proceed, but limited to a defined speed (speed signalling practice).
+Proceed at maximum permitted speed for that train。
+Proceed only so far as you can visually see that the route is clear (This is used for low-speed
+movements, but nomenclature and usage vary significantly between different railway
+administrations)
+Each railway administration also has defined permissible sequences of aspects that can be displayed
+by successive signals. Figure 3 shows lineside signalling where there is one caution aspect before the
+stop aspect, whereas Figure 4 shows closer signal spacing and that a second train can more closely
+follow a first train on "clear" (unrestricted) aspects。
+Block Section
+Block Section
+Block Section
+Overlap (OI
+Train length
+Proceed
+Caution; prepare to
+Caution; preparetO
+Stop
+stoptWO signals ahead
+StOP at next signal
+Sighting
+ADDrOx 0.5 Braking
+Minimum Braking distance (BD)
+Distance (S
+distance (80]
+Distancefromthe Stop aspectback to the
+TrStUnrestricted Aspectonlts approach (P
+Figure 4: Scenario in Which block sections are shorter than Braking Distance
+6
+Overlaps
+Drivers obey lineside signals and almost always stop at a red signal at the end of their movement
+authority. However, there are occasions when drivers might fail to stop appropriately, for a number of
+reasons including:
+Misjudgement of braking performance (e.9. unexpected poor adhesion)
+Lack of attention or incapacity:
+Lack of capability due to inadequate training.
+railway administrations reserve a portion of line beyond the end of a Movement Authority (beyond
+the
+signal) as mitigation against driver mistakes or adhesion conditions.
+This is called an Overlap
+and,in general, is reserved for that one train in case it overruns. However, once the
+system has
+determined that this train is stationary (and therefore no longer liable to overrun ), this reservation is
+released, permitting use of the area by another train。
+The length of an overlap can be determined in a number of ways:
+Anotional distance (sometimes dependent on the maximum speed on approach):
+An individually calculated distance
+every signal。
+Signalling the Layout
+IRSE Certificate essential reading (for October 2025)
+Page 7 of 13
+Many
+Stop
+for
+
+1RSE/
+Institution of Railway Signal Engineers
+Capacity
+7.1 Simple Headway
+The Headway Time is the minimum time (which equates to a Headway Distance at constant speed)
+between a train and a second following train, where the second train is approaching an unrestricted
+proceed aspect (i.e. NOT a cautionary aspect).
+In the simplest case, where the two trains are both
+travelling at the same constant speed, then the Headway Distance between the front of the two
+Successive trains is as indicated:
+Block Sectlon
+Block Section
+Overlap (OI
+Train length (L
+Proceed
+Caution, prepare to
+STOp
+stop at next signal
+Sighting
+Distance
+Minimum Braking distance (BD)
+Minimum Braking distance (BD)
+Distance fromthe Stop aspect backtothe
+Tst Unrestncted Aspecton is approach (P
+Figure 5: Constant speed headway (braking undertaken within one block section)
+Where:
+L =
+Length of Train
+0 =
+Length of Overlap
+Headway Distance (H)
+尸 =
+Distance from the Stop aspect back to the first Unrestricted Aspect
+5 +尸+0 +
+on its approach
+8
+Sighting Distance
+(allows for the fact that the driver might brake prior to reaching
+restrictive signal).
+For main line higher speed lines, P predominates and for lower speed & high-capacity metros, the other
+factors tend to be more predominant.
+When calculating braking distance contribution to headway, it is important to work from the maximum
+permissible speed NOT the timetabled speed。
+For trains travelling at a constant speed, the headway
+distance can readily be converted to a headway time; but this should use timetabled speeds. This
+ensures that the Worst case is taken into consideration。
+In Fig 5 which reflects any lineside signalling system in Which there is only one cautionary aspect prior
+to the red (e.9. UK mainline 3-aspect):
+P = twice the signal spacing, each of which is a minimum of SBD
+and therefore the best possible Headway = S
++2XS8D +0 +匕
+In Fig 4 Which reflects UK mainline 4-aspect signalling (but is essentially similar to some speed
+signalling systems ) Where the braking from full line speed to a stop is achieved over two (or even more)
+signal sections:
+P = three times the signal spacing, with alternate signals spaced at a minimum of SBD
+and therefore the best possible Headway = S
+1.5 X SBD +0 +匕
+Thus, the capacity of the railway has been increased, but at the cost and provisionlmaintenance of
+significantly more signalling infrastructure.
+Signalling the Layout
+IRSE Certificate essential reading (for October 2025)
+Page 8 of 13
+
+1 RSE/
+Institution of Railway Signal Engineers
+7.2 Capacity constraints
+In reality however, most railways have lengths of track for Which the permitted speed is less than the
+maximum elsewhere. Even where the speed profile of the line is unchanging, there are often
+intermediate stations and consequentially those trains that
+will be
+Slowing down and accelerating
+again. If all trains stop and also have the same acceleration and braking characteristics, the signals can
+be spaced appropriately for the resultant speed profile; taking advantage of the shorter braking distance
+and attainable speeds。
+This technique permits the distance between signals to be lower in the area of
+the station and thus still deliver good headway time, despite the slower running and the platform "dwell
+time"; i is usually only
+applied to metro railways。
+However, 讦 the signalling needs to facilitate the running of any non-stopping trains, the signal spacing
+must always reflect the full braking distance; this means that the stopping headway (time between
+successive trains Which stop at the station) would be significantly increased. Timetabling one stopping
+train between a pair of non-stopping trains utilises a disproportionate amount of line capacity. Similarly;
+ia line is used by trains of different speeds, it makes no sense to talk of the headway of the line; itis a
+matter of working out the detail of how quickly the faster train Will catch up the slower train and where
+the track layout is such that it can pass (overtake) i.
+Computer simulations of possible timetables being
+implemented upon the proposed signalling are often undertaken at the conceptual stage of signalling
+the layout。
+Hence, factors that affect Headway are:
+running stopping trains between non-stopping trains,
+differential train speeds, meaning signalling cannot be optimum for both types,
+junctions Which may be high or Iow speed but are generally slower than the straight-ahead
+speed。
+Trade-offs need to be considered between capacity and speed. Service Braking Distance increases in
+proportion to the square to the speed and so tends to dominate for a higher speed line; iit is
+acceptable that the permissible speed is reduced then signals could be closer together and the capacity
+improved. The optimum capacity in terms of trains per hour (minimum headways ) is obtained where all
+trains have the same characteristics in terms of acceleration, deceleration, maximum speed and
+timetabled stopping patterns. The best way to improve capacity measured by "passengers per hour" is
+often to run longer trains。
+For metro type railways, factors other than the Service Braking Distance largely determine capacity, for
+example the lengths of the train, the overlap, the sighting distance, the station dwell time. For heavy
+haul mineral railways, the Service Braking distance is important, but junction clearance at the end ofa
+long single line section often predominates。
+8
+Operationaluse gf Track Layout
+Sofar;
+we have been considering a simple plain line railway, but we now need to look at the other
+primary role of signals, protecting hazards such as points and level crossings. It is important to
+understand the operational use Which is made of the track layout i.e. what train movements are
+required? is there a need to join two separate trains together or undertake shunting movements
+passenger andlor freight?
+Junction protection and Signalling arrangements will be considered in sections 12 & 13, to Which the
+considerations of section 9 are particularly relevant, but most ofit applies to all signals so will be
+considered next
+Signalling the Layout
+IRSE Certificate essential reading (for October 2025)
+Page 9 of 13
+Stop
+
+1 RSE/
+Institution of Railway Signal Engineers
+9
+SignalPositione
+Apart from the considerations of headway and braking distances, there are also other constraints on the
+position of signals Which need to be understood to correctly signal the layout. Design for a particular
+railway needs to follow standards of the relevant railway administrations because
+Vary The
+following paragraphs summarise the most common。
+Physical sighting: The purpose of the signal is to communicate information to the train driver. To
+enable this, the driver needs to be able to see it clearly for a sufficient period of time to assimilate the
+information. A site survey can be used to determine the final signal position to confirm readability;
+although increasing use is being made of virtual signal sighting (a computer model based on existing
+site data and reflecting the proposed alterations being undertaken).
+Where a signal needs to be
+positioned somewhere which does not provide adequate sighting distance, the sighting deficiency must
+be mitigated (various railways has different mitigations; in UK Main line this generally involves provision
+ofa banner repeating signal).
+Parallel signals: Not only does a driver have to be able to see a signal, but
+also have to
+determine Which signal applies to them xf they can see more than one signal at the same time. For this
+reason, many railway administrations require that, When there are parallel lines signalled for the same
+direction of traffic; then the signals shall usually be adjacent to one another; unless specific measures
+are put in place to mitigate the risk of incorrect reading.
+Examples may be mounting one at much
+reduced height or providing a short-range head or a physical screen to obstruct the view from other
+directions. This is particularly applicable for platform departure signals。
+Maintenance & Installation constraints: Signals need to be installed in a practical position
+often a
+constraint on urban railways with viaducts and tunnels. They also need maintenance, although this is
+less of a consideration for a LED signal than a traditional filament lamp signal. The aim should still be to
+avoid putting them where access would be a problem, such as on viaducts orin tunnels, but sometimes
+this is inevitable because of the need to respect other constraints. Where other considerations permit, i
+is advantageous to place the signal near an access point for convenience throughout its operational
+life.
+Overlap clear of junction: If the overlap of a signal extends through a junction, then the route up to
+that signal will lock the junction, until the train has come to a proven stand at the signal protecting the
+junction. This clearly precludes other simultaneous conflicting movements through the junction.
+Itis
+more flexible and greatly reduces the complexity of the interlocking if the overlap limit is before the
+junction, especially on converging junctions (see Fig 13).
+Reasonably Even spacing: It helps a driver to know Where to expect a signal 讦
+are relatively
+evenly spaced。
+In particular, where an aspect sequence extends over two signal sections, i is easier
+for the driver to judge their brake application if the intermediate signal is placed approximately mid-way
+between the first caution and the stop.
+Overbraking: The minimum distance between the first cautionary aspect and the stop signal at the end
+Of the movement authority is the service braking distance. However, if the actual distance is Very
+significantly greater than this, then there is a risk that the driver becomes accustomed to not applying
+the brakes at the caution and may then forget or misjudge their brake application, resulting in the risk of
+overrunning their movement authority. For this reason, excessive over braking should be avoided 讦
+possible; In UK mainline, there is a 50% overbraking rule to limit this. Other railway operators prefer to
+place distant signals at a consistent distance from every station, regardless Of speed ofline。
+Platform Starter signals: Where signals are required in the vicinity of a station platform, then they
+should usually be positioned at or near the exit end of the platform (to minimise platform reoccupation
+time). Alternatively, the signal should be at least a train's length beyond the platform (so that no partofa
+train stopping at it Will still be in the platform).
+Standage: In certain parts of the layout, it is necessary to be able to fit a train of the specified maximum
+length (perhaps in a loop line to allow the locomotive to run around to be at the other end of its train).
+The position of signals relative to each other, or relative to the point work or level crossing on its
+approach needs to be sufficient to avoid the rear of the train unnecessarily locking the infrastructure and
+hence preventing other movements. This needs to be considered with an appropriate allowance for
+Signalling the Layout
+IRSE Certificate essential reading (for October 2025)
+Page 10 of 13
+they
+they
+they
+
+1 RSE/
+Institution of Railway Signal Engineers
+such practical factors as the variation in stopping position of the train relative to a signal, and the
+potential for possible "roll back" of the train (especially where trains without full brake fitment operate)
+10.
+Train Detectipn
+For the purpose of layout design, the important factor is defining the limits of each section. The number
+oftrain detection sections provides the "resolution'
+of the signalling system's View of train positioning:
+For the greatest "resolution" there needs to be more train detection sections, but clearly each section
+provided comes with an economic cost. However; Where there are ETCS trains reporting their positions,
+this information can be used to create virtual sections (i.e. without needing equipment trackside) within
+the interlocking.
+See section 12 regarding the positioning of train detection around point work.
+11.
+Signalling @gn
+iplications OfJynction locking
+In order to successfully signal a layout, it is necessary to understand the principles of operation of the
+Specific railway. In the diagram below, signals 1,3 and 5 are all placed sufficiently far from the point
+work that the overlaps beyond them are free of junction conflict; therefore all the points remain free until
+a route is set from any of those signals。
+Setting a route from signal 3 to signal 5
+Yellow Ie ndicales (oule sel fom
+initiates the movement of 102 points and
+SLnlto
+SnI
+101 points to normal and also reserves the
+sections of track from signal 3 to the end
+ofthe overlap beyond signal 5. As soon as
+AD
+the route starts to set, the signalleris
+101a
+41010
+prevented from setting a route
+}
+signal to 5 signal, orfrom 4 signal to 6
+signal; however a route from 4 signal to 2
+signal may be set since this does not need
+Figure 12: Junction locking considerations
+any of the already reserved section of line
+and requires points 101 also to be normal。
+As soon as all points have been detected to be in the correct position (assuming all other conditions
+are satisfied, such as relevant train detection sections proved clear), the signalling system will issue a
+movement authority to the driver by clearing signal 3 to an appropriate aspect。
+After the train has passed signal 3 (or its Approach Locking otherwise released), the "Sectional Route
+Locking" imposed on each track section is released behind the rear of the train as it progresses
+through the route.
+Once the train has moved Wholly onto train detection section AD, 102 points
+become free; With 101 remaining locked. This would prevent the route
+signal 4 to 6 signal being
+set until the train had cleared the Whole of AD section even if actually physically clear of points 101; the
+consequential delay would be lengthy if signal 5 were not showing a proceed aspect。
+Er IiIn dcicclonsCo7 BAC
+MdCCaddcd 1oJlaw qUIckCT Toulc
+Unnecessary delay could be eliminated by
+Trlracfortrn DrmROT
+providing additional train detection
+OVOTIRR pInrs
+sections to release the locking on points
+CC
+more quickly as shown in this diagram;
+but these add to the cost
++
+102
+40
+丽
+IOI
+This is an example Where Signalling the
+1016
+Layout needs to balance various different
+considerations when determining What
+facilities are economically justified for the
+intended use of the railway。
+Figure 13: Optimising train detection limits at junctions
+Signalling the Layout
+IRSE Certificate essential reading (for October 2025)
+Page 11 of 13
+from
+from
+
+1 RSE//
+Institution of Railway Signal Engineers
+12. Signalling plgn
+implicatigns gfJunction Signallingarrangements
+Where lines diverge, the track layout is often designed (for economic or geographic reasons) such that
+one route (the main line) has a much higher permitted speed that the other route (the diverging line)
+When a train is routed onto the diverging line, the driver needs to know sufficiently early so that
+Can
+adjust the train's speed appropriately.
+Ona "Speed" signalled system, the driver can be notified by the aspect displayed at the
+previous signal(s) the speed at which
+may pass the junction signal。
+On
+Route" signalled systems, the driver is generally informed of the route set by means ofan
+Indicator at the junction signal and is expected to adjust their speed based on their knowledge
+Ofthe route
+The problem is that, unless some form of warning has been given to the driver
+previously; there could be insufficient distance to brake to the permitted speed。
+On some railway administrations therefore, earlier speed reduction is partially enforced by "Approach
+Release".
+This means holding the junction signal at red (or perhaps yellow) until the train is close to it
+(and should therefore have slowed) and the driver will be able to see any signal indication of divergent
+route before the signal clears for it. This methodology can on its own be unnecessarily restrictive and so
+additional signal indications are sometimes provided at or near the previous signal(s).
+13. Level(Grade) Crossings
+Alevel (grade) crossing is where a road crosses the railway line at the same level. Clearly there is a
+need to ensure that the road is closed to road traffic before a train is able to pass across the level
+crossing.
+The signalling plan needs to take these factors into account。
+Railway administrations adopt a wide variety of methodologies for providing this protection with varying
+arrangements of lights, barriers, operating sequences etc. , dependent upon local practice and highway
+regulations。
+However;
+can be broadly split into 2 groups:
+Crossings Which are protected by signals. The signal is only allowed to clear when the crossing
+has been proved to be closed to road traffic and the crossing area itself is clear Signalling
+design needs to ensure that protecting signals are positioned appropriately (not too close or too
+far away from the crossing) and that the level crossing sequence is commenced sufficiently
+early so that a train does not receive a restrictive aspect sequence from the signals on the
+approach to the level crossing protecting signal。
+Crossings which are not protected by signals continuously detect that no train is approaching in
+order to maintain the road open. Signalling the layout must provide a means to give the
+required minimum warning time before a train arrives at the crossing (e.9. positioning strike-in
+points at sufficient distance), because it is essential that the road user is given enough time to
+avoid being on the crossing. Generally, such crossings are not interlocked with signals but there
+are
+special cases Where there is a signal within strike in distance or if there is a station at which
+trains may stop。
+Signalling the Layout
+IRSE Certificate essential reading (for October 2025)
+Page 12 of 13
+they
+they
+they
+
+1 RSE/
+Institution of Railway Signal Engineers
+14. Symmarygfactivily
+Signalling the layout is fundamentally the art of selecting the most appropriate positioning of signals for
+the specific geography (the hazards to be protected, the design of the track layout, its speed and
+gradient profiles, respecting other site constraints), Which:
+is capable of delivering the operational requirements (accommodating the mix of traffic types,
+providing the appropriate routes to meet the specific needs of each of type, delivering the
+overall capacity and specific headway demands, flexibility of use in the various modes of
+operation);
+takes into account the train characteristics (in particular the braking and acceleration
+performance) and the railway's specific signalling principles and operational procedures
+designed to provide adequate safety
+is as economic as possible; considering the Whole life cost of the new system and its interfaces
+to any existing signalling.
+It is inevitably a compromise of conflicting requirements Which need to be addressed, typically in the
+following order:
+1.
+Requirements Which relate to the safe operation of trains, based on the statistically sound
+assumption that drivers obey lineside signals; examples include sufficient braking distances;
+permissible aspect sequences。
+2
+Requirements that relate to the relatively few occasions When drivers fail to obey lineside
+signals; examples include excessive over braking, overlaps, train protection。
+3
+Requirements that relate to reliability, maintainability etc。
+Signalling the Layout
+IRSE Certificate essential reading (for October 2025)
+Page 13 of 13

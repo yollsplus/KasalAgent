@@ -1,0 +1,4141 @@
+Fe
+P2o
+Contract No. HE
+101102001
+Suropes Rail
+Rail to Digital automated up to autonomous train
+operation
+037.3
+
+Requirements specification to FA1 WP8/9
+Due date of deliverable: 31/07/2024
+Actual submission date: 03/07/2024
+LeaderlResponsible of this Deliverable: Joelle Aoun, ProRail
+Reviewed: YIN
+Document status
+Revision
+Date
+Description
+01
+03-07-2024
+First issue
+02
+14-10-2024
+Second issue
+03
+20-12-2024
+Third issue
+Project funded from the European Union's Horizon Europe research and innovation
+programme
+Dissemination Level
+PU
+Public
+SEN
+Sensitiv
+limited under the conditions of the Grant Agreement
+Start date: 01/12/2022
+Duration: 42 months
+R2D-WP37-D-PRO-001-03
+Page 1of 60
+20/12/2024
+Interne
+
+Fe
+Reo
+Contract No. HE
+101102001
+Suropes Rail
+ACKNOWLEDGEMENTS
+This project has received funding from the
+Europe's Rail Joint Undertaking
+(ERJU) under the Grant Agreement no.
+101102001. The JU receives support
+from the European Union's Horizon Europe research and innovation programme
+and the Europe's Rail JU members other than the Union。
+REPORT CONTRIBUTORS
+Name
+Company
+Details of Contribution
+Joelle Aoun
+ProRail
+Main structure, contributions to main
+sections, review, revision, quality check
+Alwin Pot
+ProRail
+Main structure, general sections, Dutch
+case study and revision
+Patrick Looij
+NS Reizigers
+Performance indicators, description of
+Dutch case study
+Jose A
+Reyes
+CAF
+ERTMSIETCS Overview
+Miguel Letona Otano
+ADIF
+Spanish case studies
+Alfonso Martin Hernandez
+ADIF
+Spanish case studies
+Alfonso Martinez Sierra
+ADIF
+ETCS HL3 system architecture and
+functionality
+Daniel Knutsen
+VTI (TRV)
+Swedish case studies
+Augustin Arachtingi
+SNCF
+French case studies
+Disclaimer
+The information in this document is provided
+as is"
+and no guarantee or warranty is given that the
+information is fit for any particular purpose。
+The content of this document reflects only the author's
+View
+the Joint Undertaking is not responsible for any use that may be made of the information i
+contains.
+The users use the information at their sole risk and liability.
+R2D-WP37-D-PRO-001-03
+Page 2 of 60
+20/12/2024
+Interne
+
+Fe
+Reo
+Contract No. HE
+101102001
+Suropes Rail
+EXECUTIVE SUMMARY
+Passenger
+traffic
+has
+Significantly
+increased
+OVer
+the
+Iast
+few
+decades;
+straining
+existing
+technologies and making further capacity increases through traditional methods unfeasible. Current
+signalling systems have reached their limits. However;
+new alternatives that align with European
+objectives
+suchas creating a high-capacity, integrated railway network by removing interoperability
+barriers; providing full integration solutions; and speeding up innovation
+Offer a
+Way forward。
+ERTMSIETCS Hybrid Level 3 (HL3), currently known as Hybrid Train Detection (HTD), is one of the
+implementations
+that fulfils these
+purposes。
+In
+the
+context of
+FP2
+R2DATO,
+WP37
+aims
+at
+developing migration and deployment strategies to accelerate the implementation of HTD。
+In this
+deliverable;
+We set the requirements specification for the simulations that will be performed by FP1
+WP8/9.
+To this end,
+We provide a methodology for defining the requirements specification to FP1
+WP8/9. In particular, we define performance indicators related to capacity and robustness; where
+capacity is assessed in simulations Without external delays and robustness in simulations
+with
+external delays (compared to the undelayed simulations).
+This deliverable addresses the basis of the urgent need for railway signalling innovative solutions to
+enhance railway capacity and efficiency。
+passengers are affected by these constraints, and
+the consequences
+Of
+not addressing
+these issues
+could
+severely impact
+the reliability
+and
+sustainability Of Europe's transportation network. This report seeks case studies in various European
+countries to bridge existing gaps and foster consensus on the future direction of railway signalling
+technology deployment, particularly focusing on ETCS HTD,
+Which offers a balanced solution that
+combines
+the
+benefits
+of
+modern
+train
+control technologies
+With
+the
+practicality
+and
+COst-
+effectiveness of using existing infrastructure。
+This makes 计
+an attractive option for rail operators
+looking to enhance their systems without incurring the high costs and complexities associated with
+full-scale replacements or
+upgrades。
+Existing literature
+and prior research highlighted the potential benefits and initial successes of
+HL3IHTD. However, significant gaps remains, particularly in real-world applicability and performance
+under varied conditions. Our approach involves a comprehensive analysis of the state-of-the-art of
+ERTMSIETCS, followed by the investigation of various case studies and variables pertaining to the
+HTD design. These variables are the size of the Trackside Train Detection (TTD) blocks, the size of
+the
+Virtual Sub Sections (VSS) and the share
+Or types of trains equipped
+with
+Train Integrity
+Monitoring (TIM).
+The scope encompasses Various scenarios across fifteen rail lines and networks
+in Europe; namely Spain, France; Sweden and the Netherlands. The case studies Vary in terms of
+infrastructure; traffic, general assumptions and scenarios. In particular, the level of complexity can
+be different depending on the investigated set of performance indicators and scenarios, as Well as
+on the market segment. The investigated market segments include high-speed, mainline; regional,
+(sub)urban and freight railways. By collaborating with key stakeholders and industry experts, these
+specifications Will be simulated on CAF tool (for the Spanish cases) and RailSys tool (for the Dutch;
+Swedish and French cases) to model and analyse different performance indicators under various
+scenarios, including traffic and infrastructure conditions.
+The added value of this deliverable is to check based on these requirements specification in Which
+design configurations, scenarios, market segments and cases HTD can be mostly beneficial.
+This
+would allow to find the scenarios that would significantly reduce headways, allowing for more trains
+to operate safely on the same tracks, thus addressing congestion issues effectively。
+The
+findings
+from these test specifications Will underscore the EU's added value in standardising and supporting
+advanced rail technologies, promoting a more integrated and efficient European rail network。
+R2D-WP37-D-PRO-001-03
+Page 3 of 60
+20/12/2024
+Interne
+Many
+
+Fe
+Rea
+Contract No. HE
+101102001
+Suropes Rail
+While this deliverable
+marks
+a
+significant basis and
+milestone for futher developments towards
+deploying HL3IHTD, further research and innovation are necessary to fully realise the potential of
+implementing this railway signalling technology.
+This deliverable is the foundation for additional
+studies focusing
+on long-term impacts,
+cost-benefit
+Or
+multi-criteria
+analyses, standardisation,
+roadmapping
+and
+deployment
+strategies。
+Future
+Works
+within
+FP2
+WP37
+Will
+include
+the
+development of the methodology for optimised placement of (virtual) blocks and determining ETCS
+HL3 capacity impact analysis based on the FPI
+WP8/9 simulations。
+In addition, next steps Will
+involve evaluating the market acceptance; with a focus on harmonising standards and regulations to
+facilitate Widespread adoption. Continuous advancements in technology and simulation models for
+various market segments and cases in Europe Will be cruciall in refining the system and ensuring its
+readiness for broader implementation。
+R2D-WP37-D-PRO-001-03
+Page 4of 60
+20/12/2024
+Interne
+
+Fe
+Reo
+Contract No. HE
+101102001
+Suropes Rail
+ABBREVIATIONS AND ACRONYMS
+ASTP
+Advanced Safe Train Positioning
+ATO
+Automatic Train Operation
+CCS
+Control Command and Signalling system
+DAC
+Digital Automatic Coupling
+ERTMS
+European Rail Traffic Management System
+ETCS
+European Train Control System
+EVC
+European Vital Computer
+FRMCS
+Future Railway Mobile Communication System
+GOA
+Grade of Automation
+GSIR
+Global System for Mobile Communications for Railways
+HL3
+Hybrid Level 3
+HTD
+Hybrid Train Detection
+ICNG
+Intercity Nieuwe Generatie
+LZB
+Linienzugbeeinflussung (a cab signalling and train protection system
+used on selected German and Austrian railway lines as Well as on the
+AVE and some commuter rail lines in Spain).
+MA
+Movement Authority
+OTII
+On-board Train Integrity Function
+OTIL
+On-board Train Length Function
+PTD
+Positive Train Detection
+R2DATO
+Rail to Digital automated up to autonomous train operation
+RBC
+Radio Block Centre
+SNG
+Sprinter Nieuwe Generatie
+TCO
+Total Cost of Ownership
+TIM
+Train Integrity Monitor(ing)
+TSI
+Technical Specification for Interoperability
+TTD
+Trackside Train Detection
+VSS
+Virtual Sub-Section
+R2D-WP37-D-PRO-001-03
+Page 5 of 60
+20/12/2024
+Interne
+
+Fe
+Rea
+Contract No. HE
+101102001
+Suropes Rail
+TABLE OF CONTENTS
+Acknowledgements _
+Report Contributors。
+Executive Summary
+Abbreviations and Acronyms
+5
+Table of Contents.
+List of Figures
+List of Tables
+10
+2
+Introduction
+2.1
+Relations with other Flagships, Work packages and Deliverables in Europe's Rail
+2.2
+Objective and scope
+2.3
+Outline
+12
+3
+ERTMSIETCS overview
+13
+3.1
+ETCS Hybrid Level 3/Hybrid Train Detection objective
+13
+3.2
+ETCS Hybrid Level 3 system architecture and functionality
+14
+Methodology
+17
+4.1
+Performance indicators
+17
+4.2
+Set-up of scenarios and variables _
+18
+4.3
+Simulation environments
+19
+4.3.1
+CAF tool
+19
+4.3.2
+RailSys
+19
+5
+Case studies and Scenarios-
+21
+5.1
+Spain: Atocha commuter tunnels
+23
+5.1.1
+Infrastructure
+23
+5.1.2
+Traffic
+25
+5.1.3
+General assumptions 
+25
+5.1.4
+Scenarios。
+25
+5.2
+Spain: Madrid C-5 cercanias.
+27
+5.2.1
+Infrastructure
+27
+5.2.2
+Traffic
+27
+5.2.3
+General assumptions _
+27
+5.2.4
+Scenarios。
+28
+5.3
+Spain: Madrid
+Torrejon de Velasco _
+29
+R2D-WP37-D-PRO-001-03
+Page 6 of 60
+20/12/2024
+Interne
+
+Fe
+P2o
+Contract No. HE
+101102001
+Suropes Rail
+5.3.1
+Infrastructure
+29
+5.3.2
+Traffic
+31
+5.3.3
+General assumptions 
+3
+5.3.4
+Scenarios.
+31
+5.4
+Spain: Barcelona
+Figueras。
+32
+5.4.1
+Infrastructure
+32
+5.4.2
+Traffic
+32
+5.4.3
+General assumptions _
+32
+5.4.4
+Scenarios。
+32
+5.5
+Spain: Leon
+Guardo.
+33
+5.5.1
+Infrastructure
+33
+5.5.2
+Traffic
+35
+5.5.3
+General assumptions _
+35
+5.5.4
+Scenarios。
+35
+5.6
+Spain: Lerida-Reus
+36
+5.6.1
+Infrastructure
+36
+5.6.2
+Traffic
+36
+5.6.3
+General assumptions-
+36
+5.6.4
+Scenarios。
+36
+5.7
+Spain: Cercanias Barcelona
+3
+5.7.1
+Infrastructure
+37
+5.7.2
+Traffic
+37
+5.7.3
+General assumptions 
+37
+5.7.4
+Scenarios.
+38
+5.8
+France: Lille
+39
+5.8.1
+Infrastructure
+39
+5.8.2
+Traffic
+39
+5.8.3
+General assumptions _
+39
+5.8.4
+Scenarios。
+40
+5.9
+France: Bretagne pays de Loire (LNOBPL)
+41
+5.9.1
+Infrastructure
+41
+5.9.2
+Traffic
+41
+5.9.3
+General assumptions _
+42
+R2D-WP37-D-PRO-001-03
+Page 7of 60
+20/12/2024
+Interne
+
+Fe
+P2a
+Contract No. HE
+101102001
+Suropes Rail
+5.9.4
+Scenarios
+42
+5.10
+Sweden: Stockholm Citybanan _
+43
+5.10.1
+Infrastructure
+43
+5.10.2
+Traffic
+43
+5.10.3
+General assumptions
+44
+5.10.4
+Scenarios.
+44
+5.11
+Sweden: East Link。
+46
+5.11.1
+Infrastructure
+46
+5.11.2
+Traffic
+46
+5.11.3
+General assumptions
+46
+5.11.4
+Scenarios.
+47
+5.12
+Sweden: Southern mainline (Norrkoping
+Mjolby)
+48
+5.12.1
+Infrastructure
+48
+5.12.2
+Traffic
+49
+5.12.3
+General assumptions _
+50
+5.12.4
+Scenarios
+50
+5.13
+The Netherlands: SAAL-corridor (Schiphol airport, Amsterdam, Almere; Lelystad).
+52
+5.13.1
+Infrastructure
+52
+5.13.2
+Traffic
+56
+5.13.3
+General assumptions _
+57
+5.13.4
+Scenarios.
+58
+5
+Conclusions
+59
+References
+60
+R2D-WP37-D-PRO-001-03
+Page 8 of 60
+20/12/2024
+Interne
+
+Fe
+Reo
+Contract No. HE
+101102001
+Suropes Rail
+LIST OF FIGURES
+Figure 1: Current ERTMS architecture defined in the TSI [3]
+14
+Figure 2: Schematic section line of the Commuter tunnels [5] -
+23
+Figure 3: Commuter line Madrid Chamartin
+Madrid Atocha [6]
+24
+Figure 4: Schematic CS-line: stations, halts and connections [5]
+27
+Figure 5: High-speed section Madrid-Torrejon de Velasco [5]-
+30
+Figure 6: Schematic single-line section Asuncion Universidad-Matallana [9].
+34
+Figure 7: Section line:
+Hospitalet-Arago [8]
+37
+Figure 8: REHF traffic diagram, with up to 12 trains per hour, only suburban or regional trains (red
+and orange trains)
+39
+Figure 9: Example of the planned timetable for the line Rennes
+Brest for 2030.
+Suburban train
+(blue), regional train (yellow), intercity train (purple), high-speed train (red), freight train (green)
+Figure 10: Citybanan Infrastructure。
+From connection at Tomteboda to Stockholm S, with current
+ATC signals (highlighted in red) [4].
+43
+Figure 11: Zoomed-in version of Citybanan Infrastructure _
+43
+Figure 12: 2024 timetable of Citybanan [4].
+44
+Figure 13: East Link. Red lines indicate the new line between Jarna and Linkoping. Grey line is the
+previous track。
+46
+Figure 14: Southern Mainline infrastructure. Section Norrkoping to Mjolby, with current ATC signals
+(highlighted in red)
+49
+Figure
+15: ETCS L2 design for
+Of the
+Flevo Line
+between
+Almere Muziekwijk and
+Almere
+Centrum according to infra scenario |-0.
+54
+Figure 16: ETCS HTD design for part of the Flevo Line between Almere Muziekwijk and Almere
+Centrum, based on the ETCS L2 design, Where the green marked axle counters should remain。
+Other axle counters are replaced by VSS, according to infra scenario |-1.
+55
+Figure 17: Line plan of OV-SAAL. In dark blue and light blue: Intercities, in red, pink, purple and
+yellow: Sprinters.
+56
+Figure 18: Time-distance diagram of SAAL timetable between Weesp and Lelystad. In red: Sprinters,
+in blue: intercities
+57
+R2D-WP37-D-PRO-001-03
+Page 9 of 60
+20/12/2024
+Interne
+part
+
+Fe
+Reo
+Contract No. HE
+101102001
+Suropes Rail
+LIST OF TABLES
+Table 1: Capacity-related performance indicators for scenarios without external delays
+17
+Table 2: Robustness-related performance indicators for scenarios with an external
+18
+Table 3: Overview of key elements of case studies and scenarios _
+21
+Table 4
+Proposed scenarios for Spanish Atocha Commuter Tunnels case
+26
+Table 5: Proposed scenarios for Spanish Cercanias C-5 case.
+28
+Table 6: Proposed scenarios for Spanish Madrid-Torrejon de Velasco case
+31
+Table 7: Proposed scenarios for Spanish Barcelona-Figueras case。
+32
+Table 8: Proposed scenarios for Spanish Leon-Guardo case
+35
+Table 9: Proposed scenarios for Spanish Lerida-Reus case
+36
+Table 10: Proposed scenarios for Spanish Cercanias Barcelona case
+38
+Table 11: Proposed scenarios for French Lille case_
+40
+Table 12: Proposed scenarios for French LNOBPL case
+42
+Table 13: Proposed scenarios for Swedish Citybanan case
+45
+Table 14: Proposed scenarios for Swedish East Link case
+4
+Table 15: Current traffic volume for the section Norrkoping
+Mjolby
+49
+Table 16: Proposed infrastructure scenarios for Swedish Southern mainline case
+50
+Table 17: Proposed train integrity scenarios for Swedish Southern mainline case
+51
+Table 18: Overview of infrastructure scenarios for the Dutch SAAL case
+53
+Table 19: Description of timetable scenarios and related infra scenarios for the SAAL case
+58
+R2D-WP37-D-PRO-001-03
+Page 10 of 60
+20/12/2024
+Interne
+delay
+
+Fe
+Reo
+Contract No. HE
+101102001
+Suropes Rail
+2
+INTRODUCTION
+Throughout Europe; passenger traffic has significantly increased over the last few decades; Which
+has led to
+a limitation Of the existing technologies to
+meet future projected demand. Existing
+signalling systems have been exploited to such
+an
+extent that capacity increase by
+means of
+conventional methods is no longer possible. However,
+new alternatives that fit the overall European
+objectives (e.9., to
+deliver
+3
+high-capacity integrated European railway network by eliminating
+barriers to interoperability, providing solutions for full integration, and achieving faster uptake and
+deployment
+of innovation) represent
+3
+step
+ahead
+to
+tackle
+the
+abovementioned
+limitation:
+Digitalisation and automation solutions for rail operation (e.9., Automatic Train Operation (ATO) up
+to Grade of Automation (GoA)4, ETCS Hybrid Train Detection and Moving Block and Advanced Safe
+Train Positioning (ASTP) among others).
+Deliverable 037.3 belongs to FP2 WP37 'ETCS HL3 Deployment Strategies' that aims at developing
+migration and deployment strategies to accelerate the application of ETCS Hybrid Level 3, currently
+known as Hybrid Train Detection (HTD), which consequently reap the benefits as quickly as possible
+and avoids costly investments in new infrastructure as much as possible。
+2.1
+RELATIONS WITH OTHER FLAGSHIPS, WORK PACKAGES AND DELIVERABLES IN
+EUROPE'S RAlL
+037.3 relates to FP2 WP15 'Hybrid Level 3 Specification' Whose main objective is to align and
+integrate the HTD approach into the future Functional Railway System Architecture defined by the
+System Pillar and to apply the defined principles to different kinds of railways. 037.3 also relates to
+publicly available documents on ETCS HL3 specifications published by the ERTMS Users Group
+(EUG)。
+This deliverable is a main input to FP1 WP8 'Development
+Simulation and operational feedback for
+improved planning'
+and
+FP1
+WP9
+'Demonstration
+Simulation
+and operational feedback for
+improved planning' . FP1 WP8/9 will perform the capacity simulations that align with the requirements
+specification defined in this deliverable. 037.3 also has dependencies with 037.1 'Standardisation
+and deployment' since the requirements specification are crucial when defining standardisation and
+deployment. In addition, it relates to 037.2 'Methodology for optimised placement of (virtual) blocks'
+since based on the input that will be received from FP1 WP8/9, the method for optimising the design
+of blocks will be defined.In a further step, the results from 037.2 and from the capacity studies in
+FPI WP8/9 will be used as input for 037.4 'Determining ETCS HL3 capacity impact analysis using
+Simulations'.
+2.2
+OBJECTIVE AND SCOPE
+The main objective of this deliverable is to describe the requirements specification for the capacity
+simulation studies. In particular, this deliverable aims at providing the performance indicators and
+scenarios to be included in FPI WP8 and calculated in FP1 WPg in order to find the right method
+for applying HTD in several environments and for various market segments. These Work packages
+will perform research on the railway capacity and the number of trains that can be handled, given
+several infrastructure designs, timetables and technologies installed on the infrastructure side and
+R2D-WP37-D-PRO-001-03
+Page 11 of 60
+20/12/2024
+Interne
+
+Fe
+Rea
+Contract No. HE
+101102001
+Suropes Rail
+train side of the railway system. The description of the scenarios therefore focuses on finding the
+different methods for infrastructure design from a railway capacity perspective. This deliverable sets
+the basis for these work packages; that will also perform part of the research on the robustness of
+the railway system for disturbances。
+This will be done with only deterministic delays. Stochastic
+delays are excluded here;
+because of the lack of good input data (there are no comparable HTD
+systems in operation). In addition, the reproduction of a scenario in a stochastic environment and
+the comparison of the results is more difficult (due to the different propagation of knock-on delays
+based on input delays):
+This deliverable focuses on the simulation specifications that will be sent to EU Rail FP1 WP8/9 for
+calculation and simulation. The analysis of the results of WP8/9 will be performed in Deliverables
+037.2 and
+037.4 and Will there lead to conclusions
+On
+block layouts and optimal deployment
+strategies。
+2.3
+OUTLINE
+The outline of this report is the following: Chapter 3 provides an overview of ERTMSIETCS with
+particular focus on ETCS HL3IHTD.
+Chapter
+4
+defines the method and performance indicators
+relevant for the scenarios。
+It also describes the simulation environments.
+Chapter 5 provides a
+description
+of all scenarios to
+be
+Simulated
+in
+FPI
+IPg for
+15 various
+case studies in
+the
+Netherlands, Sweden, Spain and
+France.
+Finally, Chapter 6 provides the conclusions for this
+deliverable.
+R2D-WP37-D-PRO-001-03
+Page 12 of 60
+20/12/2024
+Interne
+
+Fe
+Reo
+Contract No. HE
+101102001
+Suropes Rail
+3
+ERTMSIETCS OVERVIEW
+The European Railway Traffic Management System (ERTMS), as introduced in the newly published
+Technical Specification for Interoperability (CCS TSI 2023/1695), is being implemented all around
+Europe to ensure interoperability. ERTMS includes the European Train Control System (ETCS) for
+automatic train protection, the first baseline of ATO up to
+GOA2, the Global System for Mobile
+Communications
+for Railways (GSM-R)
+and
+FRCMS。
+Improving
+the
+Safety
+Of
+national
+and
+international train traffic; bringing benefit in terms of Total Cost of Ownership (TCO) of the entire
+Control Command and Signalling system (CCS), by reducing trackside assets, and increasing
+capacity are among the most relevant advantages of ERTMS.
+Depending on the application level, ETCS trackside and on-board subsystems are characterized by
+specific equipment on both the track and the train, their interaction, and their functions。
+The ETCS
+levels establish different uses of ERTMS as a train control system [1]:
+ETCS Level 1: track-to-train spot communications, where a significant and costly amount of
+trackside elements are required to control the movement of the train. Train detection and
+train separation
+are performed by the trackside equipment of the underlying signalling
+system。
+ETCS Level 2: continuous communications between the train and the track, which enable a
+reduction
+in
+OPEX and
+CAPEX and increase
+line
+capacity.
+Train
+detection
+and
+train
+separation can be performed by the Radio Block Centre (in cooperation With the train Which
+sends position reports and train integrity information) andlor by other trackside equipment。
+ETCS Level 2 is therefore a crucial player in the search for delivering better capacity, reducing costs;
+improving flexibility, and increasing reliability of the railway network since dependency on trackside
+equipment is minimized.
+ETCS Hybrid Level 3 (HL3), currently known as Hybrid Train Detection (HTD) based on the ERTMS
+Users Group [2], is one of the ETCS L2 implementations that fulfils these purposes. In the context
+of R2DATO,
+IP37
+aims at developing migration and deployment strategies to accelerate the
+implementation of HTD。
+HTD is a concept that uses pre-configured fixed virtual blocks for the separation of trains. The virtual
+blocks can be used by trains that are able to send integrity confirmation in the position report, While
+trackside train detection is still used for the separation of trains Which are not able to send integrity
+confirmation.
+The trackside train detection is also used for the handling of degraded situations。
+The
+main advantage
+of HTD
+is the reduction
+of trackside implementation
+cost (extending
+current
+Trackside Train Detection (TTD) blocks), an improved capacity performance (by introducing shorter
+blocks ), or a combination of both。
+3.1
+ETCS HYBRID LEVEL 3/HYBRID TRAIN DETECTION OBJECTIVE
+The ERTMS Users Group [2] discuss how ETCS HL3IHTD aims at increasing line capacity and
+optimizing the use of existing infrastructure. HTD improves train detection and safety by combining
+track-side and on-board
+systems. In addition, HTD facilitates a smooth transition from conventional
+systems and ensures compatibility. Therefore;
+the main goal of HTD is to improve railway system
+capacity, safety, and efficiency While reducing costs and enhancing operational flexibility.
+R2D-WP37-D-PRO-001-03
+Page 13 of 60
+20/12/2024
+Interne
+
+Fe
+Reo
+Contract No. HE
+101102001
+Suropes Rail
+3.2
+ETCS HYBRID LEVEL 3 SYSTEM ARCHITECTURE AND FUNCTIONALITY
+The reference architecture for HTD is the current ERTMS architecture defined in the TSI (omitting
+some ETCS level
+1
+features), as shown in Figure
+[3]
+Train
+On board
+OTILorfixed
+Driver
+recording
+train length
+OTLL
+device
+National
+DMI
+Juridical
+System
+BIU
+TIU
+function
+data
+ATO On-board
+STM
+STM control
+ATO control
+Odometry
+function
+function
+Or
+Other
+ETCS
+solution
+BTM
+Euroradio
+On-Board
+Radio Network
+National
+System
+EUROBALISE
+EURORADIO
+RBC 1
+Key Management
+LEU
+Systems
+Interlocking
+ETCS
+RBC 2
+Trackside
+Control centre
+EURORADIO
+Figure 1: Current ERTMS architecture defined in the TSI [3]
+Regarding this architecture and the associated functionality of HTD, the following considerations are
+made:
+In general, the trains Without ETCS but with the National System can be managed in HTD as "ghost
+trains" (detected by the TTD but not reporting its location to the trackside). These features are subject
+to specific application analyses, as the behaviour of the National System is not harmonised。
+The HTD-ready trains are generally expected to be equipped at least With a system providing the
+train integrity information to the EVC (OTI-I) and optionally a system providing the safe train length
+(OTI-L). Integrated devices providing more than one information are possible. Trains equipped with
+ETCS but without OTI-I can be allowed in HTD, but treated as non-integer trains; still having the
+R2D-WP37-D-PRO-001-03
+Page 14 of 60
+20/12/2024
+Interne
+
+Fe
+Reo
+Contract No. HE
+101102001
+Suropes Rail
+HTD performance however giving to the following train a performance analogue to ERTMS Level 2
+with only TTD.
+The functionality of the system relies in the Hybrid Train Detection Concept. This concept is based
+on the following essential componentslfunctionalities:
+Positive Train Detection (PTD): PTD relies on information received from the train itself。 It
+uses position reports sent by the train, including data such as position, integrity status, and
+safe train length. When a train reports "integrity confirmed,
+it becomes an "integertrain" . The
+trackside
+Can
+USe
+this information
+to
+determine
+the train's location
+and manage train
+movements. PTD allows for reduced trackside infrastructure since it does not rely solely on
+physical sensors (such as track circuits or axle counters).
+Trackside Train Detection (TTD): TTD is the conventional method of train detection using
+physical sensors installed along the track (e.9., track circuits or axle counters). In the HTD
+System, the TTD sections are subdivided into smaller units called Virtual Sub-Sections
+(VSSs). Each VSS corresponds to a portion of the TTD section and has its own occupation
+status (free, occupied, ambiguous or unknown). TTD information can confirm Whether a train
+is or not physically present on a VSS。
+Virtual Sub-Sections (VSS): VSSs are the building blocks of the HTD system. They allow for
+finer granularity in train separation. Each VSS can be in one of four states (based on trackside
+information):
+Free: No train is located on the VSS.
+Occupied: An integer train is present on the VSS,and no other vehicle is behind i
+Ambiguous:
+A
+train is present, but there might be another non-connected vehicle
+behind i。
+Unknown: No train is confirmed on the VSS, but its status is uncertain。
+VSS states are dynamically updated by means of a VSS state machine;
+Which is operated
+based
+mainly
+On
+position reports;
+TTD information;
+the status of the
+HTD timers
+and
+Movement Authority (MA) information.
+Train Location: The concept of "train location" defines the trackside view of the portion of
+track currently occupied by a connected train. The front end of the train location is determined
+by the train's max safe front end position and train detection information. According to the
+EUG document on the HTD Principles (published on 16 July 2024), the front end of the train
+location is not depending on the integrity status. The train integrity is based on the rear end
+of the train location Which is "established" for a train treated as integer or "assumed" for a
+train Which is not treated as an integer [2].
+Therefore;
+the rear end of the train location is
+either "established rear end" (for integertrains) or "assumed rear end" (for non-integertrains):
+HTD timers: For handling degraded situations, there are two types of timers defined within
+the HTD concept:
+Waiting timers: they are aimed to avoid unnecessary changes in the state of a VSS
+due to the asynchronicity of train position, train integrity and TTD information。
+are:
+Mute timer: used at the trackside for each connected train to consider after a
+defined time that the communication With that train is lost;
+Wait integrity timer: used at the trackside for each connected train to consider
+after a defined time that the integrity of that train is lost When
+n0
+integrity
+information is available;
+R2D-WP37-D-PRO-001-03
+Page 15 of 60
+20/12/2024
+Interne
+They
+
+Fe
+Peu
+Contract No. HE
+101102001
+Suropes Rail
+Shadow train timer: used to prevent wrongful detection of shadow trains
+(ghost trains chasing normal HTD operated trains).
+Propagation timers:
+are implemented in the trackside to
+avoid unnecessary
+propagation of the state
+unknown'
+to VSS sections for Which there is no immediate
+risk that a rail vehicle could be located on them. They are:
+disconnect propagation timer: used at the trackside for each track section to
+consider after a
+defined time that an "unknown" track section should
+be
+propagated after train disconnection;
+ghost train propagation timer: used to prevent the risk of undetected ghost
+trains;
+integrity loss propagation timer: used at the trackside for each track section to
+consider after a
+defined time that an "unknown" track section
+Should
+be
+propagated after integrity loss。
+The introduction of VSS in general does not change the principles of route setting and handling of
+MAs since VSSs are treated in the same way as sections with TTD。
+HTD is an enhanced train
+detection concept too allow an optiomal use of PTD and TTD train detection systems. HTD can be
+used in train centric or geographical safety sytems and with conventional signalling systems。
+The
+HTD can be used with the existing legacy rules and interfaces. To give an example, it is possible
+that the
+RBC today takes
+35
+3
+necessary
+but not sufficient condition
+to send
+an
+MA
+in
+Full
+Supervision that status "free" of a TTD. With the implementation of HTD, the same RBC is expected
+to use instead as input condition the status "free" of one or more VSSs belonging to the same TTD.
+R2D-WP37-D-PRO-001-03
+Page 16 of 60
+20/12/2024
+Interne
+they
+
+Fe
+Reo
+Contract No. HE
+101102001
+Suropes Rail
+4
+METHODOLOGY
+This chapter presents the methodology used for defining the requirements specification to
+FPI
+WP8/9.In particular, in section 4.1 we present the performance indicators for the capacity simulation
+studies. In 4.2 We define the set-up of scenarios and variables, followed by the description of the
+simulation environments CAF tool and RailSys in 4.3.
+4.1
+PERFORMANCE INDICATORS
+There are several performance indicators to be assessed after executing the simulations. Together,
+these performance indicators Will provide a complete overview of the effects of ERTMS HL3IHTD
+regarding capacity. These relate to the general terms of capacity and robustness。
+The capacity Will
+be assessed in simulations Without external delays and the robustness in simulations With external
+delays (compared to the undelayed simulation)。
+Both require different performance indicators that
+are elaborated in Table
+and Table 2-
+The definitions of the performance indicators for scenarios without external delays are explained in
+Table 1.
+Table 1: Capacity-related performance indicators for scenarios without external delays
+Performance
+Unit
+Explanation
+Utilisation
+indicator
+Headway
+Minutes
+Minimal time between
+2
+trains
+with
+In simulations that only
+and
+Which the second can follow the first
+consider 2 trains at the
+Seconds
+on the
+whole trajectory just without
+same time (Spanish, French
+hindrance.
+and Swedish case studies).
+Relative
+%
+Timetable
+compression
+method
+In simulations that consider
+capacity
+(capacity
+according
+to
+UIC-406 leaflet, to
+be
+3
+complete timetable
+utilisation
+Utilistation
+performed on one corridor at a time
+(French; Swedish and
+60 min)
+Without merging traffic. Trains run the
+Dutch case studies).
+Whole trajectory strictly unhindered。
+The scenarios of the Swedish southern mainline and the Dutch SAAL corridor will be assessed
+further for the aspect of robustness by letting a train block the other traffic for a set number of
+minutes. This gives the insight in how quickly the block layout given a particular traffic pattern helps
+to solve the congestion. The definitions of the performance indicators for scenarios with external
+delays are explained in Table 2.
+R2D-WP37-D-PRO-001-03
+Page 17 of 60
+20/12/2024
+Interne
+
+Fe
+Reo
+Contract No. HE
+101102001
+Suropes Rail
+Table 2: Robustness-related performance indicators for scenarios with an external delay
+Performance
+Unit
+Explanation
+indicator
+Recovery
+(Hours),
+Time
+after
+Which
+there
+are
+00
+trains  running
+behind
+their
+time
+minutes
+and
+schedule as in the unhindered simulation.
+Seconds
+Number of
+Trains
+Number of trains that have a changed running time due to the
+affected trains
+hindrance
+and
+congestion
+compared
+to
+the
+unhindered
+simulation.
+Total delay
+(Hours),
+The
+adaitional running
+times compared
+to
+the  unhindered
+minutes
+and
+simulation, summed up over the affected trains。
+seconds
+4.2
+SET UP OF SCENARIOS AND VARIABLES
+This section describes how the scenarios have been set-up to achieve the aim of this deliverable。
+Note that there are several benefits of HTD that will not be the focus of this deliverable. Only research
+related to capacity and robustness will be the focus of these case studies as stated in Section 4.1.
+For capacity, the headway between two following trains will be computed or the relative capacity
+utilisation of a full timetable will be calculated. For robustness calculations, some scenarios will be
+set up in Which a train blocks the corridor for a set time period, where the aim is to study the recovery
+time, number of affected trains and total delay。
+Simulation With stochastic disruptions Will not be included in this stage, for several reasons。
+The
+input data of real disruptions is not available for future or hypothetical situations analysis, scenarios
+are harder to reproduce
+or compare and finally this method requires many runs
+Which makes
+simulation and analysis more time consuming. Overcoming these issues does not outweigh the
+benefits, so stochastic analysis is not foreseen in this deliverable. Therefore, all simulations will be
+deterministic with no delays or fixed delays in the simulation。
+In every scenario, We define a reference situation, using the current or future base information about
+the track
+and calculating the headway
+Or relative capacity utilisation。
+After that, and through
+variations of the physical blocks and incorporating virtual blocks, according to What is proposed in
+each scenario, improvementin capacity will be sought in these cases Where the capacity is the main
+objective. When the objective is cost reduction and only keeping equal capacity, we look for keeping
+the current headway but changing the physical blocks into VSSs。
+These results are used not only in this Work package in tasks T37.3 and T37.5, but also in FP2
+WP32。
+Each case study described in Chapter 5 includes four
+Infrastructure: a description of the part of the railway network used in the case studies, either
+the current infrastructure for existing lines or the planned infrastructure for a greenfield situation.
+Iraffic: a description of the train services on the delimited network and possible alterations that
+could influence the scenario。
+The described traffic could be either current traffic (high flows
+R2D-WP37-D-PRO-001-03
+Page 18 of 60
+20/12/2024
+Interne
+parts:
+
+Fe
+Rea
+Contract No. HE
+101102001
+Suropes Rail
+where HTD could help increase robustness), or future traffic flows demands that could only
+possibly be achieved with HTD.
+Assumptions: this section describes additional assumptions for the simulations, like timetable
+principles。
+Scenarios: a description of the different infrastructure and traffic scenarios。
+always relate
+to reference scenario and then build up in order to make the results comparable with only one
+variable changed at a time.
+The variables are described below.
+Forour simulation studies of HTD there are three variables of interest: the lengths of the TTD blocks,
+the lengths of the VSSs and the availability of TIMs on trains。
+These Variables are defined for each
+scenario and depend on the state and aim of each network。
+Size Of the TTDblocks [m]:
+A
+benefit with HTD is the possibility to extend the current TTDs
+Without affecting capacity negatively。
+This means that for some scenarios Varying the size of
+TTD is ofinterest。
+SizeOf the VSS [m]: For creating additional capacity with additional blocks it is not necessary
+anymore to add axle counters or loops, but it can be done with adding VSSs。
+Therefore the
+size of VSSs is crucial for the capacity computation.
+Sharegf traing equipped Wth TIM [OOr based On train typel: The availability of TIM equipped
+trains in the traffic pattern
+has impact
+on the capacity and robustness。
+This might be
+3
+percentage of the trains or defined as one train category to have a TIM and another to not have
+a TIM.
+4.3
+SIMULATION ENVIRONMENTS
+Two simulation environments Will be used in EU Rail FP1 WPg for assessing the case studies of this
+work package: the tool of CAF for exploratory research based on the headway of two trains for the
+Spanish case studies and RailSys for the French, Swedish and Dutch case studies that involve a
+complete timetable and in some cases external delays。
+Both simulation environments are briefly
+described in Sections 4.3.1and 4.3.2.
+4.3.1
+CAF tool
+The simulations for the Spanish cases will be performed in the CAF tool. It is focussed on calculating
+headways. Therefore the tool needs information about the rolling stock and about the technical and
+the physical characteristics of the track. The tool is limited to work with two trains at the same time:
+the predecessor and its follower. According to this information, it offers the headway between them
+35a
+solution.
+4.3.2
+RailSys
+The simulation software RailSys is an integrated microscopic planning tool, developed by RMCon
+RailSys is
+widely used in the railway sector by infrastructure managers; railway undertakings
+consulting firms and research institutes [4]. RailSys features native ERTMSIETCS support and
+R2D-WP37-D-PRO-001-03
+Page 19 of 60
+20/12/2024
+Interne
+They
+
+Fe
+Rea
+Contract No. HE
+101102001
+Suropes Rail
+detailed calculations of the ETCS braking curves. Infrastructure and rolling stock are modelled on a
+microscopic level,
+Which provides sufficiently detailed settings for the modelling
+of HTD and
+analytical possibilities for the results。
+Infrastructure models are needed for all scenarios Which utilise
+RailSys. In case of current lines;
+existing models Will be used as a basis of the studies. For some scenarios, ERTMSIETCS will need
+to be implemented in the models. HTD needs to be designed and applied to all existing models for
+the relevant scenarios. It is important that relevant settings are correctly used to achieve a credible
+simulation result. Coordination between partners is necessary for this purpose。
+For the evaluation of capacity utilisation, the UIC-406 compression method in RailSys will be used。
+In RailSys, the interpretation of UIC-406 is based on the compression of sequential timetable train
+paths within divided sections [4]. According to the method, RailSys identifies conflicts in the timetable
+and moves affected trains exactly unhindered behind the conflicting train. The outcome from the
+RailSys computation is the capacity utilisation Which will be generated from specific case studies as
+described in Chapter 5
+R2D-WP37-D-PRO-001-03
+Page 20 of 60
+20/12/2024
+Interne
+
+Fe
+Reo
+Contract No. HE
+101102001
+Suropes Rail
+5
+CASE STUDIES AND SCENARIOS
+To fulfill the aims of developing migration and deployment strategies to accelerate the application of
+ETCS HTD, the several research scenarios have been defined according to the set-up described in
+the previous chapter. These scenarios are used for evaluating the requirements specification of HTD.
+The lines have been chosen where the main advantages of HTD can be found, both in terms of
+reduction of trackside implementation costs and improvement of capacity performance。
+The general outline is that the Spanish cases and a Swedish case Will be described and analysed
+based on headways。
+Thereafter, the French and Swedish cases Will be assessed on capacity by
+relative capacity utilisation. Finally another Swedish
+case and the Dutch
+CaSe
+are desribed and
+analysed for relative capacity utilisation and robustness aspects。
+Since there are many case studies described in this chapter, Table 3 provides an overview of the
+locations;
+market  segments,
+network
+length,
+reference
+Signalling
+system
+and   performance
+indicators. The explanation follows in the paragraphs of every separate case study.
+Table 3: Overview of
+elements of case studies and scenarios
+Performance
+indicators
+晷
+Nr
+Country
+Location
+Seghent
+:
+
+
+
+。
+U
+|髻
+告
+兽
+Atocha commuter
+5.1
+Spain
+Urban
+L1
+tunnels
+5.2
+Spain
+Madrid C-5 cercanias
+Sub-urban
+45
+Class B
+Madrid
+Torrejon de
+5.3
+Spain
+High-speed
+36
+12
+X
+Velasco
+5.4
+Spain
+Barcelona
+Figueras
+Mainline
+130
+L2
+X
+5.5
+Spain
+Leon
+Guardo
+Regional
+26
+Class B
+X
+5.6
+Spain
+Lerida
+ReUs
+Freight
+64
+12
+又
+5
+Spain
+Cercanias Barcelona
+Mainline
+8
+12
+X
+5.8
+France
+Lille
+Sub-urban
+30
+12
+又
+Bretagne pays de Loire
+5.9
+France
+Mainline
+250
+12
+X
+X
+(LNOBPL)
+5.10
+Sweden
+Stockholm Citybanan
+Urban
+6
+12
+R2D-WP37-D-PRO-001-03
+Page 21 of 60
+20/12/2024
+Interne
+key
+
+Fe
+P2o
+Contract No. HE
+101102001
+Suropes Rail
+Performance
+indicators
+晷
+Nr
+Country
+Location
+seghent
+
+
+
+
+。
+U
+`靓U
+告
+`
+Mainline /
+5.11
+Sweden
+East link
+160
+12
+High-speed
+Southern mainline
+5.12
+Sweden
+Mainline
+79
+12
+(Norrkoping
+Mjolby)
+SAAL-corridor:
+Netherla
+Mainline
+5.13
+Schiphol
+Amsterdam
+120
+12
+nds
+(Sub)urban
+Almere
+Lelystad
+R2D-WP37-D-PRO-001-03
+Page 22 of 60
+20/12/2024
+Interne
+
+Fe
+Reo
+Contract No. HE
+101102001
+Suropes Rail
+5.1
+SPAIN: ATOCHA COMMUTER TUNNELS
+5.1.1
+Infrastructure
+This is a double-track ETCS Level
+section for commuter trains between Chamartin and Atocha
+stations, With a length of 7.4 km, this section is selected for study as jt is a central node Where many
+lines come together, more specifically, almost all of Madrid's commuter lines。
+There
+are
+tWo options for this
+route: through
+Recoletos tunnel stopping
+at
+Recoletos
+Station
+(Chamartin-Nuevos Ministerios-Recoletos-Atocha) or through Sol tunnel stopping at Sol station
+(Chamartin-Nuevos Ministerios-Sol-Atocha). Figure 2 displays the schematic of the lines involved。
+Chamartin
+N. Ministerios
+0
+Recoletos
+Sol
+Atocha
+Figure 2: Schematic section line of the Commuter tunnels [5]
+At Nuevos Ministerios station, there are
+sidings on each track so that different speed trains can
+overtake each other if necessary。
+The technical drawing of the track layout is shown in Figure 3.
+R2D-WP37-D-PRO-001-03
+Page 23 of 60
+20/12/2024
+Interne
+
+Fe
+P2o
+Contract No. HE
+101102001
+Suropes Rail
+LI -
+TTT
+2U
+ =
+C
+(
+C-II
+ehl
+I
+UT
+SI
+GVa
+MADRID CHAMARTIN
+L0
+CHANARTIN
+DOLTI
+= |
+Ce
+OE
+TN[E
+NUEVOS MINISTERIOS (C1)
+TI3Lc9TS
+LTLCC
+NIaP
+三1
+Ig
+S
+
+些
+C0
+TT
+C
++1
+T
+T
+VI4
+C
+S
+Ct
+T
+
+' SF [
+ ;-
+5
+WJ
+24
+CA
+OS
+U1
+u
+G
+VIA
+#-
+TT
+NIIETE S
+ICIT
+U-III
+UIUUJ -I Ii
+Sco
+'Uu
+Ttre C  
+r551
+毖鲇:岛
+11
+VI B
+C
+VI
+VIA 64
+4
+「
+4!
+UA8A
+VII
+VA 88
+0a
+Oi2
+CEx
+U;
+V
+C 5
+112
+513
+52g
+RECOLETOS (APD.)
+UIIUTFIT
+WCD STCSCLis N1os
+TIICSPIIr
+t ;
+Toos
+Oc
+EOZSnr
+2151
+LT5
+T
+0!
+I
+Ot
+o
+CSI
+8
+ujs
+剀60
+~』
+@O
+4NOE
+;"
+AMUAOI
+SOL(Apd)
+E18
+512C
+R-1
+4|
+CITTT
+CV 三'14
+CV 三14
+CVA4
+CEia
+CV A5
+CUEl2
+S
+SI
+~
+CVE12
+CVA2
+SNTT
+CVER
+Ix
+E'12
+EI?
+EI6
+R2-2鼬
+51/3C
+匦圈
+51/4C
+EI0
+1[
+17
+4
+C
+XSI
+514
+CJE
+CI
+C3
+C 三5
+8
+CVEI
+CUE
+C5
+1
+CVA30
+Figure 3: Commuter line Madrid Chamartin
+Madrid Atocha [6]
+R2D-WP37-D-PRO-001-03
+Page 24 of 60
+20/12/2024
+Interne
+5LNISIOI
+321
+
+Fe
+Reo
+Contract No. HE
+101102001
+Suropes Rail
+5.1.2
+Traffic
+The traffic of the line consists of commuter trains every 7 minutes on both Recoletos and Sol routes,
+regional trains every 45 minutes through Recoletos and every 3 hours through Sol. The timetable for
+the Atocha commuter lines can be found in [6].
+The maximum speed of the trains is 90 kmlh.
+5.1.3
+General assumptions
+AII the trains are equipped with TIMs in the reference scenario。
+TIMs conditions are changed for the rest of the simulations as explained in the following section。
+5.1.4 Scenarios
+For the scenarios to be simulated in this section, two objectives are pursued. On the one hand, the
+aim is to achieve an increase in capacity; on the other hand, the aim is to reduce costs. Considering
+the following described conditions, the goal is to find a balance between both, cost and capacity.
+In order to achieve these objectives, different scenarios are proposed to check, by simulation; 讦
+firstly, the defined goals are achieved and, secondly, 讦 the results are Valid.
+First, the reference scenario is defined, Which is the current track and traffic status, and will be used
+to compare the restof the scenarios to be simulated. In this way, we will obtain an answer on whether
+we have improved the defined
+regarding the current state.
+These
+scenarios
+are
+determined
+by
+modifying
+different
+elements:
+making
+changes
+in
+the
+infrastructure (TTD), modifying the integrity of the rolling stock and incorporating VSSs。
+Since the objectives to be achieved for this line are both capacity improvement and cost reduction,
+the chosen scenarios are the following:
+In relation to traffic and rolling stock, two alternative conditions are defined: the first is that it is
+assumed that commuter trains are equipped With TIMs, whereas regional trains are not equipped
+with it (Scenarios
+1
+and 2in Table 4).
+The second condition is to consider that all the trains are
+equipped With TIMs (Scenarios 3 and 4 Table 4). This way, differences regarding capacity between
+those
+CaSeS
+can be compared,
+Where i could be visualized Whether a decrease in capacity is
+obtained as a result When not having TIMs equipped。
+Regarding TTDs, in the first scenario, the current TTD layout remains with no change. As mentioned,
+the cost reduction goalis also pursued, therefore, a case Where TTDs are reduced between stations
+to the minimum is defined. By reducing the number of physical TTDs;
+3
+cost reduction could be
+obtained as a result of not installing them when designing a track。
+However, xwe only reduce the TTDs, this could be reflected in a decrease in capacity, hence, VSSs
+are incorporated. For the length of these, a methodology for optimal VSS lengths for each specific
+line should be followed.
+However, in the absence of such methodology, it is intended to make an engineering study of the
+line; where the most critical sections of the track Will be identified and analyzed. Firstly, a maximum
+VSS length (taking into account the TTD maximum size) is implemented, then, a simulation is runned
+and a new VSS size decreased by multiples of 25 is simulated. Several iterations are performed
+R2D-WP37-D-PRO-001-03
+Page 25 of 60
+20/12/2024
+Interne
+goals
+
+Fe
+Rea
+Contract No. HE
+101102001
+Suropes Rail
+through simulations until a size is reached (minimum VSS length of 25 meters [2]) from where the
+results improve in
+3
+non-significant way concerning the objective of the defined scenario, cost
+reduction and capacity increase for this case;
+So the optimal length is established. The proposed
+scenarios for the Spanish Atocha Commuter Tunnels are shown in Table 4
+Table 4: Proposed scenarios for Spanish Atocha Commuter Tunnels case
+Scenario
+TTD
+VSS
+Rolling Stock
+Reference
+Current (ETCS Level 1 )
+Current
+Current
+From 25 mto max:
+Passenger trains With and
+TTD length
+Without TIMs
+2
+Reduction of TTD between
+From 25 mto max。
+Passenger trains with and
+Stations
+TTD length
+without TIMs
+3
+Current
+From 25 mto max。
+Alltrains With TIMs
+TTD length
+Reduction of TTD between
+From 25 mto max:
+All trains with TIMs
+Stations
+TTD length
+R2D-WP37-D-PRO-001-03
+Page 26 of 60
+20/12/2024
+Interne
+
+Fe
+Reo
+Contract No. HE
+101102001
+Suropes Rail
+5.2
+SPAIN: MADRID C 5 CERCANIAS
+5.2.1
+Infrastructure
+This is a double-track commuter line between Mostoles-El Soto and Humanes with 21 stations in
+between them, with a length of 45.1 km. The used signalling system is Class B.
+This line is selected for study as it is the only one in Spain working With automatic driving, where it
+is
+expected to eliminate this LZB and install ERTMS。
+Figure
+4
+represents the scheme of the line Where all the 21
+stations appear。
+A
+fully technical
+description of this line is available at [7].
+Mostoles-EI Soto
+Atocha
+Fuenlahrada
+Humanes
+05
+&
+&
+&
+Cs
+Ss
+CD
+C1
+1
+11
+10
+C2
+C10
+C3
+C3a
+C4
+07
+08
+0-10
+Zona 82
+81
+82
+zona 83
+Figure 4: Schematic CS line: stations, halts and connections [5]
+5.2.2
+Traffic
+Unlike the rest of the commuter network, the C-5 line has similar frequencies to the Madrid Metro
+lines。
+The traffic consists of commuter trains every 5 minutes during peak hours and every 10 minutes
+during off-peak hours.
+This is the only case study
+Where there is
+3
+differentiation between peak and off-peak hours
+regarding train frequency.
+The maximum speed of the trains is 155 kmlh.
+5.2.3
+General assumptions
+Stations are closer to each other than the rest of the Madrid commuter lines and it has a particular
+Signalling and supervision system, the LZB, a train protection system with continuous transmission
+of information and monitoring of the vehicle speed.
+AIl the trains are equipped with TIMs in the reference scenario.。
+R2D-WP37-D-PRO-001-03
+Page 27 of 60
+20/12/2024
+Interne
+Valderas
+ Polvoranca
+Soto
+Octubre
+Alcocer
+ Vientos
+ Alvaro
+Zaraquemada
+ Alto
+Embajadores
+ Retamas
+Fuenlabrada
+ Aguilas
+Villaverde
+Mostoles
+Jose
+Orcasitas
+Alcorcon
+Humanes
+Mostoles
+Serna
+Leganes
+Mendez
+Laguna
+Puenle
+Parque
+Cuatro
+Aluche
+Atocha
+Fanjul
+Doce
+San
+
+Fe
+Rea
+Contract No. HE
+101102001
+Suropes Rail
+TIMs conditions are changed for other experiments as explained in Section 5.2.4.
+5.2.4
+Scenarios
+The objectives of this scenario
+are
+also
+COst reduction
+and capacity increase;
+where different
+infrastructure; rolling stock and VSS conditions are defined.
+Regarding rolling stock, i is defined a case Where all the trains are equipped with TIMs and another
+case Where trains are not equipped with TIMs. This Way, We could compare the two situations in
+terms of capacity.
+Concerning trackside conditions and in order to get a cost reduction, a condition Where TTDs are
+reduced
+between stations with no change in stations is defined while another condition is defined
+where the current TTD layout is maintained.
+In the case of VSSs, once the knowledge acquired in the
+Atocha commuter tunnels study for
+determining
+the
+most
+Critical
+Sections
+can
+be applied
+While
+using
+te
+previously
+mentioned
+methodology for determining the optimal VSS size for each
+Case, SeVeral
+simulating iterations
+starting from the minimum possible VSS length will be carried out. The proposed scenarios for the
+Spanish Cercanias C-5 case are displayed in Table 5.
+Table 5: Proposed scenarios for Spanish Cercanias C-5 case
+Scenario
+TTD
+VSS
+Rolling Stock
+Reference
+Current (LZB)
+Current
+Current
+From 25 mto max
+All trains Without TIMs
+TTD length
+2
+Reduction of TTD between
+From 25 mto max。
+All trains Without TIMs
+stations
+TTD length
+3
+Current
+From 25 mto max。
+AlItrains with TIMs
+TTD length
+Reduction of TTD between
+From 25 mto max。
+AlI trains with TIMs
+stations
+TTD length
+R2D-WP37-D-PRO-001-03
+Page 28 of 60
+20/12/2024
+Interne
+
+Fe
+Reo
+Contract No. HE
+101102001
+Suropes Rail
+5.3
+SPAIN: MADRID
+TORREJON DE VELASCO
+5.3.1
+Infrastructure
+This is an ETCS L2 double-track high-speed line between Madrid and Torrejon de Velasco with a
+length of 35.85 km, this line goes through 8 different Madrid city stations: Madrid Chamartin, Concha
+Espina, Serrano, Madrid-Jardin Botanico, Entrevias, Abronigal , Canal del Manzanares, Cerro de los
+Angeles, Parla Norte, and Torrejon de Velasco:
+Figure 5 provides the technical drawing of the line Where all these stations can be found.
+R2D-WP37-D-PRO-001-03
+Page 29 of 60
+20/12/2024
+Interne
+
+Fe
+P2o
+Contract No. HE
+101102001
+Suropes Rail
+PCA CONCHA ESPINA
+Km  2655
+Translclo CRTIS
+Oe NT
+02
+PCA SERRANO
+Km 4,366
+ENCE CHAARTIN
+EVCEJARDINBOTANIC
+Tunel Principal
+篾
+14
+豆
+E4
+TIV
+0418
+COI
+CHAMARTIN AV
+CVEIB
+CV 43
+CIAC
+CVE
+Im 0,771
+I 0,540
+CI 264
+CV26C
+(4l
+CVE38
+U
+CI
+SOUP
+CVE2A
+E3
+E'2
+MADRID
+JARDIN BOTANICO (J8O)
+LOJum 7.,310
+900,015
+SALTOCEALCITRACIO 
+SLTOU
+MILOVETLCON
+7,295
+SJO,O
+901,016
+T0
+UAOUCTOCI CONERCIC
+Ps』4
+Lred Cs
+CPERRDBOSCI
+521
+VIA 1
+Cs
+CI
+C-l
+CE
+91
+C52
+C
+c
+TCP
+C
+o[
+GESA
+522
+PCA ABRONIGAL
+Km。 11,403
+VABRONIGAL
+PCA ENTREVIAS
+器
+T
+491
+量
+〉
+E1
+100
+113
+E4
+AS
+ZSI
+UI
+G
+C3
+C' 1134
+Cg
+Cy 113C
+CVE
+3
+CVSA
+CVggC
+JVI
+CE2A
+115
+E'2
+CANALDEL MANZANARES
+PCACERRODELOS ANGELES
+(CLA)
+-7+7M 1467
+KL 24031
+PCA PARLA NORTE
+7515
+I-386+
+CNNS C16/8
+AUCI
+21
+22
+297
+300
+CI
+十'4
+STOA
+ST
+Sl
+S
+C82
+Cu
+C EI
+C
+C
+一1
+一 |0
+TOI
+TW
+TOI
+1414
+211
+210
+299
+293
+VAORID
+SSL;
+331
+CI
+Cut
+BIF . TORREJON DE VELASCO
+LDIO_KIi 23,314
+CV AEZ
+LNO KI 35,450
+333
+Figure 5: High-speed section Madrid-Torrejon de Velasco [5]
+R2D-WP37-D-PRO-001-03
+Page 30 of 60
+20/12/2024
+Interne
+
+Fe
+Rea
+Contract No. HE
+101102001
+Suropes Rail
+5.3.2
+Traffic
+This line consists of high-speed trains from Chamartin towards Levante (southeastern part of Spain)
+every 20 minutes。
+The maximum speed of the trains is 240 kmlh.
+5.3.3
+General assumptions
+All the trains are equipped With TIMs.
+5.3.4
+Scenarios
+The objective set for this line is to improve capacity as Well as reducing costs, for Which rolling stock;
+TTD and VSS conditions are defined.
+A
+case Where the TTDs are reduced between stations for reducing costs is defined and another
+Where the TTDs remain as they are now in the reference scenario. However, VSSs are incorporated
+in order to get a possible increase in capacity。
+The plan for the VSS length is the same as in the
+scenarios of the other case studies (see for instance Section 5.1.4), to develop a methodology for
+reaching the optimal size; from the capacity increase
+Of View.
+The proposed scenarios for
+Madrid-Torrejon de Velasco are shownin Table 6.
+Table 6: Proposed scenarios for Spanish Madrid-Torrejon de Velasco case
+Scenario
+TTD
+VSS
+Rolling Stock
+Reference
+Current (ETCS Level 2)
+Current
+Current
+From 25 mto
+AlItrains with TIMs
+max。 TTD
+length
+2
+Reduction of TTD between
+From 25 mto
+AlItrains with TIMs
+stations
+max。 TTD
+length
+R2D-WP37-D-PRO-001-03
+Page 31 of 60
+20/12/2024
+Interne
+point
+
+Fe
+Reo
+Contract No. HE
+101102001
+Suropes Rail
+5.4
+SPAIN: BARCELONA
+FIGUERAS
+5.4.1
+Infrastructure
+This is a double-track high-speed line between Barcelona and Figueras With a length of 130 km. It
+is equipped with ETCS L2。
+A full description of this line is available at [8]. The stations are the
+following: Barcelonna-Sants, Sant Andreu Comtal, Mollet; Llinars, Riells, Vilobi d'Onyar, Girona;
+Figueres。
+5.4.2
+Traffic
+The traffic of the line consists of mixed traffic: freight trains every 1.5 hours, regional trains (200-250
+kmlh) every 2 hours and high-speed trains (250-350 kmlh) every 3 hours。
+5.4.3 General assumptions
+Current trains are equipped with TIMs. For the simulations, passenger trains remain equipped with
+i and freight trains Will not
+5.4.4 Scenarios
+The objective to reach by this simulating experiment is to
+an increase in capacity. This is a
+mainline with high-speed and freight traffic between Madrid and Torrejon de Velasco。
+Concerning rolling stock, passenger trains Will remain all equipped With TIMs as it is more critical
+because of punctuality and other possible service problems. Freight trains will not be equipped with
+TIMs because it is deemed less critical than for passenger trains; primarily due to punctuality
+concerns and their associated impacts。
+The TTDs remain as
+are now in the reference scenario。
+However, VSSs are incorporated in
+orderto
+an increase in capacity. The VSS lengths will be the ones taken from the methodology
+for reaching optimal sizes through iterations by simulating this specific scenario taking into account
+the critical sections and the increase in capacity objective。
+The proposed scenarios for the Spanish
+case Barcelona-Figueras are displayed in Table 7.
+Table 7: Proposed scenarios for Spanish Barcelona-Figueras case
+Scenario
+TTD
+VSS
+Rolling Stock
+Reference
+Current (ETCS Level 2)
+Current
+Current
+From 25 mto max。
+Passenger trains With TIMs
+TTD length
+and freight trains Without
+TIMs
+R2D-WP37-D-PRO-001-03
+Page 32 of 60
+20/12/2024
+Interne
+get
+they
+get
+
+Fe
+Reo
+Contract No. HE
+101102001
+Suropes Rail
+5.5
+SPAIN: LEON
+GUARDO
+5.5.1
+Infrastructure
+This is a single Class B regional line from Asuncion Universidad to with a length of 93,82 km. In this
+CaSe,
+a26 km section from Asuncion Universidad to Matallana will be studied, the stations are the
+following: Asuncion Universidad, San Feliz,
+La Robla and
+Matallana.
+There are sidings in some
+stations in between them where trains can overtake and come across each other。
+It is expected to have demonstrators for ATO, ASTP, FRMCS in this line for the next Europe's Rail
+call.
+Figure 6 shows the technical drawing of the track layout where all the stations through where this
+line goes。
+R2D-WP37-D-PRO-001-03
+Page 33 of 60
+20/12/2024
+Interne
+
+Fe
+P2a
+Contract No. HE
+101102001
+Suropes Rail
+ASUNCION UNIVERSIDAD
+C1
+ASUNCIONUNERSIDAD .LTOy_SUNCONUNIERSDAD ARANGUREN
+Km1 21
+宦
+VILLLA ROMANA
+L05JESUITAS
+CSHUERG4S
+CERRAD :
+NVATEJER
+PN02
+妄5龆
+I
+014
+PN 0OS
+3-20
+SEE
+沁
+5
+啻
+SE-
+曷
+245
+Km 2505
+@
+Km 306
+Km 3+20
+S1
+RSEI
+忌
+SF?
+52
+S?
+VIA
+XAI
+C
+CVE
+CVE?
+SF1
+SF;T
+S'
+TVI
+VIA 2
+VIA 2M
+@
+|
+舅
+嚣
+CV2
+SU
+CVA @
+T J
+妄
+51
+12
+妄
+乒
+PN 3
+LA RAYA (Apd )
+〈
+VILLAQUILAMBRE (Apd )
+VILLASINTA (Apd.)
+PN ?445
+551
+2
+ULACUIANSRE(a)
+DN
+翌
+Na
+55550
+詈
+嚣
+乒
+乒
+云
+A
+5@
+{
+52
+RSFZ
+1
+525
+SAN FELIZ
+VALDERILLA (Apd.)
+VIA 5
+120
+C
+LAERA
+PNOIa
+S3I
+山3
+5115
+SEE
+量
+`
+昱
+Km10
+C
+PALAZUELO (Apd )
+51/
+VIA
+VIA 1A
+S
+RSF2
+CVAa
+1555
+C
+SZIU
+V
+智
+53C
+5311-
+51/14
+U2_
+VIA4C
+恩526
+VA GC
+VIA 8C
+CCCLERCNI
+I0
+VI
+LA ROBLA
+40
+VI
+VI3
+=_
+015N
+VI
+MATUECA (Apd)
+11*
+GARRAFE (Apd]
+MANZ'NEDA Ipd)
+PEDRUN IApd」 PARDAVE (Apd]
+21093
+MATALLANA- (C1
+NTALLANA-(CI}-LT?D_ARHNGUREN. LAASUNQOILLNNERSIDADLECN-Km 10,446
+IATALLNA  {CII  L7e2_LROEL . MATALLANA
+Hm i0 
+52T
+VIA
+CT
+NAREDO (Apd]
+VIA 3
+~191
+5213
+JIA
+SV
+# TT
+L |
+C1
+UTTT
+OV
+51I1
+'
+Figure 6: Schematic single line section Asuncion Universidad-Matallana [9]
+R2D-WP37-D-PRO-001-03
+Page 34 of 60
+20/12/2024
+Interne
+8s2
+VI
+
+Fe
+Rea
+Contract No. HE
+101102001
+Suropes Rail
+5.5.2
+Traffic
+The traffic of the line consists of regional trains every 1.5 hours from Asuncion Universidad,12
+commuter trains per day and 2 long distance trains per day towards Bilbao (out of the study).
+The maximum speed of the trains is 70 kmlh.
+5.5.3
+General assumptions
+Passenger trains are all equipped with TIMs Whereas freight trains are not.
+5.5.4 Scenarios
+The main objective for this line is to reduce costs, hence; conditions for rolling stock; TTD and VSS
+are determined.
+Regarding TTDs, there is a situation in Which one TTD remains between stations and one TTD in
+stations is defined.
+The strategy for the VSS length is the same as in the scenarios of the previous case studies, to Use
+the developed methodology for reaching the optimal size from the cost reduction point of view once
+an engineering study for this concrete line has been done.
+The proposed scenarios for Leon-Guardo
+are Shownin Table 8
+Table 8: Proposed scenarios for Spanish Leon-Guardo case
+Scenario
+TTD
+VSS
+Rolling Stock
+Reference
+Current (Class B)
+Current
+Minimum (1 TTD between
+From 25 mto
+Passenger trains With TIMs
+stations,
+TTDin stations)
+max.TTD
+length
+R2D-WP37-D-PRO-001-03
+Page 35 of 60
+20/12/2024
+Interne
+
+Fe
+Rea
+Contract No. HE
+101102001
+Suropes Rail
+5.6
+SPAIN: LERIDA REUS
+5.6.1
+Infrastructure
+This is a single regional line with ETCS L2 from Lerida to Reus covering a length of 64 km. The study
+covers the following stations: Lleida Pirineus; Puigverd de Lleida, Juneda, Les Borges Blanques;
+Canal d'Urgell,
+Vinaixa,
+Riu Milans; L'Espluga
+de
+Francoli,
+Montblanc,
+Vilaverd,
+La
+Plana-
+Picamoixons, Base de Alcover, Alcover and Reus。
+5.6.2
+Traffic
+The traffic consists of mainly freight trains and 2 passenger trains per
+therefore it is considered
+35
+freight case study. These freight trains could typically be organized in batteries of trains that all
+the group runs towards the same direction in order to increase capacity.
+The maximum speed of the trains is 140 kmlh.
+5.6.3
+General assumptions
+AIlthe trains are equipped with TIMs as in the current reference scenario.
+5.6.4
+Scenarios
+The objective set for this line is to improve capacity, for Which rolling stock, TTD and VSS conditions
+are defined。
+The TTDs remain as they are now in the reference scenario, however, VSSs are incorporated in
+order to
+an increase in capacity。
+The VSS lengths Will be the ones taken from the methodolgy
+for reaching optimal sizes through iterations by simulations. Table 9 displays the proposed scenarios
+for Lerida-ReUs。
+Table 9: Proposed scenarios for Spanish Lerida-Reus case
+Scenario
+TTD
+VSS
+Roling Stoak
+Reference
+Current (ETCS Level 2)
+Current
+Current
+From 25 mto max
+AII trains with TIMs
+TTD length
+R2D-WP37-D-PRO-001-03
+Page 36 of 60
+20/12/2024
+Interne
+day,
+get
+
+Fe
+Reo
+Contract No. HE
+101102001
+Suropes Rail
+5.7
+SPAIN: CERCANIAS BARCELONA
+5.7.1
+Infrastructure
+Forthis case, one section of the Barcelona commuter network will be studied taken into account the
+following: EI Prat de Llobregat-Paseo de Gracia (Paseo de Gracia tunnel), Hospitalet-Arago (Plaza
+Cataluna tunnel) and Sagrera-Granollers (Montmelo tunnel)
+The reference signalling system is
+ETCSL2.
+Figure 7 illustrates the track layout for the Hospitalet-Arago section, a full description of this line and
+the others is available at [7].
+E:
+979
+E:
+L'HOSPITALET
+CT
+CI
+CIE: 
+CF
+DE LLOBREGAT
+C:
+|
+C5
+I:
+Km e 107 (2761
+UIT
+ 
+番
+573
+三
+N
+VIA
+<1
+517-3
+|
+CVASIE
+VI
+o
+S-I0
+23
+HI
+-1
+_
+VII
+LUL
+S
+14
+H8
+VIA 10
+FCI
+ISJC
+ |T
+BARCELONA SANTS-CI
+SAZCSLONL SANTS Ci
+Lo_MADZID CH
+EARCE_ONAESTACIO FAN?A.Km 677 EEO
+SARCELONu SANTS C1 . L27?_MACANET MLSSANES . LHOSFITALETDELLDEREGAT .Km ee
+BARCELONA-PASSEIG DE GRACIA
+BIF. ARAGO-C1
+K 547
+EI= -F-S-i-__-Z=IC--
+SARCELONAEST-CIOFZANCL
+K:1_7
+S=AS 1 -27-_CEZEEREE-RCSLON- S-NTs
+63OS
+GOT
+5611
+5
+-
+[31
+4
+UI
+CV-
+D--
+C
+Cs1
+Cs
+-
+CU
+C
+U
+Ct
+9I
+S
+RTS
+{813
+52
+I-=35
+51
+| 
+冒
+6
+SENaI
+H SNVEN
+E =
+Figure 7: Section line: Hospitalet-Arago [8]
+5.7.2
+Traffic
+The Montmelo tunnel is a node Where commuter, regional and freight trains converge。
+The maximum speed of the trains is 120 kmlh.
+5.7.3
+General assumptions
+AII the trains are equipped with TIMs in the reference scenario (current real situation).
+TIMs conditions are changed for the rest of the simulations as explained in the Section 5.7.4.
+R2D-WP37-D-PRO-001-03
+Page 37 of 60
+20/12/2024
+Interne
+L0
+
+Fe
+Reo
+Contract No. HE
+101102001
+Suropes Rail
+5.7.4
+Scenarios
+The main objective for this line is to improve capacity, hence; conditions for rolling stock, TTD and
+VSS are determined.
+For the rolling stock, a case Where passenger trains are equipped with TIMs and freight trains are
+not is defined and another case Where both passengers and freight trains will be equipped with TIMs
+is also defined. The TTDs remain as they are now in the reference scenario, however, VSSs are
+incorporated in order to get an increase in capacity. The VSS lengths will be the ones taken from the
+methodolgy for reaching optimal sizes through iterations by simulating. The proposed scenarios for
+the Cercanias Barcelona case study are shown in Table 10.
+Table 10: Proposed scenarios for Spanish Cercanias Barcelona case
+Scenario
+TTD
+VSS
+Rolling Stock
+Reference
+Current (ETCSLevel 2)
+Current
+Current
+From 25 mto max。
+Passenger trains With TIMs and
+TTD length
+freight trains without TIMs
+2
+Current
+From 25 m to max。
+Alltrains With TIMs
+TTD length
+R2D-WP37-D-PRO-001-03
+Page 38 of 60
+20/12/2024
+Interne
+
+Fe
+Rea
+Contract No. HE
+101102001
+Suropes Rail
+5.8
+FRANCE: LILLE
+5.8.1
+Infrastructure
+This case study consists of a project for the development of the regional lines around Lille。
+The
+project is planned to be completed in 2040, and includes both capacity improvements of existing
+infrastructure and a new double-track line (Henin-Beaumont
+Lille) for high-speed regional trains。
+The new line is planned to be equipped with ETCS。
+5.8.2
+Traffic
+The traffic of the network includes regional and suburban trains. The aim of the project is to increase
+traffic on all routes tolfrom Lille; doubling the frequencies to four trains per hour. The new Henin-
+Beaumont
+Lille line has a target of 12 trains per hour in each direction。
+It is planned to have only
+suburban and regional trains on the new line that will be studied . The time-distance diagram for the
+Lille case study is shown in Figure 8
+cee
+Blf Dourgos 0(
+Dourgus 0.0
+C
+Ollurcarton HU
+5
+》
+C
+$
+6
+6
+3
+@
+鼍
+Aoropor Jo UiII
+8
+S
+ -
+Lesouln 00
+喾
+?
+S
+&
+0
+詹
+6
+8
+S
+&
+鹰
+8
+%
+8
+3
+6
+UIo Cualandl
+6U
+1700
+17J
+1000
+10,30
+Figure 8: REHF traffic diagram, with up to 12 trains per hour, only suburban or regional
+trains (red and orange trains)
+5.8.3
+General assumptions
+AIl trains running on the "Reseau Express Hauts-de-France; REHF'
+will be equipped with TIMs for
+the ETCS HTD scenarios.
+There is currently no scheme plan that shows the division of the ETCS block sections for the line.
+Therefore; asumptions will be made for the division of ETCS block sections (around 1.5 km for ETCS
+L2 and less for ETCS HTD (length to be determined).
+R2D-WP37-D-PRO-001-03
+Page 39 of 60
+20/12/2024
+Interne
+,5506
+ooggs
+I555C
+餐
+
+Y
+竞
+
+畿
+
+莆
+
+
+_
+
+冒
+簋
+盒
+`
+盒
+蠢
+m
+m
+IOSL
+*
+
+
+鼍
+鲁
+嚣
+舅
+晨
+冒
+詈
+詈
+冒
+c
+嚣
+
+
+@
+禽
+
+詈
+
+鬟
+l
+Snoos
+
+
+豆
+4
+#
+誓
+薏
+鲁
+'
+&
+_
+芑
+趸
+[
+{
+}
+_
+
+匐
+
+詈
+簋
+
+
+簋
+墨
+
+嚣
+曷
+
+Fe
+Reo
+Contract No. HE
+101102001
+Suropes Rail
+5.8.4 Scenarios
+The aim in this case study is to determine the capacity effect of ETCS HTD compared to ETCS
+level 2 on the new double track line (Lille Euraflandres
+Henin Beaumont). Because all trains in
+the network are regional and suburban,i can be assumed that all trains Will either not have TIMs
+(the reference) or have TIMs. This gives the following proposed scenarios in Table 11.
+Table 11: Proposed scenarios for French Lille case
+Scenario
+TTD
+VSS
+Rolling Stock
+Reference
+Current (with ETCS Level 2)
+Current
+Current
+TBD
+Alltrains with TIMs
+R2D-WP37-D-PRO-001-03
+Page 40 of 60
+20/12/2024
+Interne
+
+Fe
+Rea
+Contract No. HE
+101102001
+Suropes Rail
+5.9
+FRANCE: BRETAGNE PAYS DE LOIRE (LNOBPL)
+5.9.1
+Infrastructure
+The LNOBPL is a
+neW
+proposed high-speed line in France。
+The aim of the project is to improve the
+rail connection
+between Brittany and Pays de Ia Loire。
+Several infrastructure improvements are
+proposed, including a
+new high-speed line, capacity treatment of critical sections of the existing
+infrastructure, and implementation of ERTMSIETCS on the existing lines. Implementing HTD on new
+lines oronan existing line is seen as an option。
+As the new high-speed line will not have a high capacity requirement, the study will focus on the
+existing line that are planned to be equiped with ETCS. These lines have high capacity requirement
+35
+support mixed trafic (regional, suburban, high-speed and freight trains) The exact relevant
+lines of the network where the study will be carried out are still to be determined.
+5.9.2
+Traffic
+The aim the project is to improve the frequency of the suburban, inter-regional
+and high-speed links
+tolfrom
+Paris by increasing
+rail capacity
+and
+improving journey times;
+While  supporting
+the
+development of rail freight. The traffic is mixed with high-speed train, regional trains, suburban trains
+and freight trains running on the sames tracks. The planned timetable for the line Rennes
+Brest is
+shownin Figure 9.
+8
+3
+1;9
+c9&
+~5o
+Hmmts Izrs;
+Blot su Weu
+Intuhinc Srer
+arohi 
+85
+Eroons
+FECJvon
+Sn
+T
+Ss-srs
+Cerst
+Crstel-rnF-ss
+Gum
+5-le Ile Etard
+Plure'Tre 
+FUen
+PIUpeS
+Iu
+Fyte CNI
+舒Trsnre:
+LI-
+1Rohe
+Lssest
+1 Fors
+10;
+Figure 9: Example of the planned timetable for the line Rennes
+Brest for 2030. Suburban
+train (blue), regional train (yellow), intercity train (purple);, high-speed train (red), freight
+train (green)
+R2D-WP37-D-PRO-001-03
+Page 41 of 60
+20/12/2024
+Interne
+they
+
+Fe
+Reo
+Contract No. HE
+101102001
+Suropes Rail
+5.9.3
+General assumptions
+AlI suburban and regional trains running on the network will be equipped with TIMs for the ETCS
+HTD scenarios
+AIl freight trains running on the network will not be equipped with TIMs for the ETCS HTD scenarios.
+Two scenarios for the ETCS HTD will be studied for the high-speed trains
+1st
+scenario: High-speed trains equipped With TIMs。
+2nd scenario: High-speed trains not equipped with TIMs。
+There is currently no scheme plan that shows the division of the ETCS block sections for the Britany
+and Pays de Ia Loire network. Therefore; asumptions Will be made for the division of ETCS block
+sections (around 1.5 km for ETCS L2 and less for ETCS HTD (length to be determined))
+5.9.4 Scenarios
+The interest of this case study is to determine the capacity effect of ETCS HTD compared to ETCS
+level 2
+as displayed in Table 12, where different scenarios Will be compared with trains equiped or
+not with TIMS.
+For the reference scenario, no trains will be equipped with TIMs (only ETCSL2).
+For ETCS HTD, we will model a scenario with only the regionallsuburban trains equiped Wih TIMs
+and a scenario with either the regionallsuburban trains and the high-speed trains equiped with TIMs。
+For all scenarios, freight trains Will not be equipped With TIMs。
+The proposed scenarios for the
+LNOBPL French case are displayed in Table 12。
+Table 12: Proposed scenarios for French LNOBPL case
+Scenario
+TTD
+VSS
+Rolfng Stoak
+Reference
+Current design (with ETCS L2)
+Current
+Current
+TBD
+Only suburban and regional trains with TIMs
+2
+Current
+TBD
+Suburban, regional and high-speed trains
+with TIMs
+R2D-WP37-D-PRO-001-03
+Page 42 of 60
+20/12/2024
+Interne
+
+Fe
+Reo
+Contract No. HE
+101102001
+Suropes Rail
+5.10SWEDEN: STOCKHOLM CITYBANAN
+5.10.1
+Infrastructure
+A
+6 km long commuter line through the city centre of Stockholm。
+The line is doubletrack with two
+stations on the line (Stockholm City and Stockholm Odenplan); both with platforms on the main track。
+No shunting is allowed at Stockholm City or Stockholm Odenplan. The tunnel is deep which means
+that there are high gradients at the start and end of the line;
+Which affects the braking curves
+depending on down- or
+Gradients could also limit the possibility of VSS deployments, as it
+Should be possible to stop and accelerate at each VSS。
+The current line uses track circuit for TTD。
+However; there are plans to change the TTDs to axle counters。
+The timeline is not confirmed。
+For
+the simulation of the line; the length of model should be longer than the 6 km. This is because the
+traffic on the connected lines will limit the possible capacity on Citybanan. The infrastructure layouts
+of the Stockholm Citybanan case are shown in Figure 10 and Figure 11.
+5
+L)
+匕
+C
+552,9
+L
+8
+`
+L
+LC
+T0 O
+"懿一
+
+ 2
+-
+@
+CO
+C4
+01
+0
+4
+Tomteboda
+Odenplan
+Stockholm 5
+Stockholm City
+Figure 10: Citybanan Infrastructure
+From connection at Tomteboda to Stockholm S, with
+current ATC signals (highlighted in red) [4]
+Odenplan
+LO
+LO
+PO
+O181
+Stockholm
+Figure 11: Zoomed-in version of Citybanan Infrastructure
+5.10.2
+Traffic
+Traffic on the Citybanan consists of only commuter trains。
+The capacity consumption is high, with
+392 trainslday (data from Trafikverket 2023 ), see Figure 12.It is also likely that there will be a need
+to increase the traffic in the future.
+R2D-WP37-D-PRO-001-03
+Page 43 of 60
+20/12/2024
+Interne
+uphill。
+25
+Ts
+City
+
+Fe
+Rea
+Contract No. HE
+101102001
+Suropes Rail
+Dwelltime at Stockholm City is limited to 2 min during peak traffic, and
+min at Stockholm Odenplan.
+Trains also need to time the stops with platform screen doors; which can lead to extended dwell
+times. In some cases, trains need to reverse to align with the screen doors. Adding strain to the
+timetable, increasing the need for increasing the capacity, Which HTD can help to alleviate。
+30.X50.593
+50
+912
+V
+71
+50X50
+50250591
+50x60 :928
+O
+50X50489
+450 X60.5775
+Y60X60 :0742
+TRD
+50260 6OJ
+SOD
+53
+S5t
+5
+Figure 12: 2024 timetable of Citybanan [4]
+5.10.3
+General assumptions
+For the simulations, i is assumed that all other traffic (non-commuter trains) at lines connecting to
+Citybanan are non-integer。
+Traffic is assumed to be the same as the current timetable。
+5.10.4
+Scenarios
+As the line has high capacity utilisation today, the performance indicator headway and the UIC-406
+compression method are relevant for this case. Capacity is a prioritising criterion on this line as it is
+already at its limits. Robustness could be of interest. However; as trains travel on a
+much larger
+network than Citybanan, the simulated network would need to be extended. Therefore, a simulation
+ofthe extended network would be too complex for analysing capacity. The benchmark, i.e. signalling
+R2D-WP37-D-PRO-001-03
+Page 44 of 60
+20/12/2024
+Interne
+sm
+450Y50
+丫50250
+N0J
+450
+SOO
+950
+
+Fe
+Rea
+Contract No. HE
+101102001
+Suropes Rail
+System used as a starting point, should be ETCS L2,
+as the line is planned to be
+upgraded to
+ERTMS.
+The specific scenarios have been
+chosen depending
+On
+shares of trains integrated
+with train
+integrity . Because all the trains occupying the line have the same train types, it can be assumed that
+there will be a migration phase (where some of the train have train integrity), followed by the entire
+fleet being upgraded with train integrity.
+The specific value of VSS should be selected with the aim
+of decreasing the headway. The Citybanan trains are already tightly packed, so the VSS should be
+as Short as
+possible. The document ERTMSIETCS Hybrid Train Detection: Principles [2] mentions
+25 meters as an example of minimum length. However, x there are restrictions with the simulation
+tool (e.9., run time of the simulation), a VSS length of up to 100 meters can be accepted。
+We
+therefore propose the infrastructure and traffic scenarios as presented in Table 13.
+Table 13: Proposed scenarios for Swedish Citybanan case
+Scenario
+TTD
+VSS
+Traffic
+Reference
+Current block lengths with ETCSL2
+n0
+Current
+Track circuit (extended block length)
+25-100m
+Current (0 % TIM equipped)
+axle counters (minimal number)
+2
+Track circuit (extended block length)
+25-100m
+Migration step (50% TIM
+axle counters (minimal number)
+equipped)
+3
+Track circuit (extended block length)
+25-100m
+Full deployment ( 100 % TIM
+axle counters (minimal number)
+equipped)
+R2D-WP37-D-PRO-001-03
+Page 45 of 60
+20/12/2024
+Interne
+
+Fe
+Reo
+Contract No. HE
+101102001
+Suropes Rail
+5.11 SWEDEN: EAST LINK
+5.11.1
+Infrastructure
+A
+greenfield railway project with aim of increasing capacity between Stockholm
+and Linkoping。
+Connecting to the Western Main Line at the north and to the Southern Main Line in the south。
+The
+goal of the project is for the line to become operational in 2035. The planning process is currently
+ongoing, and the line is planned to be doubletrack with ERTMSIETCS Level 2_
+The line will have five
+new stations (Vagnharad, Nykoping, Skavsta, Norrkoping and Linkoping) and is planned to allow
+train speeds Of 250
+kmlh.
+The line is part of a
+future high-speed line in Sweden, connecting
+Stockholm and GothenburglMalmo. Between Norrkoping-Linkoping, the line will run parallel with the
+current Southern Main Line (see Figure 13).
+Stockholm
+Sodertalje
+Jarna
+Vagnharad resecentrum
+Skavsta resecentrum
+Nykopings resecentrum
+Norrkopings resecentrum
+Linkopings resecentrum
+Figure 13: East Link. Red lines indicate the new line between Jarna and
+Linkoping。
+line
+is the previous track
+5.11.2
+Traffic
+The traffic projects of the lines are defined for 2045 [11]. Regional trains: Jarna-Nykoping, 34 trains
+(2 trains peak hour); Nykoping-Norrkoping, 32 trains (2 trains peak hour); Norrkoping-Linkoping, 30
+trains (2 trains peak hour). Long-distance: Jarna-Linkoping, 47 trains (4 trains peak hour):
+5.11.3
+General assumptions
+There are no general assumptions to be described for this case-study.
+R2D-WP37-D-PRO-001-03
+Page 46 of 60
+20/12/2024
+Interne
+Grey
+
+Fe
+P2o
+Contract No. HE
+101102001
+Suropes Rail
+5.11.4
+Scenarios
+As the line is a greenfield project, it is of interest to study various lengths of VSS. Only trains running
+at high speeds will operate on the line;
+SO all trains are assumed to have TIMs.
+The proposed
+scenarios for the East Link are shownin Table 14.
+Table 14: Proposed scenarios for Swedish East Link case
+Scenario
+TTD
+VSS
+TIMs
+Reference (ETCS L2)
+Current
+Current
+TBD
+Alltrains with TIMs
+R2D-WP37-D-PRO-001-03
+Page 47 of 60
+20/12/2024
+Interne
+
+Fe
+Reo
+Contract No. HE
+101102001
+Suropes Rail
+5.12 SWEDEN: SOUTHERN MAINLINE (NORRKOPING
+
+MJOLBY)
+5.12.1
+Infrastructure
+The section Norrkoping-Mjolby is part of the Southern Mainline between Stockholm and Malmo, one
+of the most important railway connection in Sweden
+The section between Norrkoping-Mjolby is
+about 79 km
+double track and electrified. The Southern Mainline infrastructure is illustrated in
+Figure 14. The allowed speed on the section is between
+110-200 kmlh. The section consists of
+seven stations, Where two stations (Linghem and Kimstad) have platforms on the main track and no
+possibility for overtaking.
+R2D-WP37-D-PRO-001-03
+Page 48 of 60
+20/12/2024
+Interne
+long,
+
+Fe
+P2o
+Contract No. HE
+101102001
+Suropes Rail
+Norrkoping C
+出
++
+箩二
+[一
+Linkaping_
+Mjblby C
+Figure 14: Southern Mainline infrastructure. Section Norrkoping to MjSlby, with current ATC
+signals (highlighted in red)
+5.12.2
+Traffic
+The traffic on the section Norrkping-Mjolby (Table 15) consists of freight, long-distance and
+regional trains. There is a high degree of speed difference of the train types. Long-distance trains
+have an allowed speed of 200 kmlh, regional trains of 160 kmlh, and freight trains of 100 kmlh。
+Table 15: Current traffic volume for the section Norrkoping
+Mjalby
+Trajectory
+Long-distance trains
+Regional trains
+Freight trains
+Norrkoping
+Linkoping
+43
+48
+8
+R2D-WP37-D-PRO-001-03
+Page 49 of 60
+20/12/2024
+Interne
+盗乏
+Spoi
+L
+
+Fe
+Reo
+Contract No. HE
+101102001
+Suropes Rail
+Linkoping
+Mjolby
+21
+48
+10
+5.12.3
+General assumptions
+Traffic is assumed to be the same as the current timetable.
+5.12.4
+Scenarios
+Performance indicators of specific interest for the Southern Mainline are headway, the UIC-406
+compression method and recovery time。
+The reason is that capacity and robustness are important
+aspects Of this line, as the capacity utilization is high, and the line is prone to disturbances。
+The
+signalling system ETCS L2 is used as benchmark, as there is an ongoing project to implement
+ERTMS on the line.。
+The traffic scenarios have been chosen from the assumption that different train types
+Will
+be
+upgraded With train integrity in steps, from easy implementation to complex. For this reason, i is
+assumed that railcars Will have working train integrity in a first
+followed by locomotive-hauled
+passenger, and lastly freight trains. The Value for VSS lengths in this case study should be from the
+assumption Of a simple deployment strategy. Meaning, that the VSS lengths have a standardized
+length. This is mainly because of two reasons: firstly, i simplifies the simulations in this first step of
+studying the deployment strategies; secondly, studying the effect of a standardized length could be
+ofinterest as it would save cost for the HTD deployment project.A standardized VSS length, in this
+should bein the range of 200
+500 meters. The reason for this is that similar values have been
+used in earlier studies [12].
+The total number of scenarios to be simulated for the Swedish Southern mainline is 16 (four train
+integrity scenarios per infrastructure scenario). The scenarios for the implementation of virtual blocks
+and the extension of current blocks are reported in Table 16.
+Table 16: Proposed infrastructure scenarios for Swedish Southern mainline case
+Scenario
+TTD
+VSS
+Reference
+Current block lengths
+no
+11
+Current block lengths
+200-500 m
+1-2
+Track circuit (extendea block TengthJiaxle counters (minimalnumber)
+no
+1-3
+Track circuit (extendea block lengthjlaxle counters (minimal number)
+200-500 m
+Tne suggested scenarios regarding the implementation oftrain integrity are providea in Table 17.
+R2D-WP37-D-PRO-001-03
+Page 50 of 60
+20/12/2024
+Interne
+step,
+step,
+
+Fe
+Reo
+Contract No. HE
+101102001
+Suropes Rail
+Table 17: Proposed train integrity scenarios for Swedish Southern mainline case
+Scenario
+Railcar
+Locomotive hauled passenger trains
+Freight trains
+Reference
+No TIM
+No TIM
+No TIM
+T1
+TIM
+No TIM
+No TIM
+T-2
+TIM
+TIM
+No TIM
+T-3
+TIM
+TIM
+TIM
+R2D-WP37-D-PRO-001-03
+Page 51 of 60
+20/12/2024
+Interne
+
+Fe
+Reo
+Contract No. HE
+101102001
+Suropes Rail
+5.13THE NETHERLANDS: SAAL-CORRIDOR (SCHIPHOL AIRPORT, AMSTERDAM,
+ALMERE, LELYSTAD)
+The SAAL-corridor is one of the busiest railway lines in the Netherlands on which a capacity increase
+is planned by implementing ETCS L2. From Schiphol airport, the line runs to the intercity station of
+Amsterdam Zuid,
+then Via Weesp to
+Almere and
+ends in Lelystad。
+The line contains multiple
+locations Where traffic merges and diverges to other corridors。
+In this section, we describe the infrastructure scenarios and traffic scenarios for the SAAL corridor。
+Next, We elaborate on several assumptions thatare relevant for the Netherlands. Finally, we describe
+which simulations are to be executed.
+5.13.1
+Infrastructure
+The infrastructure consists of several parts of 4-track。
+These sections lie
+between Hoofddorp;
+Schiphol and Amsterdam Zuid and around Weesp. Furthermore; the stations of Rai, Weesp, Almere
+Centrum, Almere Oostvaarders and Lelystad Centrum provide more than 2 platform tracks. The rest
+Of the line is all double track。
+The reference infrastructure scenario is the base infrastructure
+Which a Level 2 design from the
+real project is assigned according to design version
+2.0
+Of February 2024.
+We
+will Vary two
+infrastructure design parameters in order to find the ideal design principle under various conditions
+of usage.propose 7 different infrastructure scenarios, based on variations around two parameters to
+find the proper design principles for various usage of the:
+1.
+Number of axle counters
+2.
+Distance of virtual blocks
+3
+Based on these two parameters We have created seven infrastructure design scenarios that
+Will be described below.
+The number of TTD blocks can be varied in 3 gradations:
+1.
+The base infrastructure on Which a Level 2 design from the real project according to design
+version 2.0 of February 2024. This is infra scenario 1-0.
+2
+The first HTD design, numbered 1-1, is based on the base L2 design of |-0 and assumes a
+headway of approximately
+1
+minute without buffer times still reachable
+on the TTD for
+degraded situations and behind trains Without TIM。
+This leads to a reduction of 50 % axle
+counters as a result of the following assumptions:
+Physical blocks of
+2 km on tracks Without regular freight traffic, given passenger
+trains running at
+1
+40 kmlh
+Physical blocks of 0,5
+km on tracks with regular freight traffic, given freight trains
+running at 100 kmlh
+Some shorter physical blocks near stations
+No additional virtual blocks
+3
+The second HTD-design, numbered 14,is the base infrastructure
+with only
+a minimum
+number of axle counters, always near other physical objects (switches and level crossings).
+R2D-WP37-D-PRO-001-03
+Page 52 of 60
+20/12/2024
+Interne
+On
+
+Fe
+Rea
+Contract No. HE
+101102001
+Suropes Rail
+This leads in the worst case to trains running only at station distance in degraded situations
+or behind trains without TIM.
+The distance of virtual blocks can be varied in 2 gradations:
+The
+base infrastructure from scenario
+1-1
+Or
+1-4
+With additional virtual
+blocks to further
+optimise capacity。
+The virtual blocks
+are 200-250
+meters
+(usually by splitting the
+designed TTD-blocks in
+2
+VSS):
+This fits to
+a
+headway of approximately the timetable
+resolution of 6 $ for the shortest and fastest trains. These scenarios get the numbers 1-2 and
+15.
+The infrastructure from scenarios |-2 and |-5 with additional virtual blocks to further optimise
+capacity. The virtual blocks are 100-125 meters apart. This fits to a headway of approximately
+half the timetable resolution of 3 $ for the shortest and fastest trains. These scenarios get the
+numbers |-3 and 1-6.
+This leads to the total of 7 infrastructure scenarios, numbered |-0 to |-6,as shown in Table 18.
+Table 18: Overview of infrastructure scenarios for the Dutch SAAL case
+Increasing number of virtual blocks
+Decreasing
+1-0
+umberof
+Reference
+trackside based
+(ERTMS L2)
+blocks
+1-15
+|-IF
+1-2
+1-3
+Medium number
+Medium number
+Medium number
+Medium number
+axle counters;
+axle counters;
+axle counters;
+axle counters;
+same Virtual
+same Virtual
+virtual blocks
+virtual blocks
+blocks as
+blocks as
+every 200-25Om
+every 100-125m
+reference
+reference
+1-45
+I-4F
+1-5
+1-6
+Minimum number
+Minimum number
+Minimum number
+Minimum number
+axle counters;,
+axle counters,
+axle counters;
+axle counters,
+same Virtual
+same Virtual
+Virtual blocks
+Virtual blocks
+blocks as
+blocks as
+every 200-25Om
+every 100-125m
+reference
+reference
+Area to simulate
+Complete SAAL
+Only
+FleVo'
+line
+area
+In order to find a balance between workload and the demand for simulations we propose to simulate
+all scenarios in Which the distance between virtual blocks are Varied only on the
+Flevo" line between
+Muiderberg Aansluiting and Lelystad (note that the Flevo Line is the northeastern part of the SAAL
+area). This leads to infra scenarios |-1and |1-4 having a version on the whole scope of SAAL and on
+the scope of only the Flevo line。
+These infra scenarios are marked with S and F respectively。
+The
+R2D-WP37-D-PRO-001-03
+Page 53 of 60
+20/12/2024
+Interne
+apart
+
+Fe
+Rea
+Contract No. HE
+101102001
+Suropes Rail
+reference |-0 is only analysed for the Whole SAAL area and the infra scenarios |-2,1-3,1-5 and |-6
+are only analysed for the smaller Flevo area。
+Direct comparison is possible between infra scenarios in every column [1-0,1-15 and |-45], [1-15 and
+1-45], [I-IF and I-4F], [1-2 and |-5] and [1-3 and |-6] and in every row [I-IF, 1-2 and |-3] and [I-4F,1-5
+and |-6], Where Within each group the geographical area is the same and is only varied in one layout
+setting, either the number of axle counters or the number of virtual blocks.
+The design of the Flevo
+Line forthe infrastructure scenarios |-0 and |-1are displayed in Figure 15 and Figure 16,respectively.
+JmcWl
+RrIIII
+CMIJANII
+OnO
+C
+Figure 15: ETCS L2 design for part of the Flevo Line between Almere Muziekwijk and
+Almere Centrum according to infra scenario 1-0
+R2D-WP37-D-PRO-001-03
+Page 54 of 60
+20/12/2024
+Interne
+out
+
+Fe
+P2a
+Contract No. HE
+101102001
+Suropes Rail
+Ie「aLF
+I IOI
+LTO[
+Wee Cem
+Peron
+Peron
+et7 5OE22[1195
+UaaFo100TU
+NsaN Ncc C SNITUU
+U00
+Figure 16: ETCS HTD design for part of the Flevo Line between Almere Muziekwijk and
+Almere Centrum, based on the ETCS L2 design, where the green marked axle counters
+Should remain. Other axle counters are replaced by VSS, according to infra scenario 1-1.
+R2D-WP37-D-PRO-001-03
+Page 55 of 60
+20/12/2024
+Interne
+
+Fe
+P2o
+Contract No. HE
+101102001
+Suropes Rail
+5.13.2
+Traffic
+The SAAL-corridor contains high density mixed traffic of intercities and regional trains in an hour-
+pattern, including two international
+and two freight paths。
+In Figure
+17,
+the line plan is
+described.
+Between Schiphol and Lelystad,
+and
+between Schiphol and Hilversum;
+an
+intercity
+service runs every 15 minutes. Furthermore; there are 6 Sprinters an hour between
+Almere and
+Amsterdam Centraal,
+4
+Sprinters between
+Hilversum and Amsterdam Centraal and
+2 Sprinters
+between Hilversum and Almere. Finally, 4 Sprinter trains run from Amsterdam Zuid to Lelystad that
+do not stop at local stations between Weesp and Lelystad.
+Freight paths are also part of this corridor and run twice every hour between Amsterdam Bijlmer and
+Hilversum. International paths are
+of regular intercity traffic on this corridor. One of the four
+intercities to Lelystad runs from Brussels, and one of the intercities to Amersfoort continues to Berlin.
+In this study, these trains are considered as regular national intercities.
+The intercities runin a strict 15-minute interval, While all othertrains are evenly divided in this interval。
+This leads to multiple short headways. Between Schiphol and Amsterdam Zuid a train runs every
+2.5
+3 minutes Without exception。
+The most restricting part of the OV-SAAL network is between
+Weesp and Almere. This time-distance diagram is visualized in Figure 18, in which the intercities are
+Shown in blue。
+The local trains from Amsterdam Zuid run non-stop between Weesp and Almere。
+Together with all Sprinters, the structure is described from Weesp to Almere as follows: Intercity,
+local train from Amsterdam Centraal, local train from Amsterdam Zuid, local train from Amsterdam
+Centraal or Hilversum, Intercity. Almost all headways on Weesp and
+Almere are planned at 2.5
+minutes
+ASD
+AMR,N
+SAAL model II 2o30in
+landelijke Gbasis uitwerking
+ASS
+
+窒
+
+ASDL
+豆
+8
+VP
+GVC
+CVC
+GUC
+`
+SHL
+NDa
+GIC, Ut-sHI
+LLS
+A5B
+?
+BSMZ
+4SHD
+|
+HVSM
+DNT
+OKLUIT
+
+
+HVS
+KPN2
+AMI
+BRN
+2treinen per UUr per
+richting met stop
+DV AH
+2 goedzrenpaden per richting
+ALNT Cs
+NON
+2 maatwerk goederenoaden per UUT per richting
+EMN
+Bediening stations RAI, Duivendrechten Diemen Zuid:
+ANTF
+2Van de 3 stations 4K/UUrof1 station met 4X/UUren 2
+Met
+ZX/UUr Te besluiten in het dienstresclingsproces
+DVBNVED
+GNLW
+Figure 17: Line plan of OV-SAAL.In dark blue and light blue: Intercities, in red, pink, purple
+and
+yellow: Sprinters
+R2D-WP37-D-PRO-001-03
+Page 56 of 60
+20/12/2024
+Interne
+paths
+part
+
+Fe
+P2o
+Contract No. HE
+101102001
+Suropes Rail
+30
+_
+20
+Re800
+50
+10
+Mbga
+Ampo
+Almm
+AIm
+Almp
+Almb
+AImo
+Llsz
+Lls
+tbr
+Distance
+Figure 18: Time-distance diagram of SAAL timetable between Weesp and Lelystad. In red:
+Sprinters, in blue: intercities
+5.13.3
+General
+assumptions
+There are several assumptions specific for the Dutch network that are described in this section. AlI
+of these are used to increase the applicability for the Dutch system。
+The rolling stocks
+We
+Use for passenger trains are ICNG-13 (Intercity Nieuwe Generatie) for all
+intercities in Flevoland and Hilversum, and SNG-10 (Sprinter Nieuwe Generatie) for all local trains
+and express trains。
+Running time supplements are applied in the timetable, and therefore need to be incorporated in the
+simulation
+as Well。
+The running time supplement is described
+as a percentage of the technical
+running time。
+The OV-SAAL timetable
+USes 7% for all intercities, and 6% for all local trains and
+express trains。
+4
+buffer time of 60 seconds is applied to all passenger trains。
+This practically means that every
+section is occupied 60 seconds after a train has left that specific section. We use this method on all
+scenarios. This Value is used in order to have an additional buffer between two trains in the timetable
+for the purpose of robustness, when they have to occupy the same infrastructure shortly behind each
+other。
+R2D-WP37-D-PRO-001-03
+Page 57 of 60
+20/12/2024
+Interne
+ACA2
+COOOI
+ACq3gOl
+40500012
+C53OOI
+4420012
+002
+OI
+AC430012
+ODI
+CO0OI
+ACAOOL
+ACgCOL
+40530011
+ACSDOOL
+J430OL
+B0420012
+ROggO
+g0OL
+
+Fe
+Reo
+Contract No. HE
+101102001
+Suropes Rail
+The freight paths we consider run from Kijfhoek, through Weesp to Amersfoort and further, in both
+directions.
+These trains have a length of 720 metres, carry 2400 tonnes and are propelled by one
+BR189. Freight trains do not run with a running time supplement and do not use a buffer time。
+We consider two types of dwell time。
+The first is the dwell tme at small stations. On these, local
+trains will dwell for 30 seconds and intercities dwell for 54 seconds. Those are the technical minimum
+dwell time based both on realisation data and proces analysis of the dwell procedure。
+On larger
+stations, a larger value is used based on both realisation data and robustness measures. We use a
+list made by ProRail that includes all intercity stations and differs for Sprinters and Intercities。
+5.13.4
+Scenarios
+We propose
+7
+timetable scenarios
+numbered
+with
+G
+to
+assess the impact
+on capacity and
+robustness. The scenarios outlined in Table 19 are based on the areas to simulate specified in Table
+18. Scenarios T-1and T-3 are analysed for both the SAAL corridor and the Flevo Line; whereas T-
+2 is analysed exclusively for SAAL. Scenarios T-4,T-5,T-6,and T-7 are analysed solely for the
+Flevo Line
+The combination of the infrastructure scenarios and tmetable scenarios lead to 31
+combinations as depicted in Table 19.In all timetable scenarios except for T-3 the assumption is
+that all regular passenger trains have a TIM。
+Table 19: Description of timetable scenarios and related infra scenarios for the SAAL case
+Nr
+Infra scenarios
+Description
+T1
+AII 7
+Regular timetable without freight trains
+亍-2
+1-0,1-18,1-48
+Regular timetable including freight train paths numbered
+AB10 and KBGI0
+T-3
+AII 7
+Sprinters that do not include a
+TIM. We choose Sprinters
+instead
+Of
+intercities
+because
+Sprinters
+are
+more
+constricting in the timetable
+厂4
+|-1F,1-2,1-3,1-4F,1-5, 1-
+Regular timetable including a freight train on a detour route
+6
+T-5
+|-IFand I-4F
+Regulartimetable including a non integertrain (i.e.
+an open
+access train) on detour route
+T-6
+1-1F,1-2,1-3
+Regular timetable (without a freight train on a detour) in
+大大
+Which
+train has an unplanned stop for 15 minutes。
+T 7
+I-IF,1-2,1-3
+Regulartimetable (with a freight train on a detour) in which
+大大
+train has an unplanned stop for 15 minutes。
+Forthese scenarios the three performance inaicators for delayea situations WTbe usea.
+15 minutes, because of the 15-minute pattern of SAAL.
+R2D-WP37-D-PRO-001-03
+Page 58 of 60
+20/12/2024
+Interne
+
+Fe
+Rea
+Contract No. HE
+101102001
+Suropes Rail
+6
+CONCLUSIONS
+The goal of this deliverable is to describe the test specification requirements for ERTMSIETCS
+Hybrid Level 3 (HL3), also known as Hybrid Train Detection (HTD), to be considered in EU Rail FP1
+WP8 and of which the capacity and robustness effects according to the specified performance
+indicators will be calculated in EU Rail FP1
+IPg.
+The
+methodology, case studies and scenarios
+have been reviewed by partners from EU Rail FPI WP8, that are
+now making preparations to
+execute the required scenarios for WPg。
+The scenarios are provided for seven Spanish case studies; two case studies in France, three in
+Sweden and one in the Netherlands. The Spanish cases cover all five market segments: high-speed,
+mainline (mixed traffic), (sub-)urban, regional and freight. They are exploratory of the headway
+performance indicator. The insights can be used further in the French; Swedish and Dutch cases;
+that cover the high-speed, mainline (mixed traffic) and (sub-)urban market segments。
+USe also
+relative capacity utilisation as a measure in order to evaluate the capacity from a line and network
+perspective. Finally,
+cases from Sweden (Southern mainline) and the Netherlands
+(SAAL-
+corridor) will be used to evaluate HTD-designs for their robustness by adding a deterministic delay
+to a single train. This is measured by the performance indicators: recovery time, number of affected
+trains and total delay in the system。
+The scenarios are built specifically around logical combinations of infrastructure and traffic. In the
+infrastructure; the variance lies in the number and positioning of trackside train detection and the
+virtual subsections in between. In the traffic the variance is possible in the share and types of trains
+that are equipped to fully utilise HTD by having a Train Integrity Monitor on board。
+The results of the calculations of EU Rail FP1 WPg will be used in the development and evaluation
+of the method for track layout with ETCS HTD, that Will be described in deliverable 37.2 of this work
+package.
+Another evaluation of the results will be performed in EU Rail FP2 WP32, where different
+DATO-concepts are compared.
+R2D-WP37-D-PRO-001-03
+Page 59 of 60
+20/12/2024
+Interne
+They
+tWO
+
+Fe
+Reo
+Contract No. HE
+101102001
+Suropes Rail
+REFERENCES
+[1]
+ERTMSIETCS Subset-026 4.0.0: System Requirements Specification。
+[2]
+EEIG ERTMS Users Group, 2024, ERTMSIETCS Hybrid Train Detection: Principles, Ref。
+16E042 Version 16, Brussels, Belgium。
+[3]
+ERTMSIETCS Subset-026: System Requirements Specification 3.6.0.
+[4]
+RMCon Rail Management Consultants International GmbH, 2020, RailSys Manual, Hanover;
+Germany。
+[5]
+Wrenfecom
+[6]
+Consigna Serie A-2890
+Version 34 de 04-09-2023. ADIF.
+[7]
+Consigna Serie A-2904
+Version 19 de 04-08-2023. ADIF.
+[8]
+Barcelona-Figueras. Esquema de Vias y aparatosn
+Version
+4.7 de 11-01-2007.
+ADIF.
+Figueras。
+[9]
+Consigna Serie A-3035
+Version 17 de 25-03-2024. ADIF.
+[10]
+Consigna Serie A-2915
+Version 53 de 09-10-2023.ADIF.
+[11]
+Trafikverket, 2024, RAPPORT Tagtrafik 2045 med faststalld plan 2022- 2033.
+[12]
+Jansen,JM., 2019, ERTMSIETCS Hybrid Level 3,
+a simulation-based impact assessment
+for the Dutch railway network, Delft University of Technology.
+R2D-WP37-D-PRO-001-03
+Page 60 of 60
+20/12/2024
+Interne
