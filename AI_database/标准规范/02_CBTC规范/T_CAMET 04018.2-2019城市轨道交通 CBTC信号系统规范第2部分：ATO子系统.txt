@@ -1,0 +1,538 @@
+ICS 45.020 
+Q 84 
+m 
+T/CAMET 04018.2-2019 
+iJOCrtJ*itm3tim CBTCf~ ~ ~~1t~Jlffi 
+m2~~~: ATOT-~~1t 
+Urban rail transit -System specification of 
+communication based train control system 
+Part 2: ATO subsystem 
+2019-07-30 ~~ 2019-11-01 ~:b'm 
+'ftoo~rtrtmiliximtJJ.4i 
+:k r :fl:t ftt~: 1fJ 
+~ -m~tR~x:iltt#~~m~ 
+~ 19 r_m ill1*f$ll8"10.!ff 
+t:f:IJiUJL (2019 )24% 
+~~oo~m~ m~w~~~=~~+-~~*~~~0~m~ .~ 
+;fJJ(m~~~ ~imtt71Cm1mJ~ 19 J'ffil~li*tr-~ .~rkA0;fJJ < i$.!A!. ""f~) 0 
+~~ t'F?fH.lii~ tF?Uif* ;;Ia~ BAA 
+I T/CAMET 01001-2019 m ~ tiH11.3C ii!i tt *!! 711 2019-12-01 
+2 T/CAMET 01002-2019 JJtm$Ji.i1!3Cii!i~flhfffl'mtFi*~ 2019-12-01 
+3 T/CAMET 04016-2019 JJtm $Ji.i1!3Cii!i ~Httii *~'* ~iloll!! 711 2019-12- 01 
+4 T/CAMET 04017. 1-2019 !Jtr!i$Ji.:ill3Cii!i :i: El ~ iE rr ~ tftJ£ 711 ~ 2019-11 -01 
+I $7T:w.f>J< 
+5 T/CAMET 04017.2-2019 JJtm$Ji.nt3Cii!i :i: El ~iElr~~~711 
+2 mi?T:~·C.'ii*i"'£ ~ 2019-11-01 
+6 T/CAMET 04017.3-2019 !Jtrli$Ji.ili:3Cii!i :i:EI~iErr~~~711 m 2019-11-01 
+3 $7T:~D 
+7 T/CAMET 04017.4-2019 !Jtrli$Ji.:ill3Cii!i :i:EI~iErr~~!\\711 m 2019-II -01 
+4 mi?T:ltliil:.&~iiE 
+8 T/CAMET 04017.5-2019 !Jtr!i$Ji.:il!3Cii!i :i:EI~iErr~~!\\711 m 2019-11-01 
+5 $5r: Iti:ti::i:V¥1;5 
+9 T/CAMET 04017.6-2019 !Jtr!i$Ji.:il!3Cii!i ~EI~iErr~~~m: 
+6 ml'lT:fJJWliEY~*~'d'f ~ 2019-II -01 
+10 T/CAMET 04017.7-2019 !Jtr!i$Ji.:il!3Cii!i ~EI~iErr~~!!m: 
+7 mi?T :iEii"i'JJ m 2019-11-01 
+I 
+!¥~ f,f>IIH.Ii~-
+II T/CAMET 04018. 1-2019 
+12 T/CAMET 04018.2-2019 
+13 T/CAMET 04018.3-2019 
+14 T/CAMET 04018.4-2019 
+15 T/CAME T 04018.5-2019 
+16 T/CAMET 08006-2019 
+17 T/CAMET 11001.1-2019 
+18 T/CAMET 11001.2-2019 
+19 T/CAMET 11001.3-2019 
+n ~_t;& 
+~lUi~ ;ii;~EIJlll 
+lJ! r!H1L ill3C iJ! C BTC 1:1i -fj-.Wd"ft ~iii Jf, 
+I$;}:ATP'f *~ 2019-11-01 
+-9lt r!H1L ill 3C iJ! CBTC 1R~~t/t~i\l m 
+2 $;}:ATO -T-*tft 2019-11-01 
+-91tr!HJLill3Cilli CBTC 1tf-!j· * tft~ iii 
+3l\"il;}:AT S 'f*tlt m 2019-11-01 
+.mtili~:U!3C:ii!i CBTC fl'f-t;;·*~:ij!t\1 m 
+4 $;}:CI -T-*tlt 2019 -II -01 
+.mtili~ill3Ci!li CBTC -ffl~*tft;ij!iil m 
+5 $#: ¥-'f WLAN {!(J DCS -T-*tit 2019-II -01 
+<P11£iililai'¥3Ciili illti*t.ffi.f;! 
+*~ii1 ·IUM:tt 2019-12-01 
+W~.mtili~ill3Cilli 1H!. :tt /It ?:II! #1.& ~ ffl 
+3i:~~i't1 m 1 lll!;t,.cH~m* 2019-12-01 
+W~.mtili~i1!"3Ciffi 1l1i .Q, :tt ~ $\!! ftJ .& lijj ffl 
+3i:~~i't1 m 2 llll#::tt*MttJ 2019-12-01 
+~!!~ili~i1!"3C:ii!i 1d".Q.:tt/ft?:li!~.& Ia] ~ 
+3i:~~i't1 m 3 lll!;t, ~t~:fi:~ 2019-12-01 
+~ ooiliXm*ll.~~ilt:tJ.~ 
+2019 ~7 JJ 30 B 
+T/CAMET 04018. 2-2019 
+lftfj§ .............. ................ """ ........................... """ ............ v 
+1 moo .......................... ....................................... ............. 1 
+2 ~]111t£5 1 ffl)C{lj: ............... """ ..................... """ ............... 1 
+3 71Ci!\-l1l)E)( ............... """ ............................................... . 2 
+4 ~~ift ............... """ ...................................................... 5 
+5 -Al!~* .......................... .............................................. 5 
+6 PF:J;fl *'1lf .. · .. · .. · .. · .. · .. · · .. · .... · .. · .. · .. · .. · .. · .. · ........ · .. · · .... · .. · .. · .. · 6 
+7 ttflli~* ................................................................ ........ 7 
+7.1 1C~tE~ * ............................................ ................... 7 
+7.2 PJ$tt,PJffltE~* ············ ·""''''''''''''' '''"''"'''"'''''''"' 7 
+7. 3 PJ£itt:P11:~* ............................................................ 7 
+7. 4 ttfl~fertff- ..................................... ............................. 7 
+8 ~fl~~* ................................. """ """ ..................... """ 7 
+8. 1 3itl$ § 7;/J~$!! ............ ............... ........................... """ 7 
+8. 2 M i:i1f$~lJi1 J ......................... ................................. .. 8 
+8. 3 $ fl.ll[ ~ ". ". " .. " ". " .. " """ """ " .. " ". ". ". ". ". """ """ 8 
+8. 4 M -Ei fl.ll{i ~ .. · .. · .. · ........ · .. · .. · .. · .. · .. · .. · .. · .. · .. · · .... · .. .. .. .. .. .. 8 
+8. 5 ~friP.i:lm ............................. ..................................... 8 
+8. 6 :]gi'f~!lb ............ """ ... """ ................... ........ """ ...... 9 
+8. 7 M!:~~$f;ftljll¥ .................. """ ............................... .. 9 
+9 ~D~:iift:il!~* .............................. ............... .................. 9 
+9.1 ATP/ATO $~i9:*~$iij ~D~* ............ .................... . 9 
+9. 2 ATS ~ ATP/ ATO $~ i9:*J.i\IYIH ~~ D ~* ..................... 12 
+9. 3 ATP/ ATO $~19:*~ ATP Jig liD19:*J.i\IJ=ItFzHt D ~* ......... 13 
+m 
+T/CAMET 04018. 2-2019 
+9. 4 CI Ej ATPI ATO $~i9:4&J.illfflmfi D ~>}( ........................ 14 
+10 ~T~Uft~llJit?~>J( ......................................................... 15 
+10. 1 ~l'i~t~M;flltt:tJt ................. .................. ................... 15 
+10. 2 ti:it!!. ............................................ ......................... 15 
+11 ~~.&~ mti9:4lr~>J( ................................ ...................... 15 
+m1~ A(~Jl'.ft1fillf;t~) ATO 7'-*~B<.I*~~~-ffi ........................ 16 
+~:5\jJt~ .............. .............................. ............................... 17 
+N 
+T/CAMET 04018.2-2019 
+T/CAMET 04018 (~rfJ$}Lll!3{:iftl CBTC {~% *~~]W£ }:5:)-;1;; ~ T 1i 
+-1'-:giS?t: 
+-~ 1 $?1- :ATPr*~; 
+-~ 2 $?1-:ATO r*~ ; 
+-~ 3 $:5:)-:ATS r*~; 
+-~ 4 $:5:)-:CI r*~; 
+-~ 5 $?1-:¥-=.f WLAN 1¥1 DCS r*~; 
+.:<$:$?:)-~ T/CAMET 04018 I¥J~ 2 $:5:)-0 
+.:<$:$?1-rli:Jffl GB/T l. 1-2009 ~tl:li¥J~Ji! ~®~ o 
+~a~.:<ts:x#~¥J~®~~ey~~~~~ . .:<ts:x#l¥l~~m~~*m 
+1-Y!JJiJ:J! ®~f!J 1¥1~1f o 
+.:<$:$:5:)-ffi~OO~m~ll!3{:iftl~~~*~~~~~~~Wtl:l o 
+.:<fs:$?1-ffi ~~~m~ M~iftl~ ~ao o 
+.:<$: $ ?t®~ ~{if: d t Jit 3{: iftl 7c $ , 3{: j£ f.4 ~IN f5HH!l! 0 ifJ , -F WT tiiH~ 
+%~llll!01lJ ,~tJit :i:~im 1~1~%1Vf~~it~~ llll!01lJ, ~ ~ tgRMf4$1Vf 
+~~ 0 
+.:<$: $ :5t .i: ~ ® 11. A : m 71f , $ ff ~ , ~ 0:. ~ , XIJ 7Il , XIJ ;It ~ , fh :h!! x , 
+~fl; ,~f .>J.,tf;J\~ ,~{~LX!Jtl ''*~ ,~~ o 
+v 
+T/CAMET 04018.2-2019 
+fJ£rtJ*ll.m3tim CBTC i~~ ~~it~.!Mffi 
+~ 2 $~:ATO 7-*~f. 
+TJ'tl)Cflf:xt-r ~~ 
+14 , {JUJr ii 8 WI 99 It& 
+It& :<1q § ts ElY~ 99 f~ r& 1ti 
+GB/T 24338.4 !€JLJ1!3(:Ji It!,~~~ m 3-2 $:)t :M.!f::!f::W/j i!i[~ 
+( GB/T 24338.4-2018 ,IEC 62236-3-2: 2008, MOD) 
+GB/T 21562 $}L:ll!3tilli PJ;W;tL 'ilJ ffltL 'ilJ~1Hf'·!1;f1l1i:~tt~Jl'.V!1 
+.&l.KfYJJ( GB/T 21562-2008, IEC 62278: 2002, IDT) 
+GB/T 21563 !€JL:ll!3(:illi M.$$W!ii.9:~ <*m~11lU9Jtit~ ( GB/T 
+21563-20 18, IEC 61737: 2010, MOD) 
+GB/T 25119-2010 !€fl. :11! 3(: illi fJL 1j::: $ WJj It-T~:'§: (IEC 60571: 
+2006, MOD) 
+GB 50157-2013 i!P.~i&:it~Jl'.V!1 
+CJIT 407 ~r!J!€JL:ll!3(:Ji¥-Tillif~i99J'tl!f:: § ;lrt£fliiJ~~ji;;f:~>J< 
+T/CAMET 04018.2-2019 
+T/CAMET 04018. 1 ~rp-~i![?i(Jj CBTC {~%* ~1HJ.em ~ 1 $ 
+:5t:ATPr*~ 
+GB/T 12758-2004, GB/T 21562-2008, GB 50157-2013 l!1 CJ/T 
+407-2012 !ff. JE' £8-.& T :>'~ If: iE-l!I JE' 51..~ m =f 2$: )C {tj: o 11 T {J! =f 1t ffl , ~ 
+T]! ~3~ :±l T ;It "P £8 .:.E ~ ffi .*If: iE-o 
+3. 1 
+~ -T :1M 1l1i 1¥1 91J $ ~ jfilj communication based train control ( CBTC) 
+JjM~*•~~~*~m~•~*I¥1~*.:.E~JE"m~*,~•* ­
+~~~ftMimffi~*~-.&nw~fi~~~nl¥1*•lll~m~~uffi~• 
+a<:J~~J:-t:>'tl$ m ~~ifflJ*~ o 
+3. 2 
+3. 3 [CJ/T407-2012,}E5(3.1.1] 
+91J $ ~ iifJ ~ ifilj automatic train control 
+ffl%*~m~~~~*~~,~~~~lll~fi~~~tt*l¥1~• 0 
+[ GB 50157-2013 ,]E51.. 2. 0. 37] 
+91J $ ~ iifJ .ll{t ~ automatic train supervision 
+1tH~:»~ * et ~u 7& 11 :»u * jg 1i m ~i9:JE" :1!! ~, m m1i * , ~ MH~ * jg 11' 
+~~~~;f:£8,~-· 0 
+3.4 
+3.5 
+2 [ GB 50157-2013 ,JE'51.. 2. 0. 38] 
+91J $ ~ iifJ [!)] t? automatic train protection 
+m ~~~:» ~$jgfriBJIWi ,~mil~~ ,:i!!~~~lll* n~.!Kl:~tt*£8,~ ,•0 
+[ GB 50157-2013 ,}E5( 2. 0. 39] 
+91J $ ~ iifJ :iE fr automatic train operation 
+m $1 ~ ~ :»~ * :tJo i! , iftl i! , ~ * lll * n 7f ~~ , r&~ ~ ~ ifftJ ~ * 1¥1 ,~, • o 
+T/CAMET 04018.2-2019 
+[ GB 50157-2013, }£)( 2. 0. 40] 
+3.6 
+i.tl!Jtll~f.!l! computer interlocking 
+~ i.t•m1i* 1.1 ~ 'L', El i9J ~ JJAlur Jijf, it! tt, 1~%m~ ~ tF 1t * B<.J 
+,~f*o 
+3. 7 
+3.8 [ CJ/T 407-20 12 ,}E)( 3. 1. 6] 
+f$ ilh :Ht t5l. movement authority 
+~*mM}EB<.Jft~~~U!A*~~ -~}E~ili~~~fi*B<.JWm o 
+[ CJ/T 407-20 12 ,}E)( 3. 1. 7] 
+~IDf-fB] ~ a-1 fB] headway 
+~~-~Jijf.~~ilifti¥!~~~$1¥!~-~ ~~-~-MAB<.J~~ 
+at fBJ o 
+3.9 
+1* fr]! lJt operation speed 
+~tiliWM&T.~$M®AM~$~-AMW$1¥!.~ilift •• o 
+[ GB 50157-2013 ,}E)( 2. 0. 4] 
+3. 10 
+jlj $$: ~ lt~ ilh tl ~ safe train braking model 
+:ttH~H tl $ ~~ fBJ ~, ft<®~tl $~ft .~MtH&blili W ~14~~ 1¥! ~tl $ 
+ffJfJZ9J litJ~ o 
+3. 11 
+~~ ~J ~ fft restricted speed 
+~··*·~~~~~R~$·i9J~U~R*I¥lfiF~I¥!-~~~ o 
+[ CJ/T 407-2012, }£)( 3. 1. 11] 
+3. 12 
+f* fP IR.~ overlap section 
+1-J~:JJ,\1/ti[.WJjp ,f:*i.iE~~W$ffii~ flj3 B9ffi~~~ o 
+3 
+T/CAMET 04018.2-2019 
+[ GB/T 12758-2004, #:i!.!:3 J:£5<. 3. 12] 
+3. 13 
+§ tf-im /Jt target speed 
+~$~fi~~fr§~~~~~~~ft~W~ o· 
+[ GB/T 12758-2004 ,:;f:i!.!:3J:E5<. 3. 13] 
+3. 14 
+§ f;'F If~~ target distance 
+~$~fi~~fr§~~~~~fi~· o 
+[ GB/T 12758-2004, #:i!.!:3 J:£5<. 3. 14] 
+3. 15 
+j;ij'~·li reliability 
+F Jb :fr~J.J:E ~14 "F ;fa ~J.5EB11BJ IR IBJ ( t, , t2) I*J 7tnlt~J.J:EJ)] ~~~~~fl o 
+[ GB/T 21562-2008 ,:;f:i!.!:3J:E5<. 3. 30] 
+3. 16 
+j;ij' ffl11 availability 
+:tE~*~*B••m~~~~~W"F,FJb:fr·J:E~~#"f;fO.J:E 
+~B1~~B1~1R~I*J~~~~fi•J:EJ1Jn~~~nfl o 
+[ GB/T 21562-2008 ,:;f::i-f.tEjj:£5( 3. 4] 
+3. 17 
+j;ij' zt t? 11 maintainability 
+:tE ~Jl\ J:E ~ ;J; 14 "F , it ffl ~J. J:E ~ ~ 1¥ ;fa • • itt fr tt 1~ at , x<t ~ ~~ J:E it 
+m~#"F~FJb:tE•J:E~M~IR~I*l,n7t~mJ:E~~~~• I*~ 
+[ GB/T 21562-2008 ,#:i!.!:3J:E5<. 3. 20] 
+3. 18 
+4 ~~11 safety 
+~~~/G'i'iJ~~f.l{j)XL~~ulnJ~*ftt o 
+[ GB/T 21562-2008, :;f:i-f.t.!:3 J:£5<. 3. 35] 
+T/CAMET 04018.2-2019 
+AM :~ti:$ § 79J~!J.l!:m.J:t (Automatic Train Operating Mode) 
+ATC: ~IJ :$ § 79J~1M (Automatic Train Control) 
+ATO: ~ti :$ § 79J:JE 1-T (Automatic Train Operation) 
+ATP: ~ti $ § 79J ~1P (Automati c Train Protection) 
+~;f1J 0 
+5. 3 Jg~Jm~ ti$i£$M~~il~ffijg~JE:J~~$ , PJifffiillffi::i!Ufcil:ill 
+~~~i9:1}o 
+5. 4 ATO r~~f!Ci[Jj)z_l:j ATP $~i9:1}1¥JJ!CJi ffixtillo 
+5. 5 ATO -T~~l¥Jti)($:L\)I /G~U(<ij ATP ~1Prl¥J .AI~!J.l!:~ ti$:1E1-T o 
+5. 6 ATO -f-~~Jj)z~L\)I/GI\lJI¥J~ ti$~m.-§t5 : 
+a) ~:Jf raJ :IE1-T~t]. t:Jt ll'!l)E B<J~ ti :$; 
+b) X.)(.:Jf raJ :IE1-T~t]. -Kit IJ'!l)E B<J~ ti $0 
+5. 7 ATO -T ~~PJ mill/G IPJ B<J~ ti $~,\lHJl , -§t;S: 
+a) ~:JfrPJ:iE1-T~m t:JtPJ~B<J~ ti$; 
+b) X.Si.Jf rPJ:!Eh~t]. t:JtPJ~ B<J~ ti $; 
+5 
+TICAMET 04018. 2-2019 
+c) 1' IRJ ~m -Kit fl9:9u 1i==r~1t-ilifr 0 
+5. 8 ATO -T*~m~ml'IRJ$~tt~~fi9:9U$=*t~ili1i o 
+5. 9 ATO -T * mm~~ml JEii~JBl {~ fi9 :9tl $!£f!JIJ ~?;&~*, H~~ml JE ,g 
+:t; :9U $ !£ iff!J ~ ?;& B9 ~ * o 
+5. 10 ATO -T *mmJ'!-*7GA § iYJtffjg~ ~~o :9U $:tE~Jll.JE B97GA § i9J 
+tJT :IS :itt A :tfu ,g ~ $ , PJ tJL 7'G JVI: ;.f§ 1\iZ B9 ¥fJ iJJ~d1= Fo , :9tl $PI :tE 7G A~ ~ 8(] 'tfi 
+{)(. T , § lYJ JA fU ~ ft~ if :itt A 5fll tJT tl:l tff jg ~ , Ai Fo :itt A:&: $ JN: J!t JE ,g ~ $ 
+Fo, § lYJ:JT 7f 1i== n 5fllM if no 
+5. 11 A TP I A TO $ ~ 19: * 1\iZ ~ * ..!=J A TS 1'.£ ~ B;j # fi9 ~~ j] o ;It if! , A TP I 
+ATO $~-i&*~m ATO -T*m..!=J ATP $~i&*B9mft o 
+5. 12 ATO -Y*m;.f§~i&*F~ItHtl:l$fWH&:W o 
+6. 1 ATPIATO $~19:*1\iZmlJE GBIT 25119-2010 if!~ 4 ~"Yf~*" 
+14" B9~* 0 
+6. 2 ATPIATO $~-i&*EilmlJE GBIT 21563 fi9~>.K o 
+6. 3 ATPIATO $~i&*B9 IP ~1?~?;}1~*:51-t;J.T.=:~ : 
+a) 3C~:ff$-f*:I*J$i&i tT$~tJL;ffifl9 ATPIATO $~-!&* IP ~1? 
+~?;&E\Ll' fij;.:p IPSO; 
+b) 3C ~ :tE P] tJL ~ ~ ~ f:Lt. fi9 MMI i& * IP ~ 1? ~ ?;&1\iZ 1' fij; 
+r IP32; 
+c) 3C ~ :tE $ -f* :>'r $ fi9 A TP I A TO $ ~ 19: * IP ~ 1? ~ ?;&1\iZ 1' {ij; 
+T IP65o 
+6. 4 3C ~ :tE $ -f*>'Hm fi9 ATPI ATO $ ~-!& * IP ~ 1? ~ ~ 1\iZ l' {ij; T 
+IP65o ATO -T*milifflr~7JRYf~*"f4Bt ,E\Lf*iiE ATO -T*m:ff;.f§Jjiz:tfu 
+lK B9 Pf ~ *" 14 T 3C ~PI$ :tfu ili 1i , :~l(JfE: JOC &'~ B91l# :bo f/! ~ 1* iiE A TO -T * 
+m::tc~ PI3:tfuili1i o 
+6 
+T/CAMET 04018.2-2019 
+7.1 ~~tt~* 
+A TO -=f * %ft. J:j:l jG Jit. Ej § $] ~ .IDe ~ :$: i'l ~ 1jjlj :rJJ ~~ ;ffi !fc 89 i.)t * m mJ .JI!. 
+SIL2 m_~ :s:j( o 
+7. 2 RJ®tt, iiJ .mtt~* 
+7. 2. 1 ATO -=f*%ff.E:*= ffl~f}LfA*JC~~t~ o 
+7. 2. 2 ATO -=f*%ff. .1f:f0ii~il!f BJ!WiB1fBJmmJ .JI!.:MTBF::;d05 ho 
+7. 2. 3 ATO -=f*%ff.'i:iJ ffl'jj:J§Z~; j\-'f 99. 99%o 
+7. 2. 4 ATO -=f*%ff.89i9:i.t%-$::h 15 ~o 
+7. 3 RJ!iH?tt~* 
+7. 3.1 ATO -=f*%ff.mA :ff §~ !VT~:iiH~~IVT~~j] ,!~H~Y.*%ff. MTTRo 
+7. 3. 2 ATO -=f*%ff.mA*x11Jl {4,*.X14~Ed& !\BlH~l~~JWJWitt~i9!~ 
+89~~j] ,§1% ATO Ej ATP 1J&~ii{~lt~89~i9Jlj o 
+7. 3. 3 ATO -T .*%ff.89.1f:i0f!i~B1 i'BJmmi.JI!.: MTTR :S; 30 mino 
+7. 4 tt ijHIHir-
+7. 4. 1 A TO -=f *%ft. § $J ~ .qce B1 ,Jtl :$: tE :\?:li i:t ~ :$: fri JJt 89 ftHIF m *T% i!f.t 
+~A J:j:l~ A. 1 89~ >j(o 
+7. 4. 2 ATO -=f .*%ff._tEE!,.JS $JB1fBJJ§Z;J\r 60so 
+8 l.i.ltil!~* 
+8. 1 9iJ$ ~ m~~t 
+8. 1 . 1 A TO -=f * %ft. lli § $J ~ 1jjlJ:9tl :$ 89 .IS $J , :ba i3L :ii« !J1L t!Hl' , 1jjlj $]:IE 1.:Y 
+tl~ o 
+8. 1. 2 ATO r.*%ff.tEiE'ffl'ili1 .:YB1 ,j'tl:$89iJ:tt$$mmJ.JI!.~~JJt89 ~>J(, 
+Af*m;fff>m*f%1!f.t~ A "P~ A. 1 89~>1t o 
+8. 1. 3 ATO -=f .*%ft. 89 iE 1it:IE1.:Y HE ~mmi .JI!. 11~~:IE1.:Ya9~ >.)( o 
+8. 1. 4 ATO r *%ft. :it!: A§ $J~.qceiWJ.ili:~:i1 ATP 89~;t)(~PJfJL89:U.fhA. o 
+8. 1. 5 ATO JS $J~f4mJJE89'tg()L"f, P]f}LfP;"f Ja $JfP;f.H ,ATO r *%ff.m 
+7 
+T/CAMET 04018. 2-2019 
+~~ § Z9J ~ ffllJ :9iJ $ Ja Z9J 0 
+8. 1. 6 :9'1j $ tE $1£~ ~ P] tiL ft( T A TO Ja $J ft( ffi J§ , f§ $ fl ~!'I~ Eli'l 1T 7f 
+~~-~-~$~nJE:Z9J~ ,~~m~Fo~~*PJmm~ft(ffift(ffi•~ 
+J§ ::t ~~Ja Z9J :9iJ $0 
+8. 1. 7 CBTC ~}U}Ij r IK i'BJ {-¥ $ J§ , *' flj: nt/£ JE fi{J ·tJ!ii£ r , ATO r ~ ~ 1i: §~ 
+§ $J~ff]lJ :9iJ $Ja Z9J 0 
+8. 1. 8 ~ § $J~!Jtjf;flj:~nti£ JE M, ATO r ~ ~~ml.K PJ tJL;Jf §$Jill :±l 
+AM m:rto 
+8. 2 J'$~w;$tQif;lj 
+8. 2. 1 ATO r ~~~ § $J~ffllJ:9iJ${£!'I~ r*Jtf!Jii.ffif¥$ o 
+8. 2. 2 ATO r~~~ffllJ:9iJ${£~$AH~$M ,~*ffl -iXEf~ffllJZ9Jm 
+:r\ffllJ$] :¥:§tift{-¥ $;~., ifl~:;f1~~ffl!1, Jl{±Jtt!'I~ffrj~~ ~~~~Nit~&J!~* 
+B~~J! ElM" o 
+8. 2. 3 ATO r~~~ffllJ:9iJ$~$Bt~~:±lf~H~#JtlZ9Ji!J4-~.Jlilii$;:91J 
+${-¥$J§ ,ATO r~~~t~~~tfj'f*:f,fff]lJ$]i!J4- o 
+8.3 $1llliitQ 
+8. 3. 1 :9iJ 1f=:1£ft~ F-Jt¥$Fo, 1£:riffl~1f=: n e. *'m R fltl Pilllli < 1f=: n ~ NitB>t fij; 
+)'~) ,ATO T~~~~ .Jl:Ja $J:9iJ$o 
+8. 3. 2 ATO r ~~~~~:Ji::t#kJ T JL#7f ,'!R.fl:Jf:r\ : 
+a) )...I7ffl ,)...I;:kfl; 
+b) § Z917f n ,J...I:kl'l; 
+c) §$)7ffl,§Z9J'!R.fl o 
+8.4 l'$~1llliitQ 
+~$1£MEI~$Fo,tt.~ME!f1B:kffiii.ffiflli(MEifl~-ffl!1 
+[ij;B>j[ij;)'~) , ATO r ~~~~ .Jl:Ja $J:9iJ $ o 
+8. 5 ~ ~Tifal fl 
+8. 5. 1 ATO r ~ tJE~~~x:t#HiJt~, tO$, ~ft~ H;JfB] ,!'IMBJ ~1-JB;J fB] ~ $ 
+tift~ 1-J imJ ~ :1f ):\; 0 
+8 
+T/CAMET 04018. 2-2019 
+8. 5. 2 ~~~iiJi'!Jtw:m~at ,ATO -T~~#iJWT~JEU!JEW~1tfJI§f .liii~~j£11JlJ 
+~u :tt:/fw:tt:JJH:ttt:~ E1 o 
+8. 5. 3 ATO -T ~~J:i\I~~i'!Jt~-1-~~1-Y~El o 
+8. 5. 4 ~~iHD:tt::m~Bt, ATO -T ~~J:i\Z1~iH~~iJ $:(:£fi~W$~~, $ 
+n ,t~E11'111:1*:t#tr3f~~ o 
+8. 5. 5 m~¥1Jfi~J8Jg1'JBtJ8JjfliJ~i!i~B~·, ATO -T ~~J:i\ItlH\!i ATS :!W~ 
+i¥J t~ JBJ g 1i at IBJ , ~ ~ /f fRJ i¥J t~ IBJ g 1'T Ell:! ~ , ~ it~ ilJF !I~ JBJ g 1i Bt JBJ ~ llJ 
+~~ %!! :i!I WI ~ 89 !Ili J'Bl g 1'T at J'Bl o 
+8. 5. 6 ATO -T ~~J:i\Z (<iJ ATS :f!H!r~iJ$g1'J~~{j§j }~J,, VJ {f ATS ~~xt:(:£ 
+8. 6 ~~-!ti.J 
+8. 6. 1 ATO -T~ 
+~IJ $ j 11!19: *itffl 
+8. 6. 2 ATO -T~ 
+~$1£~ ,:f!F~m:~ 
+8. 7 M!:~i~fJf~om 
+8. 7. 1 ATO -T ~~J:i\Z 
+~Je ~ :r,t , ;ff: (<iJ P] ;f}L}k A TP, A~Q~IaJII!If" 
+8. 7. 2 ATO -T~~m~·g1'J~~ ,:J'!P;i'f~{J§i ,\~l~:i!%'i$~i2 ~19:*i2 
+~ o i2 ~ i;I;J ~§ f5{E!/f ~IFf: ATO :f!Pl? ~ §JiJ, ~ '31 !ffjlj z;IJ t~ ~, ~ '31 /ffjlj z;IJ 
+j] jcJj\ '$ ~i9: * fi<Ji-t~ J.t]Jt Ell:! ~N. ~ I!JFg 1'TJ.tJJt Ell:!~ ,.$~19: * Yf~~ 
+iiJ 89±1!!. iffi{J§i,\!i!, ,i'!Jt~:m~ ,JE,g ~$Jm~ )Jt1R ~H~N. 1~ ifi2 ~ ,g1'JBt 
+)t }ki'i~P!,I~if~ o 
+9. 1 ATP/ATO $tlti!i-§.!:3$m~!J~31( 
+9. 1. 1 ATP/ ATO $~19:* J:i\I~lJ\\.!:3 $~ffjlJ z;IJ~i'ti¥JilJ~~ D, 1*:iiE1< 
+~~:X;f~IJ $~Jil[j!~;ff~~ i¥Jj£ffjlJ 0 
+9 
+T/CAMET 04018.2-2019 
+9. 1 . 2 A TP I A TO :$ ~ -19: * ~ :$ m fi<J ~ D :)t .:1'1 :3f * ]i , ;f!!HW. :i: , jj fj§j ~ 
+r:::r=;pfro 
+9. 1. 3 YlV .DU-T:$3C~ ~It '=\.~ D jjiz~!Uf:l3C~ti.Aiti tl:l~ D :1f:r\o 
+9. 1. 4 ATP/ATO :$~-J9:*)jiz~~t$Jllli1:3(~ ~~~3(~~D*~~ 1 r:p~ 
+**!It fs .~. o 
+ATPIATO :$~i&1\t~Af~% :ti:~t~D 
+~lJ:!f~~~ ;I! 
+1U$5G~tt ;I! 
+10 :tf::tf: n~ffi.§_ ttttffi ;I! 
+1f':m~s r stnr~ ;I! 
+1f':mBjkJJ8!:~~ -lli-tJi9.J ;I! 
+~ 9lltJIJ ZSIJ -¥ ffl3 :t£ ~ ill:.§. :1f loJ -¥ ff131oJ 1W ;I! 
+A TO lE i9J itef.H. I 
+ill1-Ttfl:J:.\::!j\~iiffliA.~1li!Pt!iiii!ltmJ:.\:m~ I 
+13 i9Jtfijg ( AR) Wf.fl. I 
+ti.i'17f I 
+tr.n~ I 
+1=ii'17f I 
+1=ii'l~ I 
+n~:1fJ:.\: I 
+;±:"I"*~ " x>t:;l!~3i:~t~ o ~-1$:~>1<" o 
+9. 1. 5 ATP/ ATO :$~19:*1r ~~t$Jffii1:3(~~ ~~3(~~ D *~~ 2 r:p ~ 
+* *ilfs .~. o 
+10 
+T/CAMET 04018.2-2019 
+ATPIATO :tf:ltti&t-?k~A. fl!f-'% ~~~J:l 
+ATP BtJJ~ I 
+$ Wii'+H~ ffiiJ i9J B fl![:IJU :!'! 
+it:" I"*~" ;(;j~~3C~~ J:l :;r;-1$:~>1< .. 0 
+9. 1. 6 ATP/ ATO $~1&[~ lli~M~illi:i:1 3i:~~ ~~$:~~ 0 fiitr .':l:l * 3 rp B9 
+tF 3C :ffi: 1i~L!~L 
+ATPI ATO :tf:~ti&t*t!Pi ti:lm-'% ~~~J:l 
+~~lli1J;IJ :!'! 
+~ 5 I tJJ lij< :1'! 
+tr. nff n ft it :1'! 
+ti n 3f n ft it :!'! 
+13 i9J1JT]g ( AR) :JJ I 
+ATO B~m I 
+ATO ~5 1 %lit!:: I 
+ATO itiJ iYJ~ ti:l I 
+1¥ ~ lttJ ;/J t!Pi tl:llfii~ I 
+3ftr.i'llfii~ I 
+fftii'l$4- I 
+:¥i:tr.i'llfii4- I 
+:¥i:tifllfii~ I 
+ATO ,Po i9J :JJ I 
+it:" I"*~" xt~~3C~~ J:l :;r;-1$:~>1< .. 0 
+II 
+T/CAMET 04018.2-2019 
+I 
+9. 1. 8 ATP/ ATO $~!H9:~ PI ii:i:iltlli~ It Yfit~ii f~~ :±! ~~ ft!AH& 
+{}I tliU 1il?J 1J :r.\ ~ :±! :AA ~ 69 ~ 51 I ffi!J 7;IJ 1JD it JJ[ {i[ o 
+9. 1. 9 ATP/ATO $~i9:~Ell~~J=5 TMS ~~f~,l~L~:~ o 
+9. 1. 10 ATP/ ATO $~1&~'§:~~ rPJ TMS :fJH!~Bt~f~%, IV. Tim JE TMS Bt 
+~.!3 CBTC {~% ~~Bt~ IRJtJ78{J~~ o 
+9. 2 ATS ~ ATP/ATO $lh9:-iim .lflfiHl iJ~;f< 
+9. 2. 1 ATS J:5 ATP/ ATO $~i&~ fB] 69~1\H~~'§:¥-T IP t)}i)( o 
+9. 2. 2 ATS J:5 ATP/ATO $~i£t~ fB]f~,\~Ut~*fflJWJ:AAii{~;fil /~~{4 
+fML~ ii {~ 8915 :r.\ o 
+9. 2. 3 )A A TS ¥U A TP I A TO $ ~ i£t ~ 69 f~ ,~, J)l!. ~ 5 o 
+* 5 j).. ATS ~~ ATP/ATO $~i9:.§~1~-~-i*J:g 
+Jt.i*11'i -~' 11'f,~,i~~ 
+~tl :$ ~ '.§' iJUliJ11'i ,i§l, mxt~ i'ilfr!ff1JioJ -~ i'il$# -~ i'il~1=ra ttu ~~tl $tliiT 
+~t'F~1il?l, -a-$l'X ·1'H1l*%~1 1'f,~, 
+§~ill! m* l'X1tl $~1f M'~ iUit~~ JtH~ 
+r-~~ m*l'X~ $~BM'~~it~®1JM~ 
+mATS 10CAI~l~Htl$~1W~'.§' ~it:JGtl ~ilil.£1'Nl£ .~<t 
+~'.§'Wl~iP~ :(£~~'.§'~~'l$M'fi\'i~Wl~~llll}, -B!.ffi:to $ -~~-!¥, WJJH~ 
+w;at fB], WJ ~ ~1j $ :(£ IR IBJ ~ 1f Bt IBJ (!it IR IBJ ~ 1i ~ ~) ~ 
+1JP:, 
+tllBt fJ'i,~, mATS~ ATP/ATO $~iSt1l-Z. fEiJ i¥.JBt~i'i.ltl;f 1'f,~, 
+12 
+T/CAMET 04018. 2-2019 
+9. 2. 4 )).. ATP/ATO !f::~i9:1it¥ U ATS 8<.J1i'iJ~L~~ 6o 
+~ 6 ).). ATP/ATO $~i9:§~U ATS ~flli.~,I*J~ 
+7tJ :$ ~ ~T it IJt liT 
+1nf;J 
+9tl $ :I£ JliiJ ~ )Jij ;f1l1!; 
+!J!tt)!;:tl: 
+9. 3 ATP/ATO f,1 ATP/ ATO .$:~i9;4\lij!tJiJB9~ ~9tJ $~JJtf:!i.fi!., *it!Jt 
+ftUil :iE ~T )J rliJ 
+m ATPI ATO :ti'=tH~4\l:i!(j/:!iUB-J7tJ$$t'1 [t~:;k~:t7t~ ,& 
+-~$$n•N~~~ffiR.ffi:t7t~ 
+9. 3. 1 ATP/ATO ~~ ~\i 
+i.:X , ill ~iiE~t!HHiltr 89 ~~;~~~-----
+9. 3. 2 ATP/ATO $ _.,.._,~ 1~.~,3(~*JtjJffJ:MW1~ 
+;fil I §.X: lf-14 AJili '.&. :iffi fi'i (:I<.J Jr i-\ o 
+9. 3. 3 )).. ATP/ ATO $~i9:1it¥U ATP ll!.J.Wi9:1itB<.J 1~.~.~~ 7 o 
+* 7 ).). ATP/ATO $~i9:§~U ATP ~imi~§~flli.~I*J~ 
+Jl-f*fjlf,Q, ffL@. ~aJJ 
+9tl$lli:rtfJli.~. 111 ATPI ATO $:kxi&/:4\l § .:l:iJ!tl:!iUt97tl $ :;i~ ~ilL Xi filL~ .. 1;1 
+}}1.. nr~ff.:tEB<J~~f?f.Q, 
+jiJ$~1-Tit~fii:;I-Jrtl m~*•a~~~~~fflQ.*i.tJJtill~nrtJfflQ 
+.g>;~dilL\1'!. lli~$tEa~~-~ $.•~*it~#B9fflD 
+7tJ $ :j£ jfjtj ~ ;!!tJ ;fll 4~ 
+frj ATP/ ATO $~i9;-& ~ fliJB<J:fijfjtJ~;!!IJ;fil ~iJJ!!~:rtfi'i.i&, 
+!J!t~:rt 
+13 
+T/CAMET 04018.2-2019 
+Jt.i*f~ -~· {~ .~. i3U!Jl 
+~1J$7'C~tt fli ATP/ATO $~~~*$/H ~(I(jjtl$ ~!li.5'C~fl9ffi .~. 
+x .Jdrr :~g :!* ~ m ff-tli ATP/ATO $~~~X>tXA § i9rtJT:@:f*~B9tliff-f~.~. 
+f~.Q. 
+Jt.i*f~ ,@!, f~.9.i~llJl 
+CBTC ~j1tlfti;IJ tli191Jil:i .Htl$1C~:IE~i', ATP :It!!. ID:i~~itn::Jt (D) ~tl $~ 
+~:txf~-~ . -~~~:!f::IEB&~~--~~eyffi& 
+ilfliBt~itf ~.~. tli ATS ;f!Rm:IE'S~ !N, ~~:Jtr~~llfliBt•JJ!:~flitH~.~. 
+x .JdJr:@ tHll f~ .~. tli~R:XA§~fi:@~*ffi:I*~MA 
+9. 4 CI ~ ATP/ATO *~i~~mJflJiHlD~* 
+9. 4.1 CI ~ ATP/ATO $~-J9:~f8JB{]~mi 1tt'f,ji[£r IP 19J.i5(,${l i1:iiE 
+~mi 1ttlf.ja{J$: ~11 o 
+9. 4. 2 CI ~ ATP/ATO $~19:~1BJ1~.~. 3(~*fflJWJWJilli1~*1l /EJ;~ {lj:fM! 
+.£iiD 1~ B{]:1JJ:\: 0 
+9. 4. 3 )}.. CI i!J ATP/ATO $~19:~(19 1~.\i!! . .!.ii!.* 9o 
+14 
+T/CAMET 04018. 2-2019 
+ffi ATP/ATO $~i9:*.&1±1 t'MH11'l:J£l!JtJ1fir4-, CI l!J~JJ'H 
+W: f~Lfi!. :1£ l!JtJ Y~ i; i'l 3f I 3C 
+1 o. 1 I'I!~~M~llf1i:#t 
+10. 1. 1 ATO -T 1iHft;ffi ;kl&[ 1ii-89 Lt!. ~3tft~fi 89 ~M EJ m :J:It it lli 7ll1L5~: 
+GB/T 24338. 4 89JI:s:R o 
+10. 2 1it!H 
+10. 2. 1 ATO -T *m89f~iHft~:tt!!.lliEJ$:i* PJ~:ii~ ,Jf~ ~:ii~OO 8<1 It 
+1t~ffi~tl:, :ii~-ff1*89m~OO.fJ~.::f; J\-'f 4 mm2 o 
+10. 2. 2 ATO r*m89JtJJ.~Jj\I~$:flij89~:tt!!.~.J!~:tt!!. o 
+11 f~ 1'1! D. 1'1! 1m i~ -il ~ * 
+ATO -T *mrt7mtPJ1I~3iHI~$:flij llOV ~ Lt!. Yt!!. It 1mt~~~ff:':\tiJiEi&t 
+1ii-:':lt 1* .5 f# Lt!. , ;}fill i&t :d: ff lO :d: ViE f,tfH:ft o 
+15 
+T/CAMET 04018.2-2019 
+1!11 ~ A 
+OJiB'B 1i 1!11 ~ ) 
+ATO T-:~U1ctr..l~U!c~~ii 
+*-A. 1 *~5E7 ATO -T~UiU8*t!E~~{lL 
+*A. 1 ATO T-~~tr..l~HJt~~ii 
+#} ~ llitffirt100 
+7tl$:t£$j~ ~-!¥$ t'iJ3tt'i!OO ±0. 3m pg~-ta$:;;..99 . 99% 
+ffi JJt ( ATO ) m.m:moo ±0. 5 m pg ~-ta$:;;..99 . 999 8% 
+w.~UJ lll'** ~0. 75 m/s3 
+16 
+T/CAMET 04018.2-2019 
+[1] IEEE Std 1474. lrM_2004 ¥=fill'i{i§f~~ tl$§~~$1J*~fi"~;fll:9) 
+If~ 1lif >J(. (IEEE Standard for Communications-Based Train Control 
+Performan ce and Functiona l Requirements) 
+[2] IEEE Std 1474.2 rM_2003 ~=fill'i{i§f~~ tl$§~~$1J*~fflf'~D~ 
+Based Train Control 
+[3] lEE Std 1474. 3TM 
+0-WC (IEEE 
+Control ( CBTC 
+[ 4] IEEE 1483 
+tf-({t (IEEE 
+[5] IEEE 1478-2001 
+Equipment) in Communications-
+[6] IEC 62278 ~~Eizffl-~j!tfif$tt, PI Jf.l·ti, PJ~tf!}ttfll~~·ti 
+(RAMS) *~ 1!1Jk iJ?, f!ij ( IEC 62278 Railway application s-Specification 
+and demonstration of Reliability, Availability, Maintainabilit y and Safety 
+(RAMS)) 
+[7] IEC 62279 ~~Eizffl-ill'i {i§i ,{§%;fii :~~HJR*~-~~~1M;filf*1ft* 
+~~f4(IEC 62279 Railway applications-Co mmunications, signaling and 
+processing systems-Software for railway control and protection systems) 
+* ~ ( IEC 62425 Railway applications-Commun ication, signaling and 
+17 
+T/CAMET 04018.2-2019 
+processing systems-Safety related electronic systems for signaling) 
+[ 9] GB 9254-2008 {J!L~A~~#i&:*E8X~ ttJJI1'Jt~IH~UilJYl~:!i1Jr! 
+[ 10] GB/T 50343 milt~lt-T{~,~,*~Il1J·~H~~;;f:~J,m; 
+[11] GB/T32588.1 ~ll!xim §i9J1tH<:JJflXm~ll!xim(AUGT) ~~ 
+~>jt ~ 1 tm%:1~~J! U(IEC 62267 :2009,MOD ) 
+18 
+<P 00 ~ nH1L it!: 3Cim #J.~ l:il'l-1* ~1ft 
+~m*ltm3til CBTC ~~~~~m 
+~ 2 $5t:ATO -T~~ 
+T/CAMET 04018. 2-2019 
+* 
+<I' IE 4'X ill :±lit& U :fi I!IH; ii.l IH It& ;lHr 
+( 100054 .~tJiO!Jgy~IK:tt :fWgy1ti 8 ~) 
+:±l/l&U f(iltl:: http://www. tdpress. com 
+~tH:mJJfi~ffl:fi m0ii.l fflliltJ 
+7f:<$:: 880 mm X I 230 mm 1/32 f[l%:: 0. 875 *f£: 19 =f 
+2019 :If II .FJJ!B 1/l& 2019 :If II J'JJ!B I !XfflliitJ 
+~~: 15113 ·5864 ~ifl": l5.00jG 
+1\& til PJT :fj" f~H~ ~ ~ 
+JU'.<J ~ 4'X ill: it& oo ~ , .!m 1i ffJ Jt!J 1.llt :fit JDJ m , if!..EJ * u :lt :rr $11Ud1'! ~ o 
+:ltfi$ tt! 15: Blf ( 021 )73174 'IIi ( 010) 51873174 

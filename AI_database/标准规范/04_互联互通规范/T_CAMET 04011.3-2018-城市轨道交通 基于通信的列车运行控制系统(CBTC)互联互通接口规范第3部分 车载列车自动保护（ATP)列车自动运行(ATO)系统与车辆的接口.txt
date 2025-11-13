@@ -1,0 +1,1172 @@
+ICS 45.020 
+s 63 
+T/CAMET 04011.3-2018 
+~*~~~~ ¥~~~~~$~h 
+t~ffilj*~ic ( CBTC) 1i~1iim1iD~.!Mm 
+~3~B5t: $~91J $ ~ Mf*~.P ( ATP } I 9!J $ 
+~Mia~T ( ATO) *~it g$~~l¥J1iD 
+Urban rail transit- Interface specificat ion for interoperability of 
+communication based train control system 
+Part 3: Interface between onboard Automatic Train Protection 
+(ATP) & Automatic Train Operation (ATO) and vehicle 
+2018-09-10 ~1il 2018-12-31 ~~ 
+T/CAMET 04011.3-2018 
+IVIi"i ............................. .................................. .................. vn 
+51l"i ......................................................... ........................ VIII 
+1 111m! .............................................................................. 1 
+2 ~Jl'.1!1tt51ffl)C{Lj: ........................... .................... ................ 1 
+3 :;¥:if.l-5f-n5fillllitm .............................. .................................... 2 
+3. 1 ** ........................... ............................................. 2 
+3. 2 5fillllitm ......................................... ............................ 3 
+4 ,g,mu .............................................................................. 3 
+5 :;!Jff~=Mc 0 .................. ................................ ...................... 3 
+5. 1 :;!Jff~=Mc 0 ~ru! J£5( .............................. ....................... . 3 
+5. 2 ~A{i1f% .......................... ................................. ....... 7 
+5.3 ~tl:lfi1f% ....................................... ........................... 16 
+5. 4 1:£!. Wlt.&Jtflli=Mc o .. · ..... · ........... · .. · ..... · ........... · ..... · ......... 24 
+6 tJL;ffil<=Mc 0 ...................................... ................ .................. 24 
+6. 1 liiffl~>F: ....................... ............... ............................ 24 
+6. 2 * 1*1 i&t 4lr ...................................... ............................ 25 
+6. 3 *lifii&t4lr .................................................................. 26 
+6. 4 *~:7C~:X~ .............................. .................. ............ 31 
+6. 5 :ii=Mci:£!.~ ............................................... ................... 36 
+ilft3R A0Jl'.111ttilft3R) -"'i*m:;tJff~=Mcot~'li~~ ........................ 37 
+~;;IJ-)C~ ........................................................................... 42 
+v 
+T/CAMET 04011. 3-2018 
+T/CAMET 04011 {.#it$ ~Lit ;X:Ji ¥ -T :ij {~ 89 jtl $:IE fj 1£ 11i'J * ~ 
+( CBTC) :!L~:!LJi~ D ~JI'JiD?tJg !;..( r J\.-1'-$71-: 
+-~ 1 :g~:fr :!.ilZ~~HILt; 
+-~ 2 $:fr:CBTC *~$:it!!.:ii ~Ji ffit)}i)(; 
+-~ 3 $:fr: $!tjtl$ § i;fj~tp ( ATP)/jtl$ § i;fJ:!Efj(ATO) *~ 
+.!3$m89~o ; 
+-~ 4 $:fr: IR~t£11i'J~(ZC) i'BJ}~ D; 
+-~ 5 :gi~:fr :itJHJL~Wi( CI) i'BJ~ D; 
+-~ 6$71-:jtl$ § i;fJM{t:f£*~ ( ATS) IBJ~ D; 
+-~ 7 $:fr :{~%il-r*~ l:3;tt,P3tM= *~ ( MSS) i'BJ~ D; 
+-~ 8 $:fr:$!tAtJLJI\!-jiijo 
+;;fs:$:fr~ T/CAMET 04011 89~ 3 S:fro 
+;;fs:$:frf.t(Jrn GB/T 1.1-2009 ~:±l89~1.!i!U~1j!f o 
+•~•*•*89~®~3~n~~ ~~.;;ts:S:fr89~~m~~~m 
+iJUJtl i! ® "W -*'1 89 }!( ff o 
+;;fs:$:fr~~~.#itrP~it;X:Jit)}~~#R*"W~~~~-:±l o 
+;;fs:fi:fr~~~~IP~i!X:JitJJ.~~D o 
+;;fs:$:fr~:fi!:..qilli:::ltJ¥-~~Ji{~{*%1Vf~i9:it~~~~~&0~,X:t£f4 
+~ftffi~~0~,~00-i!M~Wf~~-~~~0~Jiffiffi%1Vf~~,-~ 
+~$Btf"tft'=c.ft1Jt~ l1&0~ J41TiL~~f4~ft f)1~~~0~ ,~tJ¥-X:Ji::k ~o 
+;;fs:fi:fr:E~~:fi!:A : ~~ m.: 8 ~;ltiiJ, ff*.YL;j% ~5R, f.iJ :JG~, 3:. {1, 
+*1WJ ¥LIMS UML~::k!m,~$fm:,iWJI!W~,~titu ~,:XlJ*~o ililf§:.ll :'*~~, 
+*~ ,~~ ,~~~, 5-Ift%~, 5iE ~ ,.:Ellt4J.& ,5-I.Elffi~ ,f3i~'T ,::$~:>c ,::$tt\~, 
+:)CflX;:tt ,{f~ '**~' ~ -*'Jtl" ,5{E~z SIJ~f o 
+VII 
+T/CAMET 04011.3-2018 
+~I 
+~§m~oo~*~m~w•~~~•#•~~m~m~w~•~w 
+i':J<Jw~, :iE¥U~#F~ffl SiWl\;tl;~ ,tt;;¥:5\Sm.& PTM=~2tmki¥J 13 ;fff-, ih'IJ~~ 
+$$JLill~W¥rW f~B<J~tl $jgfi:J£il\IJ -*~ ( CBTC) ~-~W-*~tl ffi-1* 
+;fff-11L 
+•-*~•m~M <~m~m~w ¥rWfflB<J~$jgfi:J£~-*~ 
+( CBTC) ~-~ W-* ~~.!t "f[L) { ~ $ ~M ~ W ¥ r W f1g i¥J ~IJ $ jg fi :j£ il\IJ 
+-*~C CBTC)~-~Wtl D~.!tMH~$iiL:ilt~W ¥rW1 i1Ht<J~tl :-!f::jg1'J 
+:J£tM-* ~ ( CBTC) ~-~W ij!~iJt~.!tM H ~ $ ~:ilt~W ¥ rW 1~ 89 ~tl $ 
+jg1'J:J£il\IJ-*~CCBTC )~-~Wif .UW.mJ41-~Jtri1(171-$?f ) o 
+VIII 
+T/CAMET 04011.3-2018 
+~m~m~m a~m~~~*~ft 
+1~iM ~~ft ( CBTC) 1i!l*1imfl D ~J\!'W. 
+~ 3 ~B 5.)-: $ ~ 91J $ ~ M 1* jp ( ATP) I 9tJ :$ ~ M 
+~~T ( ATO) ~~ft !::J:$m~:ti D 
+T/CAMET 04011 ~~ffoi'! 
+ATO i9:~J=j:$~Zf t~tll:f'..l!~ s 
+1~tiltrf~%B<J~ :::Jnn §t 
+:<1s:$?t~Jflr ,=~~! 
+~~L!J!ftf~ ~lHt :t~60 ''Iioe~1~ 
+2 ~ m:tt 51 JflJt i!f ~ ( CBTC) -* tJE B<J ftiT 
+~~{~% -*t1EB<:! -*tit 
+T ~u X flf xt r :<$: $ ?t B<J ill ffl :!! !16, .If' PJ :9 B<J o fL:!! 11 8 M B<J 51 ffl X 
+14 .tu9r11B M B<JJ:&:<1s:~m r:<1s:$?t o JL~.If'a aM B<Jsl mxf4 .Jtiiiftlf 
+!:&:<$:( -EJ.MFJf~B9{ ~~-!f!.) ~Jflr:L$:$ ?to 
+GB/T 19666-2005 ~li1t.Hilti;I<EE!.~t:!!~:ii!J!U 
+GB/T 25119-2010 $JI.:i1!3(JitJL :$:$~ t:!!r~Ji (IEC 60571:2006, 
+MOD) 
+TB/T 1484 ;ffl:$:$~t:!!~ 
+TB/T 3153-2007 ~JmillffltJL:$:$~;{jj~~!J! ~ 
+CJ/T 407-2012 ~m$JI.:i1!3t.:ii~r:iimB<J~ U:$ § i}fJ~ilitJ-*tit1t* 
+~* 
+1 
+T/CAMET 04011.3-2018 
+CJ/T 407-2012 !fj£~Jk "FJ'tl #ift;f1lmi~i!~ffl r:zfs:$-0- o 7-J T 
+1l r~ ffl, k.J. "'fm:j[J' tll±l T ;tt J:f ~ 3::~;f§*.#i! o 
+3. 1 *i!t 
+3. 1. 1 
+$ti'litl D vehicle interface 
+$~ ATP/ ATO i9:4it-!:J1C~ ~W:ii4it~$iJiz fBJ ~~D o 
+[ CJ/T 407-2012 ,J£5( 7. 2] 
+3. 1. 2 
+~A. Wi.!% input signal 
+*~ 83 $iJifHiltr~$~ ATP/ ATO ii4it~ f~% o 
+[ CJ/T 407-2012 ,]£5( 7. 2. 1] 
+3. 1. 3 
+~ ti:i f*.!% output signal 
+*~ 83 $~ ATP/ ATO i.9:4itHHiltr~$iJi~ f~% o 
+[ CJ/T 407-2012 ,J£5( 7. 2. 2] 
+3. 1.4 
+:ti::'fmlj left side of the vehicle 
+J'tl $ill 1i :1J (!i] ~ tc 1J!~ 7-1 $ m tc fYW o 
+3. 1. 5 
+;E''fmlj right side of the vehicle 
+J'tl $ill 1i :1J (!i] ~ ;{::1 tu 7-1 $ m ;{::1 1J!U o 
+3. 1.6 
+1i ~ 1i 11 interoperability 
+~·~~m%r*$~ii4il~~$m~tr~4il~~m%r*~~ii 
+4it~-~~m~~~-~~$•~m~~~- ~~-~~1C~ma 
+[T/CAMET 04010. 1 ,#itt 3. 1. 16] 
+2 
+T/CAMET 04011.3-2018 
+3. 2 ~l!l&i~ 
+BTM :Ji\Z~$fHWi~!iUk:(Balise Transfer Module) 
+4.1 ;/g{IEJlt!fJtlti:xJi f~-'5-.*~$~ ATP/ATO i&t~~$~WLt .f8JB9 :llft$ 
+·!i~1ii*'li ,:it¥U:£L!f*1iJi § B9, ;2fs:~~t[~;f$~ ATP/ ATO i&t~~~~:ft 
+W:N~ B9 $Wi IBJ ~ D Jltq'J J£51.., §:J\5~ D 1fj.\~ ~ D ~J;t, 3f ~1$~ 
+ATP/ ATO i&t~~~Urfl_ ,~~1fj.\~Jtt q'J 7 ~JR o 
+4. 2 ;2fs:~t[l:j:l ,:9Jrm~ ot;f:m$~ ATP/ATO i&~~jtl$*iJI.*~,ifi!J 
+~-*~~$Wi~~.*~Z ~B<J~~~D o 
+4. 3 ;2fs:~t[i:f:tJ1Al~~Dt~m$~ ATP/ATO .:EfJL$~Hffi~~'~i!ft 
+~$ ,~~ 1fJJW:itf~~$ ,1JDi!ftf~~~ ,BTM 'JC~ ,$~7C~'JC~ B<JY:. 
+~Drfi~~fBJ~ffl~~* o 
+4. 4 ~tr:£L!I*:£LJi B<J~B!, $~f~ -'%1&~ !:f $ ~ll[ffi $ B<Jll[ffi~j.\.& 
+:J:t( til J£ )( , PJ VL 1* 1t :J:t( mY:. ~ 1:1I ~ ~ :w ~~ J£ 5t.. , tli ffi n-fir ~ ~ li[ ffi J£ 5t.. , 
+$~f~-'%1&~~ PIS ~)if~~ D.& 19J.i5l~E.:f¥M' -3&, Af*{EI~ID'! fsl: 
+:itt qj' ~1 JE 0 
+5. 1 J:}Jfj~:JlD~~:if:)(. 
+~tr:Wfl~~ D ,;$:~~t[)E)( A~ ,B ~~ C ~ =f!!~~~ o 
+i± =**ffl:f:tfl!!.~lli!~ oli.\\;{tr ~=:f'P~lli!~ o :fl:::.FiliJ~:;J< .ar~;!kfi{[IVJJ3l::W: 
+rr~~ o 
+5.1.1 A~:Jl D 
+A ~~ D ;/gfi'=f:~j.\ ,Jt-A:ft IV. -pj~m: : 
+a ) tWi l±lf~ -'% 
+$~ ATPI ATO i&t~tWi lfl1fj.\§:J\5m ~~fU!lu~ ~ E£!.3jl-4if,j l±l p;q~jt 
+1i j.\ , 3f Jl :ft tV. r J£ 5t.. = 
+1 ) ~'* ~ ~ ffi!lu~ 1i j.\ 
+3 
+T/CAMET 04011. 3-2018 
+4 -1£ ilitJ 1~-'% -:t.J ~ ~ " 1 " , ~P m t:g ~'~if Jf M -~ ffi 11 EJ;; '~if ffi 
+1M!-~ ltfr Jf ; 
+-1£ ilitJ 1~-'% -:t.J ~ *• " o .. , ~P m t:g ~ '~if * M ,r!R WT * !l!Z ·rn· ffi 
+ti,r!R I~ 11 o 
+2 ) t:g .3f jj :it 
+-1£11itH~-'%-:t.J~m" l"~~tlftrtl:l(.iljt:g.:if( ~DC 77 V); 
+-1£ffitH~-'%-:t.J~~"O"~~tiltrtl:l{l£t:g.1JL( <DC 25 V) o 
+3) ~~-ij:~* 
+x;f -T ~~;X: iJUUtr tl:l {~-'% , ill* .F!H~ t:g ff '~if Jf fML~ , ~ $.14: " 0 " 
+J£)(1g~~19ltl 0 
+~~;X:mtUtr:±~mt:g:HU~~~*•~fim~~-~• 0 
+b ) tUtr A f~-'% 
+$ ~ A TP I ATO i&t * *. $. ;f7\ ~ , ~ * ffl m t:g ~ fM! ,r!R E);; {FL ~ 
+U.r!R 1~-'%, m PJ *rn t:g .lJZ-1~ -'5-o 
+1) m t:gf.*M.r!R7Jj\ 
+-1£ ittH~-'% -:t.J ~ m" 1 .. ~~ * • m t:g :H -m· 3f M .r!R ffi il-EJ;; 
+'~if ffi f&t<!R ltfr Jf ; 
+-1£ ilitJ 1~-'% -:t.J ~ m "o" ~~ *• m t:g :H '~if Jf M ,g WTJf EJ;; 
+'~if ffi fM!J~ ffi 110 
+2 ) t:g .1JL jj j\ 
+-1£11itH~ -'%-:t.J~m"l "~~tiltrAi% t:g.lJL( ~DC 77 V); 
+-1£ffitH~ -'%1J~~"O"~~tiltrA1!£Jtf( <DC 25 V)o 
+i3: :~r~ffi-'=i~-~~~~~.¥ !$:.!A!.I!I I o 
+3) ~~ii~* 
+~r~~;X:BMAmt:gUM~ffi-'%, $m~am2mM 
+.r!R ,_§_u,g~* m -r-WJtli.MrJI.m t:g~; ;s:*m{)(am ' m 
+fM!,g ,!iltlill*ffl~~~W Mii&B9ftH ~~Jr:it o 
+x;t-r~~~~ ;X:mtutr Am t:g:HfM!,g 1~-'%, *•ill af;Jt 1 tll. 
+u.~ o 
+T/CAMET 04011.3-2018 
+"!" ---------.---~E-- .---
+"0" 1-------'----....::,--o------' 
+ov 
+5. 1. 2 B ~tiD 
+B~~DJ!J..:frk-(~ 
+5.1.3 C~tlD 
+c~~DJ!J..:fl 25 v 
+a) ~ D *=ffl di11~ @: 
+b) 
+:tn:.\; 
+c) C ~ ~ D JN fj§fti}i)CilJ 2:-"" 77 v 
+m:cm 2 ~)HM-To 
+*~~n~o~tt ••~* ~m•Ao 
+5. 1. 4 l}Jfi~tl05[ .~,* 
+-~-~T·A ~~ft~D~~-~~* o 
+*1 ~.A~l}J ~tlD tt!.ffi(DC) 
+J'f-% :mr:J~fj\ ~~fi~}j( ~:S1J:l2l;ffl:mr:J 
+1 ~;€,lji1J;IJ~~ ~~~m :a 
+2 ~tl:!f:iCJIH.:I:~~ ~~~ill! :a 4ft a: 
+~.!R,5.2.1 
+~.!R. 5. 2. 2 
+5 
+T/CAMET 04011. 3-2018 
+ff.g. ~D1l;f11; 3i:~f.£~;:j( Q:a'1-Jm.I'IH~ D 1ll tE 
+3 :Yti $$fl~yjffi~;:5 3i:~*m ~ ~!A!. 5. 2.4 
+4 ~~]f~m~;:5 3i:~;k~ ~ ~~ 5. 2.6 
+5 $$i~"JI Btnl~~;:5 3i:1itxm ~ ~!A!. 5. 2. 8 
+6 1f !I;J -=F-tili !I;J ritr :&.. .3:.1£ -=F-tili 
+3i:~~m ~ ~!A!. 5. 2.10 
+~Uz.~;$ 
+7 ~tJl1fii;J.=ftiliUz.N 3i:~:kl)t ~ ~~5 .2.1 1 
+8 :Yti$$flt't~~Jm 3i:~*m ~ ~!A!. 5. 2. 5 
+9 9lJ$lfitli9Jt't~ 3i:~~m ~ ~!A!. 5. 2. 7 
+10 :Yti $5fii!Jrfjlj-% 3i:~xm :i:l ~.!A!. 5. 2. 9 
+11 $:i£ ATP/ATO ~Jm *~*~ ~ ~!A!. 5. 2. 13 
+12 :YiJ$$f17f*t't~ ~~*~*m :.li!: ~!A!. 5.2. 3 
+13 $f11£lfi!J~;r.tm:J:'i' ~~*~~lJJ! ~ ~!A!. 5.2. 14 
+14 ~t/LAI:1fflfl1i-% ~~*~*m ~ ~!A!. 5. 2.15 
+15 ~tlLAI*flffi-% ~~*~*m ~ ~!A!. 5. 2.16 
+16 ~t/L.3:.1£-¥tiliUl. .'i'1 ~~*~*m ~ ~!A!. 5. 2.12 
+;± :~ D ~}fj"~" *if-~ D ilf*~I~~~ilJ:q'j-]2!;ffl, mffl "~" ~ D 89:ft;J 1-J 
+~'~*fflii9~D o 
+W2.2T• ili~~•mo~~·~~* o 
+B 2 ~t f:H~xJ.l~1iO 
+}f.f.} ~D~.tif!' *~f.£~;:j( :lil;i!i'1-JmJtJ~o 
+I ~ ~-lfi!J i9rm ~ *~~i)l! ~ 
+2 :1ffl~~fi1f-% *~~m ~ 
+3 ~"Jitnl~'i'ir.t~ *~*m ~ 
+6 1ll tE 
+~.!A!, 5. 3. l 
+~!A!. 5. 3.4 
+~!A!. 5. 3. 5 
+• T/CAMET 04011.3-2018 
+if-'% t1HJ~~J\ 
+4 $:~ ATP/ ATO 7tl$:~~J.lfili% 
+5 ATO *51Jlt1Ji9.Jffi~ 
+6 ATO ~51Jlfltji9.J~UL 
+7 AM ~!)!t;gi;:r.\ :t/(~ 
+8 :Jffl:j-~~ 
+9 :X: I'll~~ 
+10 :fUtj(•ffi· ffl~J1J;/Jffi~ 
+II tt!~lfltJ;IJffi~ 
+12 CM ~!J!t~~t'::~ 
+13 El ;trlJl· )g 
+5. 2 ~.A.f~~ 
+5. 2. 1 ~ ~ :t!J i;IJ:jj;:~ 
+5. 2. 1. 1 tiiJmt"i£ :ti:~f.t~:;:J( :lllo ~ yg :ilHH t.J€ o ~ t1 
+*~~m :lllo ~.!A!. 5. 3.13 
+~~:Ji':~~~ ~ ~.!,\!. 5. 3.6 
+~~*~~~ ~ ~.!A!. 5. 3. 7 
+~~1<~~~ ~ ~.!A!. 5. 3. 8 
+~~*~~t:JJ1 ~ ~.!,\!.5.3 .11 
+~~1<~~~ ~ ~.!A!. 5. 3.12 
+~~*~~m ~ ~_!,11. 5. 3. 2 
+~~*~-*m ~ ~_!,11. 5. 3. 3 
+~~*~~- ~ ~_!,11. 5. 3. 9 
+~~1<~-*W! ~ ~.!,11.5.3. 10 
+~~-ililJ~IP~~~~~~tirflojA{~~, itit D *ffl A ID!t~ D, #J'!:;:{f 
+~ll""f 2 #~~: 
+-$iliJilff.J Jil 'Et~-1fj!Ji9J; 
+-$ili*Jilff.1 Jil'Et~-1ttJZ9J 0 
+5. 2. 1. 2 ~~*fhl: 
+~--i9J~~MDJ'!-1f~#rflojA~~.J'!.~~~~""f: 
+-r£1tt H~i~~~~ " 1 "*ffi$iliJilff.:b ll~~-1ttJZ9J; 
+- t£1fj!J{~ -~~~$ii:" O" *ffi$ili*Jilff.:bll ~~-1ttJi;IJ o 
+i±: 2js:~J!Hi19=' ffr~)Cl;I J~t.J€ 0 , '* EJI'i I!Jl :'h:ti:~~~t.J€ 0 , ;Jtftk*P'i I!Jl 8(] 1g ~IO:Ji': 
+~~ltt.J€0 0 
+5. 2. 2 9~$~fl1i:jj;:~ 
+5. 2. 2. 1 tiiJmt"i£ 
+jlj $ 7tmtt~ ~ ~~ ~ ~ ilfrfloj A{~~, $ ~ ATP I ATO ii 4ft~ jjllj iiJ 
+7 
+T/CAMET 04011.3-2018 
+:9U $ fG ~ tt-* ;/C Fo , ¥f ~ ~tu :±! ~ ~, fflij ;I]~~ o 1$: t§'HJ * ffl A ~ ~ 1::1 , 3f 
+1!-:ff:tmT 2 ;fll~~: 
+- :9tl$%~tt:ff~ ; 
+-:9 tl$%~ttx~ o 
+5. 2. 2. 2 -m~~ ~ 
+~$%~ttt& •• 1::11t-:ffM ;fll·A~~.A ~~~~T: 
+-~fflij{tf%J;J~Jt" I "*1f-:9 tl$jG~ f.f:ff~; 
+-~ffliJfg%J;J~m" o"*7f-:9 tl$%~ ·~:X~ o 
+5. 2. 3 91J$$fl1f ~t*:~ 
+5. 2. 3. 1 tiiJ#Ii~ 
+:9U$$f17f*.~~;li!:-A {tf% ,JfJT:9 U$$f17f,*.~~ o 1$:}~ IJ* 
+ffl A ~-1::1:/J:r.\;,.:ffA:ff:t mT 2 ;fll~~ : 
+-~ $:9tl$$fl~iS~T-*. I::a:J~~; 
+- :ff:91J$$fl*~T*. I;a'J~~o 
+~: ;;jl::{119f~5( 89~U $$ n *~~~~-E! ~ii.l tJL~ n ~~ o :!m'iffi'-E! ~. iil:tEillil 
+~Jl'l31: :i1t fj ~ ~ 0 
+5. 2. 3. 2 m.!i5-~~ 
+~$$ f17f*.~~A:ffM ;fll·A~~.A ~~~~T: 
+-~ ffliHtf%J;J~m" 1 "*7f-~ $:9tl$$fl~iS~T-*. I;a'J~~ ; 
+-~ ffliHtf% J;J ~$It" o" *7f-:ff :9tl $$ 1'1 * ~ .Y .* ffi ~ ~ o 
+5. 2. 4 9tl$$fl i.di~t*:~ 
+5. 2. 4.1 tiiJ#Ii~ 
+~$$flmffi~~;li!:~~$$ f1.*ffiFo~mffi~~ o~$$ flmffi 
+~ ~ ;li!: ~~ *.il!. A {tf% , ;f# $ ~ A TP I ATO i&t 4& t& ~jW itl :9U $ $ fl 7f' ~ 
+T-MM ~mffi~ ~.¥f~S ffi~~~~~~ oi$:• 1J*fflA~-IJ:/J 
+:r.t ,.:ffA:ff~ llT 2 ;fll~~ : 
+-~$:9 tl$$fl~~T"l.Y.!ffi~~ ; 
+-:ff:9u $$ n *~ .:rmffi ~~ o 
+~ff-~$fl~~rr7f7f*. ~.:rft~~~~.*•~•:±l~~• 
+8 • 
+• TICAMET 04011.3-2018 
+":9tl$$f1*&1T-f!J!~~~" 0 
+*&1~~~~~$$flf!J!~~~~~~~m•n~~ o~~~~. 
+EJ{£I~M'~:itHT~~o 
+5. 2. 4. 2 ffi~!tHiE 
+~$$flf!J!~~~-~~~-A~~.A~~~~~ : 
+-t£fliiJ1~-'%7g~~ " 1 "7&7F~'fflS:Ytl$$f1~~&1T-iJi l?fl~~; 
+-ts::fl t~ffJ-'% 1g~~ "o" 7&7F~:9tl :$!~ n *&1T-flilffi ~~ o 
+5. 2. 5 ~tl$$fl:t*:~~Jm 
+5. 2. 5. 1 ji IJiai~ 
+:9tl * * n :1* ~~ ~~!fi ~111M*~~ 
+-'%o ~~~=~*m A~~ , 
+-:Ytl * * n ~ ..__,_, .... .~~. 
+:9tl :$:$ n :1* ~~ lilT-~ ~ 
+-t£ fliiJ1~-'%7g~ 7f:k&1r~~:l*~ ; 
+)~~~~ ~~7f:k&1T~~~~:l*~ o 
+5. 2. 6 ig!Jt~~iiS:t*:~ 
+5. 2. 6. 1 fiiJiai~ 
+~~-11&ffl:l*~~ !Ji~:kli.A1 ~-'%.~~Q* ffl A ~~Q ,#-A 
+~:tmr-2 ~:I*~= 
+-~ ~. ~ T-11& f.5 :1* ~ ~ :$ ~ A TP I A TO i1it 1l ~ m ~ :$ m fA;!& f~ 
+-'%~T-11&f.S:l*~ ; 
+-~ ~-&1 T-11&f.S tfiH~ :1* ~.13. :$ ~ ATP I ATO i'i[ 1l ~ .m ~ :$ mW 
+~f~-'%~T-~m~~:l*~ o 
+5. 2. 6. 2 ffi~*¥~ 
+•••11&m ~~-~~~•A:l*~.•~~~~ ~= 
+9 
+T/CAMET 04011.3-2018 
+-t£ffjtlf~i-%:19:~Z:m" 1 "~~~!J9!~~r~ffl:{j(~~$~ ATP/ ATO 
+~*~~m$m~~ffi-%~r~ffl:{j(~ ; 
+-t£ffitJ ffi-% :19 :~Z m "o .. ~ ~ ~ !J9! :¥: ~ :r ~ m w fl1i :{j( ~ 13.$ ~ 
+ATP/ ATO ij:tr 1¥1 £&m$m4!A~ f~-'%~r~ffl:tf&~ j!j :{j(~ o 
+$mMW~m~~!J9! :¥:~~~~~ffl o 
+5. 2. 7 91J$$tJ~~~ 
+5.2.7.1 tlDtaii£ 
+YU$ffitJ~:{j(~;;!i!:~~3CiJHDtr A fg.J;}, W:~ Cl *=ffl A lli! ~ Cl, Jt-~:ff 
+~IJ"'f 2 #:{j(~ : 
+-$Wi*lilli::b o1~iH~ffit J?9J 3~~1M~ ,-M· fflffitJ;~J ,:&7c'lit fflffitJ;~J ,·~w 
+ffjtj ?;IJ;f'll ~ %], ffjtj ?9J 'fl ~{f~-# ; 
+-$mWM=i!itJ ~, ~~ ffitJ ~,'lit m i!itJ ?9J ,:Ai*-m· m flilJ ;tJ ,·~Jt ffi-tJ ?91 5f11 
+~%!, i!itJ;~J, ?IIY:ff -# Blilli::bo o 
+5. 2. 7. 2 ffi-5*-¥~ 
+~*~;~J:{j(~~cr~:ffm #•A:{j(~.~~~~~r = 
+-:{j( ~ 1~% :1g :~Z m " 1 .. ~ ~ * m w M= ffitJ ;tJ , ~ 1'&. ffitJ ~ , 'lit m ffiiJ ?9J , 
+{!{ * -m· ffl i!itJ ;tJ , ·~it i!itJ ~ ~ ~ %J, i!itJ ~ ~ :bo ; 
+-:{j(~f~%:1g:~Zm "O" ~~ *mWM=i!itJ ~, ~~ffitJ ~,'lit m ffl1J ~, 
+:/:& 7c 1t1· ffl flilJ ;tJ , ·~it ffiiJ ;tJ lll ~ %J, fljlj ?9J * Jilli: :bo o 
+5. 2. 8 $*¥Ji~siE.tJJM;:tt~ 
+5. 2. 8. 1 tlDtaii£ 
+$m~iJ IB-IJ.J~:{j( ~~1<~3C~-A{ ~%,m~Cl* ffl A lli!~Cl , 
+Jt-A :ff ~o "'f 2 f11 :{j( ~ : 
+-$m~iJ IB-IJ.J~ ; 
+-$m~iJ I*-IJ.J I~o 
+5. 2. 8. 2 ffi-5*-¥~ 
+10 $m~iJ I B-IJ.J~:{j(~t~ cr ~:ffmf1,•A:{j(~ .Ai*~~~ a"'f: 
+-J£flil J1~%:1g:~Z$4: " 1 .. ~~*m~iJ I-IJ.J~ ; 
+- t£ffi-tJ1~-%:1g:~Zm "o" ~~*m ~ 51 *-IJ.J~ 0 • 
+• T/CAMET 04011.3-2018 
+5. 2. 9 9lJ$~~J.lffii5-
+5. 2. 9. 1 tiDtit~ 
+9tl:!j::$~lt{§%£$:~:*lJUDtrA {§%, it~ D 31U'I'1 A lli!~ D ,;t-t.J'!­
+::fr :t.m ~ 2 ~ :{?( ;:$ : 
+-9tl:!j::~l.H =:$~lt:{7(1$ ; 
+-9tl :!j::&1 r ~PI~lt :{?( 1$ o 
+5. 2. 9. 2 i~i5-~U£ 
+~:!j::*~lt~%~DJ'!-::fr~ #MA:{j(;:$,J'!-~~~~~ : 
+-:j'QJ#tJfili%17~*~" 1, *~9 tl:!j::&1-=f~~)t:{j(;:$ ; 
+-:J'QJ#tJ f~% 11~*~ "O" *~9 tl :!j::&1-=f~l=~~lt:{7(1$ o 
+5. 2. 10 ]Jic:J.":f;fjljic:JWJN..±~.":f;fjlj~fft:IX~ 
+5.2.10.1 tiDtit~ 
+n~fm~~~~t£fm~w:{f(~£$:~:JemMA~%,tt~o* 
+ffl A lli! ~ D , ;t-j:J'!-::fj ~D ~ 2 # :{j( ;:$: 
+-n~fm~~H~t£fm~f.li~fLJ:!fZfL ; 
+-n~fm~WIH~t£fm~m~#~!1ZfL o 
+5. 2. 10. 2 i~i5-~U£ 
+n~fm ~~~~t£fm$w:{j(1$A~~ #MA:{j(~,A~~~ 
+~D~ : 
+- t£J#tJf ili%17~•" 1, *~n~ fm ~~ H~t£fm~f.li~fLJ: 
+5. 2. 11 ~HJL:1Jic:J .":f;fjlj fft:i: 
+5.2.11.1 tiDHQ"j£ 
+mmn~fmmft£~~:JC••A~%,.~o*m3mAID!~ 
+D , :fr j}lj j] : 
+a) ~~fii~}:Ii; D; 
+b) ~.5111~~0 ; 
+11 
+T/CAMET 04011.3-2018 
+c) )r[t]~{}Lmffit~ Do 
+5.2.11.2 m-9*-fU£ 
+:tr rtJ rtJ 1itr 1}1: , rtJ Fo 1}1: m ffi ~ o l!l :tr rtJ ~ m m ffi ~ o ril ~ , Jt-1* ~ :x. .!A!. * 3o 
+1fl"l (olJTltrm~~ r=~ 1floJIOJFnm~~r=~ 1fiDJ~1Jlm~~r=~ i'il mn (o;J -¥Wi11Ln 
+I 0 0 10Jiltr1Jr 
+0 I 0 IOJFnUI. 
+0 0 I $& 
+~ 1 :I *~:J£ffltH~-'%1.J~~" I" ;0 *~'l£ffltJm~1.J~$l"O" o 
+~ 2: ~~_till-@-~7~ ,Jl;~!1f.-@-;k_,¥:ltg1.J$1!J1.ili o 
+5. 2. 12 ~m.:t:J~-=F~f.!l: .ii 
+5.2.12.1 tliJfit~ 
+ISJ m .3::1£ -=f.fp3 UL N JHUtr A{~-'% , it:~ D ~ ~?:Jfl A ~ t~ D Jr ~ , i:!1 PI 
+*Jfl C ~~DJr~ o 
+a) :xt r C ~ t~ D }J ~ , illi i1 ,t,H~ illi {~ ~ 1& ISJ m .3:: 1£ -=¥-WH}L fl 1~ 
+AoA~PJ8.!A!.(~~*·*·i£~~~--~~-mCM2 
+Jl&)}o 
+b) *=ffl A~~ D}J~ ,:ii!li12 ~il A~~ D :i!HrtfitrA ,5H1lJ'-.I: 
+-i!f'3 11}l:Nmffit~ o; 
+-ffi1 J7;1J1}1:!1mffi~ o; 
+-.3::1£ ~ {}L {}L .ft 1~ ffi t~ D o 
+5. 2. 12. 2 m-9*-fU£ 
+2f 51 mft:&ffi~ o , i!itJ 7;1Jf}L.'ii:mffit~ o l!l.:Er£~Ui: mJ!m ffi~ o ril 
+~ ,J!.{*~)(_JA!,* 4o 
+12 
+• T/CAMET 04011.3-2018 
+~5 1tti'1:mff-mr::~ lfiiJ~ttttmff-m r::1 .:t:J£~t'I i'i.lfJI..:E:IQ"'f-:filit'IN 
+tt:ztmff-mr::~ 
+I 0 0 ~51& 
+0 l 0 lfiiJ~& 
+0 0 I ~lli 
+~ 1: I ~ff-:j£lfi1 Jflli~:1-J~m" I" ;0 ~~:j£ffjtJ{Jli%:1-J~4W' O" o 
+~ z = 1~1< JV.J:mil- t:J 7-r:Jt~mii-ft:.* :~t;J :1-JMc 11.l:ili o 
+$~ ATP/ATO ~~~ 
+o ·*Jt. :1r:~or 2 # 
+-$~A TP 
+-$~ ATP 
+~: $~-lQ:.'lUH~ ATP/ ATO i5!:*~lltl7fft:. o ·it7fft:.:(:E~=f" ~ ~~f.!i" {ft:'&B1, 
+Wf7f:! jo~l\ ATP/ATO iQ:4k!3:$~f8]!9f:ff A ~mr::1 o .$~1.ili:M~~7fft:.*l&-):£3i:~ 
+~tJ!'f'FI'~ o 
+5. 2. 14 $fl~:ttJm~~~ 
+5.2.14.1 tlDtiiiii * n :fl 1li1J ;t;t j\ :illi 3f :liU1ftr A 1~% , w: ~ o * m 3 m A ~ ~ o , * 
+jJIJ 1J : 
+-F-1 i9J7ffl/ 13 iYl*fl:illiilli~ 0; 
+-§i9J7f fl!AI*fl:illiilli~O; 
+-AI7f f1; AI*I'l:illiilli~ o o 
+13 
+• PT 
+: J.. u~ IS'~ tHf' ~ ¥1: Y I!..-~# fui !Jclf% ~} U [I~ ?t :lf IY'lff [g. 
+3!H :f<%i~ Z'9L ·z ·9 
+o ~~:otf-fti;l}Ll:lfi Y~¥:' ~gfLl:lfiY -
+~ W~%1;l }Ll±fiY~¥: ' ~!JcU±fiY-
+: cr;nrs.ff' ~¥J:#fuf!Jctt9-m:U±f 
+o %-~J U [!~ Et :If IY'lff [g.-
+~ %~}Ll H~?t:lfiY'lff[g.-
+: cr; nrs * ' vI!..-~ £-rm: o {fHff v 13~ z :r;:n~r ~ st= o ?!f: 181 v & * < q 
+o <<Nil z ~) Ww~W.MJY'f~~~ fl$:iJf~~~3;:: 1a;~}'iYJ ~ l!!$ 
+If o~·~}Ll±fiY'JJi(g.~ p~~}!Ff~l~f~'P!Ff'~.ft=D~@ J .£-~~ <~ 
+0 ¥it= tJ ?!f: ill J Elf * 
+1!:!.41-'~.!iD~@ v !l{*ED~~'%-~}Yf!...~W%~H.J±fiY'JJi(g. 
+~!fD!f l'9l'l'9 
+.g.*~LHf IY1f~ (g. 9L ·z ·9 
+0:\"f~ 
+U "?kl Y /LJ ±fiYlli'i!f LJ 3J'f!.~~*{!}t OJ.V/dJ.V ~3J' .::L:\"f~;QJIW :z :ff 
+0 .. o,tti~C? it¥Hiti!if:~* o! "1 ,1Jt~C?it~H~$i!if:~* 1:1 :ff 
+:\"f'Uf;Qlllf'l 'iiUl! 
+U?£l Y ;LJ±fl Y I 0 0 
+U~l YILJ±ff~l;l 0 I 0 
+u~r~~;LJ±fffll;f 0 0 I 
+tfoW.:\"fX'it. (j~rm:w.u~ [j?fi:IirrW.U ~ [ji:Uif¥fU~ 
+[1$$1: u :t: IYIU±fl Y IYILJ±ff~l:;l f{.!ij;LJ±ff~l:;l 
+N~%i~D!f-~¥~B~U$ 9. 
+o ~ ¥:1Yi!S'~$Jf' ~13~ t1 ~!Ff¥fU¥IY ILl :If 
+IYifl t1 ~!Ff¥f U¥IY ILl :If@~' t1 ~!Ff¥fU¥@ ~ !Ll:lf@ ~ 
+n~ .g.*~ l 'vl ·z '9 
+8LOZ-£ 'llOPO .L3:.WV:l /.L 
+T/CAMET 04011.3-2 018 
+- t£ff;iJfi'f-'%7g~$]t" 1 "J:f:t-3=~-~Bt IBJ, ;fk?F P.l tJLAITFtr.iJ!tl fl 
+:ff~&; 
+-t£ ff;fJ fl'f-'% 7g ~ $]t "0" ;ti:~ PJ tJLAITF tr.iJ!IJ fl x~ o 
+P.ltJLAI7f~Mflffl-'%A:ff~~-A~~.A~~~~~ : 
+-t£ff;iJfi'f-'%7g~~" 1 ":fft-3=~ -f;I:B;j' IBJ, ;ff?FP.JtJLAifftiiJ!IJ fl 
+;ff~; 
+-t£ ff;fJ fl'f-'% 7g ~ ~]t "o" ;fk?F PJ tJLAITF ~ tiJ fl x~ o 
+it :f*%fii~~M'~B;ffB]ifi~~.M!!illf fli~JE o 
+5. 2. 16 PJ :fJ!.AI~ flf~~ 
+5.2.16.1 tiiJ#/ii£ 
+P.ltJLAI*.flfi'f-'%~- A fl'f-'%, W:tl D 1r*=ffl A ~jl D }J;rt, ifL PI 
+*ffl C ~jl D 1J:rto 
+a) :X;j'-T c ~18: D 1J:rt ,Jmu,~,~iifl'ftt<t& P.JtJLAITF flfl'fJil- 0 A 
+~PJ$JN,{~!WL$m$~t£ff;iJ~MH&mi f~)~H!i'.111C~ 2 Ji&)>o 
+b) *ffl A ~18: D }J;rt, Ji:i:12 g_Ei A~}~ D *~1'-A ,]tjjtl7g: 
+-P.ltJLAI*.tr.ttlfl fi'f-'%; 
+-P.l tJLAI*.~iY!IJ fl f~-'% o 
+*.fltli4-A:ff~~~~ .JtJJrJ7g: 
+-AI*. fTfi~~; 
+-AI*.flx~~o 
+5. 2. 16. 2 m~~UE 
+P.ltJLAI*.tr.Mflffl-'%A:ff~~-A~~.A~~~~~: 
+-t£ff;iJfi'f-'%7g~~" 1 ":fft-3=~-f;I:B;j' IBJ, ;fk?F P.l fJLAI*.tr.f9!1J fl 
+:ff~; 
+-t£ff;iJ f§-'%7g~~" O" ;fk?F P.l tJLAI*.tr. iY!IJ flx~~ o 
+P.ltJLAI*.~ Mflffl-'%A:ff~~-A~~. A~~~~~: 
+-t£ff;iJf§-'%7g~~" 1 ":fft-3=~ -~Bt i'BJ, ;ff?FPJ tJLAI*.~ iY!IJ f1 
+:ff~~ ; 
+-t£ff;iHJ'f -'%7g~~]t" O" ;ff?FP.JtJLAI*.~fY!tl flx5&o 
+15 
+T/CAMET 04011.3-2018 
+5. 3 .tf:H~.!i5-
+5. 3. 1 ~iia:tUMffi~ 
+5.3.1.1 lj]fm~.>l. 
+~~.ffltJ;t.Jm~~:1i:~~i}Uiftr o':l:l f~%, ~~ 1J *=ffl A~}~ D, :1f:fJ.:ff 
+~or 2 ~~~= 
+-~~,ffitJ;t.J»mno; 
+-~ ~. tM $1 *nm1Jo o 
+~~ o x-t mz ~ r:9J~~~* = 
+a) $~f:E~L15c¥U ~ ~. ffitJ ;t.Jm~ J5 ,mz.rr. en rA~i' ~~Jill ;tJ; 
+b) $~:(:£ Jtt~i' ~~. itJlJ ;f) B9 [l:lJ Bt llitJJ ~~5 1 ;f.JJ:J; 
+c) $ lt A TP I A TO ~ 1\-.§.'it. o':l:l ~ ~. ffjtJ ;f) m ~ , ®'[ :(:£ ~U Wf ~tl $ B 
+W$:1ff:EM:& ~~M;t.J~~M~ J5.~Rll!:fi~~M;t.Jm~ B9 
+w~; 
+d) ~ ~. ffltJ ;fJ ifli~ ~ iilH~VF ft. ilf $~:it!: ~i' ~ ~. ffltJ ;tJ 89 ~ f1il , $ ~ :(:£ 
+:it!:~,.~~. ffjtJ ;f.J~flilJE~~~tJ.t.~i'~ 51; 
+e) $lt ATP/ATO ~1\tE'JY!Mf~~r, ~~. 1b9J;t.Jm~~ 1J ~T ~ 
+~,ffjtJ;f.J~~ o 
+l± 1 : ~ ~. fl~J ;IJ JJ;:Ulf! : ~ ~-lti1J ;/J r:l3 jtl $ 3i: 3t @I ~ 9<: ~ fft!t. :5/: o 3i: 3t [OJ ~ 9<: ~ Fo , l!JIJ 
+i9J ~Hie i*l 'ffll ~k'.llltJ iYJ ~ ~ AAJ9<: ~. * 11:1 !tt7ili liij t¥~tt:Wi~.Qm Eli.JJ rr~~:iill ill""' m AAJ. 4, 
+mAAJmB~®¥WiB7ililli.7J.Wffi$00~8-~ffi.7J~¥a•~-~ o 
+l± 2 : ~ :Q, fli1J 7JIJ ~ fuU~· {4 : ~ ~-l!JIJ 7JIJ 00 ti .il't:c~'H4 Sl Ul: Fn < :!m ~ ~-ffiiJ ~ m ffi ~ U1: 
+~). 3i:3t @!~~{}~ 1\!P ~if'. ~il!AAJ~~f'!!.fi$i/i~~Fo 1\!PiiJ~ffjlf. ~~J~J;IJ o 
+5. 3. 1. 2 m.!i5-*-fU£ 
+~•M;t.Jm~J?J.:ffM~•tl:l~~.JJ..~~~~r = 
+-:flitJlJf~%11~•" 1 "*-7F~~-1fll J;t.Jm~rr&~; 
+-1Q itJlJ 1~% 11 ~ • "o, *-1F ~ ~. ffltJ ;tJ m~ o 
+5. 3. 2 ~:k'.%JflittJMtlii~ 
+5. 3. 2. 1 1'iJJii~ 
+:& * -m-ffltM $1m~~ • tl:l 1~% , w: ~ o * ffl A ~ t:& o , * JJ.. :ff ~or 
+16 
+T/CAMET 04011.3-2018 
+WJ#~~ : 
+-:liljc1Jt ffl i!itJ iYJMJ!::IJU; 
+-:lll7c1it ffl i!itJ iY1 *ME:bu o 
+5. 3. 2. 2 ffi~~~ 
+D7c-m-m~iYJm~~oA~WJ#• m~~.A~~~~ ~= 
+-~i!itH~%.1'l~m" 1 "i1VR:lil7c1it ffli!itJiYl*Mi!::IJ U; 
+-~i!itJ1~%.1'l~m "o" *1Flil7c1it mi!itJiYJME:IJu 0 
+5. 3. 3 'I*~$1Jf;.IJ~~~ 
+5. 3. 3. 1 tJom~ 
+-~i!itH~% /'~, -
+-~i!itH~%.1'1 
+5. 3. 4 7fflf~flliffi~ 
+5. 3. 4. 1 tlDnQ~ 3!0~: 
+7ff1{9!~~ f~.!i}jg1(~:Jem• ilif~%, W:~ D *ffl2 ~ll A~~ D ,:)t 
+~ljjg: 
+a) tr: {Y!IJ 7f n 19! ~~ ; 
+b ) :fi' fY!tl * n 19! ~~ o 
+7ff119!~~f~ %A~Wil#~~ ,?t~ IJ.1..7: 
+-ftif7fi'l; 
+-~J.1:7ffl o 
+5. 3. 4. 2 f*~~~ 
+tr:ru7fn19!nA~WJ#•m~~. A~~~~~= 
+-~ijjtJf~ %.1'1~$!1:" 1 "*1Fti:fY!tl7f f1 if PI; 
+17 
+T/CAMET 04011.3-2018 
+-F-lffitJ 1~% :JJ~m "o, ~7F tr. iJ!~ 3f n i.lfnr *~715 o 
+~M3ffl~RA~~#ffiili~~.A~~~~~ = 
+-1£ffiiJf~%:JJ~ltt"I "~jF;{jiJliJ3ffli.lf1'iJ; 
+-F-lffitJ 1~% :JJ ~m .. o, ~ffi 15 iJ!~ * n i.lf nr *~715 o 
+5. 3. 5 ~51tJJM<~I:i~ 
+5. 3. 5. 1 1l1J!ii£ 
+~ 51·11JI~:Jit~;lik~~5ctiffi ili {~%, $ fi~ ATP/ ATO i&tfktl:ffi ,'fl ~IJ 
+$f13fflf5J!H~U~ r:J:t .~ffi .':l:l~f~%, fl]j .il:.~tl$t£3ff1W JIBJ~J$o ~~ [:] 
+*=ffl A ~t~ [:] ,;Jt-A~~ll~~f!P ~~: 
+-~5 1tJJf~ ; 
+-~iJ itJJI~tit£~ o 
+it :iE2fn ATP/ATO i&1:4l\-;(:E~'f~~m5:\T .~ 91 {J]~:m~~ D ~'f~ 91 {]]~ 
+5. 3. 5. 2 i~~~ti£ 
+~5 1~fm=m~~ QA~~f!Pffiili~~ .A~:@~:tm~ = 
+-1£ffiiJf~i%:h~~·" l "~JF~ 51 tJJ[~:Jt&~; 
+-1£ ffilJ 1~% :JJ ~ m .. o, ~7F ~5 1 tJJ ~~ o 
+5. 3. 6 ATO ~5 1/iMi;IJ~I:i~ 
+5. 3. 6. 1 1l1J!ii£ 
+ATO ~5 11$fji9J:Jit~£4tu.':l:lf~%.~~[:]1[*ffl C ~}~r: J:/Jj\ ,t!LI'iJ * ffl A lli! t~ [:] jJ :it o 
+18 a) ~;j r C ~ t~ [:] 1J j\ , jffi Ji ,~J&~ jffi {~ :J1t jF ~ JW $ ~ A TP I A TO i&t 
+·~~ oA~I'iJ#~ (~~$-$8~~~~--~*mM 
+(~2Wj)}o 
+b ) * ffl A lli! ~ [:] jJ j\ , iffi i1: 2 m A ~ t~ [:] :iJH:Y tWi :tl , :5t §}IJ 1g : 
+-~5 1:Jit~~[:J ; 
+-ffiiJ~ J:Jit~~ [:] 0 
+!$<: 2 ~..13. A ~ t~ [:] jffi Jim if , :5t J}IJ )(if J.iiL 1m f!P ~ j\ : 
+- ffjlJ~J~:it. ,ATO 1f(i~$-:ilt:Affit Ji9JIOJI.; 
+T/CAMET 04011.3-2018 
+-~5 1-mj.\: ,ATO itl4'$ti'J3:it!A~51I&; 
+-tlH-T.mj.\ ,ATO itl4'$m:it!:A ~1-TI&; 
+-x~:!{:il\~ ,ATO $:~~~ D $:~ o 
+5. 3. 6. 2 f~~*f~.iE 
+ATO ~ 51/ffitj~ilf>.IU~ D Jl:ff IIY#~ ttl:il\~ ,Jlf*JES<.!A!.~ 6o 
+* 6 ATO ~sllit!Jz;lri11n~1ir::Jm~*¥ID: 
+~911Ji14-~D jjj1JZ9.J1Jii~~D ATO ~911lt.iJZ9.J1Jii4-;Jt43:.\: 
+1 1 xJ&m:a: 
+0 I jjj1JZ9.JfM3:.1: 
+0 0 trH-=rm:a: 
+I 0 ~91~~ 
+)3: 1: I *~t£Jlj1J1i'f%:1<J~$~" 1" ;0 *~t£Jlj1J1i'f%:1<J~$:l:"O" o 
+it 2: i±X~ti::~T, :!f-Wil'§:ftiJljl J i;JJfM3:.\:~JJR . 
+5. 3. 7 ATO ~51/ittli';IJ~f.!l: 
+5.3.7.1 1ir::Jtiil~ 
+ATO ~5 1 /jfrlj i;IJ m_ {.iL:Jik~ ili {~%, W:~ D 10lUI'I C ID! ~ D 1f j.\, ill 1lT * )fJ B ID! ~ D )j j.\ o ~ D ~ ATO ~51 /ffjtj i9J fEi 4-~Jl if , JfJ T ATO x;f ~U $ 
+1¥1 ~ lJle 1£ ffjtj 0 
+xt:r c w~ o:1fj.\, m~$m:fl{ ftHJtiEilitli9J$~*sl $:it!1i1£1frlL 
+Jlf*llT ~ !A!.Ooc$Jt$m$~1£1frl J ~~-M&i~H!z':i!~Jll.m: C m 2 Jl&) > "P i¥1~Jil.JE o 
+*Jfl B ID!~ D )fj.\ ,:im:UE£!.1fli:Pf!:f E£!.1fli::k;J'~~ ~lW~i5 1$/jfrl ji9J$o 
+5. 3. 7. 2 B ~1ir::lf ~~*fffi: 
+BID!~ D {~%t#{ iEJlf*~lf'F : 
+a) ATO *s lli!itl~fE14':7g1~ JZ}IJ,mj.\ 
+E£!.1M:Pf "PEg 1fli::k;J' Ul.oor) ~~ ffitj~$ ,Jlf*x;f BiZ**~IJr : 
+1) /Loop <4 mA,X~ttl:il\~,$m:fl{ft~ffitj~$:7g 0 ~ili o 
+2) 4 rnA ~I Loop ~ 18 rnA ' $ m :ij'( ft~ ~ ·11 tt f9tl ~ ili jfr!J i9J $ ' $ m 
+tiJtriliffitJZ}IJ$ L2:fl{0j.\( l)~~ : 
+19 
+T/CAMET 04011.3-2018 
+I -4 Lz = Loop X ft :Jc ~· ffl iiJtJ 'i;IJ $ 14 
+........................ (1) 
+s:I:!:f: 
+Lz- tt:m~lliiiJtJ 'i;IJ$; 
+I Loop-It!, 7At:Jc;J\I¥JI/&{i[ ,i(!{}Ijg~gc (rnA) ; 
+l/&::f:4 jgft;J\;ff~ lt!,7At(4 rnA) ,1/&::f: 14 jg;ff~~lt7Attr100 (18 rnA-
+4 rnA) 
+3) 18 rnA </Loop~20 rnA, :!i==mttcmtl-ll:fc'litffl illtJ'i;IJ$~tl:l o 
+4) /Loop >20 rnA,$mttc fff!ft:fc~·ffl i1JtJ'i;IJ$~l:f:l o 
+b) ATO ~iJ I!iiJtJ'i;IJm4-jg~iJ I~it 
+It titf.f !:fit 7At:fc;J\ (/Loop)*~~ iJI $, ~-f*x ;f ElZ.7R-*~DT: 
+1) /Loop <4 rnA .x~ lli :jj;:~, tt:m:JJc ~~iJ I $jg 0 ~ tl:l o 
+2) 4 rnA~/Loop ~ 18 rnA,:!i==m :JJcffH~tl: ttf9iJ~ tl:l ~ iJI $, tt:m 
+~ lli ~ iJI $ LQ:JJ(i~s:.\; (2) 1*~ : 
+I -4 L = Loop X Jt jc ~ iJ I $ 
+Q 14 
+........................ (2) 
+it!:f: 
+LQ-:!i==m~ lli ~ iJ I$; 
+/Loop-It!, »it:fc;j\ I¥JI/&{j[, if!{fLj]~~ (rnA) o 
+l/&::f:4 jgft; J\;ff~~lt7At( 4 rnA) ,1/&::f: 14 JJ;ff~~ ltmttr100( 18 rnA-
+4 rnA) 
+3) 18 rnA </toop~2 0 rnA,$m:JJcfff!ft:fc~iJ I$~tl:l o 
+4) /Loop > 20 rnA, $m:JJc fff! 1JJ ~~ iJ 1:1Js:I:t£i1Jtlo 
+5. 3. 8 AM ~IJtmit:fX~ 
+5. 3. 8. 1 jllJ til~ 
+AM ~~~it:jj;:;:~~di! ::~ lli {~%, W:fi D '§:*ffl C lli!fi D :1Jj\;, i:l1 r.iJ * 
+ffl A !\! fi IJ 1.J it o 
+20 a) x;f r C !\! ti D 1.J it , Jm :11 ,g, ~ lffi {~ m ~ 3 WI$~ A TP I A TO iR: 
+*~rA M~~~s:t.~-!*r.u~~<~~*m*~f£~~~1/& 
+T/CAMET 04011.3-2018 
+:t~H~:i~Jm m: < ~ 2 AA n 0 
+b) *mAID!~ o 1rif:. ,illH11 ~il AID!~ o :i!Hl-*llii ttl ·*~:tm"f: 
+-$~ ATP/ ATO i&t~5ttr AM ~IJ:e.m:r-t~rli:/k~; 
+-$~ ATP/ATO i&t~5ttr AM ~!J!£.m~t*=~rli:/k~ o 
+5. 3. 8. 2 f*.!i5-*¥UE 
+AM ~ $£ f:fi ;r-t :{k ~ Jt. ~ WIT# *llii ttl :{k ~ , Jt. f* ~ )(. :~m "f : 
+-:flflj!Jfl§i%];;~m" 1 "*~$~ ATP/ATO i&t~5ttr AM ~!J.!£.m 
+:r-t~m:!k~; 
+' u $ ~ A TP I A TO i9: 
+Wi $ ~:flflj!J jijJ glr!/& 
+b) :itH'T*lliitl:l,*~~ll"f : 
+-$~ ATP/ A _"!J:ef:fi:r-t~rli:/k~; 
+-$~ ATP/ATO i&t~5ttr CM ~!J.l£f:fi:r-t*~rli:/k~ o 
+5. 3. 9. 2 fi:li.!i5-*¥UE 
+CM ~$£;j;fi;r-t:{k~Jt.~WIT#*llii ttl:/k~ ,Jt.f*~)(.~ll"f : 
+-:flflj!Jfl§i%);;~$l "1"*~$~ ATP/ATO i&t~5ttr CM ~~;f~ 
+:r-t~m:!k~ ; 
+-:flflj!J{J§i%];;~$l"O"*~$~ ATP/ATO i&t~5ttr CM ~~!tf:fi 
+;r_t*~rli:/k~ o 
+5. 3. 10 ~ 1dJ:tJfll& 
+5.3.10.1 tiD:til~ 
+El l9Jtlfjg:J;;*llii tf:l fj§f%, 'W:~ 0 ±~ § 1¥J ;ljk~Jm$ ~ ATP/ ATO i&t ~ 
+21 
+T/CAMET 04011.3-2018 
+~~~$~~~~~*fi~~~~ o-·O*fflA~-O~~ o 
+EI$J~~• o*m 2 tl3. A ~mo ,Ai*~o~: 
+a) El $J~~Jgqi~[li]{~%- 0, -{~%A:ff~O~ 2 ;fll:j;l\~ : 
+-$~ ATP/ATO fit~ilJ4-$m:Jgq i~[li]~" [li]ffif"; 
+-$~ ATP/ ATO fit~ft&#j:Jgqi~fOJ" [O]ffif" -®4-o 
+b) $m-t'3m!!lHW.{~ -I§--o, -{~%A:ff~o~ 2 ;fll;J:;l\~: 
+-$~ ATP/ ATO fit~t¥J!ffifjj.$m-tJJ~ {~%::tl=f~tfr:j;l\~ ; 
+-$ ~ ATP I A TO i& ~ t¥1 J,t jjj. $ m -t'3 ~ {~% ::tl =f ~ 15 fi& <fj!j 
+5. 3. 10. 2 1~~*¥UE 
+El $J~~)Eqi~[li]{~%9=t : 
+-~11Jlj{~%~~m" l "7&.~$~ ATP/ATO i~~ilJ4-$m:Jg1i~ 
+[OJ~" [O]ffif"; 
+-~i!J1 J1~%~~m"o" :tR.~fi&t!!i:Jg1i~fOJ" [O]ffif"-®4- o 
+*m-mm;mtw. f~% 9=t = 
+-~iiJl j{~%~~~!\:" l":tR,~$~ ATP/ATO i~~t¥JJ,tf!j.$mtJJ~ 
+{~%::tl=f~tfrt'\~ ; 
+-~i!J1J{~%~~m" 0"7&.~$~ ATP/ATO fit~t¥JJ,tjjj.$mtJJJ& 
+{~%::tl=f~tfr fi&<fj1j;jj\~ 0 
+ii : 13 iYrl1r :Jg 1:11 ''if* ffl 1 ~Jl A ID! ~ JJ * ~ , ~ :tt: WHi!'liiDalHfJ. fili% %U ~ 1-T 1:r ioJ fili 
+%it'#~tl:l ,x>tJ.iilffi%~W: :imr , 
+-~jf,! Jfi1f%1:7~m "I"*~$~ ATPIATO i&1:1lrB9E!HfJ.$WHJL'l!;ffi%~f~ 
+f,S~~.§_:tj':~ ATP/ ATO i9:~i[s~$W:i~1'J1f JoJ 1:7" Jolnu"; 
+- ~jf,ljfi1f%1:J~m." O"*~$~ ATP/ATO i&I:~B{JEfi1fJ.$Wj.fAm; {i1f%~fjj)l{ 
+f,Sj(«fj!j~~,&$~ ATP/ ATO i&1:~tf«flli~1'J1:f(oj" Jo]Jiu" ifP~ o 
+5.3.11 7fflt~~ 
+5. 3. 11. 1 nu:::Hai:i£ 
+:TFnm4-~rmne1~%,•mo 1I*m A ~-o~~,mlli*ffl c ~ 
+22 
+T/CAMET 04011.3-2018 
+~IJ1J~ o 
+a) xt=f c ~:f~ o 13~, imi:t,~-~illl f~i.~:i!7f f1 :&~ o A-l*llJ $.!A!. 
+{~$Jt$~$~t£ijjt J~MHH~1#:i!~JUI1<~ 2 !t&Ho 
+b) * ffl A ~ j~ D 1J ~ , illl i:t 2 ~ll A lli! ~ D :itH'J mtl .'t\ , :7HJIJ 7g : 
+-tr. ~m7fn:m~; 
+-;{=j1)1 1J1ffl:&~ o 
+1f f1 t~ ~:f-l..~ iW fllntk 1$ , :7H:l'J 7-J : 
+-H nt~~; 
+-H n t~~tr«<f~ o 
+5. 3. 11. 2 ffi -5*¥~.iE 
+tr.•1f n:&~A~iW #Mili~1$, A1*~~~~ = 
+- t£ijj!Jfili -~::h~m" 1, *~~-~atrBJ <It!. 3JZ-~J I* l!fl) , 7&7Ftr.1J!IJ 
+7ff1:&~ ; 
+-t£ *'J f"ili-'% :;~g ~ $!i: "o, * 7F tr.1J!IJ H n m ~tiN ii!i o 
+:tl1J!iJ1ffl:&~A~iW#mtlili~1$ ,A-I*~~ :tm~ : 
+-tQijj!J {"jlf-'%7-J~m " 1 "Jf~~ -~Bt i'BJ ( ft!. 3JZ-~Ji* l!fl), 7&7F ti1J!IJ 
+1ff1:&~; 
+-t£ *'1 f"ili-'% 7k ~$It" o, 7&7F ti 1J!tl1f n t~ 4?-tiN <f~ o 
+5. 3. 12 ~fltl1i~ 
+5.3.12.1 tiD#!~ 
+:kflt~~~mtltl:\ f~i-'%,~~ D1i*ffl A lli/~D1J~,i:l11lJ*JfJ C lli/ 
+~D1J~ o 
+a) :xt=f c ~* o:n~ ,Jffii:t,~-~W1 ~~~:knm~ o A-l*llJ$.!A!. 
+(~!fft$~$~t£ijj!J ~~*1/&'®-f#:i!~.W.m: ( ~ 2 it&)} 0 
+b) *Jfj A lli!-11€ D 1J~, illli:t 2 m A lli! fi D :itH'Jmtl 1±\, 71-Jilj:;/g: 
+-tr.1J!,J:knm4-; 
+-:tl 1J!tl * n m ~ o * n :&4?-A~ml'Jl~1$, 71-JiiJJ'J = 
+-:kn:&~ ; 
+23 
+T/CAMET 04011.3-2018 
+-fr.flm~iiil~ o 
+5. 3. 12. 2 ffi-5*¥UE 
+~•*nm+A ~~#•w~~. A~~x~~ = 
+-1£1jj! Jf~%:1:J~m" 1 "#M'~-~B-tfBJ .~~~iY! U3Cflffi~; 
+-1£ *'1 f~% :1-:J ~$~" o .. ~~ tr. iYIU* n m +:ft{(~ o 
+~•*-nm~A~~#•w~~.A~~x~~ = 
+-1£ #JIH~%:1:J~m" 1 "#M~ -~B-t fBJ .~~~iY!U3Cflffi+; 
+-1£ *'1 1~% :1-:J ~ m "o .. ~~ ~ iY!u *-n tl[+ tr&~ 0 
+5. 3. 13 $~ ATP/ATO ~~]Jt{~-5 
+5. 3. 13. 1 1tom~ 
+$~ ATP/ ATO ~tl$~~1ff~%~3(3tfr.iJ:Hiftr t±:ffl\%, W:ft D *ffl A 
+~~ D ,#A~ :!UJ~ 2 #~~: 
+-? U$~r5f~J.t ~~; 
+-j U$~T~~5?~Jjt~~ o 
+$~ ATP/ ATO N~iffi:i:t § :!1rit~ .~tl~jtl$ 1¥1?-1$ ,ftJg]~ ~ o 
+5. 3. 13. 2 ffi-5*¥UE 
+$~ ATP/ATO ~tl$~~Jjtf~%A~~#tfitrW~~ .A~JEX:tm~ : 
+-t£1jj!Jf1§f% :1-:J~m" 1 .. ~lf-jU *5tt r~:~tlf ~~; 
+-1£ 1jj!J f]§f% :1-:J~m "0" ~~ jU $5lt r ~PJJ::it!Jt ~~ o 
+5. 4 ~imJ.Litfl!!1i D 
+$ ~ A TP I A TO 19: ~-fN: * ffl $ Wj 1fi It rt!!. ur ql' f~ It o f~ It!. ti!f: f_£ flC 
+GB/T 25119-2010 9=' 5. 1. 1 89~1.JEo 
+$~ ATP/ATO ~MilP 11§i,\~U~~i1:illi:i1 TMS ~~$Wi o 
+6 fJt~1iD 
+6. 1 )IJij;t;* 
+illiffl~*A~:tm~: 
+a) $~ ATP/ATO N~lliz3(~{1:JJ.JEB<J~~~I.UHG:OOI*J ; 
+b) $~ ATP/ ATO i9:~1t~lliz*ffl liD JE~urql' IIDJE, #:@:W!$Wi 
+24 
+1< ~ ~Jln·~ ~ >1<: o 
+6. 2 $r*Ji!i. 
+6. 2.1 $~ ATP/ATO :ftfl 
+6. 2. 1. 1 ~~ili:~ T/CAMET 04011.3-2018 
+$~~ ATPI ATO .±:fJLlili:~~tE!fm It!. 4.Mffi pg, t£ It!. 4.Mffiffi i'17f 
+~mlili:~~.±:fJLffifi00~600mm~-~-~ ~~ • .±:fJLffi~~4M~ 
+15 0 m m Et~ fE ~ li'dii JXl 'lfH~~ ~ IBJ o 
+14,$~ ATP/ATO 4i:llt:llt'tlll 
+6. 2. 1. 4 flit!! 
+$~ ATP/AT 
+6. 2. 2. 1 ~~ili: lt 
+6. 2. 2. 2 ~~~fEi] 
+!fmf.i\Z19 ATP $~_illl..ffi~J:QI00:fii;J\:lg 345 mm(1/!:) x250 mm(l*) x 
+250 mm( ~) ~~~ ~ IBJ, :XIItW!Jm ~lit§~ fB] :7g 415 mm ( 1/!:) x 250 mm 
+(7*) x320 mm(~) o 
+6. 2. 2. 3 ~}Xl 
+$m8~MATI$~1Jil..ffi~~~~~pgf.i\ZA*~~~~JX1.~#.$ 
+~.illl-.ffi~~~ ~~~~:fJL~pg·~~~~BM5~ o 
+6. 2. 2. 4 flit!! 
+$~1Jil..ffi=RfB¥:ffl:JiH~i ~ Im~~ 51 A:fii:lli ~~:it!!. ,g, t~:it!!.lt!~ 89~1*~ 
+25 
+T/CAMET 04011.3-2018 
+rmlRJE:::f;J\-'f 6 mm2 
+o .tw~W!~7&jf- ,E:ffl:J!i!f~~ ,~:1'1!!.~-Kltm :::f:kr 
+500 mmo 
+6. 3 $Iii!!:* 
+6. 3. 1 BTM 72~ 
+6. 3. 1. 1 ~~fft~ 
+BTM :X~JE$:~{£~ 1]$ 9=' {,,~_tjf .fi® ili:IW~$fkj l't!J{}Ljf_, ~11 00 2 
+EJTjf- 0 
+BTM :X~9='·l.'~~$WJIW~$fkJ:i!~lmlle~.!h!.7& 7 o 
+7& 7 ~ 'L'~Jie~ 
+$~Ja~ llili!J$~ BTM 3-d~ lf'{,,~JIE~ ( !)!{ft: mm .ftiti*~ : ± 10) 
+Lt L2 
+Alt/$ 3 320 4 410 
+I~ 2 690 3 750 
+Blt/$ 
+II~ 3 130 4 190 
+i± l:L,*~7 }C'j'-~gc~1Js:\':""f .$~~~00 3IU$tl BTM 7(~!f' ·L'~IIE7li o 
+i± 2:L2*~5(:~gc~:1fs:\':""f ,$~~t~llili! J$~ BTM ;;R:~If! ·L'~RE~ o 
+i± 3: J ~*~~$¥:1Jt/'-J 20 460 mm ft-]1J::rPJio 
+i± 4: II ~*~~$-f.~!Jtjg 20 900 mm fl(]1J::rPJio 
+26 
+T/CAMET 04011.3-2018 
+6.3.1.2 :r:ttl!ht? 
+BTM 7C ~ ~ ~ J.iiZ :i!!:HHii El! ~ -T 1ft IR ~ ( jill El! fJL , JXl fJL ~;It fi!!. ~ il-1'19 
+7C~fflili) ,)liJ Elil7f'J.l\Z:ff~$:1g 3 MHz-5. 5 MHz 89f~i%t'~Wit o 
+6. 3. 1. 3 ~~~18) 
+1f::~7C~fflili~*x~~~1*, ~:i!!!3ex1'f~%-ffl'W!tr89 -TrJC .Jt-1*~* 
+~~3~~4~~ o5JC~Eg-~ ~~-~7f'-~~~~~ o 
+il::a;;o410 mrn;b;;o50 rnrn0 
+it:b;;o50 mm;c;;o450 mm0 
+If! 4 7C ~ ~ ~ 7C ~ ~ 1R :Ia ( iJlH!A~ ~ ) 
+6. 3. 1. 4 ~~mm~ 
+~~-*~*~ ~.~-·*·89Jt.~ffl~- *~*~~~~* -~*k~ 
+~-T~InJ~k o ~~tl$5d:~fJti$, ~~,~~ B;j' ,;Jt~-~i.lf~&JA!.* 8a 
+27 
+T/CAMET 04011.3-2018 
+~~t»l !/&ill 00 ~ 
+~~$Jll]!iiiBY :Ji~:JJ\~~ Hm;n 165 mm p 
+$ll7dJI. \ J 1 
+! 
+~t 
+~~$Jt.J.9!jijB<J:/N:7::.~~ Hmu 240 mm 1 I j(_ 
+I 
+$Jt.~ t:p •L' ~ *" tj:: ..t 7C ~ BY~ lfE cp 
+.~ Z Z.fBJBY:Iil7::.ilil~ Ym .. ±5 mm H I j_ I j_ ( ) 
+ill1-T tj:: 1J [i;] BY :liX: 7::. 1'J!IH~ if! ±I o ux~T 
+JL +().-() j_ ( ! ) 
+mz~~m :!t:~:£7(~ 
+71Hiii [I;] :lll::kf~ifl ± l 0 -8-&-
+lj!~~ 
+Tm~ 
+i'IHI!; 1H-T tj:: 1J [I;] Q ::k f~ if! ± l 0 
+() () ~1'$1fiol . -
+28 
+6. 3. 2 ~i*~~a 
+6. 3. 2. 1 ~~f.!L:~ T/CAMET 04011.3-2018 
+~~~it f{ ~~ llT *ffl m fD!l!A: !!X;~~ m fD!l!:a:, ii: tJ:: ~t£~~ i;IJ tJ ~ 89 ~ 
+~~$#~~;(£~~~L omfD!l!:a:~~~it~~~~~i;IJ$*~*m89 
+~~.ffia, Jt.i*tJ::~mft Iii I~1J~1iffl~ 0 
+6. 3. 2. 2 ~~QfB] 
+~fl r Et~a m~fffif!,t, Et ~am~ !1l (r:i) -r 1t9!*-~ 15°-60° * _§_:i!!f~ 
+mam~~~~ff o.mft~89-NJ1L~£:i!!tH--~· o 
+~~~it~~~~am~~~~tJ::~f1l~~~~a9~~*~·~~ 
+6. 3. 3 ~iltf~~it~~a 
+6. 3. 3. 1 ~~mit 
+m~~-~!J::~;(£$-f*T1J ,M~~-~~-~89~L1J o-~$ 
+•••~~~m•r*i*~~~*H!J::~.~~*mf1l~~-~$•• 
+W~!J::~;(£ ~~$1*00 ;$V·S~~-!J::~;(£~(r:i]~L ,$V•m~~ 
+,c,,~~~~ ~,c,,~HE~~(8 0 ± IO)mmo ~!J;:~{il~~~1WOO 6 Err~o 
+6. 3. 3. 2 ~~Q fB] 
+$ V1tfrm ~ Jt-1* tJ:: ~ :£ fBJ ~ * :!m -r = 
+a) $V•it~!J::~;(£$m~#ta9!J::~3t~L o !J::~3t~89$V 
+•s~m!Ml7&mi.lJ!-~~'J\r o. 5 mm .~M~IY!mi.lJ!-fj _§_JlE~;(£ 
+29 
+T/CAMET 04011.3-2018 
+30 § 
+0 00 
+500 mm-800 mm z.raJ 0 
+b ) $ fN-iWJ ~ :~t .xt 3< ~ :£ rBJ B9 ~ * ~oiii 1 Yr ~ 0 :1-J 1* iiE m :~t iBt ~ 
+iE 1Jntl!.~:i!tilt1::l&, liD ~P B9 ~ ~ IR~~-1-.::~ JfJ IR~ , ;(:EW: IR 
+~~~R~maw~~~4d~~-~ o 
+I 126-1 690 
+0 
+~~----~----~------~ 
+T/CAMET 04011. 3-2018 
+6. 3. 3. 3 tiit!! 
+:t~ Jt!21t!. ~ 8{] ~ i* ~ ffif fR Jlli ~ ;J' r I 0 m m 2 
+, 101?: J'ltiiPJl-*X 4fuH'~ ~ o 
+6. 3. 4 1JDiiJ.l~~H 
+6. 3. 4. 1 ~~f.!z:I[ 
+~~~#·~~-~$~~*·~- ~,~-~Jlll--~~~~# 
+--~~-~~(·~~#~-~·~~#··~~~ --~~-~ 
+~) m ~ $JL:l1! ~ ,c_,~~ tl -*!W*~ ~, ~n 11n ~ttm~ B<Jm''!k &:,~¥fl-$WiW-
+~~m~*•~~*~~ o~•mlli•~-*W~~*•~mmfi~•tt 
+•iftiJ ~, :illf:!.M''Jt 1.1:. at ~ilf.J1Lllf~jij o 
+~. {Ji: :!t E: ~ ~ $ '!k %if :!j:: ~ ~ A TP I A TO 3:: ;fJL fJ!,;f€ T ~ , "fW it1i\i 1m~ 
+~1~~~1[~- :(£~ IRJ $i.*-@!lj, E:$J.II .$. ~ ~ 'l.'~ o )1;~-Ulfl:~ll 
+1!1 8 J'fi ffi 0 
+6. 3. 4. 2 ~~QjB] 
+~~~#Sfilli~-~~-~,m•$i*~~ ~ffif~~~E:BM 
+100 mmo ~-JlllmfJEj] i]~~1~--g 'J ,;E~ j~!1JiJtfll£fHf'fr.f~ ,110:1!~ 
+1~-~B<JJ.9f~i U ATP/ ATO ±f!Lf!L;f€ ~Jff$lli::ff JE ~:£ IBJ, Jt.i*g '.1"'~ 
+IW~))([Ilfl~~~ o 
+6. 3. 4. 3 1i it!! 
+~~~#·~~-~E:*m••••~~ o 
+6. 4 $~:7C~7i:~ 
+$?t,t~~x~A i*~}j(~ OT: 
+a) ~~$Jt!2x~lffi 1~-&!ffl #m1l-19! ~~ IRJ, $t\t~-~ IRJ ~ 7(~ 
+31 
+T/CAMET 04011.3-2018 
+~:If'~ 8<J 7C~UR ir,-§. ni: § E8 i&: 7C ~, l.&: ~ 7C ~, mi ~JE rP1 f­
+:.f&7C~ '~=:#7C~ 9=' :If'~ B<J!:ilir; 
+b) Elffi7C~B<J~~~:If'~~MH:I:l$ililltt~~~A ~4HttW.; 
+c) * ~ ~ ~ :t£ ~tl * 7'~ w A-t • ill* :mt WJ J.K m :MI!: , WJ 11: m *#}A* 
+i* 1*1 0 
+6. 4. 1 ~Ell 5&:~~ 
+32 § E8 t&:7C~Jt.i*~>R~or = 
+a) § E8i&:7C~(J\.*7C~ ,f-:.f&7C~~l&i8~7(~)fflr~l&x~ 
+Ef EH~{J§f~ o 
+b) ~tl$B<l$*#.1$~~~~m~ El E8 i&:7C~, 7(~ 8<J 9=' 'L'~~f!/B 
+~ill Ej ~~ $ ~ ~f 1J rPJ f-~f ' :m: * ft if J.)c f-jFJ It~£ ± 1 ° ' :m: * 
+fti!f¥1t1FJJ.t~£ ± 1° 0 
+c) /\.*7C~~f-1&7C~3i.~:t£~ ~ $~~~]Ji$ , 1lfi:t£~ IDe~JJi$ 
+3i.~f- oo7HL, 7C~IW !IZ'®rff ---tx~JIJS IK, x~~ IK~:1t:t£ 
+~;R~jg t:p,[.,B<J 70°1Fl m;~ 1*1 o ~~B1B<Jx~Jm ~~~ IKff-:'@: 
+00 .!A!. 00 9 0 
+70° 
+7(~:5[~ 
+7(~ 
+"---X~JiJ!IK 
+'---$J!jj~;f& 
+d) ~:f!!.~:*~ill!Ji.~:t£~ ~ $$]Ji, ~7(~7g 9=' ,[., ,~~£1-J 1 m 8<J 
+m:~ I*J:If'illfi.imtf:l *~ 2/3 ~Wilt B<J~llt ~m~ < 71'**~) . ..ll 
+7(~1Ji$~Ej$·8~1ltt~~-fi;Wj.*f- oSiflft7(~!Ji. 
+~B18<Jx ~Jm$m~IK7f-:i&:JA!.OO 100 
+T/CAMET 04011.3-2018 
+e) liil-IR:I!j£~~1f~~7C~' hr~ r, $~7C~7C~ ( *ftfill*t!C 
+7C~) z fBI[!{] 1%/tr Jle/tr l!ll:;k =f o. 6 m o 
+o jg~f¥x~fs% ~ill~·~·~~~~~~ 
+~x~~JE[I{]M 
+g) 7C ~Ell~~ -~:;" -...~~~ 
+h) *~m;~}II JJ!::;j,~ 
+w m 10m , .!=IA-;gj!i'fltfrm 
+~~lrl!lZ 
+[i{J{j!~IJ o 
+i) *~~~~~~ ~~.X~> rBJx~~ 
+o mJ:Joo~*~~ 
+~m.E~*~~itt? 
+~~ ~~!ool!LJ~-rtl#J $1* 7f:U ~ IL, 1H£ :;f 
+1J\ =f 40 mm, 5i: ,c,, ,1a Ell xt if , 1* ft :;f iffi :1:1 
+3 mmo7fiLJ.!lZ -*=BWU, il*ffl:UI L'f¥t?~uHT'f¥f? o 
+6. 4. 2 ;&:~~fi 
+?&:~*~1!-f*~>J<::tmr = 
+a) 7l!Z~7C~( .lft&k:fll17C~)~~r $1*m;$!})t~inJ~01HI~:$$1Ji 
+*ffl~ .:::$Jt::tf~~ It, i&:~7C~ PI !mk:~~tE$1-*.l., 13.7&:~ 
+7C~lliz/tr~ .=:$ftmMff, =:tr i'BJ Jle:;fJ.!lZ'J\=f 300 mm), ffl =f 
+m~~ffi-~WM% o~m$Wli~~[l{]ilifi,tE~$[1{]~-~ 
+~~~~?&:~7C~.13.~•[i{J~~*~ElZ*m$milifi::trinJ~ 
+,c.-~xt~~~::tf~ o 
+b > t1IZ ~*~.X~ PI mmr$1*~ $, .Ji:~:;fl!lZJm:U$1-*W ~~, 5r. 
+33 
+T/CAMET 04011.3-2018 
+~~7C~~fillltiii89f~J.t~*/]\=f 0. 5 mmo 7J!l~7C~I=j:l'L'~ 
+~tl:!i=:~~fjj"flil 9=I 'L'~Re~:1-J 1 162 mm, 7(~T *iii !:j~!f}L _U& 
+iiiRe~1r:1-J 320 mm( {Egfr~ ,~~' 11-ft~'l'ifi£ T), 1(~~~71' 
+Jtii:i:1: ±5 ffiffi0 7J!l~7(~1(~~:\tt:!z lli!Jll Flf~ o 
+I 
+I I jg~'j1floJ<P~c.,~ ~~ r ffl*ll 
+I j~~~ 
+I 
+(1162±5) mm E 
+E 
+~ 
+N 
+C-
+c) 1£i&:~7(~ r:n 100 mm, 0 7J!l~7(~ :1-1 9=I 'L' 150°1JJ% n!UfJ 1K 
+:i!}t 711 ~ I*J , kJ lJt. 7J!l ~ 7( ~ T jJ 1 00 m m ~J !flL 00 , Re iJJl ~ 7( ~ itl ill" 
+250 mm 7i1~1*J.1-J~Hii~IK.1£W:IK:f!1ti*JEizf*iiEX1fr:m.l:±l~ o Wl 
+~*~:1C~B>t89:X1fr:m! IK~~:tzn 00 12 Elf~ o 
+6. 4. 3 iliiii'A!7C~ 
+t\fi~7C~Jt.1*~*:tznT = 
+a) :tzn * ~:%~ffl ~ ~ ~ :1-1 ~ 1l-it~$ :ttl!. x ~ {F-f ,~, , 1r * ffl f ;f& JE 
+34 
+li€.@'T/Jrtl'=P•L'ii!l 
+(I 162±5)mm T/CAMET 04011.3-2018 
+loJ 7C~ ( 3C~t£$~1Jltliii) ~?iil1§.~7C~, ~1&$JL-*~~lH1iiM l±l 
+~fi~~~M%,~1ol.~7C~~K1§.87C~K~~-*M o 
+b) ·~7C~3C~-Tf>( 1~11LiL1Ue~!Fi tiii 600 mm -800 mmo 
+c) 7C~lili&,~1f -1'-~~~ 1K, ~~~ IK~>Jt:f£~ 7C~jg q:s,c,, ~ 
+70°Jfl fl100 I*J o ~~7C~3C~UL~.&.3C~B;f~~~~ !Kff-~:(lll 
+1!1 13 JiJT ff-0 
+d) ~ m * m ~ [l;T-~:@ ~-T , :fE ~tl * ~ * ~ ;f11 * ~ ~ :1e ~ p;q ~ ~ ~ * 
+~ '4ii:~3C~ p;r;j 1'-~~*~' j'tl $:@ ~-T/J loJ .:p ,c,, ~~>tf*3C ~ 0 
+~~7C~~$JL-*~~~*•~~~~~u2 m(~~*•~~ 
+35 
+T/CAMET 04011.3-2018 
+;ttHW~ ~ffii;wiStit1ifHJE) o 
+6. 5 ii~l't!i'~ 
+6. 5. 1 l't!i'~ttfm~* 
+$~{J§l% ffl Jt!.~lili:~if !;..( "'F~*: 
+-Jt!.~-f.Bt'li~~E)zmJJE;fij(i TB/T 1484 i¥.J~)jt; 
+-Jt!.~1t?.d?tf.i~~lili:miJE GB/T 19666-2005 9:t ~* Jt!.~~iftilt~ 
+c ~HJl'.JE ; 
+-It!.~~ ift F.J1 i¥J {~ :® tt: -If~ 1ili: mJ )E G BIT 19666-2005 i¥J j;Jll. JE ( :ii 
+Jj\~7t.$ ;:::,:80%); 
+-Jt!.~5C J8i mtffitt~~E)zmJ )E GB/T 19666-2005 i¥.Jj;Jli.J£ (pH :bD ;{)( 
+1i ;:::,:4. 3, It!.~$::;:; 10) 0 
+6. 5. 2 ft!i'~;(j]~~gc~~* 
+36 ~~i¥.J:I:E~blrn!IJE~P,~ TB/T 3153 i¥.J~)jtfAfr: 
+a) It!. ~ ;fJl J]Jc :ii ;w 9:t tt ft. xt ~ ~:itt fr {!;i!: 1ft , 1r :bD ~ {!;i!: 1ft 7'~ Fzf: ; *-* Iii 
+:ft:fJL$7' ~$~~1¥J~1~P¥~~/GIJ\T 200 mm ,Jtfi!!.~~~~*~~ 
+/Gij\-=f 150 mm0 
+b ) It!. ~ ;fJl ~ B1 , 1ili: ~ :::k ~ .$ It!. H :ffl ~ 5t 7f :ffl it{ , ~ ~ !:i ~11. It!. :ffl ~ 
+¥-~T :IE ~ , :tm : :2 ifoJ It!. ~ , It!. :fJL , 3k ;l:T I'!! ~ o !:i ~11. It!. ;fJl ~ IBJ RE /G 
+MIJ\-=f 200 mm0 
+c ) I'!! ~:IE~ 1ili: ~ 7f f116 W! ~ ~ ~ , 1* iiE It!. ~ EJf ~ :ff ~ W! 1t /G Jffi :tt Jt 
+ft ilf i¥.J IfF ¥1l! 1t o 
+d) It!.~ !:i i&!>~ :ii ~% ~ J§' , WHI!ij ~ J.ili: Jjl 00 ~ ~ -K 1t J§' :fl} :itt ~-T rntl 
+JE , 1£ -T ltf ~ ~H£ ffl1 , llti 11: :ffl ~ Dl: hl :tt %t , 1* iiE 19: 1Hfi: ~ :1f 1£ , 
+~~:ffl~~~bl~n:tt:::kW~~ltf~H~M/G~ o 
+e ) :fJL $ 7'~ $ *-* ~ It!.~ ltf ~ ~ 1ili: * Jlit llti 1.K 1i11 ME o 
+T/CAMET 04011.3-2018 
+A. 1 A ~fiiJ i!M ~ A 
+c ~.mm:tti!M~ ) 
+~$mJJJ~1liJ*¥tt~~ 
+A ?JM :r~ o ;~g~ .±1 f~% , illnw JE -r J£~*: 
+a) ;B:~~iYJitff DC 110 V ~flfr ,:Qi:k~l±\ltYHE 200 rnA; 
+b) * nfJ!~~flif % ,7f/*.fl m~, ~ %!. ttJ 19Jm~:a:nw JE.ffi*.tfi~~ 
+*~ftJ:r ,-m::k 
+A ?l\!}~ D ;lg~A 
+a) fi1trAitYHE 
+b) xt-Tt:Ji~ 
+lt~iYJfF 
+A. 2 B ~fiiJ 
+B ?J,\! t~ D ~.A ~i«~ 
+a) ~ ¥HE It ~l!Jil 
+b) ~A~5HJ$$ 
+A. 3 ~~:ttl Z;1J t~ ~ .bU\'t ~ iM~- ;;;;;.~ 
+-A~Z9Jm~~-~~Z9J~~$·~-A .l~~~>R o·A~Z9J 
+PioJ$~B;f ~00 A. 1 o 
+1¥-% ~~~~ ~~tin~ ~ta 1.l tt 
+liJ 1j iiE (f(J ~ ~-jlj:tj:: flli~iiEB<J :fii;j\ B9 ~ liJ ~ iiE B9 ~ £'.1fiil 
+I 
+iliiJ iJJ llJ£ il!Ut~ ~. ili1J i9J llJ£ ))£ * ' Jtt ~ {Jl1.J i9J~:it*tET~rp 
+3i:3!:ffl~ :il:H'i'~JE 
+:t:E~~.lli'J iJJ M.:lt at~~* 
+2 ~'JI-!)JI~}[Bt .ff::(£ ~ 'll I at, ~ 91 -!)] ~ ,.o. 30 s 
+}[ nt J)Jf ~= at fiiJ 
+37 
+T/CAMET 04011.3-2018 
+ff% 
+3 
+4 
+5 
+38 ~~~ffj; ~~ttal£ ~it[ ~ it 
+~ ~-ili'J Zj/Jjjf :I& JA fl1i% A'd'ft~ ili ~ ~-fllll 
+UtiBJ Zj/Jf.r~iiJ *m1ffi!.11u ~'=<. flllJ ~0. 5 s :llll!¥1 A. l q:> T, 
+Zj/]jJ 10% JYf'ilJDtiBJ 
+~~-flllJZj/Ji(o]Jiii )}.. fl1i% * ~~ :±l ~ fl', fljlj 
+Zj/Jf.r~iiJ $m1Hl!.1 Jn~'=<. flllJ ~l.6s :llll!¥1 A. l q:> T2 BtiBJ f;IJiJ 90% ErrWEltiBJ 
+~~-flll JZj/J~;-5 )}.. ffi% * ~~ ili ~ ~-fljlj )}.. 1¥1 A. I q:> t0 ~ $ 
+&iiJH!5Bt Zj/Jf.r~¥IJ$m&~~~-lli1J ~55 ms m~fl!.it1JZjl]~~m~ 
+Zji]B~tnJ!.i'fJ~Bt ~1ll·7fM.~ ffi ~at lB.! 
+it:* A. I'* A. 2,* A. 3 q:>;fl~!;~~~~;§lirrl£~flj: ::t£ AW0,AW27J<. AW3 
+i$t!IH~I£ r ,{£~ :M'f:l~UJLitLt ,$~1'1*./lJ*€~;5 .~'l $M.:liikiPi :ili1l'l!.OC 
+<:IE~l!JJrt£ 120 km/h JJ<.J;.(r)iiJ~:!f=: o 
+BR 
+BR_full 
+BR_fullx0.9 -------- -------------------; 
+I 
+BR_fu~~~ -----------------/( 
+) T, I 
+f.N·:h~$ll" I" T2 
+to I 
+I 
+I 
+I 
+I 
+I 
+I 
+I 
+I " 
+i~IJi.l : I. W,~ BR M:!f=:m~~JZj/J$,itq:> BRJull ;jlUT-~~.ili'JZj/JTQ:;I@'={.fljljZj/JjJ ; 
+2. ~tiL t 1-J At IBJ , it q:> to 1'1 £It ~ ,gUI!,~ ffi ~at IBJ .~ ; 
+3. 1¥1 r:p ~~ .. ~:il tl ;,.Jtjg~:t! 1¥1 .~~J1j;~ ~ ~.illtl ?;IJitJiJ Zj/J$~ ili illil:'.Jt; 
+4. 1¥fq:>J!i~~~Jg$~ ATP/ATO ia:~~~.flllJf;IJtuliilif.r~ o 
+Ill A. 1 ~~$1JJ;IJPiaJJSiH.l£it1 
+T/CAMET 04011.3-2018 
+A. 4 1j;' J'ij$tji';f)ffi~~tt~ti 
+'lit m~Ji9Jffi.*%'·11:~J:Illim J£ * A. 2 ~rffi~* o ~ :tt::!ii::k~ 51 JJ 
+¥~ :fG: 7c 'ffl' ffl ~J ~ 1¥.1 ~ 1* !Xi. 00 A. 2 , ~ :$}}.. i1f ~T ¥~ :fG: 7c 'lit ffl ~j ~ PloJ $_ Bl IEiJ 
+!MOO A. 3o 
+!¥% 
+I 
+2 
+3 
+3. I 
+3. 2 
+3.3 
+3.4 
+4 :$~~ffl' 
+ATO T:lii:k1it Jflffi!Jz;IJ~if* 
+~$ ·"'!· m ffi!J19J Ej ~ 91 ~11m It 
+~$:/ii:k~ 91 :h ¥JJ:Q:k -m· fflffi!J 
+Z9J B9 ~~at faJ 
+m~:StJJI!~M 
+.M. :It£ :k 1m it Jj[ ~ f~ ¥JJ o B9 at fiiJ 
+:t-tJ z;IJ -* tit )A ~ lJ:I( -tit; ~ ¥1J Z9J fl:: DW. 
+Jmntfiil 
+ffi!J 19J ~ if Jj[ b\ 0 ¥1J :@: * til B9 
+B;j'fii] 
+m $ b\ trH=r ¥JJ :Iii * ·Iii' m ffi!J 19J :tJ 
+n(.!JJ.!!ZHti'BJ 
+:ltl:;;lc~'liJJ 
+: }TI;:i/SIItfil) : .---------. 
+I 
+I 
+I 
+I 
+I 
+I 
+~ii ~m: ~ tl: 
+;;;. I. 0 m/s2 
+,;;0. I m/s2 ATO ~ ffi!J T , ~ $'lit ffl 
+ili-tJ19J Ej ~ 91 :/iil)'~lliil: 
+,;;3. 5 s 
+,;;200 ms 
+,;;J.Ss m-t-ufillil41-T-uw 
+(3. I -3.4H.li~ . A.f*~ 
+,;;0. 3 s .!4!,~ A.2 
+,;;l.Ss 
+,;;J.7s J.l.f*~ .!4!, 00 A. 3 
+111 A. 2 fl$:Ql::k ~sl n 3¥tJ:Ql::km-m mtli';fJB'!J~~ 
+39 
+T/CAMET 04011.3-2018 
+i ~:i/SB;fl'iiJ 
+~------
+' ---­ATOi.lttl:J (:j(jifj!Ji9J1ftr4-tJJ~ 
+~w B;fl'iiJ 
+111 A. 3 !l * J.A 11Hr ~~J ~ * '*' m itlJ M P(o] m 1M' iBJ 
+A. s ~sl :m*!fl}:11~~ 
+~51ifEJ;k~· I1~~1}\ItlijJE~ A. 3 ~Jffi~>R o ~:$h\ffH1·¥1J!i7c~ 
+51 }J B<1 $li ~ Bt IBJ .IJi!. 00 A. 4 , ~ :$ h\ :il 7c 'lit Jfl1M i;b i!J J1i jc ~ 51 iJ !fii ~ Bt IBJ 
+.IJi!.OO A. So 
+ff:% ~~ill* ~{R ~ 71: 
+~$)f.. :ll1t *~51 j] ill.,.~ ~l.7s 1ft ffl ffiil 29J!iX:11H-TT i'!<J~ 517J1lil! 
+I 
+1-T i'!<J ~ 1tHt l'iiJ <0. 2 s 1f ~-ffiiJ Z9JT i'!<J~ 51 -I:JJ iW; 
+~51}[:i8Bti'BJ 
+<0. 2 s JJ...f~%~~'}}:_ :±l ~5 1 m~ill $ 
+~$Jf.. ffH-TiiJ~:k~ 51 m~JJo~51:JJ to% Jfr~strBJ 
+2 
+:fJB<J~~at riiJ ~51~1l:Bti'BJ 
+~l.7s JJ...1~% ~ ~ '}}:_ :±l ~ s 1 m ~ill$ 
+mJ)(fi:tm~ 51 :fJ 100% Jfr\WIHti'iiJ 
+3 ~$)f.. :&1 * 'It ffl ffjij i9J ill 
+~3 . 5 s ~-i*~ J\1. 00 A. 5 
+~:k~sl:fJ~~atriiJ 
+tiil"ffiiJi}fJ-I:]J~~.!t 4 km/h~v~ ti il" ffjij i9J Wl18J (!(_) ffjij z;IJ tt fj-g iliii ~ 4 
+8 km/h ~*~ ± 10% 
+40 
+:bn~ 
+I 
+I 
+I -----~~-~~ ATO:&:ili tt<J:tr,;i3 11'ftr~iJJN< 
+~~ T/CAMET 04011. 3-2018 
+oo A. 4 !l$JJ:~f r~rJ:m::*~sl :tJI¥l~~lf.tfBJ 
+A. 6 $fl~it!J:M:J~~~ 
+$flt£1!JIJ ;tJt.k~~mzmuv& A. 4 ~J.m~>.K o 
+*A. 4 $fl~it!J:M:i~~tt~~* 
+ff.% ~~~f;'j\ ~Ul 4iT tl: 
+I 1f:i'ltJ 7f/~~At filj (3 ± 0. 5) s 1A * f1 Z9J ft * :Mt ill -* n 7'G ~ 
+tJ:lf/~~I¥JB'f fa] 
+2 )A:lfl~i'l :J1i4(-~ tl:\ ii]Jf/~ 
+(17;1JfF7f.!z#~}]EAt 0-3.0 s ~BtfiiJilJ~ 
+41 
+T/CAMET 04011.3-2018 
+~~:X:~ 
+[ 1 J ~$1!.$ili$~t£ilJ! J ~ ~-ftf£i'l&ft:iiHW.m: C ~ 2 it&) 
+42 
+"fl 00 ~ m $JL 11!3( ii FJJ.~ I~Hfi: :tiF 1l 
+·*~-~~ -~~-~~$~ft 
+~$1J ~tft ( CBTC) :S:~:S:il:ti D ni!5ir 
+m-3 :00~ :$f!91J$ ~ fdlf*~? ( ATP)/91J$ ~ 'iifJ 
+~ ~T ( A TO) ~ t1t ..!:3 $ m ~:tiD 
+T/CAMET 04011.3-2018 
+* 
+'P ~~:ill til Jl.HHfi!IH~ liJ til !l.OC >lt fi' 
+< looos4,:ftJ?:miDimx~K:tl'Ji:fliDim 8 ~·> 
+01ilfi'l:!JI:: http://www. tdpress. com 
+:It J¥-iii~ rMP lliHfll& 0 liJ "P jjiiJ 
+**: 880 mm xI 230 mm 1/32 "P*: I. 625 *:fl£: 43 =f 
+2019 fF 5 YJ ~ I Xfi 2019 fF 5 YJ ~ I ~"flljilj 
+45-1:}: 15113.5728 ~-fit : 15.00 jC 
+ll& t.ll PJi' fl" i~HH~, ~ 
+fLJ!J~~mX&m 45 .:!m:fi "'!$1JJ.ilHitJ'iiJR!, mEi*01il>lt~'Tllli~HiiJ.llfk . 
+2tfi''ffl! If! liS,~< 021 )73174. -m < o1o )51873174 

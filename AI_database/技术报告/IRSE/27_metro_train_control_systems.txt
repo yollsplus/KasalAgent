@@ -1,0 +1,647 @@
+12
+Robert Cooke, Mark Glover  
+& Richard RobertsBack to basics:  
+Metro train control  systems
+In this month’s back to basics 
+article, three of the team behind the new IRSE textbook, Metro Train Control Systems, introduce the underpinning principles that make train control for metro railways different to other types of railways. The article looks at some of the unique challenges that engineers working on this type of network face and identifies some of the solutions that tend to be used when current systems are installed or upgraded.
+What is a metro?
+Let’s start by considering what a metro 
+is. Metro railways are also referred to by the generic term ‘mass transit’ and 
+by more local terms such as ‘Tube’ 
+or ‘Subway’. There are often major differences between systems in different 
+parts of the world, but also a set of 
+common challenges and approaches. The textbook explains:
+“Metros differ from other railways in 
+that they carry passengers only and run a more intense train service. They are concentrated in the world’s cities, providing travel both above and below 
+ground for the people who live and 
+work in them, as well as those who visit and commute to them. They range in size from a few kilometres in 
+length, to those such as Tokyo, Beijing 
+or New York that are measured in hundreds of route-kilometres. They move millions of people over relatively short distances, sometimes for twenty-
+four hours per day.
+“To do that successfully, the metro 
+service needs to be reliable and resilient. Rail operations need to be organised, 
+structured and integrated with other 
+transport modes. Densely populated cities cannot function efficiently unless all modes of transport are 
+carefully co-ordinated.”
+What does that mean for the 
+train control system?
+On the face of it, metro signalling sounds 
+simple compared to complex main line areas. The trains tend to move relatively 
+slowly, perhaps up to 80 or 100km/h, 
+they accelerate and brake quickly, and they tend to be of the same type and configuration (but not always!). That 
+means they have the same, or at least 
+very similar, characteristics in terms of acceleration, braking and top speed, the variables that most significantly influence design. There are no slow-moving 
+freight trains to worry about, the railway 
+Metros can be very varied in the way they look, the way they operate and the solutions adopted. 
+From left to right, Beijing, Moscow and New York.
+Photos Shutterstock/Markus Mainka/Volkova Natalia/Oneinchpunch.
+ IRSE News |  Issue 296  |  February 2023
+13
+is nearly always operated as a fully 
+vertically integrated business, there are few points, crossings and complicated 
+junctions and there tend not to be 
+connections to neighbouring railways.
+However, a metro train will typically 
+carry several hundred people, often 
+up to 1000, crushed together in peak periods, at headways as low as 90s with dwell times of 45s at busy interchange stations through constrained 
+infrastructure and crowded stations. 
+Many lines will be moving between 20 000 and 50 000 people per hour per direction. Managing that many 
+people, often in confined spaces, poses 
+particular challenges, some of which we will discuss in this article.
+It's true that the physics of trains are 
+the same whether you’re moving at 
+80km/h, 100km/h, 200km/h or even at 500km/h. Newton’s laws apply however, the parameters can differ, 
+whether that's train resistance, motoring 
+or braking acceleration or adhesion, or a combination of these. This leads to metros offering a different challenge to other railway systems.
+So, all metro systems face the 
+same challenges?
+Whilst most metros face the challenges 
+of moving large numbers of people safely through urban areas, several 
+factors vary from city to city. Although 
+in some cases, for example in China where there is rapid development of new urban railways, there can be a relatively 
+similar approach for new-build city 
+railways, that is not the case for most railways worldwide. Some metro systems have been operating for a very long time, for 
+example London where parts of the 
+Metropolitan line have followed the same route since the 1860s. Paris Metro began operation in 1900 and New York Subway in 1904. Clearly there have 
+been multiple upgrades on each railway 
+over the century, but culture, historical approaches and unique solutions to engineering problems have posed 
+problems ever since. In many well-
+established cities, it is not straightforward to dig new tunnels through existing congested sub-surface areas, as demonstrated by the recent Crossrail 
+project in London.
+One challenge comes from the 
+infrastructure that current railway 
+engineers have inherited. There are parts 
+of the London Underground network where there are no station overruns at all, with trains having to stop safely immediately in front of an immoveable 
+object such as a station concourse 
+or even a redundant tunnel boring shield. Maintaining high performance running whilst ensuring that overruns that may cause significant human and 
+material damage cannot occur is a 
+significant challenge.
+Whilst some metros operate entirely 
+end-to-end within busy urban areas, 
+others run multiple lines from different suburbs through common central sections. One example of this is the Oslo T-bane where there is a high capacity, 
+low headway central section, served by 
+trains running in from the outskirts of the city. Finding a viable solution that allows economic fitment and efficient 
+operation on a railway where there is 
+a 15-minute headway in places, but a two-minute headway in others requires detailed systems engineering.
+Metros are complex systems of systems needing a range of solutions and interconnections. However when a railway is 
+over 100 years old the challenges multiply. This photo shows cabling old and new and ancient disconnection boxes on 
+London's Underground. Photo Pixabay/JLenio.
+Holmenkollen station on Oslo Metro. Whilst service on this line is typically one train per 
+direction every 15 minutes, trains on this route soon join the common central section with 
+headways around two minutes. This station is also designed to handle extremely high 
+passenger demand during winter sporting events. Photo Shutterstock/Markus Mainka.>>>
+ IRSE News |  Issue 296  |  February 2023
+14
+Some of the busiest mass transit systems 
+in the world can be found in areas where there are monsoon downfalls at varying 
+intervals. One example is Singapore’s 
+Mass Rapid Transit (MRT) system which has sections both in tunnel and on viaducts. 
+Ensuring that adhesion is adequate 
+to run at close train intervals in these exposed areas requires a clear understanding of the odometry used on 
+the train to determine current speed and 
+location and dynamic reduction of brake rates when low adhesion conditions are detected with rain detectors at stations. 
+There are many other examples of 
+railways that must deal with extreme weather conditions, be it extreme heat (for example Riyadh) or passing typhoons (for example Hong Kong 
+or Taiwan), where the forces exerted 
+by high winds can impact braking distances. Extreme weather has other impacts, such as forces on PSD (Platform 
+Screen Doors), and trains which have 
+to be considered for the platform-train gap, this can also be an outcome with tunnel ventilation forces if they are not considered correctly during design.
+Do all metros have full train 
+control systems?
+Nearly all metros have full 
+signalling systems. 
+The vast majority also have at least 
+a simple form of Automatic Train Protection (ATP), based on the use of mechanical or electronic trainstops that 
+can cause a train to apply its brakes 
+should it pass beyond a safe location. These are linked directly to trackside signals, and the design of the railway provides an overlap beyond each 
+signal, the length of which is designed 
+to emergency brake a train to rest within the overlap distance to prevent collisions with other trains/buffer stops 
+or derailments at points. Where close 
+stopping to buffer stops or trains is required speed control of the train on the approach is supervised by the ATP to reduce the required overlap distance. 
+Since the 1960s metro railways have 
+invested in technology to allow performance to be increased whilst 
+maintaining safety. The provision of ATP 
+has been combined with Automatic Train Operation (ATO) in many cases, allowing trains to be driven by on-board systems. This automation has allowed trains to 
+be driven very close to the safe limits 
+protected by the ATP, allowing optimum use of the capacity permitted by the infrastructure to be achieved.
+From the 1990s onwards the state 
+of technology had reached a point at which the first Communications-Based Train Control (CBTC) systems 
+could be introduced. Commonplace 
+for new-build metro projects and upgrades, CBTC systems continuously update the position and speed of 
+each train to determine the safe 
+speed and distance at which they can travel at every point along the line to ensure the safe separation of trains. The communications medium of the 
+earlier systems was typically inductive 
+loop systems in the track, but today’s systems are typically based on radio communication. CBTC’s ability to 
+provide constant updates not only allows trains to run closer together but also 
+enhanced control of the running profile 
+of each train and optimises the collective 
+behaviour of the service. 
+The efficient operation of a metro is 
+dependent on the provision of a highly 
+functional control centre system. Automation within these centres has again developed rapidly in recent decades, and these systems have 
+been referred to as Automatic Train 
+Supervision (ATS) since the 1960s, recognising the way that technology either enacts decisions or advises staff of 
+the optimum choice that can be made. 
+What is Automatic Train 
+Supervision?
+A modern metro cannot function 
+effectively without ATS. As well as managing the signalling and train 
+control systems, the ATS will typically 
+have interfaces to other systems such as those for passenger information, maintenance management, Supervisory 
+Control and Data Acquisition (SCADA) 
+systems that control the traction power and station equipment, and now emerging as a requirement the Rail Enterprise Asset Management Systems 
+(REAMS) used to optimise maintenance 
+and asset replacement. With trains being automatically driven, the station to station run times are more predictable 
+than when driven by human operators 
+that have individual driving styles. With predictable and adjustable inter-station run-times the Automatic Train Regulation (ATR) function of the ATS can 
+regulate the service to maintain/restore 
+the timetable or desired headway.
+Singapore's new NSEW lines control centre, home to high-performance  
+ATS and SCADA systems.
+ IRSE News |  Issue 296  |  February 2023
+15
+Is there an ETCS/CTCS type 
+system for metros?
+The lack of requirements for 
+interoperability between metro railways, the variations between them, the way 
+in which they have evolved and the 
+fact that a limited number of train types operate on them has led to no common global standard being adopted 
+to date. The current situation is that a 
+small number of suppliers have created proprietary systems which most new or updated systems are based on with new line or upgraded line projects usually 
+having a single system supplier. 
+In most cases modifications are made 
+to tailor the basic systems to the needs of the cities they are being delivered to. 
+It is generally the case that the supplier 
+of trackside equipment will also provide the onboard equipment necessary for ATP and ATO functionality, even if the 
+trains themselves are not manufactured 
+by them. This affects the procurement strategy for many authorities as they must decide to have a common system, 
+a few preferred suppliers or a complete 
+free market approach which could result in all lines having different systems (even from the same suppliers) and the long-term maintenance and obsolescence 
+issues these create.
+Common standards like ETCS bring 
+commercial advantages to railway 
+authorities, in particular the ability to 
+be able to make comparisons between multiple suppliers when purchasing, and to be confident that if extensions or replacements are required, they can – at 
+least to some extent – be procured from 
+competing companies. The detailed definition of the air gap interface means that onboard equipment from one company can be expected (guaranteed?) to function properly with trackside 
+equipment from other companies. 
+Whilst initiatives such as the Urban 
+Guided Transport Management System 
+(UGTMS) specification and IEEE 
+1474 series before that, have sought to make something approaching a standard, the greatest progress towards standardisation has been driven by some 
+of the railways that are large enough 
+to require it in their procurement processes. In Paris the Ouragan project and on New York Metro the Canarsie 
+line project have aimed to create 
+environments in which more than one supplier can deliver current and future systems based on common interfaces, but these are based on the specific 
+needs of those cities. Other cities have 
+ended up with de facto standards, for example on the London Underground one supplier has provided systems for 
+all except one of the new railways or 
+line upgrades of the past twenty years, despite competitive tendering.
+What else is different  
+about metros?
+There are a wide range of interfaces 
+that metro train control systems must deal with that main line railways 
+typically don’t. 
+On the trackside these can be as diverse 
+as interlocking to flood gates or bomb 
+blast doors that block tracks, they can 
+also include detectors to ensure that big trains can’t be sent down small tunnels or a wide range of protection devices to allow track access for maintenance. For new underground metro systems, 
+the ATS system regulates the number of 
+trains permitted in a ventilation section to ensure smoke control strategies can move smoke away from passengers in the event of a fire. This is supported 
+by the ATS providing train location 
+information to the ventilation system SCADA so that the best ventilation and evacuation strategies can be presented 
+to the operator. The ATS also manages 
+train movements and authorities to react to fire detection, for example holding trains that have reported a potential fire on board at the next platform to facilitate 
+evacuation and not dispatching trains 
+towards fire incidents.
+One of the most common systems 
+that metro signalling systems have 
+to interface with are Platform Screen Doors (PSDs) which provide positive segregation between trains and passengers within stations. These 
+are used for environmental reasons, 
+ensuring that station systems operate efficiently without trying to air condition tunnels, and for safety, allowing trains 
+to enter stations at full line speed, 
+if braking distances allow, whilst keeping passengers away from the track. Dwell times can be managed efficiently, providing another piece in 
+the jigsaw of ensuring the delivery of the 
+highest capacity.
+PSDs have to interface with train and 
+trackside equipment, ensuring that 
+both train doors and PSD operation is synchronised to reduce the entrapment risk of passengers between the train and PSDs. There are various failure 
+modes that need to be dealt with which 
+increase the complexity of the interface. 
+One of the most common systems that metro signalling systems have to interface with are 
+Platform Screen Doors (PSDs). These half-height units are in Singapore.
+>>>
+ IRSE News |  Issue 296  |  February 2023
+16
+What does a typical metro 
+signalling and train control system look like?
+This section describes the typical 
+architecture and subsystems of a CBTC metro train control system, as shown in 
+the simplified block diagram in Figure 1. 
+There are subtle differences between systems from different suppliers as delivered to different cities, but the basic 
+functions remain the same, although 
+in some cases they are delivered by different subsystems.
+As in most signalling systems for any 
+type of railway the heart of the system 
+is one or more interlockings, or devices performing interlocking functionality. The interlocking may be combined with 
+the ATP into a zone controller or work 
+with a separate ATP system. Unlike main line systems that have equipment rooms and remote line side cabinets metros have restricted space in tunnels and with 
+ATO provide a high-risk environment 
+for maintainers so active trackside equipment is kept to a minimum. Metros can have a range of architectures with 
+the most common being centralised or 
+sectorised with sectors of two to three stations which minimises the impact of a sector failure.
+The interlocking subsystem is 
+responsible for the safe routing of trains to prevent collisions or derailments at junctions and for preventing trains from 
+travelling in opposing directions on the same section of track. Interlockings 
+are directly responsible for the safe 
+operation of trains and so must be 
+designed to Safety Integrity Level (SIL) 4. The interlockings react to commands from the ATS system to ensure that 
+trains are routed in accordance with 
+the timetable. 
+Metro railways tend not to need so 
+many trackside signals, especially for 
+GoA3/4 systems where there is no train 
+driver at the front of the train, instead they relay all necessary movement authority information directly to 
+onboard computers, or to the cab if 
+there is a driver.
+The ATP subsystem determines the 
+limit of movement authority for each 
+train, which determines where the 
+train is permitted to travel, based on the routes set by the interlocking and the position of trains within the route. 
+The ATP determines the position of all 
+trains using train position reports and/or interlocking train detection status. How this is done varies greatly from system to system. ATP subsystems also supervise 
+train movements and ensure that they 
+only occur on authorised routes, in the correct direction and within the limits of the movement authority. The 
+ATP supervises the safety of all train 
+movements whether train control is from the ATO or the train operator, and as a result the ATP is also designed to SIL 4. ATP equipment is situated trackside 
+and on the train.ATO is the subsystem that drives the train 
+between stations within the constraints 
+established by the ATP subsystem. 
+The functionality of the ATO will vary depending on the grade of automation – if the railway is fully automated the ATO 
+will need to replace all the functions of 
+the driver in normal operation, degraded, emergency and fault modes. Actions are either automated or remotely controlled from the control centre. The 
+ATO replaces the train operator but 
+one of the goals for automated systems is to eliminate the errors that humans introduce, so the ATO subsystem is 
+typically defined as a SIL 2 system. 
+Allocation of SIL to the subsystems has varying approaches, in that respect metros are no different to other railways, a balance is struck following 
+the requirements and guidance from 
+governing standards, but that outcome is not identical for what may appear to be the same system function.
+ATP systems need to know both where 
+the train is, and how fast it is moving, to a high degree of accuracy all the time. CBTC solutions are moving block 
+systems where the available block length 
+to the train ahead or other obstruction determines the maximum speed a train can travel and as the train ahead moves 
+so does the available block. This means 
+that safe operation is entirely dependent upon having this information available all the time so the decision not to apply the emergency brakes can be made. 
+This is typically achieved by combining 
+Beacon
+Speed 
+SensorsRadio
+Event 
+RecorderBeacon 
+ReaderSignalPoint Switch
+PSD
+SCTATPCBIPSDC
+Local ATS 
+System
+Emergency Vital 
+Signalling 
+Control PanelCentral ATS 
+SystemEmergency 
+Stop Plunger 
+Overview 
+Display of 
+RailwayStaff 
+Protection
+Key Switch
+Radio Antenna
+SCTsRadioKey:
+ATP Automatic Train Protection System
+ATO Automatic Train Operation System
+ATS Automatic Train Supervision System
+CBI Computer Based Interlocking System
+PSD Platform Screen Doors
+PSDC Platform Screen Doors Controller
+SCT Signalling Control Terminal
+TDMS Train Data Management System
+RadioFigure 1 – Simplified block diagram of a typical metro train control system.
+ IRSE News |  Issue 296  |  February 2023
+17
+information from multiple systems 
+such as a tachogenerator or speed probe determining how many times a 
+wheel has rotated, a doppler radar or 
+accelerometer to allow adjustments based on wheel slip or slide or changing wheel size, and absolute position 
+references based on trackside beacons 
+which are read by the train as it passes over them to assure location.
+For modern CBTC systems there 
+will be additional functionality that 
+could be included as part of the ATO subsystem or by the provision of an additional processor unit. The Train Data 
+Management System (TDMS) provides 
+an interface between the signalling and train systems for functions that support train operation but are not directly involved with the train driving. This 
+is especially true for fully automated 
+trains that need to be told to ‘wake’ or ‘sleep’, configured for the correct mode of operation such as heating, 
+air conditioning, lighting controls, 
+closing dampers for train washing and the co-ordination of isolated doors for PSD operation.
+Communication between the trackside 
+and onboard systems is established over a trackside radio system providing a highly reliable link over which high 
+integrity data can be transferred. 
+There is a range of ways of making this happen, for example using highly directional antennas or ‘leaky feeder’ cables in tunnels or more conventional 
+base stations in open air areas. Many 
+systems use Wi-Fi in the ISM (Industrial, Scientific and Medical) bands but can also use 4G/5G, with cities in China mandating 4G as it is deemed less prone to interference. With IP based communications between sub-systems 
+the CBTC can effectively be bearer 
+agnostic if the required bandwidth and availability requirements can be met.
+The ATS subsystem is responsible for the 
+overall line control function, presenting the status of the railway to the operators, controlling trains and providing the operators with tools to both configure 
+the timetable and the ability to intervene 
+when the service deviates beyond the recovery capability of the ATS subsystem.
+Grades of automation
+As technology develops the level of automation of metros is rapidly increasing. The level of automation 
+is generally measured by a railway’s 
+Grade of Automation or GoA as illustrated in Figure 2. 
+GoA2 railways retain a train operator in 
+the cab but use computer systems to 
+drive the train from location to location. ATP is required. In the event of ATO failure the driver can operate the train. 
+An example would be the Central line 
+of London Underground. GoA2 systems form most metro train control systems currently in service around the world.
+GoA3 railways no longer need a full-time 
+operator in the cab. Whilst there is still someone on the train who can operate it in the event of system failure, the train’s 
+systems are entirely responsible for the 
+operation of the train. The operator is freed up for passenger interaction. An example would be the Docklands Light 
+Railway in London.Finally, GoA4 railways need no-one 
+on the train. They have sufficient 
+automation to fully manage the 
+opening and closing of doors, making the decision to start, and dealing with the majority of failures that can occur. An example would be Line 14 of 
+the Paris Metro.
+GoA3 and GoA4 systems need to be 
+designed with appropriate obstruction 
+detection and mitigation – there isn’t 
+an operator looking out of the front window to identify that the train is likely to hit, or has hit, an obstruction. This is straightforward for tunnels, but not so 
+simple for metros operating at grade 
+or on viaducts.
+GoA4 railways require detailed systems 
+engineering to establish and mitigate 
+the risks associated with not having an operator. This may involve the use of PSDs to manage the platform interface, or having enhanced communication 
+systems to allow control centre 
+operators to talk directly to passengers when issues arise.
+Some key requirements are redundancy 
+of equipment to prevent stalled trains, critical alarm reporting from train to the control centre and passenger-initiated safe evacuation in tunnels. These are 
+generally specific to individual metros.
+It’s all about  
+system engineering
+The systems are typically well contained 
+and there are rarely challenges like level crossings (although some metros 
+do have them) or frequent trespass 
+incidents, however this is balanced Grade of 
+automationType of train operationSetting the train 
+in motionStopping
+the trainDoor
+closureOperation in 
+the event of 
+disruption
+4 Unattended Train Operation (UTO) Automatic Automatic Automatic Automatic
+1ATP and Train Operator,
+Non-automated Train Operation 
+(NTO)Driver Driver Driver Driver
+2ATP, ATO and Train Operator,
+Semi Automatic Train Operation (STO)Automatic Driver Driver
+3Attended, Driverless Train 
+Operation (DTO)Automatic AutomaticT
+rain
+Attendant
+0Operator only, 
+On-sight Train Operation (TOS)Driver Driver Driver Driver
+Automatic
+Train
+AttendantFigure 2 – Grades of automation and the differences between them.
+>>>
+ IRSE News |  Issue 296  |  February 2023
+18
+against the fact that metros are 
+complex systems of systems. Each subsystem, for example ATP or ATO, 
+are complex systems in their own right, 
+but the overall solution involves myriad interfaces and interactions which need to be fully understood and managed 
+if overall requirements, including 
+safety and capacity, are to be met and proven to be met.
+Systems engineering underpins the 
+successful deployment of most metro 
+signalling and train control projects, with the ‘V’ lifecycle clearly and accurately implemented throughout.
+Reliability, Availability, Maintainability 
+and Safety (RAMS) are evaluated in detail throughout metro projects (as explained in the article by Boyd 
+McKillican in IRSE News January 2022, 
+irse info/irsenews295). Reliability and maintainability directly drive availability (how much of the time the railway is 
+available for service being based on how 
+often individual parts go wrong and how long they take to fix), and safety in turn depends on the system operating as planned. With any mass transit system 
+operating at high passenger loads, a 
+stopped train can in itself be dangerous, particularly if traction power has to be removed and air conditioning/ventilation 
+is no longer operative. SIL levels of the 
+overall system need to be apportioned to subsystems to ensure the rate at which unsafe conditions could occur are clearly understood and managed. 
+In the same way the impact of failure 
+modes and their criticality needs to be established throughout the engineering phases of projects in order to ensure that 
+the required levels are met, not just on 
+opening day but throughout the service life which can typically be 20 to 25 years.
+Modern metros are designed to deal 
+with such incidents and the CBTC 
+technology is considered when planning the line in terms of overruns and optimising safety and performance. Old systems are generally more of an ALARP (As Low as Reasonably Practicable) 
+approach to get as safe as possible 
+given the constraints. The term ALARP is subtlety different to SFAIRP (So Far As Is Reasonably Practical), ALARP 
+and SFAIRP both have the concept of 
+implementing hazard controls if practical and not grossly disproportionate to the benefit, however ALARP is presented as having a threshold, SFAIRP does not and 
+forces evidence that possible, realistic 
+and relevant hazard controls have been considered and included, unless they are grossly disproportionate to the benefit.
+Computer simulation is widely used to 
+ensure that the equipment provided delivers the performance necessary. This is the only realistic approach for 
+CBTC systems to determine where the 
+pinch points are as traditional signal to signal type headway calculations are not applicable when multiple trains 
+can enter a route. This has been a 
+science developed since the 1980s and is depended upon by railway authorities and suppliers alike now. For more information about how this 
+works see the article on the topic 
+in the May 2022 issue of IRSE News (irse.info/irsenews288).
+System integration is also essential if 
+multiple systems are to be brought together smoothly and all interfaces proven before delivering solutions on the railway. A strong example of this is 
+the integration carried out for London’s 
+Crossrail over the past couple of years. Full emulation, and later target hardware, of the three signalling solutions and two 
+ATP solutions on the line were integrated 
+in the lab with train carried systems and PSD control equipment to significantly de-risk the hugely complex project. Other railways take similar approaches, 
+for example Singapore’s LTA mandates 
+the use of offsite test track testing as well as building an integrated test track centre in Singapore, Melbourne has an Integrated Test lab (ITL). Test tracks are essential for modern complex CBTC 
+systems to ensure that the signalling 
+equipment is fully integrated and tested for all trains before delivery to the customer.
+Delivering metro signalling and 
+train control systems
+In metro railways we refer to ‘greenfield’ 
+and ‘brownfield’ sites. Greenfield systems are provided to new railways that are not 
+currently in operation. These projects 
+generally involve extended tested and trial operation phases during which the systems that were proved in the off-site 
+integration phase are proved to operate 
+as expected in real life situations. Whilst not straightforward for complex modern railways, this has the advantage of not impacting passenger services. This 
+may require an additional temporary 
+control centre to deal with the migration as a line will typically open in stages. Great care has to be taken during the 
+migration testing to ensure that the 
+stages under test do not affect those already in service.
+Brownfield systems are upgrades 
+of existing railways. In some (rare) 
+cases it is possible to shut down the railway completely and carry out the engineering in the same way as for a 
+greenfield site. However, reality is that 
+if there is a business case to upgrade 
+an existing railway it is likely to be an important transport artery, and closing 
+it is not likely to be viable. Upgrades 
+therefore often involve complex migration from old to new systems using ‘overlay’ or ‘underlay’ approaches 
+that allow both old and new systems 
+to co-exist for some time. This can be hugely complex in terms of managing train fleets, especially if the rolling stock is not being replaced at the time 
+of the upgrade. There is rarely enough 
+space on a train for two types of ATP/
+London's Crossrail project, now operating as the Elizabeth line, made extensive use of integration 
+facilities to enable the introduction of CBTC operation in a highly complex configuration.
+ IRSE News |  Issue 296  |  February 2023
+19
+ATO equipment and their associated 
+peripherals, and interfacing two systems 
+to one train can be challenging. Space has to be found – or created – for 
+example, under seats or in cubicles 
+added in passenger carriages.
+Migration in this manner can 
+often take many years for any 
+appreciable size of metro.
+Maintaining metro signalling 
+and train control systems
+Keeping a metro system operational 
+once it has been installed can also offer challenges. In most cases the foremost 
+amongst these will be getting access 
+to trackside equipment to carry out maintenance. Many city railways operate for 24 hours a day, most only have brief 
+shutdowns of four to five hours per 
+night. The time available for safe access is then further limited by the need to remove traction current and prove the railway safe – and the time necessary 
+to ensure that after the work has been 
+carried out, all plant and staff have safely left the railway. A few railways (e.g. parts of the New York Subway) have multiple 
+lines which allow trains to keep running 
+at a reduced level whilst work is being carried out, others support bidirectional working which fulfils the same function.
+Obsolescence can also introduce further 
+challenges. Metro signalling and train control solutions tend to be towards the higher technology end of the spectrum, 
+largely due to the need to provide high-
+capacity operation through the use of innovative techniques. The railways also tend to be early adopters of new ideas, for example some of the earliest 
+uses of high integrity processor-based 
+safety systems were on metros. Over the service life of a system (typically 20 years or more), this means supporting those 
+technologies can require skills and tools 
+that become harder to source. 
+As an example of this many systems 
+from the 1980s and 1990s made the use 
+of microprocessors designed to support 
+digital signal processing in a highly efficient way. As the decades passed and standard devices became powerful 
+enough to remove the advantages 
+of using special purpose chips, the knowledge of the programming languages and assembler code used to develop the original solutions faded, and 
+emulators, compilers and test software 
+became harder to source. In some cases, railways have even bought the rights to the masks for the processors in order 
+to mitigate the risk of unavailability of 
+key components.With the high development costs of new products suppliers are now starting to use generic hardware that can be configured for either main line 
+or metro use, thus providing a larger 
+user base which makes obsolescence management more cost effective with a smaller range of products.
+People and skills
+Whilst many of the skills necessary for metro signalling and train control are the same as on main line railways, 
+the experience gained of delivering a 
+particular type of system or meeting the needs of a particular railway can be hard to gain and maintain. There tends 
+to be a migration around the world as 
+those people with that specific metro knowledge are encouraged to move from city to city as major innovative projects are undertaken.
+With processor-based systems it is much 
+harder for authorities to fully understand the technology they are buying unless 
+they set up their own labs such as RATP 
+in Paris. Thus, the skills that could be gained by working on older relay-based systems are harder to obtain when accepting black box type systems with 
+proprietary software. As an industry we 
+need to ensure we are supporting the development of those skills and the underpinning knowledge for the decades 
+to come. The importance of systems 
+engineering, RAMS analysis, simulation and integration cannot be overstated, and the understanding of the particular needs of urban railways is important. 
+Summary – and to find  
+out more
+In summary metro railways tend to have 
+some common characteristics, but since they do not need to interoperate and 
+some have been operating for over 100 
+years, they have tended to evolve in isolation from one another. The result of this is a situation in which proprietary train control systems are procured and 
+altered to meet the specific needs and 
+expectations of different railways, and standardisation is limited.
+There are many common elements to 
+most solutions, and nearly all modern systems are based on CBTC technology with varying grades of automation. Development is rapid, particularly in 
+Asia, with high rates of investment 
+in sustainable, highly reliable, high-capacity public transport systems. Many of the skills necessary for deployment 
+of these systems are common with all 
+other types of railway engineering, but there are specific requirements around some techniques.
+This is a fascinating and complex area of 
+our industry, and one in which there is significant growth 
+and opportunity. For more 
+information the IRSE Metro Train 
+Control Systems textbook is a unique body 
+of knowledge. 
+Written by many of the best engineers 
+in this field 
+worldwide and with contributions from railways across the planet, the textbook goes into detail about many of the 
+subsystems and processes necessary for 
+smooth deployment. It uses hundreds of illustrations, comprehensive case studies and introductions to several of 
+the proprietary systems in use today. To 
+order your copy visit irse.org/store
+About the authors
+Robert, Mark and Richard are all chartered engineers and have over 100 years' experience in metro signalling 
+and train control between them! 
+Robert worked for London Underground 
+and Westinghouse Rail Systems in the 
+UK before moving to Singapore. Rob 
+is currently the deputy chief specialist (signalling) at the Land Transport Authority in Singapore, a member of the IRSE Council and the IRSE International 
+Technical Committee. 
+Mark has a background in metro 
+signalling and train control, and 
+experience in a wide range of mass transit and main line projects 
+worldwide. He has been production manager of IRSE News since 2014, 
+and is currently head of marketing and 
+strategy support, Rail Infrastructure at Siemens Mobility in the UK.
+Richard specialises in systems 
+engineering for railway signalling in mass transit applications. He worked for Westinghouse Signals Limited, which became Invensys Rail and then Siemens 
+Rail Automation, before moving to 
+technology delivery in the operational domain with Metro Trains Melbourne as system architect for the Metro 
+Tunnel Project.
+Metro Train Control  
+Systems
+Metro Train Control SystemsMetro Train Control Systems is an essential reference and guide for the railway 
+engineer seeking to understand the challenges to be met in developing signalling and train control systems for metro, or mass transit, railways. Metros are the lifeblood of modern cities and are essential to their economic growth. That growth demands ever-increasing train service levels of up to 36 trains per hour or beyond, with levels of automation to support such high reliability, from the attended to  the unattended, or driverless, train control system. 
+This book, authored by a team of train control experts from across the world, 
+aims to give the reader an understanding of metro railways. It outlines in detail the principles and applications of modern metro signalling, transitioning to  ‘moving block’ techniques and bringing the integrated Train Control System into focus. The design development is explained together with simulation techniques to optimise the train service frequency. The book makes extensive use of diagrams and photographs to bring the words to life and contains detailed presentations provided by the major signalling suppliers describing their own technical solutions. 
+In this area of rapid development, Communications-Based Train Control (CBTC) 
+systems vary between suppliers to provide solutions tailored to meet operators’ specific needs in the metro environment. This is in contrast to the interoperable European Rail Traffic Management System (ERTMS) specifications employed on main line operations, but there are nevertheless many commonalities that all modern train control or railway engineers need to consider in their roles. The book concludes with case studies from major transit authorities across the world.
+Metro Train Control Systems is both a textbook and a reference book, making it an 
+essential element of the knowledge library for the metro railway engineer.
+The Institution of Railway Signal Engineers 
+is the professional institution for all those engaged in or associated with railway signalling and telecommunications, train control, traffic management and allied professions.
+Find out more at www.irse.org
+Metro Train Control  
+Systems
+Metro Train Control SystemsMetro Train Control Systems is an essential reference and guide for the railway 
+engineer seeking to understand the challenges to be met in developing signalling and train control systems for metro, or mass transit, railways. Metros are the lifeblood of modern cities and are essential to their economic growth. That growth demands ever-increasing train service levels of up to 36 trains per hour or beyond, with levels of automation to support such high reliability, from the attended to  the unattended, or driverless, train control system. 
+This book, authored by a team of train control experts from across the world, 
+aims to give the reader an understanding of metro railways. It outlines in detail the principles and applications of modern metro signalling, transitioning to  ‘moving block’ techniques and bringing the integrated Train Control System into focus. The design development is explained together with simulation techniques to optimise the train service frequency. The book makes extensive use of diagrams and photographs to bring the words to life and contains detailed presentations provided by the major signalling suppliers describing their own technical solutions. 
+In this area of rapid development, Communications-Based Train Control (CBTC) 
+systems vary between suppliers to provide solutions tailored to meet operators’ specific needs in the metro environment. This is in contrast to the interoperable European Rail Traffic Management System (ERTMS) specifications employed on main line operations, but there are nevertheless many commonalities that all modern train control or railway engineers need to consider in their roles. The book concludes with case studies from major transit authorities across the world.
+Metro Train Control Systems is both a textbook and a reference book, making it an 
+essential element of the knowledge library for the metro railway engineer.
+The Institution of Railway Signal Engineers 
+is the professional institution for all those engaged in or associated with railway signalling and telecommunications, train control, traffic management and allied professions.
+Find out more at www.irse.org
+Metro Train Control  
+Systems
+Metro Train Control SystemsMetro Train Control Systems is an essential reference and guide for the railway 
+engineer seeking to understand the challenges to be met in developing signalling and train control systems for metro, or mass transit, railways. Metros are the lifeblood of modern cities and are essential to their economic growth. That growth demands ever-increasing train service levels of up to 36 trains per hour or beyond, with levels of automation to support such high reliability, from the attended to  the unattended, or driverless, train control system. 
+This book, authored by a team of train control experts from across the world, 
+aims to give the reader an understanding of metro railways. It outlines in detail the principles and applications of modern metro signalling, transitioning to  ‘moving block’ techniques and bringing the integrated Train Control System into focus. The design development is explained together with simulation techniques to optimise the train service frequency. The book makes extensive use of diagrams and photographs to bring the words to life and contains detailed presentations provided by the major signalling suppliers describing their own technical solutions. 
+In this area of rapid development, Communications-Based Train Control (CBTC) 
+systems vary between suppliers to provide solutions tailored to meet operators’ specific needs in the metro environment. This is in contrast to the interoperable European Rail Traffic Management System (ERTMS) specifications employed on main line operations, but there are nevertheless many commonalities that all modern train control or railway engineers need to consider in their roles. The book concludes with case studies from major transit authorities across the world.
+Metro Train Control Systems is both a textbook and a reference book, making it an 
+essential element of the knowledge library for the metro railway engineer.
+The Institution of Railway Signal Engineers 
+is the professional institution for all those engaged in or associated with railway signalling and telecommunications, train control, traffic management and allied professions.
+Find out more at www.irse.org
+Metro Train Control  
+SystemsMetro Train Control Systems
+Metro Train Control Systems is an essential reference and guide for the railway 
+engineer seeking to understand the challenges to be met in developing signalling and train control systems for metro, or mass transit, railways. Metros are the lifeblood of modern cities and are essential to their economic growth. That growth demands ever-increasing train service levels of up to 36 trains per hour or beyond, with levels of automation to support such high reliability, from the attended to  the unattended, or driverless, train control system. 
+This book, authored by a team of train control experts from across the world, 
+aims to give the reader an understanding of metro railways. It outlines in detail the principles and applications of modern metro signalling, transitioning to  ‘moving block’ techniques and bringing the integrated Train Control System into focus. The design development is explained together with simulation techniques to optimise the train service frequency. The book makes extensive use of diagrams and photographs to bring the words to life and contains detailed presentations provided by the major signalling suppliers describing their own technical solutions. 
+In this area of rapid development, Communications-Based Train Control (CBTC) 
+systems vary between suppliers to provide solutions tailored to meet operators’ specific needs in the metro environment. This is in contrast to the interoperable European Rail Traffic Management System (ERTMS) specifications employed on main line operations, but there are nevertheless many commonalities that all modern train control or railway engineers need to consider in their roles. The book concludes with case studies from major transit authorities across the world.
+Metro Train Control Systems is both a textbook and a reference book, making it an 
+essential element of the knowledge library for the metro railway engineer.
+The Institution of Railway Signal Engineers 
+is the professional institution for all those engaged in or associated with railway signalling and telecommunications, train control, traffic management and allied professions.
+Find out more at www.irse.org///

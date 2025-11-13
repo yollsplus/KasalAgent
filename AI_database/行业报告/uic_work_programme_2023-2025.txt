@@ -1,0 +1,1130 @@
+UIC 
+WORK 
+PROGRAMME 
+2023/hyphen.case2025
+UIC  
+WORK 
+PROGRAMME  
+2023-2025
+4
+INTRODUCTION BY  
+KRZYSZTOF MAMIŃSKI,  UIC CHAIRMAN
+However, we also need to show the potential of rail 
+ready to compete with other modes of transport. 
+There is a lot of work ahead of us to release full 
+railway potential. We need to improve our cost effectiveness through digitalisation and innovation, resolve problems with interoperability and capacity constraints, and most of all we need to invest in modern infrastructure and rolling stock. 
+Rail must play a leading role in the decarbonisation 
+of transport sector at global and regional scale. It’s the most and the only sustainable mass transport that is currently ready to address our climate related challenges effectively. Therefore, it needs to be placed right at the heart of development of future mobility and global logistics chains. 
+In order to make it happen, the railway community 
+needs to intensify its efforts to further promote the clear advantages of rail through public discourse and make it more attractive and competitive in both the eyes of present and potential users as well as all decision-makers. 
+We want more people to travel by train, more 
+companies to move their goods by rail and more people to consider a career in the industry. 
+“THE NEEDS OF THE 
+REGION’S MEMBERS [...] REMAIN MY ABSOLUTE PRIORITY.”
+5 
+As Chairman of the UIC, I am committed to work 
+with our European members and other world regions to ensure that rail plays and will play an important global role in securing transport sector sustainability and in achieving the abovementioned climate and environmental goals. 
+Therefore, the supra-regional development of 
+railways has special meaning and importance to me. It not only allows for tackling climate challenges globally, hence contributing to a brighter future for all the world’s societies and our planet, but also, if well managed and adequately financed, railways can become an important element of social policy – an effective tool to increase citizens’ mobility, eliminate various types of social exclusion, and facilitate access to the labour market and public services. Railway needs a realistic vision supported by effective tools for its delivery. Whether it is creation of a coherent global rail network with seamless goods and passenger flow through its corridors, further digitalisation and standardisation, or fast and efficient modernisation through innovative solutions, UIC is the optimal cooperation platform for sharing global ideas and developing common tools to make it all real. 
+Rest assured that the needs of the region’s 
+members and development of interregional cooperation remain my absolute priority and I am deeply convinced that our new UIC Work Programme 2023-2025 will play a crucial role in releasing development and innovative potential of the railway sector on a global scale.
+6
+INTRODUCTION BY  
+FRANÇOIS DAVENNE,  UIC DIRECTOR GENERAL
+The International Energy Agency analysis shows that traffic 
+must shift from road and aviation to rail this decade in order to reach the Paris Agreement objectives. Despite stagnating at around 8%, rail’s market share needs to grow by more than 40% in less than a decade. 
+© Juliette JemThe railway sector is entering a crisis and emergency period.
+A crisis period, because the challenges we have had to fight over the last three years with the Covid pandemic, followed by the Ukrainian crisis, which in turn has highlighted the fragility of energy supply chains, have shown that the assets we may have thought impossible to call into question are fragile. It will therefore be necessary in the future to think in an uncertain universe and to be ready to help our members in the resolution of unexpected crises.
+An emergency period because we know that the climate 
+issue is urgent. The IPCC report
+1 of April 2022 tells us that we 
+need to implement a clear break with the practices and habits of the transport sector if we want to achieve the objectives of the Paris Agreement
+2. We only need to look at the gradient 
+of the curve that is compatible with the Paris Agreement 1.5° objective: it requires an inflection so rapid that it is only compatible with a strong acceleration of the modal shift towards rail transport, public transport and active mobility. 
+1. www.ipcc.ch/report/ar6/wg2
+2. www.un.org/en/climatechange/paris-agreement
+a. Global GHG emissions b. 2030 c. 2050 d. 2100
+102030
+0
+–10 –1040506070
+102030
+04050607080 80GHG emissions (GtCO2-eq yr-1)
+2020 2025 2015 2010 2030 2035 2040 2045 2050
+Trend from implemented policiesModelled pathways:
+Limit warming to 2°C (>67%) or return warming to 
+1.5°C (>50%) after a high overshoot, NDCs until 2030
+Limit warming to 1.5°C (>50%) with no or limited overshoot
+Past GHG emissions and uncertainty for 2015 and 2019
+(dot indicates the median)Limit warming to 2°C (>67%)Percentile:
+95th
+Median
+5th75th
+25th
+Policy 
+assessments for 2030
+Policies implemented by the end of 2020Policy assessments for 2030:
+NDCs prior to COP26,
+including conditional elements
+NDCs prior to COP26, 
+unconditional elements  
+88
+Projected global GHG emissions from NDCs announced prior to COP26 would make it likely that
+warming will exceed 1.5°C and also make it harder after 2030 to limit waming to below 2°C.
+7 
+The combination of these two constraints means we must 
+succeed and succeed quickly.
+In the next three years, the European Union has taken a strong 
+initiative in favour of the railway mode with the creation of Europe’s Rail
+3. 1.2 billion euros will be spent over the next seven 
+years to rapidly advance the sector to meet the challenges it faces. Obviously, the objective of modal shift must begin to be pursued resolutely without waiting for the implementation of these technical breakthroughs, which for the most part will not arrive until 2030. However, these innovations must be part of the roadmap that we must draw together.
+From the UIC’s point of view, we must therefore proceed with 
+a dual alignment.
+From a technical point of view, the ERJU (Europe’s Rail 
+Joint Undertaking) roadmap must serve as a reference point for projects developed within UIC, while preserving the association’s ability to operate on an international level. It is therefore not a question of limiting ourselves to the developments that are underway within ERJU, but of making it an anchoring point to continue to focus UIC’s activity on subjects that have a strong added value for our members. Throughout this Work Programme 2023-2025 we will use the following typology:
+fProjects that are within the scope of ERJU and forwhich UIC support is necessary, such as FRMCS (FutureRailway Mobile Communication System) and DAC (DigitalAutomatic Coupling).
+fProjects outside the scope, but which are necessary todevelop a rail offer for a new transport paradigm, such asOSDM (Open Sales and Distribution Model) and the digitalplatform for freight.
+fRegional work programmes that will allow the deploymentof structured training actions, the study of use casesadapted to local contexts and the dissemination ofinnovations conducted by UIC all over the world.
+3.rail-research.europa.eu/about-europes-rail/From the point of view of sector advocacy , the Manifesto4 
+that we adopted in July 2022 will be the basis for the future UIC action plan. The document deliberately calls for a global paradigm shift, with the collaboration of all transport modes, to put energy efficiency at the heart of transport policies. Over the next three years, we will need to unite our energies to create a global coalition where we can work with rail operators and manufacturers, public transport operators, road transport operators and associations to design a concrete path to a desirable frugal future.
+The ability to finance this shift will also be a new priority for 
+UIC. We are faced with a new challenge: the decarbonisation of the transport sector can only be achieved through massive investment in infrastructure and rolling stock to develop the modal share of rail. This investment will of course have to come from public authorities, but also from the private sector. 
+In particular, it will be necessary to progressively make people 
+accept the need, at both the European and global levels, that climate finance, carbon offsets, as well as a significant part of the carbon tax, must be reinvested in the realisation of the necessary capacity to carry out a new transport paradigm around rail and public transport.
+4.uic.org/IMG/pdf/uic-manifesto_rail-solutions-for-a-better-future.pdf  |
+www
+.youtube.com/watch?v=RlQZkWZFFlw“IT WILL BE NECESSARY IN 
+THE FUTURE TO THINK IN AN UNCERTAIN UNIVERSE AND TO BE READY TO HELP OUR MEMBERS IN THE RESOLUTION OF UNEXPECTED CRISES.”
+8
+CONTENTS
+10 UIC MEMBERS AROUND THE WORLD
+14 STRATEGIC OBJECTIVES
+18 NEW REGIONAL STRATEG Y
+21 Regional roadmap for Africa
+25 Regional roadmap for Asia-Pacific 
+29 Regional roadmap for Europe
+33 Regional roadmap for Latin America 
+37 Regional roadmap for Middle-East
+41 Regional roadmap for North America
+46 SUSTAINABLE CARBON FREE TRANSPORT
+46 Strategic objectives of the sustainability platform
+48 Position vs ERJU
+49 Participation in the regional strategy
+52 TOWARDS DIGITAL RAILWAYS
+56 TOWARDS A SHARED RAILWAY SYSTEM
+56 Strategy & main deliverables
+58 Position vs ERJU
+58 Development of UIC documents 
+59 Participation in the regional strategy
+ 
+9
+62UNLOCK MULTIMODALITY FOR PASSENGERS
+62 Strategy & main deliverables
+64 Position vs ERJU
+65 Participation in the regional strategy
+68INCREASING RAIL FREIGHT MODAL SHARE
+68 Strategy & main deliverables
+70 Position vs ERJU
+71 Participation in the regional strategy
+74CONTRIBUTING TO THE FUTURE OF SAFETY 
+AND OPERATIONS
+74 The main outcomes of the Operations Sector & Safety Platform
+75 Participation in the regional strategy
+75 Position vs ERJU
+78ENHANCING SECURITY
+78 Strategy & main deliverables
+79 Position vs ERJU
+79 Participation in the regional strategy
+82EFFICIENT AND TRANSPARENT MANAGEMENT
+82 Finance
+83 Quality
+84 Communications
+85 Human Resources
+10
+UIC membersThe boundaries, names and designations used on 
+the map do not represent an official UIC position on the legal status of any country or territory or the delimitation of its boundaries.
+January 2023UIC MEMBERS 
+AROUND THE 
+WORLD
+214 
+Members
+95
+countries
+3,000 
+billion passenger-kilometres
+10,000 
+billion tonne-kilometres
+1 
+million kilometres of line
+7 
+million rail personnelAnd ...
+137 
+UIC working groups 
+70 
+UIC partnerships
+50UIC partnerships
+50
+UIC events per year
+UIC Me MBeRs aROUND  The w ORlD
+11
+UIC membersLes frontières, noms et appellations employés sur 
+la carte ne représentent pas une prise de position officielle de l’UIC sur le statut juridique des pays ou territoires ou sur le tracé de leurs frontières.
+The boundaries, names and designations used on 
+the map do not represent an official UIC position on the legal status of any country or territory or the delimitation of its boundaries.
+January 2023
+STRATEGIC FOCUS AREAS
+Share, Open, Connect
+Promote rail transport globally
+• Highlight and demonstrate the attractiveness of 
+the railways 
+• Implement ambitious regional work programmes • Become a recognised training hub • Create a network of structuring framework 
+agreements with international institutions at the 
+European and global levelsPROMOTE 
+RAIL TRANSPORT GLOBALLY
+Further develop UIC as the technical platform to address 
+members’ needs
+• Achieve a shared system vision • Document and update UIC specifications, guidelines and 
+reports 
+• Monitor implementation and added value of UIC products • Leverage data and sharing of experience • Increase significantly the level of technical activities globallyFURTHER DEVELOP UIC 
+AS THE TECHNICAL PLATFORM TO ADDRESS MEMBERS’ NEEDS
+Create innovation through projects
+• Draw a path for the digitalisation of the sector • Implement a global innovation strategy in 
+each region 
+• Accelerate innovation by taking into account 
+operational constraints 
+• Be part of public innovation programmes at 
+the European and global levelCREATE INNOVATION 
+THROUGH PROJECTS
+Promote sustainable, carbon-free transport
+• Strengthen the role of modal shift in transport 
+policies 
+• Advocate a change of paradigm with public 
+transport and supply chain stakeholders 
+• Make rail projects eligible to green finance productsPROMOTE 
+SUSTAINABLE, CARBON/hyphen.caseFREE TRANSPORT
+Efficient, transparent management for the 
+benefit of our members
+• Ethical and transparent governance • Regular reporting and ongoing assessment 
+of added value from activities 
+• Ongoing skills development  • Provide the Regions with a vehicle for 
+project developmentEFFICIENT, 
+TRANSPARENT MANAGEMENT FOR THE BENEFIT OF OUR MEMBERS
+STRATEGIC  
+OBJECTIVES
+14
+The European Investment Bank (EIB) published 
+its “Climate Bank Roadmap 2021-2025”7 and the 
+European Commission published its ambitious plan “Fit for 55” Plan for a green transition
+8. Private 
+investment funds are also growing their sustainable finance borrowing as high GHG emitting industries become higher risk investments. 
+The only frugal, low greenhouse gas emitting mode 
+of transport capable of supporting these strong ambitions is rail.
+7. “Climate Bank Roadmap 2021-2025” by EIB – Published in 
+November 2020
+8. “Fit for 55” European Plan for a green transition – Published by 
+the European Commission in July 2021STRATEGIC OBJECTIVES
+UIC is entering the second phase of development 
+of its strategic objectives. The 100th General 
+Assembly did not wish to change the five key focus areas, considering that they had given the Association a positive general orientation and generated concrete developments. Moreover, even if substantial progress has been made in positioning UIC as the technical organisation of reference for the railway sector, much remains to be done, in particular to strengthen UIC’s position in Europe, while giving real scope to regional activities.
+The updated strategic objectives reflect this 
+ambition.
+UIC published its “Vision of Rail 2030 – 
+Design 
+a better future ”5 on December 2021: adaptation 
+to climate change is becoming a major concern, 
+shared worldwide, and the urgency of which has just been recalled by the IPCC
+6. All the Multilateral 
+Development and investment banks, including the World Bank, are now aligning their portfolios with the Paris Agreement and transitioning to become climate banks. 
+5. uic.org/IMG/pdf/uic-design-a-better-future-vision-of-
+rail-2030.pdf
+6. “Climate Change 2021 – The Physical Science Basis – Summary for Policy Makers” by Intergovernmental Panel on Climate Change (IPCC) – Published in August 2021
+
+15sTRaTeGIC OBJ eCTIV es
+As a result, UIC will notably encourage, through 
+its “Vision of Rail 2030” and the “More Trains” 
+campaign, the allocation of funds to invest in the improvements of multimodality, infrastructure, rolling stock and services , as well as innovation 
+to decarbonise operations, in order to drastically increase the number of trains, the number of passengers and freight carried worldwide.
+Furthermore, UIC will develop railway training 
+courses linked to its strategic areas in order to support its members in all regions. There is a need to rethink learning strategies to develop the skills of staff and to attract the talent of the future. A flexible, well-trained and motivated workforce is key to a competitive and innovative sector.
+To this end, several types of training will be proposed 
+with the establishment of a UIC Rail Academy distance learning platform in partnership with a recognised academic institution. This objective is to quickly offer the rail sector an express route to upskill staff, enabling them to confidently face the challenges ahead. In this way, UIC wishes to extend the rail sector’s capacity for innovation and improve the sector’s competitiveness by making full use of the knowhow of its rail experts. UIC will go on supporting regional training centres and create synergies between them in order to meet the specific needs of members in the regions within a common framework.
+Finally, the Talent and Expertise Development 
+Platform will see its organisation change in 2023 in order to address the new challenges and solutions for learning, development and training technologies. 
+
+NEW REGIONAL 
+STRATEGY
+18
+NEW REGIONAL STRATEGY
+CONCEPT OF
+OPERATIONS
+REQUIREMENTS 
+AND FUNCTIONAL 
+SPECIFICATIONS
+-- ARCHITECTURE
+DETAILED
+DESIGN
+PRODUCT 
+DEVELOPMENTINTEGRATION
+TEST AND
+VERIFICATIONSYSTEM 
+VERIFICATION
+AND VALIDATIONOPERATIONS 
+AND 
+MAINTENANCE
+Project 
+def
+init
+ionProject test and integration
+TimeIMs, RUs, keepers
+IMs, RUs, keepersIMs, RUs, keepers
+and ECMs
+IMs, RUs, keepers
+and manufacturers
+Standardisation
+organisationsManufacturersVerification and 
+validationCooperation between IMs, RUs, manufacturers, 
+wagon keepers, and other ECMsSPECIFICATIONS AND STANDARDISATIONDuring its 100 years of productivity, UIC 
+produced a valuable asset of technical specifications and guidelines for the railway community. 
+Accessing this legacy and participating 
+in the new developments are the main interest when engaging with UIC. In this context clarifying the exact role of UIC is paramount for each of the regional strategies. It can be summarised in the following “V-cycle” diagram, which is quite classic in the manufacturing world. Thus, UIC is present:
+ fUpstream, at the inception of the concept of operations and the defi -
+nition of requirements (functional or technical),
+ fDownstream, at the system verifica-tion and validation stage, for mainte -
+nance, and for preparing operational solutions adapted to innovations.Since the first 2020 – 2022 Work Programme, all the UIC regional coordinators have tried to give more concrete content to the activity of the regions with more ambitious work programmes. It is a question of giving more concrete expression to UIC.
+UIC’s specific roles and responsibilities 
+started in 1922 with the idea to give to the sector a common technical framework. 
+19New ReGION al sTRaTeGY
+DURING THE 2023 – 2025 
+PERIOD:
+ fThe membership base will 
+increase due to the more ambitious and focused activities,
+ fThe budgets for regional specific actions such as training, projects and sharing of experience, will increase,
+ fConsideration will be given to the creation of decision-maker delegates ensuring a permanent presence in the most active regions to lead the programme and articulate regional visions.We have started to set up an inter-regional 
+exchange platform to decide on priorities in terms of development, exchange, and common standardisation activities. 
+As activity develops in Regions outside 
+Europe, this platform is intended to become increasingly multilateral, as illustrated by the figure below, and where the ringfencing concept voted at the 99
+th 
+General Assembly (in December 2021) copes with requirements coming from the regional public financing instrument to retain the Intellectual Property Rights within a specific region. Today the only application is within the framework of Europe’s Rail Joint Undertaking (ERJU).
+For the 2023 – 2025 period, as the 
+definition of needs in the different region has progressed in particular through the numerous webinars organised, the definition of ambitious work programmes for each region has been undertaken and they will be implemented.
+COMMON
+PROJECTSMiddle-
+Eastern
+projectsEuropean
+projects
+Asian
+projects
+African 
+projectsNorth 
+American
+projectsLatin 
+American
+projectsShift2RailRingfence
+Shared materialsLEGEND
+New ReGION al sTRaTeGY
+21
+REGIONAL ROADMAP  
+FOR AFRICA
+The consultations and high-level meetings organised in 2022 with members 
+(Tunisia, Algeria, Senegal) and institutions (African Union, European Union Agency for Railways) show that there is potential and interest in jointly developing an ambitious action programme. The Region, despite the positive prospects, is still caught in a kind of vicious circle where the absence of a concrete project implies a lack of efficiency and involvement of members.
+The various actions carried out by the Presidency of the Africa Region and the 
+UIC services have led to the establishment of a new ambition for the region. In particular, the Covid-19 crisis has enabled us to meet every two months for African Rail Thursdays. 
+This paradoxical effect of a crisis has allowed us to realise that we have important 
+tasks ahead of us to develop rail in Africa, with four major axes:
+ fTo succeed in the digitalisation of the African railways,
+ fTo increase the power of the training actions and the African projects,
+ fAdapting UIC technical specifications to the African context through a rein -
+forced partnership with the African Union.
+22
+Today, 70% of the region’s dues go to core fees, which limits 
+the interest of members to become active members and 
+keeps the funds available for projects to a minimum, i.e., no more than 90K€.
+We collectively need a shock to be able to concretely 
+undertake the work programme which in order to reach 2026 would require about 300K€ per year dedicated to projects.
+The feasibility of such an orientation depends on the clear will 
+of the members to get involved to the extent that is necessary. 
+© Présidence Sénégal
+23New ReGION al sTRaTeGY
+It is obvious that it is not realistic to move to full payment 
+of dues by 2023. It is therefore proposed that this level be achieved by gradually increasing the dues of existing members.
+Commitment being the key to success, under the leadership 
+of our Chairman and with the personal involvement of the Director General, a task force is charged with securing the path to the new funding scheme and project programming with the objective of:
+ fSecuring the path to the new funding scheme with interna -
+tional institutions such as EIB, ISDB, World Bank, etc.,
+ fImplementing the Work Programme,
+ fEnsuring the programming of projects and actions, espe-cially training,
+ fEnsuring a stable and committed participation of UIC Africa members.
+
+New ReGION al sTRaTeGY
+25
+REGIONAL ROADMAP  
+FOR ASIA-PACIFIC
+The Asia-Pacific region – which is seeing large-scale economic development and, 
+therefore, has growing urban and long-distance goods and passenger transport needs – has established its work programme priorities around:
+ fCooperating and creating partnerships with stakeholders in the region in or -
+der to complement UIC’s actions,
+ fKnowing what the members’ and countries’ needs are by improving the qual-ity and analysis of data collected,
+ fMonitoring and establishing railway investment projects in the region,
+ fSecuring the path to the new funding scheme with international institutions such as ADB, World Bank, etc.,
+ fSharing best practices, transferring technology, and training,
+ fTechnical advice and project reviews.
+The recent work programmes were complemented by initiatives on:
+ fOpenness towards new members,
+ fCreating new activities in the region,
+ fCooperating with other regions and between members,
+ fInteroperability and connectivity along corridors,
+ fRailway research.
+The region’s new presidency from 2023 onwards will facilitate the establishment of a new agenda for the next three years to start implementing the main goals of the Manifesto, in line with the region’s needs.
+26
+Topics which have not yet received detailed attention 
+will be discussed or prioritised, such as future railway telecommunications, the metre gauge, security (the Global Railway Security Congress held in February 2023 and the creation of a pool of correspondents from members in the region). 
+The recurring theme of high-speed will continue to be explored 
+in the run-up to the 2023 World Congress in Marrakech and in anticipation of the Congress in Beijing.
+Finally, members will be further involved in the region’s 
+activities by progressively increasing the portfolio and budget. New members’ potential must be realised, while regular links with existing members and close links with the most active and senior members are to be maintained.
+
+New ReGION al sTRaTeGY
+27
+
+New ReGION al sTRaTeGY
+29
+REGIONAL ROADMAP  
+FOR EUROPE
+Even if geographically smaller than other regions, the European Region has 
+the greatest number of UIC members (120 at the time of writing) these being fairly evenly spread amongst the active, associate and affiliate categories of membership and in every area of the Region. 
+The railways in the European Region have been typically the most active in 
+generating ideas for and enabling the funding for the annual programme of projects. Much of these projects were spawned as a result of the publication of the versions of the Regional Technical Strategy Europe (RTSE) and the Railway Standardisation Strategy Europe (RSSE).
+There is an appetite amongst the European members for these regional projects 
+to be expanded to other UIC regions and the Regional members welcome the idea of the inter-regional exchange platform to decide on priorities in terms of development, exchange, and common standardisation activities.
+UIC has published a wide range of technical documents with the first Leaflet 
+having been published in 1926. Since its creation in the late 1980s, the European Standardisation Organisation CEN_CENELEC have been offered the opportunity, via a Technical Cooperation Agreement, to have access to these documents for controlled inclusion of relevant text which can be used in their ENs. 
+30
+The Region pays particular attention to this interface so as 
+to ensure that opportunities are maximised, costs minimised and that there is no unjustified duplication. 
+ fBuilding on the Region’s current action plan (see image) and in clear support of this more generic UIC Work Programme, the development of collective and collaborative thinking on identifying alternative sources of traction energy will con -
+tinue and contribute to the overall target of net zero carbon emissions. This will be in support of the work being undertak -
+en within the Energy Sector of the Railway System Forum.
+ fAdvocacy towards the railways being the backbone of sustainable mobility has manifested itself in current work -
+streams for the development of freight and support by the Region for the work of the Rail Freight Forward Alliance.
+ fInnovation is a clear golden topic. ERJU is covered else -
+where in this Work Programme but the European Railway Research Advisory Council (ERRAC) is fully supported by the Region in terms of resources (Chair and Secretariat) and a financial contribution for meetings, website, publi-cations etc. The Region will continue to support this body.
+Regional Focus 2022-2023
+Standardisation Sustainability Looking forward Innovation
+Interface with CEN, CENELEC, 
+ETSI, RASCOP, ERA TWG, etc.
+Relationships with NSAs for AMoCsEnergy: considering new solutions 
+towards zero carbon  
+(battery, hydrogen, etc.)
+Advocacy towards rail as the 
+backbone of future sustainable 
+mobilityAdapting to the “New Normal”
+Liaison / cooperation with other 
+regions through the meetings of  
+the Regional ChairsMonitoring progress in projects 
+within EU-Rail JU
+Rail Freight Forward /  
+Digital Platform
+ERRAC Governance
+Engage with SEESARI and other 
+European Special Groups
+Member-focused high-
+level exchanges Cooperation Communication Meetings
+High-level exchange 
+2022: DB (16/02), PKP (06/04), 
+Network Rail (14/10), FSI (21/10)
+2023: VAYLA & VR (19/01), LDz & 
+Baltic companies (21/09)European institutions & 
+organisations (Associations (CER, 
+EIM, RNE, UNIFE, UITP, etc.) 
+GRB, EC, ERA, ERJU, etc.)Promoting the elements related to 
+the “New Normal” and the added 
+value of transportation by rail
+Communicating the evolution of 
+core topics for the regionRAE (2)
+EMC (4)
+EMCA (4)
+EGoA (2)
+31New ReGION al sTRaTeGY
+ fSEESARI (South-East Europe Strategic Alliance for 
+Research and Innovation) is a UIC Special Group which reports to the General Assembly, but which has very close ties with the European Region. This will continue to evolve.
+ fOver the past two years a programme of High-Level Exchange Meetings (HLEM) has been established involv -
+ing companies such as DB, SNCF, IP, PKP and Network Rail. 
+For 2023 HLEM are being arranged in Finland (Väylä, 
+VR…), Germany (DB), the Baltic States (LDZ…) and Spain. These involve a senior UIC team being in the country in -
+volved and spending a full day with colleagues from the companies concerned exchanging on a range of topics from innovation through to sustainability and the freight and passenger business activities. 
+ fThere is a myriad of other railway-focussed associations in Europe. UIC Team Europe has interfaces with all of them and reports the high-level issues to the regional meetings. This is important in order to maximise opportunity, minimise cost and avoid unnecessary overlaps.
+ fThe Presidency and the governance College will change at the end of 2023. The regional focus will be adapted ac -
+cording to the perspectives of the new College for 2024 & 2025 taking the objectives of the UIC Work Programme into account.
+
+New ReGION al sTRaTeGY
+33
+REGIONAL ROADMAP  
+FOR LATIN AMERICA
+Today the UIC members consist of two associations: the Latin American Railway 
+Association (ALAF) with its headquarters in Buenos Aires, and the Brazilian National Association of Passenger Rail Operators (ANPTrilhos). 
+UIC was able to gain insight into their railway’s potential for development 
+through the visits by the Director-General and the LARA Region coordinator to multiple Latin American countries, as well as meetings with leaders, especially transport ministers, to take place in the following countries: Argentina, Brazil, Chile, Paraguay, Uruguay, Colombia and Ecuador. 
+The meetings in Argentina brought together other potential UIC members such 
+as Bolivia, Guatemala, and Peru. Certain Central American countries might also be interested such as El Salvador, Honduras, Nicaragua, Panama and Costa Rica.
+Following these efforts to promote the Association, Chilean railway operator EFE 
+and JSC, the Argentinian National Agency of Safety will respectively become an associate member and an affiliate member of UIC as of 2023. A large number of potential projects have been identified where UIC can assist the members of the region in their implementation.
+To this end, in addition to maintaining the relationship with current UIC members, 
+UIC has hired a person in the area to work on subjects of interest to the region, and constitute the beginnings of a UIC office there. 
+The region’s needs are substantial as the national networks are either hardly or 
+not at all connected, and there is a real lack of best practices and standards.
+34
+Goals for the 2023 – 2025 period include:
+ fDeveloping a Vision 2050 for the Region to foster 
+the growth of rail in Latin America,
+ fCreating a network of experts that could support an increasing number of railway projects in the region,
+ fSharing knowledge from the UIC working groups and from international standards,
+ fCreating new group to respond to specific problems in the regions (e.g., asset management, safety, and environmental threats) in coordination with the UIC Rail System Department,
+ fCreating a working group dedicated to freight activities in coordination with the UIC Freight Department.
+35New ReGION al sTRaTeGY
+
+New ReGION al sTRaTeGY
+37
+REGIONAL ROADMAP  
+FOR MIDDLE-EAST
+The UIC Middle-East Region comprises around 15 members, spread across almost 
+all of the RAME countries, which are: Turkey, Iran, Saudi Arabia, Iraq, Jordan, the United Arab Emirates, Afghanistan, Syria, and Israel. This is a very dynamic region for the railway sector, with new high-speed lines and trains, infrastructure, and services being developed. All of the countries in the region have plans for the years to come.
+Two new members will join this region end 2023: Etihad Rail from United Arab 
+Emirates and Oman Rail.
+Incidentally, transporting goods between China and Europe via the southern 
+corridor, going via Iran and Turkey in particular is becoming more important. Despite railways not being developed at the same rate across the board, given that there are geopolitical, strategic, and financial differences between countries, UIC has seen a resurgence of activity thanks to the leadership from the Chair and Vice-Chairs who have given a new lease of life to the region’s activities.
+The regional roadmap for the 2023 – 2025 period follows the considerations 
+outlined in the Vision 2050 document produced by the Paris and Dubai-based company IEC and delivered to the November 2022 RAME Regional Assembly in Abu Dhabi.
+38
+The main initiatives to be carried out in 
+the 2023 – 2025 period are:
+ fCreating a working group on goods 
+transport. The main points of inter -
+est to be developed in the coming years are the following:
+ fDigitalising procedures,
+ fThe safety of goods,
+ fStandardising rules for exchange,
+ fTransporting containers.
+ fCreating a taskforce on extreme temperatures and desert conditions, taking the inevitable effects of cli -
+mate change into account which will occur in the coming years, fCreating a taskforce on safety, fo-cusing on the Middle-East,
+ fDeveloping a network of security experts, notably to address crisis management,
+ fParticipating in a project to develop hydrogen trains,
+ fCreating a working group to assess the needs linked to the development of telecommunications,
+ fReinforcing training for subjects of interest to the region. The plan is to have a training session every three or four months with the participation of experts from all around the world, fTo aid the region’s development its projects and their financing are to be better taken into considera -
+tion. In May 2022, the decision was therefore made to slightly raise the regional share of the regional mem -
+bers’ fees to allow for new projects to be launched after they have been proposed during the regional meetings.
+All these projects will produce concrete results for the RAME region and will contribute to the cohesion of the region’s members who will have shared objectives. 
+39New ReGION al sTRaTeGY
+
+New ReGION al sTRaTeGY
+41
+REGIONAL ROADMAP  
+FOR NORTH AMERICA
+Despite it being a very large geographic region, the North American Region 
+comprises very few member companies. 
+These members however cover the entire region as they are representative of 
+the largest Class 1 freight companies (AAR); the largest Pan-American passenger company (Amtrak), the American Federal Railroad Administration (FRA), Canada’s Railway Association (RAC), the Canadian passenger company VIA-Rail, California High-Speed Rail Autority (CHSRA) and the Regulatory Agency for Rail Transport (ARTF, Mexico). These form the bedrock of the region’s structure. 
+Amongst the topics which the region wishes to tackle in 2023 and beyond are:
+ fStandards – understanding the working relationship between the AAR and 
+UIC publications and developing synergies,
+ fSustainability – advocating the railways in the region as a significant part of the reduction of transport carbon emissions,
+ fStations – developing the station as the welcoming and SMART first point of contact for the end-user with the network,
+ fCyber Security – working with other regions to stem the impact from possi -
+ble attacks,
+ fSafety.
+Inevitably, as the Region grows its interests, there will be additions made to this route map. There is a plan for the annual Regional Assembly in March 2023 and for this to be coupled to a High-Level Exchange Meeting like the ones that have been arranged in Europe.
+42
+On the issue of railway stations, the key 
+goals for this period are to better define 
+the role of station managers and study ways of improving quality with the ambition to use the gains of the digital revolution to improve the services to the customer and the efficiency of the stations. 
+As Stations are the gateways to the 
+urban public transport network and to the long-distance rail transport, they also play a key role in fostering modal shift to rail.
+New ReGION al sTRaTeGY
+43
+
+SUSTAINABLE  
+CARBON FREE  
+TRANSPORT
+46
+SUSTAINABLE CARBON FREE  
+TRANSPORT
+UIC seeks to maintain momentum and continue to deliver 
+breakthroughs in the following areas:
+ fRaising awareness among policymakers to design policies to incentivise rail,
+ fInspiring and empowering the railway sector to become even more sustainable,
+ fAdvancing innovation in the railway sector,
+ fAttract investment into railway projects,
+ fCollaborating with and engaging civil society representatives .
+This is achieved through:
+ fConveying the positive environmental & socio-economic externalities from rail investment,
+ fShowcasing leading solutions and approaches,
+ fDemonstrating the growing ambition and action to drive 
+more ambition,
+ fDemonstrating how railways are a critical mobility com-
+ponent for climate action.
+The activities of the Sustainability Platform align to three key strategic objectives:
+To provide a trusted platform 
+for the railway sustainability 
+community to connectCONVENE
+To provide practical solutions  
+for sustainability challenges  
+for a future railwaySOLVE
+To build collaborative partnerships 
+and be the voice of the global 
+railway community to advocate for 
+a multimodal vision of sustainable 
+mobility with rail as the backboneADVOCATESTRATEGIC OBJECTIVES OF THE 
+SUSTAINABILITY PLATFORM
+The UIC Sustainability Platform of UIC provides focus and 
+leadership for the Environmental and Social sustainability agenda in the global railway community. Those engaged in the Sustainability Platform work collaboratively to both promote and to keep railways as the greenest form of collective and mass mobility. 
+The platform shares a vision of a future railway that is the 
+backbone of sustainable mobility. The platform is working towards 
+connectivity that contributes to healthy and 
+sustainable lifestyles and economies on every continent 
+– for a railway that is zero emissions, resource efficient, a 
+community hub, accessible for all, and is both biodiverse 
+and a good neighbour . 
+The mission of the platform is to empower the global 
+railway community to be a driving force in a transition to a sustainable carbon free transport system through collaborative knowledge and advocacy.
+47sUsTaINaBle CaRBON FR ee TRaNsPORT
+SOLVE
+Global DataWith our Sustainability Reporting Tools, we 
+plan to continue to collect data, set measura -
+ble targets, monitor progress and encourage transparency in the sector. We will produce an Annual Sustainability report, demonstrat -
+ing the contribution that rail is making to the UN SDGs. We will create the new sustaina-bility reporting guidance (IRS30330) and disseminate its helpful content globally. 
+The EcoTransit and Ecopassenger tool will be 
+updated and maintained, and we will develop an API to expand this useful data to other applications. The Environmental Strategy Reporting System (ESRS) will be re-branded and promoted to global membership. The data will be licensed for commercial organisations to support the maintenance of the database and expand the use of this important data.
+TechnologyWe will host best practice workshops and technical meetings. We will develop and maintain websites where the best up-to-date information from our activities will be availa -
+ble. We will create a new Sustainability hub acting as a best practice library.
+CollaborationThe technical departments and platforms will work together on transversal issues such as energy, gender equality, Infrastructure and Interfaces with Rolling Stock, climate change adaption and sustainable stations.
+Sustainable 
+FinanceThe Rail Sustainability Index will be reviewed annually, adding new SDGs and KPIs. New modules will be considered and developed to reflect the needs and demands of mem -
+bers and partners. For example, for exter -
+nal/supply chain use and projects. We will forge links between the Sustainability and Finance Platform, developing the capabili -
+ty in Sustainable finance and agree a work programme.
+CONNECT
+EngagementWe commit to organising the first “Sustainability Action Week” in 2023 and plan to conduct this event every two years. The aim is to create inspiring and energising events and achieve alignment and synergy between the technical specialists working in sustaina -
+bility. This will include the UIC Railway Noise Days which aims to promote cooperation between acousticians and track engineers to solve noise problems on railways.
+We will continue with our long-standing 
+work in hosting platform and sector meet -
+ings for Air quality, Energy efficiency & CO
+2 
+Emissions, Sustainable Land-Use, Circular Economy and Noise and Vibration.
+We commit to recognising the efforts of 
+our members by organising an International Sustainable Railway Awards every two years (2024).RecogniseADVOCATE
+CommunicateEach year there will be a strong presence at the COP (28, 29 and 30) and key regional climate weeks. We will coordinate the global voice of rail and facilitate opportunities for leaders in our members to share their ambitions and stories of success at this global event.
+“More Trains” campaign will evolve with new regional focus, for COP28 the Middle-East will take focus.
+LeadershipThe Sustainability Task Force will refresh membership and continue to work glob -
+ally with senior rail leaders to promote Sustainable transport and advocate for the role of railways in a sustainable economy. The taskforce will facilitate an annual London School of Economics keystone project to support the “More Trains” campaign.
+48
+POSITION VS ERJU
+The projects will be proposed 
+with reference to their connection with the Europe’s Rail Joint Undertaking every time it will be possible.
+Nevertheless, UIC 
+Sustainability technical work will continue prioritising the topics that are the greatest challenges for the global membership. We will then showcase through our projects how railways are increasing their compliance with the UN SDGs.
+
+49
+sUsTaINaBle CaRBON FR ee TRaNsPORT
+PARTICIPATION IN THE 
+REGIONAL STRATEGY
+Regional Meetings
+A programme of regional 
+“Sustainability Days” will be organised to keep members updated on all our activities, to better understand the local challenges and priorities and to showcase local action and projects.
+We will support member 
+engagement in regional UNFCCC climate weeks so that they promote their stories and plans to transform, build resilience and decarbonise transport in their region and set out the key levers to accelerate climate action.
+Development of knowledge 
+and skills transfer
+We will develop partnerships 
+in order to expand our training and capacity building capability to support our members. We will increase our special training activities to support the competencies of their employees on key sustainability topics. Our training will provide knowledge development and skill transfer for experts working in UIC member companies on environmental applications.Regional Projects
+For projects with sustainability themes across all regions, the UIC Sustainability Unit will provide a link to ensure that efforts are not repeated but strengthened and supported to embed change in their regional context. The Unit will support inter-regional connections and collaborative learning, opening all opt-in projects and tools to all the regions and members.
+Regional partners
+We will forge partnerships with regional multilateral banks and UN bodies.
+
+TOWARDS  
+DIGITAL RAILWAYS
+52
+TOWARDS DIGITAL RAILWAYS
+Among the main digital railway programmes, projects or 
+initiatives that UIC seeks to highlight and materially develop in each department, platform and forum, it is essential to mention:
+ fFRMCS (Future Railway Mobile Communication System) programme: UIC is leading here the specification stream for the re-placement and evolution of GSM-R by 5G technologies in the short term (first pilots expected in Europe by 2026), but is also heavily involved in the corresponding indus -
+trial stream for the preparation of the FRMCS ecosystem (5GRail project),
+ fOSDM (Open Sales and Distribution Model) programme: UIC will increase its activities around international ticketing, particular-ly regarding multimodality aspects and extend the opening of OSDM systems to more distribution channels,
+ fDigital Platform for Freight: UIC is engaged at European level in an ambitious initiative aiming to define and put in place a set of digital solutions to improve the commercial context and the operations of freight,
+ fDigital Modelling: Through its RSM (Railway System Model) and OntoRail (Ontology for Rail) projects, UIC seeks to facilitate the convergence of the various models existing in the rail sector towards a CDM (Common Data Model),
+ fArtificial Intelligence: UIC is also committed to this new and complex railway challenge, with a dedicated project focusing on the concrete application of artificial intelli -
+gence for predictive maintenance, partnering railway ex -
+perts with artificial intelligence specialists to learn lessons from other sectors,
+In alignment with its global strategy, UIC will keep on focusing 
+on all the dimensions of railway digitalisation, with two major directions:
+ fThe promotion and the dissemination of digital concepts applied to the railways, in the frame of international and regional actions, such as, but not limited to:
+ -Participation in major international events (Consumer Electronics Show CES in Las Vegas, UIC High Speed Congress, etc.),
+ -Organisation of Digital Tours with representatives from UIC members,
+ -Organisation of specific regional events focused on dig-ital, as for instance the African Digital Rail Congress (4
+th 
+edition expected in 2024);
+ fThe development of specific projects dedicated to digital railway in which UIC can bring its specific added-value to the benefit of its members, and this regarding different domains:
+ -The technical aspects of the rail system in general,
+ -Passenger activities,
+ -Freight activities,
+ -And also some multi-domain digital initiatives.
+53TOwaRDs DIGIT al RaIlwa Ys
+ fOpenRail: UIC, together with three initial 
+members, aims to put in place the first open-source foundation dedicated to the railway industry,
+ fThe railway system architecture and the relevant exchange of data for more efficient operations.
+At European level, the majority of these programmes, projects or initiatives are or may be combined with ERJU activities, this being already the case for FRMCS and Digital Modelling. 
+This is the intention of UIC to keep on assessing additional 
+synergies with the European Commission and European railways, for instance regarding the railway system architecture, the development of the OSDM programme, the establishment of the Freight Digital Platform and the use cases of Digital Automatic Coupling (DAC).
+All these UIC digital activities will participate in the different 
+regional activities, according to adapted timing corresponding to regional priorities and needs expressed by members. 
+As an example, it is clear that the FRMCS programme has 
+to be considered on a worldwide dimension, to be adapted to the different regions in accordance with the members’ strategy and involvement.
+
+TOWARDS A SHARED 
+RAILWAY SYSTEM
+56
+TOWARDS A SHARED RAILWAY SYSTEM
+Concerning Innovations, RSF will place emphasis on:
+ fFRMCS (specifications and industrial stream) and digital 
+modelling, as detailed in part 2,
+ fReduction of energy consumption and emissions a Task 
+Force on Energy saving will be scheduled end of 2022 and early 2023,
+ fDevelopment of lighter trains,
+ fResilience of railway infrastructures and rolling stock to climate change, including design of new infrastructure 
+and rolling stock, more accurate weather forecasts and operational mitigation measures,
+ fAcceleration of the cycle of innovation, through opera-tional rules adapted to market uptake of innovative solu-tions, and dissemination of innovative solutions.
+The key enablers of the eight RSF multi-annual work 
+programmes are the following:
+ fThe eight multi-annual Sector Work Programmes will en -
+sure the structuring of the UIC technical documents. The revision of documents on a five-year cycle, when deemed 
+necessary by members will be ensured together with the publication of other appropriate UIC documents: specifi -
+cations, reports and guidelines.STRATEGY & MAIN DELIVERABLES
+The Railway System Forum (RSF) will support the UIC 
+“Vision of Rail 2030” and will integrate, in a systemic 
+approach, major technical breakthroughs through its eight 
+multi-annual work programmes based on Capacity, Quality 
+of service and continuous improvement of railway services , 
+and Innovations.
+Concerning Capacity, RSF will place emphasis on:
+ fTraffic control centres and crisis management,
+ fAutomation facilitating the increase in the number of 
+trains and supporting the cost leadership strategy:
+ -Digital Automatic Coupling (DAC),
+ -Automated Train Operations (ATO),
+ -Artificial Intelligence,
+ -Robotics,
+ -Automatic inspections,
+ -5G evolution.
+Concerning Quality of Service and continuous improvement 
+of railway services, RSF will place emphasis on:
+ fOperations and safety as detailed in part 7,
+ fPredictive maintenance, for better reliability and availa-
+bility of infrastructure and rolling stock, and better inte -
+gration in operations,
+ fReduction of railway noise, facilitating the acceptance of 
+the increasing number of trains by those in the vicinity of 
+the railway lines.
+57TOwaRDs a sha ReD RaIlwa Y sYsTeM
+The ERA-UIC Coordination framework signed end of 
+November 2021 describes the links between documents 
+drafted or published by ERA and UIC documents. 
+It includes the ‘possibility for UIC to propose AMoCs 
+[Acceptable Means of Compliance] or guidelines drafted by UIC to ERA’
+9 and the need to ‘coordinate and communicate 
+on the update of any ER document and UIC document10.
+ fCooperation with relevant Universities and Research Centres will be developed.
+9. ERA-UIC Coordination Framework signed on 29 November 2021 –  
+Article 4.1
+10. ERA-UIC Coordination Framework signed on 29 November 2021 –  
+Article 4.11
+58TOwaRDs a shaReD RaIlwa Y sYsTeM
+POSITION VS ERJU
+UIC is involved in both:
+ fSystem Pillar, as technical 
+coordinator and/or team leader of Railway System Architecture, DAC, Central Modelling Systems, PRAMMS (safety and security) and railway communications,
+ fInnovation Pillar, as affiliated to ERJU Founding members.
+UIC will work in order to avoid any duplication of work or gap between UIC activities and ERJU: some Opt-in projects will naturally be transformed into activities inside ERJU, others will complement the activities of ERJU. All this work of synchronisation will also help the RICG (Research and Innovation Coordination Group). Finally, some of the achievements will support the preparation of the future ERRAC Strategic Innovation Agenda, which will be a main input of the Master Plan of the successor of the ERJU.
+In addition, UIC is ready to 
+facilitate the dissemination of ERJU outputs.DEVELOPMENT OF UIC 
+DOCUMENTS 
+As explained above, the RSF will rely on 
+both the V-cycle, which distinguishes specifications and guidelines from manufacturers’ standards, and the ERA-UIC Coordination framework, which highlights the importance of AMoCs (operational guidelines approved by ERA). Specifications and guidelines may need inputs from UIC (technical) reports.
+It implies that manufacturers’ standards 
+will be the responsibility of standardisation organisations (CEN-CENELEC, ETSI, ISO, IEC), whereas UIC will focus on (technical) specifications and guidelines, and (technical reports) as inputs for specifications and guidelines.
+The Standardisation Unit will have, with the 
+support of the Standardisation Platform and on behalf of any UIC Departments, Forums and Platforms, the following remit during the 2023-2025 period:
+ fPromoting a new user-friendly UIC Library, open to any UIC members, with relevant and updated specifications, guidelines and reports (called publica -
+tions in the rest of this paragraph),
+ fEnsuring that every UIC department, Forum and Platform will systematically review the specifications, guidelines and reports they are responsible for where necessary and at least every five years. The objective is to maintain UIC publica -
+tions as state-of-the-art, fPublishing the annual UIC work pro-gramme regarding revision, approval and publication of existing and new publications,
+ fSupporting the efforts of ETF in order to quickly publish any new or updated UIC documents,
+ fDefending the interests of UIC, notably the intellectual property on any UIC publications, at national, European and global level, to the benefit of our railway members,
+ fEnsuring the right coordination between UIC and standardisation organisations (CEN_CENELEC, ETSI, IEC, ISO, OSJD),
+ fEnsuring the right coordination between UIC and OTIF regarding UIC publications.
+59TOwaRDs a sha ReD RaIlwa Y sYsTeM
+PARTICIPATION IN THE 
+REGIONAL STRATEGY
+The Rail System Forum (RSF) 
+is ready to:
+ fHost any UIC member from any region, ready to participate in RSF Opt-in projects,
+ fAdapt UIC specifications and guidelines to specific needs of regions, in the frame of ad-hoc regional projects or in the course of multi-regional projects.
+In addition, RSF is ready to organise any Task Force which may provide added value to regions (e.g., Task Force on desert conditions open to Asia, Africa, Middle-East, Australia and Europe; Task Force on Saving Energy, open to all the regions).
+The Rail System Department 
+will participate in training efforts, in order to support regional activities.
+© Présidence Sénégal
+UNLOCK 
+MULTIMODALITY  
+FOR PASSENGERS
+62
+UNLOCK MULTIMODALITY FOR PASSENGERS
+PSG: Passenger Services Group
+The main challenge for the PSG in the 2023 – 2025 period 
+is implementing the Ticketing Roadmap which has been jointly drafted with UIC, CER and CIT. The roadmap mainly consists of the deployment of OSDM (Open Sales and Distribution Model) by the European UIC members, but also by other stakeholders: third parties and multimodal transport operators. The certification of OSDM stakeholders and tools will be developed with the participation of the PATRIC audit group.
+Other challenges for the PSG in coming years:
+ fProviding technical support to the CER passenger work -
+ing groups related to regulations (TAP-TSI, MMTIS, PRR, 
+MDMS),
+ fDefining the UIC vision for architecture for a multimodal solution, agreeing with DG Move on the necessity of hav -
+ing a high-level solution,
+ fFacilitating interoperability for sales flows (booking, tick -
+eting, after-sales) with OSDM being the reference for railways,
+ fDefining solutions architecture with IATA within the Air/Rail IATA/UIC initiative and implementing pilot schemes by 2025,
+ fIntegrating urban transport based on the Swedish mar-ket SAMTRAFIKEN experiment while working with urban transport stakeholders (the Smart Ticketing Alliance, for example) to define the solution architecture for interoperability.
+Accessibility and inclusion are also part of the PSG Working Groups’ (PASSAGE) activities to make railways welcoming and easier for a wider range of clients, in particular those with disabilities and reduced mobility.
+STRATEGY & MAIN DELIVERABLES
+In order to develop passenger transport and increase rail’s modal share (over car and planes), customer experience must be at the forefront of considerations as this is the deciding factor on which mode of transport is taken.
+UIC’s passenger activities are steered by the Global Passenger 
+Forum, in coordination with all the department’s sectors. A transverse project planned for the 2023 – 2025 period will cover customer experience to foster a culture orientated towards the customer as a key element for the future success of railways, permeating though all levels of the sector from top management to people working in the rail company.
+Over the next three years UIC’s activities will be structured 
+as follows.
+63UNlOCK MU lTIMOD alITY FOR P asse NGeRs
+Intercity and High-Speed
+In Europe the group supports the EU’s consolidation of the 
+new market following the 4th package. UIC will pursue the 
+cooperation with air (IATA) in order to facilitate joint initiatives among members and boost passenger preference for rail.
+Two World Congresses on High-Speed Rail will be organised 
+for the 2023 – 2025 period. 
+The first will take place on 7 – 10 March 2023 in Marrakech 
+under the slogan “High-speed rail: the right speed for our planet”. The second will be held in Beijing in 2024 or 2025 depending on the health situation.
+Two levels of training sessions 
+on high-speed railways will also take place in this time period.International cooperation
+International cooperation will increase, in particular with IATA and UNECE in order to better align the concepts with those leading international bodies. Finally, During the 2023 – 2025 period, a world conference on stations (Nextstation) will be organised with a UIC member hosting the event.
+
+64
+POSITION VS ERJU
+Passenger issues are not 
+present in ERJU as such. However, the previous JU (Shift2Rail) worked on ticketing systems in IP 4. 
+It is still too early to know how 
+these developments can be linked to the ongoing work on OSDM and multimodal ticketing within UIC, but it is clear that their implementation will require greater cooperation.
+Moreover, even if it is still 
+difficult to know if the technical work needed for the implementation of the European Data Space will be financed within the framework of ERJU or other European projects, it is certain that establishing connections with the railway ecosystem will only be possible with UIC’s involvement. 
+Indeed, OSDM is the main 
+link between a potential intermodal vision with rail as the backbone. On a more political level, the UIC will provide its technical support to the CER to define a data sharing strategy, because the definition of what should remain the property of operators is the focus of discussion.Commuter and Regional Train 
+Services
+Discuss the best solutions for ensuring 
+adapted door-to-door services for new commuters in order to be more attractive and put rail at the centre of sustainable mobility of the future.Rail Tourism
+Identify new business opportunities for railways by working with the tourism sector to better understand what is needed to put rail at the centre of sustainable tourism.
+
+65
+UNlOCK MU lTIMOD alITY FOR P asse NGeRs
+PARTICIPATION IN THE 
+REGIONAL STRATEGY
+All the actions and projects 
+developed in the passenger transport sector contribute to the development of the regions, not only for Europe but for all the continents.
+For example the activities 
+of the Passenger Services Group are mainly focused on ticketing in many parts of Europe and several countries in the Middle-East and Asia-Pacific. The OSDM (Open Sales and Distribution Model) specification as well as the other associated tools could be extended to other regions as it is an open specification (osdm.io).
+The working group on persons 
+with reduced mobility consists of members from several continents. An Australian company has bought the database of integrated timetables and uses it to provide information on a global level.
+The Station Managers’ Global 
+Group is open to all continents just over a year ago, and a new activity has started in North America which will address topics on best practice and climate change issues. The High-Speed Committee is open to members across the world, as almost all entities which undertake high-speed activities are part of the group. Guidelines are developed within this area and are made available for the whole sector. An alliance of universities comprises a large number of universities involved in this subject.
+The tourism sector is by nature 
+worldwide and the UIC TopRail group reflects this diversity. The same goes for the commuter and regional group. 
+INCREASING  
+RAIL FREIGHT  
+MODAL SHARE
+68
+INCREASING RAIL FREIGHT  
+MODAL SHARE
+The combined implementation of these will generate the full 
+effect desired. With this in mind, in 2022 RFF initiated the “Year of IM” which is a joint vision between rail operators (freight and passenger) and infrastructure managers regarding the priority changes which need to take place within the rail system. 
+The vision will be followed by a common implementation plan 
+around the following actions:
+1. Contribute to the definition of the target capacity man -
+agement process and planning,
+2. Focus on operational concepts in case of ICMs,
+3. Seek to align stakeholders around a common concept for the border section and cross-border-processes so to ensure maximum fluidity for international cargo transportation,
+4. Support members in their national stakeholder discussion on the implementation of Digital Capacity Management,
+5. Drive, in partnership with RNE the elaborating a common approach towards data exchange.
+The implementation of the aforementioned technologies will generate an increasing amount of data. This data needs to be standardised, consumed and provided seamlessly. STRATEGY & MAIN DELIVERABLES
+The sustainability challenge is the underlying driver of the freight vision no matter the region. Enabling modal shift towards rail is key to achieving this ambition.
+The Covid pandemic and the energy crisis have emphasised 
+the importance of rail freight for Europe, as it is the only sustainable land transport mode being seven times more energy efficient than road transport. 
+This ambition is however constrained by an acute shortage 
+of infrastructure capacity. The European members of the UIC Freight Forum, united within the Rail Freight Forward (RFF) Coalition, which is managed by UIC, have therefore agreed a programme based on digital game changers to address this challenge together with Infrastructure Managers. 
+In parallel they continue to work on areas with a comparatively 
+shorter time to implementation than the digital game changers. These are referred to as “quick wins”.
+Capacity is the most expensive recourse we have in rail freight 
+and therefore needs to be used efficiently. 
+Efficiency gains can be achieved within the system by 
+harmonising and coordinating processes between countries thus avoiding unnecessary stops at borders for instance which are resource and capacity intensive.
+Under the umbrella of RFF, five digital game changers 
+were identified as key enablers to deliver the bigger sector ambition of reaching 30% freight market share by 2030. These are ERTMS, ATO, DAC, Digital Platform, Digital Capacity Management. 
+69INCR easING R aIl FReIGhT MOD al sha Re
+For rail freight, the challenge is to ensure all rail operators, 
+regardless of their IT maturity, can contribute to this process so to establish rail freight as a seamless stakeholder in an “end to end” logistic chain.
+This is the goal of the DP-RAIL project which aims to set 
+up a digital platform for the rail freight ecosystem focusing, in a first step, on digital solutions for core rail operational processes with a view of supporting TAF TSI compliance.
+UIC is coordinating this process on behalf of a Consortium 
+of early investors and is seeking EU funding to support the initiative. ( dp-rail.eu).
+In addition to these workstreams, UIC Freight is strengthening its core areas of expertise in the following domains:
+ fWagon utilisation,
+ fCorridor development,
+ fTrain operation,
+ fLoad safety,
+ fCombined transport,
+ fDangerous goods,
+ fSeamless data exchange.
+How these groups/domains provide business value to UIC members in their daily business formed part of the “Fit for Freight” dissemination campaign to celebrate UIC’s 100
+th 
+anniversary. 
+In view of the positive feedback received for this initiative, the 
+freight department will adjust the concept in 2023 to increase its offer of support to members and onboard newcomers.
+70
+POSITION VS ERJU
+The driver language topic 
+received funding from the then called Shift2Rail. The project was known as Translate4Rail (translate4rail.eu) and ended in December 2021.
+At the request of ERJU, several 
+live demonstrations of the prototype potential were performed in 2022: WCRR, Innotrans, TRA. Some Safety Authorities also expressed an interest in receiving additional information in order to assess the possibility of the prototype with regard to their specific border issues.
+The topic is included in the 
+current work programme of ERJU although not picked up as immediate priority.
+The concept of DP-RAIL is not 
+addressed by the ERJU work programme. It is therefore envisaged to seek EU funding from other programmes. Once the platform is launched, it could however become the place towards which new freight related operational solutions developed in ERJU could migrate.
+One of the freight flagship areas is the work 
+performed in the wagon domain. In 2023, 
+work will specifically address:
+ fThe process steps for repairs of enroute damages (GCU repairs) against the background of the processes described in detail in the ECM Regulation (ECM maintenance),
+ fThe continuous improvement of the ATTI process will aim to strengthen this safe and simplified wagon exchange/train handover process further especial -
+ly through the enhancement of the qual -
+ity guidelines and management system and by undertaking a Risk Assessment by an independent body.UIC was a forerunner in the shaping and implementation of the corridor concept. With a view to overcoming interoperability barriers, the ECCO group will support the TEN-T revision from an operational perspective.
+The unique asset base (IRS, guidelines and 
+Leaflets) and expertise of UIC in combined transport will, from an operational and technical perspective, continue to support the high-stake discussions on the combined transport directive revision and the weights and dimensions of road vehicles.
+71
+INCR easING R aIl FReIGhT MOD al sha Re
+PARTICIPATION IN THE 
+REGIONAL STRATEGY
+UIC Freight contributes 
+to the European Strategy mainly through the Rail Freight Forward Initiatives which it coordinates (www.railfreightforward.eu). As described in the above sections the key objectives lie with operational and capacity improvements.
+On a global level, 
+the development of intercontinental corridors has opened promising perspectives to the growth of rail transport over long distances as an alternative to other modes (mainly maritime and road) and as a key partner in a robust and sustainable logistic chain. The corridor concept has been a driver for international freight development and collaboration in which UIC has played a catalytic role for over a decade.
+According to its mission, UIC 
+has focused its contribution on improving harmonisation and interoperability of operation along the corridors in collaboration with its members, partner organisations and business stakeholders. 
+In addition to regular market 
+monitoring along the Eurasian corridors, UIC’s expertise in operationalisation of corridors has reinforced collaboration with other partner associations such TRACECA, UNECE, FIATA, etc.
+Furthermore, corridor 
+management should not be seen as a regional activity. The various studies and interviews we conducted illustrated this. The complementarity of corridors is an important point but a tailored approach to each of them is also required. 
+In 2023, it is therefore 
+envisaged to set up a network of corridors with the aim to:
+ fIdentify and monitor the business potential behind each route: identify success factors and target markets,
+ fPropose individual action plan in line with the strategy of their “natural” Region with the aim to have concrete implementation projects,
+ fOrganise one or two cross regional conferences/workshops per year,
+ fContinue dialogue with international partner organisations,
+ fEngage with development banks,
+ fFacilitate integration between stakeholders,
+ fPromote interoperability projects and harmonisation capitalising on expertise.
+UIC will continue to develop its global mission by deepening and extending it corridor activities to other regions. LARA region is in focus. Creating the necessary uptake collaboration with sister organisations like FIATA will be further extended.
+© Présidence Sénégal
+CONTRIBUTING TO THE 
+FUTURE OF SAFETY  
+AND OPERATIONS
+74
+CONTRIBUTING TO THE FUTURE OF SAFETY  
+AND OPERATIONS
+THE MAIN OUTCOMES OF THE OPERATIONS 
+SECTOR & SAFETY PLATFORM
+The first fundamental – safety, with an integrated 
+approach
+Digitalisation in railways will dramatically increase the amount 
+of data collected for the benefit of an even better safety management. But at the same time digitalisation increases a false feeling of total control: the world is becoming more complex, increasing the uncertainties and the limits of models.
+Furthermore, new societal issues need to be considered since 
+the Covid-19 pandemic. The health and safety of customers and of the workforce are the top priority for keeping railways running. Finally, the consequences related to climate change will force us to establish a crises and risks typology and adopt crisis and risk-oriented planning methodologies.
+The new approach to safety and performance developed in 
+UIC must be global and transversal.
+Approach for an Integrated Safety ApproachThe strategic objectives of the Operations Sector are:
+ fContribution to the Design and Organisation of Future Railway Operations & traffic management:
+ fTraffic Control Centres & crises management,
+ fCCS & increase of the railway capacity.
+ fDefinition of digital opportunities & use cases for the per-formance of operations:
+ fSupport to Automation (DAC, ATO, Artificial Intelligence, Robotics, 5G use cases, etc.),
+ fRailway Digital Modelling,
+ fEnhancing real time operations & customer information during disrupted situations: digital platforms for interoper -
+ability of data operations and exchanges between railway undertakings & infrastructure managers.
+ fDigitalisation of safety methods:
+ fnew methods for safety demonstrations based on risk analyses processes, aiming at an internationalisation of certifications & approvals of innovative systems.
+They will be achieved through:
+ fDelivering of harmonised operational specifications in 
+addition to manufacturers’ standards, as an acceptable means of compliance,
+ fTraining: this demand from UIC members is compliant with the necessary acceleration of the innovation cycle,
+ fOrganising the Return of Experience “REX” within UIC, so that Operations & Safety are correctly monitored, via an integrated safety approach, driving a library of bowties and safety barriers classification. For Europe, that will be included within ERA JNS processes and future CSM ASLP,
+ fCreation of a Scientific Committee, interfaced with the key activities of the Operations Sector and Safety Platform.
+75
+CONTRIBUTING TO T he FUTUR e OF saFeTY aND OP eRaTION s
+POSITION VS ERJU
+Supporting the Europe’s Rail 
+System Pillar (cf. notably “modular design of railway components”).
+In the frame of ERJU System 
+Pillar activities, UIC will coordinate the definition of targets related to the performance, reliability, availability, maintainability, safety and security of railways.The second fundamental – reliability
+In the frame of this second fundamental, Ops & Safety 
+sector will develop specifications related to:
+ fRight time departure of trains,
+ fDesign and Simulation,
+ fOperational Rules,
+ fSystem competencies & skills of the Operational/Management staff.
+The third fundamental – sustainable 
+interoperability
+In the frame of this third fundamental, Ops & Safety 
+sector will develop specifications related to:
+ fOps & Traffic Control centres: high-performance tools capable of managing most disturbed situa -
+tions at their level, including Stations and Hubs,
+ fScenarios for resilience and business continuity,
+ fData management: unified and interfaced databas -
+es for efficient IT.
+These fundamentals will lead the Operations Sector and Safety Platform to work with all other sectors from Rail System Forum, and with all other departments of UIC. PARTICIPATION IN THE 
+REGIONAL STRATEGY
+Looking forward to the 
+creation of a dedicated Task Force Safety, for RAME and AFRICA regions in 2023, based on the following programme of identified priority topics: 
+ fSafety Performance: Settlement of an African Railway Safety Network (ARSN), Middle-East Railway Safety Network (MERSN) to work on REX and sharing (safety database),
+ fHuman Factors & Safety Culture: one peer review between voluntary stakeholders, liaising EU and African/RAME members,
+ fTraining Modules Development: 
+ fSafety Leadership training, for CODIR/ COMEX, 
+ fSMS/Safety Culture training, for Ops and First Line Managers.
+
+ENHANCING  
+SECURITY
+78
+ENHANCING SECURITY
+ fThree permanent working groups 
+(Human Factors, New Technologies and Strategy, Procedures and Regulations),
+ fTwo ad-hoc working groups at the request of UIC members (SIA on Sabotage/ Intrusion/Attack and Crisis Management recently created).
+Beyond the continuous work of the working groups, the members are provided with two main tools which are continuously updated according to ongoing rail security issues:
+ fThe network of quick responders to exchange fast information between the members about arising securi -
+ty questions: the objective is to be very reactive in organising answers and their analysis in case of new is -
+sues or threats targeting one of our members,
+ fThe security hub which is a private secure web platform where rail se-curity experts can find, access and share solutions to railway security issues: about 100 security solutions are already available and will be completed with new operational experiences from the members.  New security solutions will also be regularly created based on the re -
+sults of the work performed within the security platform activities.
+The main priority topics highlighted by the members of the security platform for 2023 – 2025 are as follows:
+ fEmerging threats: cybersecuri-ty, CBRN (chemical, Biological Radiological, Nuclear), insider threats,
+ fCrisis management in case of physi -
+cal or/and cyber-attack,
+ fCross border issues regarding train security staff powers,
+ fIntegration and implementation of security solutions in the rail environment,
+ fTraining of staff,
+ fEmerging security topics linked to current concerns.STRATEGY & MAIN 
+DELIVERABLES
+The security of passengers and goods 
+as well as the security of staff are key elements to boost the attractiveness and efficiency of rail transport. Security threats are a growing concern in many rail companies: there are daily threats such as aggression, pickpocketing, theft or graffiti, but there are also more dramatic events such as terrorist attacks. These threats can have a high impact, create a feeling of insecurity and prevent customers from choosing rail transport.
+In this context the main objectives 
+of the security platform are to share experiences, develop recommendations and address emerging threats to help rail security managers to build their security policies.
+The UIC security platform is organised 
+around:
+ fAn annual congress to take stock of the work carried out and to propose future priorities,
+ fA steering committee which meets every quarter involving the UIC re -
+gions, UIC department activities (passenger, freight, rail system) when needed and professional and political partners (e.g., UITP, RAILPOL, CER),
+79
+eNhaNCING seCURITY
+POSITION VS ERJU
+Rail Security is not part of 
+the ERJU roadmap, however involvement in EU funded security research projects is a key activity to develop innovative rail security solutions for the future. Security related EU projects are developed within the Horizon Europe Secure Society call or DG Home Internal Security Fund (ISF). For the next three years, two projects have already been selected by the European Commission on the development of rail security training programmes.PARTICIPATION IN THE 
+REGIONAL STRATEGY
+The security platform is 
+worldwide: security is a subject that affects all regions. The security division is ready to develop regional security projects or workshops to address main security threats and work on security strategies that can be developed at regional level.
+The security division is 
+also ready to continue to participate in training efforts, in order to support regional activities.
+
+EFFICIENT AND 
+TRANSPARENT 
+MANAGEMENT
+82
+EFFICIENT AND TRANSPARENT MANAGEMENT
+More generally, UIC has successfully improved its visibility and 
+contribution to European projects from H2020 and Shif2Rail. This presence is being reinforced in the current Horizon Europe programme and Europe’s Rail, with the ambition to be recognised as a technical force and a reliable technical partner at European level.
+An organisational audit was conducted, and the first part of 
+the results are currently being implemented. Efficiency gains will show their full impact in the next period.FINANCE
+The UIC has set up the first steps for the improvement of its internal financial control.
+The objective is to gain a clearer view of each department’s 
+planned budget, isolating the Headquarter component from the Project Component, in order to facilitate management decisions.
+Efforts are currently being pursued to simplify the whole 
+accounting system and to develop the accrual performance, with the aim of obtaining major improvements during the year 2023.
+The personalised follow-up accumulated payments arrears has 
+been implemented with good results thanks to the commitment of members from all UIC regions. “Absent” members have been personally approached to better understand their difficulties or their expectations. These actions have led to a better understanding of the UIC added value and have boosted the momentum of their involvement and for the current year 2022 for instance, more than 600K€ have been recovered. In the future, regional projects will be reinforced to strengthen the direct participation of members at regional level.
+Concerning Projects, the projects database has strengthened 
+its position as a reference tool for members to follow up the progress of UIC projects. Developments are ongoing to improve the possibilities of targeted reporting to the members.
+The next step will be to address the fragmentation of human 
+and capital resources for projects, by consolidating the pooling of experts and resources towards bigger and more ambitious projects.
+
+83eFFICI eNT aND TR aNsPaReNT M aNaGeMeNT
+QUALITY
+In early 2015, UIC started implementing a Quality Management 
+System (QMS) in order to better respond to members’ needs for service, as a professional association. A members’ satisfaction enquiry is undertaken every year, as one of the tools used for measuring the key performance indicators of the UIC activity. The enquiry’s report is shared with both the UIC members and staff with the aim to facilitate collective action for continuous improvement of the association’s overall performance.
+In 2017, the UIC QMS was certified with the Quali’OP 
+label awarded by AFNOR (the French Association for Standardisation and Certification) to professional associations committed for quality of service; this certification has been renewed every year since.
+For the following timelapse from 2023 to 2025, UIC intends to 
+consolidate this quality management system to help achieve the optimum balance between the UIC’s internal capacities and members’ expectations.In order to do so, the main focus will be on:
+ fContributing to improve and consolidate the efforts of all the UIC support services for a better quality of ser -
+vice towards the internal (staff) and external (members) customers,
+ fSimplifying and formalising internal processes, aiming to reach an efficient and cost-effective functioning with effi -
+cient, competent and well-trained staff,
+ fManaging a simple but efficient documentary system as a common reference framework of coordination between the internal (staff) and external (members) stakeholders,
+ fMaking sure that the rules for ethical and transparent gov -
+ernance are respected and applied,
+ fEnsuring that UIC obtains further certifications in relation to its capacities and needs.
+In a nutshell, the major objective of the QMS is to involve all the concerned stakeholders to help achieve a high level of professionalism in the UIC services and maintain it on a long-term perspective. This aims satisfying member’s expectations on the one hand, and enabling UIC to position itself among the credible and reliable players in the sector at international level, on the other hand. 
+“Quality Minute” video explaining UIC’s commitments
+eFFICIeNT aND TRaNsP aReNT MaNa GeMeNT
+84
+COMMUNICATIONS
+The Communications department 
+implements UIC’s communications strategy in line with the Work Programme’s five strategic focus areas and provides each UIC body (department or region) with a clear vision of their strategic messages, audiences and proposed measures to implement their communication actions.
+The department will continue to 
+deliver a multi-channel strategy of different messages adapted to its various targeted audiences, with more emphasis placed on regional communication and activities. This will include the organisation of a regular cycle of regional events to develop activities and to give more visibility to the UIC brand in each region.
+In terms of social media strategy, key 
+performance indicators have made it possible to assess UIC’s communications actions and to decide the next steps. The promotion of activities on UIC’s social media platforms will increase, particularly on LinkedIn, which is UIC’s most effective social media platform in terms of follower growth, while internal and external communications will be improved through better-adapted digital tools for sending the UIC newsletter, marketing campaigns and internal news updates.
+Having gained more visibility and 
+credibility in the field of events over the last few years, the department will implement an official events policy, with the aim of developing a more professional model for the organisation of UIC events.
+A sponsorship policy will be put in 
+place, establishing a common approach between all UIC event organisers. The objective will be to develop a shared database of contacts, reinforce ties 
+with UIC’s partners, foster relations with 
+potential sponsors over the long-term, further strengthen UIC’s image and reach out to different types of audiences.
+
+eFFICI eNT aND TR aNsPaReNT M aNaGeMeNT
+85
+HUMAN RESOURCES
+The Human Resources department 
+accompanies and supports UIC’s strategy and performance, as well as the transformation of business models leading to changes in UIC’s activities and operating methods.
+Its goal is to ensure that UIC has the staff 
+necessary to function and that they do their best to improve UIC’s performance while also flourishing.
+HR must take employees’ changing 
+expectations into account and respond to the various and ever-increasing challenges inherent to the current reality of the world of work. This is why their areas of action are increasing and their missions are diversifying, which means that new work organisations and new management methods need to be developed, in particular, taking into account changes in flexibility and well-being at work and environmental and societal issues, as well as providing support for digitalisation.
+HR’s strategy will enable the follows 
+goals to be met:
+ fMobilising employees regarding the work programme, a collaborative project which reflects UIC’s values,
+ fTaking each person’s talents and skills into account in order to achieve UIC’s development goals as well as to promote internal flexibil -
+ity and the employee’s professional development, fImproving processes and HR’s activ -
+ities throughout each level of UIC,
+ fIncreasing the employees’ skills through access to continued profes -
+sional development and promoting skills management, while taking an increasingly fluid and digitalised working environment into account, especially in light of new challeng -
+es, such as the spread of work from home.
+In 2022, the HR Department introduced a goal-setting review process. 2023 will see the goals being evaluated and the commitment of employees being recognised.The HR Department will focus on the following initiatives:
+ fStaff training, including the develop-ment of project management skills,
+ fWork on the “employer brand” in order to:
+ -help retain talented employees, increase loyalty and get them to commit to the company’s aims,
+ -increase the attractiveness of the company is to qualified people in order to attract new talent, under -
+take or continue HR services’ dig -
+italisation, including any potential changes to the Human Resource Management System.
+Staff gathering in January 2023 for New Year’s greetings
+Published by: UIC Communication Department
+Director of publication: Marie Plaud-LombardDesign and layout: Coralie Filippini  
+Photo credit: ONCF, JR East, ÖBB, EFE, RAI, Amtrak, UIC, AdobeStock, Présidence Sénégal, SNCFT, Camrail, IR, CR, Korail, ZSSK, DB, RhB, 
+ALAF, VIA RAIL, ISR, CP, PKP, SAR, Rail  Freight 
+ForwardPrinting: UIC - 16 rue Jean Rey - 75015 Paris
+Reproduction of the content is only authorised with 
+specific mention of the source (UIC)ISBN: 978-2-7461-3260-3Copyright Deposit: February 2023, ParisL’UIC est une association professionnelle certifiée 
+pour engagement de qualité de services par AFNOR.
+UIC is a professional association certified by 
+AFNOR for its commitment to service quality.

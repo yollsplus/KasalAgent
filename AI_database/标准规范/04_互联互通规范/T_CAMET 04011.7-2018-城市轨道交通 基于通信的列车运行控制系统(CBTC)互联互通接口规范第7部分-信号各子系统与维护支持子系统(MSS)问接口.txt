@@ -1,0 +1,1785 @@
+ICS 45.020 
+s 63 
+T/CAMET 04011.7-2018 
+~m~m~~ ¥~~~~~*~h 
+j~ffiU~~jt ( CBTC) 1i~s~1iD~.mffi 
+m1$~=~~*~~~~-~~~~~ 
+( MSS) f811iD 
+Urban rail transit- Interface specification for interoperability of 
+communication based train control system 
+Part 7: Interface between signal other subsystems and 
+maintenance support system 
+2018-09-10 ~;(jj 2018-12-31 ~:00! 
+T/CAMET 04011.7-2018 
+IW"1!f ................................................................................. VII 
+'3 11!i .. · .. · .. · .. · .. · .. · .. · .. · .. · .. · .. · .. · .. · .. · .. · .. · .. · .. · .. · .. · .. · .. · .. · .. · .. · .. · .. · VIII 
+1 m~E .............................................................................. I 
+2 ~_m V!1 tt s I ffl )C 14 .. · .. · .. · .. · .. · .. · .. · .. · .. · .. · .. · .. · .. · .. · .. · .. · .. · .. · .. · .. · .. · I 
+3 :;tm;t-o~alil-m .................................................................. 2 
+3. I :;ti-e\-........................................................................ 2 
+3. 2 ~alil-i-et ..................................................................... 3 
+4 ,~~,Ji!U .............................................................................. 4 
+5 ~DtNi~ ........................................................................ 5 
+6 MSS-VOBC *)C~JXI.~i1 ...................................................... 6 
+6. I ~ D ~~:Jf:r\ ............................................................ 6 
+6. 2 illi{~~iX~f1JtNi~ ...................................................... 6 
+6. 3 ~ D 1/&:t@tNi~ ............................................................ 8 
+7 MSS-ZC *)C~JXI.~'i1 ................................................... ··· ... I3 
+7. 1 ~ D ~~:Jf:r\; ............................................................ I3 
+7. 2 illi{~~iX~i1if1JtNi~ ...................................................... I4 
+7. 3 ~DI/&t@fNi~ ............................................................ I4 
+8 MSS-DSU*)C~JXI.V!1(PJ~) ................................................ I9 
+8. I ~D~~:Jf:r\; ............................................................ I9 
+8. 2 illi{~JRiX~f1JtNi~· ..................................................... I9 
+8. 3 ~DI/&t@fNi~ ............................................................ I9 
+9 MSS-ATS *)C~JXI.V!1 ......................................................... 22 
+9. 1 ~ D ~~:Jf:r\ .................. ··· ··· ..................... ··· ............ 22 
+v 
+T/CAMET 04011.7-2018 
+9. 2 iffi f~ Fzi {)( ~ ~ Wi ~ ". ". ". ". ". ". ". ". ". ". " .. " ". ". ". ". ". ". 23 
+9. 3 :jj': 0 ~:Jmtta~ ............................................................ 23 
+10 MSS-CI 1Ji)C;};J\H'l1 ......................................................... 30 
+10. 1 :jj': 0 Jt:jj'::/J~ .......................... ............... ................ 30 
+10. 2 iffif~fz!{j(~f~Wi~ ...... """ """ """ """ """ ............... 30 
+10. 3 :jj': 0 ~'1m Wi ~ ". ". ". ". ". ". ". " .. "". ". ". ". ". ". ". ". ". ". 31 
+11 MSS-ittfiil:f!i)C;J;JUt1 ........................... ....................... .... 33 
+11. 1 :jj': o at~:/J~ .......................... ............................... 33 
+11.2 iffif~.Fz!{j(~f~Wi~ """ """ """ """ """ ...... """ """ ... 34 
+11. 3 :jj': 0 ~:Jmtta:i£ ........................ .................. ............... 34 
+12 MSS- Et~1Ji)C;J;JUt1 ...................................................... 36 
+12. 1 }~ 0 Jt:jj'::/J~ ......................................................... 36 
+12. 2 iffif~fz!{j(~~Wi~ ...... """ """ """ """ """ """ """ ... 37 
+12. 3 :jj': 0 ~:Jmtra:i£ ......................................................... 37 
+13 MSS-LEU 1Ji)C;J;Jl',ffi ..................... ................................. 45 
+13. 1 :jj': 0 Jt:jj'::/J~ ......................................................... 45 
+13. 2 iffi f~ Fzi {)( ~ ~ Wi :)£ ". ". ". ". ". ". ". ". ". ". ". ". ". ". ". ". ". 46 
+13. 3 :jj': 0 ~:Jmtta:i£ ......................................................... 46 
+14 MSS- ~f!L1K£19JU:f!i)C;};Jl\ffi ................................................ 49 
+14. I :jj': 0 Jt:jj'::/J~ ......................................................... 49 
+14. 2 iffif~.Fz!{j(~f~tUi:i£ """ """ """ """ ...... """ """ """ ... 50 
+14. 3 :jj': 0 ~:Jmtta:i£ .................... ........................ ............. 50 
+15 MSS-DCS :f!i)C1Jl\m ........................ .............. ................ 58 
+15. 1 :jj': o at~:/J~ .......................... ............. .................. 58 
+15. 2 iffif~.Fz!{j(~f~ta'i~ ................................................... 59 
+15. 3 t~ 0 ~:Jmtta~ ........................ ................. ................ 59 
+VI 
+T/CAMET 04011.7-2018 
+T I CAMET 04011 { ~ r!HIL :11! 3{: Ji ¥ 'F Ji f* fi{J ~U $ jg 11' t£ 1M %diE 
+( CBTC) Jill*Jilit~ D ~J\\1tD?t_:1;; ~ r A1-$?t: 
+-~ 1 'm?t: lili:~~jji)C; 
+-~ 2 $?1-:CBTC *~$±i!!.a~ii1"*t!J.i5l; 
+-~ 3 $?1-:$~~U$ § ;!Jf*jft( ATP)/~U$ § ;IJJg1'J( ATO) *~ 
+J=j$mfl{]~o; 
+-~ 4 'm?t: IR:I!i~t£1!PJ~( ZC) IBJ~ D; 
+-~ 5 $?t:it~:tllll*4.Jil(CI)I'B]~D; 
+-~ 6 $ ?t : ~U $ § ;IJ 1!ii t£ * ~ ( ATS) i'BJ ~ D ; 
+-~ 7 $?t:1~~~r*~J=j£1Hft3t:f-f*~(MSS) IBJ~D; 
+-~ 8 $?J-:$~A:tJlJI\!.Jii o 
+:zls:$?1-;& T/CAMET 04011 fl{j~ 7 'm?to 
+:zls:$?1-:J:ti:ft~ GB/T 1.1-2009 ~:±lfi{J~J\\JnU®.l¥I o 
+-~~:zis:B?tfl{]~®~3~n~&~~.:z~s::m?tfl{]~~m~~~m 
+iJUIU i! ® ~ ~U fl{] ~ ff o 
+:zis:'m?trn~oo~m~:i!!X:lit!J.~tt*~*~~~m~m:±l o 
+:zis:B?trn~oo~m~:i!!X:lit!J.~~o o 
+:zls:$?t®l¥Ilf!.ft: :X:t£f4ttlli1:1Jt~ ~IH~PJ ,:Jt :~C3(Ji 7c'#-,:Jt* ~!mli 
+~~~M~~#~-m~~0PJ,~OO~:i!!f4'#-M~~-m~~0PJJi~ 
+f"*~M~E!f ,:f*7JH ~$Btftl=t! 4.JN1Jt~~~0PJ ,WTtrAif~4ttJNN~~~0PJ a 
+:zls:'m?t±~®l¥IA : ~~£11.: :l!t~ ~~, 5tOffil~ 3iE S f;lf, ~ 00 ~, fPJ ft, 
+5{E~,;j% !fJ, $: ~lj, ~ jE ;M\, i'j,q J1[9fJE, ~l~ ,}E] flJeo *~~JI.: $: ~ M', *f;]ij, 
+i!=X;ti5 ,~~~ ~, 5iE f@l ~,.:E. :11! ~, 5iE & , 5iE :FH: ~, 3: ~ r, $: f;lf )C, $: tf-1it, 
+)C JJX; :f-'f , ff:lffL ~ ~U tt 3iE ~ Z: , * * ~ , :XU f;lf -1fZ-, ~ }1'1\ o 
+VII 
+T/CAMET 04011.7-2018 
+51 
+~~*~oo~m~~~~~~.~~*~~~m~~~~~~~~ 
+Et1 ~ ~ , :15 ¥U ~ 7Ji= ~ ffl Si 1m( ;tt: :$ ji * 5t ill.&. PJ M' ~ ~ N€ Et1 13 tff> , iM Ji: ~ 
+m$Jt~~~¥-T~ {~Etl~ U $)Effi£ilitl * r}t ( CBTC) ~~~~*~ U ill }11: 
+tr-rfL 
+•*~•m~~<~m~~~~ ¥r~mEtJ~$)EB1'£~*m 
+( CBTC) ~~~~*r}f.~J.MH~m$Jt~~~ ¥r~{~Etl~ U$)E1it£f!i! J * r}t ( CBTC) ~~~~ ~ D ~J. ~1L ~ ( ~ m ~ ~ ~ ~ ¥ r~ {~ Et1 ~U :$ JE 1-T 
+i£f!i!J * r}t ( CBTC) ~~~~ 19/IJii\~J. m:H ~ m $}1 ~ ~~ ¥ r:lil {~ Et1 ~U :$ 
+JE1ii£iffU*rJf.C CBTC) ~~~~I~~J.m:H ~~J,m;( 17 ~$?t) o 
+VIII 
+T/CAMET 04011.7-2018 
+flOC rtJ tm@: jt im £T-im 1~ 1¥-1 9tJ * ~ fr 
+1~ iM * fff. { CBTC) 1i~1iim ii D ~.!\!ill 
+~ 7 ffB# :1~~*-=f *t3C ~£l3=?~M= 
+*t3C { MSS) f8] ii D 
+T/CAMET 04011 
+$~1'Tt£11Jl J-*~C CB 
+n:: [] *Jt711, §~£[~ 
+~~ 0 
+~q'fl3 ?t~ JiFf -
+Jt ,]!Wf "&~ ,& ft Jt ~~ 11 tl ( CBTC) -*~B<lAA 
+'"'""·"""~m~1~%~~~~~ 
+-r ~tl x f~: xt :r: * w ?t B<J JE. m :fi1: &:, ~PI .Y B<J o fL :fi1: tt s m B<J 51 m x 
+14, {Sl.§Ttt B :M B<J#&:<$:~ffl 'T>$:$51- o fL:fi!::/Gtt B M B<J51Jti)Cf4 ,;l't:/lltiff 
+#Ji>$:( §~§T1'JB<J {~i;&-) ~ffl-'f:<'j>:$Jt o 
+GB/T 12758-2004 ~rtfti=JL~5bffi{~% -*~Jffiffl1J(;;f:~{4 
+GB/T24339 .1 $JL~j(Jffi Jffi{~,{~%:fa~Hltl-*~ ~ 1 $5t :i-tf~j 
+:r.\:{~~-* ~ r:f B<J:t(~;ffi=}CJJI {~ (IEC 62280-1 :2002, IDT) 
+GB 50157-2013 itl!.~if~jf*Jt7!1 
+CJ/T 407-2012 ~r!f$JL~j(Jffi~TJJl{~B<J~ Ij $ § i)Jt£1fitl -*~iJL;;f: 
+T/CAMET 04011.7-2018 
+T/CAMET 04010. 1 ~r!J!Wtillx:ii ¥r:ii {~[!<J~tl:$ili1-T1£iff!J~m 
+( CBTC) ::!il!*E::ii~~Nl\?rL m 1 'm%: ~m,g,f*~>Jt 
+IEEE 802. 3 IV. j\: ~ (Ethernet) 
+GB/T 12758-2004 , GB 50157-2013, CJ/T 407-2012 %1l T/CAMET 
+0401 o. 1 J\!-;;£ 89 bZ. r ~tl # i!HO ~ rurti~ m' ffl r ;;$: 'm5 5t o :1-J T {!~! r {5I! ffl , IV. 
+r!l!:l~tl tl:l T;J't:ift 89 .:E~;f§:k#i* o 
+3. 1 *i:et 
+3. 1. 1 
+:IJiX m $h. m 3t ii flli ~ urban rail transit signal 
+~Jtlr~rll!Wtill~:ii~mift.AI~~~~~fi:$W·~~:$ilifi 
+1Yiff!J ,!fi;,~ fB] 1Wi1Yiff!J~# 89 ,g,tfj\ 0 
+[ GB/T 12758-2004 ,#m-'=J;;£5<.. 3. 1] 
+3. 1. 2 
+¥ -T ii flli a{] ~tl $ ~ %!J communication based train control ( CBTC) 
+:ii:U/f*~*1L%'~tl :$ 6 Jtl~W!~i&:%t 89~tl :$ .:E ~ ;;£ {il. ~* ,ii~:$ -±ih 
+~~ftm:iim~#IV.JX.U5~fi!fi:.~~n89:$G®±Ihoo~gftw~m89 
+n ~ :rt: ~u * Fl ;tJ 1£ #iiJ ~ m o 
+[ CJ/T 407-2012, ;;£..')( 3. 1. 1] 
+3. 1. 3 
+~lj $ ~ 'iifJ ~ %!J automatic train control 
+m~~m~;tJ~~~*~1£,!fi:.~~~®ilifi1£~•~*89~~ 0 
+[ GB 50157-2013, ;;£5<.. 2. 0. 37] 
+3. 1.4 
+~IJ $ ~ 'iifJ ~ ~ automatic train supervision 
+~!@ ~IJ :$ B;f ~tl ;fZ :1-J ~tl :$ ili 1'J ~ i)b i&: };£ ut ~ , W •1'J :$ , ~ 1i([ ~IJ :$ ili 1'J 
+~Jll[·~#89,g,~o 
+[ GB 50157-2013, };£5<.. 2. 0. 38] 
+2 
+T/CAMET 04011.7-2018 
+3. 1. 5 
+9iJ $ ~ 'W1 IIJj t? automatic train protection 
+§ Z9J ~:EJt9iJ *~ 11' rBJ 1%, lffilf ~:J?, * ~11: ~%if$ n ~ JJil: J£ tt * 1¥1 
+[ GB 50157-2013 .~5( 2. 0. 39] 
+3. 1. 6 
+9iJ $ ~ 'W1 ill fr automatic train operation 
+§ Z9J~:E.m91J$:1Jnlf, iJ!Jlf, W$%il$ n 7flf1 ,m~~J£1ff!Jtt;;f:i¥J ,g,f4\ o 
+[ GB 50157-2013, ~5( 2. 0. 40] 
+3. 1. 7 
+i.tJHJliiHJJi computer interlocking 
+~it~ffLtt;;f: -Jg ~ ,c,,' § zg] ~ m\Jl! ~' lltft '1J!f%;fJL~ ~1?tt;;f: Ei<J 
+[GB 50157-2013,~5(2.0.40] 
+3. 1.8 
+~~ t? 3Z: M= ~~it maintenance support system 
+JJil: i~Hc * * ~ pg ~ft!!. ~ -T * tfdt :Jft 1~ Ji!, , ~fiH!fJ * ~ t.X ~~ :5HJT , ffl 'T * 
+~ s 'ljfjg ~~1i1? 0 
+[T/CAMET 04010. 1 ,;;f:i-f! 3. 1. 8] 
+3. 2 ~P!&i~ 
+AM: 9iJ $ § l;b~ ~Jt:m:r\ (Automatic Train Operating Mode) 
+ATC: 9iJ $ § 7;b :J£1ff!J (Automatic Train Control) 
+ATO: jlj $ § 7;1J~1'T (Automatic Train Operation) 
+ATP: 9iJ $ § 7;b liti1? (Automatic Train Protection) 
+ATS: jlj $ § Z9Jjj[:j£ (Automatic Train Supervision) 
+BTM: lili:~1*11¥tffitrm:!;tt ( Balise Transfer Module) 
+CBTC:~'Tilli1i!fB99iJ$3£1fftj(Communication Based Train Control) 
+CI: it~;fJL!fH.ttf (Computer Interlocking) 
+CM: 9iJ $ § 7;b ~:jft;j:~j.\'; (Coded Train Operating Mode) 
+3 
+T/CAMET 04011.7-2018 
+CRC: {®:FifJL#;;fltl.l§L (Cyclic Redundancy Check) 
+DCS: !/&t!i!i:iill {* * m (Data Communication System) 
+EUM: ~~ ~~ 1jj!J AI~ ~flit :.t\; (Emergency Unrestricted Train Operating 
+Mode) 
+IP: E:If* ~ i:J}i)U!fl.:IJ.I:: (Internet Protocol Address) 
+IPv4 : ~ ~,iF-pj}i)l ( Internet Protocol, IP) i¥J ~ 4 Jt& 
+LEU: ift%' t:EI, T-.:JG ( Lineside Electronic Unit) 
+MA: ;f$7,9)~1)( (Movement Authority) 
+MAC:~{211:1)-.A~1jj!JB(Media Access Control) 
+MSS: £fH?3tM=*m (Maintenance Support System) 
+MTBF: .1jL :1!\J$ Jlitf J'B] fWi B;f J'B] (Mean Time Between Failures) 
+MTTR:-¥:1!\Jf~ ~B;fJ'B](Mean Time To Repair) 
+PIS: *~{l'f ,~, * m (Passenger Information System) 
+PSD : flli -E! i'l (Platform Screen Door) 
+RM: ~~1jj!JAI~ ~f!it:r.t (Restricted Train Operating Mode) 
+SIL:~~JM~ 'Ii~~(Safety Integrity Level) 
+TMS: 3/U $ ~:@ * m (Train Management System) 
+TSR: llflj B1 ~~:11! (Temporary Speed Restriction) 
+UDP: Jij p !/&t!i!i:flHf}i)l (User Datagram Protocol) 
+UPS: /f J'B] Wf t:EI, 7W-( U ninterruptible Power System) 
+ZC: !20~~~1jj!J :f* (Zone Controller) 
+4.1 f*-%*mE:II*E::iill:lf=:-1ffi-*mr~.Y!VR~*"""'rfb,I~,:JE'lE , 
+£fH?~~1-:/Jlii, m'~m{lii:~Jl\~U j'!, mftii-ir <51-tP-~tifii o 
+4. 2 ~r!Jift:lft)(:iill CBTC *mE:If*Jf:ij:lf=::f~~f}/fiPJ{*-%r~$tti9: 
+f}i¥J~$m~~~*/f1P1m-%r~ilt%'N*i¥1-~iltmx:ii~M~~~ 
+~iltmx:ii~MLx~E::ii~~m~:JE'tE o 
+4 
+T/CAMET 04011.7-2018 
+4. 3 CBTC *mE:l!*E:illi B<J ,g,f* § ;f;f-~ ::1CJ~t@L~3(illi ~ ~{-t]E >g, ~:!?] 
+~~3(Jm~~~~~}E>gEJ<j~~~ $o 
+4. 4 E:l!*E:illiE!<J CBTC *mllll*ffl1C~PJ~Ef<Jt'rfb ,;:J-t!JlZ~JE;f§:kOOF' 
+1-t~~Jl:s.K o 
+4. 5 :f:E E: 11* E: illi I~ ti:Hff-llfJ ~ , t1Hff-Jf!-f.lz lllZ :f:E ~if ;2js: *1. 111 B<J ¥ r.lJ _t , ~ 
+!lffiE:ll*E:illi~~~ur*.m:tw Jfr 1E1~% *m;Jtfm~EI:k~~~ ,'11:~~ J"i: o, ~i.t 
+1¥1 J'!-1* ~ :s.K , % nX; J'!-1* I~ f~f% * m ttHff-B<J 1X * Jl >lt o 
+:$ -:till f~L\~HHlftr B<J ~ SJJ fHtu Jim , 
+~{~*!ftr:$5~1llit?1X* 0 ~ 1PJ B<J J'!-f* ~ IJ, /J 
+Jl~~~m -,*m~ 
+4. 1 o 1~% * mE:ll*E:illi ~llll~"f**.m m:*.mJ£ ~", lfllll ~if oo *:i?]q'Tffi 
+7HJ. ~i1 B<J ~_m J£ o 
+4. 11 *m*m B<J~**-o~tJ llll~-fr:ff :kiJHr oo *t;r,m~:ff :kq'T ~;t;r, 
+fl B<J *J. JE 0 
+*~m:~illimttB<JE:ll*E:illi~oe•*fiJ£~,PJ~•I~~I3J'!­
+f*'lf&., :xt~ o e•3(E: 1*1 ~*q'T:tt M 0 
+5 
+T/CAMET 04011.7-2018 
+6 MSS-VOBC 1'&3t~m 
+6. 1 1i IJ iitiJJ~ 
+6. 1. 1 !fm!lti IJ 
+MSS -T*m~ VOBC -Y*m;G J'8Bl~:ffJJC~~~:ilt1-T!/&:Jmilli f~ ,;fljffj 
+*-~~~~•*m~~~~mA~*~•~ o 
+6. 1. 2 Mi~.Y~s:fiii 
+jiJ * _t 11!. ~ nit JE: f.li. J§" , :t& ~ jlJ * EfT 611 1ft It , r!ffl JE: 1~ ,@, _t * EfT Jllli 
+139 ~ MH<:J MSS * m 139 IP ~ :fJl:, jf )WJ WH~Utl!. rPJ MSS * m ~ * iiC ~ 
+jiJ * :itt 1-T !f!Z ~ f1:: ~ at , ~ jiJ * ~ ~:itt A z c ~ ~ IR ~ J§" , 1lif IR.l at 
+~w-11-~~139 MSS *m:ilt1-TJWJ:WHiilli{~; ~jlj$~f*~:i1 ZC ~~ 
+IR ~Jll 31!-}§", VOBC * mt£~ ~lW~ ~ 139 MSS * mJWJ M 'liilli f~ o 
+6. 1. 3 ilii1it&~~!l 
+MSS ~O*ii~Mi:ct#!ifJE: at J'B] 1$-~:;.f ¥1J VOBC 139 {f{ilJ!/&:Jm, 9!1J MSS 
+iJ-.:'Jg~ VOBC illif~rp ~!if, MSS #!· VOBC i9:~il"\~i9::'JJ*9:il o 
+6. 2 ilil1iffi/},:~fZ]:fiji 
+6. 2. 1 ~mHilmm 
+MAC -T~~T IEEE 802.3 t~ffL 
+MAC~ E8 14 1-~ iHJl nit, 1 1-*flt {lUJ~ )¥ jlj ( 4 ~ 11) #!·fit :JJD :(£ 
+Ethernet *_y1J§" Tiff o 
+6.2.2 ~~ffi 
+;$: }~ Cl ~ ffj 1Pv4 i?}} i~ f1= :'}g ~ ~ ~ 139 i?}} i~ o 
+6. 2. 3 ft~ffi 
+*•Cl~~~*l39mA~ffJUDPi?}}~{1::'}g~·i?}}~ o 
+6. 2. 4 fi:*m 
+VOBC .bt*l39r*J~(vobcmsg1)rt(ft~* 1 ~J:\:~* 0 
+6 
+T/CAMET 04011.7-2018 
+* 1 VOBC ~.dl#:l:it 
+RPt!J.i~~ num_msg' msgl_id" length_msgl' msgld msg_id_Pr' length_msg_P r' Msg_Pr' CRC 
+15 -t:'f-11 l:'f-11 l:'f-11 2=¥11 N-i':'f-11 L:'f-11 2=¥11 N-t:'f-11 41-:'f-11 
+'num_msg ::1'J:2fi:.ffllWJJt:i! Ei<JYJ1.i .~. 1-1/&, ;ff:::(£ --1-.ffll ~m Jt:i! mt>~ 1J1.i .~. Ei<J l'iJ ~~,I 1-
+*l'i 0 
+" msg_id ::1'17J1.i.~. Ei<J~~ ,msg_id = 202ft~:2fi:r J1.i.~.::1'11!rfH~.~. o 
+'length_msgN ::1'11J1.i.~.I¥J msgN i'f<J L~JJr ,21-*l'i o 
+d msgN ::1'J:Jl-f*Ef<JYJ1.i.@, pg?fi:, i.-')SJA!. 6. 3. l 0 
+'msg_id_pr ::1'Jfflp Fl ~;!_ §1J1.i.~.~~ o 
+'Iength_msg_Pr ::1'1 Fl ~;!_ § Msg_Pr BH~JJr 0 
+• M sg_Pr ::1'1 13 ~ 5!. § i'f<J I*J ?fi: o 
+:;tR 2 ~J.JE T RP t1Ji5l* 8{] pq ?(;.a 
+* 2 RP #J.i)'(~ 
+OxFF ~J)H.~Jt ' Jtill)J;f.f-i.R ~ !& :11 ;f.f, i..R FHU%" 
+11-*l'i 21-*l'i 41-*l'i 41-*l'i 4-1-*l'i 
+' ~J)t-K& : .M.ttill:1J;f.f-i.9..3?: ~J)L~ fi<J*l'i -K!Jr o 
+~. J'¥3iU-!3-::2fi::1J a<Jfi'il~mitl/&,ttill:1J4!J.ffllWJ#f:2fi:i.H& 1m t ,J'¥Ji1J%1H'd.i::1'1 t-
+(231-1)0 
+:;tR3~JET~*~ ~~~~~mMA B{]pq ?(;.a * 3 ~~JJ~IHi®:::;J~i.Ri~.~ 
+~ t'i.J' ::k !]\ i*J ?£i: 
+VOBC :OxOI, MSS :Ox20 
+)iYJ' ID:X>f)iYJ'tfe -~% 
+tt ill :11 t'F i./l:l. f~ .~. 4*l'i ~it ill :1J ::1'1 VOBC at, Jlt ~% ::1'1 :$: ~.!1; ~%, ~% 
+( 16 bits): 
+15-14 bit,Bil¥1; 
+13-2 bit,3i0$~% ; 
+I -0 bit,$9iffl% 
+7 
+T/CAMET 04011. 7-2018 
+~ f* ;k;j\ pg ?£i: 
+VOBC :OxiO, MSS :Ox20 
+~ t& 1J :fif, iJ!. f~ ,@, 4~1' rlilf ID:X<!Fll'!im-~% 
+~~l&)JJ;] MSS Bt ,Jlti9:~:;1g MSS j'j<J ID 
+6.2.5 mfflm 
+:z!s:~ D ~Bt11f:* i¥J{~ .~, ~ffl § JE5( i¥J mffl Fz!: tf}i)t. o ~f* j7;j ~ _l7i!, 6. 3 
+i¥J ~Jl'.JE 0 
+6. 3 m r::a~ tiHi ii 
+6. 3. 1 ~~1'¥fif1Jj\;~Qijf*tt\l&1J5* 
+~ D ~i\H¥f~:1J:it*=ffl Big Endian, 1~±ill:l:!l:ff::fi}{llti!lli~3\i ~1) o 
+Ji{~:B't~:JJ::rt*=ffl~JiFJG~~;fs'UJ~( CRC) o 
+1:n\t$JJ!;rt*ffl CRC32 ( Ox04c11 db7) , rfi:0::rt (1 )it~: 
+G(x) = x32 + x26 + x23 + x22 + x'6 + x'2 + x" + x'o 
++ x8 + x7 + x5 + x4 + x2 + x + 1 
+;rt 9=' : 
+G(x) -x i¥J 32 tX.;m::1:n\t$J]Ii;rt; 
+x-:Bt~i¥J=:itti!iJJ~; 
+~-=f::rti¥J1JJ~ft{Eli&tYg OxFFFFFFFF o 
+6. 3. 2 VOBC-+MSS * 4 ~Jl'.JET VOBC ~:*Mf MSS i¥Jp;j~ o * 4 VOBC ~i!~ MSS I¥Jf*.'ilU.!l! 
+~ffj\ ;k;j\ 
+~t§'{j[ ~/j\{j[ f&;k{i[ t!l*{i[ (Byte) 
+msg_id I 202 202 202 202 tlli 
+tl!J.@, ID :)£ (1) 
+Version_No 2 Ox200I I 65 535 N/A $fflmii!i f*tMSL 
+JUR;zjl:% 
+8 
+~fi'F ::k 1]\ 
+~~'®: Byte) 
+Time 6 N/A 
+DriverNo 2 0 
+ChoiceMode N/A 
+Ctr!Level 
+DriveMode 
+Speed 2 
+EbiSpeed 2 
+AtpDetai lFault 4 
+AtpinitRst N/A 
+DeviceFault 2 0 
+AtoDetailFault 4 0 
+Platfonnld 4 0 T/CAMET 04011.7-2018 
+:fiiUJ'{a :G:::k®: tll:*®: tlli ~ 
+fj::,Jl,B,At, 
+N/A N/A N/A )t,f')1} Ci 1 1'-~ 
+"PC~ tJ?.:at rBJ) 
+0 65 535 O*lR7t5& i'iHJl~ 
+1 =IL-RM,2= 
+5 ITC-CM,3 = lTC-
+:G:ilb~IJ!k~~ 
+~ rlu~ l!MlOJti 
+~liU~IJ!k~~ 
+:9u $ ~ liU it J.l 
+( km/h) 
+~~.i!JIJz;IJ~.~it 
+JJt ( km/h) 
+ATPt\t41i-~~~*·4ij:- Bit{-\:*-1'-tr!i*,;f.t9• I 
+*lR$~, 0 *lRiE11t 
+1&!41tni(~1R ~ ( ~F ATP, ATO t\t4i), 4ij:-Bit f-1:: * 
+-1'-$~ 
+ATO ~-f*EF.J;f&~$~1R~ ,4fi:-Bit f~*-1'-$i!Ji1, 
+;f.tcjl1 *lR$~, 0 *lRiE11t 
+0 Oxffff 0 *lR7t5& vH1 ~ ( :9'1 $ tE 
+JRI'BJ~v~ il~~llu 
+~:7t5&®:.rrv~ilflf­
+~atv~il~:ff5&) 
+9 
+T/CAMET 04011.7-2018 
+-i'i** ::k !]\ 
+;ijR~{H :fiVJ\{H :@:;k{H ~'*{H in~ n: (Byte) 
+AtoOperation 
+1 0 ATO ~1l'i1W tj:t EJ(]"/i{J!i!'i: ,4IJ-1- Bit{-t*-l>l'"/i£1!iti: Fault 
+AtpCutoff 
+I 0 0 1 0 =7G%c,l =1'i%c ATP -IJJWT~51 Propulsion 
+AtpCouoff 
+:91J * w wr ~ sl )jj( I2Sl , 4fJ -1-Bit 1t *-f't' )jj( I2Sl , ~ Propulsion 8 0 
+Bit )'11 *~1'i%c Reason 
+AtpEbA I 0 0 I 0 = 7G%c, I = 1'i%c ATP ~ fiW. '/j\' Jfl 
+i!JiJ 7;1J 
+A tpEbA Reaso1 4 0 ~U$11\' ffilti1J7;1J@: I:!51, 4IJ-1- Bit 1t*-f'lt)jj( I2Sl, ~ 
+Bit )'11 *~1'i%c 
+AtpEb I 0 0 I 0 = 7G%c, I = 1'i%c ATP ~ fiW. ~ ~-
+i!JiJ 7;1J 
+AtpEbReason 4 0 ~u .tj:: ~ ~-i!JiJ 1;11 W-I2Sl , 4fJ -1-Bit 1t *-:Pr )jj( I2Sl , ~ 
+Bit )'1I *~1'i%c 
+AtpLoseLoc I 0 0 I 0 = 7G%c '1 = 1'i%c ~U$&:'!'1-*9<: 
+AtpLose 4 0 :9U$-*9c {:il:'i'1@:12Sl, 4IJ-1- Bit 1t*-f'l')]!: jl;f, ~ 
+LocReason Bit )'1I *~1'i%c 
+Train Brake 
+0=7G%c,I =1'i%c 11Jifo:ili1J7;1JiJ$Jii!'i: 1 0 0 I 
+Fault 
+*~mi~-*<~ 
+Full Load o-254 * ~ Ef -JA{Hjg O,*~.llt 
+I 0 0 255 7H~ lltm!~-*:1>JOJiX;:it 
+-Ratio 
+255 :1>77G%c1H *ni) ;ff:2js.:~7[;.llt 
+~flli ,~:i!7G%c{H 
+rtJ. -T :tfu 1!1 
+jt&_:2js.: 4 0 0 *~rt-T:tful!l 
+Jl&:2js.: 
+10 
+T/CAMET 04011.7-2018 
+~ffF :;kl]\ 
+lljlt~{EI :fiVJ'fEI :&t:lcfEI ;f5(*1EI tlli :!£ (Byte) 
+A TP _Version 4 0 0 o ~V1~X~ $):{lj:):Jj:2jl:% 
+A TO_ Version 4 0 0 o*~X~ $):{Lj:):Jj:2jl:% 
+M M I_ Version 4 0 0 o*~X~ $):{lj:):Jj:2jl:% 
+jO tt::f!i!:!f::.fi'f !Jr 
+~{il ( ATP), P: J! 
+-126 -126 z fB] 
+B<J ~ 1EI, K~ f.!f !f:: 
+~I J3r ~ fEI , 1(1 fft : jlj -lj:: i'f<J {.!} $ 
+Cm0 ~11i£~{-t* 
+~~ 0 Stopped_ 
+I N/A 0 Oxfe :A::f.f-' :ff1 ~ 1-t * :i:1 jO :-!j::~lof!il:~t nt-Jt PrecisionA TP :f"f-o ilJi:i:1 [ -126, 1lli X ~ , P: us 1EI 
+126J a<J ?~ :tJ:: m 13r, 
+-:JJ Ox7f 
+P:~ -t26 Tix 126 
+fi<J:ltlJ'f-{Jio 
+jO :tJ::~f:f!il:~t nt 
+lt1EIX~ ,P:~{J[ 
+-:JJ Ox7f( 127) 
+jO tt:: ?,1 !f:: m J3r 
+~{][ ( ATO), P::ii's 
+-126 -126 z fB] 
+il9~{1[' 1-t*f!il::!f:: 
+ti1f J3r ~ ffi ' $ {ft : 90 $ B<J {.!} $ 
+cm0 ~r}1j£~f-~* Stopped xtr-, tn ~1-t*u ~~ 0 
+-Precision I N/A 0 Oxfe ftf-o ilJiU [ -126, i'l $ olf: {.!} 'f.tt At it 
+ATO 
+126] i'f<Jf!jl: $ :ti1f JJr' iEIX~, P:~{J[ 
+P::i!-126M 126 -:JJ Ox7f 
+i'f<J:ltlW{J[o 
+90 !f::~f:f$~ Bt 
+ltiEIX~, P:m1EI 
+-:JJ Ox7f( 127) 
+11 
+T/CAMET 04011.7-2018 
+~fj\ ;k;j\ 
+~!§'{il :liH'iil :lll:kii! ;tlc'*iil Wi ~ (Byte) 
+Oxffffff 0 xffffffffffff * ~ 
+§~5( Check_Result 6 NIA 0 xt& fffffe 
+VOBC_ZCIDI 4 0 N/A N/A N/A ij;3( ZC ID 
+VOBC_ZCCO I 0 VOBC .E5 ZC :ii!ifi'f"/ii(j!f,!Wi~ ,0 *~:ii!iff."/ji(j!f,!~*illi 
+MFaultl ff. ,1 *~illiffilE11\' 
+~ tr zc m , :!m 
+VOBC_ZCID2 4 0 N/A N/A N/A :;tij; 3(, .lfj({il 
+OxFFFFFFFF 
+VOBC_ZCCO I 0 VOBC .E5 ZC illifl'f"/ii(~t!t/J'i~, 0 *~illifl'f"/ji(j!f,!~* 
+MFault2 illiff,,1 *~iillfl'flE'ffl' o :;tij;3(,:QR{i!OxFF 
+VOBC_ATSIDI 4 0 N/A NIA NIA ij;3( ATS ID 
+VOBC_ATSCO I 0 VOBC --"j ATS :iffifi'f/&l!f.it/li~,O *~:ii!ifi'l/&l!f.i~* 
+MFaultl illiffi ,I *~:ii1lfl'flE11\' 
+~ tf A TS ID , :!W 
+VOBC_ATSID2 4 0 N/A N/A N/A :;tij; 3(, .lfj({il 
+OxFFFFFFFF 
+VOBC_ATSCO I 0 VOBC --"jij;3( ATS illiff."/ji(j!f,!tUi~,O *~:ii!i fl'f"/ji(j!f,! 
+MFault2 ~*:ii!ifl'f, I *~:ii1lff.IE'il\· o :;tij;3(,JfR{il OxFF 
+Cl lD 
+VOBC_C IID 4 0 N/A N/A N/A JA£§:@:Fo:ii~B9 
+CI 1'19 ID 
+VOBC VOBC .E5 CI :iffifl'f"/ii(j!f,!Wi~ ,0 *~Jill fl'fi'ii01i!~*:ii!i 1 0 
+-CICOMFault ff., I *~:ii!i fJ'ilE '/lr 
+ATP *~JIDfl'f"/ji( 
+Train Com Fault I 0 0 1 o=xt&,1 =~t& ilet,O {-~**~:ii!i 
+ff. lE 11\' , I f-1: * * 
+~:ii!ifl'f"/ji(~ 
+12 
+TmsComFault 
+VOBC 
+HeadOrTat! 
+TrainReserve I 0 0 0 T/CAMET 04011.7-2018 
+.!:j TMS illi fi!f $: 
+O = :JG%1:' I = 1'1%1: 11m, 0 {-~ * .!:j TMS 
+:iiiifl'fiE'ilt, I 1-t* 
+.!:j TMS :iilifR$1!1:£ 
+11lUli ~ eg I¥ ~ : 
+0 I : TC I ( + ill il~J ) ; 
+02 : TC2 ( + :itt ffj1J) ; 
+ff:X~L 
+~ #:: VOBC * 
+.If€ ~ fR .@L 0 I -Jg 
+TCI, 02 -jg TC2, ff 
+:1-J x %1: 1t , ~n M ~ 
+J:!g:;f-jg~f,!i~]Jlt::jtf 
+:im 6 ~~ll~ u$,1 
+~$.@:1-J TCI ,6 ~ 
+$Jlfi-jg TC2 
+CRC 4 N/A N/A N/A N/A CRC {lt~,it~ 
+"ffL lliJ )A msg _ id 
+iU TrainReserve 
+7 MSS-ZC :f&:X:~m 
+7. 1 1iDii1iJJ:it 
+7.1.1 !Jo/H-'.1iD 
+MSS -T .¥m--1:3 ZC -T .¥ m 8<J MHft •:Jtz l'BJ *JiH1Hft p.xJ 3tHrl!&mHm 
+f~f o !t "P , zc -T .¥ m B<J ~t 1ft. 5t tJl!: f;J:!; 1 RHIF rtE B<J !;..( :k p.xJ * o :it! 11" illi 1*; 
+M§-T.¥mm:~~ftEB<J!;):kp.xJ*o:it!fiillim o 
+13 
+T/CAMET 04011.7-2018 
+7. 1. 2 i';I:J~3t1ifili£ 
+ZC r * tft ~t {?. 5t; J!J ;1m ·lj::@ :i1 ~t IP ~ rPJ MSS r * tft ';!;_ :i! :J1i ~ 
+7. 1. 3 iMf~t&~~H~ 
+M§r*tfe~*fi:i1.~M~~~~~ZCr*tfe·tp·5t;~ffM 
+~il!.!.i!U MSS r*tfeiAjg~ ZC r*tfejjfl'fr:j=l~;ZC r*tfe~t!P•5G~D 
+*fi:i1-~Bti'BJ~~¥U MSS r*tfe~Jl\Z~~il!.!.i!UiAjg ZC r*tfe~ 
+MSS r * tfejj {l'f r:p ~ ( PJ ili;:W ~~) , .lJt B;f ZC r * tfe~t IP .5G{)}~M J!] :1m 
+·lj:~ MSS '&_:i!~il!~3£: o 
+7. 2 ilf~m;x~#;Jfill£ 
+7. 2. 1 ~tmtiU~m 
+MAC r ~£'f' IEEE 802. 3 t.iFrfL 
+MAC * El3 14 1-'¥ 1Hil. JtZ, 1 1-Vffi ti: lJFL r¥ :9U ( 4 '¥ 11 ) *I-11Sl1Jn {£ 
+Ethernet VffiJ§"W o 
+1.2.2 ~~m 
+*~ o ~ffl IPv4 t/}i)l. fP Jg ~ Ul ~ ~ti} ·W. o 
+7. 2. 3 ~~m 
+;zjs:~D~M#:i!~~-~fflUDP~~fPjg#·~~ o 
+7. 2. 4 m:Jf.lm 
+:zls:~D~M#:i!~~-~ffl~~~~Jl\Zffl~~~ oA~~~~7.3 
+B<J~Jll,~ 0 
+7. 3 tlO~~fili£ 
+7. 3. 1 ~~:fffiiJJ~~iMf~~~JJ$ 
+~ D ~il!iffit:ff:rt*ffl Big Endian, {~lillhlif:fix:il~~31~'¥11 o 
+:@ f~ ti: lJFL :ff :rt * ffl mt PF JC ~ ~ ti: lJFL o 
+~!VZ$J_N:ct';*ffl CRC32(0x04clldb7) , :J:li:0Jt (I )it~ .~r:rt ~1JJ 
+~iJ{i[i&tjg OxFFFFFFFF o 
+7. 3. 2 ZC----+MSS 
+~ 5 ~Jll,~T ZC '&-:!!~ MSS ~{~f,~,~~ o 
+14 
+T/CAMET 04011.7-2018 
+m[:li*J~ ~1' -lfJ3t WI :]£ 
+HEADER I iiWi :7f :!lfrtiF it 
+!Jl}(-jAffi :OxAA 
+LEN 2 ~_w * J3t UA M SG _ ID :7f :!lHU C R C tit 
+~~5!n 
+MSG_ID I jj1j}~, 10 
+!Jl}(-jAffi :Ox20 
+STAMP 6 ~,.FJ, B ,A•L?J-,:f:J, ·~ 6 I -t-~1' 
+UtJli:R;f I'BJ) 
+zc i't<J~%C+:ittffli J) 
+ZC_INDEX 4 ZC *7ft!L!i'ZfJJ ML.t ~, ZC ~fH.P J't'!-:Jt 
+*l& 3\IJ 3jl-f:i' 'jj:_ * fl<J ~ w. z lltr, zc -
+INDEX = 0 
+:taxrr:vu%,m:!ll1lli:h 1 ,mrxmx 
+SN 4 f.iX(j.:~} JO, ~it.~ OxFFFFFFFF Fn, r 
+-(j.::}J):#fr@l l ,JA I :lf:!lfi 
+Device_NUM I ifr(~·§:~·li'fl {~:~:£1: 
+ifr(~( l))j}t~ 
+Device( I) I Oxaa: iE 11\' t't ~ 
+0 xff :/i!l: lli!'t:l:k ~ 
+;f.l;{tl!.lli, ffl 00 
+ifr(~( n)tl\~ 
+Device( n) I Oxaa :iE'/il'tl\~ 
+Oxff: /iicllf.!tl\~ 
+~'!;{!!!. m: , ffl 00 
+zc ±~tl\~ 
+Oxaa:l *±mil\~ ,2 *~mil\~ 
+Ox55 :I *~mil\~ ,2 *±mil\~ 
+HostStyle I Ox77 :1 *±mil\~ ,2 *Mlllf.! 
+Ox99:1 *Mlilf.!,2 *±mil\~ 
+Oxff,,zy_tJLit(i!m 
+;f.l;{il!.ffi, ffl 00 
+15 
+T/CAMET 04011.7-2018 
+~r::Ji*J~ ~1)-(_~Jt tlli ~ 
+ZC Ej DSU E!<JJififilPl:k;t 
+Oxaa: iE 'lit 
+ZC_DSU_COM I Ox55 :$i!f.t 
+Ox33 : * ~ ( zc Mt t? Jf! 5t; :X; rt: tJt l!il 
+1l§L@.) 
+Oxff::X; DSU ~-?kntB<J!!JRiA.ffi 
+ZC Ej A TS i't<J :iiii fi'Ptl\ ;t 
+Oxaa: iE ·;~· 
+zc -ATS_COM I Ox55 :$i!f.t 
+Ox33: * ;:il ( ZC ~itt? Jf! 5I; :X; 'it: !!it J!il 
+fl'L~.) 
+ZC CI NUM I Ej ZC Ji!lfj§f B<J CI ~ill: ( +:i1!ifjlj) --
+ZC_CI_ID( I) 4 CI(I)(I<J ID(+:iltifjlj) 
+ZC Ej CI ( I) E!<J :iiii fFPI:k ;t 
+CI ( I )ffi ,@, Oxaa: iE 'k'l' ZC_CI_COM( I) I 
+Ox55 :$1$: 
+Ox33:*~(ZCM :X;$~l!ilfi1f.~.) 
+ZC_CI_ID(n) 4 N/A 
+ZC Ej CI( n) B<J:iillffl't'(;t 
+Cl( n)ffi,@, Oxaa: iE 'Iii' ZC_Cl_COM ( n) I 
+Ox55 :$1$: 
+Ox33:*~(ZCM :X;rt:!!Jt.llRfi1L@,) 
+ZC_ZC_NUM I Ej zc :iillffl'B<J;f§~ zc ~ill:( +:W:ifjlJ) 
+ZC_ZC_ID ( I ) 4 ;f§4'fl ZC( I) i3<J ID( +:it!:ili1J) 
+;f§4'fl ZC Ej;:ffi4'fl ZC( I) B<J:ii!ifj§ft'(;t 
+ZC( I )fj§f,@, ZC_ZC_COM (I) I Oxaa: lE 'it 
+Ox55 :$~ff£ 
+Ox33 '*~ ( ZCM :X;$~.llRfi1f.@,) 
+16 
+ZC_ZC_ID ( n) 
+ffi~ ZC ( n) 
+{~.~. ZC_ZC_COM(n) 
+NID_SOFT_NUM 
+NID_SOFT_ Ver( I) 
+NID_SOFT_ Ver( n) 
+ALXE_SEG _NU M 
+i.t ~ lR ¥.11: 
+( n) Q_ALXE_SEG 
+Train_count 
+VOBC_index 
+Train( 1) 
+ZC_ VOBC_COM 4 
+4 
+4 T/CAMET 04011.7-2018 
+;fft~ ZC(n)i'!<J ID(+:W:ilJIJ) 
+ZC !j;ffi~ ZC( n) i'!<Jijf~~;:5 
+Oxaa: iE ')j\· 
+Ox55 ;/jj{ JICi: 
+Ox33:*~(ZCM X!*~~{~.~.) 
+Oxaa: iE 'lit 
+zc 'm':t.!rm: Bl!I*J i¥J ~'J * ~ < JJt ~u :-tiO 1g 
+zc "i!Ji.PJJiJ i'!<J~u $) 
+VOBC i'!<JJ!fE-;j:ff-i.Jl. 
+O:*~~U:$i!i!:* ID(m*:iA..f.il) 
+;f.tftl!.:*~"i!JiJl.~iJ~Ij$ ID( +urliJIJ) 
+($~!!.%) 
+ZC .!:3 VOBC E!9:iiii{~;{;l,;;:5 
+Oxaa: iE 'lit 
+Ox55 : "/iit J$t 
+17 
+T/CAMET 04011.7-2018 
+~i::Jpg~ ~1Hflt tlli :1£ 
+VOBC (!<] J1fE -:fif-i.R 
+VOBC_index 4 0: *;_mj ~ :f-iQ:~ ID ( llJkiJdi[) 
+;It fffi : ~lVf.; i'iJ iJUJiJ 3i~ :$: ID ( -j-:itt jjj!J ) 
+Train( n) ( :f-~il%) 
+ZC ~ VOBC i¥Jillfi'fil\~ 
+ZC_ VOBC_COM I Oxaa: lE '/It 
+OxSS :$:J!Ct 
+Private N §~.)(~~ 
+END I $Jlta<J~:f.R:f!FiJt 
+llJkiJ,:(i :Ox55 
+CRC 4 CRC :flt ~, {It~ rg I'll!)). MSG _ ID 
+3j~ END 
+7. 3. 3 Mss-zc 
+MSS l&iU ZC i¥J:f1t>c.5 ,.:st&ni£i~l.ili:~ o :;& 6 ~Jl\J:ET MSS ~:!2i#?r ZC 
+B<J {~ .~, 1*1 ~ 0 
+* 6 MSS ~~~ ZC ~1~ .'liU!tr 
+~i::IP,]~ ~"ri-ff& tlli :1£ 
+HEADER I $.!11 7f 1frl fi)\ ;G; 
+llJkiJd~I:OxAA 
+LEN 2 $Jlt-KJ3r(J). MSG_ID 7f:lfn'i ~ CRC ;&~~J'.R) 
+MSG_ID I 7f!l ,@!, IP 
+llJkiA. {~l: Ox21 
+STAMP 6 <¥,JJ ,s ,a•L?t,tl-'*2li1-~11(::1tJ¥-atrBJ) 
+RCV_SN 4 J.jiz~)(;j"J.jiza<J zc *)CJ¥3iiJ% 
+END 1 $J)t a<J~:f.R:fiJ\iJt 
+~iA. {i[: Ox55 
+CRC 4 CRC ;flt~,it~rgl]l]J). MSG_ID i'J END 
+18 
+T/CAMET 04011.7-2018 
+8 MSS -DSU t&xm.m(llJJ2!;) 
+8. 1 tiDj!ti:iJj\; 
+8. 1. 1 !fmlltiD 
+MSS r*m--'=3 DSU r*mtt!P1!!:7GZfSJ*=JiH1Hf:t~itHr!l&tmJifi§ o 
+:;It* , DSU -T * m tt tp 1j! :7G tlfd;!t 1 ~tift fi 89 k.-{ :;:t ~ ~ D itHr Ji {1§; MSS 
+~*m•~~fl89k.-{:;:t~~D*fi3im o 
+8. 1. 2 1if.l~3tsti~ 
+DSU r*mttfftlj!:JG)WJ ;IiJ'J'Ij:Ji:i:Hl!P~IoJ MSS r*m~uH!i W{l§,~, o 
+8. 1. 3 ilfl31&1!!~!1 
+MSS -T *m:tm J!Hll:iiW!JEBtfEiJ~®:::f¥0 DSU -T *m 89{f{iiJ!/&im, JJ!O 
+MSS r*m-!Ajg--'=3 DSU r*m3ifi§9=rWf;DSU r*m:tmJIUi~:iiW!JEBtfEiJ 
+t&::f¥0 MSS r*m89!3lZ~!/&tm,JJ!0iAjg DSU r*m--'=:i MSS r*mJifi§ 
+9='Wf(llJ:i2\;W~~) ,litBt DSU r*miJJ-f*:M'JWJWJ~ MSS ~*!l&im::f~ o 
+8. 2 ilfl3~/X~#;Jt£~ 
+8. 2. 1 ~t.liHiU&~ 
+MAC -T~~T IEEE 802.3 tiftflo 
+MAC * El3 14 1-'¥ 1H£!. ~, 1 1-~JH :si: ~ ff :>'IJ ( 4 '¥ 1)) ~ ~ }J[J {£ 
+Ethernet ~Jlrj§-jij o 
+8. 2. 2 !XXJ~~ 
+;;1s:~o~m IPv4f)}i5l.f'F:Yg~~~B9wi5l o 
+8. 2. 3 fHlftr~ 
+;;$:~D~~~*B9mA~fflUDP-pj}~~jg~-W~ o 
+8.2.4 Eilffl~ 
+;;$:~ D ~Bt1~*89{i§,~,~ffl § JE)( 89!3llffl~Wi5l o ~1* 1*1 ~_w., 8. 3 
+i¥1~1.]£ 0 
+8. 3 tlD~Iiti~ 
+8. 3. 1 ~ji1=ffit:iJj\;~OilfJ3~~JJ)! 
+~ D !l&imfr~:/J:I:t*=ffl Big Endian, {~±t!!.:W:fr:li~:ii~:ff~'¥1) o 
+19 
+T/CAMET 04011.7-2018 
+Jifj§{Q~:/J~*=JiHn!!fJG~~{Q~( CRC) o 
+~nX;~JJ!~*m cRC32(0x04clldb7) .rtc0~CI Ht~L~r~B<Jm 
+~ft{i[-ji~ OxFFFFFFFF o 
+8. 3. 2 DSU--+MSS * 7 ~Jll,}ET DSU ~:i!~ MSS B<J{J§.~,r*J~ o 
+* 7 DSU ~j!~ MSS l't-Ji~ ,f!Udi 
+~QrJ;j~ *11-lfJJr Wi ~ 
+HEADER 1 ~JJH!<J 7f 1m 1if, it 
+~iA.{ii:OxAA 
+LEN 2 IJ!dl-L~J.t()A MSG_ID :lf:lfriiiJ CRC t!l::l!i~Jl0 
+MSG_ID 1 ?~.@, ID 
+~iA.m :Ox90 
+STAMP 6 :!:p,Jj, B ,n•L?t,t114l-Ci 11'*11(~t:!?.:At 
+IRJ) 
+DSU i¥J~%(-!-:i1t#i1J) 
+DSU_1NDEX 4 DSU *7FVL:Ei.X:1<J.J :lfri J: ltJ,, DSU ;{t :tp trL* l& iiJ 
+.1Jlf; £*1¥1~:Jmzlltr ,DSU_INDEX = 0 
+1iJtff:Ju%, 1<l.l:lfriffi.:1-J 1 • .m?XmJt 1-tox .m 11n, 
+SN 4 ~ii-.3?: OxFFFFFFFF JR, r -(?.::lliJ'fr @JI ,)A I :7f 
+Jlr!i 
+Device_NUM 1 i& {l-§.1?; ll!l 14 ~ill: 
+i,Q:{l(1)~~ 
+Device( 1) 1 Oxaa: iE #~~ 
+Oxff:/O(Iifit~~ 
+;tt1rnm. 1.9iM 
+i,Q:{l(n)~~ 
+Device( n) 1 Oxaa: iE 1f,·~~ 
+Oxff: /O(I!f,t~~ 
+;tt1rnm. ffi m 
+20 
+HostStyle 
+NID_SOFT_NUM 
+NID_SOFT_Ver( I) 
+NID_SOFT_ Ver( n) 
+VOTE_STATUS_A 
+VOTE_STATUS_B 
+Private 
+END 
+CRC 
+8. 3. 3 MSS-+DSU 4 
+4 T/CAMET 04011.7-2018 
+DSU .±~:{7\~ 
+Oxaa: 1 * ±ffl :{7\~ ,2 *-%-ffl :{7\~ 
+Ox55: I *~ffl:jj\~ ,2 *.±ffl:{l\~ 
+Ox77:I *.±ffl:{l\~,2 *"/ilCJ!ei: 
+Ox99:I *"lilcJ!ei:,2 *.±ffl:{l\~ 
+;f.Utl!.ti'LJ:9llil 
+3;frl_±tll4) 
+CRC ;B(!Ji, it;l'Hr£ Jjj])>\ MSG_ID ¥0 END 
+* 8 ~Jll.JET MSS £:!!~ DSU I*J~ o * 8 MSS ~j!~ DSU agf* ,f@~Jli 
+~DI;I;J$ ~11-!f!l m :li£ 
+HEADER I lj!Y!i'J<Jff:!mfff-it 
+I!JkiJdi1i:OxAA 
+LEN 2 $JJr-JfJl(.i>\ MSG_ID ff:!m¥0 CRC ;B(!Jit;!i3!0 
+21 
+T/CAMET 04011.7-2018 
+* 8 MSS ~~~ DSU B<Jm.~-~Jl!(~) 
+}~ D i*J~ *1t*lt Wi :l£ 
+MSG_ID I m.@l. m 
+~i}..{i[:Ox91 
+STAMP 6 if,,Jj, El ,At,:J},~1}~ 1-i'*lt(~t:Jil:A;j 
+RCV_SN 4 
+END 1 
+CRC 4 
+9 MSS -ATS f&X:~m 
+9. 1 ~ Q iifi1.Jj\; 
+9.1.1 !lo/J~tiQ I'SJ) 
+Jjiz;'@:X;J)jiz~ DSU i&XIT~tl% 
+~.!Jlff<J~:iR;f;J(i.J!. 
+~i}..{i[ :Ox55 
+CRC ~~.itJ+rE:BlJJA MSG_ID 3\IJ END 
+MSS -T.¥~--'=3 ATS -T.¥~£ttF•:7Gzi'8J*=.FIH1H?~:itHJ-~m)~ifjL 
+Jtl=j=l ,ATS -T .¥~£t!P•:7Gmf:tt 1 JEH~ltEB<J IV.j(~~ 0 :ltH-Tlt!iffi; MSS -T 
+.¥~m~~ltEB<JIV.j(~~o*ftlt!imo 
+9. 1. 2 idJ~3ts:Jl'lij£ 
+ATS --'=3 MSS ZIBJ3t:!f.B<J~m§1%,c_,~tfj§L~LATS :f!X~fj§LfLATS _¥ 
+~ !€X flj: f!li ;zjs:% , A TS 11" $ fj§f,!~!-( 15 CI l'l~:% f~L~. ) , A TS ~ f'F ic ~ o tE ;ffi [P] 
+)i!iJ:fVH1'1 ,;;f[P]~ ~~1@ 8<J SN )IID!J¥ ~E) o [P] )i!iJ 1,ij 8<J ;ffi [P]~~~m 8<J SN 
+;fEf [P] 0 
+a) ,c_, ~t f~ ,~, 
+,c_,~t~J)tffl -T J;J..)f 1* ~ J!i f~ ii ~ iE 'lito MSS )i!iJ W3 tt '&. J! ,c_, ~t ii!Vr ~ 
+ATS, ATS )i!iJ :lt'Hfi'&.)!,c_,~t~J)t~ MSSo 
+b) ATS :f!X~f~-~. 
+22 ATS )j!(J1,ij·ij:[PJ MSS '&.J!~JW~-f* ATS :f!X¥iff~-~, 0 
+c) ATS _¥~!fXftj:Jt&:z!s:% 
+T/CAMET 04011.7-2018 
+§(J;::Ji}!,lmbi!l!:iiJ§'~ * ~fttiX{4 Jlfi:Ljs:% ~ 1:50!!1§', ATS 1oJ MSS 
+:&:1!-(J;::~-f* ATS *~!tt{4Jlfi:Lfs:% o 
+d) ATS ~-T${~1,~,(* CI Ji~:!:m{~,~,) 
+A TS JWJ WH1: ~ B;f loJ M SS {~ ii li~ :!:m tiC~ !/& tliL iT~ :!:m [llJ tv !/& iJ~L !/& i\H2A 
+~~tt 9=' IR:1-J:J4~)tlf!-:lt o ATS f*iiE&tX~:i!~ MSS ~ -§1/&ji 9=', ~ :±l 
+rJ\1. :m: ~ ~ {~ ,~, 0 
+ATS JWJJmft~B;floJ MSS {~J.i$(J;::i!1!~1/&!W~ o 
+e) ATS m;{ti2* 
+~~Jm:ff~~~ftic*Bt ,ATS .lr.RP~m;ftic*~~ MSSo 
+9. 1. 3 ijffii\tl!f~HI 
+:tm * MSS 1m u ff9i ~ B;f fB] * !& ilJ 'L' ~E, iA 1g J;X j] :ii ~ :±l lJ,l1. Me$, A TS 
+ia: *i!C~:1-J*9;Q, j:j: 1oJ ATS ~~:i!:ii $ iJ!t; J!O * ATS lmu-Wf )£ B;f fB] * !& 
+¥U 'L' ~E, iA 1g J;X j] :ii ~ :±l lJ,l1. Me ~ , lit B;f A TS j] !I! it illi {~ bi ~ , ~ 1~ MSS 
+£Jio 
+9. 2 Jjffimlx~#ilm~ 
+9. 2. 1 ~lm»U&m 
+MAC r .&£-T IEEE 802. 3 tf-lfL 
+MAC * El3 14 -1'-* -;n_.13. ~, 1 -1'-~ ~ ~ 1¥ 3/U ( 4 * 11) :jfHBi: :hD :(£ 
+Ethernet ~11§' iif o 
+9.2.2 ~~m 
+:;$: ~ tl ~ ffl IPv4 F)} iS( fP 1g ~ M't ,& ~F)} iS( o 
+9. 2. 3 'ffl'~m * ~ o ~ m un r tJt iS( 1t 1-1 1~ twrPf} iS( 0 
+9. 2. 4 mz.mm 
+:Lfs:~t!~MW:i!~fflA~ffl~)E~~~ffl.&tJt~ oA-f*:~~-~ 
+9. 3 ~~_m)E 0 
+9.3 :tiD~im-~ 
+9. 3. 1 ~imfffmn~~ijffi~~:n* 
+~ t1 1/&!W;ff~jJ;r\Jl:?:ffl Big Endian ,{I;.HI!!.:t!l:r:f:t&!iF./i:ff5&*11 o 
+23 
+T/CAMET 04011.7-2018 
+Ji fg tit !JFi :1f A* Jf.l ~ JiF JC ~~tit !JFl ( c R c ) o 
+1:.nlt$~A*Jf.l CRC32 ( Ox04cll db7) , :J:ti:0A (1) it;l'L ~r A B91JJ 
+fr€itili_9:jg OxFFFFFFFF o 
+9. 3. 2 ATS--+MSS 
+9. 3. 2. 1 'L'lllJt{-g,~, 
+;&. 9 ~Jii.J:ET ATS ,bt:*~ MSS (J9,L,,lllJt{-g,~,i*J~ o 
+~ 9 A TS ~ ~ ~~ MSS 1¥.1 JL' 83~ f~ ,ff}, ~Jli 
+~DI*J~ ~15-Jf)Jt tl/i :)£ 
+HEADER I ~flUf Ml ~if-iit 
+l!lkiJdil :OxAA 
+LEN 2 IPJJl-JfJl()A MSG_ID 7fAAiU CRC ~~~J~O 
+MSG_ID 1 tflJ.~, ID 
+l!lkiJ... til :Ox50 
+STAMP 6 1f:, .F.l , B , H•L 0-, ;£9 * r!l 1 1' ~'it ( ~t *At 
+J'aJ) 
+SN 4 J:jjj\!i~15 
+END 1 ~Jli~~:sR:t-F-J.Jl. 
+l!lkiJ... til :Ox55 
+CRC 4 CRC ~~ .~~71HID.M. LEN ilJ END 
+9. 3. 2. 2 ilii}fg.~, 
+;&. 10 ~Jii.J:ET ATS .bt:*~ MSS B91!i~fg.~,i*J~ o 
+~ 10 ATS ~~~ MSS I¥J:t!Hff~ ,ff},~Jli 
+~DI*J~ ~lt-lf!l tl/i :)£ 
+HEADER 1 iJ!inffAA~iJ\iit 
+l!lkiA. til: Ox AA 
+LEN 2 iJ!in-Jf!l ()A MSG_ID 7f~tHU 
+CRC ~~~:sR:) 
+24 
+MSG_ID 
+STAMP 
+SN 
+ALARM_NUM 
+ALARM(!) 
+ALARM(n) 
+Private 
+END 
+CRC 
+9. 3. 2. 3 Jt!i;zjs:{§.~, 6 
+4 
+4 T/CAMET 04011. 7-2018 
+rlii.!i!. m 
+~iA.m ,oxsl 
+~,Ji,B,Rt,:)j-,~1}~ I 
+1'-~""P ( :lt*BtiEiJ) 
+:m.xJ¥ j~ .1%. w Mtm:1'1 ', ~ 
+~X:m.xt&IX~I m, ~tt.¥. 
+OxFFFFFFFF rn 'T-IX :!I!~)}.. 
+I 3ftlfl ~)10 
+~.!!! B<J t~ * ;ff, i.Jt 
+~i:A.m :oxss 
+CRC tl( ~ , tl( ~ fP. EfjJ )}.. LEN 
+ilJ END 
+;& 11 ~JI'.:iET ATS 2t*~ MSS B<]Jt!i;zjs:{§.~,I*J~ o 
+;& 11 ATS ~~t?i MSS B<J!t&*f~ JU.di 
+t~oi*J~ ~""P-fflt 1n1 :l£ 
+HEADER I ®Ji7ftlfl;ff,$ 
+~i:A.m:OxAA 
+25 
+T/CAMET 04011.7-2018 
+~Dpg~ ~~*.It ttli ~ 
+LEN 2 IJ!!Jl-lf.lt (JA MSG_ID :lf:!!{H!J 
+CRC ;tlt~t;!i!40 
+MSG_ID I rfli.~. m 
+!JlkiJ.-{i :Ox52 
+STAMP 6 ~,}],B,B;J,?t,#-*d:i I 
+1'-~~(:ltJ?.:Bti'iiJ) 
+1!l )C J¥ ~tl ..\} , :VJ :lfrt {i ~ I , 43;f 
+lX1Rx-ft<lX~:tm, ~i.t.¥: 
+SN 4 OxFFFFFFFF !§ , "F-jX)!! ~ lA 
+1 :lf:ll€1 ~11n 
+11!:itfJ§ ff:~tl %m~ ~:tm, >f 
+]11 
+ATS_ID 4 ATS i&!:~~-1} 
+VERSION_NUM 2 Jt&*-\},g,~ 
+DEVICE_ID(l) 4 i&!:~(l)~-1} 
+DEVICE (I) 
+DEVICE _VERSION (I ) 4 i&!:~(I)J\&*-1} 
+DEVICE_ID ( n) 4 i&!:~(n)~-\3-
+DEVICE ( n) 
+DEVICE _VERSION ( n) 4 i&!:~ ( n) J\&*-13-
+Private N §~)(~fi: 
+END 1 IJ!!JIB<lt;!i*;tff,i-.H 
+!JlkiAfi :Ox55 
+CRC 4 CRC ;tlt~, ;t~:t~-m, 11i]JA LEN 
+iiJ END 
+9. 3. 2. 4 iiJS%{~,1~, * 12 J;_m;£7 ATS ~*~ MSS B{]ftJ5:l:Jj{~.~.I*J~ o 
+26 
+T/CAMET 04011.7-2018 
+- "''' 
+:mi:!l*l~ ~11-!flt WI :)£ 
+HEADER 1 iJ!JJi7f:lfrit'F;G; 
+~i:A.m:OxAA 
+LEN 2 ii!!Jl-!fJt(,M. MSG_ID Jf:llil¥0 CRC ~~t;!; 
+JIO 
+MSG_ID I m.~, ro 
+~i:A.m :Ox53 
+STAMP 6 ~-fl ,B ,Bt,?t,#-1fCi I1'~11Ut:i?.: 
+At I'BJ) 
+*xl¥90% ,wAAmJ9 1, 4ii:l?z*x*l?z 
+SN 4 ~ :tJn , ~ tr .¥: OxFFFFFFFF ]fi , r -lX 11! !If 
+@I O,b\17f:lfri 
+l7~:t:m:!*~~W-!flt 2 tln:J&B-fflt*~~M1-*11~*~~-
+:!*~~W-!flt 
+l7~:t:m:!*~~w N ffl.P§%:5( 
+l1~a~t/7~W-I.~Jt 2 WIJ&B-fflt*~~M1-*11~*~~-
+~$~W-!flt 
+l1~a~t/7~W N ffl.P§%:5( 
+:-!f::l?z:*~~W-!flt 2 -~--fflt*~~M1-*11~*~*l?z 
+:*~~W-!flt 
+$(X:*~~® N ffl.PEI%:Jt 
+'lffi at~ :~t :!* ~ ~ m *It 2 -~--fflt*~~M1-*11~*~~At 
+~:it:!*~~W-!fJt 
+ilffi Bt ~:!£:!*~~® N ffl.P§%:5( 
+~5 1 {jl;ltJ.1~.~' *It 2 m~•*1t*~~M1-*11~5> ~~~'1 1 
+{j:!;itJ.1l'f.~, -!fit 
+~ 511~ It! 1~ ,@!, N ffl.PEI%:Jt 
+27 
+T/CAMET 04011. 7-2018 
+~Dpg?f;: :¥11*.il Wi :l£ 
+Private N §~.:X.:¥®: 
+END I ljJjlr a<J ~ * f'!F i.R 
+~ iJdfi: 0 x55 
+CRC 4 CRC :fl(~ ,:tl't~fi1Bi!b\ LEN iiJ END 
+9. 3. 2. 5 ~f'Fff-1)~, 
+*. 13 ~Jt.!ET ATS jt~~ MSS B<J~f'F1Jt!j!,j;l;j~ o * 13 A TS ~ ~ ~ MSS (t] j¥ f1= flHUJli 
+~opg?£;: :¥11*.J.t Wi :l£ 
+HEADER 1 ljijlr:3f:!lfltf-~ 
+~lA {ill : OxAA 
+LEN 2 ljijlr*Jl(b\ MSG_ID :3f:!lfl¥1J CRC :fl( 
+~~:W:) 
+MSG_ID I m.\il, m 
+~lA {ill :Ox54 
+STAMP 6 4<f:l' s ,FJ;j ,?j-,~~ Ci 1 1':¥11 
+( ~tffi B;J fii]) 
+1R :>c )j' jU % , fJ1 :1m till: ::Jg 1 , 4fHX 1R :>c 
+SN 4 *lX.~:Im, ~it~ OxFFFFFFFF Fo, T 
+-lX_j!ttf@] 0 ,b\ 1 :TF:!lfl 
+RECORD_NUM 2 'lllkfFic*-~,fl: 
+tta:J£;;t;.:~:JllkfF Ef<J*Jl, *.ii-b\ 7Jij{tfL 
+r.YkfFic**-l.t 2 ~ lD iiJ ilJ4' ~ fl: Q Fo -1' :¥ 11 a<J :¥ 
+11fl: 
+RECORD 
+( 1) 7lll{t/l.~ID 4 19:~ ID 
+:JllkfF~:W 1 fflp§~,)( 
+:JllkfF~f{ ~~* fflp§~,)( 
+28 
+RECORD 
+( n) 
+Private 
+END 
+CRC mm~~ m 
+9. 3. 3 MSS~AT 
+~ 14 ~]~7 
+HEADER 
+LEN 
+MSG_ID 
+STAMP 
+SN 
+END 
+CRC 2 
+6 
+4 
+). 
+4 2 
+4 T/CAMET 04011.7-2018 
+1nl:J£::<t>:~~fF B<J-lflt, *~bUmtm 
+:@ ID 3itl-tfP' 4-~ ~ :Q }§ -1' * 1'i 8<J * 
+l'i~ 
+~b\ LEN itl END 
+iJ!i .~, ID, ~lA -at :Ox57 
+'JJ! B<J~JR:tf-i.J~ 
+~i-A-at :Ox55 
+CRC ;13(:~,;13(:~ft1~b\ LEN 3itl END 
+29 
+T/CAMET 04011.7-2018 
+10 MSS-CI f!R:X:~$B 
+10. 1 fiDiifiJJit 
+10. 1. 1 !IWJiflD 
+M~~~~~-~~~~-~·~~~*m•~~*fi•M~ffl o 
+~J:j:t ,Uf3'i~~~~l~·~~1# 1 ~f.~Ffi[B~j\:~~0*1-T~f~i;MSS ~ 
+~~~~~{i[B~j\:~~O*fi~ffl o 
+10. 1. 2 zw~3ts#i\j£ 
+-~~~~~-tt~M~~~~~~~SfflA,~m:U~*Wffl 
+,~, ~•~ttt 14 #.&;1$:% ~-~19: ~ik~ffl ,~, 0 
+MSS ~~~~M'i1:~~-i'X,C,,Jli!~®HfiUf~ o 
+10. 1. 3 ijiJ1ii!&lll~JI 
+MSS ~ ~ ~~n:!if.!:MHiWf~ Eft ISJ ~i&;:fiU Uf~ ~-* ~ fB 1f fiiJ. M, !i!U 
+MSS ~ -*~1A:1-;~·~~-* ~~ 1~ 9:t Wf; ·~ ~-* ~~U:!if.!:Jffi:i:iWf~ Eft 
+I'BJi&;:fiU MSS ~~~[BJJ)Z~~M,!i!UiA:1-3Uf~~-*~~ MSS ~-*~~ 
+1~ 9:t Wi ( llJ J2t :91 ~~ ) , .llt EJ;f. f~ ~ ~ ~ 1)}-f* ~ ~ M ~ MSS ~ ~ • M 
+;:f :3t 0 
+10.2 ijiJ1i~IJ.:£E~#i\j£ 
+10. 2. 1 ~11~~~ 
+MAC~ ~~T IEEE 802. 3 fiFfi o 
+MAC ~ Ei3 14 1'-'¥ 1H_Ii ./iZ, 1 1'-~~ ~ ~ )¥ Jtl ( 4 '¥ 11) ¥f flt :flO i£ 
+Ethernet ~~J§'Uif o 
+10. 2. 2 ~~~ 
+;1$: ~ 0 it ffl IPv4 t1J. i5Cf1= :1-; lXX] ~ m fB #} i.)( o 
+10. 2. 3 tUtu~ 
+;1$:~ 0 ftffl UDP #}i.)( fF :1-J1t~FJJ.i5( o 
+10.2.4 Jillffl~ 
+;1$:~o~Bt~~tBfflA'ftffl~~~tB!JlZffl~FJJ.~oA~~3#£ 
+10.3 fB~j,~ o 
+30 
+T/CAMET 04011.7-2018 
+10. 3 :tiD ~:tJiiH\l~ 
+1 o. 3. 1 ~HS.fffii:1J~;f!Jil ilH~~:tn! 
+~ D ~1~H¥fii:1J:r.t*ffl Big Endian ,{~:tll!.hlff:~!i~:f.f~*"'P o 
+Ji 1~flt~:1J:r.t*ffl1ll:flf-JL~ii!bflt~ ( CRC) o 
+1:nJG2t:rJ!Jt*ffl CRC32(0x04c11db7) ,rii;0Jt( 1 )-tt~ .~-T:r.ti391JJ 
+ftf-1-m:~:1-J OxFFFFFFFF o 
+10. 3. 2 JIHJJi----+MSS 
+10. 3. 2. 1 11Hf.&~*1~-~, 
+*. 15 ~Jl'.~T~.WL'Bt~~ MSS 13911Pjl.&~*1~,~,i*J~ o * 15 ~f!Ji~~~ MSS ~:tlUfN.i9:.ffi.'ilU9! 
+~l* :;k;J' (Byte) Wi :it 
+HEADER I IPJJl :3f 1irl :fij; ;t; 
+~iA-ffi :OxAA 
+LEN 2 ~J)Hfi.t ()A MSG_ID :3f M/¥1J CRC tlt~~:!ilO 
+MSG_ID l ?flj,~, ID 
+~iA-ffi :Ox40 
+STAMP 6 ~,.fl ,B ,R•L?t ,#*dil-'i'f"P(~~ffiBtl'aJ) 
+11lJtJr.7u% ,fJ:JAA1i1J 1 ,&??z:fllJt1&7X~:Im, .lJiltt-~ 
+SN 4 OxFFFFFFFF Fn, T -7X11Ufr )A I :tf:lirl .lJil:IJO 
+ID: it .1§ Jr. R% ~l'HJl~ .lJil :lm , 7f fl 1 
+CUD 4 ~Wf~{lr~% 
+CI_INFO n ~Wi~ti~{\1[.~, 
+CI_IO n i.jg i9J * :tiH'Hm 
+Private N fl~.)(fflt 
+END 1 ~J)i B<J ~ * f;j; i.J~ 
+~iA-ffi :Ox55 
+CRC 4 CRC tlt~ ,;f5t~1[1EJA LEN ¥1J END 
+31 
+T/CAMET 04011.7-2018 
+10. 3. 2. 2 ~f'fJtOC:2js:f~J;!, 
+:;& 16 ~.m;ET!IHliijt:J!~ MSS 89Jt0C;;$:ffi.@,pg~o 
+:;& 16 ~f!li~~t?i MSS 1¥11\&*m -~~Jli 
+1Sfi'F ;k;j\ (Byte) tiE :)£ 
+HEADER 1 ~ 3f M:l l;.j ;5; 
+~-jAil[ :OxAA 
+LEN 2 ®!HfiJt()A MSG_lD 3f:!zf.liU CRC 
+tlt~~JR) 
+MSG_ID 1 m.g, m 
+~iA ffi :Ox41 
+STAMP 6 &f:,JLB,B•L:5t,~-*d:i 1 
+-1-*11 ( ~tffiR;-jj'ii]) 
+1&Jtff:~U%,:W:Itrl{J[::h 1,4.ij: 
+-CX1&Jt-1?<7X.m:tm, .mtl -~ 
+SN 4 OxFFFFFFFF fri , 'F -{X 1l! Kfr )A 
+1 3f:!zf.l.m:lm 
+.m ~ fri I¥ ~u % m ~ .m :JJn , ~ 
+:'{i1 
+CUD 4 !IH.Yl i&l: ·td.llf% 
+VERSION_NUM 2 Ji&:<jl:%,g,fx 
+DEVICE_ID( I) 4 i&l:-Tit(l)#;li% 
+DEVICE( 1) 
+DEVICE _VERSION( I) 4 i&l:-Tit(I)Ji&:<jl:% 
+DEVICE_ID(n ) 4 -J&l:-Tit(n)~% 
+DEVICE( n) 
+DEVICE _VERSJON(n) 4 -J&l:-Tit(n)Ji&:<jl:% 
+Private N §;£_)(*& 
+END I ~69~J.Rlijd,J), 
+~iA {][ :Ox55 
+CRC 4 CRC tlt ~, tlt ~ 1i1 fjjj )A LEN 
+3!JJ END 
+32 
+T/CAMET 04011.7-2018 
+10. 3. 3 MSS-+~f!l! * 17 ~Jtk:T MSS it*~li*~JJi~{~,~,r*J~ o 
+* 17 MSS £:i!~~f!l!~i~.~~!Ji 
+HEADER 
+LEN 2 
+MSG_lD 
+STAMP 6 
+SN 4 
+END 
+CRC 4 
+11.1 :ti~ii:ti:1J"it 
+11.1.1 !IW~:ti~ ~'l7f 1m tf-;t; 
+~i}.. til :OxAA 
+D 
+M§~*m~#~~*m•~•~~~*m•~~*fi••~m o 
+;lt'i=', it~~*mMHP$~!1H!t 1 MH~fl~ ~:::t~i!Hl *~'T~{~ ;MSS ~ 
+¥mm~~m~~:::t~~o*fi~m o 
+11. 1. 2 WJ~:stsm~ 
+#~~*m•~•~~Mtt~~-~~~M§~*mtt*•~ 
+11.1.3 ili~i'itlf!1lt~ 
+MSS ~ * m:tm*Mi~ W!JE Bt i'EJ ~ 1& /G ¥U it~~* m ~ {ffrirft., JQU 
+33 
+T/CAMET 04011.7-2018 
+MSS -T * tft i-A jg !:j it $11-T * tft J!i {~ 9=t tt/f ; it $11-T * tft :tm * Jm :1:1: Wf ~ Bt i'BJ 
+l&:lf'¥U MSS r*tfCB{]J.iiZ~~m ,Jl!Ui.Ajgit$11-T*tfe.!::j MSS r*tfeilli{~l:j:t 
+tt/T (PI :i2!;:9Jfi ~) , litBtit$11-T * tfe{)}{~j1 j~ JifJM ~ MSS jt:*~m:lf'?:l'!:o 
+11. 2 i1 f~ ffilx~ftJMJ£ 
+11.2.1 ~tmtiU&ffi 
+MAC -T.&£-T IEEE 802.3 fiFffL 
+MAC~ EE 14 1-¥ 1Hli nX;, 1 1-~J]H~ ~ ff ~tl ( 4 ¥11) ~ fl![ :JJo :(:E 
+Ethernet ~.rJU§" 00 o 
+11.2.2 IXX.I~ffi * ~ D {!!! ffl IPv4 tJ} i)Cft jg ~ ~ _& 8{] tJJ. i)l o 
+11. 2. 3 ft~ffi 
+*~ D ~Bt{~:* 8{]{~ .~, {!I!.Ff:l UDP t}}i)l f'Fjg{~ttJtrt}}i)l o 
+11.2.4 Ellfflffi 
+*~D~~~:*I'fJm&151!.Ff:l~~~l'fJJ.iil.Ff:l.&tJJ.~ oA~~~~ 
+11.3 8{]~~ 0 
+11.3 1lD~tm1\li£ 
+11. 3. 1 ~tm.ff fit)Jj\ 
+~ D ~m1¥fit:1J:rt*ffl Big Endian, 11£:tt!!.:IJ.I:;f.f1it:lfl~:ff5&:¥11 o 
+11. 3. 2 it*dl--+MSS 
+'$: 18 ~Jl'.~Tif$11jt:*~ MSS B{]{~.~,r*J~ o * 18 it *dl ~}! ~ MSS l'fJ f~ .~ ~Jli 
+:moP3~ *11:k;J\ Wi it 
+HEADER I ljJJii 3f .Ml t'F ;t-
+~i:A {i'l: Ox AA 
+LEN 2 ljJJii-lfJJr ( b\~(~i' J ~~) 
+MSG_ID I i~.\ll, 10 
+~i:Affi :Ox70 
+STAMP 6 f!::,A ,B ,H•L7J-,~4l-S I1'*11(~ t/'J', 
+Btl'iil) 
+34 
+T/CAMET 04011.7-2018 
+~Dpg~ *l':k; J\ m :l?t 
+1!lxiTj tl.J.3-,wAA-m~ 1, &7X1!lxt&7X 
+SN 4 ~:iJO, mi.t~ OxFFFFFFFF ffi, r -{Xll~ 
+@0,}}_17f:!tEI 
+AXLE_INDEX 2 i.t~.::r¥~1¥1:-!f::t!S~.J.3-
+AXLE -SECTION -STATUS i.t~IIRJ31: (I)~~ I ( 1) ~~~*) ~ fi1l.~.:itt1-T~ ~ 
+AXLE -SECTION -STATUS i.t~IRJ3l( n)~~ I ( n) ~~~ m r~ f~ .~.:Jtt1-=r~ ~ 
+AXLE -SENSOR -STATUS ftf~~( I)~~ I 
+( I) ~~~ m r ~ filf -~·*1T~J ~ 
+AXLE -SENSOR _STATUS {{f~~( n)~~ I ( n) ~ ~~ *) ~ {jlf -~· :itt1'J tAJ ~ 
+AXLE_TYPE_NUM 2 ~4il:FJ·~ 
+AXLE_TYPE(I) _STATUS 
+I TYPE( I )~~~4il~%( I) i¥1~~ 
+( 1 ) ~~.fti1E!~{Jli.~.:itt1'T~~ 
+AXLE_TYPE(l)_STATUS 
+I TYPE( I )~~~4il~%(n) i¥1~~ 
+( n) ~~~mr~fi1l.~.:Jtt1=r~~ 
+AXLE_TYPE(n)_STATUS 
+1 TYPE( n)~~~4il~%( I) i¥1~~ 
+(I ) ~~~mr~f~.~.:Jtt1=r~~ 
+AXLE_TYPE(n) _STATUS 
+I TYPE( n)~~~4il~%( n) i¥1~~ 
+( n) ~~~1E!~{~.~.:itt1.:Y~~ 
+Private N §~)(*131: 
+END 1 ~ 1¥1 ~ :!;!H.f-i.lt 
+!!l*:-JAffi :OxAA 
+11. 3. 3 MSS---+i.t*'b 
+~ 19 ~J.}ET MSS ~:i!~tt!ftt!B91i~L~.i*J~o 
+35 
+T/CAMET 04011.7-2018 
+*Dpg~ .:f:l1::k+ 
+HEADER I 
+LEN 2 
+MSG_ID I 
+STAMP 6 
+RCV_SN 4 
+END 1 
+CRC 4 
+12. 1 1il:lii1iJJj\; 
+12.1.1 !JWH~1il:l Wi J£ 
+~J)y ff :1$ t-F iit; 
+l&Jki-\ {l :OxAA 
+ii!!Ji-KJ.t()A MSG_ID ffMliiJ CRC ~~f;!i*) 
+till,~ ID 
+l&Jki-\ {l: Ox78 
+:lf<Fl , B , n•L ?t , :tl-' * dl 1 1' .:f: 11 ( ~ t:f.l( At !'a]) 
+)(t Eii it ~111PlH1L@!, § <P 1¥1 IP!Jl ff' jtl ~ 
+ii!!Jii¥Jf;!i*t~i.R 
+l&JkiA ffi : Ox55 
+CRC ~~, i.ttH11BilM. MSG_ID iU END 
+M~~~m~~-~~m•~•~~~*m•~~mfi~M~m o 
+;lt"P, ~-~~m£t~•~tlHJ:J; 1 ~fff-XIHJ<.J t; .. t:t:~ts; om1'T~{~ ;MSS ~ 
+~m•~~m~~*~n::omfi~m o 
+12. 1. 2 i';IJ~3t:S::tii£ 
+~-~~m£t:tP-~JWJ AAtt~:tl£t:tP IXXJ (ri] MSS ~ ~ m'JY:.:i!1!iW 
+12. 1. 3 il1ilii\ti!l~~ 
+MSS ~ ~m:!!o*lffi:tli.m~Bt!'BJtt::t&/f¥!J ~-~~m~ff{iiJ~M ,Jjl!J 
+Mss ~~miA-:h~~-~~m~f~'i='ltiT; ~-~~m:!!o*m:ct~~atrBJ 
+l&/f¥!J MSS ~~m~J.ili:~~M.!il!JiA-:h~K~~m~ MSS ~~m~f~"f 
+36 
+T/CAMET 04011.7-2018 
+ltJT ( PI~ :91 ff~ ) , Jlt Bt Et!.11* -T-* m {Tj {~':t~ JliLWH~ MSS $t z ~1m ::f :':Ito 
+12. 2 ili~ffi/X~#ilnQ~ 
+12. 2. 1 ~~~iU&ffi 
+MAC -Tm£-T IEEE 802.3 ;fff-f'io 
+MAC :* E8 14 1' "¥ 1H]. ~, 1 1' $J!r {~(: ~ !¥ :9tl ( 4 "¥ 11) ~ ~ 1JD {£ 
+Ethernet $J!r]§ ]if o 
+12.2.2 jjj]~ffi 
+*•Q~ffliT~~~~~~~m~~~ o 
+*•Q~B1{~.;=t;· ~~A3 
+12.3 ~~JU£ o 
+12. 3 1to~~na 
+12. 3. 1 ~~.fffit 
+-Q~!m:ff:~jj 
+~f]{i[i&t~ OxFFFFFFFF o 
+12. 3. 2 ~71lt-MSS 
+mmii!~ 13/:jj(~il:~ El!~W:til~ 13 = 
+:J:ti:P.ft~I!JF{l[ ::k:;H~rfttr o :l!D5!i!:;lit1':it~ § ~ 0, :Jj~.Z,:i!-t-:lil: ~ pg ~ ~ 
+~ ,;J't]§~-~~ -r -1'-il:~~ § 0 
+mmil: 
+a) Et!.11*J}f-mffi:Ji:J:t( P.ft"¥1) ( Byte){~rfitr, 1 -t-mtf.{il: r!:J 2 1''¥11, m 
+t~il:~{i[:f&:;k 100 {~; 
+b) UPS mt~ii:J:ti:P.~Hff-li~¥-'¥-}~~1~rtm, 11'-mtf.{:fi!I~ 41'"¥11 .m 
+t~ :it~ -m ::f :li~ * 0 
+37 
+T/CAMET 04011.7-2018 
+ik~i!: : 
+a) Et!, 1m\ JJf ik ~ill: 11( ~~ "¥ 1) ( Byte) f~ ~ , 1 1'-ik ~ il: 2:1 ffl 1 "¥ 1) 
+(Byte) ; 
+b) UPS5Eik~il: o 
+1!f~il: : 
+a) Et!.YmM.& UPS 1!fW:iiJ::J1( ftHfL (Bit) f#ffitr, 1 1'-1!f~il: 2:1 ffl 1 fil. 
+c Bit), ,g,;~:tw;r~ B<J 2:1 m B<J-=¥1)!/&~or = 
+1 ) ~o =* 1!r if 1ii: !lit if!: ::!ik 8 B<J ~ !lit f-B' , JilU 1!r ~ iii 2:1 ffl B<J "¥ 1) !lit 
+11: 1!f~:fil:!l&:iil/8 j 
+2) ~o=*1rWiiJ:!!&:!il:/f::lik 8 B<J~!!&f~, JilU1!f ~:!il: 2:1 ffl B<J"¥1)!!& 
+11: 1!rW:!ii:!A'tiil:l8 + 1 o 
+b) Et!,1m()Jf .& UPS 1!rtf:fil: El3 'ffJ-1'-"¥1) f~fil. ( 0 {il.) ~ ~ {il. ( 7 {il.) {:« 
+{X :1;1'! JE , ~0 =* .¥31W i3<J "¥ 1) ~:I$ JE 7t , JilU :1;1'! JE r -1'-"¥ 1) o ~D =* 
+1!f~:iil:/FJE 8 B<J~!!& f-B' ,lilU*'J1RB<Jw:i$tJE Oo 
+i± :1!TW*191 H~~~::flf 9 -t-1!rtHM~1~~, Jil~m~ ffl 2 -4'--*$1~~ o ~ --4'--*$ 
+o -7Ul:-f&?X:!AYE1!r~ 1 -8 .1t=-1--*$ o 11i::!AYE1!TW 9 .~=-1--*$ 1 -7 fil. 
+i9:f-J{i!!ffl ,:JAJE Oo Jk',;J!i( 200 
+~ 20 ~ l±l T Et!.7m1!rW~¥ tl o 
+* 20 Et!. ;m *" ~f§Jj 
+1:\r!iff:% 1:\rWI 1!TW2 1:\rW3 1:\rW4 1:\rWS 1:\rf\16 1:\r!f7 1:\rf\18 1!TW9 
+~~1:\r~ f-T :X :X 1lf f-T :X :X f-T f-T 
+Ul:ff:% 0 1 2 3 4 5 6 7 
+~--1--*$ 1( 1§-~ I) 0(1f~2) 0( 1rtf 3) I ( 1§-tf4) 1(1f~5) 0( 1r~ 6) 0(1f~7) 1(1§-~8) 
+~=-1--*$ I( 1ftf9) 0(:\i'OtO) O(:fti}CO) o( :tnn o) O(:fti}CO) 0(:\n}CO) O(:fti}t;O) O(:fti}t;O) 
+12. 3. 2. 1 Et7m11Uc 
+~ 21 ~l\U£TEt!.rmt~:i!~ MSS Ef<Jf~,\~H''l~ o 
+38 
+T/CAMET 04011.7-2018 
+~~=~P'l~ :¥1):;k;J\ Wi i£ 
+HEADER I ~J!i 7f Mrt.if, ;t, 
+!lJk iJ,:(i1i: 0 xAA 
+~fli-J.~Jj[(,M. MSG_ 
+LEN 2 ID 7f:!frl¥U CRC tl(: 
+~~*) 
+MSG_ID I YVJ.@, ID 
+!llki-A ffi :Ox30 
+iF,fl,B,at, 
+STAMP 6 ?t,tt~Ci 11-
+:¥11 U~H:Ht i'BJ) 
+STATION_INDEX 1 Y~.#.~% 
+11lJtff':YU% ,:W 
+Ml ffi Jg 1 , 41H'A 11l 
+SN 4 Jt*l'A~1m, ~tt 
+~ OxFFFFFFFF 
+Fo,r-?'Am:~ 
+@] O,M. 1 JfM/ 
+INPUT_ANALOG_NUM 2 ~t!t~A~Hf.( 
+ii1:1-~n 
+INPUT_ANALOG( 1) 2 ~t!t~A~tt( PMS_INPUT_ANALOG iil:l 
+INPUT_ANALOG( n) 2 ~t!t~A:W;tt( 
+illn 
+SWITCH_S TATE_NUM 2 7f~:tk:?.tii1:1-
+~n 
+PMS_SW ITCH_STATE 
+Jf~:tJ;:?.tiiJ.: I 
+SWITCH _STATE( 1) 1 0: ltJf 7f; I: 
+1~-% 
+39 
+T/CAMET 04011.7-2018 
+mi::JI*l~ ~15:7C! J' tta :£ 
+lf.*~~jjln 
+PMS_SW ITCH_ST ATE SWITCH_STATE( n) 1 0: !frlf; 1: 
+l)fl% 
+ALARM_NUM 2 ~A~i±l-'i!fW 
+-1'-~n 
+ALARM( 1) I Bit ~A~i±l-'i!fW1 
+PMS_ALARM 0 iE'/it/1-'i!f~ 
+f!tAf!ti±l-'ilf 
+ALARM( n) 1 Bit ~n 
+0 iE 'ill' /1 1§-fi 
+OUTPUT_ ANALOG_NUM 2 ~i±lmm:fil:~ 
+iitn 
+PMS_OUTPUT _ ANALOG 
+OUTPUT_ ANALOG( 1) 2 ~i±lmm:iikl 
+OUTPUT_ ANALOG( n) 2 ~i±lmmjjln 
+PWR_MODULE TYPE_NUM I m ttt ~ ID1 .~. 
+-~m 
+PWR_MODULE_TYPE( I) _TYPE I ~ID! 1Ef9:mtJt 
+~ID!fl!lJ 
+' 
+PWR_MODULE _TYPE( I )_NUM 1 ~ID! 1Ef9:mtJt 
+~:filn 
+PWR_MODULE _ID 1 mttt~¥% 
+PWR -MODULE -OUTPUT mttt~i±lmm 2 
+-NUM iit-1'-~n 
+PWR_M 0 D ULE_ TYPE 
+( 1) _1 PWR -MODULE _OUTPUT :mtttt~ti±lmm 2 ( 1) £11 
+PWR -MODULE _ PUTPUT ~ttt~i±l~m 2 ( n) jjln 
+40 
+PWR_MODULE_TYPE 
+(I) _1 PWR MODULE_ STATUS 
+NUM 
+PWR _MODULE_ STATUS 
+( 1) 
+PWR _MODULE_ STATUS 
+(n) 
+PWR _ MODULE _ ALARM 
+NUM 
+PWR MODULE_ STATUS T/CAMET 04011.7-2018 
+2 
+2 
+2 ~:!ik~~:£1:1 
+0 if 1it /1 "'*~ 
+~:!ik~~:fil:n 
+0 if 11\' /1 "'*~ 
+m:!ik~:±lm~ 
+:!IJ:1'-~n 
+m:!ik~:±lm~ 
+£!:1 
+m:!ikfWi:±lm~ 
+:filn 
+NUM :fil: 11 PWR MODULE TYPE~----------------4------4---------~ 
+( 1) _11 PWR _MODULE_ STATUS 
+( 1) 
+PWR -MODULE -STATUS 
+( 11) 
+PWR MODULE ALARM - -
+NUM 
+PWR MODULE ALARM - -
+( I ) 
+PWR -MODULE -ALARM 
+( 11) 2 
+1 Bit 
+l Bit m*"'*~:fi1: 1 
+0 if1i\'ll "'*~ 
+m:!ik"'*~:filn 
+0 if 1il' /1 "'*~ 
+41 
+T/CAMET 04011.7-2018 
+~opg~ *lt::k;]\ Wi :£ 
+PWR_MODULE_TYPE( m)_TYPE I ~~m(!(Jm~ 
+~~li!b 
+PWR_MODULE_TYPE( m) _NUM I ~~ m B<J:m~ 
+IJ&iJln 
+PWR_MODULE_ID I :m~~% 
+PWR_MODULE -OUTPUT - m~*Wi ,':f1mtu 2 
+NUM :iil:1"1J&n 
+PWR -MODULE -OUTPUT :m~*Witl:l:mt);.( 2 ( I ) jjkl 
+PWR -MODULE -OUTPUT :m~*Witl:lmtu 2 
+( n) :illn 
+PWR_MODULE_STATUS -2 m~~il\F:fil:IJ& 
+NUM ;{il:n 
+PWR MODULE TYPE - -
+( m)_1 PWR -MODULE -STATUS 
+m~~i\\F£11 (1) 1 
+PWR -MODULE -STATUS 
+m~~il\F:fil:n I 
+( n) 
+PWR -MODULE -ALARM - m~~W:fil: 2 
+NUM IJ&:fil: 
+PWR -MODULE -ALARM :m~~~l 1 Bit (I ) 0 iE 'iii' II ~~ 
+PWR -MODULE -ALARM m~~Wn I Bit ( n) o IE'ffi/1 ~w 
+PWR_MODULE _ID I ~~~% 
+PWR -MODULE -OUTPUT - m~*Witl:lmt);.( PWR MODULE TYPE 2 - -NUM :ii:l:1"1J&n ( m)_n 
+PWR -MODULE -OUTPUT m~*Wi:±',mt);.( 2 ( I ) iii: I 
+42 
+T/CAMET 04011. 7-2018 
+~Dpg~ ~l);k; j\ till :!£ 
+PWR -MODULE -OUTPUT ~tJc~tl:l$Ht( 2 ( n) iil:n 
+PWR -MODULE -STATUS -~:JI)c~~ill~ 2 
+NUM iil:n 
+PWR _MODULE_ STATUS 
+~:JI)c!{k~£1: 1 I 
+( I ) 
+PWR -MODULE -TYPE PWR _MODULE_ STATUS 
+-&tJc~~iiln 1 ( m)_n ( n) 
+PWR _MODULE_ALARM -~:JI)cf!r~:fil:~ 2 
+NUM :fil:n 
+PWR _MODULE_ ALARM 
+I Bit ~.Jt:JI)cf!r~:fil: I 
+(I) o .ii'iit/1 f!TW 
+PWR -MODULE -ALARM mtJcf!TWiiln I Bit 
+( n) o .ii'iitll f!TW 
+Private N flj£5(~31: 
+END I ii!!Ji~~JRt'Fi..R 
+!J!Ri-\ {il: Ox55 
+CRC .f3l: !)i, i.t 
+CRC 4 ~Ht1 Bil M. MSG _ 
+ID iU END 
+12. 3. 2. 2 UPS :Ji)C 
+;& 22 ~J[~Titlml~m~ MSS l¥.1 UPS {J'j,\IJ,P'l~ a 
+* 22 ij! 1m(~ j! ~ MSS l¥J UPS i~ ,~ ~_rn 
+~f* j;:;j\ till :!£ 
+HEADER I $Jir 7f Mrt.iF ;G; 
+!J!Ri-\ {]! :OxAA 
+LEN 2 ii!!JH~J.t ( M. MSG_ID 3f:im¥U CRC :flt!Ji~ 
+JR) 
+43 
+T/CAMET 04011.7-2018 
+~ffF ;k;j\ tl1i k£ 
+MSG_ID I ffll.@, ID 
+!!lki:A.:Oi :Ox33 
+STAMP 6 e¥,.foJ ,B ,B•L?t,~-*~ 11'-~11(~~J¥-
+Bt IBJ) 
+STATION_INDEX I 9-~li(~-% 
+:Jll)C.¥:9 ~-%, fJ.J :!trlmJ'J I, 4ij: IX :Jll)C of& IX 
+SN 4 ~110, ~tj-~ OxFFFFFFFF Fn, T -IX'ID:~ 
+1m 0,)). 1 7f:!trl 
+UPS_NUM I UPS~§ 
+UPS_ID I UPS i¥.J.¥% 
+UPS_ANALOG_NUM 2 UPS :mW-:fil~ii1 n 
+UPS_ ANALOG( I) 4 UPS mW-:fili 
+UPS_ ANALOG( n) 4 UPS :mW-£1 n 
+UPS_! 
+UPS_ALARM_NUM 2 UPS 1r~iit~hl: n 
+UPS_ALARM ( 1) I Bit UPS 1r~iit I 
+0 iE ?;\' /1 1rff 
+UPS_ALARM ( n) I Bit UPS 15-~£1 n 
+0 iE1ltli 15-f? 
+UPS_ID 1 UPS i¥.Jff:-% 
+UPS_ ANALOG_NUM 2 UPS mW-:iil:~iit n 
+UPS_ ANALOG( I) 4 UPS ~tt(£11 
+UPS_ ANALOG( n) 4 UPS ~W-ilt n 
+UPS_n 
+UPS -ALARM_NUM 2 UPS 15-·hl:~:Q n 
+UPS_ALARM ( 1) 1 Bit UPS 1rf?:Jll: I 
+0 iE1ltli1rff 
+UPS_ALARM ( n) I Bit UPS 1!f~£l n 
+0 .iE'ii\'11 *• 
+44 
+T/CAMET 04011.7-2018 
+4Ef/F jc;j\ :tili :)£ 
+Private N Fl.iE)(~ij!: 
+END I ljJJl'i B<J #i )~:;j;jd,Jl. 
+~-!A -ffi. :Ox55 
+CRC 4 CRC ;flt~, i.t~j!L [jj].b\ MSG_ID iU END 
+12. 3. 3 MSS---41t!lmt 
+*-23 ~J,;E T MSS ~:I!~ If! 1m\ 8<]f"l§f}ffi, pg ~ o 
+HEADER 
+LEN 
+MSG_ID 
+STAMP 
+RCV_SN 
+END 
+CRC 4 ljJJl'i i'J<J #i * tf-i.Jl. 
+~iA'ffi. :Ox55 
+CRC ~~,i.-1-~HI'L8ll.b\ MSG_ID i!J END 
+13 MSS-LEU :li3t~m 
+13. 1 1iJJii1lJ1:it 
+13. 1. 1 !1-milfl IJ 
+MSS -T *m-"3 LEU -T *m~tt?l¥!-5Gzi'BJ*JiH1Hft ~uHr!/&fmJi f~ o 
+:ft 9=I , LEU T * m~t tp 1¥!-5G m 13!; 1 ~;f~ ft 8{j kJ. .* ~ t:t:: D JtE lJ-Ji f~; MSS 
+45 
+T/CAMET 04011. 7-2018 
+~*~-~~$~~~~-D*fi~~ o 
+13. 1. 2 Z;fJ~:stsm~ 
+LEU ~ * m ~i 1ft lf!-~ )WJ M •11: ~ i1 ~i 1ft ~ (o] MSS ~ * ~ Ji. :!! 1i %f 
+13. 1. 3 ili~i!&lll~H~ 
+MSS ~ *~~0 :5!~!Jiii1~5EBti'SJ.l&/f~U LEU~ *~~{f{ilJi/&:Wf ,Y!U 
+MSS ~*~iAjg£3 LEU ~*~~{~rtt$'T;LEU ~*~~O :W:JI1li1~5:£Bti'BJ 
+1&/f~U MSS ~*~~m~i/&:Wi,Y!Ui-Ajg LEU ~*~£3 MSS ~*~~{~ 
+rp$'f(PJ:J2\;;::9J~~) ,JltBt LEU ~*~{)}f*~JWJWHfi MSS Ji.:i!i/&:Wi/f~ o 
+13.2 ili~glxta#i!M~ 
+13. 2. 1 ~tJiHii~g 
+MAC ~~£r IEEE 802.3 f~$ o 
+MAC * Ef3 14 1'-* 11 ~_§_ $;, 1 1' ~J! ~ lj~tJ¥ ,tl ( 4 * 1)) ~ ~ :IJD :t£ 
+Ethernet ~J!FoW o 
+13. 2. 2 jjjj~g 
+:<$:~ D {5e:ffl IPv4 t}}t\(_ fPjg ~% ~ ~i:}}i5l o 
+13. 2. 3 ~tAfrjg 
+:<$:. D ~ Bt {~:!! ~ {~ J~!, {5e:ffl UD P 1:}} i)l fP jg {~ ~ 1:}} i)l o 
+13. 2. 4 .@:fflg 
+*•o~~~:i!~~-~ffl~J:E~~mffl~tJJ.iR oA~~W#~ 
+13. 3 ~~J.JE o 
+13.3 ftiJ~twm~ 
+13. 3. 1 ~twt¥fi~JJj\;~llili~:t3:t!J&JJ~ 
+~ D i/&:Wff.f~:tf:r\*=ffl Big Endian, {~fi!!.:hlf.f:liJc:ft~:ff~j(*"fi o 
+~ {~~!JFL:tf:r\*=ffl~PfJG~li!b~!JFL ( CRC) o 
+1:$;$~:r\*=ffl CRC32 ( Ox04cll db7) , :J1(0:r\ (1 )it~ lL ~~:r\ ~W 
+:tlil{i[i&[jg OxFFFFFFFF o 
+13. 3. 2 LEU~MSS 
+;& 24 ~}ET LEU Jj;i!~ MSS ~{~,~,~W o 
+46 
+T/CAMET 04011.7-2018 
+* 24 LEU ~ ~ ~ MSS 1¥J fi1i .~, ~Jii 
+mol*!~ ~l):;!c;J\ Wi l£ 
+HEADER I ii!!Jl 1'!9 :7f :1m t"F ;5; 
+l!ll:iA{f[ :OxAA 
+LEN 2 ~5! -L~ J3l ( )A MSG _ ID :7f :1m ¥0 
+CRC {I( !JU!f:li!O 
+MSG_ID I 7i1J.~, ID 
+l!ll:iA{fi:Ox80 
+STAMP 6 ~,JLB, nt,?f-,#~6" 11' 
+~l)( ~tH:Rt iEil) 
+STATION_INDEX I ~i51'!9~% 
+~5l.¥57 tl%' fJJ Mllli :1'1 1 '~ ~-
+SN 4 t?z :ttl ~ ftf .~, § ~ * 1m , m i.t ~ 
+OxFFFFFFFF Fo, T -l?z 11! ~@I 0, 
+)Al:lf:lm 
+LEU_NUM 1 LEU~:fil: 
+LEU_INDEX( 1) 4 LEU ;ff:Nf}iij~i51'!9~% 
+LEU( 1) .:t:tiV~~ 
+OxOO :3C~L~l.K LEU ~lJ!U~{lj: 
+LEU ( 1) _STATUS I m l&/f¥1J LEU 1'!9 :!* ~ i1!!J!, .:£ fJL :t!\ 
+~*%! 
+Oxaa:iE'ffi' ;Ox55 :$:~ 
+LEU( 1) LEU( 1 )_ DEV(l )_STATUS 1 LEU( 1) (~{)DEY( 1) :!*~ 
+LEU(!)_ DEV(n)_STATUS 1 LEU(n)(I{J DEV(l):!*~ 
+NID_ LEU _SW_NUM I LEU ~{lj:~:fil: 
+NID_SW( 1 )_LEU( 1) 3 LEU( 1) (~{) SW( 1 )t)::{lj:)l&;<js:--1'} 
+NID_SW( n)_LEU( 1) 3 LEU( I)(~{) SW(n)t)::{lj:Jl&;<js:--1'} 
+47 
+T/CAMET 04011.7-2018 
+* 24 LEU ~i!~ MSS 1¥-Jf~.tfi!,~.di(~) 
+~JJpg~ :¥1';klj\ jilt i£ 
+LEU_INDEX( 1) 4 LEU tEM'H&$Y~i'J<J~% 
+LEU ( 1) j::;tJL~~ 
+OxOO :5[;~*~ LEU .ll\r~ U~{Lj: 
+LEU ( 1) _STATUS 1 ~1&/Fi iJ LEU i'f<J ~~ ~J!, .±:tJL~ 
+~*~ 
+Oxaa: .iE 1jt ;Ox55: $!!1:i 
+LEU(n) LEU(1)_ DEV(1)_STATUS 1 LEU(1)i'J<] DEV(I)~~ 
+LEU(!)_ DEV(n)_STATUS I LEU(n)i'J<] DEV(I)~~ 
+NID_ LEU _SW _NUM I LEU ~{Lj:J!(:£l 
+NID_SW(l)_LEU(l) 3 LEU(l)EtS SW(1)~f4-Jt&::z!s:% 
+NID_SW(n)_LEU(1) 3 LEU (I) i'J<J SW ( n) ~flj: Jt&::z!s:% 
+Private N ~;E)(:¥f& 
+END I ~J! B<J ~ * tr-iJ( 
+/W:iA. -ai :Ox55 
+CRC 4 CRC :flt!J@:, it~Ht'Hiil.b\ MSG_ID 
+iiJ END 
+13. 3. 3 MSS---+LEU * 25 ~X£7 LEU~:*~ MSS Ef<J{~.~.i*J~ o * 25 MSS ~j!~ LEU 1¥-Jf~ .~~.di 
+~JJpg~ :¥1';klj\ m i£ 
+HEADER 1 ii!!Jl7fMl1ff,~ 
+/W:iA. -ai :OxAA 
+LEN 2 ~Jl-jfJ.t(J.>\ MSG_ID 7f:llili 1J CRC :flt!J@:~J;R) 
+MSG_ID 1 ff-1.\~. lD 
+/W:iA. -ai :Ox88 
+STAMP 6 ~,Jl ,8 ,B;f,:5f,#~d:J I 1-:¥11d~;?.:B;f ['a]) 
+48 
+T/CAMET 04011. 7-2018 
+* 25 MSS ~~~fi LEU ag{~.~~Jli(~) 
+~DP3~ :¥1l::k;J\ tit u 
+RCV_SN 4 )(;f J1L LEU 1ti fH~L@. § r:j:t 8<1 ~Jltff::91J-13-
+END 1 $)J'! i'!<J t;5 * :fjj; i,J!. 
+!11J;:iJ,:Oli: :Ox55 
+CRC 4 CRC ~~, it#HtH!l!JA MSG_ID ¥0 END 
+14. 1 1i D ;iiji))j\; 
+14. 1 . 1 !lo/1!.!. :ji D 
+MSS -T~ml:j 
+:1m 1~ 0 )t. "P , ~ X~~~.W: J1H1H? ~ :ltH:Y 1/& ihS 
+--~lEt: 8<1 ~ :;t: ~ 1i 1=1 ill1:Y 
+~ m,Jl[ty!tl.!:j MS~IINV'­
+~ m iii 1~ .~. o 
+#;{;j{~~f~~~ 
+~~fifM7J 1 ,ju :t:1~ ~ .~ n lill ~ ~t rm.ll[ 
+~tl , Pf ~ tk :!.f.; m mit Jl[ 1Y!tl ~ 1~ .~. , :!5J fF 1J !I~ !I illi § ~ :x. Jj] ~~ , --r x /fill 
+1-T~J:lR o 
+a) 'L'~~f~-~' 
+'L' ~~ ~ ffl r ~ /J 1* M' illi 1~ a 1i lE 1lt o MSS JWJ M 11: :&. * 'L' ~t ~Yi ~ ~ 
+m,Jl[~tl, ~m,Jl[ty!tl!RJ Ht ]WJ M·I1::&.*'L'~t~Yi~ MSSo 
+h) ~mJl[1Y!tl7F3Ciil::mWf~-~. 
+~m,Jl[l9]tlJWJM·I1: MSS :&.*~f*¥iiilif~~i9:4itJf3Cfli:mW1~.~. o 
+c) ~mJl[iUWmm:ill:f~.~. 
+~MitffJWJMtl::&.*,Mftltmt~Mft~fF~~:&.*~~It~*~ 
+-~ ' g~ ~ ty!lj iJ\~ 19!tl iJ\ ~ $ ~ :&. * 19!tl -JJ\~ * 0 
+49 
+T/CAMET 04011.7-2018 
+d ) ~ ;fJL 1!:\i 19!~ .¥ ~ !€X {Lj: Jl& *% 
+tll'X :ii ~ , Wrfii !!! :ii .5 ~ .¥ ~ !€X 14 Jl& :zt>: % 1i. ~ ~ J! .5 , ~ ;fJL JKI 19!~ rllJ 
+MSS Ji.:i!1!:\i19!~.¥~!€t{Lj:Jl&:zll:% o 
+14. 1. 3 i1 flli i'& l!.l ~tH~ 
+:tm:W: MSS 1JMluWi:iE BtiElJ *l&¥U 'L'&E, -}Ajj ~1J:ii~ :±l ~(!{II!,~ 
+;fJL1J:\ilYJ~ 19: ~ll*~ 1JW 1* l=j:l Wr, 3t rllJ ~;fJLJKI19!~ Ji.;g!J!:ii $iff; ~~;fJLJKI19!Hli 
+:i:J:Wi:i£ Bti'EIJ * l&¥U 'L'&E, -JA1J;zy_1JJi~ :±l ~(!{!!!, lltBt~;fJLJKI19!~1J!J!JIJ!i 
+1*fii~,~~~ MSS !f!:iio 
+14. 2 ilflliffi/.X~#;!#tii£ 
+14. 2. 1 ~tliHiU!ffi 
+MAC r ~£-T IEEE 802. 3 li"f>l(L 
+MAC* Ei3 14 -1'-* 1Hli ~, 1 -1'-~Ji ~ ~ J¥ jtl ( 4 * "'P) ¥J fJ§: :1JO tE 
+Ethernet ~Jir.5W o 
+14. 2. 2 [Xi]~ffi 
+* ~ o -it ffl IPv4 tJJ. i)( fF 1J 1~.!£i'r ~ 89 tJJ. i)( o 
+14. 2. 3 ~~ffi 
+:zt;:~D~~#:i!89fflA{tfflUDPtJ].~fF1J#·tJJ.~ o 
+14. 2. 4 .Eil.lflffi 
+:zii:~D~~#:i!89fflA-ftffleJ£~89~ffl~tJJ.~ oA~~~ -~ 
+14. 3 89~~;£ 0 
+14.3 :tiD~jg#tii£ 
+14. 3. 1 ~jg1¥fitJJ:it~llilflli~~JJ$ 
+~ D J;i£:Wif¥~1J:r\:*ffl Big En dian, {E£ii!!:!Jl:f¥*:ftf.bf:f%(*"'P 0 
+J!1l 1* :fit~ 1J :r.t * ffl ~ Yf JL ::>)'di.!?J :fit~ ( CR C ) o 
+~~~JYr:r\:*ffl CRC32 ( Ox04clldb7) , 11(0:r\: ( 1 )it~ ,~r:r\: 89fJJ 
+:MJ{ii9:1J OxFFFFFFFF o 
+14. 3. 2 {l~UJL.l!{ll9W----+MSS 
+14. 3. 2. 1 'L'&E~Jir 
+:;& 26 ~~;£ 7 ~;fJL1!:\i19!~ Ji.:i!~ MSS 89 'L'&Effl ,\j!, ~ ~ o 
+50 
+T/CAMET 04011.7-2018 
+~Dpg~ :¥11*1t tNi ~ 
+HEADER l ~ fF :Mt t'F fit 
+l*:iJ... {i[ : OxAA 
+LEN 2 i!!li*.lt(JA STATIONID fF:MlfU CRC ;&@t;!f:Ji!O 
+STATIONID 2 tt'i:J1H~ 
+MSG_ID l r~.~. m 
+l*:iJ... {i[ :Ox10 
+STAMP 6 ~,jj, B ,H•LJt,t)l~d;'l1':¥11(~ ~JRHt i'EiJ) 
+SN 4 Him:¥11 
+END 1 $9i B<J AA sU'F iR 
+l*:iJ... {i[ :Ox55 
+CRC 4 CRC tlt@ ,tlt@1i1!!1ll./A LEN fiJ END 
+14. 3. 2. 2 3f.*ifk:f1t~ {~L~ . 
+3f;}C~*·~~~~-*ff~S~:f1t~ o * 27 ~JUE711i&t!L.!Kl:19! ~$t~~ MSS ~~-*ff11t~i*l?6 o 
+*n ~m~~£~-M~~-M~ffi••••~ 
+~Dpg~ :¥11*./t m j£ 
+HEADER I ~fF:Im~iit 
+l*:iJ...{il,OxAA 
+LEN 2 ~ * J3t ()A STATIONID fF M; fiJ 
+CRCtlt@~ :Ji!O 
+STATIONID 2 Y'.i:JR~ 
+MSG_ID I m.~. m 
+lkiJ... {i[ :Ox20 
+STAMP 6 ~,Jl, B ,at ,:)t,~·~ d;' 1 1'* 
+11 ( ~~ffi At !'BJ) 
+51 
+T/CAMET 04011.7-2018 
+~DrJ;j~ 5f-l' -~13t m-~ 
+1~)CJ¥ 7u-%, tJ:J :llft iti :;~;J 1 , 4!t 7X 1ll 
+)C 1& tX ~ 1JO , ~ it .3?: OxFFFFFFFF 
+SN 4 Fo,r-?X£AAb\ 1 Jt:llft~MC*~ 
+i\'!ii~J)!-IfJJt::kT- 1024 5f-iJ ,:51-§89~~ 
+1\'5§ B<J J¥7u %1JH~-3r0 
+ALARM_NUM 2 1~1}.~,~ 
+ALARM_ TYPE( 1) 1 1~1}(1)~~ 
+Ox21 :i'Lii~ffMHIH~ ~ 
+ALARM_DEV ( I ) 1 *~19:* 
+ALARM_STIME ( 1 ) 6 1~W:ii:1:Bti'i31 ,~):\jl'fj STAMP ALARM( 1) 
+ALARM_NTIME ( 1 ) 6 11P~'tt!C~ati'i31 ,~J:\11'11 STAMP 
+*1HI)i:k~ I 
+ALARM_STATUS( 1) 1 OxOO :lE'!if 
+Ox55 :"I&IU'ii 
+ALARM_ TYPE ( n) 1 1~~(n)~~ 
+Ox21 :i'Lii~ffJI:1HIH~ ~ 
+ALARM_DEV( n) 1 1~~-&* 
+ALARM_STIME( n) 6 *~ii:1:Bt18J ,~J:\11'11 STAMP ALARM( n) 
+ALARM_NTIME ( n) 6 1UHfx M Bt IBJ , ~ ):\ 11'11 STAMP 
+t~~(n)i;k~ 
+ALARM_STATUS( n) 1 OxOO: lE '!if 
+Ox55 :"l&ll.fi'i 
+Private N §)£)( 5f-~ 
+END 1 $J)!B<J~:JR1,f,i.J~ 
+!ilk iA {ti : Ox55 
+CRC 4 CRC ;fit ~, ;fit ~ fi1 00 b\ LEI'i 
+~U END 
+52 
+T/CAMET 04011.7-2018 
+14. 3. 2. 3 t!H~ :i:fs,~, 
+mm:lifs,~, 8{] I*J ~1'11% = gfS~ ,iiitt ~t vn: HE~ ,tttiii ~tff o jt!=f gfS~, 
+~ ft It rl'it HE ~ , ~ :ff !!& ili5 F 1: Bt , JJ;i 1ft!~ § .3:: 'it. :i! !!& ili5 ~ MSS o !tiL iii It ff 
+:00:, JJ;i~~ )WJ :M ·11: rflJ MSS 'it.:!! -{j.:§i':ff!j;JLiii ltff 8{] !J&i/i5 o 
+tE MSG_ID r00./E5( TYPE_ID, Jfj r IR:)t:Ji!::INJ~-1'-~~ B{]!J&ili!f o 
+;& 28 ~J..!ET1~tJLJJ;ijft!~'it.:i!~ MSS B{];f~H~:S:I*J~ o 
+* 28 ~;fJtll{iW!IJ~~~ MSS 1¥J;f~tll.lA~ru 
+TYPE_ID 
+DLJY_INFO 
+DCDL_INFO 
+E6 :rgfS ~,iii ttl~~~ 1'-!J& ili!i§'it.:i! -1' 
+19: * 8{] m m :S: , Yr le:A•:llfl!'' '1!!~~~ , ......... __._ ... 7r. i9: * ff% c 19tl :tm 
+lHft ff%) 0 
+xtriiift~t mt 
+ANALOG( n) r!~:1JD :i! iii ft ij] f'F ik !!& ' tE 
+~ B{]mm:fi, w: I*J ~ 4 
+t-'¥ 1H:V! 00 o 
+~rtttiii~tffmm•JJ;r~.~~tffm~*B{]fflA.~f'F~§.!E5('¥~ 
+~1*-&!ffl 0 
+;& 29 ~.m.!E T 1~VLJJ;r~~'it.:i! B{]tfLiii ~tfft1H~ili'1 .m:r.tlmr 0 
+*w ~m~~~~~M~I¥J~m*ff~~•aM 
+~Di*J?@: fll-lf!¥ WI JjS 
+HEADER 1 $Jll3f Mt ;j:jf, ;G; 
+iiJ!CiAffi:OxAA 
+LEN 2 r~fl-KJJ!: ()A STATIONID 7HUIJ CRC tlt®~s~O 
+STATIONID 2 fiHIHil3 
+53 
+T/CAMET 04011.7-2018 
+~Dr*J~ ~1'Hff![ #a :1£ 
+MSG_ID I m.@. m 
+~1-A-fi! :Ox30 
+TYPE_ID I DATA TYPE 
+STAMP 6 1f:,.FJ ,B ,A•L?L#~Ci 11-~l'( ~tffiAiJ'BJ) 
+SN 4 tR:>cff.~ tl% ,f}]fr#{i!;fg 1 .<RJ~XtR:>c.f&J?;.:~j ]fJ '~it It 
+OxFFFFFFFF Fn,r-~lli:~b\ llffr#~j m 
+ANALOG_NUM 2 mm:fil:.~.~ 
+ANALOG( !) 2 mmiil:C l)~#dUHJ. lO,l)!{lf::V 
+ANALOG( n) 2 mmiil:( n) 
+Private N §J.E)(~BI: 
+END 1 IID!ii¥.1~J'.Rtf-1/~ 
+~1-A-fi! :Ox55 
+CRC 4 CRC fH~ .~~ti100b\ LEN !IJ END 
+:mor*J~ ~11 -!ff!( m :1£ 
+HEADER 1 ®Jr 7f :tm tr-;[; 
+~i-A ffi :OxAA 
+LEN 2 ~_di-jff![(b\ STATION ID lfAAitl CRC 
+~~~J'.R) 
+STAT!ONID 2 lilitR~ 
+MSG_ID 1 m.@. ro 
+~i-A-fi! :Ox40 
+TYPE_ID 1 DATA TYPE 
+54 
+T/CAMET 04011.7-2018 
+~r:Jpg~ ~11-L~./t tNi :)£ 
+STAMP 6 1f,J!, B ,At ,?j-,~~ ~ 1 -1-~11Ut 
+Jl'i:At!EiJ) 
+:JRxl¥~tl%,fJ1:1frl{i[1'11 .4IJ:l'f.::JRX* 
+SN 4 {'}.:~1m , ~ tt 3?: OxFFFFFFFF Fn , r -{'}.: 
+:li tiT M. 1 7f 1m~ )JO 
+l9:~~%.*~W:~!!H1~~ n -4'-19: 
+ITEM_NO 2 ~B<J pg~ C M'f ~~, tlti Vlklt!ft ;~JfF It! 
+Vlf.w~ .;J;t~~HfU!tPT ~~f!!!:m ,f](P.W!~c 
+.'R * e<J J®! 1¥ en PI ) 
+START_TJME 6 1:j::,J!,B,Bt,?j-,~~~ 1-i'-~l)(::lt 
+Jl'i: at !Eil ) 
+:i1!ft~:t#:/Jfiil 
+O:%:f.il:¥U~UI 
+I:~ {.il:¥U%:{.il: 
+DIRECTION 1 2:%:UI¥U%:f.il: 
+3:~f.il:¥U~f.il: 
+4:%:f.il:¥ U$J!J!!f.il: 
+s,~f.il:¥U$J!J!!f.il: 
+[llj~~~ 
+CURVE_TYPR I O:~VIf. 
+I : 1i:VIf. 
+CURVE_NUM 1 [llj~~iilC:im:W:~1i:VIf.,Jj[U1'JI . :im:W:~ 
+~VIf. ,Jj[tl1'J3 ·*{X~ A,B ,C .=:;ffi) 
+POINT_NUM 2 *=1:/t~~:ill:( *~.'~fi<JAt i'EiJIEiJI!illi :40 ms) 
+CURVE( I) POINT( 1) 2 *~-~( 1)0'/-7'!~~~ 100,.if!UI:A) 
+POINT( n) 2 *~-~(n)(~~~~~ 100,i(J.f.il::A) 
+POINT_NUM 2 *=1/t~~:ill:(*~-~B<JRt i'EiJ!'i!J i!illi :40 ms) 
+CURVE( n) POINT( 1) 2 *~-~( 1) (~~~~~ 100,i(J.f.il: :A) 
+POINT( n) 2 *~-~(n) (~~~~~ 100,.if!UI:A) 
+55 
+T/CAMET 04011.7-2018 
+~Qpg~ ~l'~lt Wi :1£ 
+SWITCH_CNT 4 iiftz;!Jft~~ 
+Private N §~.)(~j:j/: 
+CRC ~ !li , t1n~ m: Bl! JA LEN ¥0 CRC 4 SWITCH_CNT 
+END I ii!!J! ~ ~ siHiFi.J~ 
+l!!ki:A. 1fi :Ox55 
+*. 31 ~]5ET~tJL%l:~ ~Jit:i!B9EE!.~~~~;j~jfJjfl:§,~:r.\;:t!OT o 
+* 31 frt'UJL llil JD!IJ ~ ~ ~ MSS W3 It! g'>U~ ~ f1HU!li 
+~Qpg~ ~l'~lt Wi :1£ 
+HEADER 1 ljrflff:lmt'F;i!;( 
+:!JRi:A. {i[ :OxAA 
+LEN 2 ljrfl~Jt(JA STATIONID 7f:!fri¥1J CRC ~!Ji~ :~O 
+STATIONID 2 y~jRii!! 
+MSG_ID I ~Jlj ,@, ID, l!!ki:A. {i[: Ox40 
+TYPE_ID I DATA TYPE 
+STAMP 6 &f:,f.j, El ,B•L:$t,ti11£.!5 I ·t<f:l)(~~ffist i'aJ) 
+SN 4 m::Scff:Vtl~ ,f]JMI1fi:1'1 1, :fij~jR::Sc-f&~~:lm, ~ 
+it~ OxFFFFFFFF )§, r -~1!if~TJA 1 ff:lm ~:110 
+~~~~,*~~~m§~mn~~~~P-1~ 
+ITEM_NO 2 c :xt .:r ~ ~ , lilt vlL m ft Z9J -rt ~t mum~ , Jt ~rd~HVJ ill: 
+m J;A.::fftffl, * m~~fi* ~J®!ff ~nm) 
+It~~~, lf!.{il:: MD, J;.:fk ~{fi ( ~ ~~ i!ff-!;A 
+ANALOG 2 1oo) 0 1J\.:r s i>I.OO~~~~,rF'iit; :*r~.:r 20, * 
+~~~~1$ 
+Private N §~.)(~g[ 
+56 
+T/CAMET 04011.7-2018 
+:moi*J~ *~*It Wi ~ 
+END I ~ ~ ~* f;jd,J~ 
+~iA {fi. :Ox55 
+CRC 4 CRC t<,(~,;flZ~tQ;Efi])A LEN ¥1J END 
+14. 3. 2. 4 1J&tJLJJ[iYJU.¥t!E?iX14AA:<$:% 
+:;&. 32 ~1.~ T1J&tJLJJ[iYJU2t:i! B<JAA:<1>: P'1 ~ ,:ms:t:!mr o 
+HEADER 
+LEN 
+STITIONID 
+MSG_ID 
+STAMP 
+SN 
+VERSION _NUM 
+DEVICE( 1) 
+DEVICE ( n) * 32 ~l\UJt 1l{f WI~ ~ ~ ~ MSS a9 1t& ;lti: 1l§ .\lt ~Jli 
+4 
+2 
+DEVICE_ID ( I) 2 
+DEVICE _VERSION ( 1) 4 
+DEVICE_ID( n) 2 
+DEVICE_ VERSION ( n) 4 _.,"'-""-"""';fi~~ 
+:OxAA 
+:jjl:)c !'¥ :91J-£}' fJJ Ml {fi. jg 1 ' 
+&~:Jllx-fiX~M<l:IJo, M<ltt~ 
+OxFFF'FFFFF )§, T-~ ![ ~ 
+)A 1 3fM/ ~:IJO 
+57 
+9=' ~ :ViX"flfitr. :iA ~:iiii ~~ ~ f*t~ * 
+•*~m~~ ¥~~-~~*~ft 
+~mtJ~~( CBTC) Ji~Ji~:tiiJ~m 
+m 7 'lm*:fi§~*T~~~£l~P3t~~~( MSS) fBl:tiiJ 
+T/CAMET 04011. 7-2018 
+* 
+9=' ~ ~ :iA :±l lttH± :ff II&% i'\J :±l ~ ~ fr 
+c 1ooo54 ,::!~ffir!JWlJa 12Lt:l:'ti: nwm: 8 % > 
+%i'\J ~:l:Jl:: http :I /www. tdpress. com 
+::!~ffi '*' .Qlt En .llltl:ff 15&% i'\J t:n .IJliJ 
+3f:2jl:: 880 mm xI 230 mm 1132 t:n'ltE: 2. 25 ~~ :62 'T 
+20 19 <¥ 5 Ji ~ 1 ~ 20 1 9 <¥ 5 Ji ~ 1 rx t:n liltl 
+~%: 15113 ° 5733 ~1ft" :20.00 5I; 
+ll&t.ll.PJT~ ~t.ll~'~ 
+}LJ!l;J~-t!kill!l&OO~, im1f fniMl!ll::lil:fiiJ/ffi, "@ . .Spt;:0PJ £11"$11Hdlll:t!i< o 
+£11"$ f!! ii5 :ll!t(021 )73 174 'rtf ( 010 )51873174 

@@ -1,0 +1,680 @@
+13
+with contributions from John Alexander and Trevor BradbeerBack to basics: Points
+Part one
+Francis How
+This is the latest in the IRSE’s “Back to basics” series of 
+articles, aimed particularly at helping people preparing to take the Certificate in Railway Control Engineering Fundamentals (Module A) of the IRSE’s Exam, and those who are new to the industry or the profession of railway signalling.
+This article is about points and is in two parts. Part 2 
+will follow in IRSE News March 2022. Points have been mentioned previously in the Back-to-Basics series but have not been covered in any detail until now. There 
+are seemingly endless varieties of points and point 
+operating mechanisms around the world, and it is not possible to cover them all. Instead, we will focus on the principles and common practices, with some examples. Terminology varies considerably as well; we will use the term ‘points; throughout, but points are also referred to as ‘switches and crossings’ (S&C) and ‘turnouts’. 
+One of the joys of S&T engineering is that it embraces a broad 
+range of engineering skills. Many articles in IRSE News explore high-tech topics such as software, IP networks, cyber security 
+and artificial intelligence. At the other end of the spectrum lies the mechanical engineering of points, with the signal engineer 
+quite literally involved in the nuts, bolts and grease of keeping points operational. You can be an S&T engineer at either end 
+of this spectrum, or somewhere in the middle – and a few 
+even manage to be knowledgeable about all of it!
+What are points and why do  
+railways need them?
+As soon as a railway becomes more than a simple piece of 
+track connecting A and B, requiring junctions to connect with other lines or sidings, then points are a necessity. They 
+comprise fixed and moveable rails that guide a train from one 
+track to another. 
+Roads have junctions as well, of course, but self-evidently 
+there are no moveable parts, and it is worth briefly considering 
+why railways are not the same. Firstly, road vehicles can steer themselves whereas trains cannot, and they therefore require something to guide them in the intended direction. Secondly, the wheels of road vehicles sit on the road surface, with no part of the wheel below surface level. The wheels of railway 
+vehicles have flanges, which is the part of the wheel which 
+runs on the inside of the tracks and serves, in extremis, to prevent the vehicles derailing – see Figure 1.
+For these reasons, points have moveable sections of rail, both 
+to provide a continuous railhead for the train to travel in the 
+intended direction, and to provide gaps in the rails where required so that the flanges can pass through.
+On most railways, the points trackwork is the responsibility 
+of the track (permanent way) engineer, and the signal engineer is responsible for providing and controlling (via the signalling system) the means of moving the points, and for ensuring that the points are in the required position 
+before a train is permitted to pass over them. This division of 
+responsibility is not universally true, however, and in some railway administrations the roles and responsibilities are allocated differently.
+Points are used to enable trains to diverge from the ‘straight’ 
+route ahead, onto another line, or to stay on the straight route. When trains traverse a set of points in this manner, they are said to be travelling over the points in the ‘facing’ direction. 
+Points can also be used in the opposite direction, of course, 
+where two lines converge and become one. Trains using points in this manner are said to be travelling over them in the ‘trailing’ direction – see Figure 2. Many points are used for both 
+facing and trailing movements.Figure 1 – Profile of wheels on a pair of rails, illustrating the flanges.
+
+ IRSE News |  Issue 285  |  February 2022
+14
+The basic design of points
+Before going much further, we need to understand the 
+principal parts of a set of points. The main components are shown in Figure 3. Again, terminology varies somewhat, both 
+from one country to another and depending upon whether 
+you are a track engineer or a signal engineer. So please excuse us if we use terminology with which you are not familiar or even which you consider to be incorrect! 
+Various terms are also used to describe the position of points. 
+In Britain, and in some other countries, when the points are set for straight route they are said to be in the ‘normal’ position, and when they are set for the diverging route, they 
+are in the ‘reverse’ position. This terminology dates from the 
+days of mechanical lever signal boxes, when a lever was said to be in its normal position when it had not been pulled, and in its reverse position when it had been pulled. Alternative terminologies for normal and reverse, which are used in other 
+parts of the world, include left/right, positive/negative and 
+direct/diverted.
+The key components of the points shown in Figure 3 are:
+Switch rails (also known as blades or tongues) are the movable 
+rail sections which guide the train along the straight or the diverging route. They are tapered at their tips so as to fit closely to the adjacent stock rail.
+Stock rails are the outer running rails for the straight and 
+diverging routes. The tips of the switch rails move up tight against the stock rails when in the closed position for route set. Common crossing (also known as a ‘Frog’ or ‘Vee’ crossing) 
+is the part of the track layout where the switch rails converge. 
+Of necessity, there is a gap in the rails here so that the wheel flanges can pass through. The existence of a gap can however create problems, particularly on long turnouts, and we shall return to this subject in Part 2.
+Closure rails are non-moving sections of rail that connect the 
+switch rails with the common crossing.
+Check rails. Also known as guard rails, these are short sections 
+of rail positioned alongside the stock rail to ensure that the wheels follow the correct route through the common crossing 
+(frog). It can be seen in Figure 3 that there are similar rails alongside and forming part of the common crossing. These 
+are known as wing rails (sometimes these are manufactured as part of the common crossing rather than being separate rails).
+Stretcher bars are provided at intervals between the two 
+switch rails to help ensure that the correct distance is 
+maintained between them not just at the tips but throughout their length. Note that railways in many countries do not use stretcher bars, although they are used in Britain and some other countries whose railways are based on British practice. 
+Where they are provided, the number of stretcher bars is 
+governed by the length of the switch rails, which in turn is determined by the maximum permitted speed of trains taking the diverging route.
+Switch heels are the demarcation point between the movable 
+switch rails and the fixed closure rails. A heel block assembly is positioned in the vicinity of each heel to maintain the switch, closure and adjacent stock rail in the correct relative positions.Facing 
+Trailing
+Switch railsStretcher bars
+Stock railClosure rails
+Check rail
+Wing rails
+Check rail
+Common crossingStock railStraight route
+Diverging route Position of
+switch heelsFigure 2 – Facing and trailing directions of movement over a set of points.
+Figure 3 – The principal parts of a typical set of points.
+ IRSE News |  Issue 285  |  February 2022
+15
+All these components work together to guide a train along 
+the correct route. Ensuring that a train can traverse points 
+safely and smoothly, with minimum wear and tear on both the wheels and the track, means that the design of points is 
+a complex matter, particularly where points are very long (for 
+high-speed turnouts).
+What Figure 3 does not depict, but which can be seen in 
+Figure 4, are the supporting elements for the rails. These 
+include extra-long sleepers which support the rails. Sleepers are known in some parts of the world as bearers, ties or 
+cross -ties. The rails themselves sit on ‘chairs’, as does rail on 
+plain line, of course. Where the switch rails move, the chairs support both the stock rail and the switch rail. These are ‘slide chairs’, and as well as holding the stock rail in position 
+they also have a flat surface over which the switch rails move 
+laterally. To aid movement, these surfaces are usually greased, or fitted with plastic inserts to reduce friction, or with rollers which lift the switch rails very slightly while they move.
+Operational hazards associated  
+with points
+So far, we have not said anything about how points are moved 
+and held in position for the passage of a train. This is where the signal engineer comes in! But before we discuss this, we 
+should consider the operational hazards associated with a set 
+of points. Clearly, a section of rail that can move is potentially disastrous for a train. Before reading further, you might like to think for yourself what the principal hazards are. If not, or to check your answers, they are:
+1. Points not fully in correct position for the safe movement of a train. For facing movements, this is likely to result in derailment. For trailing movements derailment is unlikely, 
+but damage may occur to the points or associated 
+trackside equipment
+2.
+ Points in the opposite position to tha t required for 
+safe movement of a train. For facing movements, this will result in the train going on the wrong route, which may have consequences such as derailment as a result 
+of excessive speed, or collision with another train. For 
+trailing movements, the train might derail or, more likely, severe damage is caused to the points and the associated trackside equipment. 
+3.
+ Points moving as a train passes over them . For facing 
+moves, this is very likely to result in derailment of all or part of the train. For trailing movements, it could result in 
+derailment but is more likely to cause damage to the points 
+and associated trackside equipment.
+4. Excessive speed. This may result in derailment. Most points have, by their very nature, one position which involves a relatively tight radius curve, corresponding to the diverging 
+route. There is generally no super-elevation or ‘cant’ on 
+the diverging route through the points to help the train negotiate the curve (unlike plain line curved track).
+Figure 4 – General layout of a set of points.
+Photo Shutterstock/Timofeev Vladimir.Switch rail
+Switch railStock rail
+Stock railSlide chairsExtended sleepers  
+(bearers)
+The mechanics of how a wheel stays on the track are complicated, and are beyond the scope of this article, 
+but it is worth noting that in normal running on plain line 
+(including curves), the track and the wheels are designed so that ideally the flange does not come into contact with the inside of the rail. Instead, the concave/conical wheel profile 
+serves to keep each pair of wheels running smoothly on the 
+head (top) of the rail.If you like railway history, you may be interested in exploring how the wheel-rail interface evolved from its origins in the 
+earliest horse-drawn wagonways where the wheel surfaces 
+were flat and ran in grooved wooden “track”, then later where the guiding flanges formed part of the metal track, rather than being part of the wheels, through to the most 
+modern systems which are capable of safely guiding trains 
+travelling at very high speeds.Railway wheels and tracksStretcher bar
+ IRSE News |  Issue 285  |  February 2022
+16
+5. Track gauge is incorrect for safe movement of a train. This 
+is likely to result in derailment. The fact that part of the track is moveable means that there is a somewhat greater 
+risk (compared with plain line) of the track becoming ‘wide 
+to gauge’, because of lateral outward movement of the rails caused by the passage of successive vehicles or trains.
+6. Broken and worn rails. This may result in derailment. The switch blades and the common crossing have less metal to support the wheels, and both the switch tips 
+and the crossing receive more impact from the wheels, 
+which may cause rails to break. Switch and stock rails also wear through use, especially where heavy traffic uses the diverging route. Excessive wear can lead to derailment.
+The risks associated with the first three of these hazards are controlled principally through the signalling system, of which 
+we shall say more shortly. 
+The fourth hazard is usually controlled by a speed restriction 
+that applies to trains taking the diverging route, reinforced by controls in the signalling system. These controls may include 
+route and/or speed indications and aspect controls that 
+instruct/remind the driver to slow down, and train protection systems which enforce speed reduction in the event 
+of driver error.
+The risks relating to the fifth and sixth hazards are controlled 
+principally through track inspection and maintenance.
+The role of signalling in point operation
+The role of signalling in the operation of points is to fulfil three basic functions, and they are achieved jointly by the interlocking and the trackside equipment, as 
+described in Table 1.
+The interlocking features relating to points were described 
+in two previous ‘Back to basics’ articles (IRSE News, April and 
+May 2020), and it is not the intention to repeat them in this 
+article. This article focuses instead on the trackside signalling equipment that moves, locks and checks the points.
+Point operating mechanisms
+Manually operated points
+When railways first began, the practice was for railway personnel to operate a set of points using a lever beside the track. Examples of this can still be found in sidings.  When signal boxes began to appear, the points were operated by moving a mechanical lever in the box. Each point lever was connected via rodding (or sometimes wires) and cranks to the tips of the switch rails of the associated set of points – see 
+Figures 5 and 6. By pulling the lever to the reverse position in 
+the lever frame, the rodding moved in one direction sufficiently to move the points into the reverse position. Restoring the lever to the normal position returned the points to the 
+normal position.
+Because of the weight and the effort required to move the 
+rodding and points via the points lever, the distance from a signal box to a mechanically worked set of points is quite 
+limited (typically to ~200-300 metres). 
+Power operated points 
+Examples of mechanically-worked points can still be found 
+in many parts of the world, but all modern signalling systems use power-operated points. Most commonly this takes the 
+form of an electric motor in what is known as a point machine 
+(also known as a switch machine or switch motor). The point machine is located adjacent to the switch blades and is connected to the tips of the blades either by two rods (one for 
+each blade) or by a single rod and a bar which links the two 
+tips, ensuring they move in synchronism. The bar is commonly known as a ‘lock stretcher bar’. Figure 7 shows a point machine, with the drive rod connecting the electric motor via gears to the blades. As the motor turns, the rod moves to the 
+left or the right, moving the points to the normal or reverse 
+position respectively. Note that there are other rods also shown in the diagram – we shall discuss their purpose shortly. 
+There are many types of point machine in use, with various 
+drive arrangements linking the motor to the switch rails. That shown in Figure 7 is just one example . A layout in a training environment is shown in Figure 8, where the point machine is mounted on extended sleepers, and as with mechanical points 
+a soleplate (extended stock rail gauge tie) maintains the gauge 
+and the distance between the track and the point machine. 
+Over the years, alternative types of powered point operating 
+mechanisms have been produced. Some use hydraulic 
+actuation, such as the clamp lock (other similar devices are known as chair locks, claw locks and ground locks). The clamp lock has a hydraulic power pack instead of an electric motor, with hydraulic rams (jacks) positioned between the sleepers to 
+drive the switch rails to the normal and reverse positions.
+Function Fulfilled by
+Move the points to the required position for 
+the passage of a trainA trackside point operating mechanism which, under the control of the interlocking, moves the switch rails to the required position. The mechanism is usually mechanically, electrically or hydraulically powered, although some 
+railways use pneumatic power.
+Check that the points are in the correct position.A trackside mechanism which detects whether the switch rails are correctly positioned and locked (see below) for the safe passage of the train. Often, but 
+not always an integral part of the point operating mechanism (see earlier).
+The detection of the position of the switch rails is used by the interlocking.
+Prevent the points moving until the whole of 
+the train has passed safelyA locking mechanism which holds the switch rails securely in the required position for the train. Again often, but not always, an integral part of the point 
+operating mechanism
+In addition, the interlocking has safety features that prevent power being 
+transmitted to the point operating mechanism when there is a route set over a 
+set of points and when there is a train actually on the points. Table 1 – The main signalling functions associated with a set of points.
+ IRSE News |  Issue 285  |  February 2022
+17
+Figure 5 – Points rodding leading from the signal box (out of picture, to the 
+right) to a set of points, with cranks that are used to transmit the motion of the 
+rods through a right-angle.
+Photo John Francis.Figure 6 – Close-up of a rodding run for several 
+sets of points (a wire run for signals is on the left).Photo Ian J Allison.
+Figure 7 – Typical point machine with its connections to the switch rails  
+(schematic only; not intended to be an accurate representation).Image Trevor Bradbeer.Point machine
+Extended sleepers
+Sole plate
+Lock stretcher bar
+Detector rod 
+(right-hand switch)Detector rod 
+(left-hand switch)Circuit controller and 
+detection contactsFacing point  
+lock rodDrive rod
+Stretcher bar
+ IRSE News |  Issue 285  |  February 2022
+18
+A further variant is the ‘in sleeper’ (also known as ‘in bearer’) 
+mechanism, where all the machinery is contained within a box or trough which takes the place of a conventional sleeper. This 
+means there is little or no equipment above sleeper level, thus 
+making it easier to undertake mechanised track maintenance without risk of damage to the equipment.
+It is also worth mentioning an example of an innovative 
+approach to point operation which has featured in IRSE News (most recently in May 2019). “Repoint” was a project undertaken by the University of Loughborough (UK) to consider afresh the failure modes of points and to develop an 
+operating mechanism that was more reliable, just as safe, and 
+would help improve track capacity. It illustrates that innovative thinking still has something to contribute to an issue as basic as point operation.
+Checking that points are  
+correctly positioned
+The second signalling function associated with points (listed in 
+Table 1) is to detect the position of the points. This is necessary because it cannot be assumed that the points will move to 
+the position to which they have been called. Ballast or other 
+debris could obstruct the movement, for instance, preventing the switch rail closing against the stock rail. A power failure or malfunction of the point operating mechanism could also 
+prevent the movement. 
+In the situation where the points do not need to be moved 
+for the route being set, it cannot be assumed they are still safely in the correct position for the next train. The passage 
+of the previous trains might have caused the points to 
+open very slightly, through vibration, wear or mechanical failure for instance.How detection works
+The positions of both switch rails are detected, firstly to be sure that the tip of the closed switch rail is sufficiently close to the stock rail that a wheel flange could not pass between the 
+two rails; and secondly to be sure that the gap between the 
+stock rail and the open switch rail is sufficient for the wheel flanges to pass through.
+In the case of point machines, detection is achieved using 
+rods that are attached to the tips of the switch blades, which 
+operate electrical contacts in a detector box adjacent to the track as the switches move left or right. In many point machines, the electrical contacts are inside the point machine 
+rather than being a separate unit – see Figures 7 and 8. These 
+are called ‘combined’ point machines. In the case of hydraulic clamp locks, the contacts are in boxes attached to the outsides of the stock rails. 
+The electrical contacts for both switch rails are combined into 
+points detection circuits, the outputs of which are fed back to the interlocking via fail-safe relay circuits or a high integrity transmission system. Hence the interlocking knows whether 
+the points are normal, reverse or in an indeterminate state 
+(neither normal nor reverse).
+Where points are worked mechanically via rodding, a wholly 
+mechanical detection system is often used. The detection 
+rods are connected to sliding metal plates which engage with 
+similar slotted plates at right angles which are connected to the wires that operate the mechanical signals. This ensures that the wires leading to the signals cannot be operated unless 
+the points are correctly set, and vice versa. Hence there is 
+direct interlocking of points and signals at the trackside, in addition to the interlocking of the levers in the signal box. You can just about see an example of such a device near the top left of Figure 5.
+Figure 8 – A typical point machine arrangement (in a training school environment) showing the drive rod, detection, FPL 
+rodding connections, and associated stretcher bars. Image Trevor Bradbeer and Signet Solutions.
+ IRSE News |  Issue 285  |  February 2022
+19
+Detection tolerances
+The permissible gaps between the switch and stock rails vary 
+slightly from country to country, but on a standard gauge railway the gap on the closed switch rail side must typically be 
+no more than ~5mm, and on the open switch rail side it must 
+be at least ~115mm (these figures may also vary depending upon the type of points and operating mechanisms). If these criteria are not satisfied, the detection circuits will indicate to 
+the interlocking that the points are not correctly positioned. 
+Tolerances are generally assigned to these values, both to allow some latitude when setting up or maintaining the points and to reduce the risk of the closed switch detection being intermittently lost due to track vibration or slight 
+movement. Thus, for instance, one railway administration 
+states that the closed switch detection contacts must just be made at a switch-stock rail gap of 4mm (but not less) and definitely broken at 6mm.
+Detection of the open switch may at first sight appear to 
+be less critical than the closed switch, but there have been accidents such as at Kingham (1966) and Grayrigg (2007) , both in Britain, where the open switch rail gap was insufficient. 
+The continual battering by the backs of wheels caused the 
+open switch rail and fittings to be fatigued, causing fractures leading to derailment. The condition of the stretcher bars was implicated in both accidents, incidentally.
+Locking the points in position
+The third and final signalling component of points operation is the physical locking of the points in the required position, to minimise the risk of the switch rails moving. The 
+locking mechanism is known as a ‘point lock’ or ‘Facing 
+Point Lock’ (FPL). 
+Why do we lock points?
+In Britain it has been, from relatively early railway days, a legal requirement that points used by passenger trains in the facing direction are fitted with a lock. The Board of Trade’s 1892 
+requirements relating to the opening of new railways stated 
+that “In order to ensure that the points are in their proper position before the signals are lowered, and, to prevent the signalman from shifting them, while a train is passing over 
+them, all facing points must be fitted with facing-point locks…”.This leads to two key observations. Firstly, the requirement 
+recognised that points traversed in a facing direction present a much greater hazard than in the trailing direction; and secondly, the hazard was originally perceived more in relation to signalman error than the points having an excessive gap 
+between the closed switch and stock rail because of poor 
+adjustment, track movement or wear and tear. The risk of signaller error in relation to points movement has now all but disappeared as a consequence of comprehensive interlocking 
+of points, tracks and signals. However, the requirement to lock 
+facing points on passenger lines remains in most countries in the world and serves to minimise the risk of derailment in the vicinity of the blade tips. Furthermore, in practice many railways lock the points for movements in the trailing direction 
+as well as facing, and also lock points on freight-only lines.
+The extreme dangers associated with facing points can be 
+seen throughout the history of railways. As with so many safety 
+features on railways, accidents led to the introduction of facing 
+point locks. In Britain there was for many years an aversion to having facing points at all, something which reached its height in 1873 when a north-bound express train derailed on points at Wigan station. Thirteen people died as a result of the 
+points moving under the train (not, in this case, by the action 
+of the signalman but because of the excessive speed of the train). The accident brought to the fore the need to fit locks to facing points. Even in relatively modern times points-related 
+accidents have still occurred. Examples include Potters Bar, UK 
+(2002), Grayrigg, UK (2007) and South Carolina, USA (2018).
+How points are locked
+As with detection, the facing point lock mechanism varies in design for mechanically-worked and power-operated points. It is instructive to start by looking at mechanical points – see 
+Figure 9. A lock stretcher bar connects the two switch blades. 
+It has two slots cut into it. When the points are in the required position, the signaller pulls the FPL lever. This is a separate lever, not the same one as is used to move the points. The 
+lever is connected via rodding to the lock rod, driving it into 
+one of the two slots in the lock stretcher bar. There is one slot for the points in the normal position, and a second for the reverse position.
+Figure 9 –A facing point lock on a set of mechanical points.
+Image Trevor Bradbeer.
+Rodding coming in  
+from FPL lever 
+in signal boxPort where lock  
+rod engages  
+when points are in  
+opposite position to  
+that shownLock stretcher bar
+Lock rod
+Sole plate
+ IRSE News |  Issue 285  |  February 2022
+20
+It can be seen that when the lock is engaged in one of the 
+slots, it is impossible for the switch blades to move, either by the signaller attempting to move the points lever or by 
+vibration as a train traverses the points. Figure 9 also shows 
+the metal soleplate (also known as the stock rail gauge tie) on which the lock and the two slide chairs are rigidly mounted to prevent movement and maintain the correct gauge at 
+the switch tips.
+Moving on to power-operated points, although some railways 
+use point locks which are actuated by a mechanism separate from that which moves the points, more commonly the lock 
+is part of the point operating mechanism. In the case of point 
+machines, the lock is usually contained within the machine. If you look at Figures 7 and 8 you will see that one of the rods coming out of the point machine is connected to the mid-
+point of the lock stretcher bar. Inside the point machine the 
+rod is connected to a lock mechanism. As the point machine completes the point movement (either normal or reverse) it engages the lock mechanism, so preventing the rod, lock stretcher bar and switch blades from moving until the point 
+machine is powered up again to move the points to the 
+other position. In the case of a clamp lock, the locking mechanism is different, although its purpose is the same. Trying to explain how a clamp lock works is not easy – it is easier to understand by 
+seeing one in action! In essence, there is a G-shaped lock arm 
+(sometimes called a claw) attached by a pivot to the inside of each switch rail. The hydraulic rams move the switch rails via the drive/lock slides and the lock arms, and eventually the 
+free end of the lock arm on the closed switch side is forced 
+up so that it fits tightly against the outside of the stock rail. The switch and stock rails are thus physically clamped to each other and cannot be moved unless the clamp lock is powered to the opposite position – see Figures 10 and 11.
+Some point operating mechanisms have a quite different 
+type of lock. For instance, the UK High Performance Switch System (HPSS) utilises a lead screw (which moves the 
+blades normal and reverse) combined with a brake, thus 
+preventing any movement of the blades when they are in the required position.
+In power-operated points, the detection circuits referred 
+to earlier also include electrical contacts to prove that the 
+lock has engaged. Thus, when the detection circuit informs the interlocking that the points are normal or reverse, this information is, in effect confirming that the closed switch is 
+against the stock rail, the other switch is sufficiently open, and 
+the switches are locked in position. 
+It can be seen from what we have considered so far that 
+modern point machines, clamp locks and similar devices 
+combine the functions of point movement, detection and 
+locking in one trackside device. Taking the example of a conventional point machine, a typical sequence of operations for moving the points from normal to reverse is as follows:
+1. Motor starts turning when power ed from the interlocking.
+2. Point lock disengages by the action o f the motor. As soon 
+as this starts to happen the normal detection circuit is forced to break (even though the switches are still normal at this stage).
+3. S witches are driven to the reverse position by the 
+action of the motor.
+4. Point lock engages by the action o f the motor.
+5. Reverse detection cir cuit is energised, provided the lock 
+has successfully engaged and both switch rails have fully moved to the reverse position.
+6. Power to the motor is switched o ff by contacts on the 
+circuit controller inside the point machine (the interlocking also disconnects the power to the points when reverse detection is obtained).
+7. The motor is electrically brak ed by ‘snubbing’ contacts on 
+the circuit controller (somewhat like regenerative braking), to avoid damage to the motor and mechanical parts when the movement reaches the end of its travel.
+Hydraulic cylinderLock arm
+Drive/lock slide
+Figure 10 – Typical clamp lock installation.  
+Photo Francis How.
+Figure 11 – Clamp lock cross section.
+Do we hold the correct email address for you? If you have just joined the 
+digital community or recently changed your email address you will not be receiving important membership information or IRSE e-communications.
+Don’t miss out. Please email your new contact details to 
+membership@irse.org to enable us to update our database.Please don’t keep 
+us in the dark!! IRSE News |  Issue 285  |  February 2022
+21
+Facing point lock tolerances
+Although it is desirable from a safety perspective for the gap between the closed switch rail and the stock rail to be as small as possible (ideally zero), in practice some tolerance must be 
+applied. Without this, the very slightest movement or incorrect 
+adjustment of the points might mean the point lock could not physically engage. If that were to happen, the detection circuits would indicate that the points were not locked, and 
+therefore trains could not be signalled over them. This is a 
+classic example of a points failure, causing delays to trains and requiring a technician to attend the points. The provision of the tolerance is, therefore, a trade-off between safety and reliability.
+Accordingly, points are adjusted so that with a very small gap 
+between the switch and stock rail (typically 1.5mm on standard gauge railways) the lock can still engage. If the gap is much 
+larger (typically 3.5mm) the lock must fail to engage. The 
+normal way of checking these gaps is to use a facing point lock gauge. This is nothing more than a small rectangular piece of metal, 1.5mm thick at one end and 3.5mm thick at the other. Each end is in turn inserted between the stock 
+and switch rails, and the points moved (generally by hand 
+operation rather than under power) to check that at 1.5 mm the lock engages and that at 3.5mm it does not. The tolerances may vary slightly for different railways and countries, but the 
+principles are the same.
+Figure 12 – A high speed turnout on the Paris to Strasbourg High Speed Line.
+Photo SNCF.
+Still to come…
+In this article we have explored the basics of points and point 
+operation, and the role of signalling and the signal engineer in ensuring they work safely. Next month, in Part 2, we will look 
+at some of the additional features and functions associated 
+with points, including topics such as trailable points, catch points, turnouts on high-speed railways, and more.
+Things to think about 
+You may like to consider the following questions; answers will follow in the March issue of IRSE News.
+1. Mechanical point r odding (see Figure 6) expands and 
+contracts in length with the air temperature. This could cause points to unlock or move when they should not. How is this prevented from happening?
+2. S tretcher bars, switch rails and the common crossing 
+provide an electrical connection between the stock rails, which would mean that a track circuit through the points would show permanently occupied. How is 
+this problem overcome?
+3. In wha t circumstances might points be provided for 
+the purposes of derailing a train?
+11
+Back to basics: Points 
+Part two
+Francis How
+This is the second part of the latest in the IRSE’s “Back to basics” series of articles, aimed particularly at helping people preparing to take the Certificate in Railway Control Engienering Fundamentals (Module A) of the IRSE’s Exam, and those who are new to the industry or the profession of railway signalling and telecoms.
+In part one (see IRSE News February 2022) we looked 
+at the fundamentals of points and point operation, including how points are moved, detected and locked. In this second part we will explore some of the additional features and functions associated with points. These are not universal, and the details vary, so it is worthwhile investigating whether and how they are applied on railways with which you are familiar.
+Electrical power for moving points
+Many point operating mechanisms use relatively low voltages, 
+typically 120V, although voltages as low as 24V may also be encountered. Usually these are DC machines, although 
+some use AC, particularly in DC traction areas for immunity 
+purposes. They may have a peak current requirement of as much as 12A when the points begin to move and at the completion of the movement. Where points are powered 
+directly from the interlocking, the high current requirement 
+constrains the maximum distance to the points, dependent upon the size of cable used, to avoid excessive voltage drop. To overcome this limitation, points may alternatively obtain their power from a local trackside source, with low power relay 
+or solid-state control circuits connecting the interlocking to 
+the power source, to switch the power on and off as required. Sometimes the power is derived from the traction supply, which can be problematic if the voltage fluctuates depending 
+upon the presence or absence of trains in the vicinity.
+In some countries, higher voltages (up to 400V AC, sometimes 
+three-phase) are used to power the operating mechanisms, which enable the points to be powered directly from the 
+interlocking at much greater distances.
+Other features of point operating include:
+• They are often required to be AC immune, to avoid the 
+possibility of electromagnetic induction causing the motor to turn (even slightly) in AC electrified areas.
+• They usually have some sort of clutch or cut-out so that in the event of the mechanism being unable to complete the point movement (e.g., due to obstruction), the 
+mechanism and the power supply do not suffer damage by 
+continuing to operate. 
+• The design of the clutch or cut-out, and of the internal circuits of the operating mechanism, are such that if the points are prevented from completing their movement, the 
+signaller can call the points back to their original position.
+Moving power-operated points under failure 
+conditions
+There must be a means of operating points manually if it is 
+not possible to move them under power. Point operating mechanisms are therefore designed so that they can be 
+operated using a rotary handle or a lever to emulate the 
+operation of the electric motor (albeit slowly), or in the case of hydraulically operated mechanisms, to pump the hydraulic fluid. In some cases the lever is permanently attached to the 
+point operating mechanism and padlocked to prevent misuse 
+– see Figure 1. In other cases the handle is inserted into the machine, which disconnects the electrical supply so that power operation cannot inadvertently re-start (which, apart from anything else, could cause injury to the operator). The 
+handle is kept securely in a trackside cabinet or off-site, to 
+avoid the risk of an unauthorised person attempting to operate the machine with potentially catastrophic results.
+Time of operation
+The faster that points can be moved, the more quickly a route can be set, and on busy railways this can have a measurable impact on capacity. Time of operation of points is therefore a 
+factor for consideration. Typically, a point machine can move 
+a set of points in ~3-5 seconds, although mechanisms on long turnouts may take longer. Some operate more quickly –  not much more than 1-2 seconds. Of course, there are other 
+ IRSE News |  Issue 286  |  March 2022
+12
+timing factors that need to be considered in determining 
+the total time of operation, including the time that elapses between the signaller initiating the setting of a route over a set 
+of points and the point operating mechanism being powered 
+by the interlocking. 
+Trailable points
+Whilst the locking of points is without doubt an important safety feature, it does have a drawback. If a train passes through the points in the trailing direction without authority, 
+with the points set and locked in the opposite position, it is 
+almost inevitable that the operating mechanism and rods will be damaged, and quite possibly the rails as well. This is known as a “run-through”. In extreme situations the locking 
+mechanism may be so effective that the wheel flanges 
+on the closed side are forced up and over the switch rail, derailing the train.
+To deal with this situation, on some railways the points and 
+their operating mechanisms are designed to be trailable. If a 
+run-through occurs, the sideways pressure of the wheels on the inside of the open switch rail causes the points to unlock, and the closed switch rail is thereby released so that it can 
+open sufficiently for the wheel flanges to pass through. For 
+this to happen, each switch blade is separately driven from the operating mechanism and there are no stretcher bars (and sometimes no point lock). Trailable points may also be ‘resettable’, meaning they can be restored to normal operation 
+after a run-through without attendance on-site, or ‘non-
+resettable’ meaning that on-site intervention is required.
+Trailable points are also provided on some tram networks 
+and other low-speed railways, not to cater for run-throughs 
+but for legitimate operating movements. These points are “passive” – there is no operating mechanism or lock, and they are spring-loaded or fitted with a non-powered hydraulic piston so that in the absence of a train they always lie in one 
+position (normal or reverse, as required for the situation). If a 
+train passes over the points in the trailing direction which is opposite to the natural lie of the points, the wheel flanges will push the switches to the required position. After all the wheels have passed over, the mechanism will return the points to their 
+natural position. This arrangement can, for example, be useful 
+on simple passing loops on single lines where it saves the cost of providing point operating mechanisms. The downside is that speed restrictions must be applied over the points to 
+minimise the risk of derailment (as well as reducing wear and 
+tear), which is particularly important when making facing movements because there is no Facing Point Lock (FPL).
+Finally, we should note that hand-operated points, which are 
+used in sidings and are operated by a lever adjacent to the 
+points, are often also trailable in the sense that a train can legitimately move over them in the trailing direction and they move to allow the wheel flanges through. Hand operated points are also used on lower density/rural railways in some 
+countries where it is not economic to provide power-operated 
+points. In these cases, the points are often locked to prevent misuse and are non-trailable.
+Supplementary operating mechanisms
+So far we have implicitly assumed that if the operating mechanism moves the switch tips to the correct position, all the rest of each switch rail will move as well, maintaining 
+the correct track gauge throughout the points for the route 
+set. This however is not necessarily the case, as the length and weight of the switch rail is considerable. The rail weight is typically 60kg/m and the longest points, found on high-
+speed lines (where the diverging route speed may by 200km/h 
+or more), may be 150m or more in length from switch tip to common crossing – although of course the switch rails themselves are shorter than this.
+It is usual therefore, even on points with relatively low 
+diverging route speeds, to fit one or more “back-drives” (also known as supplementary drives). Most commonly these take the form of an assembly of cranks and rodding which connect the switch tips to a position further along the length of the 
+switch – see Figure 2. When the point operating mechanism 
+moves the switch tips, the motion is transmitted via the cranks and rodding so that the whole length of the switch rail moves in unison. The cranks and rodding must be adjusted correctly, 
+because of course the amount of lateral motion required 
+Figure 1 – A point machine with integral 
+levers for manual operation and for switching 
+between auto and manual.Photo Francis How.
+ IRSE News |  Issue 286  |  March 2022
+13
+Supplementary
+detectorSupplementary
+detectorPoint machine
+Adjustable
+crankAdjustable
+crank
+Back driveBack driveAdditional 
+detection rodsAdditional 
+detection rodsFigure 2 – A set of points fitted with a back-drive on the left-hand 
+side. The bracket connected to the sleeper at the intermediate stretcher bar position supports the rodding run by way of a rodding roller wheel. 
+Photo John Alexander.
+Figure 4 – Multiple operating mechanisms in use on a high-speed 
+turnout. In this example there is just one machine driving the points 
+(to the left of the switch tips), and the power from it is transmitted hydraulically to several setting and locking mechanisms along the 
+length of the switch rails. 
+Photo Francis How.
+part-way down the length of the switch is less than at the tips. 
+Sometimes a supplementary detector is fitted further along the switch rails to check that the rails are in the correct position, 
+the contacts of which form part of the detection circuit 
+– see Figure 3.
+Back drives composed of rodding and cranks are still 
+commonplace although they can be difficult to maintain. 
+Alternatives introduced include a torsion bar mounted along the track and supplementary hydraulic rams.On long turnouts a single point operating mechanism may not have sufficient power to move the whole switch or, even if it does, the switches may bend along their length rather 
+than fully move to the required position. To overcome these 
+problems, supplementary point operating mechanisms (also known as auxiliary actuators) are located part-way along the switch rail – see Figure 4. These are controlled 
+from the interlocking and move at the same time as the 
+operating mechanism at the switch tips. In some cases these supplementary mechanisms may include a lock to help hold the switch rails in position throughout their length.Figure 3 – A set of points with a back-drive and supplementary detector. Sometimes the back-
+drive is located between the switch rails. Note that this drawing is intentionally not to scale, in order to illustrate the back-drive and connector more clearly.Diagram Andy Knight.
+ IRSE News |  Issue 286  |  March 2022
+14
+Long turnouts are also usually equipped with supplementary 
+detection, which may be integral with the supplementary operating mechanisms where provided. The electrical contacts 
+for these supplementary detectors form part of the overall 
+points detection so far as the interlocking is concerned. However, sometimes the status of each detector is separately indicated (either locally on site or back at the interlocking) to 
+make it easier when fault-finding.
+Swing nose crossings
+The greater the length of a set of points, the smaller the angle 
+between the rails where they meet at the common crossing and the longer the gap over which the wheels pass without 
+having a rail to guide or support them – see Figure 5.
+On very long points this gap would become unacceptably 
+large, and the frog would be too slender to support the wheels. 
+This clearly has safety implications. To overcome this problem, 
+a “swing nose” is used. 
+In a swing nose crossing, the crossing nose (labelled in 
+Figure 5) moves sideways to close the gap for whichever route 
+is set. It has its own operating mechanism to do this, working 
+in synchronism with the other operating mechanism(s) under 
+the control of the interlocking. Detection of the position of the 
+nose forms part of the overall points detection circuit. A swing nose crossing is shown in Figure 6.
+ThroatFlangewayFlangewayNoseWing railsFigure 5 – The common crossing 
+(frog) of a set of points, showing the 
+component parts. 
+Figure 6 – A swing nose crossing.
+Photo Wikimedia/Dzelzceļnieks, CC-SA4 licence. 
+Swing nose crossings are sometimes also used on turnouts 
+that are not particularly long but where the axle loads are heavy, to minimise damage and noise.
+Other switch and crossing layouts
+So far we have considered points which permit a train in 
+the facing direction to take one of two routes. These can, 
+of course, be used in combination to create more complex 
+junctions, a simple example being a linking track (crossover) between two parallel lines. But sometimes there is insufficient 
+space to accommodate the points required for all the movements that the operators require. Most commonly this 
+occurs in the vicinity of large stations, including specifically 
+terminal stations. In such circumstances various options are available to the track engineer, including:
+• Fixed diamond crossings – which have no moving parts.
+• Switch diamonds – sometimes known as movable elbows. These are functionally equivalent to a fixed diamond crossover but have moving parts.
+• Slip switches – sometimes known as double switches, puzzle switches or compound switches.
+Examples of these are shown in Figures 7, 8 and 9. Other point configurations can be found in various parts of the world, including Y-shaped junctions where both routes are curved, 
+and three-way junctions where there are three routes in the 
+facing direction.
+ IRSE News |  Issue 286  |  March 2022
+15
+From top:
+Figure 7 – A fixed diamond crossing.  
+A train on either track can only go straight 
+on, not diverge. 
+Photo Network Rail.
+Figure 8 – A switch diamond crossing. A 
+train on either track can only go straight on, 
+not diverge. The crossing is fitted with two 
+pairs of switch rails, back-to-back, which 
+are moved in synchronism to provide a continuous rail head for the train movement.
+Photo Wikimedia/Falk2, CC-SA4 licence.
+Figure 9 – A double slip crossover, where 
+a train approaching from any direction can either go straight on or take the diverging 
+route. There are eight movable switch rails 
+in this layout, all of which must be moved, 
+detected and locked.
+Photo Shutterstock/Leonid Andronov.
+ IRSE News |  Issue 286  |  March 2022
+16
+Track circuit insulation in points
+One of the difficulties associated with equipment such as 
+point rods, soleplates and stretcher bars is that they provide an electrical path between the rails, so that a track circuit through 
+the points would show permanently occupied. To address this 
+problem all these components are designed with insulators. An alternative, of course, is to use axle counters, although you will find that most points are provided with insulators as standard, 
+regardless of the means of train detection. 
+The effects of temperature on points
+Variations in weather, and in particular temperature, can have a 
+significant impact on points, in various ways. Firstly, changes in temperatures can cause the switch rails to vary in length. In the 
+UK, for instance, it is not uncommon to have 10-15 degrees 
+Celsius change in air temperature during the course of a day, plus another ~20 degrees variation in the rail temperature caused by sunlight on the rails. The effect is to move the 
+tapered end of the switch rails forward and back by ~10-
+15mm, with the additional complication of seasonal changes shifting the mean. Other countries are likely to experience even greater variations. The changing length of the switch rails can cause difficulties in maintaining the correct adjustment of 
+the locking and detection mechanisms.
+A second problem is snow, which can cause an obstruction 
+between the stock and switch rails, preventing the points 
+from fully moving to the required position. Originally the only 
+solution was to send people out to clear the snow. Later, gas-powered switch heaters were fitted to the outsides of the stock rails to melt the snow. Nowadays most switch heaters are electrically powered.
+Another temperature-related problem affects the rodding that 
+is used to move manually operated points (see Part One of this article in the February 2022 edition of IRSE News, and in 
+particular Figures 5 and 6). Thermal expansion and contraction 
+of the rodding can make it impossible to move the points or, potentially, move them slightly without any action by the signaller! To overcome this problem, an arrangement of cranks 
+called a “compensator” is fitted at intervals in the rodding run, 
+which adjusts as the rodding varies in length so as to prevent the points becoming inoperable. 
+Points for avoiding collisions
+Throughout this article we have emphasised the need for safety, primarily to avoid derailments on points. So it may seem strange that the very last types of points to mention 
+are ones which are intended to derail or sidetrack trains and 
+vehicles! These are known as trap points and catch points, although you may hear them referred to as run-off points and derailers. Naming conventions vary across different railway 
+administrations, and the phrases trap points and catch points 
+are often used interchangeably, although historically there is a difference. 
+Trap points are typically provided at the exits of sidings 
+and passing loops, where the track joins a main line – see 
+Figure 10. Unless a route is set for a train into or out of the siding or loop, the trap points are set so that if a train or vehicle inadvertently passes the trap points, it is likely to quickly and 
+safely come to a stand, rather than passing onto the main 
+line where a collision could occur with another train. The trap points are usually operated in synchronism with the corresponding points in the main line.
+Trap points take various forms. In Figure 10, the points have a 
+short length of track beyond them to guide the overrunning vehicles away from the main line (these are called ‘safety points’ in some countries). Sometimes a sand-drag or buffer 
+stop is provided to bring vehicles to a halt as soon as possible. 
+Careful site-specific consideration is needed at the design stage, involving both signal and track engineers, as well as operators, to ensure that the train will stop without causing too much damage. At Coton (UK) in 1946 (see irse.info/36tor) a 
+heavily loaded freight train ran out of control on an incline and 
+was derailed on a set of trap points, completely demolishing a signal box that was located beyond the points. The destruction of the signal box caused another set of points to move, which 
+sent 24 of the wagons into a siding where they collided with a 
+locomotive. It might sound like a comedy of errors, but sadly the signalman on duty was killed.
+In the example of Figure 10, the function of the trap points is 
+not to derail an overrunning train but to bring it to a stand on 
+the rails. Where trap points are provided, this is the desirable option. Other types of trap point are also used, fitted with either one or two switch rails but no common crossing. These 
+are intended to cause derailment – see Figure 11. Again, the 
+aim is to stop the train or vehicle as quickly as possible, clear of the running lines and the conflict point ahead. Occasionally, wide-to-gauge trap points are provided, where it would be unsafe to derail the train either to the left or the right.
+However, this is a non-preferred way of stopping an over-
+running train as a derailment, even at slow speed, is very disruptive (see irse.info/tqlr8 for a YouTube video showing 
+this at Quorn on the Great Central Railway, a heritage 
+railway in Britain).
+The signal engineer refers to the use of points to prevent 
+collisions when a train passes a signal at danger as “trapping 
+protection”. Trap points are an example of providing points 
+specifically for this purpose but, where possible, points provided for other purposes (for example, as a crossover between two lines) are set by the interlocking to provide 
+Figure 10 – Trap points at the end of a siding or loop  
+line joining a main line. 
+Photo Wikimedia/Falk2, CC-SA4 licence.
+ IRSE News |  Issue 286  |  March 2022
+17
+trapping protection so that an overrunning train passes onto 
+a section of line that is hopefully clear of other trains, rather 
+than into the path of another train. This interlocking feature is commonly known as flank protection.
+When used in dark territory (railway lines not controlled by 
+signals but using train orders or track warrants to authorise movements), trap points are usually locally operated by hand with suitable locking arrangements to prevent misuse. 
+They may be the responsibility of others rather than the 
+signal engineer.
+Trap points are still used at many locations on railways 
+throughout the world, but catch points are rare on modern 
+railways. They were provided on steep inclines in the days when railway vehicles were unbraked. If a train split in two as it ascended an incline, the back portion would run back down the gradient. The function of the catch points was to 
+derail the vehicles as they ran back, to avoid the possibility 
+of them running further downhill and colliding with another train. Catch points were generally not worked either by the 
+signalman or the interlocking. As the train ascended the gradient it passed over the points in the trailing direction. 
+The switch blades would be moved into the correct position by the wheels and return to the derail position after the train had passed. Self-evidently, unworked catch points were only 
+installed on uni-directional lines!
+Finally, although outside the scope of this article since they are 
+not points, it is worth noting that derailers are widely used in North America and elsewhere as an alternative to trap points.
+They take various forms, usually a bolt-on to the running 
+rail (there is no movable switch rail). When set to derail, the mechanism forces the wheels up and over the running rail thereby derailing the vehicle(s). Derailers may be operated by 
+a hand lever (often called a “switchstand” in North America), or 
+by power, and they may be fitted with locks and detectors for integration into the signalling system.Closing thoughts
+In these two articles we have explored the basics of points and point operation, and the role of signalling and the signal engineer in ensuring they work safely. More varieties of points 
+exist than we have covered, not only for main line and metro 
+railways, but also for rural and low density railways, tram railways, rack railways, dual gauge railways and more. But the principles of safe operation are more or less the same.
+If you are new to railway signalling we encourage you to ask 
+your mentor or manager to arrange a visit to a set of points so that you can see for yourself what you have read about in these articles. But take care and obey all the safety rules – 
+points are hazardous, and so are the trains that run over them.
+In a future article we will look at the maintenance of points 
+from a signal engineering point of view, including specifically 
+the use of remote condition monitoring.
+Francis would like to thank the following for their assistance 
+with his points back to basics articles. John Alexander, Allan Neilson, Trevor Bradbeer, Andy Knight, Steve Franklin 
+and his team at Network Rail, and Brian Counter from the 
+Permanent Way Institution.Figure 11 – An example of a catch point that derails trains. 
+Photo Network Rail.
+About the author
+Francis How has been a long-time member of the IRSE, 
+throughout his distinguished career. First with British Rail/Railtrack, with Atkins, and then as the technical director of 
+the Railway Industry Association. He was a Thorrowgood 
+scholar (awarded to those who have excelled in the Institution’s exam) and served on IRSE Council for many years, and became the president of the Institution in 2012-
+2013. He was appointed as the chief executive of the IRSE 
+from 2015 to 2018 and led many of the improvements to the Institution. Francis is widely respected in the industry for his professionalism and extensive technical knowledge.

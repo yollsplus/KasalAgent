@@ -1,0 +1,810 @@
+Report 14/2020
+November 2020Rail Accident Report
+Passenger train collision with a derailed 
+locomotive at Bromsgrove
+23 March 2020
+This investigation was carried out in accordance with: 
+l the Railway Safety Directive 2004/49/EC
+l the Railways and Transport Safety Act 2003 
+l the Railways (Accident Investigation and Reporting) Regulations 2005.
+© Crown copyright 2020
+ 
+You may re-use this document/publication (not including departmental or agency logos) free of charge 
+in any format or medium. You must re-use it accurately and not in a misleading context. The material 
+must be acknowledged as Crown copyright and you must give the title of the source publication.  
+Where we have identified any third party copyright material you will need to obtain permission from the 
+copyright holders concerned. This document/publication is also available at www.gov.uk/raib.
+Any enquiries about this publication should be sent to:
+RAIB Email: enquiries@raib.gov.uk
+The Wharf  Telephone: 01332 253300
+Stores Road  Website: www.gov.uk/raib
+Derby UK 
+DE21 4BA  
+This report is published by the Rail Accident Investigation Branch, Department for Transport.
+Report 14/2020
+BromsgroveNovember 2020Preface
+The purpose of a Rail Accident Investigation Branch (RAIB) investigation is to 
+improve railway safety by preventing future railway accidents or by mitigating their 
+consequences.  It is not the purpose of such an investigation to establish blame or 
+liability. Accordingly, it is inappropriate that RAIB reports should be used to assign 
+fault or blame, or determine liability, since neither the investigation nor the reporting 
+process has been undertaken for that purpose.
+RAIB’s findings are based on its own evaluation of the evidence that was available at 
+the time of the investigation and are intended to explain what happened, and why, in a 
+fair and unbiased manner. 
+Where RAIB has described a factor as being linked to cause and the term is 
+unqualified, this means that RAIB has satisfied itself that the evidence supports both 
+the presence of the factor and its direct relevance to the causation of the accident or 
+incident that is being investigated. However, where RAIB is less confident about the 
+existence of a factor, or its role in the causation of the accident or incident, RAIB will 
+qualify its findings by use of words such as ‘probable’ or ‘possible’, as appropriate.  
+Where there is more than one potential explanation RAIB may describe one factor as 
+being ‘more’ or ‘less’ likely than the other.
+In some cases factors are described as ‘underlying’. Such factors are also relevant 
+to the causation of the accident or incident but are associated with the underlying 
+management arrangements or organisational issues (such as working culture).  
+Where necessary, words such as ‘probable’ or ‘possible’ can also be used to qualify 
+‘underlying factor’.
+Use of the word ‘probable’ means that, although it is considered highly likely that the 
+factor applied, some small element of uncertainty remains. Use of the word ‘possible’  
+means that, although there is some evidence that supports this factor, there remains a 
+more significant degree of uncertainty.
+An ‘observation’ is a safety issue discovered as part of the investigation that is not 
+considered to be causal or underlying to the accident or incident being investigated, 
+but does deserve scrutiny because of a perceived potential for safety learning.  
+The above terms are intended to assist readers’ interpretation of the report, and to 
+provide suitable explanations where uncertainty remains. The report should therefore 
+be interpreted as the view of RAIB, expressed with the sole purpose of improving 
+railway safety. 
+Any information about casualties is based on figures provided to RAIB from various 
+sources.  Considerations of personal privacy may mean that not all of the actual 
+effects of the event are recorded in the report. RAIB recognises that sudden 
+unexpected events can have both short- and long-term consequences for the physical 
+and/or mental health of people who were involved, both directly and indirectly, in what 
+happened.
+RAIB’s investigation (including its scope, methods, conclusions and recommendations) 
+is independent of any inquest or fatal accident inquiry, and all other investigations, 
+including those carried out by the safety authority, police or railway industry.
+Preface
+Report 14/2020
+Bromsgrove4
+November 2020This page is intentionally left blank Report 14/2020
+BromsgroveNovember 2020
+Report 14/2020
+Bromsgrove5
+November 2020Passenger train collision with a derailed 
+locomotive at Bromsgrove, 23 March 2020
+Contents
+Preface  3
+Summary  7
+Introduction  8
+Definitions 8
+The accident  9
+Summary of the accident  9
+Context 9
+The sequence of events  14
+Analysis  18
+Identification of the immediate cause  18
+Identification of causal factors  18
+Observation 25
+Previous occurrences of a similar character  25
+Summary of conclusions  26
+Immediate cause  26
+Causal factors  26
+Additional observation   26
+Recommendation and learning points  27
+Recommendation 27
+Learning points 27
+Appendices  28
+Appendix A - Glossary of abbreviations and acronyms 28
+Appendix B - Investigation details 29
+Report 14/2020
+Bromsgrove6
+November 2020This page is intentionally left blank
+Report 14/2020
+Bromsgrove7
+November 2020Summary
+At about 22:44 hrs on Monday 23 March 2020, the 21:05 Cardiff Central to 
+Birmingham New Street service collided with a class 66 locomotive that had derailed 
+at the end of a siding, south of Bromsgrove station. The passenger train suffered 
+significant damage along one side of all three vehicles, although it did not derail. There 
+were four passengers and two crew on board the passenger train and none reported 
+any injuries.
+The locomotive had just arrived in the siding and was to act as a ‘banking’  locomotive, 
+assisting heavy freight trains up the 1 in 37 Lickey incline, to the north of Bromsgrove 
+station. It derailed after running through the buffer stop at the end of the siding and 
+came to rest fouling the main line. The driver of the locomotive was not injured in the 
+collision, although the locomotive suffered damage to the corner of the leading cab.
+The driver did not stop the locomotive before it reached the buffer stop because he 
+became distracted from the driving task by personal issues arising from the national 
+COVID-19 lockdown announced earlier that evening. 
+The collision occurred because there was insufficient time between the locomotive 
+derailment and the passenger train’s arrival for the alarm to be raised and the 
+passenger train to be stopped.
+RAIB has made one recommendation to Network Rail to review its processes and 
+standards for managing buffer stop collision risk on non-platform terminal tracks.
+RAIB has also identified three learning points for drivers, relating to compliance with 
+mobile phone policies in the driving cab, informing signallers of accidents and safe exit 
+from trains during an incident.
+Summary
+Report 14/2020
+Bromsgrove8
+November 2020Introduction
+Definitions
+1 Metric units are used in this report, except when it is normal railway practice to 
+give speeds and locations in imperial units. Where appropriate the equivalent 
+metric value is also given. Railway mileages are referenced to a zero point at 
+London Road Junction in Derby. ‘Left’ and ‘right’ are relative to the direction of 
+travel of the vehicle being referred to. 
+2 The report contains abbreviations explained in Appendix A. Sources of evidence 
+used in the investigation are listed in Appendix B. 
+Introduction
+Report 14/2020
+Bromsgrove9
+November 2020
+The accident
+Summary of the accident 
+3 At about 22:44 hrs on Monday 23 March 2020, a locomotive collided with the 
+buffer stop at the end of a siding about 700 metres south of Bromsgrove station. 
+The locomotive derailed and came to a stop foul of the adjacent main line. Less 
+than a minute later, a northbound passenger train collided with the corner of the 
+locomotive, but did not derail. The passenger train came to a stop between the 
+locomotive and Bromsgrove station.
+4 No-one was hurt. 
+5 The passenger train suffered extensive damage to one side of all three vehicles. 
+The front left corner of the leading vehicle was particularly damaged in the area 
+of the driver’s door. The locomotive suffered damage to the front left corner of the 
+leading cab. There was also damage to the underside of the locomotive and this 
+resulted in a diesel fuel spill during recovery (figure 1).
+6 The buffer stop, and the associated track at the end of the siding, was also 
+damaged during the collision. 
+Figure 1: The locomotive and the passenger train after the accident (second image courtesy of 
+CrossCountry)
+Context
+Location
+7 The accident occurred at 56 miles and 8 chains, at the end of the up Bromsgrove 
+neck siding, about 700 metres to the south of Bromsgrove station on the Bristol 
+to Birmingham main line (figures 2 and 3). This is a siding which is routinely used 
+by locomotives waiting to assist heavy freight trains up the 1:37 Lickey incline, 
+a practice referred to as ‘banking’. The siding runs parallel to the up Gloucester 
+main line and ends at a buffer stop.
+The accident
+Report 14/2020
+Bromsgrove10
+November 2020
+Location of accident
+© Crown Copyright. All rights reserved. Department for Transport 100039241. RAIB 2020
+ 3 4
+12Bromsgrove Lickey incline
+To BirminghamTo Bristol
+Bromsgrove 
+North JunctionBromsgrove 
+South JunctionDown Gloucester
+Down Gloucester
+Up Bromsgrove loop
+Up Bromsgrove neckUp GloucesterDown Bromsgrove station loopBA3611
+BA7623
+NNot to scale
+Some lines and features omitted for clarity0B01
+1M87Figure 2:  Extract from Ordnance Survey map showing location of accident 
+Figure 3: Track layout at Bromsgrove, showing the route of both trains 
+8 At this location, the maximum permitted speed on the up Gloucester main line is 
+90 mph (144 km/h). The maximum permitted speed on the up Bromsgrove neck 
+siding is 15 mph (24 km/h). The siding and main line are on a downhill gradient of 
+1 in 283 and a gentle right-hand curve, in the direction of travel of the locomotive. 
+9 The signalling in the area is controlled from the Bromsgrove workstation which 
+is located at the West Midlands Signalling Centre. Although the line from 
+Birmingham as far as Bromsgrove station is electrified, the location of the 
+accident is beyond the end of the electrified area. 
+Organisations involved
+10 DB Cargo (UK) Limited was the owner and operator of the locomotive and the 
+employer of the locomotive driver. 
+11 XC Trains Limited (trading as CrossCountry) was the operator of the passenger 
+train and the employer of the staff on board it. 
+12 Network Rail is the owner and maintainer of the railway infrastructure, including 
+the siding and buffer stop.  
+The accident
+Report 14/2020
+Bromsgrove11
+November 202013 DB Cargo, CrossCountry, and Network Rail all freely co-operated with the 
+investigation.  
+Trains involved
+The locomotive
+14 The diesel locomotive that derailed, 66057, was part of a small sub-fleet of class 
+66 locomotives that had been modified to undertake banking duties on the Lickey 
+incline. A banking locomotive is moved against, and sometimes coupled to, the 
+rear of trains requiring assistance, in Bromsgrove station (paragraph 7), before 
+helping to provide power up the incline. If the banking locomotive has coupled 
+to the train, a remote coupler release is operated, disconnecting it on the move, 
+when the train has reached the top of the incline. The train then continues, and 
+the banking locomotive returns down the incline to Bromsgrove, ready for further 
+duties.
+15 On the night of the accident the locomotive was due to bank its first freight train 
+from Bromsgrove at around midnight.
+The passenger train
+16 The passenger train was a three-car class 170 ‘Turbostar’ diesel multiple unit, 
+number 170107. CrossCountry reported that there were 4 passengers on board at 
+the time, including an off-duty DB Cargo driver, as well as two train crew.
+17 It was operating service 1M87,1 the 21:05 hrs train from Cardiff Central to 
+Birmingham New Street. The train had left Worcestershire Parkway station about 
+12 minutes before reaching Bromsgrove, and was running about 2 minutes late. 
+Its next scheduled stop was at Birmingham New Street.
+Rail equipment/systems involved
+18 The buffer stop consisted of a metal framework that was fixed to the jointed rails. 
+It did not contain any sliding friction elements or hydraulic buffers. It was fitted 
+with two permanently illuminated red lights (figure 4).
+19 The buffer stop was installed in its current location (figure 5) around 2004, as 
+identified from historic satellite imagery. Prior to this, the siding had ended in a 
+buffer stop located about 90 metres further south. 
+Staff involved
+20 The driver of the locomotive had worked on the railway for 18 years, with 
+14 of those driving for DB Cargo and its predecessors. He held the relevant 
+competencies for driving class 66 locomotives and his route knowledge for the 
+route to Bromsgrove was up-to-date. He regularly worked this shift, operating the 
+banking locomotive to and from Bromsgrove. DB Cargo stated that there were no 
+significant safety-related incidents on the driver’s record. 
+21 The driver of the passenger train had been driving trains for 44 years. 
+CrossCountry reported that there were no significant safety-related incidents on 
+his record. 
+1 An alphanumeric code, known as the ‘train reporting number’, is allocated to every train operating on Network Rail 
+infrastructure.
+The accident
+Report 14/2020
+Bromsgrove12
+November 2020
+Up Gloucester line
+NFigure 4: Up Bromsgrove neck buffer stop (image 
+courtesy of CrossCountry)
+Figure 5: Location of the buffer stop (image courtesy of Network Rail)
+The accident
+Report 14/2020
+Bromsgrove13
+November 2020External circumstances
+22 It was dark at the time of the accident. The weather was clear and dry, with 
+temperatures of between 2°C and 4°C recorded at local weather stations.
+23 There was very little local illumination and no significant sources of noise nearby .
+24 It is possible that if the accident had occurred during the hours of daylight, the 
+driver might have seen the locomotive slightly earlier, and been able to reduce the 
+collision speed a little. However, there is no evidence to suggest that any other 
+external circumstances affected the accident.
+The accident
+Report 14/2020
+Bromsgrove14
+November 2020The sequence of events
+Events preceding the accident
+25 The locomotive driver had last worked on the previous Saturday, two days before 
+the accident. He worked the night shift, getting home at around 08:30 hrs on the 
+Sunday morning, and rested until about midday. He spent the rest of the day at 
+home, going to bed at around 23:30 hrs.
+26 He woke at about 08:00 hrs on the Monday morning and did not try to sleep 
+during the day.
+27 At 20:30 hrs, the driver watched the Prime Minister make a statement on 
+television relating to the COVID-19 pandemic. This was the statement which 
+instructed people to stay at home, except for limited, predefined reasons, and that 
+no-one was allowed to meet with friends or family unless they lived in the same 
+household. Immediately after watching this broadcast, the locomotive driver set 
+off to work, which was a 20-minute drive away.
+28 While en-route to work, the driver received a phone call from a family 
+member and there was a worried discussion about what the earlier televised 
+announcement would mean for his childcare arrangements.
+29 The driver arrived at Bescot yard, near Walsall, and booked on punctually, by 
+telephone, at 21:11 hrs. He prepared the locomotive and departed at 21:32 hrs. 
+Although this departure was 27 minutes behind the published schedule, the 
+timetable for the journey was such that it was possible to recover this time before 
+Bromsgrove. The locomotive travelled via the Sutton Park line before being 
+stopped for a few minutes at a red signal at Castle Bromwich curve. At 22:07 hrs, 
+after the signal cleared, the driver took the locomotive towards Bromsgrove via St 
+Andrews Junction and Kings Norton.
+30 After passing Kings Norton, over a period of 11 minutes, the driver received three 
+text messages on his personal mobile phone. These were from the same family 
+member as the earlier phone call and all related to concerns about childcare 
+and the closure of schools. The driver sent four text message replies to these. At 
+22:38 hrs he received a picture message showing advice from the school relating 
+to school provision, and he sent a text reply. Table 1 and figure 6 show details 
+of these timings and the approximate locations at which the messages were 
+received.
+The sequence of events
+Report 14/2020
+Bromsgrove15
+November 2020Time Message Approximate Location
+22:24 Text received Kings Heath (44.5 miles)
+22:28 Text reply sent After Kings Norton (47.5 miles)
+22:29 Text received Northfield (48 miles)
+22:31 Text reply sent Longbridge (49 miles)
+22:34 Text reply sent Barnt Green (51.5 miles)
+22:35 Text received After Barnt Green (52 miles)
+22:36 Text reply sent M42 overbridge (53 miles)
+22:38 Picture (of text) message received Blackwell Road (53.5 miles)
+22:38 Text reply sent After Blackwell Road (54 miles)
+22:42 - Bromsgrove station signal
+22:43 - Buffer stop
+22:44 - Collision with passenger train
+Table 1: Detail of message timings on mobile phone, along with later events
+31 The locomotive passed signal BA3611 at 22:39:51 hrs at 38 mph (61 km/h), and 
+was routed from the down Gloucester line to the up Gloucester and then onto the 
+up Bromsgrove loop through the station (figure 3). The train was only two minutes 
+behind schedule arriving in the station.
+32 The driver slowed the locomotive for the approach to signal BA7623, at the south 
+end of the platforms in Bromsgrove station. This signal is approach controlled, 
+meaning that it was held at red for a fixed length of time as the train approached 
+it, before it cleared to a proceed aspect. This feature is intended to ensure that 
+the speed of approaching trains is reduced, because of a speed restriction on 
+the route beyond the signal. The signal is also fitted with the Train Protection and 
+Warning System (TPWS) which will automatically stop any train passing it at red. 
+At 22:42:01 hrs, when signal BA7623 cleared to a proceed aspect, with a route 
+set for the up Bromsgrove neck, the driver released the brake and applied a low 
+power demand.  The train passed the signal at 6 mph (10 km/h).
+33 After passing the signal, the driver’s thoughts returned to the picture message 
+that he had received at 22:38 hrs (paragraph 30). At 22:42:43 hrs, while travelling 
+at 18 mph (29 km/h), he shut off the power, returning the controller to neutral. At 
+this point the locomotive was travelling at less than the maximum permitted speed 
+of 30 mph (48 km/h) for the first 350 metres towards the up Bromsgrove neck, 
+although this limit subsequently reduced to 15 mph (24 km/h) for the last 350 
+metres along the siding itself.
+Events during the accident
+34 The locomotive coasted for 52 seconds towards and into the up Bromsgrove 
+neck. The locomotive’s speed gradually increased on the 1 in 283 downhill 
+gradient from 18 mph (29 km/h) to 23 mph (37 km/h). 
+35 At 22:43:35 hrs, and with the locomotive 40 metres from the buffer stop, the driver 
+became aware of where he was and made an immediate, full application of the 
+locomotive’s brakes. Four seconds later, the locomotive collided with the buffer 
+stop at approximately 21 mph (34 km/h).
+The sequence of events
+Report 14/2020
+Bromsgrove16
+November 2020
+Messages sentMessages received
+Bromsgrove station
+Location of collison
+Figure 6: Approximate locations of the locomotive when messages were received and sent
+The sequence of events
+Report 14/2020
+Bromsgrove17
+November 202036 The locomotive tore the buffer stop off the end of the siding, pushing it for about 
+20 metres before coming to a stop. The locomotive ran off the end of the track, 
+ploughing into the ballast, with only the last two sets of wheels remaining on the 
+track. As it ran on, unguided by the track, the locomotive deviated to the left, 
+coming to a stop with its front left corner about 600 mm away from the nearest 
+running rail of the up Gloucester main line (figure 1). 
+37 The locomotive driver got out of the left side of the cab to investigate the 
+consequences of the collision. He soon became aware of the sound and lights 
+of an approaching passenger train, and realised that he was on an open running 
+line. He immediately ran towards the back of the locomotive to get clear of the 
+open line.
+38 The passenger train, 1M87, was travelling at 85 mph (137 km/h) when it collided 
+with the corner of the locomotive at 22:44:26 hrs, approximately 47 seconds after 
+the locomotive had collided with the buffer stop.
+Events following the accident
+39 The driver of the passenger train immediately applied the emergency brake, 
+coming to a stop just south of Bromsgrove station. He reported the collision to the 
+signaller, who blocked all the lines to trains.
+40 Network Rail reported the accident to RAIB at 23:21 hrs.
+41 The few passengers on 1M87 were evacuated on foot to Bromsgrove station at 
+23:55 hrs. The train was moved to the station at 03:00 hrs on 24 March, ready for 
+recovery to Tyseley depot that afternoon.
+42 The locomotive was rerailed by 16:00 hrs on 24 March, and left in the siding to 
+await recovery to Toton depot. 
+43 Network Rail undertook remedial work to remove parts of the buffer stop that 
+remained foul of the up Gloucester line. Work was also undertaken to clear up the 
+diesel spillage that occurred during recovery of the locomotive. The up and down 
+Gloucester lines were reopened to trains at 00:04 hrs on 25 March 2020.  The up 
+Bromsgrove neck remained out of use for several days until track repairs were 
+completed.
+The sequence of events
+Report 14/2020
+Bromsgrove18
+November 2020Analysis
+Identification of the immediate cause 
+44 The locomotive became foul of the main line shortly before the passenger 
+service arrived.
+45 When the locomotive hit the buffer stop, it continued for approximately 20 metres 
+and deviated to the left before coming to a stop. This caused it to foul the up 
+Gloucester line, which was open to traffic (paragraph 36). The passenger train 
+arrived less than a minute later, and collided with the corner of the locomotive 
+(paragraph 38).
+Identification of causal factors 
+46 The accident occurred due to a combination of the following causal factors:
+l The locomotive derailed to a position foul of the main line (paragraph 47).
+l There was no opportunity to stop the passenger train before the collision 
+(paragraph 72).
+Each of these factors is now considered in turn.
+Derailment of the locomotive
+47 The locomotive derailed to a position foul of the main line.
+48 This causal factor arose due to a combination of the following:
+l The driver was distracted from the driving task as the locomotive entered the 
+siding, resulting in the collision with the buffer stop (paragraph 49).
+l The locomotive deviated to the left after collision with the buffer stop 
+(paragraph 58).
+Each of these factors is now considered in turn.
+Driver distraction
+49 The driver was distracted from the driving task as the locomotive entered 
+the siding, resulting in the collision with the buffer stop.
+50 When the driver started work on 23 March, he had just seen the Prime 
+Minister’s announcement of the COVID-19 lockdown (paragraph 27). He had 
+also had a telephone discussion with a family member about the impact of the 
+announcement on childcare arrangements (paragraph 28). These arrangements 
+had relied on support from other family members which would be prohibited 
+under lockdown.  It was clear to him that this would make it very difficult for him to 
+continue to manage his shift working pattern.
+Analysis
+Report 14/2020
+Bromsgrove19
+November 202051 The driver stated that it was his normal routine to put his personal mobile phone 
+on silent and in his bag, prior to his driving turns, but on this occasion, he forgot 
+to do so and it remained, on silent and vibrate, in his pocket. As a result, he was 
+alerted to receipt of the messages from the family member and he read and 
+replied to them while driving (table 1). The final message he received included 
+advice from his childrens’ school that further complicated the childcare issue, and 
+the driver also replied to this. This final incoming message occurred about four 
+minutes before the locomotive passed the signal at Bromsgrove station and five 
+minutes before the collision with the buffer stop.
+52 The driver’s use of his personal mobile phone was contrary to the DB Cargo 
+‘Mobile Phone Policy’, which states:
+‘Personal mobile telephones must not be used whilst in the driving cab, or on or 
+about the running line’.
+53 The driver was aware of his employer’s policy. However, the fact that the mobile 
+phone was vibrating in his pocket, combined with the significant, unresolved 
+childcare issue, drew him to read and respond to the mobile phone messages 
+while he was driving the locomotive. 
+54 When the locomotive passed the signal at Bromsgrove station, the driver applied 
+a little power to enter the siding, before removing it and coasting (paragraph 34). 
+At this point, his thoughts returned to the last message relating to the school, as 
+the childcare problem was still occupying his mind. He sent no further messages, 
+but continued to worry about how the childcare issue could be resolved, while the 
+locomotive coasted along the siding towards the buffer stop. The result of this was 
+that he was temporarily distracted from the driving task while in the siding. It was 
+only when the locomotive was about 40 metres away from the buffer stop that 
+the driver became aware of his location and immediately made a full application 
+of the locomotive’s brakes. However, it was too late to avoid a collision with the 
+buffer stop. 
+55 Although the driver had been awake for approximately 13 hours before starting 
+his shift, there is no evidence to suggest that he was particularly tired at the time 
+of the accident. His time awake would have affected his level of fatigue later in 
+the shift,2 and RAIB notes that this does not align with good practice in fatigue 
+management. However, RAIB does not consider that fatigue contributed to the 
+cause of the driver’s distraction on this occasion.
+56 DB Cargo’s ‘Fatigue Management Policy’ places responsibility on the employee 
+for reporting fatigue issues, either before or during a shift. DB Cargo also stated 
+that non-fatigue related ‘fitness for duty’ issues, such as those involving personal 
+circumstances, use the same reporting method.  This policy states that:
+‘All employees have a duty to report if they feel the onset of fatigue at the 
+commencement or at any point during their shift, to the Control Duty Manager.’
+2 RAIB has examined first night shift fatigue in its investigation int o an uncontrolled freight train run back at Shap 
+(RAIB report 15/2011 ). This also featured in a safety digest into a buffer stop collision at London King’s Cross 
+(Safety digest 15/2017 ).
+Analysis
+Report 14/2020
+Bromsgrove20
+November 202057 At the time of signing on, which was done remotely by telephone and not 
+face- to- face, the driver did not consider that he was fatigued, nor did he consider 
+that this was an issue during the journey to Bromsgrove. He also did not consider 
+that the emerging childcare issues would affect his ability to drive during his shift. 
+As a result, he saw no need to report anything under the fatigue management 
+reporting system either before, or during, his shift.
+Deviation of the locomotive to the left
+58 The locomotive deviated to the left after collision with the buffer stop.
+59 The locomotive hit the buffer stop at 21 mph (34 km/h), which was 40% above 
+the maximum permitted speed in the up Bromsgrove neck. The result was that 
+the locomotive detached the buffer stop from the end of the siding and pushed 
+its structure ahead of it. The locomotive ran off the end of the rails and ploughed 
+through the ground ahead of it, causing the ballast to pile up. This caused the 
+locomotive to slow to a stop. It would also have influenced the direction in which 
+the locomotive travelled, with this effect being largely random. In this accident, it 
+caused the locomotive to deviate towards the up Gloucester line. 
+60 The speed of the locomotive as it hit the buffer stop was sufficient for it to travel 
+far enough to become foul of the up Gloucester line before stopping. If the 
+locomotive had not exceeded the maximum permitted speed for the siding, it 
+would almost certainly not have travelled far enough to foul the main line.
+Standards related to the buffer stop
+61 When the buffer stop was installed in its current location around 2004, the 
+relevant standard for managing buffer stop risks was railway group standard GC/
+RT5033 issue one (‘Terminal Tracks - Managing the Risk’). This states that:
+‘A length of straight track, greater than the length of the longest vehicle 
+permitted to use the track, shall be provided wherever reasonably practicable at 
+the approach to the buffer stop, so that any vehicle striking the buffer stop will 
+do so with its longitudinal axis at right angles to the buffer beam.’
+62 Although there was a very gradual curve to the main line and the parallel siding, 
+this was of such a large radius that the locomotive would have still struck the 
+buffer stop square on, in line with the intent of this requirement.
+63 GC/RT5033 also defined circumstances in which an overrun risk assessment was 
+required to be carried out for a buffer stop. This stated:
+The risks of harm to people and damage to critical structures arising from a train 
+overrun at the following locations shall be assessed:
+l terminal or bay platforms 
+l terminal tracks on freight lines and sidings used by trains carrying dangerous 
+goods 
+l where there are significant identified risks to persons or property beyond the 
+railway boundary. 
+Analysis
+Report 14/2020
+Bromsgrove21
+November 202064 Because the up Bromsgrove neck was not at a station platform, was not used 
+by trains carrying dangerous goods and posed no significant risk to those 
+outside the railway boundary, there was no requirement to undertake a specific 
+overrun risk assessment under this standard. However, there would have still 
+been a requirement for the buffer stop installation to have a more general risk 
+assessment as required by the general duties associated with the Health and 
+Safety at Work etc Act 1974.
+65 Network Rail was unable to locate any records from installation of the buffer stop 
+in its current location (paragraph 19) to indicate that an overrun risk assessment 
+was carried out, nor any findings of more general risk assessments. Bromsgrove 
+station was remodelled in 2016, but no changes were made to the buffer stop at 
+that time.
+66 However, a number of mitigations, of the types suggested in standards relating to 
+overrun risk assessment, were present at the up Bromsgrove neck. These were:
+l Two permanently lit red lights were fitted to the buffer stop, to aid visibility by 
+any approaching trains.
+l Imposition of a 15 mph (24 km/h) maximum permitted speed, to manage the 
+impact energy in any collision with the buffer stop.
+l Normal stopping position for locomotives was more than 50 metres short of the 
+buffer stop, managing the risk of trains coming into contact with it.
+l Use of an approach-controlled signal on entry to the siding, managing the speed 
+of trains entering it.
+l The Train Protection and Warning system (TPWS) was fitted at this signal. This 
+would have the effect of stopping any trains that pass it at danger , well before 
+they reach the buffer stop.
+67 The buffer stop was not subject to any specific maintenance regime, as 
+defined by Network Rail standard NR/L2/TRK/001 module 18 ‘Inspection and 
+Maintenance of Permanent Way – Buffer Stops’. Network Rail did not consider 
+the up Bromsgrove neck to be a ‘terminal track on a freight line’, and so a 
+specific buffer stop inspection regime was not required by the standard. However , 
+Network Rail did expect routine visual inspections of the track to identify any 
+significant defects with the buffer stop and to flag these for attention. There is no 
+evidence to suggest that there was any defect with the buffer stop at the time of 
+the collision.
+68 The red lights on the buffer stop were subject to regular inspection by Network 
+Rail’s Distribution and Plant team. This included replacement of the lamps every 
+six months. Records show that this was being carried out. In addition, CCTV 
+from a passing train shows that the buffer stop lighting was illuminated four hours 
+before the accident (figure 7), indicating that it was almost certainly lit at the time 
+of the accident.
+Analysis
+Report 14/2020
+Bromsgrove22
+November 2020
+Figure 7: Train CCTV image showing buffer stop light illuminated at 18:47 hrs on 23 March 2020 (image 
+courtesy of CrossCountry)
+69 The current guidance on risk assessment for buffer stops is described in 
+GIGN5633 (paragraph 84). Although intended for platform tracks, the risk 
+assessment methodology can be applied to non-platform lines. It considers 
+features such as the layout of the terminal track, its collision history, physical 
+condition and any surrounding infrastructure and population. The output of the 
+assessment is an estimation of the fatality and injury risk, expressed as ‘estimated 
+years per fatality’ .3 
+70 Although GIGN5633 does not define any action levels relating to this calculated 
+risk, its identically titled predecessor standard, GCRC5633, indicated a first action 
+level of approximately 3,300 years per equivalent fatality. 
+71 RAIB retrospectively applied the methodology of GIGN5633 to the up Bromsgrove 
+neck, taking into account the mitigations present and the possibility of a 
+passenger train on the adjacent up Gloucester line. This indicated a risk of one 
+fatality every 135,000 years, considerably less than the threshold for action 
+suggested by the earlier standard.
+3 Note that the term ‘fatality’ includes statistically weighted injuries, in line with railway industry standard practice.
+Analysis
+Report 14/2020
+Bromsgrove23
+November 2020Operation of the passenger train
+72 There was no opportunity to stop the passenger train before the collision.
+73 The passenger train, 1M87, was running on clear signals at around 85 mph 
+(136 km/h) on the approach to Bromsgrove. There was no possibility that the 
+driver of the train could have stopped the train before the collision, even if he had 
+applied the brakes on sighting the locomotive’s lights in the dark. Furthermore, 
+seeing the lights of a locomotive on the adjacent up Bromsgrove neck would not 
+have been a reason for the driver to brake, because locomotives regularly wait 
+in the siding. The driver had no idea that the locomotive was foul of his line until 
+his train collided with it. However, as his train approached, he became aware of 
+a cloud of dust that had been thrown into the air during the derailment, but he did 
+not have time to apply the brakes before the collision.
+74 The passenger train driver did not receive any warning of the derailed locomotive 
+prior to reaching the collision site. Such a warning could have come from the 
+signaller, if they had been alerted to the derailment by a GSM-R4 call from the 
+locomotive driver. Alternatively, the locomotive driver could have sent a Railway 
+Emergency Group Call (REC), which sends a ‘stop all trains’ message to all 
+trains in the vicinity. However, the locomotive driver did not contact the signaller 
+immediately after the derailment, nor did he initiate a REC. 
+75 The passenger train arrived approximately 47 seconds after the locomotive 
+collided with the buffer stop (paragraph 38). The locomotive came to a stop about 
+four seconds after it hit the buffer stop. A cloud of ballast dust was thrown into 
+the air, affecting the driver’s visibility of the surroundings. The driver would then 
+have taken a few seconds to recognise what had happened, having only become 
+aware of the buffer stop four seconds before colliding with it (paragraph 35). 
+76 The locomotive driver’s first action after the collision with the buffer stop was to 
+get out of the locomotive to investigate whether it had derailed. He would have 
+found this difficult to judge from the cab due to the dust cloud. Exiting the cab on 
+a class 66 locomotive involves moving behind the driver’s seat and opening a 
+door into a short corridor. The external door then needs to be opened before the 
+driver can climb down to ground level. This would probably have taken the driver 
+about 20 seconds to complete. It is likely that the driver would only have reached 
+the track about 20 seconds before the arrival of the passenger train. Therefore, 
+he did not have time to give any warning to the signaller or to initiate a REC. The 
+driver only had time to run to the back of the locomotive to get clear of the up 
+Gloucester line onto which he had alighted, and on which the passenger train was 
+approaching.
+4 A radio in the cab of a train based on a digital railway communication system that allows communication between 
+drivers and signallers.
+Analysis
+Report 14/2020
+Bromsgrove24
+November 202077 Module M1 of the railway Rule Book (GERT8000-M1 ‘Dealing with a train 
+accident or train evacuation’) states that in the event of a train accident, the driver 
+should take the following actions:
+l You must immediately switch on the hazard warning indication where 
+provided. 
+l If you cannot do this, you must display a red light forward. 
+l You must then check:
+o if any other lines are obstructed (if in doubt, treat them as obstructed), and 
+decide the quickest way to stop any approaching trains 
+o the exact location of your train.
+l You must tell the signaller about the accident in the quickest way possible and 
+whether the electric traction current needs to be switched off.
+78 The driver was in a state of shock and confusion having just collided with 
+the buffer stop. He has stated that he did not consider the possibility that the 
+locomotive was foul of the main line at this time. Therefore, he did not recognise 
+that he needed to switch the hazard lights on. Had he switched them on, the 
+approaching passenger train would not have seen them until a few seconds 
+before the collision. It is possible that this would have caused the passenger train 
+driver to apply the brakes. However, although this might have reduced the speed 
+of the train before the collision, it would not have prevented it.
+79 For the same reasons, the locomotive driver did not turn on the red tail lamps in 
+the leading cab, nor show any other red light through the cab window. However, 
+had he done so, again, it would have been unlikely to have had any effect on the 
+actions of the passenger train driver because locomotives can often be seen to be 
+waiting in the up Bromsgrove neck.
+80 The driver’s actions in checking what had happened to his locomotive before 
+contacting the signaller were consistent with the wording of the Rule Book. RSSB5 
+has since reported that an amendment to the Rule Book will come into force in 
+December 2020 which will require the driver to inform the signaller of an accident 
+before checking if any other lines are affected.
+81 The ‘GSM-R Handbook’ (RSSB document RS523) describes the operation and 
+functions of the GSM-R radio system fitted in trains and available to signallers and 
+operations controllers. Section 5.3 describes the use of the REC in an emergency 
+situation. It states:
+l A REC can be used during any emergency situation affecting more than one 
+line or more than one train. 
+l In an emergency situation the driver may need to initiate a REC. 
+5 The railway Rule Book is maintained and published by RSSB on behalf of its members. RSSB is a not-for-profit 
+body whose members are the companies making up the railway industry , and is registered as Rail Safety and 
+Standards Board Ltd, but trades as RSSB.
+Analysis
+Report 14/2020
+Bromsgrove25
+November 202082 Although it associates possible use of the REC with emergency situations, the 
+handbook does not provide detailed guidance on what situations the REC should 
+be used for and those for which it should not. Because a REC sends a ‘ST OP 
+EMERGENCY’ message to all trains in the relevant area, there will be situations 
+where a REC is appropriate and others where stopping all trains is not necessary. 
+DB Cargo stated that its training in the use of the REC uses scenarios to test the 
+responses of drivers to emergency situations and the appropriate use of the REC. 
+However, it also stated that there is no definitive list of situations where REC 
+use is required and the decision is largely down to driver discretion based on the 
+circumstances at the time. The locomotive driver did not initially consider that his 
+locomotive could be affecting the adjacent line and so did not consider using a 
+REC.
+Observation
+Buffer stop risk assessment
+83 The standards and processes that Network Rail applies to assess the risk of 
+overrun at buffer stops do not address those on non-platform tracks.
+84 Network Rail standard NR/L2/TRK/2102 issue 8 (Design and construction of 
+track) requires the use of GC/RT5033 (paragraph 61) for the design of new or 
+renewed buffer stops. GC/RT5033 has since been superseded by rail industry 
+standard RIS-7016-INS ‘Interface between station platforms, track, trains and 
+buffer stops’. This includes the requirements for overrun risk assessment of buffer 
+stops. Associated guidance on how to undertake buffer stop risk assessments is 
+described in rail industry guidance note GIGN5633 ‘Recommendations for the risk 
+assessment of buffer stops and end impact walls’.
+85 RIS-7016-INS states that its purpose is to set out ‘requirements for the design 
+and maintenance of station platforms for their safe interface with track, trains and 
+buffer stops’. Therefore, sidings that are not in station platforms, such as the up 
+Bromsgrove neck, are not covered by it. The associated guidance in GIGN5633 is 
+linked to RIS-7016-INS and so is also limited to platform tracks.
+86 RAIB observes that although earlier standards had some applicability to non-
+passenger terminal tracks, the current standards do not. Therefore, there is no 
+current requirement or guidance to specifically risk assess the overrun risk at 
+buffer stops that are not located in station platforms.
+Previous occurrences of a similar character 
+87 RAIB has investigated a number of buffer stop collisions. Examples of these 
+are Sudbury ( RAIB report 26/2006 ), Chester ( RAIB report 26/2014 ) and King’s 
+Cross ( RAIB report 15/2016 ). RAIB has also published a safety digest into a 
+second buffer stop collision at King’s Cross ( Safety digest 15/2017 ). However, 
+the circumstances of this accident differ from those featured in previous 
+investigations, and as a result none of the previously made recommendations are 
+directly relevant here.
+Analysis
+Report 14/2020
+Bromsgrove26
+November 2020Summary of conclusions 
+Immediate cause 
+88 The locomotive became foul of the main line shortly before the passenger service 
+arrived (paragraph 44).
+Causal factors 
+89 The causal factors were:
+a The locomotive derailed to a position foul of the main line (paragraph 47).  
+This causal factor arose due to a combination of the following:
+i The driver was distracted from the driving task as the locomotive entered 
+the siding, resulting in the collision with the buffer stop (paragraph 49, 
+Learning point 1 ).
+ii The locomotive deviated to the left after collision with the buffer stop 
+(paragraph 58, No Recommendation).
+b There was no opportunity to stop the passenger train before the collision 
+(paragraph 72, Learning points 2 and 3 ).  
+Additional observation  
+90 Although not linked to the accident on 23 March 2020, RAIB observes that:
+a The standards and processes that Network Rail applies to assess the risk 
+of overrun at buffer stops do not address those on non-platform tracks 
+(paragraph 83, Recommendation 1 ).
+Summary of conclusions 
+Report 14/2020
+Bromsgrove27
+November 2020Recommendation and learning points
+Recommendation
+91 The following recommendation is made:6
+1 The intent of this recommendation is to improve the management of 
+overrun risk at buffer stops that are not located in station platforms.  
+ Network Rail should review, and revise if necessary, the processes and 
+standards that it applies to buffer stops installed on non-platform terminal 
+tracks, to ensure that the risks arising from potential buffer stop collisions 
+are being adequately managed (paragraph 90).
+ This recommendation may also be applicable to other infrastructure 
+operators.
+Learning points
+92 This accident demonstrates the importance of:7
+1 train drivers complying with their employer’s mobile phone usage policy 
+so as to avoid unnecessary distractions while driving.
+2 informing the signaller following a train accident, even before it is 
+confirmed that adjacent lines are obstructed.
+3 train drivers, and other staff, intending to get out of their trains following 
+an incident ensuring that they do so in a manner that does not place 
+them at unnecessary risk from trains on lines that are open to traffic.
+6 Those identified in the recommendation have a general and ongoing obligation to comply with health and safety 
+legislation, and need to take these recommendations into account in ensuring the safety of their employees and 
+others.  
+Additionally, for the purposes of regulation 12(1) of the Railways (Accident Investigation and Reporting) Regulations 
+2005, this recommendation is addressed to the Office of Rail and Road to enable it to carry out its duties under 
+regulation 12(2) to: 
+(a) ensure that recommendations are duly considered and where appropriate acted upon; and 
+(b) report back to RAIB details of any implementation measures, or the reasons why no implementation 
+measures are being taken.
+Copies of both the regulations and the accompanying guidance notes (paragraphs 200 to 203) can be found on 
+RAIB’s website www.gov.uk/raib .
+7 ‘Learning points’ are intended to disseminate safety learning that is not covered by a recommendation. They are 
+included in a report when RAIB wishes to reinforce the importance of compliance with existing safety arrangements 
+(where RAIB has not identified management issues that justify a recommendation) and the consequences of failing 
+to do so. They also record good practice and actions already taken by industry bodies that may have a wider 
+application.
+Recommendations and learning points
+Report 14/2020
+Bromsgrove28
+November 2020Appendices
+Appendix A - Glossary of abbreviations and acronyms 
+CCTV Closed-circuit television
+GSM-R Global System for Mobile Communications - Railway
+OTDR On-train data recorder
+RAIB Rail Accident Investigation Branch
+REC Railway Emergency Group Call
+TPWS Train Protection and Warning System
+Appendices
+Report 14/2020
+Bromsgrove29
+November 2020Appendix B - Investigation details 
+RAIB used the following sources of evidence in this investigation: 
+l information provided by witnesses
+l information taken from the train’s on-train data recorder (OTDR)
+l closed-circuit television (CCTV) recordings taken from passing trains
+l site photographs and measurements
+l weather reports and observations at the site
+l maintenance records relating to the locomotive and the infrastructure
+l a review of relevant railway industry standards and procedures
+l a review of previous RAIB investigations that had relevance to this accident.
+Appendices
+Report 14/2020
+Bromsgrove30
+November 2020This page is intentionally left blank
+This report is published by the Rail Accident Investigation Branch, 
+Department for Transport.
+© Crown copyright 2020
+Any enquiries about this publication should be sent to:
+RAIB Email: enquiries@raib.gov.uk
+The Wharf  Telephone: 01332 253300
+Stores Road  Website: www.gov.uk/raib
+Derby UK
+DE21 4BA  

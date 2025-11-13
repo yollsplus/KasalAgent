@@ -1,0 +1,1308 @@
+14
+Paul Darlington and Trevor FoulkesBack to basics: 
+Telecoms part 1
+This ‘Back to basics’ article covers the 
+subject of railway telecommunications. As with other such articles, our intention is to provide an overview for IRSE members new to the industry or who may not have experience of working in this specific area. The content may also be useful for people studying for the IRSE Exam. The objective is to describe the subject in a generic manner and we have used examples based mainly on UK main line railways. Part 1 covers telecoms networks and part 2 in another issue of IRSE News will look at telecoms for passenger use. 
+Communication is essential to all businesses 
+including railways and without telecoms services trains would not run effectively. It is 
+possible for trains to move without signalling, 
+but communications are necessary for efficient operation. Railway telecoms covers voice, data and radio for rail operations, rail business, and 
+passenger use. It can also cover commercial 
+telecoms services for some railways. Role of operational telecoms 
+Operational telecoms systems have four roles for a railway:
+• To facilitate normal day-to-day voice and data communications. This includes links to support the operation of signalling and 
+electrification systems.
+• To facilitate quick communications in the 
+event of a problem or hazard.
+• To facilitate communications of those attending an accident.
+• To provide bearer services for other systems to enable communications where and when required.
+Normal day-to-day operational verbal 
+communication includes the use by signallers to 
+give instructions to drivers to move their trains in the event of a signalling system failure and to persons wishing to use level crossings. They are also used to take and give back line possessions 
+and grant electric traction isolations for 
+emergencies and to facilitate engineering works. 
+“Without 
+communications 
+trains cannot move”
+ IRSE News |  Issue 270  |  October 2020
+15
+It also includes day-to-day conversations to plan 
+train movements and manage the railway. In all these cases it is very important that the receiver of 
+the instruction correctly interprets the instruction 
+in order to carry it out. Most railways do this by the use of a voice protocol which requires messages to be repeated back. However, for the telecoms 
+service it is important that the voice channel is 
+clear and of sufficient volume to enable messages to be understood. Also, if the display system shows the location or role of the users then this must be proven correct, as far as is practical, since 
+credible but incorrect information could mislead a 
+user into making an incorrect decision or miss-understanding the context of the message being passed. A misinterpretation of an operational 
+message can result in an incorrect action and 
+potentially lead to a hazardous situation.
+When there is a hazardous situation it needs to 
+be rectified, often with trains being stopped, 
+before an accident occurs. Railway telecoms 
+radio systems have a key role in managing such situations where trains need to be stopped. Trains may need to quickly alert the signaller of a hazard 
+and request assistance. The person becoming 
+aware of the hazard needs to be able to contact all trains in the immediate area quickly and easily, and instruct the drivers to bring their trains to a stop. Time is of the essence in passing this type 
+of message. Even if the train cannot be brought 
+to a stand before the collision, a reduction in speed can significantly reduce the impact of the accident.
+If there is an accident it is important that the 
+emergency services can be contacted quickly to help with recovery and reach any injured people. In many cases the emergency services provide 
+their own communications systems but when 
+access distances are extended, for example in sub-surface stations, tunnels, or remote locations, the equipment to allow the emergency services to 
+extend their normal radio systems may need to be 
+provided by the railway.
+Voice communications by telephone
+Some railways provide lineside telephones for the public at level crossings so they can contact the signaller in an emergency or to obtain permission to cross the track. Other lineside phones may also be provided to facilitate engineering or operational activities, although these are often undertaken using a public or railway specific radio system. Lineside telephones are normally analogue 300-
+3400Hz in operation and connected via a twisted 
+copper pair in a cable to the nearest signal box or transmission node. No power supply is required at the telephone location, as it is powered over 
+the copper circuit, at normally 50V DC. This is 
+known as Central Battery (CB) working. When a user wishes to establish a call, they lift the handset, which places a 600Ω loop on the pair. This allows a current to flow which is detected at the far end. 
+The actual loop current will be dependent on the 
+resistance of the copper circuit and will decrease with distance. Depending on the use of the telephone, the far end may route the call directly 
+to the signaller and return ringing tone to the user. 
+This is a point-to-point telephone circuit and is commonly used for level crossings. Alternatively, the far end may return dial tone which tells the user to enter the number for the extension or 
+service they require. The number is normally sent 
+as a sequence of multi-frequency tones which are decoded at the far end and used to route the call to the required destination. Once the 
+far end answers the call, a duplex speech path is 
+established back to the initiator and conversations can take place. When the user wishes to terminate the call, he replaces the handset which removes the loop. If a phone needs to be rung, an AC 
+ringing current typically 75V at 25Hz is applied 
+to the line. The current is interrupted to give the distinctive ringing cadence. The telephone will be rung by this current until the handset is lifted and 
+the loop applied. At this point the ringing current is 
+removed and the speech circuit established.
+Copper cable
+Telephones will normally be connected via a two pair ‘tail cable’ to a lineside location or connection box where the circuit is connected 
+to the main line side cable. Copper cables come 
+in many varieties as the number of pairs can vary from single pairs to hundreds of pairs and the conductor size can vary from typically 0.63mm or 
+0.9mm gauge (diameter) to much bigger sizes on 
+older copper cables. Each pair is twisted together 
+“If there is an 
+accident it is 
+important that the emergency services can be contacted quickly”
+Telecommunications are essential for the safe 
+and smooth operation of 
+railways worldwide. The people upon which the 
+network depends work in 
+different roles, and have 
+different needs of their 
+equipment.Photos Shutterstock/
+APChanel, Paveils 
+Dunalcevs, 1000Words 
+and Chuyuss.
+ IRSE News |  Issue 270  |  October 2020
+16
+to reduce crosstalk from other circuits in the cable 
+and from external sources. In cables with many pairs, these are arranged in layers. A system of colour coding is used so that each pair and the conductors forming each pair (known as legs) 
+can be individually identified. The copper pairs 
+are normally protected by a moisture barrier and petroleum jelly to prevent water ingress, and an insulating sheath, which can be zero halogen and 
+low smoke if required for underground locations. 
+Some older copper cables were provided with a 
+steel armoured layer for electrification traction immunisation purposes, but this is now normally 
+provided by a separate screening conductor. The 
+sheath is normally marked with information so that 
+cables can be identified. 
+Telecoms copper cables can be used to carry 
+DC signalling circuits, but not vice versa as 
+conventional signalling cables are not constructed 
+with twisted pairs since they are designed for only 
+DC circuits. If a telecoms cable is used to carry 
+both telecoms and signalling circuits it is normally 
+recommended to fully terminate all the cable pairs 
+in every trackside location case, using a method 
+which facilitates easy identification of pairs, testing and isolation. For good quality speech and data 
+services, a telecoms cable will require a cable 
+insulation resistance of several megohms, which is far higher than needed for a DC signalling circuit. 
+Fibre cables 
+The introduction of fibre optics revolutionised 
+telecoms cable networks for railways. Fibre optic 
+cables are small and light (compared to copper 
+multipair cables) and can be used to transmit very 
+high data rates (several 100Gbit/s) and are immune 
+from electrical interference. The distance between 
+transmission nodes can be increased significantly compared to copper cabling.
+Fibres carry short wavelength light pulses and 
+are used in conjunction with digital transmission 
+systems. Early fibre cables were multimode 
+graded-index but were quickly superseded by 
+single mode fibre using 1310 nanometre (nm) wavelength with improved attenuation and 
+bandwidth. Multimode cable remains cheaper 
+and can still be used on short haul applications, 
+typically in buildings. Early cables typically 
+contained 8 or 10 fibres positioned within a loose 
+tube construction with a Kevlar® central strength 
+member with no metallic elements. Fibre count 
+within cables has increased and cables containing 
+hundreds of fibres in several tubes are now available. Fibre cables, being much smaller than 
+copper equivalents, can be rolled on to a drum in 
+much greater lengths, requiring less joints when 
+installed trackside. Care has to be taken however 
+during design and installation not to bend the fibre 
+cable too tightly around corners.
+The essential tools for working on fibre are 
+a fusion splicer and an Optical Time Domain 
+Reflectometer (OTDR). A splicer effectively heats and welds the fibre together. Early models required the jointer to align the two ends 
+mechanically using a built-in microscope but now 
+the process is automated. The OTDR is used to send pulses of light down a fibre and measure any reflection that occurs, to identify any problems 
+that might be present in the cable. A clean cut is easy to locate but a poor joint or deteriorating 
+fibre connection will result in a higher reflection 
+reading, with the OTDR indicating the distance 
+to the problem.
+Spare network bandwidth can also be leased 
+to others for commercial telecoms purposes, if permitted by the national legislation 
+covering commercial telecoms. This could 
+include individual fibres or capacity in railway 
+telecoms cable routes leased to third parties. 
+Any lease agreements will need to take into 
+account the priority of telecoms services for railway operational purposes and the 
+maintenance arrangements. 
+Concentrators
+At the signal box there will be an operator interface, sometimes called a “concentrator”, to 
+which all the lineside phones and other phones 
+are connected e.g. phone connections to adjacent signal boxes, electrical control rooms 
+and operational control rooms. When a phone 
+is ringing in, an appropriate light flashes or the display is changed to show which phone it is. 
+The signaller can choose which line to answer by 
+lifting his handset and selecting the particular line. 
+He can also ring a phone by lifting the handset 
+and pressing the appropriate button. In some 
+railways, phone lines for some level crossings give a distinctive different ringing sound so the 
+signaller can take quicker action. Sometimes 
+the signaller’s handset is equipped with a press-to-talk button so that the driver can only hear 
+what is said by the signaller to the handset and not hear conversations on other lines. There are 
+many versions of concentrators based on the 
+technology available when they were brought 
+into service. Some have a key and lamp for each 
+line, others are based on touch screens telephone 
+systems similar to those used in money markets and known as ‘dealer boards’. Some combine the 
+radio and fixed lines on the same display as the 
+signalling controls. Modern concentrators are based on computers that communicate using the 
+Internet Protocol (IP) see later.
+If the signal box and phone are separated by an 
+appreciable distance, say over 15km (10 miles), 
+then a transmission system will be needed to extend the circuit. This is covered later. 
+Voice communication by radio
+UHF (Ultra High Frequency) radios are generally 
+used for station management, shunting and to facilitate engineering work. Some are used as ‘back-to-back’ radios and some have base stations 
+which allow the connection of a landline from, say 
+the signal box. UHF radios are normally simplex so 
+each user has to press a button when they wish 
+to talk and release to listen. Individual radios are distinguished by callsigns and strict voice protocol 
+is required as a licence condition. When used by 
+a shunter to give instructions to a driver, some 
+radios have a facility to transmit a confidence 
+tone so the driver knows the shunter still wishes them to continue or else the shunter has to keep “Telecoms 
+copper cables can be used 
+to carry DC signalling circuits, but not vice versa as conventional signalling cables are not constructed with twisted pairs”
+“UHF radios 
+are generally used for station management, shunting and to facilitate engineering work”
+ IRSE News |  Issue 270  |  October 2020
+17
+repeating the instruction. For engineering work 
+public radio networks are often used if there is coverage at the location. 
+Many railways have or are installing their own 
+national radio networks to the GSM-R standard. This system is based on the 2G version of public 
+networks with some extra enhanced facilities:
+• Railway Emergency Call (REC).
+• Prioritisation for important calls.
+• Location dependent addressing e.g. contact the signaller who controls the section of line for the train making the call.
+• Functional dependent addressing e.g. contact 
+the driver of train number 50629.
+• Voice group calls e.g. a shunting group.
+• Data services e.g. European Train Control System (ETCS) data.
+Figure 1 shows a schematic of typical GSM-R 
+system. GSM-R systems have dedicated spectrum  
+which is harmonised across Europe as: Uplink  
+876–880MHz for mobile transmission and Downlink 921–925MHz for mobile reception.
+Radio coverage is critical to the success of a 
+GSM-R system. Many issues affect radio coverage, 
+including cuttings, trees, hills, mast height and the frequency used. A public mobile system radio 
+coverage will be optimised for revenue and it may 
+be acceptable for small areas to have no coverage. 
+For a railway radio network, complete coverage 
+along a line of route will be required, including all 
+cuttings, bridges and tunnels. 
+It makes a significant difference to radio coverage 
+design if a network is being designed for vehicle mounted mobile radios or hand held portable 
+radios, as the former can have the antennas mounted on the train or vehicle roof and have 
+higher power levels. As a train passes along a section of route it reselects the next base 
+station to monitor based on the “neighbour list” 
+transmitted from each base station and the relative received signal strengths of each neighbour and the currently selected base station. 
+In a public network it does not matter which 
+base station is used for a call, but for a railway emergency call it is important as it is established around the GSM-R cell which the train mobile 
+had selected before the call set up, to make sure 
+a call is routed to the controlling signaller. Thus, the control of the reselection is important and needs careful design of frequency allocation 
+and neighbour lists, especially when there is a 
+parallel railway close by. Frequency allocations also have to take account of any noise which may be introduced by the receivers picking up 
+signals on the same or adjacent frequencies 
+from other masts in the area. In addition, to 
+reduce the size and hence impact of a railway emergency call, operators normally want to be able to distinguish between trains on the various 
+lines approaching busy junctions with often the 
+base station mast covering three or more sections of line approaching a junction. This has to be achieved using only a small number of frequencies compared to a public GSM system. In Europe only 
+19 are currently available for GSM-R.
+It is also important for the handover of calls to 
+occur robustly so as to not interrupt speech 
+or data communications. This handover takes 
+time and therefore the handover zone has to increase as the maximum line speed increases. Care has to be taken when trains enter a tunnel, for example, to ensure there is sufficient time for 
+a handover. Additional base station or repeaters Base Station
+Controller (BSC)
+BTS BTS BTSMobile Switching
+Centre (MSC)
+BSC BSC
+Portables MobilesOther
+networksOperations and
+maintenance centreDispatcherRadio block
+centreSignaller
+fixed terminal
+Base Transceiver
+Station (BTS)A GSM-R network will typically 
+have more than one MSC, 
+several BSCs and many BTSs
+Figure 1 – Schematic of 
+typical GSM-R network.
+“Radio coverage is critical to the success of a GSM-R system”
+ IRSE News |  Issue 270  |  October 2020
+18
+may be required in large stations, cuttings, under 
+bridges and tunnels. 
+A common problem to almost all railways is 
+providing radio communications in tunnels. Communication using a tunnel mounted aerial in a single bore tunnel at 450MHz is possible 
+up to around 500m, whilst it can reach 1.5km 
+in a double track tunnel. At the higher band frequency of 900MHz the distance increases to around 2km or more for double track tunnels. The tunnel dimensions become significant as 
+greater propagation distances have been found in 
+the tunnels on the high-speed lines in Germany, which are built to a more generous loading gauge than other railways, such as the UK. 
+The effect of introducing a train into the tunnel 
+is to increase the attenuation rate due to the blocking presence of the train. In a single bore tunnel this can be a significant problem, 
+depending on the tunnel dimensions. In a double 
+track tunnel the effect may become significant when trains are passing. At certain frequencies some tunnels can act as waveguides, which 
+can lessen the rate of field strength attenuation 
+through the tunnel. Factors that can increase the rate of attenuation include the presence of bends in the tunnel and the construction of the tunnel (concrete, brick or rock-lined).
+The space occupied by trains in the tunnel is 
+also important. In tunnels with no overhead line electrification and a restricted clearance, for 
+example, the distance radio waves propagate 
+is lower than comparable tunnels with a larger gap between the roof of the train and the tunnel ceiling.
+The alternative approach to the use of free-space 
+antenna propagation is to use leaky feeders or radiating cables. These have the advantage of having a consistent and generally predictable level 
+of attenuation, which is not affected by passing 
+trains. The cable is ‘leaky’ in that it has gaps or slots in its outer conductor which unbalances the radio signal in the cable and causes it to propagate radio frequencies along its entire length. Work is underway on the replacement for GSM-R, called FRMCS (Future Railway Mobile Communication System) but it is expected that 
+the current GSM-R functionality will be carried 
+forward to the new system.
+Data
+Railway telecoms does not just use voice as data circuits are required to allow remote control and monitoring of equipment. Data circuits are 
+provided to support signalling systems, e.g. SSI, 
+Westlock, Smartlock when long distance terminals are required. Data circuits can be supported over copper cables using modems or plug directly into 
+transmission equipment.
+The near continuous data connection between 
+trains and control centre to support the European Train Control System (ETCS) is normally provided 
+via a GSM-R network in Europe and beyond. 
+Railways, particularly metros, that use other cab based signalling systems (e.g. Communications Based Train Control CBTC) may adopt an 
+alternative radio system such as TErrestrial Trunked 
+Radio (TETRA) or even Wi-Fi if the line is in tunnel where external interference can be controlled. Early versions of ETCS used circuit switched data and hence required a constant data connection 
+circuit to be available for the whole journey. This 
+causes problems in dense areas where many trains are trying to access the network. To address this, some GSM-R networks are being enhanced 
+to support GPRS (General Packet Radio Service) 
+which allows better use of the radio bandwidth. Packet and circuit switching are explained later in the IP section. 
+SCADA Systems
+Supervisory Control and Data Acquisition (SCADA) systems can be used to monitor and control many different processes and systems for railways. 
+However, the primary railway application is the 
+control of electric traction systems over wide areas. Telecoms data links with high availability will be required for electric traction SCADA system 
+control, together with robust voice services 
+for routine and emergency isolation purposes. 
+Tunnels require 
+significant consideration 
+when providing radio communications.Photo Shutterstock/Dirtymouse.
+“Tunnel dimensions become significant”
+
+ IRSE News |  Issue 270  |  October 2020
+19
+Eliminating common failures which could isolate 
+more than one successive electrical supply site is important, so an emergency isolation can still be 
+implemented. SCADA systems may also be used 
+for the monitoring and control of ancillary systems such as lifts and escalators, ventilation and air-conditioning and drainage systems and will also 
+require telecoms links.
+Traditionally signalling telemetry systems are 
+generally not regarded as SCADA systems but they perform a very similar function, transmitting 
+commands and receiving indications on the status 
+of signals, points, track circuits. However in some railways SCADA capable equipment is used for signalling remote control systems. 
+Transmission systems
+Transmission systems are used to transmit and receive more information than a single cable pair or fibre and over longer distances. 
+They have evolved over time, mainly driven by 
+developments for public telephone networks. Nowadays transmission systems are normally designed in layers to reflect the capacity and 
+points of presence for the different services. 
+The core network layer has relatively few nodes connected by high speed links and configured in a diverse manner. The access layer, on the other hand, would have frequent nodes situated 
+where services are required, e.g. at base stations 
+or signal boxes. 
+Transmission equipment is normally connected 
+using lineside fibre cables, but older systems may 
+still be connected by copper cable. To provide diversity transmission equipment can also be connected by a service provided from a public telephone operator. 
+Primary layers and primary 
+multiplexers
+Older telecoms and data transmission systems, 
+such as Plesiochronous Digital Hierarchy (PDH) and Synchronous Digital Hierarchy (SDH) are 
+known as “circuit switched” transmission, with a 
+permanent connection established between two applications. The primary layer is where channels are converted from analogue to digital form so 
+they can be combined with other circuits and 
+sent around the network. When the primary layer is connected to line side cables, this is normally done using a primary multiplexer (PMux). PMuxs can support, speech circuits and data circuits up 
+to 2Mbit/s. PMuxs are connected using an E1 data 
+stream at 2Mbit/s. PMuxs can be configured as point to point or in rings. Each E1 data stream has 32 timeslots. Timeslot (TS) 0 is for synchronisation 
+and alarms and normally TS16 is used for channel 
+associated signalling. The other 30 timeslots each of 64kbit/s can be used to support speech or data circuits. The main interface cards used on a railway network may be:
+• Subscriber – to connect to a phone via the lineside cable.
+• Exchange – to connect to the exchange or concentrator.
+• 4-wire E&M – to provide transmit and receive paths and up to 4 status circuits which can be used to operate relays.
+• G703 data interface for SSI.
+• V24 or X21 for lower speed data.
+• ISDN (Integrated Services Digital Network) for some terminal equipment.
+A normal telephone circuit has a frequency range of 300-3400Hz. A PMux converts analogue 
+speech into a digital form by sampling the sound 
+every 125μS (i.e. 8kHz) and then converting the sample value to a digital number between -128 and 128 i.e. 8bits. This conversion is called quantising and is done to limit the noise due to 
+the process to a small proportion of the amplitude 
+of the signal. So, the overall bit rate by channel is 8bits/sample x 8000samples/second = 64kbits/s. The interface card then allocates this data stream 
+into a timeslot of the E1 circuit. In addition, it 
+detects items such as the loop condition or ring current and sends codes in timeslot 16 to enable the interface card at the far end to reproduce the condition.Above from left, a 
+signallers fixed GSM-R terminal.
+Cab GSM-R mobile unit.
+Small ‘key and lamp’ 
+signallers concentrator.
+“Transmission equipment is now normally connected using lineside fibre cables”
+
+ IRSE News |  Issue 270  |  October 2020
+20
+PMuxs are normally connected via bearer services 
+through the higher order transmission layers but can also be supported using Digital Subscriber 
+Line (DSL) modems over lineside copper networks. 
+A typical network configuration based on SDH equipment is shown in Figure 2.
+To connect a circuit switched network to an 
+Internet Protocol (IP) network, gateways are required to convert the circuits or E1 data streams into a set of packets to send round the network. Data circuits for some signalling 
+applications (example SSI) have specific time delay 
+requirements which need to be addressed in the design of the core network and require allocation rules for such circuits, or for the E1 data streams 
+supporting the circuits.
+Figure 3 shows a typical example of how lineside 
+phones may be connected to a signal box, using older circuit switched transmission.Internet Protocol (IP) networks
+IP (Internet Protocol) as its name suggests is the basic protocol used on the internet, but has been the heart of all new telecoms networks and 
+data communications systems provided for a 
+number of years. 
+The PDH and SDH “circuit switched” transmission, 
+with a permanent connection established between 
+two applications, ‘locks up’ the communication 
+resource and is inefficient, as the transmission path is used even when no data is being transmitted. IP however is a “packet switched” 
+network, with the data message split into small 
+packets to share capacity and transmission paths which are only used when data needs to be sent. This requires ‘routing’ to be established for each data exchange, however resilience is built in and 
+the communications resources are shared, making 
+IP far more efficient than circuit switching.
+Each packet needs to be given information about 
+the destination, its origin, and other information, 
+to allow the data to be routed around a meshed network of routers. An IP packet is shown in Figure 4. The payload is a variable amount of data to be transmitted and is typically a few kilobytes, 
+but can be up to 64 kilobytes. The IP header is 
+fixed at 20 bytes and contains a 32-bit source and destination address as well as an indication of the length of the overall packet. Other fields 
+provide a checksum, the version of IP being 
+used, and a simple type of service indicator. The “time to live” field is used to set the maximum number of hops between router nodes to prevent unsuccessful delivered packets circulating and 
+clogging up the network. After the packet has 
+transferred its specified number of hops it is simply discarded and ‘dies’.
+The IP network as described in its raw state is 
+simply a “best effort network”, and there is no guarantee of the packets arriving, or in which order they arrive, and the network is what is known as connectionless, so the transport layer 
+manages the flow of IP packets. Transmission Core SDH transport
+(STM-16)
+Access SDH transport
+(STM-1)
+Access DSL 
+transport
+(2Mbit/s)
+Primary 
+layer
+Copper 
+layerHigh bandwidth services
+(e.g. IT and GSM-R)
+2/34/45Mbit/s
+services
+Sub 2Mbit/s
+services
+Analogue
+services
+Figure 2 – Typical network 
+configuration based on 
+SDH equipment.
+ConcentratorTransmission
+node A
+Transmission
+node BTransmission
+nodePrimary multiplexer
+with exchange cards
+Primary multiplexer
+with exchange cardsPrimary multiplexer
+with subscriber 
+cards
+Junction
+boxesCopper cable
+Tail cable
+Fibre cableFigure 3 – Lineside telephone connected using circuit switched transmission.
+ IRSE News |  Issue 270  |  October 2020
+21
+Payload (max 65kbytes) Header (20 to 60 bytes)
+Options
+0-40Destination
+address
+4Source
+address
+42 2 21 1 1 1 2Header checksum
+Protocol
+Time to live
+Fragment offset
+Identification
+Length
+Type of service
+Version and header length
+Control Protocol (TCP) sits within the IP payload 
+and envelopes the source data by a 20-bit header and is carried by the IP packet as the payload. TCP 
+acts as a connection-ordinated protocol within 
+the connectionless network, it assumes the IP network is unreliable and numbers the IP packets or “datagrams” at the transmitting end of the link. 
+It examines the numbers at the receiving end and 
+requests the retransmission of any packets not arriving within a specified period. The numbering sequence is used to arrange the packets into the correct order, and finally TCP monitors the flow of 
+packets getting through the network and adjusts 
+the launch rate accordingly.A network of routers is shown in Figure 5 together 
+with the role of the TCP and IP headers. The 
+routers only examine the IP packet header, and 
+simply pass the datagram packet onto the next 
+router in the network, according to a table held 
+within the router. Multiple paths for the packets are available so the transmission network is more reliable and it is possible for consecutive packets to be routed over different paths between router 
+nodes. Once the packets are delivered to their 
+end-point, the TCP assembles packets in the 
+correct sequence and requests the retransmission 
+of delayed or errored packets if required.
+Not every application has the same requirements 
+for the delivery of IP packets. For example, when 
+transmitting a document or email it is critical 
+the entire data message is transmitted with no 
+corruption. It does not matter if it takes a few 
+milliseconds to receive the data message, so TCP 
+is used, which will request the re-transmission of 
+any missing or corrupt data packets. However, 
+a voice or video image signal is time critical 
+but very small gaps in the image or voice can be tolerated, and may not even be noticed. For these applications User Datagram Protocol 
+(UDP) is used. This assembles the data packets in 
+the correct order, but does not arrange for the 
+retransmission of corrupt or missing packets; they 
+are simply discarded. 
+Multi-Protocol Label Switching (MPLS)
+MPLS is a method of providing a guaranteed 
+Quality of Service (QoS) and Virtual Private 
+Network (VPN) capability within an IP network, 
+and is a method of making the connectionless IP network connection orientated. MPLS uses 
+Data
+Data
+Payload IP headerTCP headerDataData TCP header
+IP packet IP packet
+Routers examine only
+IP packet headersPayload IP headerFigure 4 – An IP packet.
+Figure 5 – A network of 
+routers showing the role of TCP and IP headers.
+ IRSE News |  Issue 270  |  October 2020
+22
+‘labels’ to specify a virtual path for the IP packets 
+to follow using a 20-bit label attached to the front 
+of each packet. MPLS provides better latency for 
+time critical applications, such as voice and video, and with VPN capability for security. The faster 
+routing is because the label switching is done in 
+hardware, whereas normal IP routing involves the 
+slower processing of software to deconstruct and 
+decode the IP address. MPLS also incorporates 
+Class of Service (CoS) network performance to differentiate between time critical, high priority 
+traffic and delay tolerant, low priority traffic. To use 
+this service, MPLS capable routers are required.
+Voice Over IP (VoIP)
+VoIP systems offer many advantages compared to a traditional circuit switched telephone exchange 
+network, as voice simply becomes another 
+application running on an IP network, this offers many advantages and the capability of exceptional 
+good quality sound. This is because high speed 
+codecs convert the voice to IP packets without 
+needing the normal 4kHz frequency filtering. 
+This higher quality is subject to loading on the IP 
+network, which can lead to loss of packets and 
+hence degradation of sound quality; which is 
+why a high Quality of Service (QoS) IP network 
+is required for VoIP. A power supply for the VoIP telephone will also be required. 
+Security is a concern with IP networks, so real time 
+cyber security using encryption and firewalls along with “defence in depth” techniques with multiple 
+layers of defences is critical.
+Protocol layers
+One way of explaining the various IP 
+protocols and layers is to map TCP/IP and its 
+supporting protocols against the Open Systems 
+Interconnection (OSI) model as shown in Figure 6. At physical Layer 0 and 1 there are the various transmission systems and cables in the access and core network. At Layer 2 there are various data link systems that may be used in the telecoms 
+IP network, including Ethernet and possibly the 
+Public Switched Network for dial up connections. IP resides at Layer 3, the Network layer. At Layer 4, the Transport Layer, there is either TCP for the 
+latency tolerable, or UDP for the latency intolerant 
+applications. There is a vast array of protocols 
+covering many possible applications that may run 
+over an IP network, either internet or intranet or 
+an IP based secure signalling system; and it is at 
+this level where full end to end data security needs 
+to be addressed. The design and standards for IP 
+and the internet are administered by a consortium 
+of users, academics, and manufacturers known 
+as the Internet Engineering Task Force (IETF), unlike traditional telecoms networks which were designed to international standards governed by the International Telecommunications Union (ITU). 
+The IETF have set recommendations for OSI layers 
+2 to 7, however the IETF considers layers 5 to 7 a 
+single entity. 
+Management of a telecoms network
+Software-Defined Networks (SDN) are now 
+common. SDN enables remove dynamic, efficient 
+network configuration and alarm management 
+in order to improve network performance and 
+monitoring, making it more like cloud computing than traditional network management.
+In many cases modern business systems are based 
+on an IP network and the methods of connecting computers, printers and servers are well defined. 
+VoIP telephones are increasingly used in offices 
+and if a railway telecoms IP network is provided 
+for operational use it is also possible to extend 
+it for business purposes. Interfaces may be 
+required to any older circuit switched digital 
+telephone exchanges which could still be used in 
+a railway network. 
+Increasing capacity
+Coarse Wavelength Division Multiplexing (CWDM) or Dense Wavelength Divisional Multiplexing 
+(DWDM) technology can be used to make better 
+use of installed fibre. These systems use Frequency 
+Division Multiplex (FDM) with between 18 and 160 
+wavelengths of light over single mode fibre. In this 
+way many transmission links can be overlaid onto 
+the same fibre, to significantly increase capacity.
+HTTP SMTP POP FTP SNMPNFS
+XDR
+TCP UDP
+IP
+e.g. Ethernet
+e.g. SDH, PDH, ADSL
+e.g. Copper, fibre, radio L0L1: PhysicalL2: LinkL3: NetworkL4: TransportL5: SessionL6: PresentationL7: Application
+OSI InternetFigure 6 – The Open 
+Systems interconnection 
+(OSI) model.HTTP is Hypertext Transfer Protocol, SMTP is Simple Mail Transfer Protocol, POP is Post Office Protocol, FTP is File Transfer Protocol, SNMP is Simple Network Mail Protocol, NFS is Network File System, XDR is External Data Representation, PDH is Plesiochronous Digital Hierarchy and ADSL is Asynchronous Digital Subscriber Line.“Security is a concern with 
+IP networks, 
+so real time 
+cyber security is 
+critical”
+ IRSE News |  Issue 270  |  October 2020
+23
+Electrification, interference  
+and immunisation
+Electric traction systems can cause problems 
+for telecommunications with electromagnetic induction of high voltages and noise into speech 
+circuits. This can arise from harmonics resulting 
+from the electric field generated by the current drawn by electric trains in 25kV overhead line systems, or by the AC feeder cables and the 
+crude rectification of the AC supply to provide 
+a DC traction system either using third rail or overhead catenaries. S&T engineers have to ensure interference will not cause malfunction of safety related circuits, particularly that short 
+circuit currents do not generate high voltages that 
+would damage equipment or cause a dangerous health hazard to staff. Also, higher frequency harmonics from traction systems should not cause 
+speech circuits to become noisy and interfere with 
+data circuits. 
+Various traction systems are in use around 
+the world with 25kV 50Hz one of the main 
+systems in use today. The ITU (International 
+Telecommunications Union) requires induced 
+voltages in telecoms copper cables under normal 
+conditions to be no more than 60V RMS, and under system fault conditions 430V RMS. The 
+noise limit for telephone circuits is a psophometric 
+electromotive force of 1mV. Psophometric noise is ‘weighted’ the same as human-perceived levels of noise. This is more important for telephony than 
+the raw noise voltage.
+A range of solutions are required to mitigate 
+the effects of traction power supplies on line side services:
+• Limiting the lengths of copper cable section.
+• Having a robust balance to earth interface for powered equipment.
+• Position of the cable route (and hence cables) with respect to the traction cables.
+• Providing an earthed screening cable in the cable route.
+• Replace longer distance copper cabling with a fibre optic based system.
+Some railways provide traction current at 25kV, 50Hz to the train with currents of around 300A 
+flowing through the train from the catenary wire 
+to the rails. To minimise interference, a booster transformer is used whereby the overhead line equipment (OHLE) is separated into in sections of about 3km and at the end of the section a 
+Booster Transformer (BT) is used to ‘suck’ the 
+return current out the rails and into a separate return conductor mounted on the outside of the overhead stanchions roughly at the same height 
+as the catenaries. This creates an opposite phase 
+and opposing electric field that helps to cancel out the effect of the current in the catenaries but the effects of the currents within the occupied overhead line section still need to be addressed. 
+More recent electrification projects use a 50kV 
+auto-transformer system whereby, a ‘second catenary’ is mounted on the outside of the stanchion to permit a 25kV-0-25kV arrangement giving a more balanced system. Trains continue to take power at the 25kV voltage with the current 
+being returned in the ‘other’ catenary wire. In this 
+way, for sections which do not have a train taking power, the currents in the OHLE conductors are the same magnitude but in opposite phase. This means that at any point which is an equal distance 
+from both the conductors the induced magnetic 
+field will be effectively zero. This is the ideal place for the cable route. It is not possible to directly align with this ideal positioning as the catenary 
+wires move from side to side and go up and down 
+for obstacles such as bridges and level crossings. However the nullifying effect still significantly reduces the electric field. As has been mentioned previously, the advent of fibre optic cables 
+with no metallic components has significantly 
+reduced the problem of electrical interference and associated immunisation for new systems and in some cases may allow the use of simple feed 
+catenary systems.
+In part 2 of this article we will look at telecoms 
+systems for passenger use and the differences between public and railway telecoms networks.
+“S&T engineers 
+have to ensure 
+interference 
+will not cause 
+malfunction of 
+safety related 
+circuits”
+“The advent of 
+fibre optic cables with no metallic components has significantly reduced the problem of electrical inteference”“Back to basics” and the IRSE Exam 
+We hope our “Back to basics” articles are 
+particularly interesting and useful to those of you who are maybe new to the industry 
+and are working to build up your knowledge, 
+or who have moved to a new role involving telecommunications. For those considering taking the IRSE exam, these articles should be 
+particularly relevant to assist your studies. 
+As an example, why not think about how you 
+would answer these questions from the 2019 Module 6 of the exam, based on what you have 
+learnt from the article? 
+You are required to produce a radio 
+communication system that provides coverage 
+for trains within tunnels and for station staff 
+throughout an underground system. The train traction system is an overhead 25kV catenary system. 
+a) With the aid of diagrams describe your 
+chosen system and explain the factors you would consider as part of your design.    [12 marks] 
+b) Produce an outline test plan including the 
+tests you would undertake to prove the 
+functionality of the system.     [13 marks] 
+You are the telecommunications 
+designer for a project which is to renew a telephone concentrator and associated 
+lineside telephones. 
+Using a risk assessment methodology 
+of your choice outline the hazards, and proposed mitigations, throughout the asset 
+lifecycle.    [25 marks]
+11
+Paul Darlington and Trevor FoulkesBack to basics: 
+Telecoms part 2
+Part 2 of ‘back to basics’ for railway 
+telecommunications covers telecoms for 
+passenger or customer assistance. As with other similar articles, the intention is to provide an overview for IRSE members new to the industry or who may not have experience of working in this specific area. The content may also be useful for people studying for the IRSE Exam. The objective is to describe the subject in a generic manner and we have used examples based mainly on UK main line railways. 
+Public Address (PA) 
+PA systems have always been important for 
+communicating with customers and staff, and are also used for emergency purposes when linked 
+to fire detection systems. A badly designed sound system will quickly annoy customers and may result in negative comments and poor publicity. 
+So, all sound systems should be designed by competent sound communications engineers.
+A good PA system will depend on four 
+key requirements:
+1. Loudness or sound pressure level. This 
+should be at a volume or level to please those intending to hear the communications 
+message, but not too loud to annoy neighbours and residents close to a railway station, or train passengers who may not need to hear the announcement.
+2. Intelligibility. This is one of the most important 
+requirements of a PA system and where many 
+systems fall short.
+The concourse at 
+Birmingham New 
+Street station in the UK is typical of the challenging environment for PA designers.
+ IRSE News |  Issue 271  |  November 2020
+12
+3. Naturalness. A natural sounding PA system is 
+one where pre-recorded announcements will 
+sound the same or similar to real time voice 
+announcements. 
+4. Reliability. All PA systems need to have good 
+reliability and availability, with appropriate 
+redundancy in their design, this is especially important with voice alarm systems which may have performance requirements mandated by 
+national legislation. 
+The first three requirements are dependent on the acoustic environment, which can be 
+particularly challenging at railway stations with variable building design and noisy trains. Sound may be reflected, refracted, diffracted, absorbed 
+or transmitted through obstructions, dependent 
+upon the material and size of the obstruction.
+A typical railway station will need careful design 
+of its speaker system to make the best of what 
+can be a very challenging acoustic environment. 
+The sound design engineer will need to consider: the operating environment of the equipment in terms of temperature, humidity and dust; security 
+of equipment; listed building consent as many 
+stations in some countries are protected buildings; any noise abatement notices that may have been served; density of nearby housing and residents; platform possessions and isolations needed for 
+installation and maintenance; feedback from users 
+on the existing system, such as areas of poor coverage along with any customer complaints; glass shelters, as these can attenuate sound by 
+approximately 25dB. 
+Coverage in general should be provided in all 
+areas where most customers stand when waiting for information on train services or disruption, 
+and in all weather conditions. In Europe the 
+regulations for Persons with Reduced Mobility (PRM) require PA coverage in all public areas of the station and the UK Equality Act 2010 requires 
+all station operators to take reasonable steps to 
+ensure they do not discriminate against people with reduced mobility.Loudness and intelligibility
+Station PA systems must be carefully designed to avoid conflict between wanted and unwanted noise, and simply specifying a sound pressure 
+level and intelligibility requirement may provide 
+a system acceptable for rail users, but one which annoys nearby residents. There have been cases where PA systems have been renewed with an 
+overall lower volume, but with better intelligibility 
+resulting in more complaints from neighbours. An extreme case resulted in a noise prohibition notice and for the station PA system to be switched off until the problem was resolved. A detailed 
+investigation found a number of issues. The 
+station at times was busy with announcements as frequent as every 30 seconds. A second issue was that some announcers took 34 seconds to 
+communicate the same information as other 
+announcers did in 6 seconds. The solution consisted of a number of changes which included zoning of the system and establishing common scripts for all announcements. 
+Ambient noise sensing continuously monitors the 
+changing ambient noise levels and adjusts the audio level of the PA system. This is particularly 
+relevant for railway stations with wildly varying 
+background sound levels usually caused by trains. The maximum volume of the PA will need to be limited as some trains can be very loud and it may not be possible to announce over the top of the 
+train noise for health and safety reasons. Storing 
+and transmitting an announcement when the background noise is lower is something that can be considered. 
+Dividing a station public address system into 
+defined zones can be helpful, particularly where limiting the noise to neighbours is required with only those zones selected being addressed. The 
+output from the amplifier can be automatically 
+routed to the chosen zone or zones either by using zone selection keys on a controller, or by a stored speech system announcing the timetable to only areas requiring the message. Simultaneous 
+but different announcements can be made to 
+From left, a row of 
+speakers at Birmingham 
+New Street station.
+Speakers at Crewe station.
+Inductive loop for hearing 
+aid users. 
+Combing PA with CIS 
+is effective for good communications.
+“A typical railway 
+station will need 
+careful design 
+of its speaker 
+system to make the best of what 
+can be a very 
+challenging 
+acoustic 
+environment”
+ IRSE News |  Issue 271  |  November 2020
+13
+different parts of the station and using male and 
+female voices can help to distinguish between the 
+messages but care must be taken to minimise the over hearing between zones.
+A PA system can be used to feed directly to 
+hearing aid users using a specially designed induction loop amplifier and associated cable 
+system. The engineering and design of induction 
+loops is complex and is environment dependent – steel-constructed buildings can make it particularly difficult.
+Background music can be used to fill the ‘silence’ 
+between announcements and is sometimes used at less busy stations. If provided this should not be loud enough to be obtrusive, but should be 
+adjusted so that it adds to the ambiance of the 
+environment. Music should never be so loud that customers cannot communicate, or that advice given by station staff cannot be heard.
+Voice alarm systems
+Train operators have a duty to ensure the safety of customers at all times. When an emergency such as a fire or a security threat arises or whenever 
+there is the need to evacuate a station this can 
+be best achieved by a speech announcement, rather than bells or sounders. The spoken word can be ‘live’ from a microphone, or pre-recorded. 
+Stored announcements can be initiated by the 
+station’s or an adjacent building’s fire alarm installation. When the alarm is activated the sound system automatically broadcasts the stored emergency message. 
+Public Address Voice Alarm (PAVA) sound systems 
+designed to warn of danger normally require special fire-safe wiring and complete building 
+coverage with approved loudspeakers sited to 
+cover all public and staff areas. The provision of auxiliary power sources, so that in the event of an AC mains supply failure, the sound system can continue to operate, will be required. In addition 
+equipment redundancy, self-checking alarms, 
+sound level and intelligibility requirements should be considered. Passenger (or Customer)  
+Information Displays
+Visual PIS/CIS are now common in many railways. 
+They generally originated with hand painted boards but migrated to using revolving printed 
+‘flap’ displays installed at larger stations to increase 
+the display content, either operated manually or using card reading machines. In the 1980s processor systems controlling monochrome 
+Cathode Ray Tube (CRT) displays started to 
+be installed at smaller stations with ‘next train’ platform displays and departure/arrival summary displays. Flap displays were inflexible and required extensive ‘re-flapping’ when timetable changes 
+were carried out. LCD displays originally using 
+a 7x5 dot matrix often replaced flap displays to increase flexibility although often with a poorer display readability. LED displays then replaced  
+LCD at larger ‘main board’ displays and CRT 
+platform displays to improve both readability and reliability. It is easier to read upper- and lower- case than all upper- case, which is why road signs in most countries use upper- and lower- case. 
+Displays should therefore be able to display 
+information ideally in the train company font with both upper- and lower-case text with proper descenders, e.g. for “y” and “g”. 
+PIS/CIS systems consist of either a central or local 
+processor and controller for the displays, together with power supplies and communication links to and from the displays. These links have migrated 
+from RS422/RS232 to Ethernet and Wi-Fi, with 
+systems now controlled from real time signalling control systems (usually the train describer) and linked to comprehensive train timetable 
+systems. Systems can also provide real time train 
+information to third party mobile applications for public use. Unfortunately, when train disruption is severe and with no trains moving it can be difficult to display train information at just the time it is 
+really required. It is hoped that traffic management 
+systems may be able to provide accurate predictive information for displays in the future.
+“Public Address 
+Voice Alarm 
+(PAVA) sound 
+systems  
+designed to warn of danger 
+normally require 
+special fire-safe 
+wiring”
+ IRSE News |  Issue 271  |  November 2020
+14
+When designing and siting displays on stations 
+the structure gauge for the railway should be complied with and take into account signal 
+sighting along with installation and maintenance 
+access, cable containment and power supply requirements. Listed building consent may be required, and if replacing an existing system 
+feedback from users of the system should be 
+obtained and analysed together with any customer complaints. The footfall where most people stand when waiting for a service in all weather conditions should be taken into account when 
+designing the system, together with requirements 
+for persons with reduced mobility. Future train service changes should also be considered. 
+Involving human factors specialists and local 
+operators will help to identify the location of displays to maximise their effectiveness. Double sided displays should be used where ever possible to maximise the network capability of the system. 
+Some operators use scrolling displays, but 
+these can be difficult for persons with sight and comprehension issues to read and understand. Displays which change but hold messages fixed 
+for a short time are better.
+Closed-circuit television 
+Closed-circuit television (CCTV) systems provide 
+surveillance capabilities to improve safety, assist railway and station operation, and to combat 
+crime and terrorism. A CCTV system links a 
+camera to a video monitor or receiving system using a direct transmission system. This differs from broadcast television where the signal is 
+transmitted over the air and viewed on screen. It 
+is important that CCTV systems provide quality video images in an easily re-playable form to third parties, such as law enforcement agencies. This can be critical should there be a need to use 
+the images as evidence of a crime. This article 
+does not cover driver only operation or level crossing CCTV systems. 
+CCTV technology is improving all the time with 
+better performance in areas such as digital equipment options, data storage, component 
+miniaturisation, wireless communications, and video image analysis. A CCTV system for a railway may be part of a multi-layered security 
+system. Undertaking a comprehensive needs 
+assessment at the start of any project helps to ensure all required functionality is identified. Clear requirements, a comprehensive site survey, compliance with legislation and proper equipment 
+selection will all contribute to the design of a 
+good CCTV system. 
+In order to properly implement a CCTV system 
+and to highlight any engineering, operational, 
+management and monitoring issues, the site-specific characteristics need to be assessed by a knowledgeable multidisciplinary team with the right level of expertise. This could include 
+operators, security personnel, power and 
+structural engineers to identify key functional and operational needs and restrictions. Functional requirements will include determining the area of 
+surveillance, locations or assets that will benefit 
+from CCTV surveillance. Operational requirements will define what information and detail the system will be expected to provide. Factors to consider may include the viewing scope of the 
+area, the ability to recognise someone walking 
+through a barrier or door, and to read vehicle registration numbers. 
+There are four key requirements that need to be 
+covered in the initial design.
+• Functional – to define the precise area of camera coverage such as surveillance of perimeters, storage areas, key assets and 
+entrances and exits.
+• Operational – to define the capabilities of the 
+CCTV system components that will provide the expected information under all operating 
+conditions. These will include security, day and 
+night operation, lighting, weather conditions, vibration and temperature changes. 
+• Infrastructure – to include installation constraints for installing or accessing fibre 
+“Involving human 
+factors specialists 
+and local operators will help to identify the location of displays to maximise their effectiveness”
+“It is important 
+that CCTV systems provide quality video 
+images in an 
+easily re-playable 
+form” York station with CCTV 
+coverage of all train 
+movements. This camera 
+is broadcasting live, see  
+irse.info/zibhw . 
+Photo Network Rail.
+Most cameras are now 
+fixed.
+ IRSE News |  Issue 271  |  November 2020
+15
+and /or, copper data cables, wireless networks 
+access, power, listed building constraints, and 
+people with reduced mobility. Authorisation for works on listed buildings may be required 
+before any works commence.
+• Video retention – to define the video retention 
+and storage needs. These should take into 
+account security and data protection, which 
+may be subject to legislation.
+Whenever possible, CCTV systems should be 
+included in the planning and design stage of 
+any new facility, building or asset to ensure all necessary infrastructure requirements for 
+the CCTV are adequately incorporated into 
+the overall design. Factors to consider in the 
+detailed design of any CCTV system include: the number and locations of cameras including lens selection, cabling and cable containment together 
+with fixing arrangements; lighting levels for all 
+proposed camera coverage areas; unhindered 
+but secure camera access for both installation and maintenance; no interference or blocking of signal sighting; power requirements, including 
+appropriate separation of power and data cables to comply with standards and reduction of interference.
+Inadequate power can be a problem with CCTV 
+equipment and can often cause interference. 
+Proper system performance requires a clean and 
+reliable power source. Therefore, the design may 
+need to specify power conditioning or backups, 
+to ensure the quality of the video across the 
+entire system is unaffected by primary power 
+source disruption. Placing low-voltage power components near high-voltage lines can induce 
+currents in the low-voltage system, presenting 
+hazards. A power source located too far away can cause power fluctuations and may require 
+larger conductor sizes to reduce voltage drop. 
+Therefore, it is advisable to locate the power 
+source close to the CCTV control equipment and to include an Uninterruptible Power Supply (UPS) to protect equipment and ensure the power 
+supply is stable. 
+Older CCTV systems generally used co-axial 
+cable to connect cameras to the control hub, but nowadays video transmission for CCTV is normally via unshielded twisted pair (UTP) or fibre 
+cable. Many problems with video image quality 
+can be avoided by selecting the appropriate transmission media and following manufacturer’s 
+recommended installation techniques and 
+procedures. As CCTV technology has evolved, video transmission has progressed from analogue to digital equipment, often with an Internet Protocol (IP) capability to transmit compressed 
+video as digital data. Some railways now mandate 
+all new CCTV systems will use IP, but analogue systems using digital recording are still used 
+by some railways as IP CCTV systems can be complex to configure.
+IP CCTV solutions, while complicated, do offer 
+more facilities and can be integrated seamlessly with other control systems to deliver integrated 
+centralised control and monitoring. Data from 
+other security devices and from business systems can be linked with IP CCTV images and recordings while cameras can be easily controlled and 
+monitored from web browsers. 
+CCTV systems regularly need to be checked 
+to meet changing operational requirements and equipment obsolescence so the ability 
+to easily incorporate hardware and software 
+updates should be considered. Using existing 
+CCTV workstations
+local or remote
+FirewallTo Station Management
+and other systems
+Video
+storageCCTV
+control
+systemRouterPan, tilt, zoom
+(PTZ)
+Fixed camerasPower over 
+Ethernet
+(POE)Overview diagram  
+of a typical station  CCTV system.“Nowadays video transmission for CCTV is normally via unshielded twisted pair (UTP) or fibre cable”
+ IRSE News |  Issue 271  |  November 2020
+16
+CCTV infrastructure such as cameras, housings 
+and cable runs may reduce costs, but CCTV equipment is improving all the time, as the 
+capabilities of CCTV components advances. 
+Replacing old equipment and infrastructure may therefore improve system performance and be a more cost-effective solution. 
+Station Management Systems (SMS) are typically 
+deployed at large stations or in a group of stations along a route managed from a central location. The SMS is the focal point for station operations 
+and provides the operator with a user-friendly, 
+functional environment from which to monitor and control all station systems. The SMS should gather information from many sources and 
+provide control of the various individual station 
+systems, such as CCTV, public address, customer information and alarm systems. Integrating the control and operation of the CCTV system in a clear, consistent and integrated format will help to 
+provide efficient and cost effective management 
+of the station. The SMS will usually be interfaced with a fire alarm system so that in the event of an alarm activation, cameras covering the area will 
+automatically be displayed to the operator. 
+A CCTV system is built up from a number of 
+different components.Cameras
+CCTV cameras are either fixed or pan-tilt-zoom (PTZ). Fixed cameras are intended to constantly view a single scene, while PTZ cameras are motor 
+driven and can pan left or right, tilt up or down, 
+and zoom in or out to instantly customise the view as needed. Most systems nowadays use fixed cameras to view and record complete areas as 
+PTZ cameras require full time operators. 
+An Ingress Protection (also known as IP and not 
+to be confused with Internet Protocol) rating is to protect equipment from attack from solid 
+foreign objects e.g. stone throwing, and from 
+harmful effects due to the ingress of water. Ingress Protection IP always has a number. So cameras should typically have an IP rating of IP34 when 
+used internally and IP65 for external cameras. The 
+“IK” rating or code is an international standard to define the level of resistance of enclosures to mechanical impacts. Cameras are recommended to have an IK vandalism rating of IK10, along with 
+a typical operating temperature range of -15C 
+to 45C external to the housing. This may need to be revised depending on local conditions. The minimum resolution of cameras in a railway 
+system is typically 720 pixels, and systems with 
+1080p resolution or higher are often provided.
+Clockwise from left:
+A CCTV camera and 
+loudspeaker sharing a lamppost.  Photo A N Hurst.
+Fixed camera installation 
+in a concourse area.
+A similar camera to that 
+in the first photo, but mounted on a passenger display sign.
+“Most systems 
+nowadays use 
+fixed cameras to 
+view and record 
+complete areas 
+as PTZ cameras require full time operators”
+ IRSE News |  Issue 271  |  November 2020
+17
+Despite increasing use of IP network cameras, 
+analogue cameras still exist in many older systems since there may be a high cost involved in 
+upgrading and converting to a new transmission 
+network. Analogue cameras can also transmit high definition pictures, making them appropriate for various surveillance needs. These cameras 
+also have cyber security advantages because 
+the cable connections require a physical access for them to be breached or damaged. They are easier to configure, but will not provide as many features as IP systems.
+Power over Ethernet (PoE) IP cameras will not 
+generally require a local power supply but must be able to operate in the railway environment. PoE 
+extenders will need to provide sufficient power 
+to meet the camera’s operational requirements. Connections to individual cameras can be via wireless such as Wi-Fi, but a local power supply will be required and the wireless connections 
+should be encrypted for security. Possible 
+interference with other Wi-Fi channels in the area should be assessed. 
+Day/night cameras and low-light or night vision 
+cameras can be used to capture images in dark environments. Low-light cameras are designed to perform in some level of ambient lighting, such as indoor conditions, station lighting, or a full moon 
+but are not intended for use in complete darkness. 
+Night vision cameras used in CCTV systems typically consist of near-infrared (NIR) and infrared (IR) cameras with built-in IR illuminators and are 
+designed to allow the viewing of night scenes. 
+The IR light emitted can be at wavelengths that are invisible to the human eye. Some operational environments may require a thermal imaging camera to detect situations even if conditions 
+such as fog or smoke are encountered. These 
+detect infrared or heat radiation that is invisible to the human eye. 
+The most complex CCTV systems may 
+incorporate hundreds of cameras and sensors integrated into one overall security network. With larger quantities of data being collected, it is essential that the system be capable of retaining data in accordance with a company’s policies and procedures, together with data protection 
+and CCTV legislation. EMC requirements will 
+need to be considered, such as defined in standard EN 50121-4.
+Camera lenses
+A lens has components and characteristics that determine its capabilities. These include the focal length, type of aperture and focus control. 
+The focal length and size of the image sensor 
+determine the angle from which the lens accepts light to focus on the image sensor. Any lens with a focal length greater than the standard lens is a 
+telephoto lens, while a lens with a focal length less 
+than the standard lens is a wide-angle lens. 
+Camera lenses shall normally be fitted with either 
+an auto-iris fixed lens, vari-focal lens or zoom 
+lens. Remote vari-focus, zoom, controlled back 
+focus and remote camera alignment will all contribute to efficient operation and maintenance of the system, and will eliminate the need for 
+working at height to adjust the camera.
+Cameras mounted on extendable or hinged posts 
+will facilitate easy maintenance and minimise working at height during both installation and 
+maintenance, but no hinged or extendable 
+post should come close to any electric traction system or other hazards. Fixed camera mounts with adjustable horizontal and vertical planes 
+will maximise operational effectiveness. Camera 
+positions should be selected to enable routine access (for cleaning and replacement) without the need for blocking train movements or isolating overhead power. Individual and isolated columns 
+supporting lighting or cameras should be 
+positioned to avoid creating obstructions to the movement of station users. The camera assembly, housing and sunshield should take account of 
+the effects of sunlight during the course of the 
+day and also the seasons of the year in order to maintain the viewing requirements of the system.
+“Power over 
+Ethernet (PoE) IP 
+cameras will not 
+generally require 
+a local power 
+supply”
+“Notices may 
+be required at locations in areas of CCTV coverage to inform members of the public that an area is being monitored and recorded”
+From left. Traditional  camera housing and a dome camera housing.
+ IRSE News |  Issue 271  |  November 2020
+18
+Notices may be required at locations in areas 
+of CCTV coverage to inform members of the 
+public that an area is being monitored and 
+recorded. These will need to be provided in accordance with national and local legislation, 
+such as the General Data Protection Regulation 
+(GDPR) and the UK Data Protection Act 1998.
+CCTV workstation and monitors
+To provide good picture quality, the minimum monitor resolution should be at least that of 
+the cameras. Multiple camera images at original 
+resolution may be required for viewing onto a high-resolution screen, so for example, a 
+30” 4K resolution monitor could display 4 x 
+15” 1080p resolution cameras. The camera identification should be easily available so the 
+operator knows where they are looking.
+A bank of monitors to create a ‘video wall’ 
+is commonplace in larger control centres. These can be programmed to periodically 
+change the picture displayed on the monitors to help relieve the boredom from seeing the 
+same scene all the time and to concentrate 
+the multitude of camera images on to a sensible number of screens. A typical railway 
+CCTV control room could have 500 cameras covering a route with about 50 monitors in 
+the video wall.
+An ergonomic assessment of the operator’s 
+workstation location should be undertaken 
+to determine the most appropriate size and position. Providing the control systems for 
+camera selection and PTZ operation with 
+industry standard telemetry protocols with an open architecture, will help with the 
+whole life support of the CCTV system and 
+interoperability with other systems.
+An agreed format for event reporting and 
+alarms will be required and telemetry data from 
+all camera input channels with time/date and camera description will provide a consistent 
+format to identify station, camera location and 
+camera number. This will assist the operation and management of the system, especially if 
+the information is consistent with details in the 
+asset register.
+Monitors may be required for public behaviour 
+and surveillance monitoring, for example at ticket 
+gate lines, so higher performance specifications should be considered to enhance visibility 
+of the display. Public surveillance monitors may require additional vandalism and ingress 
+protection suitable for the location in which the monitor is being installed, such as a minimum IP65 for all external monitors and IP32 for all internal monitors.
+Control system
+ONVIF (Open Network Video Interface Forum) 
+is an open industry forum for the interface of physical IP-based security products. The ONVIF 
+specification covers how IP products within video surveillance and other physical security areas can communicate with each other. Therefore, 
+procuring CCTV systems in compliance with the ONVIF specification will assist interoperability 
+between network video products from different 
+suppliers. ONVIF aims to provide standardisation 
+of communication between IP-based physical 
+security products to give interoperability regardless of the brand, and is open to all 
+companies and organisations. Using ONVIF 
+equipment will help with not becoming locked in to any particular proprietary technical solution 
+devised by individual manufacturers.
+System security is important so access to the 
+system and any recorded images should be strictly 
+controlled to prevent tampering or unauthorised 
+viewing. This could be via electronic access 
+controls, including but not limited to passwords or encryption, to prevent unauthorised access 
+to the building, system and recordings, with an 
+audit trail and record of who accessed the system and when. Different levels of user privileges, 
+such as Administrator, User and Maintainer, may be appropriate. Further information can 
+be found in BSI document ‘Code of Practice 
+“Recorded 
+images should  
+be strictly 
+controlled 
+to prevent 
+tampering or 
+unauthorised 
+viewing”
+“External remote 
+access will also 
+need security 
+via firewalls and 
+compliance with individual 
+company’s 
+security policies”
+A number of dome cameras providing comprehensive monitoring of a ticket barrier.
+ IRSE News |  Issue 271  |  November 2020
+19
+for Legal Admissibility of Information Stored 
+Electronically’ (BIP0008) or from local Police Crime Reduction Officers.
+External remote access will also need security 
+via firewalls and compliance with individual company’s security policies. The system should 
+prevent transmitted images from being corrupted 
+or modified in transit. Where the proposed system does not provide the specified security functions, the network or transmission medium used could be employed to provide equivalent security.
+Video analytics such as the detection of unusual 
+movement in a normally static picture may be specified in the design, as these can further 
+improve the overall effectiveness of the CCTV 
+security solution. Video analytics monitor the video streams in near real-time and automatically create security alerts when recognising specific types of events and activities. Video analytics 
+can also be used for analysing historical data 
+to identify specific incidents and patterns (forensic analysis).
+Using a video analytics system to automatically 
+monitor camera video feeds and providing alerts for events of interest enables efficiency and cost reductions by reducing the need for human concentration and helps operators to notice and 
+respond to threats sooner. Typical uses are for 
+perimeter protection intrusion management, crowd management and situation awareness. They can also be used for ‘footfall’ counting to 
+assist the commercialisation of retail space on 
+stations and passenger loading on trains.
+On initial installation, consideration should be 
+given to fit spare switching, optical and Cat 5E/6 
+copper cable (where appropriate) for at least an 
+additional 10 per cent spare capacity in agreement with stakeholders’ policy. This will allow expansion for future requirements.Video storage
+The system will need to store recordings for all connected cameras for a time period of typically 31 days so as to assist with any post incident 
+investigations. All video data once past the stated 
+time period should be automatically deleted unless marked for retention. A facility for local or remote users to mark specific pictures or 
+sequences identified as relevant to an investigation 
+for retention should be considered. To optimise storage capacity, agreement from stakeholders should be obtained as to the circumstances in which images will be recorded for review and 
+at what resolution, together with date and time 
+stamping requirements. Care may need to be taken that any video compression does not compromise video quality.
+Clocks
+Accurate clocks are important for a smooth-running railway, and telecoms engineers in many railway companies have provided clock 
+systems for many years. Originally they were 
+provided using centrally located ‘master clocks’ communicating with slave clocks via telecoms cables. More recently clocks are Global Navigation 
+Satellite System (GNSS) controlled, so just need 
+a power supply and possibly an external antenna to receive the satellite signal. The positioning of clocks needs to take into account similar criteria to PA, CIS and CCTV systems with regards 
+to height, maintenance and not obstructing 
+signal sighting.   
+Internet connection for trains
+Most train passengers now have an expectation that a connection to the internet will be available on trains. With an on-board internet connection, 
+real time ticket sales via debit/credit card are 
+possible, along with seat occupancy reporting and real time seat reservations. Communications 
+An historic clock at 
+London Victoria station, 
+mounted next to several very modern speaker arrays.Photo Institute of Sound, Communication and Vision Engineers (ISCVE).
+“Accurate clocks are important for a smooth-running railway“
+“The positioning 
+of clocks needs 
+to take into 
+account similar 
+criteria to PA, 
+CIS and CCTV 
+systems with 
+regards to height, 
+maintenance and 
+not obstructing 
+signal sighting”
+ IRSE News |  Issue 271  |  November 2020
+20
+and preventative maintenance are also key to 
+enhancing operational efficiency. This could 
+include data to monitor and manage the train, and if adequate bandwidth is available real time 
+forward and rear facing CCTV cameras for track and signalling maintenance. While GSM-R will 
+provide the wireless connection for ERTMS /
+CBTC movement authority, it does not have 
+sufficient capacity for train Wi-Fi applications and use of public 4G or 5G LTE networks is more 
+usual for provision of the internet connection. 
+The replacement for GSM-R, known as FRMCS 
+(Future Radio Mobile Communication System), is planned to provide for all train connectivity requirements, including business and passenger communications.
+To improve or provide an internet connection on 
+trains it is likely to require equipment both on the 
+infrastructure and train. Like many applications, 
+such as operational voice and ETCS/CBTC, this 
+will require close working between rolling stock 
+and S&T engineers, and for each to have an appreciation of the engineering principles for both infrastructure and trains. 
+By their construction, train vehicles create 
+attenuation which degrades the usable signal in the train. The degree of attenuation varies between 5 to 35dB depending on the rail vehicle profile and a loss of 3dB results in halving the available power. The on-train user experience can vary as a result of the differing levels of signal attenuation due to a significant mix of different 
+devices, with an increasing trend towards the use 
+of multiband smartphones and tablets. Multiband 
+devices incorporate wider band receivers which 
+weaken the performance for any one single band, 
+and coupled with multiband antennas becoming 
+integrated into the handsets themselves makes 
+reception on-board trains even more challenging. 
+There is a significant cost involved in the 
+design and implementation of additional public 
+operator radio sites along rail routes and careful consideration is required for any additional public radio coverage to avoid signal interference with GSM-R and FRMCS.Internet connectivity can be improved by 
+providing digital on-board repeaters (D-OBR). A 
+D-OBR is an active multi-band, multi-operator repeater which is designed to provide coverage within train vehicles by amplifying and re-radiating 
+(repeating) the external 2G, 3G and 4G/LTE mobile 
+operator signals through dedicated ceiling-
+mounted antennas. A D-OBR will provide Internet 
+access to mobile phones without a Wi-Fi facility; however, most passengers now expect Wi-Fi to be available, although some train operators 
+have ‘quiet coaches’ to restrict nuisance use by 
+some travellers who can adversely impact the 
+journey experience. 
+One or more external mounted wideband 
+antennas can be provided on trains and 
+connected to a communications device known 
+as a Mobile Communications Gateway (MCG). A wideband antenna capable of receiving a wide range of Mobile Network Operator (MNO) 
+services and 2.5GHz or 5GHz point to point Wi-Fi 
+connections at stations can be provided, with 
+6GHz Wi-Fi systems also being introduced. Care 
+will be needed on the location of the wideband 
+train antennae so they do not interfere with the train GSM-R antenna.
+Antennae are one of the most critical items to 
+deliver good connectivity on and off the train, 
+and creating an efficient antenna solution will 
+do much to improve system efficiency. Many of 
+the radio frequency problems associated with 
+antennae also stem from poor fitment of feeder cables, which should be installed in accordance 
+with the manufacturer’s instructions.
+The MCG (or number of MCGs) provides ‘a 
+cloud’ of connectivity to the train via a number 
+of MNO services and external Wi-Fi connections 
+aggregated together. Fixed Wi-Fi at stations 
+or trackside is a good way of enhancing the 
+connectivity as this is within the control of the rail 
+industry. At terminal stations it can provide a good link to a train and this is where many people open 
+their device and ‘log on’. Wi-Fi systems are ‘licence free’ so care may need to be taken to prevent interference from other Wi-Fi systems, which 
+could be located away from the railway. 
+Most train passengers 
+now have an expectation 
+that a connection to the 
+internet will be available 
+on trains.
+Photo Icomera.“Antennas are 
+one of the most 
+critical items 
+to deliver good 
+connectivity on 
+and off the train”
+ IRSE News |  Issue 271  |  November 2020
+21
+Paul Darlington CEng, FIET, FIRSE, joined the S&T department 
+of the London Midland Region of British Rail in 1975 as a 
+trainee telecoms technician. After maintaining telephone exchanges, he became an instructor at the regional S&T 
+training centre. In the 1980s he moved to the telecoms 
+project office in Birmingham and was involved in designing and implementing CIS, CCTV, SPT and radio systems.  
+Moving to Railtrack in 1994 Paul led the asset management 
+of telecoms for the north west of England and became engineering manager for all disciplines. In 2008 he moved to London as head of telecoms engineering for Network Rail and finished his full-time career as route asset manager 
+signalling in Manchester. Paul also led the work to enhance 
+the Network Rail network with IP, which led to the creation of Network Rail Telecoms (NRT) and the Network Rail FTNx IP network. He also chaired the safety approval panel for 
+the GSM-R Network.
+Retiring in 2012, today Paul is an engineering writer, managing 
+editor for IRSE News and also interviews applicants for professional registration with the IET and IRSE.Trevor Foulkes MA, CEng, FIRSE joined British Rail in 1979 as a sponsored management trainee engineer. After graduating from Fitzwilliam College, Cambridge his training was based in the S&T department of the Western Region, followed by a series of roles in the design of systems and the 
+management of technicians and engineers.
+In 1994 Trevor joined Railtrack and specified telecoms 
+works for the south and west of the country after which 
+he joined HQ and set national standards for equipment. 
+He then joined the West Coast Main Line (WCML) resignalling team in 1996.
+In 2000, he led the business case development for the 
+telecoms network, now known as the Fixed Telecom 
+Network (FTN), before becoming the design authority for the FTN and GSM-R systems. In 2012, he was seconded to the High Speed 2 project to develop the control, command 
+& signal engineering design. He also led the Spectrum 
+Group of the UIC project developing the next generation of operational radio to replace GSM-R.
+Trevor retired in 2015 and is chair of the London & 
+South-East Section of the IRSE and has assisted with the 
+telecoms aspects of the new Certificate in Railway Control Engineering Fundamentals (module A).About the authors ...The connectivity to the MCG may also include satellite connections, although some systems can be troubled by higher latency times to and from a moving train. A train compares 
+unfavourably with a more stable platform like an aircraft, 
+which is how an internet connection is provided in the air industry. Satellite communications will not work in tunnels or deep cuttings. 
+An acceptable customer service in order to support email and 
+social media browsing can be provided with a data bandwidth as low as a few hundred kbits/s, but obviously the more bandwidth the better. Limiting each customer to a maximum 
+will help to provide an acceptable service to all customers 
+on the train. In order to provide a reliable non-discriminatory service, certain high bandwidth applications, such as video and audio streaming services or peer-to-peer file sharing, may need 
+filtering and restricting. On train bandwidth requirements will 
+vary depending on the number of active Wi-Fi customers and may increase as passengers become aware of Wi-Fi availability, therefore additional bandwidth should always be planned for.
+Final thoughts
+So, given all that has been covered in both parts of the back to basics of railway telecoms, what makes railway telecoms different from providing a public telecoms network?
+Many pieces of equipment can be used for railway and public 
+telecommunications e.g. cables, transmission and exchange equipment. There are pieces of equipment which are specific 
+to the railway such as signalling centre concentrators and 
+GSM-R cab radios. These items are normally developed to provide a feature which is unique to the railway – e.g. using the GSM-R frequency bands or needing to be designed to prevent an activity which may cause risk, such as two drivers speaking 
+to a signaller at the same time. The equipment also has to 
+operate correctly in the railway environment which is normally harsher than an office environment. Factors to take into account include Electromagnetic Compatibility (EMC), vibration, 
+temperature, and humidity.Railway telecoms is managed in a different way to a public 
+telephone network. An example would be that railway operators expect any engineering or station works that will disrupt the train service, to be pre-planned, agreed with them and to be 
+told when a facility is restored. Similarly, if a significant fault 
+occurs it has to be investigated to ascertain the root cause so that, if necessary, steps can be taken to prevent recurrence. Such situations demand telecommunication requirements that may be difficult to obtain from the service provided by a public 
+telecom operator.
+A railway telecom engineer is expected to understand the rules 
+and procedures employed on the railway so that when they are 
+designing systems to support the operation, they can define 
+what functionality is required and also understand the safety and performance implications of any failures. So if an off the shelf piece of equipment is used, the engineer needs to be sure that it is fit for the purpose intended, for example, it provides 
+sufficient protection to be used in places of high induced 
+voltages or vibration.
+If it is decided to use a public telephone system (fixed or 
+mobile) to support a railway application, then the possible 
+shortcomings of using the standard facilities should be considered. For instance, the radio coverage may change over time and not cover areas of the track. A public operator may not be able to provide diversity between two circuits for the last few 
+miles at a reasonable cost. The public service may be turned 
+off for maintenance overnight and at short notice. If these shortcomings are acceptable then the use of public services can provide a cost-effective solution for some railways.
+There may be a temptation for some governments and railway 
+authorities to ‘sell off’ the railway telecoms assets and resource to raise finance or for commercial purposes. This has occurred several times across the world. However, in nearly every 
+example, the railway authority has had to buy back or re-install 
+its own telecoms infrastructure, plus rebuilding a telecoms workforce. Telecoms is a vital part of railways operations and with the increasing use of digital signalling systems and the 
+internet of things, it is becoming ever more important. 

@@ -1,0 +1,250 @@
+ICS 45.020 
+s 63 
+T/CAMET 04013.3-2018 
+~*~~~~ ¥~~G~~$~h 
+t~ffilj *~it ( CBTC ) 1i~1i~I~¥*.VJm 
+~3~B7t: £ft~*~14= 
+Urban rail transit- Engineering specification for 
+interoperability of communication based train control system 
+Part 3: Basic delivery conditions 
+2018-09-10 ~15 2018-12-31 ~~ 
+T/CAMET 04013.3-2018 
+ifu'~ ........................... ............................. ......................... VII 
+51~ ....................... ................................. ......................... Vlll 
+1 111Ern .............................................................................. 1 
+2 ~111tt51ffl:)c{Lj: ..................... .......................................... 1 
+3 #i-B-5ffl~~i:g. .................................................................. 1 
+3. 1 #if\· ........................................................................ 2 
+3. 2 i:t~~-m ............................. .................................. ...... 3 
+4 ¥*~* ................................ ....................................... . 4 
+4. 1 -mt~Jll.;;£ .................................................................. 4 
+4.2 ~J-13~* ....................... ........................................ ... 4 
+4. 3 tl~~~* ........................................................ .......... 6 
+v 
+T/CAMET 04013. 3-2018 
+T I CAMET 04013 { ~ m $it:@ X :1m ¥ =f :1m {~ t¥1 jU !j:: :)g fj 1£ tM Jfo. m 
+( CBTC) 1f~1f:@I;f£~ ]tiD51- :1-J ~""f.=: -i'-$51-: 
+-~ 1 $51-: Il£i9:1t; 
+-~ 2 $51- :1C~i.ift5 ; 
+-~ 3 $51- :xf1¥21s:~flf o 
+2$:$51-~ T/CAMET 04013 t¥1~ 3 $51-o 
+2$:$51-rti:ft ~ GB/T l. 1-2009 ~I±\B9~ Jil.Ji!1Jffil1ito 
+•~•*=ms*~~® ~3~n~~~~ '*W1tt¥J~~m~~~m 
+iJ!JJiJ ~ ®~ ~IJ i¥J Jft{f o 
+*'m51t~~OO~m$Jt:iltx~~~~*•*~~~~~-l±\ o 
+21s:'m55t ~~OO~m$Jt:iltx:im ~~Bo o 
+*W 1tffil1iL~fiL: :~1Xm$Jt:iltx:~m < ~ ~) ~ ~&0PJ ,x~f -'1-~JN: fJi 
+~~&0PJ ,£1Xmti'JLmx:imi5t itW~~~ r~IH~1fi~PJ ,:f~g~~ia:it~~ 
+;mm JNfJi~ ~&0PJ ,:ltffi ~Jm~ f~1~%M~ia:it~~ ~~ f1&0PJ ,wrrr~ 
+~W~JN:ffi~~0PJ,~OO~:il!W~~R~M~~~0PJ:im~~%Wf 
+~EJT 0 
+21s:$51-3::~®1;J:A: t.lfU EJ ffi.: ~ IY:l, ~fffr1C, 5*~, ~fffr~, 5*Wt5, 
+~1'15 ,ifutr~* ,:$ r~IXJ IJ ,.:Efm,JDZ ~~ ,:$itt]:,9lE~~,:$~,J.Wiml,*~'~ -~~ ; 
+'¢i~m ::$~i% '*~ ,JFX~ ,;J;[5~~, 51E#!~, 51E ~ ,£:ii4iL 51:HJJ:~tt€,~~r, 
+*fffr:X. '*~~ ,xl£~ ,1f~ '**~, Ml ~~J~ ,51E"TZ: ,:XtJif:lj!-o 
+VII 
+T/CAMET 04013.3-2018 
+51 
+~~m~~~m~m~~•~.~~*•g~m~m~~li&li~ 
+t¥.J~~ ,itiU~tJf~ffl J~f7lffi~¥ ,1X*%mJ?(r.iJM"~~JiU<J 13 t~, fli-tJ;£~ 
+ffl~:@:~~~ =f iffi {J'ij a<j jU $:IE fit£ffjlj * ~ ( CBTC) li&li~ * jU ffi 1* 
+t~nL 
+~*~-M~M (~ffl~:i!l~iffi ~=f~M~~$:1Efit£~*~ 
+( CBTC) li&li:im * ~~_m 111 H ~ffl ~ ili ~ illl £ =f ~ {J'ii 89 jU :$:IE 1'T t£ ffltJ 
+*~( CBTC) lill*liillH~ D ~.m111H~ffl $Jt:illx~ ¥=filll {J'if iJ<HU $:IE1'J 
+t£ ffltJ * ~ ( C B TC ) li Jl*li illl iYW ii\ ~_m ~rL > ( :IJ!X ffl !tJL:@: ~ illl ¥ =f Jill {J'if B<J jU :$ 
+ill 1'T t£ ffltJ * ~ ( C BTC ) B: & !:L illl I l~HJUrL >4 1'-~_m 111 ( 17 1'-:gi~ *) o 
+VDI 
+• T/CAMET 04013.3-2018 
+~m~m~~ •~~~~~*~fi 
+~ittl ~~ft ( CBTC) "Ji~"Ji~I~.¥~J\!$i! 
+m 3 $~:~ft£*~1tt= 
+T/CAMET 04013 1¥.1:<$:$it..ii....-jiijjji.llt. 
+JfX1L:@ 5I: 1tBt B<.l ¥:<$: ~> 
+2 
+{4 , {JJ9T 7.3: B WJ (f<J Jt&:<$: ~ llll=F~~~ ----~ 
+Jt&:<$: ( §ts 19f:ff B<J fti I& •) ~~~A ~ 
+GB/T 12758-2004 ~r!JttJI.jQj(iffi{R~.*~:imJi=J:tt:;¥:*-14 
+GB/T 30013-20 13 ~r!J!i'JI.itt5i:illliWiatili'8¥:<$:*-flJ: 
+GB 50157-2013 J&!f.ti9:it~!IHI1 
+CJ/T 407-2012 ~r!J$Jt:i1!xilll¥-=filll {~ 1¥.1 jU $ § $J 1£ fli!l .¥ ~ji ;if: 
+~* 
+GB/T 12758-2004 ,GB 50157-2013 :fl1 CJ/T 407-2012 W~a<.J]k r 
+~**~--~~ffi-=f:<$:S* o~7~-=f~ffl.~r~~~W7~~1¥.1 
+1:~;f§;k;;f:m o 
+T/CAMET 04013. 3-2018 
+3. 1 *iit 
+3. 1. 1 
+:!,til m *1L j!t 3t iM i* ~ urban rail transit signal 
+~m~~m~m~~*m~.AI•~~~•fi*mm®~$ilifi 
+t£fli!J ,:t<~fBJ 1Wit£fli!Jtz;;:.te 89 ,g_fij\ 0 
+[ GB/T 12758-2004 ,;;:1Ciii-~;E5( 3. 1] 
+3. 1. 2 
+¥TiM i* ag 9iJ $ ~ $11 communication based train control ( CBTC) 
+~M~*•~~~*~m••••89~*~~5E&tz;;:.te,~•*~ 
+~~ft•~mtz;;:.te~Rn•~fi:t<~~R89$e®•oo~••w~R89 
+~-~1tl$ 19 ZSfJt£flilJ*mo 
+[ CJ/T 407-2012,J;E5( 3. 1. 1] 
+3. 1. 3 
+~ 1d1 tJj ~ moving block 
+ft~~$~~-~$Z~99~~:1<~~-~~~--~~~5EN 
+JE .JH.lH1tl $ 99~~ ,J!J.t B<J~it W~1ti¥J ffi ~~~ o 
+[ GB/T 12758-2004 ,;;:.tei,-B-~};Ej( 3. 10] 
+3. 1.4 
+9iJ $ ~ 1d1 ~ iM automatic train control 
+m~*m~~~·~*~t£,:t<~~~®ilifit£~•tz*89~• 0 
+[ GB 50157-2013 ,};E.)( 2. 0. 37] 
+3. 1. 5 
+91J $ ~ 1d1 1Kf ~ automatic train supervision 
+.m m1u * s>t~tl *1'1 1u :-!f::ili1i 13 iYJNJE:it!:Im, mm1i*, ~~1 u :tr=:ili 1i 
+~-~tz;;:.te 8<3 ,g,fij\ 0 
+[ GB 50157-2013 ,;E.)( 2. 0. 38] 
+3. 1.6 
+2 91] $ ~ 1d1 ~ jp automatic train protection 
+~~~~jiJ$ili1i f8J!Wj,)tHJ.t~~,:it!:Jm:1<~®$fl.~t£tz;;:.fC89,g,fij\ o I 
+T/CAMET 04013. 3-2018 
+[ GB 50157-2013 ,)E)( 2. 0. 39] 
+3. 1. 7 
+9!J $ § Zd1 ill fr automatic train operation 
+fl f}J~~ 9!J!f:1JDI!, iffill!, ~$5fll$f1 :1fffi ,~~~1£ffjtj~;;f: Ei<J,~,f$ o 
+[ GB 50157-2013 ,;E)( 2. 0. 40] 
+3. 1. 8 
+i.tJHJLIIHJJi computer interlocking 
+v.,{itt'HJL~;;f::1'J~,c,,, El f}J~~:it!:fm jt'fft ,{J'i%V1~~1f'~;;f:i¥J.g,f$ 0 
+[ CJ/T 407-2012 ,;E)( 3. 1. 6] 
+3. 1.9 
+~ fi ill fr overline operation 
+~-~$~-~~-~v.,{~~~ffi~~-WB<J~M~.~-~~­
+:it!:A~* -~~Mill fi~~~fi~~~ o 
+3. 2 ~Piifi~ 
+AM: 9'1] $ fl iYJ~ JMem~ (Automati c Train Operation Mode) 
+ATC :9!J$ § Z9J1£itll (Automati c Train Control) 
+ATO: 9tl $ fl f}J~ fr (Automati c Train Operation) 
+ATP: 9tl $ fl fjJ ~ f? (Automatic Train Protection ) 
+ATS: 9tl $ Fl zgJl\[1£ (Automatic Train Supervision ) 
+CBTC :£-T:iill {~Ei<J9 !J$1£ffjtHUft. ( Communication Based Train Control) 
+CI: if~fjtJ{HJil (Computer Interlocking) 
+CM :9tl$ Fl iYJ~tf'm:rt( Coded Train Operating Mode) 
+DCS: l/&:milfli {~ *m< Data Communication System) 
+LEU :$JL~f!1-T.J¥1.5G(Li neside Electronic Unit) 
+MA: l$z;1J ~~~ (Movement Authority) 
+MSS:tiff' Jtt~*m( Maintenan ce Support System) 
+MTBF: f:MJ Mcllf:tffl] IWiB1fBJ (Mean Time Between Failure) 
+MTTR: il-:MJ$: ~t!J(~A1 fB] (Mean Time To Restoration) 
+RAMS: n]'~J'i¥.1, iiJ ffl •11, n]' tiE f~ ·11 til t:fi. ~f.£ (Reliability, Availabi lity, 
+3 
+T/CAMET 04013.3-2018 
+Maintainability ,Safety) 
+RM: II& fli-t] AI~ lJJe ( Restricted Train Operating Mode) 
+SIL: ~~;l'G~tl:~~ (Safety Integrity Level) 
+ZC: IR~:JQfli! J~ (Zone Controller) 
+4.1 -M~~ 
+4. 1. 1 .21>:~ CBTC {~%*~mB~;JH~1Ilf*1IJi~!h:rz:m =1fa9~~t\ i.iE 
+iiE~ o 
+4. 1. 2 ;:J:I;~.&~~B<Jflli~ CBTC f~%*~89:-!f:~l*~m B~~.!'}Eifflll~ 
+~~m ~1f~1Ilf*1IJi~~t\iiEiiE~ o 
+4. 1. 3 :t£:<$:~~'8'B<J{~%*~('E];~;;$:~Jt!!.jij ,;;$:~$~, fill~$~)~ 
+~~~~~m=1f891Ia1Iiill~~t\iiEiiE~ o 
+4. 1. 4 1I.1IJi~fmiJ.\~'.![~flj:J3!Z1~f~ GB/T 30013 89~3j(: o 
+4. 2 ~ffl~* 
+4. 2. 1 *~mtiJE!fJL:li.XJi1Ilf*1IJi~-T$~1l~Jt*il~ E'~JJI! a9y;g~, II 
+m~~$~ JI&:W-~-3~H±89~3j(: o 
+4. 2. 2 CBTC IR~miD"J?iLiE~ -~1tHJL.&4l-1Ilf*1Iiill~~ZIBJ 89·~~~ 
+( 0 Jt-1* I~ J11! § '11H£ /9 ft!O o 
+4. 2. 3 CBTC *~m3tt~x;.(r.i]~IO.J~~U.IiHll-Kl.f*il~!lil·tif4~ ~i/&89~U 
+$~~-T( 0A1*~~~3j(:/9ftE) o 
+4. 2. 4 1I•1Iiill {~-~ *~m.Jz:M=~-r~ IO.J :~E~-T:JQfli!J ~JJ'J a9 ~u :-!f:ri~ 
+4. 2. 5 1i JE1Ilf*1IJigrd!J: 89~U $, mz H~:tf:li~:r.t~rJ :-!f::JQfli!J ~JJIJ, ,8 :r.t~U 
+$:JQ~~~~lf*W:JQ~~~T~~~~:!Efi o 
+4. 2. 6 1I.1Iiill f~%*~T .~rJ:-!f:lliA:ff89~!JJe:m~-E!.ni : ~tl$ F1 29J~ 
+~Je:mJ:t (AM) ,~tl$ § i9J~t?t~tr-t ( CM) ,~I.HitlAI~lliem:r.t ( RM) o 
+4. 2. 7 ~tl$)).-~~RitllieA~ -~~ ~. ~WJ~:Itg~=fffi IO.J B<J~fli!J~ 
+JJtl a1, m fJ~~Jt~:t.J~tl :-!f:l*:ff 891Qfli!J ~JJ,J.& ~ ~:m:r.t~1IIl ~~; ~ M fE£t£fli!J 
+4 
+T/CAMET 04013.3-2018 
+-~~M*A~~~-~~-~~~V~$m£flfi~#~mflfi~ffi 
+~~~~~-~~-~-~;~M~~~-~~M*A~~~-~~­
+B1 • .*tlf.~*~~•itiwf~}~,. ~ rwrtu ii.ltn~ :±l ffi~m7F. ¥£ ii.IVL?ifiliAFo. 
+~fiA RMC~~fi o~~~~~*A~M~~-~~ffiA.*m£fl 
+fi~#B1 ·*frJu$~~-T~i!itJfi]}'Jfllm~fi~ o ~~~~;gli'J~ .~*J u$ 
+~"~:;;ff¥$~~~~1' o 
+4. 2. 8 w-1 ~ :i1 ~ :t.t Ju $ ~ ffjtJ m. }}IJ ~ M fBJ ~ i.9: Jl: .tt x iti W :ft1.ft x 1i 
+~IK : 
+a) JU$*A~xll!~ !Kffl, $~ ATP li*m IPJ~ !:i~X,~~~ 
+-~~~ATili* ~~$~~-~~xitiWB 
+~*m-ttx ;t,~ .~~~~ "U~ 
+b) 
+c) 
+d) 
+.~, .~:Jm~ ~ 
+4. 2. 9 JU$:(£1i~1i' -. 1 
+:jp ji! Rff; [$ 1? J)] "~ ' * f.J-% 'F jl -. 
+a) ~ ~JJ! ~ i~tlfi }}IJ 'F , .* tJf. ~ ~ %: I~ ll JU $ i!1! Rffi 8 ~ , * tJf. t& ~ IDi 
+11*Mr3f;tt:tft~, 3ffiJl:!:X:I~x1 ~*Mf~~ ; 
+b) ~ .~ ~ J!J $ ~ i!itJ ?:». }}IJ 'F , .* tJf. 1-J 1m%: ffl ¥ Ju $ i!1! liffi C ~ , * tJf. 
+t&~IW:1J~$:tk~fll*M3f;tt~~.rtl~$~*~~-ft~ 
+:j'jt~ ; 
+c) ~ l1 ~ ~ JU ~~ ~ ffjtJ ?:». J}IJ 'F , * tJf. ~ lJ; ~ 1~ ¥ JU 1~ i!1! Rffi 8 ~ , * 
+!Jf.t&~~:1J~$:tk~fll~-~.~~*~*l1~~~*~~· 
+}}IJ ~ ~ iYr&': ~ o 
+4. 2. 10 CBTC .* !Jf.~~*J U $$ f1 fljj:jp J)] "~ fO !tli E! f1 ( Slll ~)Wit? 
+5 
+T/CAMET 04013.3-2018 
+4. 2. 11 :9U$:(:£$~HJ.J£~1.li:ltf¥llf¥~Fo, $~ ATP J.iiZ.ftif1JJfx;J J.iiZ 
+001f::n~~OO$f1,#~~•* n~M&n~•~ o7f~1f::n~ ~~~ 
+ffi: § 7f § ~, § 7f A~,A:1f A3Co :(:£AM ~~~~T , ~~~ =-~Jffl 
+~~;CM ~~m~T ,{£!f~~-AJfA~ o 
+4. 2.12 $~ ATPi9:4iJ.iiZttHWEJf~~~;f1l~~I*Jw:!L~MJ.iiZ~ ATS, 
+ZC, CI :itHJ'im 1'i§ o 
+4. 2. 13 ~~~/f ~ r * 8~L9U $, J.iiZ:(:E ·Jt~iGJtZ k.( Ti9!~ iJt;Jfjp,ij JE iiit 
+a) $ ~ ~ !iJ?. 'ilff {j§f %iii( 4i ~] $ :ilR Jm f~f WJij iJt ; 
+h) *~~7'Hm.:r~utc~~ o?JJ~iJt; 
+c) :9U $ it1:I ~ llliiP Wl~ iJt; 
+d) :9U$ijj!J~Ne~ ,~tp IR3L&~~IlliiPRE:~iJt~; 
+e ) f¥ $ ffl./t ;ftl fTJ~ 79!~ iJt ; 
+f) 11{0 B;f ~& ~ WJIJ iJt ; 
+g) -il-ffl~~m~Ed~~~~)j!~iJt; 
+h ) :9U $ :ilHJ' ll1i iP ~~~ iJt ; 
+i) JL~i9:4i'W~iJt~.&&\~~$:~~~~~iJt ; 
+j) ;Jt{1f!.&'~~79!~1Jt o 
+4. 2.14 ~~iJtili'.S'ntrJ.iiZ.3?::9:ilH1' 20 ;R:ll:.ltimiJtilifr,.El:llitiF~JE 
+:2fs:~~ff:lli;f;F~* o 
+4. 2. 15 iEx1iiWJ.iiZx-t::~t~,~~~ili'!A.93.:ilH:YlL•lLim1i§%~tfE~ 
+j;Vd1= ,~tiP ,$~,~7'!~ ~ Uz:l:t!fi)ll 0 
+4. 2. 16 ~~,::~t~ilifr~1f::~1i§%~t~Er*liiZ~~Jt:*~fi£fi14, 
+kA ~ JEiJt~ ~~'fijpfr'J* o 
+4. 2. 11 lL•lLimiJt~~~*mliiZ5e JJ~1i§%~tfE ~Mt~imJiJt,~~ifoJ 
+iJt, _Elft;: P.~iJt~~3(Jmk.(,sf;i:~;fil CBTC m~jtfiU%J1Z -~ffi00iJt~ o 
+4. 3 ttfi~~* 
+::lt~~~$5CdlLalLim~RMiJtFo,J.iiZ7'Gdk.(T~~-iJt#~JE 
+ili 'S1&*: 
+6 
+T/CAMET 04013. 3-2018 
+a ) W: ~ 1f :!f:: fB] 1% B<J 19!1] iJt ; 
+b ) w: ~ tJT ~ fB] 1% B<J lYltl iJt 0 
+~~-~~~-~~fiB<JX ~~-~$.~-~Ifi~§4~~* 
+:&tffi89Jl>J( .§f5 {fl_7f ~I.Ff : 
+a) {l§i.!%-* ~1UtOtt$ 7f ~ ?lG r I 7J( 4iJ: JJ jtl-0 1!_; 
+b) t!i:l!lii\:~1f7f~r 20 7C ,jrJ:!f::~1fl!l>t.ml$7ff~r 98. 5%,jtl 
+$i[ }~$7f {~f 98%; 
+c) jrJ$113iliiE~~iriOri$:It;{7f~ r'<.JT 0. 5 (J(4lj:Jjj rJ01I!o 
+7 
+rr ~ ~ m $Jt ll1: 3C: :ii!1 FJJ-it: m i* tJ; 1fE 
+·*~-~~ ¥~~-~~*~ft 
+~iM ~~( CBTC) s~si1If.¥~m 
+~ 3 mHt = ~f-t¥;;t;:~-f4: 
+T/CAMET 04013.3-2018 
+* 
+<P OO~ill tll J:&U11Iili!0 ~ :±\ J:ti.:l<:fr 
+< 1 ooo54 ,:lt;Ji(rtiP! JJj£ 18:;(;"1< n wm 8 -B-) 
+0ffl fiil:IIJ:: http :I /www. tdpress. com 
+:(t;Ji(fgjjjGEpjjjrj;fjlili!i~~ EpliJrJ 
+lf;;jl:: 880 mrn xI 230 mrn 1/32 t:[g[E: 0. 5 *~: 12 T 
+2019 ~5 J'Jm 1 J:ti 2019 !f-5 J'J~ 1 ?XErJJP rJ 
+4$~ : 15113 . 5706 ~fft:l5 . 00 5G 
+1\UI.Jili'fl" iiH~ ~· ~ 
+JLJ!l;J~~illl:ti~45, ~IJ1:fErll!i1JJilliil:fiJJIIli, ii'f.Ei:<$:0 ~ R:ffffl! JIUH~IJ~ • 
+.:&:ffffllrl! if,: BlH021 )73174, m {010 )51873174 
+("") 
+CD __, 
+("") 

@@ -1,0 +1,900 @@
+18
+Paul Darlington and David FennerTrain detection – the basics
+This, second of a series of articles on ‘back 
+to basics’ themes, looks at the essentials 
+of train detection (or more accurately, as 
+we shall see, train absence detection). One 
+of the main safety requirements of a train 
+control systems is the need to know it is safe 
+to establish a route and provide movement 
+authority for a train. In particular, before 
+points or other moveable infrastructure 
+has its position changed or a train is given 
+permission to proceed, the relevant part 
+of the line has to be proved to be clear of 
+other trains. Thus, the ability to detect the 
+presence of a train on a particular stretch of 
+track is a key requirement for modern train 
+control. The principles of train detection will 
+be very familiar to experienced signalling 
+engineers, and so this article is intended for 
+members new to the industry.
+There are currently two main types of train 
+detection system, namely the track circuit and 
+the axle counter. Both of them use track-based 
+technology, and although other track-based 
+solutions have been trialled over the years 
+(including mass detectors, infrared and optical 
+detectors), none of these have been widely 
+adopted. We will look at both track circuits and 
+axle counters in some detail in this article.
+An alternative approach is to use train-based 
+technology, whereby the train determines its 
+location and communicates this information to 
+the interlocking and control centre on a regular 
+basis using a reliable secure communication link. 
+Various technical options exist, including:
+• Satellite positioning (Global Navigation Satellite 
+Systems – GNSS).
+• Odometry (counting wheel revolutions).
+• Video (by recognition of 
+infrastructure features).
+• Proprietary systems offered, in particular, 
+by Communication-Based Train Control 
+(CBTC) suppliers. These solutions are sometimes used in 
+combination to achieve the required degree 
+of positional accuracy, and they may also be 
+supplemented by equipment such as track-based 
+balises or RFID (radio frequency identification) tags 
+to periodically correct incremental positioning 
+errors. Train-borne positioning systems are a 
+standard feature of modern CBTC systems (which 
+often use moving block technology) and will be 
+for ERTMS Level 3 as well. We will explore this 
+subject further later in this article. 
+All train-borne positioning systems rely upon 
+some form of train to track communication 
+system so that the interlocking is regularly 
+provided with up-to-date information about 
+the train location. This may be a radio system, 
+or a short-range communication system such 
+as inductive loops in the track, Wi-Fi, or leaky 
+feeder technology. 
+Despite the growth of train-based technologies, 
+for the majority of railways around the world that 
+use train detection systems, the track circuit and 
+the axle counter continue to be the favoured 
+solutions. There are, of course, also many railways 
+which use little or no train detection technology 
+and rely instead on ‘absolute block’ methods of 
+working or ‘train orders’ (verbal communication 
+between the control centre and the train drivers).
+Track circuits
+The track circuit was originally used simply to 
+remind signallers that a train was present on a 
+particular section of track, not as an integral part 
+of the locking of points and signals. It was the 
+development of the track circuit that enabled the 
+full potential of ‘space interval’ signalling based 
+on track circuit block principles (continuous train 
+detection between signal boxes). It also enabled 
+signals to be provided that worked automatically 
+with the passage of trains. 
+The track circuit continuously proves the absence 
+of a train from a given section of track in a fail- 
+safe manner. It cannot prove the presence of a “There are two 
+main types of 
+technology 
+generally 
+used for train 
+detection”
+
+ IRSE News |  Issue 261  |  December 2019
+19
+train, since almost any failure mode will give the 
+same indication as if a train is present. By positively 
+proving the absence of a train, a track circuit can 
+be used to confirm that it is safe to set a route and 
+permit a train to proceed. The track circuit should 
+not be confused with a ‘rail circuit’, which is used 
+for non-fail-safe applications to positively prove 
+the presence of a train. 
+Fundamental design principles of 
+track circuits
+The most basic track circuit consists of a source 
+of electrical energy (a direct current – DC), fed 
+through an impedance and along the rails to a 
+boundary which is defined by a pair of Insulated 
+Rail Joints (IRJs are provided at both ends of the 
+track circuit to define the detection limits of the 
+track circuit). At the boundary a detection device, 
+typically a relay, is connected across the rails and 
+is energised by the direct current provided there is 
+no train present (see Figure 1). 
+Thus, the track circuit confirms the absence of a 
+train to the signalling system (track circuit clear). 
+The presence of metal wheels and axles of a train 
+within the track circuit boundaries will cause the 
+rails to be ‘short circuited.’ The increased current 
+flow results in a greater volt drop through the feed 
+impedance which, together with the shunting 
+effect of the short circuit, means the detector no 
+longer sees sufficient electrical energy to remain energised, and so it changes to the ‘de-energised’ 
+state. This state change informs the signalling 
+system that the track is ‘occupied’. 
+Any electrical short-circuit between the rails, 
+whether caused by a train or not, or any 
+disconnection within the circuit (for example a 
+cable being cut or falling off the rail), or a loss 
+of supply current, will cause the track circuit to 
+inform the signalling system it is occupied. This 
+means that virtually any equipment fault will cause 
+the system to ‘fail safe’ and thereby maintain 
+signals at red. Although safe, this behaviour can 
+result in unreliability, especially if the track circuit is 
+not set up or maintained correctly. A track circuit 
+operating device (e.g. ‘clips’) can also be used to 
+protect a train in an emergency. Correct operation 
+of a track circuit also depends upon good 
+electrical contact between a train’s wheels and the 
+rails, together with a continuous low-impedance 
+path between each wheel via the connecting axle 
+on the train. This will be discussed later.
+DC, AC and coded track circuits
+Simple as the track circuit may seem, there 
+are various ways of powering the system and 
+detecting the state of the track circuit (occupied or 
+clear), and all have their benefits and weaknesses. 
+The source of electrical energy may be any of 
+DC, AC at power frequencies (typically 50Hz), 
+AC at audio frequencies (a few thousand Hz), Electrical 
+source
+(feed)Detector
+(relay and 
+repeater 
+circuit)T
+TT
+TTrain wheel 
+setInsulated 
+Rail Joints 
+(IRJs)
+Figure 1 – The 
+fundamental principles 
+of the track circuit are 
+simple. A train travelling 
+between an electrical 
+source and detector 
+shorts out the current 
+flowing between them, 
+and the loss of current 
+at the detector indicates 
+that the absence of trains 
+can no longer be assured. 
+More modern devices use 
+coded, typical shift-keyed, 
+signals to offer more 
+immunity to complex 
+traction systems.
+Bombardier’s EBI Track 
+400 is typical of modern, 
+microprocessor-based 
+track circuits that use 
+coded waveforms to 
+provide traction immunity 
+and can operate without 
+insulated rail joints.
+Photo Bombardier.
+ IRSE News |  Issue 261  |  December 2019
+20
+a series of impulses or complex waveforms 
+including digital codes. Similarly, the detector may 
+be a simple relay, an AC ‘vane’ relay or a more 
+complex receiver tuned to a particular frequency 
+or pattern of signals. It should be noted that the 
+high volume of conductive metal in a rail results 
+in a high inductance and thus track circuits with 
+a high frequency component tend to be short in 
+length. Some track circuits can also act as a carrier 
+for coded signals that are passed to the train. 
+These are usually associated with ATP and early 
+ATO systems, and examples include TVM430, the 
+original ATP system used on French High-Speed 
+lines, and the original implementation of ATP with 
+ATO on the London Underground Victoria line. 
+The two rails on a railway are in practice not 
+perfectly insulated from each other. There is 
+always a leakage path between the two through 
+the rail fixings, the sleepers, the ballast and 
+the ground itself. This is known as the ballast 
+resistance. Its value is dependent upon the 
+condition of any rail insulation, the cleanliness of 
+the ballast, and the prevailing weather conditions. 
+It is inversely proportional to track circuit length. 
+High ballast resistance values are ideal for a 
+track circuit and may be obtained in dry/clean 
+conditions or during frosty weather, but wet 
+conditions may reduce the value significantly, 
+especially where there is bad drainage and/or 
+contamination from conductive materials in the 
+track-bed. So, if for instance the track is flooded, 
+the track circuit will show occupied and the signal 
+controlling the track section will remain at red. 
+Wet tunnels, sea walls and similar locations can be 
+a particular problem, as the conditions can vary 
+significantly on a frequent basis, which means that 
+the track circuits need to be repeatedly adjusted 
+to keep them working reliably and safely. 
+One difficulty with adjusting track circuits is 
+knowing the prevailing value of ballast resistance. 
+If a track circuit fails due to wet weather, it may 
+be possible to remedy the situation by reducing 
+the feed impedance. However, a too low feed 
+impedance can lead to trains not being detected 
+(a ‘wrong side failure’). This will occur when a low 
+feed impedance allows enough energy to reach 
+the detector despite a train standing on the track. 
+Some track circuits with highly variable ballast 
+conditions may need frequent, often seasonal, 
+adjustment to avoid this risk. This adjustment and testing currently has to be carried out manually, 
+putting staff out on the railway and therefore 
+placing them at risk, as well as being an expensive 
+and time-consuming use of resources.
+Rust films and contaminants
+The resistance through the train’s wheels and axles 
+is also an important factor, as it is the train which 
+shorts out the track circuit. There are several ways 
+in which the resistance of this short circuit may 
+increase, with detrimental effect on operation. 
+One way is the presence of a rust film on the 
+rail head or wheel. The mechanical strength of 
+light rust films is much reduced by the presence 
+of moisture, when the contaminant tends to 
+be squeezed out from the wheel/rail contact 
+patch. Therefore, lightly rusted rails will only 
+be a problem when dry. Very heavy rust, from 
+prolonged disuse of the track, or after re-
+railing with new rail, can result in track circuits 
+being incapable of detecting trains, especially 
+lightweight trains as they are not heavy enough to 
+penetrate the layer of rust. Therefore, care needs 
+to be taken after track relaying, when track circuits 
+should not be restored to full operation until a 
+good electrically conductive surface has been 
+created. One positive result from today’s crowded 
+railway on some routes is that busy lines have little 
+chance to rust, reducing the problem. However, 
+seldom-used branch lines, particularly in coastal 
+regions where rust formation is exacerbated by 
+salt, are at risk.
+Other contaminants that increase the electrical 
+resistance between the rails and the train’s wheels 
+can cause the same problems. Those associated 
+with falling leaves are generally limited to the 
+autumn, and are usually confined to known 
+locations, which may include built-up areas. 
+Leaves are drawn into the wheel–rail interface by 
+the passage of a train where they are squashed 
+into a pulp. This contaminates both the rail 
+and wheel, causing wheel-slip problems when 
+wet, and significantly increasing the electrical 
+resistance when dry. 
+Reasonably dry weather with little wind will cause 
+the leaves to fall gradually over a longer period, 
+and they will be reasonably sap-free when they 
+do fall. But high wind conditions will lead to a 
+sudden fall of sap-laden leaves, giving rise to the 
+worst conditions. 
+In many temperate 
+climates autumn leaf fall 
+can cause contamination 
+on the rail head, and 
+unreliable shunting of 
+track circuits.
+“Tread-braked 
+trains can 
+sometimes give 
+a better track 
+circuit shunt than 
+modern disc-
+braked trains”
+ IRSE News |  Issue 261  |  December 2019
+21
+Problems with coal dust and other similar 
+contaminants on the rail head tend to be confined 
+to collieries and other loading/unloading areas. 
+Sand contamination can also be a problem, 
+although not so much due to seaside locations, 
+but with slow-moving locomotives using 
+excessive amounts of sand for adhesion purposes. 
+In each of these cases, the effect is similar to 
+heavy rust. Problems can also occur with ballast 
+condition issues associated with carbon-based 
+contaminants, and of course heavy rain causing 
+puddles and floods can short out the track circuits.
+Train issues
+Where a thin film of contaminant insulates the 
+wheel from the rail, this can often be pierced if 
+there is a rough surface on the running face of the 
+wheel. The older style of tread brakes caused the 
+wheel tyres to be cleaned and roughened at each 
+brake application, whereas more modern disc-
+braked trains do not, and the tyres may be rolled 
+into a very smooth surface condition. Therefore 
+older tread-braked trains generally provided 
+better track circuit operation than modern 
+disc-braked trains. 
+Similarly, the axle weight has an effect, as a heavy 
+load will pierce a film more easily. Again, modern 
+lightweight trains, which are designed to minimise 
+track wear, cause more track circuit problems than 
+old-style heavy locomotive hauled trains. 
+To assist vehicles to shunt track circuits, a device 
+known as the ‘Track Circuit Assister’ (TCA) is 
+sometimes fitted to modern trains in Britain 
+to induce an electrical potential between the 
+wheelset and the rail head and thereby break 
+down any insulating film. Typically, a TCA consists 
+of a control unit and aerial with associated tuning 
+unit, mounted between a pair of wheelsets close 
+to the rails. These devices tend to be fitted to the 
+end bogies of the train because it is important, 
+especially around point work, that the extremities 
+of the train are detected so that the points cannot 
+be inadvertently moved at the wrong time.
+Insulation
+As has been described, any direct metallic 
+connection between the two rails will be 
+interpreted by the track circuit as a train and will cause the track circuit to show occupied. 
+Therefore, apart from the insulated rail joints or 
+block joints used to electrically separate sections 
+of line, the reliable operation of track circuits also 
+requires the provision of insulators to stop other 
+track components shorting out the track circuit. 
+At a set of points, for example, there are many 
+cross-rail connections – stretcher bars, point 
+motors and heating elements – all of which 
+need to be insulated, giving rise to quite 
+complex insulating and bonding arrangements. 
+In addition, the actual running rails cross at the 
+‘frog’ or ‘heel’ of the points, requiring insulated 
+rail joints and bonding in the switch rails to 
+transfer the polarity of the circuit to the other rail. 
+Designing track circuits to work reliably and safely 
+through complex switches and crossings can be 
+quite a challenge!
+Concrete sleepers incorporate a rubber pad under 
+the rail foot and moulded insulations where the 
+fixings bear on the top of the foot. These increase 
+ballast resistance to levels significantly higher than 
+can be obtained with timber sleepers. However, 
+the insulations can erode due to the vibration 
+of passing traffic and, consequently, require 
+inspection and periodical replacement – another 
+maintenance overhead. Steel sleepers are even 
+more of a problem. They are also insulated, of 
+course, but any degradation of that insulation will 
+result in severe problems. 
+Ultimately the maximum length of a track circuit 
+will be limited by the achievable ballast resistance, 
+its variability with prevailing environmental 
+conditions, and the level of reliability required. 
+It will also be influenced by interference from 
+electric traction, which is discussed below. In the 
+UK it would be reasonable to assume that these 
+factors limit a track circuit to a maximum of about 
+1500m, although isolated examples of longer 
+ones can be found.
+Bonding
+Bonding is the means by which the individual 
+components of the railway track are connected 
+together electrically for track circuit purposes. 
+The term also includes the additional electrical 
+connections necessary for the proper operation “Direct metallic 
+connection 
+between the 
+rails will cause 
+the track circuit 
+to show as 
+occupied”
+“Insulated 
+rail joints are 
+expensive, both 
+to install and to 
+maintain”
+The black art of bonding 
+in areas with track circuits 
+and third-rail traction is 
+very visible in this view 
+of Clapham Junction in 
+South London, UK. Look 
+out for impedance bonds, 
+traction cross-bonds, and 
+track circuit bonding in 
+this photo.  
+Photo Shutterstock/  
+Ian Stewart. 
+ IRSE News |  Issue 261  |  December 2019
+22
+of electric traction. For a track circuit to fail 
+safe (show occupied) in the event of a bonding 
+disconnection, it is necessary to bond all elements 
+of the track circuit in series, so that any one 
+failure breaks the circuit. In practice, in switches 
+and crossings it may not be physically possible to 
+arrange series bonding of every part of every rail.
+Later in the article we will deal with single rail 
+traction bonding (which only provides series 
+bonding for the track circuit signal rail as the 
+traction return is usually bonded in parallel 
+with other traction return paths); and ‘double 
+rail traction bonding’ (providing total series 
+bonding for a track circuit as well as both rails 
+for the traction return path). In the majority of 
+cases traction bonding through switches and 
+crossings is single rail traction where track 
+circuits are provided.
+Insulated rail joints
+IRJs are expensive, both to install and to maintain, 
+especially on tracks subjected to high speed, high 
+axle-weight traffic or where there is an intensive 
+service. A rail joint also presents an increased risk 
+of rail fracture, although now with factory made 
+six-hole glued joints this is less of a risk than with 
+older styles of IRJ. As mentioned above, they are 
+also required in areas of points and crossings, 
+which makes the railway less physically robust 
+than track engineers would wish. 
+It is also possible for the insulation in the IRJ to be 
+compromised, either by failure or by burring of the 
+top of the rail such that it bridges the insulating 
+element. This could cause a wrong side failure 
+because one track circuit supplies power to the 
+detection element of the next track circuit, across 
+the failed IRJ. For this reason, most simple DC and 
+low frequency AC track circuits connect to the 
+rails with opposite polarities either side of the IRJ 
+to ensure that, should the insulation fail, both track 
+circuits will show occupied. 
+One solution for avoiding IRJs is the use of 
+audio frequency AC track circuits which permit 
+the physical limits of an individual track circuit 
+to be defined by ‘tuned’ zone, rather than by 
+insulators in the rails. Adjacent and parallel track 
+circuits operate at different audio frequencies 
+and each one is designed to detect its own track frequency but no other. It is possible, with careful 
+design, to arrange a short overlap in the centre 
+of the tuned zone where both track circuits are 
+effectively shunted. 
+The use of audio frequency track circuits is not 
+always a practicable solution for complex switch 
+and crossing layouts, not least because of the 
+complication of significant rail impedances 
+associated with parallel bonding. 
+Broken rails
+By their very nature of operation track circuits 
+are sometimes regarded as a means of detecting 
+broken rails. However, track circuits will only 
+detect a broken rail that is fractured all the way 
+through and is not bridged by any form of bonding 
+or other electrical connection. So, a damaged 
+rail head or foot will not be detected but could 
+be equally problematic. On an electrified railway 
+the need to maintain a traction current return 
+path through one of the rails and other paralleled 
+conductive infrastructure means that in many 
+cases breaks can only be detected in the other rail. 
+Hence broken rail detection is, at least in the UK, 
+now managed by the routine monitoring of the 
+rail condition including ultrasound scanning, not 
+by dependence upon track circuits. And of course, 
+as we shall see, axle counters are of no help at all 
+with broken rail detection.
+Electric traction
+On electrified railways, track circuits must operate 
+despite large traction return currents passing 
+along the same rails. The disparity is substantial, 
+with AC traction currents of 300A or more and 
+DC traction operating at up to 7000A. These 
+values exclude traction fault conditions and are far 
+larger than the track circuit currents which are a 
+few amps at most. This gives rise to the concept 
+of AC immune and DC immune track circuits. 
+There are also some areas that have both forms 
+of traction current supply which therefore require 
+dual immunity. 
+The initial way of providing immunity was to use 
+DC track circuits in AC territory and AC phase 
+sensitive vane relay track circuits in DC traction 
+territory. Where both types of traction were in 
+use it was not unusual to use a locally generated 
+special frequency to power AC track circuits, such 
+Below left: Rail breaks are 
+rarely as clear-cut as this 
+example, and not all rail 
+breaks will be detected by 
+track circuits – but no rail 
+breaks will be detected by 
+axle counters.
+Photo Shutterstock/
+Michael715.
+Below right: The 
+introduction of any 
+new or different rolling 
+stock on areas where 
+train detection is a 
+significant part of the 
+signalling system requires 
+detailed analysis of the 
+susceptibility of the 
+trackside equipment to 
+large traction currents.
+Photo Hitachi.
+“Audio-frequency 
+track circuits can 
+be unsuitable 
+unless the point 
+work is very 
+simple”
+ IRSE News |  Issue 261  |  December 2019
+23
+as 83.33Hz using rotary converters. This enabled 
+the track circuits to detect and respond to the 
+83.33Hz frequency but not DC or 50Hz AC.
+Today, whilst these arrangements are still 
+common, there is a steady increase in the use of 
+modulated audio frequency track circuits selected 
+for immunity. This move is partly the result of the 
+application of three phase traction drives, which 
+produce many harmonics some of which are 
+present in the traction return currents. In practice 
+the range of frequencies produced by modern 
+three phase traction units makes it a challenge to 
+find immune frequencies suitable for track circuits. 
+This is also one of the reasons why there is a 
+trend to use axle counters as the modern form of 
+train detection. 
+Track circuit arrangements in electrified areas 
+are constrained by the need to ensure safe and 
+reliable operation of both signalling and traction 
+systems. This means that the track circuit must be 
+immune to both false operation and to damage 
+by the flow of traction currents through the rails. 
+This also causes complications because, while 
+the signalling track circuits are separated from 
+each other by IRJs, the traction current needs 
+a continuous electrical connection back to 
+the substation. 
+This problem has led to the use of impedance 
+bonds on double rail traction track circuits. These 
+are devices that present a low impedance to 
+traction current and a higher impedance to track 
+circuit current. In simple terms, they allow traction 
+current to pass along the rails and around the 
+IRJs, but stop the track circuit currents in order to 
+separate one track circuit from the next.
+Although track circuits are designed to be immune 
+to false operation (wrong side failure) from the 
+presence of traction currents flowing in the rails, 
+any significant imbalance in the amount of current 
+flowing in the two rails may be misinterpreted by 
+the track circuit detector as indicating that the 
+track is unoccupied when it is not. In particular any 
+fast change in the traction current may cause a 
+Axle counters are 
+increasingly preferred as 
+a less intrusive means of 
+train detection.
+Photo Thales .short-term imbalance, which is why track circuits 
+on electrified lines are normally designed to be 
+slow to energise (i.e. slow to show track clear). 
+In DC electrified areas, the relatively low supply 
+voltage results in high currents returning to the 
+sub-stations via the running rails. In order to 
+minimise voltage drop and consequential power 
+losses in the DC-traction supply, all running 
+rails are used for the return of traction currents 
+wherever possible, and therefore double- rail track 
+circuits are used. There is usually cross bonding 
+between different tracks as well so that the current 
+has as many feed and return paths as possible, 
+again to minimise traction energy losses. As in AC 
+areas, impedance bonds are used to ensure the 
+traction current has a return path to the sub-
+station, whilst the adjacent train detection sections 
+are kept separate from each other. In switches and 
+crossings, however, it is not usually possible to 
+bond the track in double-rail form, and therefore 
+single-rail track circuits must be installed. It should 
+be noted that ‘single rail’ track circuit really means 
+single rail traction current return, as both rails are 
+still used by the track circuit. 
+In AC overhead electrified areas, traction currents 
+are generally lower than in DC systems and, in 
+many cases, single rail traction return is sufficient 
+for electrification purposes. However, increased 
+traffic levels and alternative feeding arrangements 
+may sometimes require that both running rails are 
+used for traction return.
+Coded track circuits
+Coded track circuits can be used to transmit 
+information to a moving train. The amount of 
+information that can be communicated is limited 
+to simple messages, for example transmitting 
+one of a small number of modulations (14-20) 
+to send maximum safe speed and target speed 
+combination. Such systems can require extensive 
+lineside equipment for each track circuit, 
+especially on bi-directionally signalling lines. For 
+the train to successfully detect the transmitted 
+information before it is shorted out by the train “Coded track 
+circuits can be 
+used to transmit 
+information to a 
+moving train”
+ IRSE News |  Issue 261  |  December 2019
+24
+wheels it must always run towards the transmitter 
+end of the track circuit. Thus, on bidirectional lines 
+it is necessary to switch the feed and detector 
+(relay) ends of the track circuit depending on 
+the direction of travel of the signalled train. This 
+added complexity and the consequentially greater 
+failure risk is one of the reasons that modern 
+train supervision systems are generally moving 
+away from coded track circuits to radio-based 
+communication systems.
+Axle counters
+As its name suggests, an axle counter system used 
+track-mounted equipment to count axles entering 
+and leaving a track section. This information is 
+evaluated to determine whether the track section 
+is occupied or clear. They perhaps they should 
+be more accurately called wheel counters, since 
+the device attached to the rail uses a magnetic 
+field to detect the passage of the rim and flange 
+of a wheel. But because on most rail vehicles 
+the wheel is connected to an axle with another 
+wheel on the opposite side, they are called axle 
+counters. Each axle counter head usually has two 
+detectors on the rail, so the direction of travel 
+can be identified. The head is connected to an 
+evaluator which counts the number of wheels that 
+pass. To make a train detection section two heads 
+are connected to one evaluator, denoting the 
+ends of the train detection section. One counts 
+the wheels that enter the section and the other 
+subtracts the wheels that have left the section. If 
+the answer is zero the track section is deemed to 
+be clear of trains. Note that because both heads 
+can tell the direction of travel, both can either add 
+or subtract from the total. Typically, one head can 
+communicate with two evaluators, meaning one 
+head is used both to count axles exiting from one 
+section and entering the next.
+As can be seen from the above description axle 
+counters depend on the equipment being able 
+to count and store in memory the number of 
+wheels that have passed. Such technology, as 
+well as the communication between the three 
+elements of the system, is much easier with 
+modern computing systems and this explains 
+the relatively recent increase in their use in some 
+parts of the world. Other reasons for adoption are 
+they are very largely (although not completely) 
+immune to traction current interference; there is 
+no limitation on section length, so especially on 
+rural routes the volume of trackside equipment 
+and associated power supplies becomes much 
+smaller; and they are not influenced by rail head 
+or ballast resistance conditions. In addition, 
+the traction supply engineer is able to design 
+the traction return system including all the 
+cross bonding required, as well as the track 
+earthing connections for AC traction, without 
+the constraints of track circuit application rules. 
+Finally, there is no requirement for an IRJ or block 
+joint, which increases the integrity of the track 
+system and reduces costs. Axle counters are now 
+the preferred method of train detection for all 
+new schemes in Great Britain and in many other 
+countries throughout the world.One particular advantage of axle counters over 
+track circuits is that they can be overlaid on 
+another detection system (whether track circuits 
+or another axle counter system) during a re-
+signalling, thus enabling the new detection system 
+to be tested and proved to be operational before 
+it is required to control the railway. Compare this 
+with track circuits where only one track circuit can 
+be installed on a section of track at a time.
+Axle counters are not without their problems, 
+however. An axle-counter section cannot be 
+made ‘occupied’ by the use of a track-circuit 
+operating device to protect a train, nor will 
+an axle-counter system detect a broken rail. 
+However, the introduction of train radio for 
+emergency communications has provided an 
+acceptable alternative to the use of track circuit 
+operating clips, and as referred to earlier, a track 
+circuit is not regarded as a reliable means of 
+detecting a broken rail.
+More significantly, when an axle-counter system 
+fails it loses track of how many axles have passed 
+through it since the failure occurred. Therefore, 
+for safety, it is designed so that when the failure 
+is fixed, it shows the section of line as being 
+occupied, unlike a track circuit. The section then 
+needs to be proved clear of a train before the axle 
+counters can be reset and restored to operational 
+use, which can take some time.
+Another problem with axle counters is that a 
+right-side failure can occur when a wheel stops 
+directly above the inductive sensor, known as 
+‘wheel rock’. When the train leaves there is a high 
+risk the section will remain occupied with no 
+train present and the time-consuming process 
+of reset and restore has to be carried out. That 
+can cause difficulties at a busy station, especially 
+if the platform is configured for multiple short 
+trains stopped at various locations along the same 
+platform. For these reasons, some sections of 
+railway (e.g. Thameslink in the UK) have decided to 
+retain track circuits where there are multiple split 
+sections along the platforms.
+Cab signalling systems
+Modern signalling has a greater dependence on 
+train-borne systems and communications, with 
+CBTC becoming the dominant form for metro 
+lines. These systems rely on the train regularly 
+reporting its location and other information to the 
+control centre, for which of course it requires a 
+reliable communication link. Wi-Fi or data enabled 
+radio (e.g. 4G/LTE) are used for the ground to train 
+communications, with 4G/LTE now becoming 
+favoured due to availability concerns with Wi-Fi. 
+Together with the use of ATP and ATO, these are 
+the key reasons why capacity can be increased 
+on metro routes. 
+ETCS is the equivalent of CBTC for main line 
+railways. However, enabling a main line train to 
+define its position accurately is a greater challenge 
+than is the case with metros (the latter invariably 
+having fixed formation trains). Whilst the leading 
+vehicle of a train may be able to inform the 
+control centre of its location and movement, it 
+is much more difficult to confirm the location “One particular 
+advantage of axle 
+counters over 
+track circuits is 
+that they can 
+be overlaid 
+on another 
+detection 
+system” 
+ IRSE News |  Issue 261  |  December 2019
+25
+of the rear of the train (unless the train is a fixed 
+formation). In particular it is difficult to confirm 
+that the train is still complete i.e. no vehicles have 
+been left behind due to detachment (known as 
+‘train integrity’). The lost wagon or coach on a 
+locomotive hauled train remains a significant 
+challenge for main line railways. Thus, although 
+ETCS level 2 can be operated without lineside 
+signals, it still uses trackside train detection based 
+on track circuits or axle counters. 
+ETCS level 3 is the conceptual system that 
+will enable trackside train detection to finally 
+be removed on main line railways, but when 
+we will see it deployed extensively is an open 
+question. The option of ETCS hybrid level 3 is one 
+way of gaining some of the benefits of Level 3 
+whilst avoiding the train integrity problem. In 
+hybrid level 3, fixed formation trains such as 
+multiple units, which can easily be confirmed 
+to be complete, are allowed to operate at 
+level 3 whereas others (loco hauled freight and 
+passenger trains) are operated in level 2. Thus, the 
+infrastructure is equipped with train detection, but 
+more than one level 3 train may occupy a given 
+train detection section at a time. Furthermore, if 
+the trains that are operating in level 2 in a hybrid 
+level 3 area are sufficiently infrequent, it may be 
+possible to have longer train detection sections 
+and thus less trackside equipment on such lines. 
+ETCS standards currently specify that trains 
+identify their location using a combination 
+of balise reference points and tachometry, 
+supplemented by Doppler radar. However, there is 
+no fundamental reason why this information could 
+not be generated from Global Navigation Satellite 
+Systems (GNSS) such as GPS, or video tracking and 
+position identification, provided it can be proven 
+to meet the appropriate Safety Integrity Level (SIL). 
+Even in full level 3 areas, some track-based train 
+detection is still usually considered essential 
+in locations where moveable infrastructure, 
+especially points, require locking. The provision 
+of some track-based train detection may 
+also help recovery to normal operations after 
+an ETCS failure.
+GNSS and Positive Train Control (PTC) 
+In the US, systems using GNSS are being 
+introduced as part of the requirement to introduce 
+Positive Train Control (PTC) over some 60 000 
+miles of railways. The challenge of installing PTC 
+is further complicated by the fact that there are 
+ten different systems in use across the US. Some 
+systems use satellite links for train separation 
+and were designed for areas of ‘dark territory’ 
+where line-side signals and train detection are not 
+provided and instead trains are controlled by train 
+orders and track warrants.
+As well as train location, GNSS based systems can 
+also be used for passenger information both on 
+trains and at stations. A further possible use of 
+GNSS is to trigger the warning on the approach 
+to a level crossing with a constant-time lapse 
+regardless of the speed of the train. In a similar “Track circuits 
+will still be used 
+for many years to 
+come”way, track workers could be alerted to the 
+approach of a train within a known fixed time.
+However, for GNSS to work reliably there needs 
+to be clear ‘line of sight’ from trains to satellites, 
+which may be prevented by bridges, tunnels, 
+cuttings and on sub surface lines. GNSS also 
+presents a potential problem in that neither the 
+infrastructure manager nor the train operator 
+will have any control over the availability of 
+the GNSS signal.
+Remote condition monitoring 
+Track circuits will still be used for many years to 
+come, not least because of the massive task of 
+replacing life-expired signalling some networks, 
+so clever asset management and maintenance 
+techniques will be required. One initiative that has 
+helped reliability is remote condition monitoring 
+(RCM). By monitoring the track circuit current, 
+potential failure modes can be predicted and 
+interventions planned before failure occurs. It is 
+not something that is easy to automate, but there 
+have been consequential improvements in track 
+circuit reliability, with potentially more to come.
+One recent innovation involving the use of RCM 
+allows new jointless track circuits to be inspected 
+in real time from remote locations, thus improving 
+reliability. Prior to its implementation, track 
+circuits had to be checked on site using digital 
+multi-meters, which was a time-consuming 
+task and not conducive to finding faults before 
+they occurred. Axle-counter systems also have 
+sophisticated built-in remote diagnostics, and this 
+is one example of the digital railway delivering 
+results today. 
+Conclusion
+The development of train detection systems 
+has been driven by need, accident and available 
+technology. Increasingly we are seeing the use 
+of train-based location systems, but track-based 
+systems will continue to be important for many 
+railways around the world. 
+Both of the major methods of track-based train 
+detection, namely track circuits and axle counters, 
+have their supporters and detractors. However, 
+for now at least, axle counters are used more than 
+track circuits for new signalling systems.
+Have you got an idea for a future ‘back 
+to basics’ article? Perhaps an area of 
+command, control, signalling and 
+telecoms engineering that you’d like to 
+understand better. 
+Could you share your experience of these 
+topics with the next generation? If you could 
+contribute to a future article do let us know, 
+email editor@irsenews.co.uk and we will be 
+happy to consider your ideas.“For GNSS to 
+work reliably 
+there needs to 
+be clear ‘line of 
+sight’ from trains 
+to satellites”
