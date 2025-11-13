@@ -1,0 +1,221 @@
+{
+  "exam_info": {
+    "title": "初赛一期题目",
+    "date": "2025-11-08",
+    "total_questions": 10
+  },
+  "answers": [
+    {
+      "question_id": "B001",
+      "category": "基础题",
+      "query": "2024 年，株洲中车时代电气股份有限公司中标金额是多少？",
+      "result": [
+        {
+          "position": 1,
+          "content": "此处填写召回的最相关文档内容（经过重排序后的Top1）",
+          "source": "文件名.txt",
+          "page": 1
+        }
+      ],
+      "answer": "此处填写基于召回内容生成的回答，必须包含来源标注【文件名, P页码】"
+    },
+    {
+      "question_id": "B002",
+      "category": "基础题",
+      "query": "根据欧洲铁路局 2025-2027 年单一规划文件，机构注册系统迁移到知识图谱（knowledge graph）方法的目标进度在 2025 年底应达到多少百分比？",
+      "result": [
+        {
+          "position": 1,
+          "content": "此处填写第1条召回结果的正文内容",
+          "source": "文件名.txt",
+          "page": 1
+        }
+      ],
+      "answer": "此处填写基于召回内容生成的回答，必须包含来源标注【文件名, P页码】"
+    },
+    {
+      "question_id": "B003",
+      "category": "基础题",
+      "query": "在 UIC 的报告里，根据国际能源署的分析，铁路的市场份额需要增长多少才能在本十年内实现《巴黎协定》的目标？",
+      "result": [
+        {
+          "position": 1,
+          "content": "此处填写第1条召回结果的正文内容",
+          "source": "文件名.txt",
+          "page": 1
+        }
+      ],
+      "answer": "此处填写基于召回内容生成的回答，必须包含来源标注【文件名, P页码】"
+    },
+    {
+      "question_id": "B004",
+      "category": "基础题",
+      "query": "参照 IEEE 1474.1 的定义，附件 D (Typical safe braking model) 中对安全制动模型的描述，在'滑行时间 (Coast time, C)'期间，列车被假定处于什么状态？",
+      "result": [
+        {
+          "position": 1,
+          "content": "此处填写第1条召回结果的正文内容",
+          "source": "文件名.txt",
+          "page": 1
+        }
+      ],
+      "answer": "此处填写基于召回内容生成的回答，必须包含来源标注【文件名, P页码】"
+    },
+    {
+      "question_id": "B005",
+      "category": "基础题",
+      "query": "在 Manresa 车站的事件调查报告中，列车 78443 被授权越过 3023 进站信号机后，何时（日期和时间）发生了列车 95218 最终启动了行驶，并最终导致两列车存在碰撞风险？",
+      "result": [
+        {
+          "position": 1,
+          "content": "此处填写第1条召回结果的正文内容",
+          "source": "文件名.txt",
+          "page": 1
+        }
+      ],
+      "answer": "此处填写基于召回内容生成的回答，必须包含来源标注【文件名, P页码】"
+    },
+    {
+      "question_id": "I001",
+      "category": "中级题",
+      "query": "南京地铁 S7 号线的运营里程，在江苏省内已运营地铁长度中排第几？",
+      "result": [
+        {
+          "position": 1,
+          "content": "此处填写第1条召回结果（来自同一文档的相关段落）",
+          "source": "文件名.txt",
+          "page": 1
+        },
+        {
+          "position": 2,
+          "content": "此处填写第2条召回结果（来自同一文档的相关段落）",
+          "source": "文件名.txt",
+          "page": 2
+        },
+        {
+          "position": 3,
+          "content": "此处填写第3条召回结果（来自同一文档的相关段落）",
+          "source": "文件名.txt",
+          "page": 3
+        },
+        {
+          "position": 4,
+          "content": "此处填写第4条召回结果",
+          "source": "文件名.txt",
+          "page": 4
+        },
+        {
+          "position": 5,
+          "content": "此处填写第5条召回结果",
+          "source": "文件名.txt",
+          "page": 5
+        }
+      ],
+      "answer": "此处填写基于召回内容生成的回答，需要综合多个段落的信息，必须包含来源标注【文件名, P页码】"
+    },
+    {
+      "question_id": "I002",
+      "category": "中级题",
+      "query": "车辆外部移动实体的场景要素：根据 GB/T 43267—2023（预期功能安全），在场景要素结构中，可移动实体的第 2 层要素和第 3 层要素分别是什么？（需完整列出第 3 层中所有实体类型）。",
+      "result": [
+        {
+          "position": 1,
+          "content": "此处填写第1条召回结果的正文内容",
+          "source": "文件名.txt",
+          "page": 1
+        },
+        {
+          "position": 2,
+          "content": "此处填写第2条召回结果的正文内容",
+          "source": "文件名.txt",
+          "page": 2
+        }
+      ],
+      "answer": "此处填写基于召回内容生成的回答，需要综合多个段落的信息，必须包含来源标注【文件名, P页码】"
+    },
+    {
+      "question_id": "I003",
+      "category": "中级题",
+      "query": "根据文档《2024_Communications-Based Train Control》，图 5.11 所示的网状控制回路结构，ATO 子系统是如何实现自身的控制回路的？请阐述其如何获取输入（Messglieder），如何形成车辆轨迹（Fahrzeugtrajektorie），以及如何将轨迹作为目标值传递给列车的控制设备（Steuergerät）。",
+      "result": [
+        {
+          "position": 1,
+          "content": "此处填写第1条召回结果的正文内容",
+          "source": "文件名.txt",
+          "page": 1
+        },
+        {
+          "position": 2,
+          "content": "此处填写第2条召回结果的正文内容",
+          "source": "文件名.txt",
+          "page": 2
+        }
+      ],
+      "answer": "此处填写基于召回内容生成的回答，需要综合多个段落的信息，必须包含来源标注【文件名, P页码】"
+    },
+    {
+      "question_id": "A001",
+      "category": "高级题",
+      "query": "在 CBTC 互联互通规范体系中，关于列车启动、加速、巡航和制动的自动控制功能，其在《系统总体要求》中的分配归属于哪个子系统？并在《CBTC 部分测试及验证》中体现在哪个功能的测试中，测试需求编号是什么？",
+      "result": [
+        {
+          "position": 1,
+          "content": "此处填写第1条召回结果（来自《系统总体要求》文档）",
+          "source": "系统总体要求.txt",
+          "page": 1
+        },
+        {
+          "position": 2,
+          "content": "此处填写第2条召回结果（来自《系统总体要求》文档）",
+          "source": "系统总体要求.txt",
+          "page": 2
+        },
+        {
+          "position": 3,
+          "content": "此处填写第3条召回结果（来自《CBTC部分测试及验证》文档）",
+          "source": "CBTC部分测试及验证.txt",
+          "page": 1
+        },
+        {
+          "position": 4,
+          "content": "此处填写第4条召回结果（来自《CBTC部分测试及验证》文档）",
+          "source": "CBTC部分测试及验证.txt",
+          "page": 2
+        },
+        {
+          "position": 5,
+          "content": "此处填写第5条召回结果",
+          "source": "相关文档.txt",
+          "page": 1
+        }
+      ],
+      "answer": "此处填写基于多个文档召回内容生成的综合回答，需要对比分析不同文档的内容，明确标注各部分信息来自哪个文档【文件名1, P页码】【文件名2, P页码】"
+    },
+    {
+      "question_id": "A002",
+      "category": "高级题",
+      "query": "ERTMS/ETCS 列车牵引系统数据定义演变： 比较 SUBSET-026 Baseline 3 (v3.4.0) 和 Baseline 4 (v4.0.0) 版本中 Validated Train Data (Packet 11) 的内容定义：1）请指出该数据包中用于表示牵引系统标识的变量名称？2）当该变量不为零时，需要包含哪些额外的牵引数据变量？",
+      "result": [
+        {
+          "position": 1,
+          "content": "此处填写第1条召回结果的正文内容（来自 Baseline 3 文档）",
+          "source": "SUBSET-026_Baseline3_v3.4.0.txt",
+          "page": 1
+        },
+        {
+          "position": 2,
+          "content": "此处填写第2条召回结果的正文内容（来自 Baseline 4 文档）",
+          "source": "SUBSET-026_Baseline4_v4.0.0.txt",
+          "page": 1
+        },
+        {
+          "position": 3,
+          "content": "此处填写第3条召回结果的正文内容（Packet 11 相关内容）",
+          "source": "相关文档.txt",
+          "page": 1
+        }
+      ],
+      "answer": "此处填写基于多个文档召回内容生成的对比分析回答，需要明确区分两个版本的差异，并回答两个具体问题，必须标注不同版本信息的来源【SUBSET-026 Baseline 3, P页码】【SUBSET-026 Baseline 4, P页码】"
+    }
+  ]
+}

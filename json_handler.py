@@ -5,7 +5,6 @@ import json
 from typing import Dict, Any, List, Optional
 from pathlib import Path
 from agent import QAAgent
-from utils.difficulty_judge import custom_difficulty_judge
 
 
 class AnswerCard:

@@ -1,209 +1,126 @@
 """
-主程序：演示如何使用QA Agent
-支持交互式问答和JSON答题卡模式
+主程序：读取整个试卷JSON，生成完整答卷JSON
 """
 from agent import QAAgent
-from json_handler import AnswerCard, create_sample_query
-from utils.difficulty_judge import DifficultyLevel
-from config import config
+from json_handler import AnswerCard
 import json
-
-
-def interactive_mode():
-    """交互式问答模式"""
-    print("="*60)
-    print("欢迎使用基于难度分级的RAG问答系统")
-    print("="*60)
-    
-    # 1. 初始化Agent
-    agent = QAAgent()
-    
-    # 2. 索引文档（首次运行需要）
-    print("\n是否需要索引文档？")
-    print("注意：如果是首次运行或文档有更新，请选择 'y'")
-    response = input("索引文档? (y/n): ")
-    
-    if response.lower() == 'y':
-        agent.index_documents()
-    
-    # 3. 交互式问答
-    print("\n" + "="*60)
-    print("开始问答（输入 'quit' 退出）")
-    print("="*60)
-    
-    while True:
-        print("\n" + "-"*60)
-        question_id = input("请输入题号（如 B001, I001, A001）: ").strip()
-        
-        if question_id.lower() == 'quit':
-            break
-        
-        question = input("请输入问题: ").strip()
-        
-        if not question:
-            print("问题不能为空！")
-            continue
-        
-        # 回答问题
-        result = agent.answer_question(question_id, question)
-        
-        # 可选：保存结果
-        save = input("\n是否保存结果到文件？(y/n): ").strip()
-        if save.lower() == 'y':
-            save_result(result)
-    
-    print("\n谢谢使用！")
-
-
-def json_card_mode():
-    """JSON答题卡模式"""
-    print("="*60)
-    print("JSON答题卡模式")
-    print("="*60)
-    
-    card_handler = AnswerCard()
-    
-    while True:
-        print("\n1. 处理JSON查询文件")
-        print("2. 直接输入问题（生成JSON）")
-        print("3. 创建示例查询文件")
-        print("0. 返回主菜单")
-        
-        choice = input("\n请选择: ").strip()
-        
-        if choice == '1':
-            input_file = input("输入JSON文件路径: ").strip()
-            output_file = input("输出JSON文件路径: ").strip()
-            
-            try:
-                card_handler.process_query_file(input_file, output_file)
-                print("\n处理成功！")
-            except Exception as e:
-                print(f"\n错误: {e}")
-        
-        elif choice == '2':
-            question = input("请输入问题: ").strip()
-            question_id = input("请输入题号（可选，直接回车跳过）: ").strip() or "Q_AUTO"
-            
-            query_json = {"query": question, "question_id": question_id}
-            answer_card = card_handler.process_query(query_json)
-            
-            print("\n生成的答题卡：")
-            print(json.dumps(answer_card, ensure_ascii=False, indent=2))
-            
-            save = input("\n是否保存到文件？(y/n): ").strip()
-            if save.lower() == 'y':
-                filename = input("文件名: ").strip()
-                card_handler.save_answer_card(answer_card, filename)
-        
-        elif choice == '3':
-            filename = input("文件名（默认sample_query.json）: ").strip() or "sample_query.json"
-            create_sample_query(filename)
-        
-        elif choice == '0':
-            break
+import time
+from datetime import datetime
 
 
 def main():
-    """主函数"""
-    while True:
+    """主函数：处理整个试卷"""
+    print("="*60)
+    print("基于难度分级的RAG问答系统")
+    print("="*60)
+    
+    # 1. 设置输入输出文件路径
+    input_file = "questionsheet.json"
+    output_file = "answersheet.json"
+    
+    print(f"\n试卷文件: {input_file}")
+    print(f"答卷文件: {output_file}")
+    
+    # 2. 读取试卷
+    print(f"\n正在读取试卷: {input_file}")
+    try:
+        with open(input_file, 'r', encoding='utf-8') as f:
+            exam_data = json.load(f)
+    except Exception as e:
+        print(f"错误：无法读取试卷文件 - {e}")
+        return
+    
+    # 3. 检查是否需要索引文档
+    print("\n是否需要索引文档？")
+    print("注意：如果是首次运行或文档有更新，请选择 'y'")
+    response = input("索引文档? (y/n，默认n): ").strip().lower()
+    
+    agent = QAAgent()
+    if response == 'y':
+        print("\n开始索引文档...")
+        agent.index_documents()
+    
+    # 4. 初始化答题卡处理器
+    card_handler = AnswerCard(agent)
+    
+    # 5. 处理所有问题
+    questions = exam_data.get("questions", [])
+    total = len(questions)
+    
+    if total == 0:
+        print("\n错误：试卷中没有问题！")
+        return
+    
+    print(f"\n开始答题，共 {total} 道题...")
+    print("="*60)
+    
+    answers = []
+    start_time = time.time()
+    
+    for i, q in enumerate(questions, 1):
+        question_id = q.get("question_id", f"Q{i}")
+        category = q.get("category", "未知")
+        query = q.get("query", "")
+        
+        print(f"\n[{i}/{total}] {question_id} ({category})")
+        print(f"问题: {query[:50]}...")
+        
+        try:
+            # 处理问题
+            query_json = {
+                "question_id": question_id,
+                "query": query
+            }
+            answer_card = card_handler.process_query(query_json)
+            
+            # 添加到答案列表
+            answer_entry = {
+                "question_id": question_id,
+                "category": category,
+                "query": query,
+                "result": answer_card.get("result", []),
+                "answer": answer_card.get("answer", "")
+            }
+            answers.append(answer_entry)
+            
+            print(f"✓ 完成")
+            
+        except Exception as e:
+            print(f"✗ 错误: {e}")
+            # 添加错误答案
+            answers.append({
+                "question_id": question_id,
+                "category": category,
+                "query": query,
+                "result": [],
+                "answer": f"错误：{str(e)}"
+            })
+    
+    # 6. 构建完整答卷
+    answer_sheet = {
+        "exam_info": exam_data.get("exam_info", {}),
+        "answers": answers,
+        "processing_info": {
+            "processed_at": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
+            "total_questions": total,
+            "time_used": round(time.time() - start_time, 2)
+        }
+    }
+    
+    # 7. 保存答卷
+    try:
+        with open(output_file, 'w', encoding='utf-8') as f:
+            json.dump(answer_sheet, f, ensure_ascii=False, indent=2)
+        
         print("\n" + "="*60)
-        print("基于难度分级的RAG问答系统")
+        print(f"✓ 答卷已保存到: {output_file}")
+        print(f"总用时: {answer_sheet['processing_info']['time_used']} 秒")
         print("="*60)
-        print("1. 交互式问答模式")
-        print("2. JSON答题卡模式")
-        print("3. 文档索引管理")
-        print("0. 退出")
         
-        choice = input("\n请选择模式: ").strip()
-        
-        if choice == '1':
-            interactive_mode()
-        elif choice == '2':
-            json_card_mode()
-        elif choice == '3':
-            agent = QAAgent()
-            agent.index_documents()
-        elif choice == '0':
-            print("\n再见！")
-            break
-        else:
-            print("无效选择！")
-
-
-def save_result(result: dict):
-    """保存结果到文件"""
-    import json
-    from datetime import datetime
-    
-    filename = f"result_{result['question_id']}_{datetime.now().strftime('%Y%m%d_%H%M%S')}.json"
-    
-    with open(filename, 'w', encoding='utf-8') as f:
-        json.dump(result, f, ensure_ascii=False, indent=2)
-    
-    print(f"结果已保存到: {filename}")
-
-
-def demo_batch():
-    """演示批量问答"""
-    agent = QAAgent()
-    
-    # 示例问题列表
-    questions = [
-        ("B001", "什么是CBTC系统？"),
-        ("I001", "请总结CBTC系统的主要特点和优势。"),
-        ("A001", "比较CBTC系统和ERTMS系统的异同点。")
-    ]
-    
-    results = agent.batch_answer(questions)
-    
-    # 保存批量结果
-    import json
-    from datetime import datetime
-    
-    filename = f"batch_results_{datetime.now().strftime('%Y%m%d_%H%M%S')}.json"
-    with open(filename, 'w', encoding='utf-8') as f:
-        json.dump(results, f, ensure_ascii=False, indent=2)
-    
-    print(f"\n批量结果已保存到: {filename}")
-
-
-def demo_single_question():
-    """演示单个问题"""
-    agent = QAAgent()
-    
-    # 基础题示例
-    print("\n" + "="*60)
-    print("示例1: 基础题（精准检索）")
-    print("="*60)
-    result1 = agent.answer_question(
-        question_id="B001",
-        question="CBTC系统的定义是什么？"
-    )
-    
-    # 中级题示例
-    print("\n" + "="*60)
-    print("示例2: 中级题（单文档综合）")
-    print("="*60)
-    result2 = agent.answer_question(
-        question_id="I001",
-        question="请详细描述CBTC系统的组成部分和工作原理。"
-    )
-    
-    # 高级题示例
-    print("\n" + "="*60)
-    print("示例3: 高级题（多文档综合）")
-    print("="*60)
-    result3 = agent.answer_question(
-        question_id="A001",
-        question="比较不同国家的列车控制系统标准，分析它们的优缺点。"
-    )
+    except Exception as e:
+        print(f"\n错误：无法保存答卷 - {e}")
 
 
 if __name__ == "__main__":
-    # 运行交互式问答
     main()
-    
-    # 或者运行演示
-    # demo_single_question()
-    # demo_batch()
+

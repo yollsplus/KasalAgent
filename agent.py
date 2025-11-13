@@ -7,7 +7,7 @@ from pathlib import Path
 
 from utils.document_processor import DocumentProcessor, TextChunker
 from utils.vector_store import VectorStore
-from utils.difficulty_judge import DifficultyJudge, DifficultyLevel, custom_difficulty_judge
+from utils.difficulty_judge import DifficultyLevel, judge_difficulty
 from rag_strategies import RAGStrategyFactory
 from config import config
 
@@ -26,7 +26,6 @@ class QAAgent:
         
         # 初始化组件
         self.vector_store = VectorStore(vector_store_path)
-        self.difficulty_judge = DifficultyJudge()
         
         print("QA Agent初始化完成！")
     
@@ -128,10 +127,9 @@ class QAAgent:
         
         # 1. 判断难度
         if difficulty is None:
-            difficulty = custom_difficulty_judge(question_id)
+            difficulty = judge_difficulty(question_id)
         
-        difficulty_desc = self.difficulty_judge.get_difficulty_description(difficulty)
-        print(f"\n难度判断: {difficulty_desc}")
+        print(f"\n难度等级: {difficulty.value}")
         
         # 2. 选择对应的RAG策略
         strategy = RAGStrategyFactory.create_strategy(difficulty, self.vector_store)

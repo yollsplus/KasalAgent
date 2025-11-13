@@ -114,98 +114,69 @@ EMBEDDING_MODEL=BAAI/bge-large-zh-v1.5
 RERANKER_MODEL=BAAI/bge-reranker-large
 ```
 
-### 3. 运行示例
+### 3. 运行系统
+
+```bash
+# 直接运行，系统会提示输入试卷和答卷文件路径
+python main.py
+
+# 默认读取 初赛试卷.json，输出 初赛答卷.json
+```
+
+## 📖 使用指南
+
+### 一键答题模式（推荐）
+
+系统会自动读取整个试卷JSON文件，处理所有问题，并输出完整答卷：
 
 ```bash
 python main.py
 ```
 
-## 📖 使用指南
-
-### 方式1：JSON答题卡模式（推荐）
-
-```python
-from json_handler import AnswerCard
-
-# 初始化
-card_handler = AnswerCard()
-
-# 方式1：处理JSON文件
-card_handler.process_query_file("input.json", "output.json")
-
-# 方式2：直接处理字典
-query_json = {
-    "query": "什么是CBTC系统？",
-    "question_id": "B001"
+**试卷JSON格式**：
+```json
+{
+  "exam_info": {
+    "title": "初赛一期题目",
+    "date": "2025-11-08",
+    "total_questions": 10
+  },
+  "questions": [
+    {
+      "question_id": "B001",
+      "category": "基础题",
+      "query": "你的问题内容"
+    }
+  ]
 }
-answer_card = card_handler.process_query(query_json)
-
-print(answer_card["answer"])
-print(answer_card["result"])  # 召回的文档列表
 ```
 
-**命令行使用**：
-```bash
-# 处理单个查询文件
-python json_handler.py input.json output.json
-
-# 创建示例查询文件
-python json_handler.py --create-sample query.json
-```
-
-### 方式2：交互式问答
-
-```python
-from agent import QAAgent
-
-# 初始化Agent
-agent = QAAgent()
-
-# 首次运行需要索引文档
-agent.index_documents()
-
-# 回答问题
-result = agent.answer_question(
-    question_id="B001",
-    question="什么是CBTC系统？"
-)
-
-print(result['answer'])
-print(result['sources'])
-```
-
-### 方式3：批量问答
-
-```python
-questions = [
-    ("B001", "什么是CBTC系统？"),
-    ("I001", "请总结CBTC系统的主要特点。"),
-    ("A001", "比较CBTC和ERTMS系统。")
-]
-
-results = agent.batch_answer(questions)
-```
-
-### 自定义难度判断规则
-
-编辑 `utils/difficulty_judge.py` 中的 `custom_difficulty_judge` 函数：
-
-```python
-def custom_difficulty_judge(question_id: str) -> DifficultyLevel:
-    """自定义难度判断逻辑"""
-    
-    # 示例1：根据前缀
-    if question_id.startswith('BASIC_'):
-        return DifficultyLevel.BASIC
-    
-    # 示例2：根据数字范围
-    num = int(re.search(r'\d+', question_id).group())
-    if num <= 50:
-        return DifficultyLevel.BASIC
-    elif num <= 100:
-        return DifficultyLevel.INTERMEDIATE
-    else:
-        return DifficultyLevel.ADVANCED
+**答卷JSON格式**：
+```json
+{
+  "exam_info": { ... },
+  "answers": [
+    {
+      "question_id": "B001",
+      "category": "基础题",
+      "query": "问题内容",
+      "result": [
+        {
+          "position": 1,
+          "content": "召回的文档内容",
+          "source": "文件名.txt",
+          "page": 1
+        }
+      ],
+      "answer": "生成的答案【文件名, P页码】"
+    }
+  ],
+  "processing_info": {
+    "processed_at": "2025-11-13 10:30:00",
+    "total_questions": 10,
+    "time_used": 125.5
+  }
+}
 ```
 
 ## 🎯 RAG策略详解
