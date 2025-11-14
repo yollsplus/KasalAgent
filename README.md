@@ -129,6 +129,9 @@ python main.py
 
 系统会自动读取整个试卷JSON文件，处理所有问题，并输出完整答卷：
 
+cd D:\mywork\KascalAgent
+venv\Scripts\Activate.ps1
+
 ```bash
 python main.py
 ```

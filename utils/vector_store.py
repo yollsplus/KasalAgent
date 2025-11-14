@@ -26,7 +26,7 @@ class EmbeddingModel:
         """批量嵌入文档"""
         embeddings = self.model.encode(
             texts, 
-            show_progress_bar=True,
+            show_progress_bar=False,
             convert_to_numpy=True
         )
         return embeddings.tolist()
