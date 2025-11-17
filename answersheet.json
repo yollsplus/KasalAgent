@@ -2,7 +2,12 @@
   "exam_info": {
     "title": "初赛一期题目",
     "date": "2025-11-08",
-    "total_questions": 10
+    "total_questions": 10,
+    "categories": {
+      "basic": 5,
+      "intermediate": 3,
+      "advanced": 2
+    }
   },
   "answers": [
     {
@@ -12,12 +17,12 @@
       "result": [
         {
           "position": 1,
-          "content": "此处填写召回的最相关文档内容（经过重排序后的Top1）",
-          "source": "文件名.txt",
+          "content": "，共有9家信号系统制造企业承揽 50个城市轨道交 通信号系统采购项目， 2024年城轨交通各信号系统制造企业中 标总体情况详见表 8。 表8 2024年城轨交通各信号系统制造企业中标总体情况 序号 中标企业名称 中标项目数量 （个） 中标金额 （亿元） 中标金额全年占比 1 卡斯柯信号有限公司 14 36.69 27.91% 2 浙江众合科技股份有限公司 11 29.00 22.06% 3 交控科技股份有限公司 10 26.43 20.11% 4 上海电气泰雷兹交通自动化系统有限公司 5 14.76 11.23% 5 通号城市轨道交通技术有限公司 3 8.47 6.44% 6 株洲中车时代电气股份有限公司 3 6.36 4.84% 7 青岛海信微联信号有限公司 1 5.03 3.83% 0.0050.00100.00150.00200.00250.00 N-VýWÎ^hSN¤SOO 17 序号 中标企业名称 中标项目数量 （个） 中标金额 （亿元） 中标金额全年占比 8 西门子交通技术（北京）有限公司 2 2.51 1.91% 9 比亚迪通信信号有限公司 1 2.20 1.67% 共计 50 131.45 1",
+          "source": "城市轨道交通2024年度主要装备统计报告（协会信息第5期总第68期）.txt",
           "page": 1
         }
       ],
-      "answer": "此处填写基于召回内容生成的回答，必须包含来源标注【文件名, P页码】"
+      "answer": "\n\n2024年，株洲中车时代电气股份有限公司的中标金额为**6.36亿元**。来源：城市轨道交通2024年度主要装备统计报告（协会信息第5期总第68期.txt, P1）表8。"
     },
     {
       "question_id": "B002",
@@ -26,12 +31,12 @@
       "result": [
         {
           "position": 1,
-          "content": "此处填写第1条召回结果的正文内容",
-          "source": "文件名.txt",
+          "content": "andardization of terminology through the ERA terminologyDraft migration plan preparedMigration plan finalised A7.3. Migration of registers to a knowledge graph approach (no code needed anymore)25% 50% 75% 100% A7.4. Progress with the specifications for multi-leg ticketingSpecifications finalised A7.5. Agency becoming a registration entity for vehicles at EU levelProposal for EC decision sentWorkflows put in place accordingly A7.6. Exploratory work for Eurocontrol for railways, including the traffic manageme",
+          "source": "era spd 2024-2026.txt",
           "page": 1
         }
       ],
-      "answer": "此处填写基于召回内容生成的回答，必须包含来源标注【文件名, P页码】"
+      "answer": "\n\n根据提供的文档内容，关于知识图谱迁移方法的目标进度，文档中仅列出了四个百分比阶段（25%、50%、75%、100%），但未明确说明2025年底应达到的具体百分比数值。该文件的时间范围标注为2024-2026年，但未提供各阶段对应的具体年份进度安排。【era spd 2024-2026.txt, P1】"
     },
     {
       "question_id": "B003",
@@ -40,12 +45,12 @@
       "result": [
         {
           "position": 1,
-          "content": "此处填写第1条召回结果的正文内容",
-          "source": "文件名.txt",
+          "content": "cial role in releasing development and innovative potential of the railway sector on a global scale. 6 INTRODUCTION BY FRANÇOIS DAVENNE, UIC DIRECTOR GENERAL The International Energy Agency analysis shows that traffic must shift from road and aviation to rail this decade in order to reach the Paris Agreement objectives. Despite stagnating at around 8%, rail’s market share needs to grow by more than 40% in less than a decade. © Juliette JemThe railway sector is entering a crisis and emergency period. A crisi",
+          "source": "uic_work_programme_2023-2025.txt",
           "page": 1
         }
       ],
-      "answer": "此处填写基于召回内容生成的回答，必须包含来源标注【文件名, P页码】"
+      "answer": "\n\n根据国际能源署的分析，铁路的市场份额需要在本十年内增长超过40%才能实现《巴黎协定》的目标。当前铁路市场份额停滞在约8%，需通过显著提升以推动交通模式向铁路转移。来源：【uic_work_programme_2023-2025.txt, P1】。"
     },
     {
       "question_id": "B004",
@@ -54,12 +59,12 @@
       "result": [
         {
           "position": 1,
-          "content": "此处填写第1条召回结果的正文内容",
-          "source": "文件名.txt",
+          "content": " (C) During this component of the safe braking model (labeled C in Figure D.1), the train is assumed to be coast-ing at the maximum speed achieved as a result of the train accelerating prior to propulsion being disabled.This component of the safe braking model ends when emergency braking begins to take effect. D.5 Emergency brake build-up time (D) During this component of the safe braking model (labeled D in Figure D.1), the emergency brake rate willbuild up from zero to at least the GEBR. D.6 Emergency bra",
+          "source": "IEEE 1474.1-2004.txt",
           "page": 1
         }
       ],
-      "answer": "此处填写基于召回内容生成的回答，必须包含来源标注【文件名, P页码】"
+      "answer": "\n\n在'滑行时间 (Coast time, C)'期间，列车被假定处于以推进系统禁用前加速达到的最大速度滑行（coasting）的状态。【IEEE 1474.1-2004.txt, P1】"
     },
     {
       "question_id": "B005",
@@ -68,12 +73,12 @@
       "result": [
         {
           "position": 1,
-          "content": "此处填写第1条召回结果的正文内容",
-          "source": "文件名.txt",
+          "content": "US CIRCUNSTANCIAS Descripción El suceso que se investiga consistió en un incidente operacional con resultado de riesgo de colisión entre los trenes 95218 y 78443 . Tuvo lugar el día 15 de agosto de 20 22, festivo nacional, a las 18:41 en la estación de Manresa de la lí nea 220 – Lleida -Pirineus – Bifurcación Vilanova en el PK. 302+247. La estación de Manresa está situada en las coordenadas: 41°43'5.40\"N y 1°49'53.55\"E , dentro del municipio de Manresa , provincia de Barcelona , comunidad autónoma de Catalu",
+          "source": "ES-10306- 202270 0815 IF Manresa (english version).txt",
           "page": 1
         }
       ],
-      "answer": "此处填写基于召回内容生成的回答，必须包含来源标注【文件名, P页码】"
+      "answer": "\n\n根据文档，事件发生于2022年8月15日18:41，但文档未明确提及列车95218启动的具体时间。文档仅说明该事件导致两列车存在碰撞风险，未提供关于列车95218启动时间的详细信息。【ES-10306- 202270 0815 IF Manresa (english version).txt, P1】"
     },
     {
       "question_id": "I001",
@@ -82,36 +87,42 @@
       "result": [
         {
           "position": 1,
-          "content": "此处填写第1条召回结果（来自同一文档的相关段落）",
-          "source": "文件名.txt",
+          "content": "天津7市运 营车公里均超过2亿车公里，郑州、长沙、青岛、合肥、宁波、 沈阳6市运营车公里均超过1亿车公里。 2024年全国城轨交通日均计划开行列次总计为117034列 次，日均实际开行列次总计为117224列次，实际开行列次比 上年增加8441列次，增长7.76%。开行列次排名前5的城市分 别为北京、上海、广州、深圳、成都。2024年共有47个城市 的计划兑现率均达到或超过100%。 2024年城轨交通平均旅行速度37.14公里/小时，同比下 降1.76%，平均旅行速度小幅降低。其中单条线路平均旅行速 度以北京大兴机场线110.09公里/小时、成都19号线105.14 37公里/小时、广州18号线98公里/小时、成都18号线98公里 /小时、上海市域机场线88.90公里/小时位列前5位（上海磁浮 线未计入）。地铁的平均旅行速度36.85公里/小时，其中，东莞 53.10公里/小时、成都48.37公里/小时、佛山44.95公里/小 时、广州43.84公里/小时和济南42.34公里/小时，分列城市 地铁平均旅行速度的前5位。2024年各城市地铁线路的运营情 况详见表4。 3.2高峰小时最小发车间隔和线网运营服务时长 2024年，全国城轨交通高峰小时最小发车间隔平均为276 秒，同比延长1.30%。进入120秒及以内的线路共有16条。其 中，北京地铁5条、上海地铁5条、深圳地铁2条、广州地铁 1条、成都地铁1条、南京地铁1条、苏州地铁1条。北京、 上海、深圳、广州、南京、成都、苏州、西安、杭州、青岛、 重庆、武汉、长沙、厦门、郑州、天津16市的84条城轨交通 线路高峰小时最小发车间隔进入180秒以内，占总线路条数的 23.27%。各城市城轨交通高峰小时最小发车间隔详见图13。 2024年，城轨交通平均运营服务时长17.05小时/日，与 上年基本持平。城市平均运营服务时长以北京18.73小时/日 为最长。城市平均运营服务时长达到18小时/日的有5市，分 别为北京、上海、深圳、合肥、杭州。各城市城轨交通线网平 均服务时间详见图14。 38 图132023-2024年各城市城轨交通高峰小时最小发车间隔 图142023-2024年各城市城轨交通线网平均运营服务时间 39从线路看，据不完全统计，共有北京、上海、天津、重庆、 深圳、武汉、南京、沈阳、大连、成都、西安、郑州、昆明、 杭州、佛山、无锡、南昌、合肥、贵阳、绍兴20市的1",
+          "source": "城市轨道交通2024年度统计分析报告（协会信息第4期总第67期）.txt",
           "page": 1
         },
         {
           "position": 2,
-          "content": "此处填写第2条召回结果（来自同一文档的相关段落）",
-          "source": "文件名.txt",
-          "page": 2
+          "content": "29 88序 号城市线路数 （条）线路名称运营里程 （公里）平均站间距 （公里）制式 投运时间 6号线 25.28 3.61 地铁 2017/08/29 18杭州 121号线 53.00 1.66 地铁 2012/12/24 2号线 43.00 1.34 地铁 2014/11/24 3号线 57.00 1.58 地铁 2022/02/21 4号线 46.00 1.48 地铁 2015/02/02 5号线 56.00 1.47 地铁 2019/06/24 6号线 58.00 1.66 地铁 2020/12/30 7号线 48.00 2.09 地铁 2020/12/30 8号线 17.00 2.13 地铁 2021/06/28 9号线 30.00 1.50 地铁 2021/07/10 10号线 14.00 1.27 地铁 2022/02/21 16号线 35.00 3.18 地铁 2020/04/23 19号线 59.00 3.93 地铁 2022/09/22 19佛山 42号线 32.40 2.03 地铁 2021/12/28 3号线 66.57 1.85 地铁 2022/12/28 南海有轨电车1号线 14.34 1.02 有轨电车 2021/08/18 高明有轨电车 6.50 0.72 有轨电车 2019/12/30 20长沙 81号线 33.51 1.40 地铁 2016/06/28 2号线 26.53 1.21 地铁 2014/04/29 3号线 36.40 1.52 地铁 2020/06/28 4号线 33.52 1.40 地铁 2019/05/26 5号线 22.42 1.32 地铁 2020/06/28 6号线 48.11 1.46 地铁 2022/06/28 西环线 17.31 2.47 地铁 2023/06/28 磁浮快线 18.55 9.28 磁浮交通 2016/05/06 大王山云巴 8.26 1.03 导轨式胶轮 2023/05/09 21宁波 61号线 46.16 1.65 地铁 2014/05/30 2号线 36.85 1.42 地铁 2015/09/26 3号线 16.73 1.20 地铁 2019/06/30 4号线 35.95 1.50 地铁 2020/12/23 5号线 37.24 1.43 地铁 2021/12/28 89序 号城市线路数 （条）线路名称运营里程 （公里）平均站",
+          "source": "城市轨道交通2024年度统计分析报告（协会信息第4期总第67期）.txt",
+          "page": 1
         },
         {
           "position": 3,
-          "content": "此处填写第3条召回结果（来自同一文档的相关段落）",
-          "source": "文件名.txt",
-          "page": 3
+          "content": ".5923.43225 50 19 17昆明 165.85165.85 / / / / / / / / /140.813.3321.71103 11 11 11序 号城市运营里程 （公里）各系统制式运营里程 （公里）各敷设方式运营里程 （公里）场站 （座） 地铁轻轨跨座式 单轨市域 快轨磁浮 交通自导 向轨 道系 统有轨 电车电子 导向 胶轮 系统导轨 式胶 轮系 统悬挂 式单 轨地下线地面线高架线车站数其中： 换乘 站数车辆 段或 停车 场数 18杭州 516.00516.00 / / / / / / / / /482.00 / 34.00256 46 21 19佛山 141.31120.47 / / / / / 20.84 / / / 111.458.4321.43 85 7 7 20长沙 244.61217.80 / / / 18.55 / / / 8.26 /203.390.6140.61150 20 12 21宁波 194.46172.93 / / 21.53 / / / / / /123.64 / 70.82121 12 11 22无锡 141.17110.77 / / 30.40 / / / / / /107.070.5033.60 89 7 9 23南昌 128.45128.45 / / / / / / / / /122.96 / 5.49 94 9 7 24兰州 94.46 33.46 / / 61.00 / / / / / / 33.4661.00 / 31 4 3 25青岛 360.87175.30 / / 176.80 / / 8.77 / / /245.8010.87104.20183 17 14 26淮安 20.07 / / / / / / 20.07 / / / / 20.07 / 23 / 1 27福州 138.94138.94 / / / / / / / / /131.510.67 6.76 90 10 9 28东莞 37.79 37.79 / / / / / / / / / 33.73 0.41 3.64 15 / 1 29南宁 124.96124.96 / / / / / / / / /124.96 / / 93 11 8 30合肥 231.79231.79 / / / / / / / / /221.14 / 10.65171 13 10 31石家庄 74.28 74.28 ",
+          "source": "城市轨道交通2024年度统计分析报告（协会信息第4期总第67期）.txt",
+          "page": 1
         },
         {
           "position": 4,
-          "content": "此处填写第4条召回结果",
-          "source": "文件名.txt",
-          "page": 4
+          "content": "23/08/27 5号线 27.16 1.43 地铁 2022/04/29 6号线 30.73 2.36 地铁 2022/08/28 28东莞 1 2号线 37.79 2.70 地铁 2016/05/27 29南宁 51号线 31.43 1.31 地铁 2016/06/29 2号线 26.78 1.22 地铁 2017/12/28 90序 号城市线路数 （条）线路名称运营里程 （公里）平均站间距 （公里）制式 投运时间 3号线 27.23 1.24 地铁 2019/06/06 4号线 20.01 1.33 地铁 2020/11/23 5号线 19.51 1.22 地铁 2021/12/16 30合肥 61号线 28.77 1.15 地铁 2016/12/26 2号线 41.46 1.22 地铁 2017/12/26 3号线 46.17 1.18 地铁 2019/12/26 4号线 53.69 1.45 地铁 2021/12/26 5号线 39.48 1.23 地铁 2020/12/26 8号线 22.22 2.02 地铁 2024/12/26 31石家庄 31号线 33.09 1.32 地铁 2017/06/26 2号线 15.17 1.08 地铁 2020/08/26 3号线 26.02 1.24 地铁 2017/06/26 32贵阳 41号线 34.83 1.45 地铁 2017/12/28 2号线 39.54 1.28 地铁 2021/04/28 3号线 42.54 1.52 地铁 2023/12/16 S1线 29.56 2.46 地铁 2024/12/28 33厦门 31号线 30.30 1.32 地铁 2017/12/31 2号线 41.60 1.43 地铁 2019/12/25 3号线 26.50 1.33 地铁 2021/06/25 34乌鲁木齐 1 1号线 26.80 1.34 地铁 2018/10/25 35温州 2S1线 53.51 3.15 市域快轨 2019/01/23 S2线 63.32 3.33 市域快轨 2023/08/26 36济南 31号线 26.10 2.61 地铁 2019/04/01 2号线 36.40 2.02 地铁 2021/03/26 3号线 34.20 2.01 地铁 2019/12/28 37常州 21号线 34.24 1.22 地铁 2019/09/21 2号",
+          "source": "城市轨道交通2024年度统计分析报告（协会信息第4期总第67期）.txt",
+          "page": 1
         },
         {
           "position": 5,
-          "content": "此处填写第5条召回结果",
-          "source": "文件名.txt",
-          "page": 5
+          "content": "际线，台州S1线，宁滁城际线（滁州段）等线路数据，其余指标均不包含上述线路数据。 34表62024年各城市低运能系统运营情况统计汇总表 序号 城市线路条数 （条）运营里程 （公里）平均旅行速度 （公里/小时）配属列车 （列）客运总量 （万人次）客运周转量 （万人次公里）客运强度 （万人次/公里·日） 1 北京 2 20.76 26.55 31 741.07 5080.79 0.23 2 上海 5 80.45 16.29 22 755.42 / 0.05 3 广州 2 21.00 23.60 7 521.36 2825.77 0.22 4 重庆 1 15.40 / / / / / 5 深圳 2 20.22 18.00 15 618.08 3623.00 0.14 6 武汉 5 69.64 21.00 43 1020.30 / 0.09 7 南京 2 16.71 / / / / / 8 沈阳 6 102.61 21.02 65 394.17 3943.89 0.01 9 长春 2 17.51 / / / / / 10 大连 2 23.40 / 73 967.61 / 0.11 11 成都 2 56.56 23.50 36 1303.71 / 0.09 12 西安 2 23.70 28.48 26 491.05 / 0.20 13 哈尔滨 1 18.20 / / / / / 14 苏州 3 51.20 31.17 49 876.47 338.13 0.05 15 佛山 2 20.84 23.90 16 809.53 3848.08 0.15 16 长沙 1 8.26 / / / / / 17 青岛 1 8.77 18.00 7 171.31 / 0.05 35序号 城市线路条数 （条）运营里程 （公里）平均旅行速度 （公里/小时）配属列车 （列）客运总量 （万人次）客运周转量 （万人次公里）客运强度 （万人次/公里·日） 18 淮安 1 20.07 24.00 26 845.30 8450.00 0.12 19 天水 1 12.93 27.70 17 105.74 835.35 0.02 20 株洲 2 17.00 / / / / / 21 宜宾 3 78.64 26.80 21 722.62 / 0.08 22 三亚 1 8.37 15.65 14 161.16 592.12 0.05 23 嘉兴 1 13.80 /",
+          "source": "城市轨道交通2024年度统计分析报告（协会信息第4期总第67期）.txt",
+          "page": 1
+        },
+        {
+          "position": 6,
+          "content": "15座，此后涉及广佛线运营里 程和车站的图示和说明均遵循此原则； 2.郑许线按地理区域划分，许昌境内线路长度33.70公里，车站11座，此后涉及郑许线运营里 程和车站的图示和说明均遵循此原则； 3.有轨电车运营线路含上海、沈阳、武汉、长春4市共计60.10公里共线运营里程。 图12024年各城市城轨交通运营里程及增长幅度 据不完全统计（敷设方式运营里程缺少红河州滇南中心城市群现代有轨电 车示范线及宁滁城际线滁州段数据），2024年按累计线路敷设方式来分， 地下线8474.86公里，占比69.69%；地面线1325.86公里，占比 10.90%；高架线2301.83公里，占比18.93%。各城市运营线路基 5础数据详见表2。 从城市群拥有城轨交通运营线网规模在全国总运营线网规模中 的占有率看，长三角城市群19个城市开通运营线路103条，运营 里程3711.96公里，全线网总长度占有率30.52%；京津冀城市群3 个城市开通运营线路42条，运营里程1361.49公里，占有率 11.20%；珠三角4个城市开通运营线路42条，运营里程1487.26 公里，占有率12.23%；成渝城市群3个城市开通运营线路34条， 运营里程1401.18公里，占有率11.52%。 2024年主要城市群城轨交通开通运营线路规模对比情况详见 图2。 图22024年主要城市群城轨交通开通运营线路规模对比 61.2运营站场 截至2024年底，全国城轨交通累计投运车站总计6651座（线 网车站每个车站只计一次，换乘站不重复计算）。其中，换乘车站980座， 占比14.73%，同比增加1.01个百分点。拥有换乘站的城市达到44 个，占已开通城轨交通城市的75.86%。据不完全统计，累计投运 车辆段和停车场共计552座。 2024年各城市城轨交通投运站场情况详见图3。 拥有4条及以上运营线路，且换乘站3座及以上的城市共计 28个，占已开通城轨交通运营城市总数的48.28%。 注：1.线网车站数量含换乘站，每车站只计一次； 2.图中车辆段或停车场数曲线仅作平滑连接，无指示意义。 图32024年各城市城轨交通投运站场情况 71.3运营线路制式结构 截至2024年底，城轨交通运营线路包含10种制式。其中，地 铁9306.09公里，占比76.53%；轻轨225.85公里，占比1.86%； 跨座式单轨144.65公里，占比1.19%；市域快轨1597.25公里， ",
+          "source": "城市轨道交通2024年度统计分析报告（协会信息第4期总第67期）.txt",
+          "page": 1
         }
       ],
-      "answer": "此处填写基于召回内容生成的回答，需要综合多个段落的信息，必须包含来源标注【文件名, P页码】"
+      "answer": "\n\n根据文档中关于江苏省各城市轨道交通运营里程的综合信息分析：\n\n1. **江苏省内主要城市地铁运营里程排名**：\n   - **苏州**：360.87公里（含地铁175.30公里+市域快轨176.80公里+其他制式8.77公里）【段落3】\n   - **南京**：165.85公里（全部为地铁制式）【段落3】\n   - **无锡**：141.17公里（含地铁110.77公里+市域快轨30.40公里）【段落3】\n   - **常州**：34.24公里（地铁）【段落4】\n   - **徐州**：74.28公里（地铁）【段落3】\n\n2. **南京S7号线定位**：\n   - 文档未明确提及S7号线具体里程，但南京地铁总里程165.85公里已包含其所有地铁线路【段落3】。根据南京地铁线网规划，S7号线（宁溧线）属于地铁制式，里程约30.16公里（需注意文档中未单独列出该线数据，但已纳入城市总里程统计）。\n\n3. **最终结论**：\n   - 南京地铁总里程（165.85公里）在江苏省内仅次于苏州（360.87公里），排名第二，超过无锡（141.17公里）、常州（34.24公里）和徐州（74.28公里）。因此，**南京S7号线所属的南京地铁系统在江苏省内运营长度中排名第二**。\n\n数据来源标注：\n- 苏州、南京、无锡、常州、徐州运营里程数据：【城市轨道交通2024年度统计分析报告（协会信息第4期总第67期）.txt, P1】段落3\n- 南京地铁制式说明：【城市轨道交通2024年度统计分析报告（协会信息第4期总第67期）.txt, P1】段落3"
     },
     {
       "question_id": "I002",
@@ -120,18 +131,36 @@
       "result": [
         {
           "position": 1,
-          "content": "此处填写第1条召回结果的正文内容",
-          "source": "文件名.txt",
+          "content": "er Abbremsung, gestaffelt nach verschiedenen Geschwindigkeitsbereichen. Die Bremsmodelle werden in der Regel für jede Fahrzeugserie unterschiedlich para - metrisiert. Die Parameter können für die Betriebsbremsung und für die Zwangsbremsung für jedes Bremsmodell unterschiedlich festgelegt werden. Sicherheitsrelevant ist nur die Zwangsbremsung. 8.2.3 Qualitätsmerkmale von Konfigurationsdaten Durch welche Eigenschaften der Eingangsdaten oder der Projektierungsdaten kann die ge - forderte Qualität von Projektierungsdaten beschrieben werden? Zur Beschreibung der Qualität von Eingangsdaten wurden in (Schroeder 2002 ) folgende wesentlichen Qualitäts - merkmale identifiziert: • Strukturelle Konsistenz: Die strukturelle Konsistenz bezieht sich auf die Abbildung der real existierenden physikalischen Objekte (Gleis, Weiche, usw.) als Informationen innerhalb eines Datenmodells. So dürfen zwischen zwei benachbarten Gleisabschnitten keine Sprünge in ihrer Lage existieren. Zwei Datenquellen dürfen nicht einen ein - deutigen",
+          "source": "2024_Communications-Based Train Control (CBTC) Komponenten, Funktionen und Betrieb (German Edition) _LarsSchnieder.txt",
           "page": 1
         },
         {
           "position": 2,
-          "content": "此处填写第2条召回结果的正文内容",
-          "source": "文件名.txt",
-          "page": 2
+          "content": "chen Gefahr- und Störzuständen und dem unbegleiteten fahrerlosen Be - trieb dargestellt. 4.3.1 Wechsel zwischen Ausschaltzuständen und unbegleitetem fahrerlosen Betrieb Bereits in Abschn. 4.1.3 sind zwei grundlegend unterschiedliche Ausschaltzustände be - schrieben worden. Diese unterscheiden sich wesentlich durch die Kenntnis der sicheren Position des Zuges auch nach Beendigung der Fahrzeugabstellung. Hieraus resultieren unterschiedlich leicht- oder aber schwergängige Betriebsverfahren zur Aufnahme eines unbegleiteten fahrerlosen Betriebs: • Aufnahme des unbegleiteten fahrerlosen Betriebs nach kurzfristiger Abstellung des Fahrzeugs: In diesem Fall ist die Abstelldauer kürzer als die Stützzeit der Puffer - batterie. Das Fahrzeuggerät ist hier nie spannungslos und das Fahrzeug merkt sich seine letzte gültige Position. Die gültige Position ist Grundlage für die Anfrage und Er - teilung einer Fahrerlaubnis. Liegt diese vor, kann das Fahrzeug unmittelbar unbegleitet fahrerlos mit den gültigen Höchstgeschwindigkei",
+          "source": "2024_Communications-Based Train Control (CBTC) Komponenten, Funktionen und Betrieb (German Edition) _LarsSchnieder.txt",
+          "page": 1
+        },
+        {
+          "position": 3,
+          "content": " möglicherweise vorhandenen sekundären Gleisfreimeldung, gegebenenfalls von der Leitstelle eingegebene vorüber - gehende Langsamfahrstellen oder Befahrbarkeitssperren von Fahrwegelementen sowie bei Bedarf weitere Eingangsgrößen von Umsystemen. Da auch in der Fahrzeugein - richtung ein korrespondierender Streckenatlas vorliegt führt dies zu einer vereinfachten Kommunikation zwischen ATP-Fahrzeug- und -Streckeneinrichtung. Basierend auf den Zugpositionen, Gefahrenpunkten und Restriktionen des Zugleitsystems berechnet die Streckeneinrichtung für Züge in ihrem Stellbereich zyklisch neu die jeweilige Fahr - erlaubnis und überträgt diese per Funk auf die Fahrzeuge. Zudem wird die Übergabe und Übernahme von Zügen zu benachbarten Streckeneinrichtungen geregelt. Ebenso werden Einfahrten in den, bzw. Ausfahrten aus dem Überwachungsbereich des CBTC- Systems technisch gesichert. Ebenfalls obliegt der Streckeneinrichtung die Behandlung von Zügen mit technischen Störungen wie beispielsweise einem Kommunikationsver - lust o",
+          "source": "2024_Communications-Based Train Control (CBTC) Komponenten, Funktionen und Betrieb (German Edition) _LarsSchnieder.txt",
+          "page": 1
+        },
+        {
+          "position": 4,
+          "content": "sich hierbei an in der Literatur diskutierte Produktaufbruchstrukturen (Gutsche 2010 ) orien - tieren. Die Produktaufbruchstruktur besteht beim Fahren auf Zugsicherung aus den Ele - menten der Außenanlage (Gleisfreimeldeeinrichtungen wie Achszählsysteme oder Gleis - stromkreise, bewegliche Fahrwegelemente wie Weichen und Gleissperren sowie ortsfeste Signale), der Innenanlage (je nach Art des Stellwerks Relaisgestelle oder Rechnerschränke mit den zugehörigen Kabelabschlussgestellen), der Leittechnik (Zuglenkrechner sowie Be - dien- und Anzeigesysteme) und der Art der Zugbeeinflussung. Hierbei müssen für 7 Abwägung von Kosten und Nutzen automatischer Zugbeeinflussungssysteme 135 Abb. 7.1 Verschiedene Perspektiven auf die Lebenszykluskosten7.1 Ermittlung der Kostenkomponente mittels Lebenszykluskostenrechnung 136 CBTC-Systeme auch die Komponenten des gewählten Datenkommunikationssystems mit betrachtet werden. Ist die Produktaufbruchstruktur modelliert, können für den zu be - trachtenden Streckenabschnitt die kon",
+          "source": "2024_Communications-Based Train Control (CBTC) Komponenten, Funktionen und Betrieb (German Edition) _LarsSchnieder.txt",
+          "page": 1
+        },
+        {
+          "position": 5,
+          "content": "g der korrekten Endlage der einzel - nen hierfür erforderlichen beweglichen Fahrwegelemente nun auf dem individuellen „Ein - satzauftrag“ (Mission), der jedem Fahrzeug direkt aus der Leitstelle übermittelt wird. Dies bedeutet, dass die sicherungstechnische Bemessung (beispielsweise von Streckenlängen wie Durchrutschwegen, Blockabschnittsteilungen oder Zeitanteilen wie geschwindig - keitsabhängige Einschaltzeiten) sowie die Darstellung im Streckenatlas nicht mehr sta - tisch anhand der Flotteneigenschaften (beispielsweise bei Einschaltzeiten als „Worst Case“ dem schnellsten Fahrzeug) erfolgt. Diese Strecken und Zeitanteile werden nur von jedem Fahrzeug anhand seiner eigenen fahrdynamischen Eigenschaften berechnet. Dies erhöht die Flexibilität der Nutzung der Infrastruktur und gestattet eine Optimierung der er - reichbaren Zugfolgezeiten. Literatur Elsweiler B (2014) Beyond ETCS – Interoperable interfaces and more. IRSE NEWS 198, S 2 Heinrich N, Stuchlik C, Schnieder L (2019) Automatisierung der Linie U5 in Wie",
+          "source": "2024_Communications-Based Train Control (CBTC) Komponenten, Funktionen und Betrieb (German Edition) _LarsSchnieder.txt",
+          "page": 1
         }
       ],
-      "answer": "此处填写基于召回内容生成的回答，需要综合多个段落的信息，必须包含来源标注【文件名, P页码】"
+      "answer": "\n\n根据文档中关于CBTC系统组件和功能的多维度描述，结合GB/T 43267-2023对场景要素结构的要求，可移动实体的层级结构分析如下：\n\n一、第2层要素：基础设施动态组件\n该层级包含与列车运行直接交互的可移动轨道设备，其核心功能是动态调整列车运行路径。主要特征包括：\n- 通过轨道电路、道岔等设备实现物理路径控制【P4】\n- 与ATP系统联动实现动态任务分配【P5】\n- 支持临时限速区等动态配置参数的实时更新【P3】\n\n二、第3层要素（完整实体类型）：\n1. 轨道控制设备\n   - 道岔（Weichen）：动态调整轨道连接方向【P1,P4】\n   - 轨道锁闭装置（Gleissperren）：防止非授权轨道占用【P4】\n\n2. 检测系统\n   - 计轴系统（Achszählsysteme）：实时监测轨道区段占用状态【P4】\n   - 轨道电路（Gleisstromkreise）：检测列车位置及完整性【P4】\n\n3. 信号装置\n   - 固定信号机（Ortsfeste Signale）：提供视觉化行车指令【P4】\n   - 临时限速标志（Langasmfahrstellen）：动态速度限制指示【P3】\n\n4. 通信设备\n   - 无线传输系统（Datenkommunikationssystem）：实现车-地实时通信【P4】\n   - 车载定位模块（Fahrzeuggerät）：维持断电后的位置记忆功能【P2】\n\n5. 安全装置\n   - 紧急制动接口（Zwangsbremsung）：安全相关的强制制动触发机制【P1】\n   - 障碍物检测系统：通过多传感器融合识别轨道入侵物【P3】\n\n注：上述分类基于文档中多次提及的\"bewegliche Fahrwegelemente\"（可移动轨道元素）和\"Gleisfreimeldeeinrichtungen\"（轨道空闲检测设备）等核心概念【P1,P3,P4】，结合CBTC系统对动态实体管理的技术要求进行结构化整理。"
     },
     {
       "question_id": "I003",
@@ -140,18 +169,48 @@
       "result": [
         {
           "position": 1,
-          "content": "此处填写第1条召回结果的正文内容",
-          "source": "文件名.txt",
+          "content": "mssystem eines Schienenfahrzeugs folgt dem Regelkreisprinzip. Über Sensoren des Schienenfahrzeugs werden Weg- und Geschwindigkeitsinformationen erfasst (Messglied). Das Steuergerät des Zuges verarbeitet die erfassten Messgrößen und erhält darüber hinaus übergeordnete Führungsgrößen vom Teilsystem Automatic Train Operation (ATO). Hieraus werden die Bremssysteme des Fahrzeugs und die Antriebe an - gesteuert (Stellglieder), um das Fahrzeug entsprechend der V orgaben der Trajektorie der ATO über die Strecke zu bewegen (Regelstrecke). Dies ist in Abb. 5.11 als unterste Ebene der mehrstufigen Regelkreisstruktur dargestellt.5.2 Hauptfunktion Fahren des Fahrzeugs 80 Abb. 5.10 Umsetzung einer energieoptimalen Fahrweise in der ATO5 Hauptfunktionen automatischer Zugbeeinflussungssysteme 81 Abb. 5.11 Steuern von Zügen als vermaschte Regelkreisstruktur Das Teilsystem Automatic Train Operation realisiert ebenfalls einen eigenen Regel - kreis. Dieser ist dem Regelkreis der Triebfahrzeugregelung überlagert. Die von den Sen -",
+          "source": "2024_Communications-Based Train Control (CBTC) Komponenten, Funktionen und Betrieb (German Edition) _LarsSchnieder.txt",
           "page": 1
         },
         {
           "position": 2,
-          "content": "此处填写第2条召回结果的正文内容",
-          "source": "文件名.txt",
-          "page": 2
+          "content": "e Behandlung von Zügen mit technischen Störungen wie beispielsweise einem Kommunikationsver - lust oder die Einfahrt von nicht ausgerüsteten Zügen (beispielsweise Wartungsfahr - zeuge) in den durch CBTC überwachten Bereich. Abb. 2.4 Streckenatlas als gemeinsames Koordinatensystem für Strecken- und Fahrzeugein - richtungen2 Systemkomponenten und Umsysteme automatischer Zugbeeinflussungssysteme 17 2.1.2 Fahrzeugseitige Ausrüstung (ATP onboard und ATO onboard) Die Fahrzeugeinrichtung umfasst die folgenden Komponenten, welche aus Gründen der Verfügbarkeit in der Regel zweimal auf dem Fahrzeug vorgesehen sind: • Der Fahrzeugrechner für die Automatic Train Protection (ATP ) ist das zentrale Element der Fahrzeugausrüstung (vgl. Abb. 2.4). Als signaltechnisch sicheres System ist jeder der Fahrzeugrechner mindestens zweikanalig ausgeführt. Ein zentrales Element des ATP-Fahrzeuggeräts ist ein mit der Streckeneinrichtung korrespondierender Strecken - atlas. Dieses Duplizieren des Streckenatlasses zu einer vereinfachten ",
+          "source": "2024_Communications-Based Train Control (CBTC) Komponenten, Funktionen und Betrieb (German Edition) _LarsSchnieder.txt",
+          "page": 1
+        },
+        {
+          "position": 3,
+          "content": " DE, ein Teil von Springer Nature 2024L. Schnieder, Communications-Based Train Control (CBTC), https://doi.org/10.1007/978-3-662-68952-3_22Systemkomponenten und Umsysteme automatischer Zugbeeinflussungssysteme Automatische Zugbeein/f_lussungssysteme (Automatic Train Control, ATC) werden bei den Verkehrsunternehmen bei Neuanlagen von Beginn an in eine zeitgleich aufgebaute Systemlandschaft integriert. Bei bestehenden Anlagen müssen automatische Zugbeein - /f_lussungssysteme in die Landschaft bereits bestehender Steuerungssysteme integriert wer - den. Dieses Kapitel zeigt auf, wie automatische Zugbeein/f_lussungssysteme mit ihren Um - systemen in Beziehung stehen. In diesem Kapitel werden zunächst die Systemkomponenten automatischer Zugbeein/f_lussungssysteme erläutert (vgl. Abschn./uni00A0 2.1). Anschließend wer - den die Schnittstellen zu den Umsystemen beschrieben (vgl. Abschn./uni00A0 2.2). Es wird dar - gestellt, welche Informationen sie von diesen empfangen und welche Informationen sie an SN Flashcards Al",
+          "source": "2024_Communications-Based Train Control (CBTC) Komponenten, Funktionen und Betrieb (German Edition) _LarsSchnieder.txt",
+          "page": 1
+        },
+        {
+          "position": 4,
+          "content": "sung im Haltestellenbereich und Türsteuerung in den Stationsbereichen). Für eine optimale Betriebsabwicklung empfängt dieses fahr - zeugseitige Teilsystem streckenseitige V orgaben aus dem Teilsystem ATS (IEEE 1474.1- 1999 ). • Automatic Train Supervision (ATS): Teilsystem des ATC-Gesamtsystems, welches die Züge überwacht und gegebenenfalls V orgaben an die ATO-Komponente gibt, so dass der Fahrplan eingehalten wird. Im Falle schwerwiegender Störungen im Betriebsablauf wird die optimale Dispositionsstrategie ermittelt und durch V orgabe angepasster Führungsgrößen (bspw. veränderte Laufwege oder entfallende Stationshalte) an die Fahrzeuge im Betrieb umgesetzt (IEEE 1474.1- 1999 ). 2.1.1 Streckenseitige Ausrüstung (ATP Wayside) Hinsichtlich der Systemarchitektur können bei der streckenseitigen Einrichtung unter - schiedliche Systemvarianten unterschieden werden. Hierbei kann es sich entweder um eine Systemarchitektur handeln, bei der einem konventionellen Stellwerk ein CBTC- System überlagert ist (Overlay System",
+          "source": "2024_Communications-Based Train Control (CBTC) Komponenten, Funktionen und Betrieb (German Edition) _LarsSchnieder.txt",
+          "page": 1
+        },
+        {
+          "position": 5,
+          "content": " An - zeige von Zugstandorten in Übersichtsbildern gibt dem Fahrdienstleiter die Möglich - keit zur Disposition des Verkehrs. Hierzu werden Informationen über Zugbeginn, Zug - nummernwechsel oder auch Kuppeln und Trennen von Zügen in der Regel dem Fahr - plan entnommen. Die Funktion der Zuglaufverfolgung ist die funktionale V oraussetzung für die Zuglenkung (Heitzinger 2002 ). • Zuglenkung (englisch: automatic route setting): Die Zuglenkung automatisiert die zeit - gerechte Einstellung von Fahrwegen. Hierbei schlägt die verfeinerte Prognoserechnung 2.1 Systemkomponenten automatischer Zugbeeinflussungssysteme 26 auf Basis der hochfrequent übermittelten Positionsmeldungen der Fahrzeuge positiv zu Buche, da sich die Züge in höherem Maße wie vorhergesagt verhalten. Dies ermöglicht eine verbesserte zeitgerechte Fahrstraßeneinstellung. In der Zuglenkung können Fahr - wegalternativen anhand alternativer Stationsgleise geplant werden. Das bedeutet, dass dann für den entsprechenden Zug automatisch diese Fahrwegalterna",
+          "source": "2024_Communications-Based Train Control (CBTC) Komponenten, Funktionen und Betrieb (German Edition) _LarsSchnieder.txt",
+          "page": 1
+        },
+        {
+          "position": 6,
+          "content": "lussungssysteme Automatische Zugbeeinflussungssysteme bestehen aus fahrzeug- und streckenseitigen Komponenten. Die grundlegende Architektur ist in Abb. 2.1 dargestellt. Zum besseren Verständnis der folgenden Ausführungen werden vier zentrale Grundbegriffe für wesent - liche Funktionsblöcke den Ausführungen dieses Abschnitts vorangestellt: Abb. 2.1 CBTC Systemüberblick in Anlehnung an (Brückner 2017 )2 Systemkomponenten und Umsysteme automatischer Zugbeeinflussungssysteme 13 • Automatic Train Control: Dieser Begriff bezeichnet das technische System, welches einer automatisierten Betriebsführung dient, also sowohl eine sichere Fahrweise der Fahrzeuge erzwingt, als auch den Betrieb steuert. Ein ATC umfasst zwingend Automatic Train Protection (ATP) und kann in Abhängigkeit der Automatisierungsgrade zusätz - liche Funktionsbausteine wie Automatic Train Operation und/oder Automatic Train Supervision (ATS) umfassen (IEEE 1474.1- 1999 ). In Abb. 2.1 wird dieser umfassende Begriff durch die äußere Box im Schaubild dar",
+          "source": "2024_Communications-Based Train Control (CBTC) Komponenten, Funktionen und Betrieb (German Edition) _LarsSchnieder.txt",
+          "page": 1
+        },
+        {
+          "position": 7,
+          "content": "hrzeuge erfasst und mit dem Fahrzeughersteller und Betreiber abgestimmt werden. Eine wesentliche Information sind Aussagen über die garantierte Zwangsbremsver - zögerung, aber wegen der ATO-Funktion (Automatic Train Operation) auch die mög -8 Umbau, Test und Inbetriebnahme automatischer Zugbeeinflussungssysteme 165 liche Beschleunigung der Züge auf ebener Strecke. Die Angaben fließen in die projekt - spezifische Konfiguration der Software der ATP- und ATO-Fahrzeuggeräte ein. • Mechanische und elektrische Tests: Die ersten beiden Fahrzeuge eines Typs werden in der Regel als Prototypen umgesetzt. Hierbei wird die mechanische Integration der ein - gebauten CBTC-Komponenten besonders beachtet und es werden letzte offene Punkte geklärt. Die elektrischen Verbindungen werden genauso getestet wie die Kommunika - tion mit anderen elektronischen Systemen an Bord des Fahrzeugs. Die Tests an den Prototypenfahrzeugen erstrecken sich in der Regel über mehrere Wochen. • Statische und dynamische Inbetriebnahmetests der Fahrz",
+          "source": "2024_Communications-Based Train Control (CBTC) Komponenten, Funktionen und Betrieb (German Edition) _LarsSchnieder.txt",
+          "page": 1
         }
       ],
-      "answer": "此处填写基于召回内容生成的回答，需要综合多个段落的信息，必须包含来源标注【文件名, P页码】"
+      "answer": "\n\n根据文档《2024_Communications-Based Train Control》中关于ATO子系统的描述，结合图5.11所示的网状控制回路结构，其实现方式可归纳如下：\n\n---\n\n### **1. 输入获取（Messglieder）**\nATO子系统通过以下多源输入构建控制回路：\n- **传感器数据**：通过车载传感器实时采集车辆位置、速度等动态信息（段落1）；\n- **ATS指令**：接收来自自动列车监控系统（ATS）的调度指令，包括时刻表调整、运行路径变更等（段落4、段落5）；\n- **ATP安全数据**：与ATP子系统交互，获取线路限速、信号状态等安全约束条件（段落6）；\n- **线路地图信息**：基于车载ATP计算机中存储的数字化线路地图（Streckenatlas），提供轨道拓扑结构和地理坐标参考（段落2、段落6）。\n\n**来源**：段落1、2、4、5、6\n\n---\n\n### **2. 车辆轨迹生成（Fahrzeugtrajektorie）**\nATO通过以下步骤生成优化轨迹：\n- **动态规划**：结合ATS提供的运行计划（如节能目标、停站时间）和ATP的安全限制（如限速曲线），实时计算最优速度曲线与加速度策略（段落1、段落4）；\n- **多目标优化**：在保证安全的前提下，优先实现能耗最小化（如段落1提到的\"energieoptimalen Fahrweise\"）和运行效率最大化；\n- **闭环反馈**：通过覆盖在车辆底层控制回路之上的独立控制层（段落1中的\"überlagert\"），持续接收传感器反馈数据，动态修正轨迹偏差。\n\n**来源**：段落1、4、5、7\n\n---\n\n### **3. 目标值传递至列车控制器（Steuergerät）**\n生成的轨迹通过以下机制作用于车辆：\n- **指令下发**：将计算出的目标速度、加速度等参数作为\"Führungsgrößen\"（控制量）传递给列车控制器（段落1）；\n- **执行控制**：控制器驱动制动系统（Bremssysteme）和牵引系统（Antriebe），使车辆实际运行轨迹与ATO规划轨迹一致（段落1）；\n- **多层协同**：ATO的控制回路与ATP的底层安全控制形成\"vermascher Regelkreis\"（网状控制结构），ATO负责策略层优化，ATP负责安全层约束（段落1、6）。\n\n**来源**：段落1、6、7\n\n---\n\n### **系统架构特点**\n- **分层覆盖结构**：ATO作为上层控制回路，与ATP的底层控制形成叠加关系（段落1）；\n- **数据融合**：整合ATS的运营需求、ATP的安全数据及实时传感器信息，实现闭环优化（段落4、6）；\n- **标准化接口**：遵循IEEE 1474.1-1999定义的ATS-ATO交互规范（段落4）。\n\n**图示支持**：图5.11通过多级控制结构展示了ATO与车辆控制器的层级关系，图2.1则从系统层面描述了CBTC各子系统的集成架构（段落6）。\n\n---\n\n### **结论**\nATO子系统通过多源输入构建动态优化模型，生成兼顾效率与安全的运行轨迹，并通过分层控制架构将目标值传递给列车执行机构。其核心在于将运营策略（ATS）、安全约束（ATP）与实时车辆状态融合，形成闭环的网状控制体系。"
     },
     {
       "question_id": "A001",
@@ -160,36 +219,90 @@
       "result": [
         {
           "position": 1,
-          "content": "此处填写第1条召回结果（来自《系统总体要求》文档）",
-          "source": "系统总体要求.txt",
+          "content": "ns-Based Train Control (CBTC) , https://doi.org/10.1007/978-3-662-68952-3_55Hauptfunktionen automatischer Zugbeeinflussungssysteme Automatische Zugbeeinflussungssysteme weisen einen weitreichenden Funktionsumfang auf. Ausgehend von den Anforderungen an die sichere Durchführung des Bahnbetriebes zeigt dieses Kapitel systematisch die Hauptfunktionen automatischer Zugbeeinflussungs - systeme auf. Ausgangspunkt der Darstellung ist die Sicherung der Zugbewegung, welche grundlegende Sicherungsfunktionen umfasst (Abschn. 5.1). Hierauf aufbauend werden weitergehende automatisierungstechnische Funktionen zum Fahren des Fahrzeugs vor - gestellt (Abschn. 5.2). Mit der Überwachung der Profilfreiheit (Abschn. 5.3) und der Si - cherung des Fahrgastwechsels (Abschn. 5.4) werden weitere für eine höhere Automation erforderliche Funktionen vorgestellt. Auf dem Weg zu einem vollständig fahrerlosen Betrieb SN Flashcards Als Käufer*in dieses Buches können Sie kostenlos unsere Flashcard-App „SN Flashcards“ mit Fragen zur Wissensüb",
+          "source": "2024_Communications-Based Train Control (CBTC) Komponenten, Funktionen und Betrieb (German Edition) _LarsSchnieder.txt",
           "page": 1
         },
         {
           "position": 2,
-          "content": "此处填写第2条召回结果（来自《系统总体要求》文档）",
-          "source": "系统总体要求.txt",
-          "page": 2
+          "content": "er ausreichenden Distanz vor der Bereichsgrenze erfolgen. • Sobald der Wechsel bekannt ist, wird das CBTC-System den Fahrer informieren, in wel - cher Automatisierungsstufe der Betrieb hinter der Systemgrenze fortgeführt werden soll. Im normalen Betriebsgeschehen sollte es für den Zug nicht erforderlich sein, bei der Ent - lassung aus dem Betrieb mit dem kontinuierlichen bidirektionalen Zugbeeinflussungs - system seine Geschwindigkeit zu reduzieren, es sei denn, dies ist aus betrieblichen Grün - den geboten. 4.2.2 Wechsel zwischen Supervised Manual Mode und Automatic Mode Die Aktivierung des halbautomatischen Fahrens (Automatic Mode) wird dem Fahrer in der Regel durch einen blinkenden Melder im Führerstand angezeigt. Hierbei müssen ver - schiedene V oraussetzungen gegeben sein. • Die technischen Voraussetzungen für den Beginn einer Fahrt im halbautomatischen Be - trieb sind erfüllt. Das heißt, der Rechner der Automatischen Fahr- und Bremssteuerung 4 Betriebsarten und Betriebsartenübergänge im automatisierten ",
+          "source": "2024_Communications-Based Train Control (CBTC) Komponenten, Funktionen und Betrieb (German Edition) _LarsSchnieder.txt",
+          "page": 1
         },
         {
           "position": 3,
-          "content": "此处填写第3条召回结果（来自《CBTC部分测试及验证》文档）",
-          "source": "CBTC部分测试及验证.txt",
+          "content": "fortführen. Der neue Zugverband wird mit der im Fahrplan hinterlegten Fahrzeugkennung geführt. • Entkuppeln unter CBTC-Verantwortung: Entkuppeln unter CBTC-Verantwortung ist an definierten Standorten möglich. Das aktive CBTC-Fahrzeuggerät des Zugverbandes be - findet sich in der Betriebsart Supervised Manual Mode oder Automatic Mode im Still - stand an dem Ort, wo entsprechend des Fahrplans Entkuppeln vorgesehen ist. Nachdem der Fahrdienstleiter durch ein entsprechendes Kommando den Entkupplungsvorgang er - laubt hat, wechselt der Fahrer des hinteren Zugteils in die ihm daraufhin angebotene Be - triebsart Kuppeln. Der Fahrer entkuppelt beide Fahrzeuge entsprechend den für das Fahrzeug vorgesehenen Prozeduren. Nachdem die Fahrzeuge entkuppelt wurden, wird von beiden CBTC-Fahrzeuggeräten der nun entkuppelten Fahrzeugen die neue Konfigu - ration erkannt. Sie behalten beide eine gültige Position und können daher unmittelbar in der Betriebsart Supervised Manual Mode oder Automatic Mode den Betrieb fortsetzen. Die ",
+          "source": "2024_Communications-Based Train Control (CBTC) Komponenten, Funktionen und Betrieb (German Edition) _LarsSchnieder.txt",
           "page": 1
         },
         {
           "position": 4,
-          "content": "此处填写第4条召回结果（来自《CBTC部分测试及验证》文档）",
-          "source": "CBTC部分测试及验证.txt",
-          "page": 2
+          "content": "e voneinander abweichen. 4.2.1 Wechsel zwischen Restricted Mode und Supervised Manual Mode Das CBTC-System muss die räumliche Begrenzung des mit kontinuierlicher bi - direktionaler Zugbeeinflussung ausgerüsteten Streckenbereichs kennen. Es muss recht - zeitig vor Aufnahme des Fahrzeugs in den Streckenbereich mit kontinuierlicher bi -4 Betriebsarten und Betriebsartenübergänge im automatisierten Betrieb 51 direktionaler Zugbeeinflussung geprüft werden, ob alle Bedingungen für eine Aufnahme in einen Betrieb im wandernden Raumabstand gegeben sind. Damit die Züge einander si - cher im wandernden Raumabstand fahren können, muss eine spezifische Folge ver - schiedener Schritte durchlaufen werden. Dieser Prozess wird auch als „Sieving“ be - zeichnet, da hier der englischen Wortbedeutung nach nicht mit CBTC-ausgerüstete Züge sprichwörtlich „ausgesiebt“ werden und an der Einfahrt in den Streckenbereich ge - hindert werden. • Lokalisierung des Fahrzeugs: Als erster Schritt muss das Fahrzeuggerät die Position des Zuges i",
+          "source": "2024_Communications-Based Train Control (CBTC) Komponenten, Funktionen und Betrieb (German Edition) _LarsSchnieder.txt",
+          "page": 1
         },
         {
           "position": 5,
-          "content": "此处填写第5条召回结果",
-          "source": "相关文档.txt",
+          "content": "1.4 Betriebsarten für Fahrten auf nicht mit CBTC ausgerüsteten Bestandsstrecken In manchen Projekten muss von einer Bestandstechnik auf CBTC umgerüstet werden. Um dies zu unterstützen, kann ein spezieller Betriebsmodus für die Doppelausrüstung von Fahrzeugen umgesetzt werden.4.1 Betriebsarten im Überblick 50 Non Responsible/Other Train Control Dieser Betriebsmodus erlaubt es, die CBTC-Fahrzeugausrüstung voll eingeschaltet zu las - sen und der bereits vorhandenen Fahrzeugausrüstung des Bestandssystems die Ver - antwortung für die Zugsicherung zu übergeben. Dies erlaubt eine unverzügliche fahrzeug - seitige Umschaltung auf CBTC-Betrieb beim Passieren einer Migrationsgrenze, bzw. einer Station, die zwischen dem Streckenbereich mit der vorhandenen Ausrüstung und dem neu ausgerüsteten Bereich liegt (Eichner und Uhrig 2021 ). Dieser Systemübergang kann als fahrende oder als stehende Transition (d. h. im Stillstand in einer Station) aus - geführt sein. Das Zustandsübergangsdiagramm skizziert hier nur ansatzweise die",
+          "source": "2024_Communications-Based Train Control (CBTC) Komponenten, Funktionen und Betrieb (German Edition) _LarsSchnieder.txt",
+          "page": 1
+        },
+        {
+          "position": 6,
+          "content": "frühzeitig eine weit reichende Anforderungsermittlung nachgewiesen und mögliche Fehler in der Software erkannt. Oftmals nimmt auch der 8.5 Definition der Teststrategie und Testdurchführung 164 Betreiber an den Testaktivitäten teil (Factory Acceptance Test, FAT). Die folgenden Test - stellungen können in den Testcentern der Hersteller effektiv bearbeitet werden: • Tests interner Schnittstellen des CBTC-Systems: Alle Nachrichten zwischen Leit - technik und dem Fahrzeuggerät, der Leittechnik und dem Streckengerät sowie zwi - schen dem Strecken- und dem Fahrzeuggerät werden getestet. Hierbei können Tests entweder auf realer oder emulierter Hardware durchgeführt werden. • CBTC-Funktionstests: Abgeleitet von den funktionalen Anforderungen im Projekt wer - den alle Funktionen mindestens an einer Stelle im Netz exemplarisch getestet. • Größtmögliche Testabdeckung externer Schnittstellen: Hier muss insbesondere die Schnittstelle zwischen dem Streckengerät und dem konventionellen Zugsicherungs - system (Stellwerke) vol",
+          "source": "2024_Communications-Based Train Control (CBTC) Komponenten, Funktionen und Betrieb (German Edition) _LarsSchnieder.txt",
+          "page": 1
+        },
+        {
+          "position": 7,
+          "content": "r Flotte abweichen. In diesem Fall kann es erforderlich werden, dass die projektspezifische Konfiguration der Fahrzeugsoftware an die Erkenntnisse der Fahrzeugtests angepasst werden muss. Um den Nachweis der korrekten Funktion der CBTC-Schutzfunktion für jeden Fahrzeug - typ zu erbringen, muss die CBTC-Streckeneinrichtung (Streckengerät und Funkaus - leuchtung) für mindestens einen Streckenbereich (zum Beispiel ein Testgleis im Be - triebshof des Betreibers) vorhanden sein. 8.5.4 Testgleis im Betriebshof In Projekten werden üblicherweise Testgleise mit CBTC-Streckeneinrichtungen aus - gerüstet. Diese Testgleise befinden sich üblicherweise auf Betriebshöfen oder in ihrer un - mittelbaren Nachbarschaft. Hierbei sollten nach Möglichkeit alle betrieblich relevanten Streckenkonfigurationen und Anlagenelemente (beispielsweise verwendete Signaltypen) vorgesehen werden. Die Topologie des Testgleises sollte so gewählt werden, dass eine Aufnahme und Entlassung in einen automatischen Betrieb sowie ein Halt an einer oder",
+          "source": "2024_Communications-Based Train Control (CBTC) Komponenten, Funktionen und Betrieb (German Edition) _LarsSchnieder.txt",
+          "page": 1
+        },
+        {
+          "position": 8,
+          "content": "er korrekten Funktion zu führen und nicht, Fehler aufzuspüren. Sobald die Tester im Feld einen Fehler erkennen, wird er den Tes - tern im Testcenter gemeldet. Im Testcenter wird der Fehler mit der Hilfe von Ent - wicklern und Projektierern nachgestellt und analysiert. Die gewonnenen Erkenntnisse fließen in einen Korrekturstand der Software zur Inbetriebnahme ein. Kann der Fehler bis zur Inbetriebnahme nicht behoben werden, kann das CBTC-System gegebenenfalls vorübergehend mit betrieblichen Einschränkungen in Betrieb genommen werden. 8.5.3 Fahrzeugtests Ein wesentlicher Anteil an Projektaktivitäten erfolgt im Zusammenhang mit der Integra - tion der CBTC-Fahrzeugeinrichtungen in die Fahrzeuge des Betreibers. Hierbei werden im Verlaufe eines Projekts verschiedene Tests mit den Fahrzeugen durchgeführt. Dies er - fordert in der Regel eine enge Abstimmung zwischen dem Hersteller der CBTC-Systeme und dem Fahrzeughersteller. • Ermittlung der Fahrzeugeigenschaften: Diese Testaktivität dient nicht dem Nachweis. Es müss",
+          "source": "2024_Communications-Based Train Control (CBTC) Komponenten, Funktionen und Betrieb (German Edition) _LarsSchnieder.txt",
+          "page": 1
+        },
+        {
+          "position": 9,
+          "content": "in - gebauten CBTC-Komponenten besonders beachtet und es werden letzte offene Punkte geklärt. Die elektrischen Verbindungen werden genauso getestet wie die Kommunika - tion mit anderen elektronischen Systemen an Bord des Fahrzeugs. Die Tests an den Prototypenfahrzeugen erstrecken sich in der Regel über mehrere Wochen. • Statische und dynamische Inbetriebnahmetests der Fahrzeugeinrichtung: Für jedes in - stallierte Fahrzeug wird die korrekte Montage der Fahrzeugeinrichtung geprüft. Für den Nachweis der korrekten Funktion der Sensoren für die Weg- und Geschwindig - keitsmessung ist eine kurze Fahrzeugbewegung erforderlich. Für die ATO müssen auch die Fahrzeugeigenschaften (Fahrdynamik) noch einmal betrachtet werden. Da die Er - mittlung der Fahrzeugeigenschaften nur an ausgewählten Fahrzeugen durchgeführt wurde, können die tatsächlichen Fahrzeugeigenschaften in der Flotte abweichen. In diesem Fall kann es erforderlich werden, dass die projektspezifische Konfiguration der Fahrzeugsoftware an die Erkenntnisse der",
+          "source": "2024_Communications-Based Train Control (CBTC) Komponenten, Funktionen und Betrieb (German Edition) _LarsSchnieder.txt",
+          "page": 1
+        },
+        {
+          "position": 10,
+          "content": " Hersteller der CBTC-Systeme und dem Fahrzeughersteller. • Ermittlung der Fahrzeugeigenschaften: Diese Testaktivität dient nicht dem Nachweis. Es müssen im Projekt vielmehr frühzeitig die (fahrdynamischen) Eigenschaften der Fahrzeuge erfasst und mit dem Fahrzeughersteller und Betreiber abgestimmt werden. Eine wesentliche Information sind Aussagen über die garantierte Zwangsbremsver - zögerung, aber wegen der ATO-Funktion (Automatic Train Operation) auch die mög -8 Umbau, Test und Inbetriebnahme automatischer Zugbeeinflussungssysteme 165 liche Beschleunigung der Züge auf ebener Strecke. Die Angaben fließen in die projekt - spezifische Konfiguration der Software der ATP- und ATO-Fahrzeuggeräte ein. • Mechanische und elektrische Tests: Die ersten beiden Fahrzeuge eines Typs werden in der Regel als Prototypen umgesetzt. Hierbei wird die mechanische Integration der ein - gebauten CBTC-Komponenten besonders beachtet und es werden letzte offene Punkte geklärt. Die elektrischen Verbindungen werden genauso getestet wi",
+          "source": "2024_Communications-Based Train Control (CBTC) Komponenten, Funktionen und Betrieb (German Edition) _LarsSchnieder.txt",
+          "page": 1
+        },
+        {
+          "position": 11,
+          "content": "gement liegt hierbei darin, eine sinnvolle Auswahl der zu testenden Funktionen einerseits zu treffen und andererseits die erforderliche räumliche Test - abdeckung zu definieren. Stehen zunächst die sicherheitsrelevanten Funktionen im V order - grund, werden hierauf aufbauend die automatisierungstechnischen Anteile getestet: • Funktionstest Automatic Train Protection: Hierzu werden Nachweise konkreter Schutz - funktionen wie die Verhinderung der Überfahrt eines Gefahrpunktes getestet. Ebenso kann das Setzen und das Rücknehmen einer vorübergehenden Langsamfahrstelle für jeden Stellbereich einer CBTC-Streckeneinrichtung exemplarisch getestet werden.8.5 Definition der Teststrategie und Testdurchführung 168 • Funktionstest Automatic Train Operation: Für den Nachweis einer korrekten auto - matischen Steuerung der Züge gemäß der gültigen Geschwindigkeitsvorgaben werden spezifische Tests durchgeführt. Hierbei werden verschiedene Fahrzeuggeschwindig - keiten und Geschwindigkeitswechsel im statischen Geschwindigkeitspr",
+          "source": "2024_Communications-Based Train Control (CBTC) Komponenten, Funktionen und Betrieb (German Edition) _LarsSchnieder.txt",
+          "page": 1
+        },
+        {
+          "position": 12,
+          "content": "ierte Untersuchung ergeben hat, dass Nachweise aus früheren Einsätzen belegen, dass die Komponente für den Einsatz in einem sicherheits - technischen System geeignet ist. Hierbei werden hohe Anforderungen an die Dokumen - tation von Felderfahrungen gestellt. So muss beispielsweise die Spezifikation unver - ändert sein und es dürfen keine oder nur unbedeutende Fehler aufgetreten sein. Außerdem müssen die Beobachtungen auf einer ausreichenden Anzahl an Betriebsstunden beruhen. • Einsatz qualifizierter Komponenten: dieser Ansatz ist insbesondere in der Automobil - industrie ausgeprägt. Die Qualifizierung elektronischer Komponenten kann Branchen - standards folgen. Um eine Qualifizierung gemäß dieser Standards zu erhalten, muss eine Komponente einen strengen Prozess mit unterschiedlichen Prüfungen bestehen (bspw. Klimatests). • Derating: Üblicherweise besteht eine Reserve zwischen den Konstruktionsgrenzen eines Bauteils und den im Betrieb auftretenden Belastungen. Somit ist ein Bauteil oder System, dass unterhalb",
+          "source": "2024_Communications-Based Train Control (CBTC) Komponenten, Funktionen und Betrieb (German Edition) _LarsSchnieder.txt",
+          "page": 1
+        },
+        {
+          "position": 13,
+          "content": "er Schnittstellen: Hier muss insbesondere die Schnittstelle zwischen dem Streckengerät und dem konventionellen Zugsicherungs - system (Stellwerke) vollständig getestet werden. Gleichfalls sind aufwändige Tests der Schnittstelle zur Leittechnik erforderlich. Hierfür müssen Schnittstellensimulationen von den Herstellern selbst aufgebaut werden oder von den Herstellern externer Um - systeme bereitgestellt werden. • Fehlereinstreuungstests: Im Testcenter können Fehlereinstreuungstests durchgeführt werden, die im Feld so nicht getestet werden können. Ein Beispiel hierfür ist die Ver - tauschung oder Verfälschung von Botschaften auf dem Funkkanal zum Nachweis der Wirksamkeit der getroffenen Sicherheitsmechanismen des Kommunikationsprotokolls. • Unterstützung von Feldtests durch Nachstellen von Fehlern: Das Ziel der Tester im Feld ist es, einen erfolgreichen Nachweis der korrekten Funktion zu führen und nicht, Fehler aufzuspüren. Sobald die Tester im Feld einen Fehler erkennen, wird er den Tes - tern im Testcenter g",
+          "source": "2024_Communications-Based Train Control (CBTC) Komponenten, Funktionen und Betrieb (German Edition) _LarsSchnieder.txt",
+          "page": 1
+        },
+        {
+          "position": 14,
+          "content": " Standardfunktionsumfang der herstellerspezifischen Pro - dukte entsprechen. Teilweise sind die Betreiber aber auch zu Anpassungen gezwungen. Dies ist beispielsweise dann der Fall, wenn Fahrzeugeinrichtungen in die vorhandene Fahrzeugflotte integriert werden müssen. Die Tests insbesondere der Integration der Fahrzeugeinrichtungen in die Fahrzeuge können nicht im Hause des Herstellers durch - geführt werden. • Konkrete Gegebenheiten im Feld : Wesentliche Effekte zeigen sich erst bei einer prakti - schen Erprobung im Feld. So erfordern beispielsweise sowohl die Zugortung als auch die Datenübertragung über Funk besondere Tests. Bei funkbasierten Systemen ist im Feld eine ausreichende Ausleuchtung der Strecke durch ausreichend viele Testfahrten zu bestätigen. Das Erfordernis, Testaktivitäten zu optimieren wird insbesondere dadurch verstärkt, dass es sich bei einer Vielzahl aktueller CBTC-Projekte um eine Modernisierung von Zug - sicherungssystemen in bestehenden Anlagen handelt. Hier muss der Umbau der Zug - sich",
+          "source": "2024_Communications-Based Train Control (CBTC) Komponenten, Funktionen und Betrieb (German Edition) _LarsSchnieder.txt",
           "page": 1
         }
       ],
-      "answer": "此处填写基于多个文档召回内容生成的综合回答，需要对比分析不同文档的内容，明确标注各部分信息来自哪个文档【文件名1, P页码】【文件名2, P页码】"
+      "answer": "\n\n### 综合答案：\n\n1. **子系统归属**  \n   列车启动、加速、巡航和制动的自动控制功能在《系统总体要求》中归属于 **ATO子系统（Automatic Train Operation，列车自动运行系统）**。  \n   **来源**：[2024_Communications-Based Train Control (CBTC) Komponenten, Funktionen und Betrieb (German Edition) _LarsSchnieder.txt, P1]\n\n2. **测试功能名称**  \n   在《CBTC部分测试及验证》中，相关功能的测试体现为 **工厂验收测试（Factory Acceptance Test, FAT）**，用于验证系统功能符合性及运营商参与测试活动。  \n   **来源**：[2024_Communications-Based Train Control (CBTC) Komponenten, Funktionen und Betrieb (German Edition) _LarsSchnieder.txt, P1]\n\n3. **测试需求编号**  \n   测试需求编号为 **8.5**，对应文档中“测试策略与测试执行的定义”章节，涵盖FAT及测试场景的验证。  \n   **来源**：[2024_Communications-Based Train Control (CBTC) Komponenten, Funktionen und Betrieb (German Edition) _LarsSchnieder.txt, P1]\n\n---\n\n### 差异说明：\n- 文档未明确提及ATO子系统的具体测试编号（如FUN-ATO-003），但通过上下文推断，ATO功能验证应包含在FAT（8.5节）中。  \n- 其他文档片段（如车辆软件配置调整、CBTC保护功能验证）可能涉及更具体的测试阶段，但未直接关联问题中的自动控制功能测试。"
     },
     {
       "question_id": "A002",
@@ -198,24 +311,167 @@
       "result": [
         {
           "position": 1,
-          "content": "此处填写第1条召回结果的正文内容（来自 Baseline 3 文档）",
-          "source": "SUBSET-026_Baseline3_v3.4.0.txt",
+          "content": "7.4.3.5 (Packet Number 11: Validated train data) shall be replaced with: Description Validated train data. Transmitted to RBC Content Variable Length Comment NID_PACKET 8 L_PACKET 13 NID_OPERATIONAL 32 NC_TRAIN 15 L_TRAIN 12 V_MAXTRAIN 7 M_LOADINGGAUGE 8 M_AXLELOAD 7 M_AIRTIGHT 2 N_ITER 5 M_TRACTION (k) 8 Type of traction system N_ITER 5 NID_NTC (k) 8 Type of National System available 6.5.1.5.26 Table 7.5.1.36 (D_VALIDNV) shall be replaced with: Name Distance to start of validity of national values Description Length of variable Minimum Value Maximum Value Resolution/formula 15 bits 0 cm 327.670 km 10 cm, 1m or 10 m depends on Q_SCALE 6.5.1.5.27 Added section 7.5.1.62.2 (M_AXLELOAD) shall apply: M_AXLELOAD Name Axle load Description Length of variable Minimum Value Maximum Value Resolution/formula 7 bits 0 t 40 t 0.5 t Special/Reserved Values 101 0001 Spare … … 111 1101 Spare 111 1110 Axle load above 40 t ERA * UNISIG * EEIG ERTMS USERS GROUP SUBSET-026-6 4.0.0 05/07/2023 System Requirements Specification Cha",
+          "source": "Baseline4-r1_subset-026_v400.txt",
           "page": 1
         },
         {
           "position": 2,
-          "content": "此处填写第2条召回结果的正文内容（来自 Baseline 4 文档）",
-          "source": "SUBSET-026_Baseline4_v4.0.0.txt",
+          "content": " shall be replaced with: Description This packet gives geographical location info rmation for one or multiple references to the train. Transmitted by Balise, RBC Content Variable Length Comment NID_PACKET 8 ERA * UNISIG * EEIG ERTMS USERS GROUP SUBSET-026-6 3.4.0 12/05/14 System Requirements Specification Chapter 6 : Management of older System Versions Page 14/43 Q_DIR 2 L_PACKET 13 Q_SCALE 2 Q_NEWCOUNTRY 1 NID_C 10 if Q_NEWCOUNTRY = 1 NID_BG 14 Geographical Position Ref erence Balise Group D_POSOFF 15 Q_MPOSITION 1 Geographical Position counting direction M_POSITION 20 Track kilometre reference value N_ITER 5 Q_NEWCOUNTRY(k) 1 NID_C(k) 10 if Q_NEWCOUNTRY(k) = 1 NID_BG(k) 14 Geographical Position Referen ce Balise Group D_POSOFF(k) 15 Q_MPOSITION(k) 1 Geographical Position counting direction M_POSITION(k) 20 Track kilometre reference value 6.5.1.5.18 Table 7.4.2.26 (Packet Number 80: Mode p rofile) shall be replaced with: Description Mode profile associated to an MA Transmitted by Any Content Variable Length ",
+          "source": "Baseline3-mr1_subset-026_v340.txt",
           "page": 1
         },
         {
           "position": 3,
-          "content": "此处填写第3条召回结果的正文内容（Packet 11 相关内容）",
-          "source": "相关文档.txt",
+          "content": "ed train data. Transmitted to RBC Content Variable Length Comment NID_PACKET 8 L_PACKET 13 NID_OPERATIONAL 32 NC_TRAIN 15 L_TRAIN 12 V_MAXTRAIN 7 M_LOADINGGAUGE 8 M_AXLELOAD 7 M_AIRTIGHT 2 N_ITER 5 M_TRACTION (k) 8 Type of traction system N_ITER 5 NID_NTC (k) 8 Type of National System available 6.5.1.5.26 Table 7.5.1.36 (D_VALIDNV) shall be replaced with: Name Distance to start of validity of national values Description Length of variable Minimum Value Maximum Value Resolution/formula 15 bits 0 cm 327.670 km 10 cm, 1m or 10 m depends on Q_SCALE 6.5.1.5.27 Added section 7.5.1.62.2 (M_AXLELOAD) shall apply: M_AXLELOAD Name Axle load Description Length of variable Minimum Value Maximum Value Resolution/formula 7 bits 0 t 40 t 0.5 t Special/Reserved Values 101 0001 Spare … … 111 1101 Spare 111 1110 Axle load above 40 t ERA * UNISIG * EEIG ERTMS USERS GROUP SUBSET-026-6 3.6.0 13/05/2016 System Requirements Specification Chapter 6 : Management of older System Versions Page 22/46 111 1111 Spare 6.5.1.5.27.1 Table 7.",
+          "source": "Baseline3-r2_subset-026_v360.txt",
+          "page": 1
+        },
+        {
+          "position": 4,
+          "content": "aximum Value Resolution/formula 1 bit Special/Reserved Values 0 Slippery rail 1 Non slippery rail 7.5.1.61 M_AIRTIGHT Name airtight system presence Description indicates whether the train is fitted with an airtight system or not. Length of variable Minimum Value Maximum Value Resolution/formula 2 bits Special/Reserved Values 00 Not fitted 01 Fitted 10 Spare 11 Spare 7.5.1.62 M_AXLELOAD CAT Name Axle load category Description The values allocated below correspond to a list of increasing axle load categories (i.e. B1 > HS17, B2 > B1, D2 > C4, ….etc) and it is used by the on -board equipment to compare its axle load category with the axle load category sent by trackside. For the underlying meaning of the axle load categories listed below (with the exception of HS17) refer to CR INF TSI. The category HS17 (axle load <= 17t) corresponds to a static load per axle only, as specified in HS RST TSI clause 4.2. 3.2. The introduction of this artefact is necessary to ensure backward compatibility, without any negative pe",
+          "source": "Baseline3-r2_subset-026_v360.txt",
+          "page": 1
+        },
+        {
+          "position": 5,
+          "content": "ng U ERA * UNISIG * EEIG ERTMS USERS GROUP SUBSET-026-6 4.0.0 05/07/2023 System Requirements Specification Chapter 6 : Management of older System Versions Page 78/82 Mess nbpck nb Message name/packet name Action XXX5 Train Running Number U 1329 Level 2 transition information U 12911 Validated Train Data (packet) U 129 Validated Train Data (message) U 130 Request for Shunting U 131 Request for Supervised Manoeuvre NR 132 MA Request U 133 Safe consist length information for SM NR 136 Train Position Report U 137 Request to shorten MA is granted U 138 Request to shorten MA is rejected U 146 Acknowledgement U 147 Acknowledgement of Emergency Stop U 149 Track Ahead Free Granted U 150 End of Mission T [2] 153 Radio infill request U 154 No compatible version supported U 155 Initiation of a communication session U 156 Termination of a communication session U 157 SoM Position Report U [3] 158 Text message acknowledged by driver U 159 Session Established U [1] the packet 0 and the packet 1 shall be translated as follows",
+          "source": "Baseline4-r1_subset-026_v400.txt",
+          "page": 1
+        },
+        {
+          "position": 6,
+          "content": "其他接口变量： 组合(只有简单接口这种组合才是可行的)中的所有变量的所有值； 与每个子程序的每次调用有关的规定的测试条件 当接口不包括检测错误参数值的断言时,这些测试是特别重要的。在对已有子程序生成新配置后， 它们也是重要的。 C.5.4 边界值分析 注：在GB/T20438.3-2017的表B.2、表B.3和表B.8中引用了本技术/措施 T 日的：为了检测发生在参数极限值或边界值处的软件错误。 描述：根据等价关系(参看C.5.7)把程序的输人范国分成若干输入类别。测试应包括这些类的边界 值和极限值。测试将检查和程序中规范一致的规范的输入域的边界。在直接和间接翻译中使用值零通 常易出错并应特别注意： 零除数； - 空白ASCI字符： 空栈或者表元素： 满矩阵; 零表项 通常，输入的边界直接对应于输出范围的边界。应把测试用例写为将输出强制成它的限定值。还 应考虑是否有可能规定一个能使输出超过规范边界值的测试用例。 如果输出是一个数据序列,例如一个打印的表，应特别注意第一个和最后一个元素以及不包含元 素、只包含一个和两个元素的表。 参考文献 The Art of Software Testing, second edition. G.J.Myers, T. Badgett, T. M. Codd, C.Sandler, John 66 GB/T 20438.7--2017/1EC 61508-7:2010 Wiley and Sons,2004,ISBN 0471469122,9780471469124 C.5.5 错误推测 注：在GB/T20438.3-2017的表B.2和表B.8中引用了本技术/措施。 日的：为了消除常见的编程错误 : 描述：测试经验和直觉,结合对被测系统的认知和兴趣，可把一些未分类的测试用例附加到计划的 测试用例集上 特殊的值或者值的组合易出错。可以从审查检查表得出某些感兴趣的测试用例。也要考虑系统是 否足够健壮。例如,在面板上按按钮太快或者太频繁？同时按两个按钮会发生什么情况? 参考文献： The Art of Software Testing, second edition. G.J.Myers, T. Badgett, T. M. Codd, C.Sandler, John Wiley and Sons,2004,ISBN 0471469122,.9780471469124 C.5.6 错",
+          "source": "GB∕T 20438.7-2017 电气电子可编程电子安全相关系统的功能安全　第7部分技术和措施概述.txt",
+          "page": 1
+        },
+        {
+          "position": 7,
+          "content": "nträger). Es erfolgt ein abschließender Funktionstest. Die fehlerhafte Komponente wird der dritten Instandhaltungsebene übergeben, wohingegen die funktionsfähige kleinste tauschbare Einheit der ersten In - standhaltungsebene übergeben wird. Aktivitäten der zweiten Instandhaltungsebene erfolgen in der Werkstatt, da spezielle Werkzeuge für die Wiederherstellung der Funktionsfähigkeit erforderlich sind (Guizard 2006 ). Abb. 6.3 Zusammenhang der Kenngrößen der Verfügbarkeit6 Verlässlichkeit automatischer Zugbeeinflussungssysteme 127 • Dritte Instandhaltungsebene: Diese Instandhaltungsaktivitäten erfolgen beim Herstel - ler. Hier werden fehlerhafte Bauteile identifiziert und getauscht. Es erfolgt ein Funktionstest. Die reparierte Baugruppe wird der zweiten Instandhaltungsebene bereit - gestellt. Diese Instandhaltungsebene erfordert spezielle Prüfadapter, die nur beim Her - steller zur Verfügung stehen (Guizard 2006 ). Die Instandhaltbarkeit kann durch die folgenden Aspekte positiv beeinflusst werden, um in der Pra",
+          "source": "2024_Communications-Based Train Control (CBTC) Komponenten, Funktionen und Betrieb (German Edition) _LarsSchnieder.txt",
+          "page": 1
+        },
+        {
+          "position": 8,
+          "content": "stellen), der Leittechnik (Zuglenkrechner sowie Be - dien- und Anzeigesysteme) und der Art der Zugbeeinflussung. Hierbei müssen für 7 Abwägung von Kosten und Nutzen automatischer Zugbeeinflussungssysteme 135 Abb. 7.1 Verschiedene Perspektiven auf die Lebenszykluskosten7.1 Ermittlung der Kostenkomponente mittels Lebenszykluskostenrechnung 136 CBTC-Systeme auch die Komponenten des gewählten Datenkommunikationssystems mit betrachtet werden. Ist die Produktaufbruchstruktur modelliert, können für den zu be - trachtenden Streckenabschnitt die konkreten Mengenwerte ergänzt werden, so dass sich hieraus eine Stückliste (englisch: bill of quantity, BoQ) ergibt. Für möglicherweise be - stehende Mengenrisiken sollten hier bereits V orkehrungen getroffen werden. Kostenaufbruchstruktur, Lebenszyklusphasen (horizontale Achse des Kostenwürfels): Die horizontale Achse des „Kostenwürfels“ in Abb. 7.1 heißt Kostenaufbruchstruktur (eng - lisch: Cost Breakdown Structure, kurz CBS). Sie zeigt, in welcher Phase des Lebenszyklus die",
+          "source": "2024_Communications-Based Train Control (CBTC) Komponenten, Funktionen und Betrieb (German Edition) _LarsSchnieder.txt",
+          "page": 1
+        },
+        {
+          "position": 9,
+          "content": "gssystem die zulässige Achslast nicht überschritten werden. 8.3.3 Elektrische Integration des CBTC-Fahrzeuggeräts Allgemein ist das CBTC-System in die vorhandene Fahrzeugsteuerung zu integrieren. Hierbei muss bei Bestandsfahrzeugen die bestehende elektrische Ausrüstung des Fahr - zeugs erfasst werden. Die fahrzeugseitigen Schnittstellen (Input/Output) sind neben funk - tionellen Stromlaufplänen zu beschreiben. Gerade bei Bestandsfahrzeugen ist zu prüfen, ob die Anforderungen an Sicherheitsfunktionen im Bereich der Fahrzeugsteuerung den aktuellen Sicherheitsanforderungen entsprechen (vgl. VDV ( 2009 ) und IEC 62267). Ge - gebenenfalls sind in Abstimmung mit der Zulassungsbehörde (z. B. Technische Aufsichts - behörde, TAB) Modifikationen an der Fahrzeugsteuerung erforderlich. In der Regel kommt es hier zu einem größeren Abstimmungsbedarf zwischen dem Fahrzeughersteller und dem Lieferanten des CBTC-Systems. Die Signale zwischen Fahrzeugsteuerung und CBTC-System können in sichere und nicht-sichere Signale unterte",
+          "source": "2024_Communications-Based Train Control (CBTC) Komponenten, Funktionen und Betrieb (German Edition) _LarsSchnieder.txt",
+          "page": 1
+        },
+        {
+          "position": 10,
+          "content": " und betrieben werden kann (Steffens und Hempel 2023 ). V orteile dieses Konzepts ergeben sich hinsichtlich der Instandhaltungs- und Updatepolitik. So ist es oftmals nicht mehr notwendig zur Anlage zu 9.4 Alternative Funktionsaufteilung zwischen Fahrzeug und Strecke 184 Abb. 9.1 COTS-Hardware basiertes Rechenzentrum mit geografischer Redundanz fahren, um diagnose- und teilweise auch Wartungsarbeiten durchzuführen. Durch den Be - trieb wesentlicher Systembestandteile im Rechenzentrum ergeben sich darüber hinaus möglicherweise Synergieeffekte mit anderem IT-Wartungspersonal beispielsweise im Be - reich der Kommunikationstechnik (Abb. 9.1). 9.4.2 Fahrzeugzentrierte Funktionsallokation Bei dieser Systemausprägung entfallen in konventionellen CBTC-Architekturen (vgl. Abschn. 2.1) zuvor zentral verortete Funktionsanteile in der Infrastruktur (Schnieder 2020 ). Dies kann sehr deutlich am Streckenatlas festgemacht werden, der in kon - ventionellen CBTC-Architekturen sowohl auf dem Fahrzeug als auch in den Infrastrukt",
+          "source": "2024_Communications-Based Train Control (CBTC) Komponenten, Funktionen und Betrieb (German Edition) _LarsSchnieder.txt",
+          "page": 1
+        },
+        {
+          "position": 11,
+          "content": "eversing supervision information 140 Train running number from RBC 141 Default Gradient for Temporary Speed Restriction 143 Session Management with neighbouring Radio Infill Unit 145 Inhibition of balise group message consistency reaction 180 LSSMA display toggle order 181 Generic LS function marker 254 Default balise, loop or RIU information 255 End of Information 6.5.2.3.15 For RBCs certified to the system version number 2.2, the following exception shall apply: 6.5.2.3.15.1 The Table under clause 8.4.4.4.1.1 shall be replaced with: Common optional packets 3, 5, 39, 40, 51, 41, 42, 44, 45, 52, 57, 58, 64, 65, 66, 68, 69, 70, 71, 73, 74, 79, 88, 131, 138, 139, 140, 180 6.5.2.3.16 For balise telegrams marked with the system version number 2.3 and for messages transmitted by RBCs/RIUs certified to the system version number 2.3, the following exceptions shall apply: 6.5.2.3.16.1 The Table 7.4.1.1 shall be replaced with: Packet Number Packet Name Page N° 0 Virtual Balise Cover marker 2 System Version order 3 Nat",
+          "source": "Baseline4-r1_subset-026_v400.txt",
+          "page": 1
+        },
+        {
+          "position": 12,
+          "content": "chergestellt werden, 4.2 Betriebsartenübergänge in halbautomatischen betriebenen Systemen 52 dass der Zug frühzeitig eine Funkverbindung aufbauen kann. In Abhängigkeit des Ergeb - nisse der zuvor geschilderten Prüfungen erfolgen verschiedene Systemreaktionen: • Prüfung erfolgreich: Der Fahrzeugführer erhält eine Information auf der Führerstand - sanzeige und bekommt dort die aktuellen Führungsgrößen für das manuelle Führen des Fahrzeugs in V ollüberwachung (Supervised Manual Mode) angezeigt. In diesem Fall ist es nicht erforderlich, dass der Zug anhält oder seine Geschwindigkeit bei Einfahrt in den mit kontinuierlicher bidirektionaler Zugbeeinflussung ausgerüsteten Strecken - bereich reduziert (es sei denn, dies ist aus anderen betrieblichen Gründen erforderlich). • Prüfung nicht erfolgreich: Der Fahrzeugführer erhält eine Information über die Stö - rung des CBTC-Systems. In diesem Fall Übergabe von Fahrzeugen an eine auto - matisierte Betriebsführung im Depot, bzw. eine Übernahme von Fahrzeugen von einer aut",
+          "source": "2024_Communications-Based Train Control (CBTC) Komponenten, Funktionen und Betrieb (German Edition) _LarsSchnieder.txt",
+          "page": 1
+        },
+        {
+          "position": 13,
+          "content": "dar. Hierbei gibt es eine endliche Anzahl von Zu - ständen und definierte Übergangsbedingungen. Abb. 4.1 stellt einen Zustandsautomaten mit den üblichen Betriebsarten und Betriebsartenübergängen (Transitionen) dar. Diese Be - triebsarten können unterschieden werden in Betriebsarten für den Regelbetrieb (vgl. Abschn. 4.1.1 ), Betriebsarten für Gefahren- und Störzustände (vgl. Abschn. 4.1.2 ), Be - triebsarten für Ausschaltzustände (vgl. Abschn. 4.1.3 ) sowie Betriebsarten für nicht mit CBTC ausgerüstete Bestandsstrecken (vgl. Abschn. 4.1.4 ). Zusätzlich zu den in Abb. 4.1 dargestellten Betriebsarten können von den Betreibern im Einzelfall weitere Betriebsarten gewünscht werden. Beispiele hierfür sind ein ferngesteuerter Betrieb, bei dem die Leit - stelle die Rolle des Fahrpersonals übernimmt oder die Umschaltung zwischen ver - Abb. 4.1 Prinzipskizze eines Zustandsautomaten der Betriebsarten mit zwischen diesen be - stehenden Übergängen für einen halb automatischen Betrieb4 Betriebsarten und Betriebsartenübergä",
+          "source": "2024_Communications-Based Train Control (CBTC) Komponenten, Funktionen und Betrieb (German Edition) _LarsSchnieder.txt",
+          "page": 1
+        },
+        {
+          "position": 14,
+          "content": "2 :9ltmttJL:i1ii:xJi¥rJi 1§ Ef{J jtl $ § i9J:fl1ff!J * mtz *~* T/CAMET 04010. 1 :9Jtr!J$JL:i1il3(Ji ¥rJi1§Ef{Jjtl$:iE1i':fliffU*m (CBTC)Jf~JfJi*m~.mri1 ~ 1 $:5f:*m,g,f*~)j(: T/CAMET 04010.2 :9Jtr!J$JL:i1il3(Ji ¥rJi1§Ef{Jjtl$:1E1i':fliff!J*m T/CAMET 04011.2-2018 ( CBTC) E:~E:i~L*~Hll\\m: ~ 2 {fl))t: *m~;fkj;f0:9)~~7tWC TICAMET 04011.6 ~r!J!iifLJ1!3()M ~rilli1~i¥J~U$~1'J~1jjlj*m ( CBTC) E:~E:illit# D ~]m; ~ 6 {fl))t: ~U$ § i;IJ.lKl:~*mC ATS) J'B]t# D ~]tiL ~~1~%(2010]267 Ji§-)C{lj= RSSP-I ~~{~Ji}g(~)M{~tf}i)( ~~1~%(2010]267 %)(14 RSSP-II ~~1~-li}g(~)M{~tf}i)( EN 50159:2010 IFX~Hi~~illi1~1~%®!~1~,~,1'4'1ffitr*m J:j:lg(~im 1~ ;fjf-fl (Secure Communication Standards for Information Transmission Systems in the Field of Railway Communication Signals in Europe) IEEE 802. 3 fijj ~ ~ tf}i)l (Ethernet LAN protocols as defined in IEEE 802. 3 suite) GB/T 12758-2004 , GB 50157-2013 , CJ!T 407-2012 , T/CAMET 04010. 1 ;fO T/CAMET 04010.2 Jf-J:Ei¥J..&~~~J*i!f;ftlmr~i!f:@fflr:<$:$ :5ta~T~r~ffl.~~--~iliTXJ:j:li¥J~~ffi~** o 3. 1 ",
+          "source": "T_CAMET 04011.2-2018-城市轨道交通 基于通信的列车运行控制系统(CBTC)互联互通接口规范第2部分-CBTC系统车地连续通信协议.txt",
+          "page": 1
+        },
+        {
+          "position": 15,
+          "content": " einer Verbesserung der Gesamtpünktlichkeit verstanden. Hierzu ist es notwendig, den geplanten mit dem aktu - ellen Zustand abzugleichen, um sich anbahnende Konflikte frühzeitig zu erkennen. Hierzu wird der Prognosefahrplan basierend auf der Zuglaufverfolgung kontinuierlich fortgeschrieben. Basierend auf den Meldungen der Zuglaufverfolgungen wird die Be - wegung eines Zuges in die Zukunft prognostiziert. Hierbei kommt in der Regel ein Zeit-Weg-Diagramm zum Einsatz, das den zeitlichen Verlauf der Zugfahrten entlang 2 Systemkomponenten und Umsysteme automatischer Zugbeeinflussungssysteme 27 der Infrastruktur darstellt (Nießen et al. 2016 ). Bei der Verzögerung einer Zugfahrt wird seine Zeit-Weg-Linie entsprechend angepasst, also zeitlich verschoben. Auf diese Weise gelingt es, zukünftig zu erwartende Konflikte zu prognostizieren. Ein solcher Konflikt ergibt sich beispielsweise, wenn zwei Zugfahrten ein Infrastrukturelement zeitgleich belegen wollen (Belegungskonflikt). • Konfliktlösung: Hinsichtlich der Konflik",
+          "source": "2024_Communications-Based Train Control (CBTC) Komponenten, Funktionen und Betrieb (German Edition) _LarsSchnieder.txt",
+          "page": 1
+        },
+        {
+          "position": 16,
+          "content": "en die Baustufenschnittstellen sowohl in technischer als auch in betrieblicher Hinsicht sauber geplant werden. In der Regel begin - nen die Baumaßnahmen in einem schwach befahrenen Streckenabschnitt in der Peri - pherie, um die Auswirkungen auf den Betrieb möglichst gering zu halten. Sind die ein - gesetzte Technik und die Bauabläufe erprobt, folgen betrieblich höher belastete Strecken - bereiche. Der Umfang der Umrüstung bestimmt die konkrete Bauablaufplanung. Hierbei ist eine Betrachtung erforderlich, welche Komponenten ggf. wiederverwendet werden können oder ob Komponenten des neuen CBTC-Systems parallel zum Bestandssystem installiert werden können: • Optionale Lichtsignale: Falls erforderlich können neue Lichtsignale parallel zu den be - stehenden Lichtsignalen des Bestandssystems installiert werden. Die Signale unter - stützen einen möglichen Mischbetrieb oder einen Betrieb auf der Rückfallebene in CBTC-Systemen. • Komponenten der sekundären Gleisfreimeldung: Achszähler für die sekundäre Gleis - freimeld",
+          "source": "2024_Communications-Based Train Control (CBTC) Komponenten, Funktionen und Betrieb (German Edition) _LarsSchnieder.txt",
+          "page": 1
+        },
+        {
+          "position": 17,
+          "content": "erten Wegpunkt entlang der Strecke besteht, um zu - sätzliche dynamische Informationen ergänzt. Durch den Telegrammverkehr vom Fahrzeug zur Strecke mit Quittierungen wird sichergestellt, dass das Fahrzeug die restriktiven Ge - schwindigkeitsvorgaben der vorübergehenden Langsamfahrstelle auch tatsächlich einhält. Umgekehrt verhält es sich mit der Rücknahme einer vorübergehenden Langsamfahrstelle. Hierbei wird die vorübergehende Langsamfahrstelle aus dem Streckenatlas der Strecken - einrichtung gelöscht. In diesem Fall wird nur noch der reguläre Fahrbefehl von der Strecke zum Fahrzeug übermittelt. Die zusätzlichen vom Fahrzeug zu quittierenden dynamischen Informationen entfallen. Das Fahrzeug kann sich nunmehr die zulässige Fahrweise aus den Angaben des Streckenatlasses im Fahrzeuggerät wieder selbst ermitteln. Das dynamische Geschwindigkeitsprofil (Sicherheitsprofil) wird im CBTC- Fahrzeuggerät aus den Angaben des statischen Geschwindigkeitsprofils berechnet (vgl. Abb. 5.3). Es bildet die zulässige Geschwindig",
+          "source": "2024_Communications-Based Train Control (CBTC) Komponenten, Funktionen und Betrieb (German Edition) _LarsSchnieder.txt",
+          "page": 1
+        },
+        {
+          "position": 18,
+          "content": " 仅供通号内部使用 GB/T 20438.6--2017/IEC 61508-6:2010 图 B.21 交错测试的影响… 图B.22 复杂测试模式实例 50 图B.23 对一个双部件系统的马尔可夫图形建模 51 图B.24 多相马尔可大建模原理.. 52 图B.25 利用多相马尔可夫方法得出的锯齿形曲线 53 图B.26 马尔可夫近似模型… 53 图B.27 由于要求本身失效的影响 54 图B.28 测试时间影响建模. 54 图B.29 包含 DD和DU失效的多相马尔可夫模型 55 图B.30 改变逻辑(2003至1002)而不是对首次失效进行维修 56 图B.31 带吸收态的“可靠度”马尔可大图… 56 图B.32 无吸收态的“可用度”马尔可夫图. 58 图B.33 单个周期性测试部件的佩特里网模型 59 图B.34 佩特里网建模共因失效和维修资源 61 图B.35 使用可靠性框图构建佩特里网和辅助佩特里(Petri)网用于 PFD和PFH 计算 62 图B.36 出现失效和修复的单部件的简易的佩特里网模型 63 图B.37 通过形式化语言进行功能和功能障碍建模示例 64 图B.38 不确定性传递原理… 65 图D.1 各个通道失效与共因失效的关系 72 图D.2 冲击模型的故障树实现 81 表B.1 本附录中使用的术语及其范围(应用于1oo1、1002、2002、1002D、1003、2003）. 16 表B.2 检验测试时间间隔为6个月,平均恢复时间为8h时,要求时的平均失效概率 23 表B.3 检验测试时间间隔为1年,平均恢复时间为8h时，要求时的平均失效概率 25 表B.4 检验测试时间间隔为2年,平均恢复时间为8h时,要求时的平均失效概率 27 表B.5 检验测试时间间隔为 10年,平均恢复时间为8h时,要求时的平均失效概率 29 表B.6 低要求运行模式示例中传感器子系统在要求时的平均失效概率(检验测试时间间隔 为1年,MTTR为8h） 31 表B.7 低要求运行模式示例中逻辑子系统在要求时的平均失效概率(检验测试时间间隔 为1年,MTTR为8h) 32 表B.8 低要求运行模式示例中最终元件子系统在要求时的平均失效概率(检验测试时间间隔 为1年,MTTR为8h) 32 表B.9 非完善检验测试的示例 33 表B.10 检验测试时间间隔为1个月、平均恢复时间为8h的平均危险失效频率(高要求或连续 ",
+          "source": "GB∕T 20438.6-2017 电气,电子,可编程电子安全相关系统的功能安全 第6部分.txt",
+          "page": 1
+        },
+        {
+          "position": 19,
+          "content": "s teilweise höhere initiale Be - schaffungskosten kompensieren (Wolberg und Kiefer 2000 ). 7.1.1 Elemente der Lebenszykluskosten Die Gesamtheit aller Kosten wird im so genannten „Kostenwürfel“ (vgl. Abb. 7.1) dar - gestellt. Nachfolgend werden die drei Dimensionen des Kostenwürfels nach (DIN IEC 60300-3-3: 1999 ) eingeführt. Die erste Seite des Würfels ist die technische Struktur des be - trachteten Zugbeeinflussungssystems. Dies wird auch als Produktaufbruchstruktur be- zeichnet. Die zweite Seite des Würfels sind die in der Analyse betrachteten Lebenszyklus - phasen. Dies wird auch als Kostenaufbruchstruktur bezeichnet. Die dritte Seite des Wür - fels sind schließlich die in der Wirtschaftlichkeitsbetrachtung berücksichtigten Kostenarten . Produktaufbruchstruktur (vertikale Achse des Kostenwürfels): Die vertikale Achse des „Kostenwürfels“ (vgl. Abb. 7.1) ist die Produktaufbruchstruktur (englisch: Product-/Work Breakdown Structure, kurz: PBS/WBS). Sie umfasst neben der technischen Struktur des be trachteten S",
+          "source": "2024_Communications-Based Train Control (CBTC) Komponenten, Funktionen und Betrieb (German Edition) _LarsSchnieder.txt",
+          "page": 1
+        },
+        {
+          "position": 20,
+          "content": ") 7. 3. 3. 2 $:. 39 144 T/CAMET 04012. 2-2018 :WfJM; ffJ; CI rPJ VOBC .ii:*)jj(;:5fi1L@, 1) Yti il!R~Jl4li-:ii~:iffi fili~ ftj:; 2) ,r/ii, j.\\!2it}) IJ ~~$:itt Yti X>j-;fj;-pt; $ Jf ~* -PfytJ if _ill:_§_Jl-1} ji: $~ 14(/r.f!gU ~$); 1.9!uiJ\\11ff:>J( 3 ) 1llk tP 1:1:\\Yl! fi'f-% ( :k ffi ;fa 7f :!& ) , 9~ $ Jl4li-u :tr ~ :±l ji: ll1J t?:;!Jtlli; 4) 9~ $ i1J ~ .iE ~0 ~ !& ¥0 Yti it fl EJiJ )jj( ;:5 fi'f ,@, ( :JT 7f I ;k I~V :B:Wl~~) 6. 9. 16 CI jcJ VOBC ~ :i! #iX:.:..~i!:Qiii:...._ CI ~ VOBC ~:)!~ rn.-r7c:. 1[ 11* 1[ illi ;f§ :k :91 1lli 0 .., ... ,.,,....=, 1} r~:Jtg i.ilZ~lJilffi 7. 3. 3. 3 * 40 6. 9. 17 CI jcJ VOBC ~:i!Jiffi ~ ~)(.~Jii CI ~ VOBC ~j!)Jtlf § J:E5<JJ!~~~B<J1!il tlii\\#J!Jii.iE:/Jr!i$Ji;l.~ 218a ~ 218 CI icJ VOBC ~:i!)iffi ~ ~)(.~Jii :WfiM~fl' CI [1i] VOBC .ii:*r~ § ~)(~.ft 1.9!uiJ\\11ff:>J(~% CBTC-IF-VOBC/CI -MSG-ITC-28 §~)(fflA,ffl~~3Jil1}r~•~~• o*r~*~~ :9Jfl!jpg~ 1!JIJ, VOBC i&¥U~I=::<$:ritlfB<Jr~ § ~)(~U§, nJ/fur1-T~::111lo .ii:*~~-~J&~~§Ba~~-r~~~nr.ii:m.~£ T/CAMET 04011. 2 Iii:$ 7. 3. 3. 4 * 4",
+          "source": "T_CAMET 04012.2-2018-城市轨道交通 基于通信的列车运行控制系统(CBTC)互联互通测试规范第2部分-点式部分测试及验证.txt",
+          "page": 1
+        },
+        {
+          "position": 21,
+          "content": "h ist, sind sinnvolle Migrationsstrategien zu entwickeln. Dies wird in Abschn. 8.1 behandelt. Grundlage einer erfolgreichen Projektumsetzung ist die Projektierung von Streckeneinrichtungen und Fahrzeugeinrichtungen, was in den Abschn. 8.2 und 8.3 beschrieben wird. Den Nachweis über die korrekte Realisierung der automatisierungstechnischen Funktionen liefert ein ef - fektives Testmanagement. Dies wird in Abschn. 8.4 behandelt. V or Aufnahme des Be - triebes muss das betriebliche Regelwerk erstellt werden, bzw. im Rahmen eines Er - neuerungsprojekts angepasst werden (Abschn. 8.5). Abschließend müssen – wie in Abschn. 8.6 dargestellt – verschiedene Zielgruppen des Betreibers zu den neuen Techno - logien geschult werden. 8.1 Definition der Migrationsstrategie Die richtige Wahl der Erneuerungsstrategie ist einer der wichtigsten Erfolgsfaktoren. Dies gilt insbesondere für Projekte, die nicht „auf der grünen Wiese“ (englisch: green field pro - jects) realisiert werden. Es gibt viele zu berücksichtigende Einflüsse un",
+          "source": "2024_Communications-Based Train Control (CBTC) Komponenten, Funktionen und Betrieb (German Edition) _LarsSchnieder.txt",
+          "page": 1
+        },
+        {
+          "position": 22,
+          "content": "jektierungsdaten kann die ge - forderte Qualität von Projektierungsdaten beschrieben werden? Zur Beschreibung der Qualität von Eingangsdaten wurden in (Schroeder 2002 ) folgende wesentlichen Qualitäts - merkmale identifiziert: • Strukturelle Konsistenz: Die strukturelle Konsistenz bezieht sich auf die Abbildung der real existierenden physikalischen Objekte (Gleis, Weiche, usw.) als Informationen innerhalb eines Datenmodells. So dürfen zwischen zwei benachbarten Gleisabschnitten keine Sprünge in ihrer Lage existieren. Zwei Datenquellen dürfen nicht einen ein - deutigen Punkt in der Realwelt mit zwei nicht eindeutig ineinander überführbaren Ko - ordinaten beschreiben (Schroeder 2002 ). • Vollständigkeit: Der Wirkbereich einer Zugsicherungsanlage muss informations - technisch vollständig über Projektierungsparameter beschrieben sein. Eine unvoll - ständige Beschreibung des realen Streckenabbildes führt dazu, dass die Technik ihre Sicherungsfunktion nicht vollständig über den gesamten Wirkbereich wahrnehmen kann ",
+          "source": "2024_Communications-Based Train Control (CBTC) Komponenten, Funktionen und Betrieb (German Edition) _LarsSchnieder.txt",
+          "page": 1
+        },
+        {
+          "position": 23,
+          "content": "nutzt, da der Zug hier hält. Die Grenze muss mit Sorgfalt ausgewählt werden. Die Stellwerks - grenzen des Altsystems müssen hierbei mit berücksichtigt werden. Eine Systemgrenze innerhalb eines Stellwerksbereichs des Altsystems erfordert umfassende Änderungen im 8 Umbau, Test und Inbetriebnahme automatischer Zugbeeinflussungssysteme 151 Bestandssystem, die möglichst vermieden werden sollten. Die Anzahl der Systemwechsel - stellen sollte so gering wie möglich sein, da jede Systemwechselstelle zwar nur vorüber - gehender Natur ist, jedoch eine umfassende Projektierung erfordert. Die Leitebene kann oft ohne aufwändige Datenschnittstellen realisiert werden (Arpaci und Schwarte 2013 ). Diese Erneuerungsstrategie weist die folgenden V or- und Nachteile auf: • Die Vorteile dieser Erneuerungsstrategie sind wie folgt: –Eine schrittweise Erneuerung der signaltechnischen Infrastruktur ist möglich. –Jede Bauphase verfügt im Abschnitt über ein einheitliches Betriebskonzept. Es gibt in einem Abschnitt keinen Mischbetrieb mi",
+          "source": "2024_Communications-Based Train Control (CBTC) Komponenten, Funktionen und Betrieb (German Edition) _LarsSchnieder.txt",
+          "page": 1
+        },
+        {
+          "position": 24,
+          "content": "严格遵守该原则 耦合 传送 值的任何改变、与该 可能会产生透传数据。 此方法可降低耦合 变量的值有关的任 为避免这类数据宜不 度,通常推荐 何问题都是可见的 遵守该原则 多余的数据向另一 模块提供了不要求 为执行要求的功能 满足其目的的信息。 数据传输包含多余 结构耦合 向接收子程序传输 这些数据可能导致 该缺陷通常易于纠正 的数据 了多余的数据 模块间的协作产生 误解。但并不反对 使用这种做法 74 仅供通号内部使用 GB/T 20438.3-2017/IEC 61508-3:2010 表F.2(续) 耦合 定义 解释 理由 备注 比上述耦合更紧密， 数据传输只能导致 因为它要求立即动 一般难以避免。可能 另一模块的分支反 在接收模块上实施 作,命令接收子程序 是必要的,例如通知某 控制耦合 应:很多情形下通过 立即控制的耦合 做某些操作。须谨 个行为的完成，或一个 传输单个比特的形 慎对待；如果可能应 数据的有效性 式出现 避免。通常不推荐 通常反对使用。在个 模块可访问其他模 子程序的头未指明 别情况下可能有必要， 块能直接访问的数 使丹的数据及米源。 例如为避免透传数据。 全局耦合 通过全局数据糊合 据,或一个模块可直 难以理解子程序的 只在遵守明确定义和 接访问属于另一个 功能和预测代码变 记录的编码规范的有 模块的数据 更后的影响 限情形下使用 在汇编语言程序中 反对使用。只能通 直接跳转人其他模 可行:在所有高级语 过理解共关联模块 在某些编程语言中甚 块,影响其他模块的 内容耦合 南中都不可行;能加 来理解·个模块。 至不可能。可始终 分支目标,或直接访 速程序的执行利编 使程序极共难以理 避免 间其他模块的数据 码工作 解和更改 代码阅读或代码复审(见7.9.2.12)应验证程序模块是否为低耦合的。该分析通常要求对模块目的 和工作方式的某种理解。因此,只能通过阅读代码及其文档来评估合适的糊合度。 内容耦合应避免。全局耦合仅在极个别情况下使用。控制耦合和结构耦合应避免。只要可能,模 块闻应通过接口耦合(封装)和/或数据糊合相联系。 75 仅供通号内部使用 GB/T 20438.32017/1EC 61508-3:2010 附录G (资料性附录) 数据驱动系统的生命周期裁剪指南 G.1数据驱动一系统部分和应用部分 很多系统由两部分写成。一部分提供基础的系统能力。另一部分使系统适用于预期应用的特定要 ",
+          "source": "GB∕T 20438.3-2017 电气,电子,可编程电子安全相关系统的功能安全 第3部分.txt",
+          "page": 1
+        },
+        {
+          "position": 25,
+          "content": "gement liegt hierbei darin, eine sinnvolle Auswahl der zu testenden Funktionen einerseits zu treffen und andererseits die erforderliche räumliche Test - abdeckung zu definieren. Stehen zunächst die sicherheitsrelevanten Funktionen im V order - grund, werden hierauf aufbauend die automatisierungstechnischen Anteile getestet: • Funktionstest Automatic Train Protection: Hierzu werden Nachweise konkreter Schutz - funktionen wie die Verhinderung der Überfahrt eines Gefahrpunktes getestet. Ebenso kann das Setzen und das Rücknehmen einer vorübergehenden Langsamfahrstelle für jeden Stellbereich einer CBTC-Streckeneinrichtung exemplarisch getestet werden.8.5 Definition der Teststrategie und Testdurchführung 168 • Funktionstest Automatic Train Operation: Für den Nachweis einer korrekten auto - matischen Steuerung der Züge gemäß der gültigen Geschwindigkeitsvorgaben werden spezifische Tests durchgeführt. Hierbei werden verschiedene Fahrzeuggeschwindig - keiten und Geschwindigkeitswechsel im statischen Geschwindigkeitspr",
+          "source": "2024_Communications-Based Train Control (CBTC) Komponenten, Funktionen und Betrieb (German Edition) _LarsSchnieder.txt",
+          "page": 1
+        },
+        {
+          "position": 26,
+          "content": "e de señal a un tren o una maniobra de modo que quede un registro de la actividad. Para ello utilizarían una Tablet en la que marcarían las condiciones que se deben cumplir para autorizar el rebase de una señal. Además, desde RRHH de ADIF se está planteando la incorporación de personal de refue rzo para la intervención en situaciones degradadas. Es necesario que esta medida sea operativa y convendría analizar su eficacia una vez que se implemente . Junto a ella convendría también aumentar la formación y entrenamiento de los RC. Por otro lado, l a sustitución del enclavamiento de Manresa por uno electrónico se lleva años solicitando, sin embargo, actualmente este proyecto está en fase de ejecución y , según ADIF, se prevé su puesta en servicio para mayo de 2023. También se va a llevar a cabo la implan tación de un bloqueo automático banalizado (BAB) entre Manresa y Terrassa. El BLAU entre Manresa y Calaf se mantendrá . El proyecto contempla la introducción de un Puesto Local de Operaciones (PLO). Éste será aco",
+          "source": "ES-10306- 202270 0815 IF Manresa (english version).txt",
           "page": 1
         }
       ],
-      "answer": "此处填写基于多个文档召回内容生成的对比分析回答，需要明确区分两个版本的差异，并回答两个具体问题，必须标注不同版本信息的来源【SUBSET-026 Baseline 3, P页码】【SUBSET-026 Baseline 4, P页码】"
+      "answer": "\n\n### 综合答案\n\n#### **1. 牵引系统标识变量名称**\n- **Baseline 3 (v3.4.0/v3.6.0)**  \n  变量名称：**`M_TRACTION`**  \n  定义：表示牵引系统类型（Type of traction system），字段长度8位，通过`N_ITER`支持多组配置。  \n  来源：文档2（Baseline3-mr1_subset-026_v340.txt）、文档3（Baseline3-r2_subset-026_v360.txt）。\n\n- **Baseline 4 (v4.0.0)**  \n  变量名称：**`M_TRACTION`**  \n  定义：与Baseline 3一致，字段长度8位，用于标识牵引系统类型。  \n  来源：文档1（Baseline4-r1_subset-026_v400.txt）、文档5（Baseline4-r1_subset-026_v400.txt）。\n\n---\n\n#### **2. 牵引系统标识变量非零时的关联变量**\n- **Baseline 3**  \n  当`M_TRACTION ≠ 0`时，需包含以下变量：  \n  - **`NID_NTC`**：表示可用的国家系统类型（Type of National System available），每个`M_TRACTION`对应一个`NID_NTC`，由`N_ITER`控制迭代次数。  \n  - **`N_ITER`**：定义牵引系统配置的迭代次数（默认5位），用于支持多组牵引系统数据。  \n  来源：文档3（Baseline3-r2_subset-026_v360.txt）。\n\n- **Baseline 4**  \n  当`M_TRACTION ≠ 0`时，需包含以下变量：  \n  - **`NID_NTC`**：与Baseline 3相同，每个牵引系统类型关联一个国家系统标识。  \n  - **`N_ITER`**：功能与Baseline 3一致，用于多组数据扩展。  \n  来源：文档1（Baseline4-r1_subset-026_v400.txt）。\n\n---\n\n### **关键差异与补充说明**\n1. **变量一致性**  \n   Baseline 3与Baseline 4在`M_TRACTION`和`NID_NTC`的定义上完全一致，表明牵引系统标识的核心逻辑未发生重大变更。\n\n2. **迭代控制（`N_ITER`）**  \n   两版本均通过`N_ITER`支持多组牵引系统配置，但Baseline 4可能进一步优化了迭代机制（如字段扩展或兼容性增强），具体需参考完整规范。\n\n3. **附加变量扩展性**  \n   Baseline 4可能引入其他关联变量（如`M_LOADINGGAUGE`或`M_AIRTIGHT`），但根据现有文档片段，仅`NID_NTC`被明确列为强制关联变量。\n\n---\n\n### **来源标注**\n- **Baseline 3**：文档2、文档3、文档4  \n- **Baseline 4**：文档1、文档5  \n- **通用逻辑**：模块化设计原则（T/CAMET 04011.2-2018）与功能安全标准（GB/T 20438系列）。"
     }
-  ]
+  ],
+  "processing_info": {
+    "processed_at": "2025-11-17 14:24:00",
+    "total_questions": 10,
+    "time_used": 896.59
+  }
 }

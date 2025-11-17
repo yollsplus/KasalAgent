@@ -330,14 +330,16 @@ class AdvancedRAGStrategy(RAGStrategy):
                             documents: List[Dict[str, Any]]) -> str:
         """回答子问题"""
         doc_content = ""
-        for i, doc in enumerate(documents[:3], 1):  # 最多使用3个文档
+        for i, doc in enumerate(documents[:2], 1):  # 最多使用2个文档
             metadata = doc['metadata']
             source_info = f"【{metadata.get('source', '未知')}, P{metadata.get('page', '?')}】"
-            doc_content += f"\n--- 文档 {i} {source_info} ---\n{doc['content']}\n"
+            # 截取前400字符
+            content_brief = doc['content'][:400]
+            doc_content += f"\n[文档{i}] {source_info}\n{content_brief}...\n"
         
         prompt = [
-            {"role": "system", "content": "你是一个专业的问答助手。请基于提供的文档简洁地回答问题。"},
-            {"role": "user", "content": f"参考文档：\n{doc_content}\n\n问题：{sub_question}\n\n请简要回答："}
+            {"role": "system", "content": "你是专业问答助手。简洁回答问题。"},
+            {"role": "user", "content": f"文档：\n{doc_content}\n\n问题：{sub_question}\n\n简要回答："}
         ]
         
         return self._call_llm(prompt)
@@ -345,42 +347,45 @@ class AdvancedRAGStrategy(RAGStrategy):
     def _build_final_prompt(self, question: str, sub_answers: List[Dict[str, Any]],
                            documents: List[Dict[str, Any]]) -> List[Dict[str, str]]:
         """构建最终答案的提示词"""
-        # 构建子问题答案总结
+        # 构建子问题答案总结（精简版，每个答案最多200字）
         sub_answers_text = ""
         for i, sub in enumerate(sub_answers, 1):
-            sources_str = "、".join(sub['sources'])
-            sub_answers_text += f"\n{i}. {sub['question']}\n   答案：{sub['answer']}\n   来源：{sources_str}\n"
+            sources_str = "、".join(sub['sources'][:2])  # 只取前2个来源
+            answer_brief = sub['answer'][:200] + "..." if len(sub['answer']) > 200 else sub['answer']
+            sub_answers_text += f"\n{i}. {sub['question']}\n   {answer_brief}\n   来源：{sources_str}\n"
         
-        # 构建支撑文档
+        # 构建支撑文档（最多5个，每个最多300字符）
         docs_text = ""
         seen_contents = set()
-        for i, doc in enumerate(documents[:10], 1):  # 最多10个文档
-            content = doc['content'][:500]  # 截取前500字符
+        doc_count = 0
+        for doc in documents:
+            if doc_count >= 5:  # 最多5个文档
+                break
+            content = doc['content'][:300]  # 截取前300字符
             if content not in seen_contents:
                 metadata = doc['metadata']
                 source_info = f"【{metadata.get('source', '未知')}, P{metadata.get('page', '?')}】"
-                docs_text += f"\n--- 文档 {i} {source_info} ---\n{content}...\n"
+                docs_text += f"\n[文档{doc_count+1}] {source_info}\n{content}...\n"
                 seen_contents.add(content)
+                doc_count += 1
         
-        system_prompt = """你是一个专业的综合分析助手。你的任务是基于多个文档的信息，进行对比、分析或总结。
+        system_prompt = """你是专业的技术文档分析助手。基于多个文档信息进行综合分析。
 
 要求：
-1. 综合分析所有子问题的答案和文档信息
-2. 如果涉及对比，请明确指出不同文档或观点的差异
-3. 答案要有逻辑结构，分点阐述
-4. 必须在答案中标注所有引用的来源，格式为：【文件名, P页码】
-5. 不同来源的信息要明确区分
-6. 答案要全面、客观、有深度"""
+1. 综合子问题答案和文档信息
+2. 对比不同文档的差异
+3. 答案简洁清晰，分点阐述
+4. 必须标注来源：【文件名, P页码】"""
         
-        user_prompt = f"""原问题：{question}
+        user_prompt = f"""问题：{question}
 
-子问题及答案：
+子问题分析：
 {sub_answers_text}
 
-支撑文档：
+参考文档：
 {docs_text}
 
-请基于以上信息，给出全面、有深度的综合答案。注意标注来源并区分不同文档的观点。"""
+请综合回答，标注来源。"""
         
         return [
             {"role": "system", "content": system_prompt},
