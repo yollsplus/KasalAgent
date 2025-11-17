@@ -16,7 +16,7 @@ def main():
     
     # 1. 设置输入输出文件路径
     input_file = "questionsheet.json"
-    output_file = "answersheet.json"
+    output_file = "answersheet.json"  # 合并后的答题卡
     
     print(f"\n试卷文件: {input_file}")
     print(f"答卷文件: {output_file}")
@@ -73,12 +73,15 @@ def main():
             }
             answer_card = card_handler.process_query(query_json)
             
-            # 添加到答案列表
+            # 添加到答案列表（按照示例模板格式）
+            retrieved_contexts = [
+                item.get("content", "") 
+                for item in answer_card.get("result", [])
+            ]
+            
             answer_entry = {
-                "question_id": question_id,
-                "category": category,
-                "query": query,
-                "result": answer_card.get("result", []),
+                "question": query,
+                "retrieved_contexts": retrieved_contexts,
                 "answer": answer_card.get("answer", "")
             }
             answers.append(answer_entry)
@@ -87,24 +90,16 @@ def main():
             
         except Exception as e:
             print(f"✗ 错误: {e}")
-            # 添加错误答案
+            # 添加错误答案（按照示例模板格式）
             answers.append({
-                "question_id": question_id,
-                "category": category,
-                "query": query,
-                "result": [],
+                "question": query,
+                "retrieved_contexts": [],
                 "answer": f"错误：{str(e)}"
             })
     
-    # 6. 构建完整答卷
+    # 6. 构建完整答卷（按照示例模板格式）
     answer_sheet = {
-        "exam_info": exam_data.get("exam_info", {}),
-        "answers": answers,
-        "processing_info": {
-            "processed_at": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
-            "total_questions": total,
-            "time_used": round(time.time() - start_time, 2)
-        }
+        "items": answers
     }
     
     # 7. 保存答卷
