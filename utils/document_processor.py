@@ -46,6 +46,9 @@ class DocumentProcessor:
                 # 尝试按页面分割（如果文本中有页面标记）
                 pages = self._split_by_pages(text)
                 
+                # 提取文件元数据
+                file_metadata = self._extract_file_metadata(txt_path)
+                
                 if len(pages) > 1:
                     # 有页面标记，按页面创建文档
                     for page_num, page_content in enumerate(pages, 1):
@@ -56,7 +59,8 @@ class DocumentProcessor:
                                     "source": txt_path.name,
                                     "file_path": str(txt_path),
                                     "page": page_num,
-                                    "category": self._extract_category(txt_path)
+                                    "category": self._extract_category(txt_path),
+                                    **file_metadata  # 添加文件元数据
                                 },
                                 page_number=page_num
                             ))
@@ -68,7 +72,8 @@ class DocumentProcessor:
                             "source": txt_path.name,
                             "file_path": str(txt_path),
                             "page": 1,
-                            "category": self._extract_category(txt_path)
+                            "category": self._extract_category(txt_path),
+                            **file_metadata  # 添加文件元数据
                         },
                         page_number=1
                     ))
@@ -147,6 +152,59 @@ class DocumentProcessor:
             return " > ".join(categories) if categories else "未分类"
         except ValueError:
             return "未分类"
+    
+    def _extract_file_metadata(self, file_path: Path) -> Dict[str, Any]:
+        """
+        从文件名和路径中提取关键元数据
+        
+        Args:
+            file_path: 文件路径
+            
+        Returns:
+            包含年份、标题等信息的元数据字典
+        """
+        filename = file_path.name
+        metadata = {}
+        
+        # 1. 提取年份范围 (如2025-2027、2024-2026等)
+        year_pattern = r'(\d{4})\s*[-~]\s*(\d{4})'
+        year_match = re.search(year_pattern, filename)
+        if year_match:
+            start_year = int(year_match.group(1))
+            end_year = int(year_match.group(2))
+            metadata['year_range_start'] = start_year
+            metadata['year_range_end'] = end_year
+            metadata['year_range_text'] = f"{start_year}-{end_year}"
+        
+        # 2. 提取单个年份
+        single_year_pattern = r'(\d{4})'
+        single_year_match = re.search(single_year_pattern, filename)
+        if single_year_match and 'year_range_start' not in metadata:
+            year = int(single_year_match.group(1))
+            metadata['year'] = year
+        
+        # 3. 提取主要关键词 (文件名中的主要部分，去掉年份和扩展名)
+        # 移除年份和扩展名，获取文件名的核心部分
+        core_name = re.sub(r'(\d{4}[-~]\d{4}|\d{4}|\.txt)', '', filename)
+        core_name = re.sub(r'[_\-\s]+', ' ', core_name).strip()
+        if core_name:
+            metadata['file_title'] = core_name
+            
+            # 提取关键词（比如SPD、CBTC、ERA等）
+            # 先尝试提取大写字母组合
+            key_words = re.findall(r'[A-Z]{2,}', core_name)
+            # 如果没有大写组合，尝试提取单词（不区分大小写）
+            if not key_words:
+                key_words = re.findall(r'\b[a-zA-Z]{2,}\b', core_name)
+                key_words = [w.upper() for w in key_words]  # 统一转大写
+            if key_words:
+                # ChromaDB只支持基本类型，将列表转换为逗号分隔的字符串
+                metadata['keywords'] = ','.join(key_words)
+        
+        # 4. 添加完整文件名
+        metadata['filename'] = filename
+        
+        return metadata
 
 
 class TextChunker:

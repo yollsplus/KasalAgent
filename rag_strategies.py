@@ -3,6 +3,7 @@ RAG策略模块：实现三种不同难度的检索策略
 """
 from typing import List, Dict, Any, Optional
 from abc import ABC, abstractmethod
+import re
 import openai
 from openai import OpenAI
 
@@ -41,9 +42,10 @@ class BasicRAGStrategy(RAGStrategy):
     """
     基础题策略：大海捞针 - 精准检索
     1. 小块分割（512 token）
-    2. 向量检索Top 5
-    3. 重排序选出Top 1
-    4. 生成答案并引用来源
+    2. 向量检索Top K（扩大K值）
+    3. 根据元数据过滤（年份、关键词等）
+    4. 重排序选出Top 1
+    5. 生成答案并引用来源
     """
     
     def __init__(self, vector_store: VectorStore):
@@ -60,8 +62,8 @@ class BasicRAGStrategy(RAGStrategy):
         Returns:
             包含答案、来源、检索结果的字典
         """
-        # 1. 向量检索Top K
-        top_k = config.BASIC_TOP_K
+        # 1. 向量检索Top K（扩大检索范围以增加找到正确文档的概率）
+        top_k = config.BASIC_TOP_K * 3  # 扩大到15个
         search_results = self.vector_store.search(
             query=question,
             collection_type="basic",
@@ -75,12 +77,21 @@ class BasicRAGStrategy(RAGStrategy):
                 "retrieved_docs": []
             }
         
-        # 2. 重排序
-        documents = [result['content'] for result in search_results]
-        reranked_indices = self.reranker.rerank(question, documents, top_k=1)
+        # 2. 根据元数据过滤（年份、关键词等）
+        filtered_results = self._filter_by_metadata(question, search_results)
         
-        # 3. 选择最相关的文档
-        best_result = search_results[reranked_indices[0]]
+        # 如果过滤后没有结果，使用原始结果
+        if not filtered_results:
+            print("⚠️ 元数据过滤后无结果，使用原始检索结果")
+            filtered_results = search_results[:config.BASIC_TOP_K]
+        
+        # 3. 重排序 - 传递元数据，同时考虑内容和元数据匹配
+        documents = [result['content'] for result in filtered_results]
+        metadatas = [result['metadata'] for result in filtered_results]
+        reranked_indices = self.reranker.rerank(question, documents, top_k=1, metadatas=metadatas)
+        
+        # 4. 选择最相关的文档
+        best_result = filtered_results[reranked_indices[0]]
         
         # 4. 构建提示词并生成答案
         prompt = self._build_prompt(question, best_result)
@@ -131,6 +142,93 @@ class BasicRAGStrategy(RAGStrategy):
             if source not in sources:
                 sources.append(source)
         return sources
+    
+    def _filter_by_metadata(self, question: str, results: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
+        """
+        根据问题中的元数据信息（年份、关键词等）过滤检索结果
+        
+        Args:
+            question: 问题文本
+            results: 检索结果列表
+            
+        Returns:
+            过滤后的结果列表
+        """
+        import re
+        
+        # 1. 提取问题中的年份范围
+        year_range_pattern = r'(\d{4})\s*[-~至到]\s*(\d{4})'
+        year_range_match = re.search(year_range_pattern, question)
+        
+        query_years = []
+        if year_range_match:
+            start_year = int(year_range_match.group(1))
+            end_year = int(year_range_match.group(2))
+            query_years = list(range(start_year, end_year + 1))
+        else:
+            # 提取单个年份
+            single_years = re.findall(r'(\d{4})', question)
+            query_years = [int(y) for y in single_years if 2000 <= int(y) <= 2100]
+        
+        # 2. 提取问题中的关键词（大写字母组合，如ERA、SPD等）
+        query_keywords = set(re.findall(r'\b[A-Z]{2,}\b', question))
+        
+        # 3. 对结果进行评分和过滤
+        scored_results = []
+        for result in results:
+            metadata = result['metadata']
+            score = 0
+            
+            # 年份匹配评分
+            if query_years:
+                if 'year_range_start' in metadata and 'year_range_end' in metadata:
+                    doc_start = metadata['year_range_start']
+                    doc_end = metadata['year_range_end']
+                    # 完全匹配
+                    if all(doc_start <= year <= doc_end for year in query_years):
+                        score += 100  # 高分
+                    # 部分匹配
+                    elif any(doc_start <= year <= doc_end for year in query_years):
+                        score += 50
+                elif 'year' in metadata:
+                    if metadata['year'] in query_years:
+                        score += 100
+            
+            # 关键词匹配评分
+            if query_keywords:
+                # keywords现在是逗号分隔的字符串，需要先分割
+                keywords_str = metadata.get('keywords', '')
+                doc_keywords = set(keywords_str.split(',')) if keywords_str else set()
+                matches = len(query_keywords & doc_keywords)
+                score += matches * 30
+            
+            # 文件名匹配评分（关键词在文件名中出现）
+            filename = metadata.get('filename', '').lower()
+            for kw in query_keywords:
+                if kw.lower() in filename:
+                    score += 20
+            
+            scored_results.append((score, result))
+        
+        # 4. 按分数排序
+        scored_results.sort(key=lambda x: x[0], reverse=True)
+        
+        # 5. 如果最高分 >= 50（有一定匹配），则只保留高分结果
+        if scored_results and scored_results[0][0] >= 50:
+            # 保留分数 >= 最高分一半的结果
+            threshold = scored_results[0][0] / 2
+            filtered = [result for score, result in scored_results if score >= threshold]
+            
+            # 打印过滤信息
+            print(f"🔍 [元数据过滤] 从 {len(results)} 个结果中筛选出 {len(filtered)} 个高匹配度文档")
+            if scored_results[0][0] >= 100:
+                top_source = scored_results[0][1]['metadata'].get('source', '未知')
+                print(f"   ✓ 找到强匹配文档: {top_source}")
+            
+            return filtered[:config.BASIC_TOP_K]  # 返回前K个
+        
+        # 6. 如果没有明显的元数据匹配，返回空列表（让调用者使用原始结果）
+        return []
 
 
 class IntermediateRAGStrategy(RAGStrategy):
@@ -165,9 +263,6 @@ class IntermediateRAGStrategy(RAGStrategy):
                 "sources": [],
                 "retrieved_docs": []
             }
-        
-        # 1.5 关键词约束过滤（优化检索准确性）
-        search_results = self._filter_by_keywords(question, search_results)
         
         if not search_results:
             return {
@@ -240,78 +335,6 @@ class IntermediateRAGStrategy(RAGStrategy):
             source = f"【{metadata.get('source', '未知')}, P{metadata.get('page', '?')}】"
             sources.add(source)
         return sorted(list(sources))
-    
-    def _filter_by_keywords(self, question: str, 
-                           results: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
-        """
-        根据问题中的标准号、技术术语进行关键词过滤
-        避免检索到不相关文档（如GB/T问题被检索成CBTC文档）
-        
-        Args:
-            question: 问题文本
-            results: 检索结果
-            
-        Returns:
-            过滤后的结果（优先包含关键标准的文档）
-        """
-        import re
-        
-        # 提取问题中的标准号（如 GB/T 43267、SUBSET-026 等）
-        standard_patterns = [
-            r'GB[/∕]\s*T\s*\d+[-\d]*',  # GB/T xxxx 或 GB/T xxxx-yyyy
-            r'GB[/∕]\s*\d+[-\d]*',      # GB xxxx 或 GB xxxx-yyyy
-            r'SUBSET-\d+',               # SUBSET-xxx
-            r'IEC\s*\d+[-\d]*',         # IEC xxx
-            r'IEEE\s*\d+[-\d.]*',       # IEEE xxx
-            r'EN\s*\d+[-\d]*',          # EN xxx
-            r'ISO\s*\d+[-\d]*',         # ISO xxx
-        ]
-        
-        keywords = []
-        for pattern in standard_patterns:
-            matches = re.findall(pattern, question, re.IGNORECASE)
-            keywords.extend(matches)
-        
-        # 如果问题中提到了具体的标准，则优先返回包含该标准的文档
-        if keywords:
-            filtered = []
-            
-            # 第一遍：在文档来源（文件名）中查找匹配
-            for result in results:
-                source = result['metadata'].get('source', '').upper()
-                
-                for keyword in keywords:
-                    keyword_upper = keyword.upper()
-                    # 规范化对比（处理 GB/T 和 GB∕T 的区别）
-                    normalized_keyword = keyword_upper.replace('∕', '/').replace('\\', '/')
-                    normalized_source = source.replace('∕', '/').replace('\\', '/')
-                    
-                    if normalized_keyword in normalized_source:
-                        filtered.append(result)
-                        break
-            
-            # 如果在文件名中找到了匹配，返回这些结果
-            if filtered:
-                return filtered
-            
-            # 第二遍：在文档内容中查找匹配
-            for result in results:
-                content = result['content'].upper()
-                
-                for keyword in keywords:
-                    keyword_upper = keyword.upper()
-                    normalized_keyword = keyword_upper.replace('∕', '/').replace('\\', '/')
-                    
-                    if normalized_keyword in content:
-                        filtered.append(result)
-                        break
-            
-            # 返回内容中找到的结果，或全部原始结果
-            return filtered if filtered else results
-        
-        # 如果问题中没有提到标准号，返回全部结果
-        return results
-
 
 class AdvancedRAGStrategy(RAGStrategy):
     """

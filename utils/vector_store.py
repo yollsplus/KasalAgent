@@ -8,6 +8,7 @@ from sentence_transformers import SentenceTransformer
 from FlagEmbedding import FlagReranker
 from pathlib import Path
 import numpy as np
+import re
 from tqdm import tqdm
 
 from utils.document_processor import Document
@@ -38,21 +39,23 @@ class EmbeddingModel:
 
 
 class Reranker:
-    """重排序模型"""
+    """重排序模型 - 同时考虑内容相关度和元数据匹配度"""
     
     def __init__(self, model_name: str = None):
         self.model_name = model_name or config.RERANKER_MODEL
         print(f"加载重排序模型: {self.model_name}")
         self.model = FlagReranker(self.model_name, use_fp16=True)
         
-    def rerank(self, query: str, documents: List[str], top_k: int = 1) -> List[int]:
+    def rerank(self, query: str, documents: List[str], top_k: int = 1,
+              metadatas: Optional[List[Dict[str, Any]]] = None) -> List[int]:
         """
-        重排序文档
+        重排序文档，同时考虑内容相关度和元数据匹配度
         
         Args:
             query: 查询文本
             documents: 文档列表
             top_k: 返回前k个
+            metadatas: 文档元数据列表（可选）
             
         Returns:
             排序后的文档索引列表
@@ -63,16 +66,143 @@ class Reranker:
         # 构建query-document对
         pairs = [[query, doc] for doc in documents]
         
-        # 计算分数
-        scores = self.model.compute_score(pairs)
+        # 计算内容相关度分数
+        content_scores = self.model.compute_score(pairs)
         
-        # 如果只有一个文档，返回单个索引
-        if isinstance(scores, float):
-            scores = [scores]
+        # 如果只有一个文档，转换为列表
+        if isinstance(content_scores, float):
+            content_scores = [content_scores]
+        
+        # 归一化内容分数到[0, 1]
+        content_scores = np.array(content_scores)
+        if content_scores.max() > content_scores.min():
+            content_scores = (content_scores - content_scores.min()) / (content_scores.max() - content_scores.min())
+        
+        # 计算元数据匹配分数
+        metadata_scores = np.zeros(len(documents))
+        if metadatas:
+            metadata_scores = self._compute_metadata_scores(query, metadatas)
+        
+        # 加权融合分数 (内容权重0.7，元数据权重0.3)
+        final_scores = 0.7 * content_scores + 0.3 * metadata_scores
         
         # 排序并返回top_k
-        sorted_indices = np.argsort(scores)[::-1][:top_k]
+        sorted_indices = np.argsort(final_scores)[::-1][:top_k]
         return sorted_indices.tolist()
+    
+    def _compute_metadata_scores(self, query: str, metadatas: List[Dict[str, Any]]) -> np.ndarray:
+        """
+        计算元数据匹配分数
+        
+        优先考虑：
+        1. 年份范围匹配（完全匹配得1分）
+        2. 关键词匹配
+        3. 标题相关性
+        """
+        scores = np.zeros(len(metadatas))
+        
+        # 从查询中提取年份
+        query_years = self._extract_years_from_query(query)
+        
+        for i, metadata in enumerate(metadatas):
+            score = 0.0
+            
+            # 1. 年份匹配 (权重最高，0.6分)
+            if query_years:
+                year_score = self._match_year_range(query_years, metadata)
+                score += 0.6 * year_score
+            
+            # 2. 关键词匹配 (0.25分)
+            if 'keywords' in metadata:
+                keyword_score = self._match_keywords(query, metadata['keywords'])
+                score += 0.25 * keyword_score
+            
+            # 3. 文件标题相关性 (0.15分)
+            if 'file_title' in metadata:
+                title_score = self._compute_title_similarity(query, metadata['file_title'])
+                score += 0.15 * title_score
+            
+            scores[i] = score
+        
+        return scores
+    
+    def _extract_years_from_query(self, query: str) -> List[int]:
+        """从查询文本中提取年份"""
+        # 查找年份范围，如 2025-2027
+        year_range = re.search(r'(\d{4})\s*[-~年份]\s*(\d{4})', query)
+        if year_range:
+            start_year = int(year_range.group(1))
+            end_year = int(year_range.group(2))
+            return list(range(start_year, end_year + 1))
+        
+        # 查找单个年份
+        years = []
+        for match in re.finditer(r'(\d{4})', query):
+            year = int(match.group(1))
+            if 2000 <= year <= 2100:  # 合理的年份范围
+                years.append(year)
+        
+        return years
+    
+    def _match_year_range(self, query_years: List[int], metadata: Dict[str, Any]) -> float:
+        """
+        计算年份范围匹配得分
+        
+        Returns:
+            0 - 1 的匹配分数
+        """
+        if not query_years:
+            return 0.0
+        
+        # 检查文档是否有年份范围
+        if 'year_range_start' in metadata and 'year_range_end' in metadata:
+            doc_start = metadata['year_range_start']
+            doc_end = metadata['year_range_end']
+            
+            # 如果查询年份完全在文档年份范围内，得分为1
+            if all(doc_start <= year <= doc_end for year in query_years):
+                return 1.0
+            
+            # 如果有部分重叠，按重叠比例计分
+            overlap = sum(1 for year in query_years if doc_start <= year <= doc_end)
+            return overlap / len(query_years)
+        
+        # 检查单个年份
+        if 'year' in metadata:
+            doc_year = metadata['year']
+            if doc_year in query_years:
+                return 1.0
+            # 如果年份接近（差1年），给予0.5分
+            elif min(abs(doc_year - year) for year in query_years) == 1:
+                return 0.5
+        
+        return 0.0
+    
+    def _match_keywords(self, query: str, keywords: str) -> float:
+        """计算关键词匹配得分
+        
+        Args:
+            query: 查询文本
+            keywords: 逗号分隔的关键词字符串（如"ERA,SPD,CBTC"）
+        """
+        if not keywords:
+            return 0.0
+        
+        # 将逗号分隔的字符串转换为列表
+        keyword_list = [kw.strip() for kw in keywords.split(',')]
+        matches = sum(1 for kw in keyword_list if kw.lower() in query.lower())
+        return min(matches / len(keyword_list), 1.0)
+    
+    def _compute_title_similarity(self, query: str, title: str) -> float:
+        """计算标题和查询的相似度（简单词匹配）"""
+        query_words = set(query.lower().split())
+        title_words = set(title.lower().split())
+        
+        if not title_words:
+            return 0.0
+        
+        intersection = len(query_words & title_words)
+        return intersection / len(title_words)
 
 
 class VectorStore:
