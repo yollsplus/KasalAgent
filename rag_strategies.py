@@ -166,6 +166,16 @@ class IntermediateRAGStrategy(RAGStrategy):
                 "retrieved_docs": []
             }
         
+        # 1.5 关键词约束过滤（优化检索准确性）
+        search_results = self._filter_by_keywords(question, search_results)
+        
+        if not search_results:
+            return {
+                "answer": "未找到直接相关的文档（知识库可能不包含该标准）",
+                "sources": [],
+                "retrieved_docs": []
+            }
+        
         # 2. 按源文件分组
         docs_by_source = {}
         for result in search_results:
@@ -230,6 +240,77 @@ class IntermediateRAGStrategy(RAGStrategy):
             source = f"【{metadata.get('source', '未知')}, P{metadata.get('page', '?')}】"
             sources.add(source)
         return sorted(list(sources))
+    
+    def _filter_by_keywords(self, question: str, 
+                           results: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
+        """
+        根据问题中的标准号、技术术语进行关键词过滤
+        避免检索到不相关文档（如GB/T问题被检索成CBTC文档）
+        
+        Args:
+            question: 问题文本
+            results: 检索结果
+            
+        Returns:
+            过滤后的结果（优先包含关键标准的文档）
+        """
+        import re
+        
+        # 提取问题中的标准号（如 GB/T 43267、SUBSET-026 等）
+        standard_patterns = [
+            r'GB[/∕]\s*T\s*\d+[-\d]*',  # GB/T xxxx 或 GB/T xxxx-yyyy
+            r'GB[/∕]\s*\d+[-\d]*',      # GB xxxx 或 GB xxxx-yyyy
+            r'SUBSET-\d+',               # SUBSET-xxx
+            r'IEC\s*\d+[-\d]*',         # IEC xxx
+            r'IEEE\s*\d+[-\d.]*',       # IEEE xxx
+            r'EN\s*\d+[-\d]*',          # EN xxx
+            r'ISO\s*\d+[-\d]*',         # ISO xxx
+        ]
+        
+        keywords = []
+        for pattern in standard_patterns:
+            matches = re.findall(pattern, question, re.IGNORECASE)
+            keywords.extend(matches)
+        
+        # 如果问题中提到了具体的标准，则优先返回包含该标准的文档
+        if keywords:
+            filtered = []
+            
+            # 第一遍：在文档来源（文件名）中查找匹配
+            for result in results:
+                source = result['metadata'].get('source', '').upper()
+                
+                for keyword in keywords:
+                    keyword_upper = keyword.upper()
+                    # 规范化对比（处理 GB/T 和 GB∕T 的区别）
+                    normalized_keyword = keyword_upper.replace('∕', '/').replace('\\', '/')
+                    normalized_source = source.replace('∕', '/').replace('\\', '/')
+                    
+                    if normalized_keyword in normalized_source:
+                        filtered.append(result)
+                        break
+            
+            # 如果在文件名中找到了匹配，返回这些结果
+            if filtered:
+                return filtered
+            
+            # 第二遍：在文档内容中查找匹配
+            for result in results:
+                content = result['content'].upper()
+                
+                for keyword in keywords:
+                    keyword_upper = keyword.upper()
+                    normalized_keyword = keyword_upper.replace('∕', '/').replace('\\', '/')
+                    
+                    if normalized_keyword in content:
+                        filtered.append(result)
+                        break
+            
+            # 返回内容中找到的结果，或全部原始结果
+            return filtered if filtered else results
+        
+        # 如果问题中没有提到标准号，返回全部结果
+        return results
 
 
 class AdvancedRAGStrategy(RAGStrategy):

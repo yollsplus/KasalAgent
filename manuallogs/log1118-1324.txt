@@ -1,0 +1,410 @@
+(venv) PS D:\mywork\KascalAgent> python main.py
+============================================================
+基于难度分级的RAG问答系统
+============================================================
+
+试卷文件: questionsheet.json
+答卷文件: answersheet.json
+
+正在读取试卷: questionsheet.json
+
+是否需要索引文档？
+注意：如果是首次运行或文档有更新，请选择 'y'
+索引文档? (y/n，默认n): n
+正在初始化QA Agent...
+加载嵌入模型: sentence-transformers/paraphrase-multilingual-mpnet-base-v2
+QA Agent初始化完成！
+
+开始答题，共 10 道题...
+============================================================
+
+[1/10] B001 (基础题)
+问题: 2024 年，株洲中车时代电气股份有限公司中标金额是多少？...
+
+==================================================
+问题ID: B001
+问题: 2024 年，株洲中车时代电气股份有限公司中标金额是多少？
+==================================================
+
+难度等级: basic
+加载重排序模型: BAAI/bge-reranker-large
+使用策略: BasicRAGStrategy
+
+正在检索相关文档...
+You're using a XLMRobertaTokenizerFast tokenizer. Please note that with a fast tokenizer, using the `__call__` method is faster than using a method to encode the text followed by a call to the `pad` method to get a padded encoding.
+
+==================================================
+回答结果
+==================================================
+
+
+
+2024年，株洲中车时代电气股份有限公司的中标金额为**6.36亿元**。来源：城市轨道交通2024年度主要装备统计报告（协会信息第5期总第68期.txt, P1）表8。
+
+引用来源:
+  - 【城市轨道交通2024年度主要装备统计报告（协会信息第5期总第68期）.txt, P1】
+
+耗时: 22.07秒
+✓ 完成
+
+[2/10] B002 (基础题)
+问题: 根据欧洲铁路局 2025-2027 年单一规划文件，机构注册系统迁移到知识图谱（knowledge ...
+
+==================================================
+问题ID: B002
+问题: 根据欧洲铁路局 2025-2027 年单一规划文件，机构注册系统迁移到知识图谱（knowledge graph）方法的目标进度在 2025 年底应达到多 少百分比？
+==================================================
+
+难度等级: basic
+加载重排序模型: BAAI/bge-reranker-large
+使用策略: BasicRAGStrategy
+
+正在检索相关文档...
+You're using a XLMRobertaTokenizerFast tokenizer. Please note that with a fast tokenizer, using the `__call__` method is faster than using a method to encode the text followed by a call to the `pad` method to get a padded encoding.
+
+==================================================
+回答结果
+==================================================
+
+
+
+根据欧洲铁路局2024-2026年单一规划文件（ERA SPD 2024-2026.txt），机构注册系统迁移到知识图谱方法（A7.3）的目标进度在2025年底应达 到 **50%**。文档中明确列出了该任务的进度节点为25%、50%、75%、100%，但未直接关联具体年份。结合常规项目阶段划分（通常按年度推进），2025年对应的中间进度为50%。
+
+来源：【era spd 2024-2026.txt, P1】
+
+引用来源:
+  - 【era spd 2024-2026.txt, P1】
+
+耗时: 31.61秒
+✓ 完成
+
+[3/10] B003 (基础题)
+问题: 在 UIC 的报告里，根据国际能源署的分析，铁路的市场份额需要增长多少才能在本十年内实现《巴黎协定》...
+
+==================================================
+问题ID: B003
+问题: 在 UIC 的报告里，根据国际能源署的分析，铁路的市场份额需要增长多少才能在本十年内实现《巴黎协定》的目标？
+==================================================
+
+难度等级: basic
+加载重排序模型: BAAI/bge-reranker-large
+使用策略: BasicRAGStrategy
+
+正在检索相关文档...
+You're using a XLMRobertaTokenizerFast tokenizer. Please note that with a fast tokenizer, using the `__call__` method is faster than using a method to encode the text followed by a call to the `pad` method to get a padded encoding.
+
+==================================================
+回答结果
+==================================================
+
+
+
+根据国际能源署的分析，铁路的市场份额需要在本十年内增长超过40%（相较于当前约8%的市场份额），才能实现《巴黎协定》的目标。来源：【uic_work_programme_2023-2025.txt, P1】。
+
+引用来源:
+  - 【uic_work_programme_2023-2025.txt, P1】
+
+耗时: 23.49秒
+✓ 完成
+
+[4/10] B004 (基础题)
+问题: 参照 IEEE 1474.1 的定义，附件 D (Typical safe braking mode...
+
+==================================================
+问题ID: B004
+问题: 参照 IEEE 1474.1 的定义，附件 D (Typical safe braking model) 中对安全制动模型的描述，在'滑行时间 (Coast time, C)'期间，列车被假定处于什么状态？
+==================================================
+
+难度等级: basic
+加载重排序模型: BAAI/bge-reranker-large
+使用策略: BasicRAGStrategy
+
+正在检索相关文档...
+You're using a XLMRobertaTokenizerFast tokenizer. Please note that with a fast tokenizer, using the `__call__` method is faster than using a method to encode the text followed by a call to the `pad` method to get a padded encoding.
+
+==================================================
+回答结果
+==================================================
+
+
+
+根据 IEEE 1474.1-2004 附件 D 的描述，在安全制动模型的**滑行时间（Coast time, C）**期间，列车被假定处于**以推进系统禁用前加速达 到的最高速度滑行（coasting at the maximum speed achieved as a result of the train accelerating prior to propulsion being disabled）**的状态。该阶段结束于紧急制动开始生效的时刻。
+
+来源：【IEEE 1474.1-2004.txt, P1】中关于组件 C 的描述。
+
+引用来源:
+  - 【IEEE 1474.1-2004.txt, P1】
+
+耗时: 20.42秒
+✓ 完成
+
+[5/10] B005 (基础题)
+问题: 在 Manresa 车站的事件调查报告中，列车 78443 被授权越过 3023 进站信号机后，何时...
+
+==================================================
+问题ID: B005
+问题: 在 Manresa 车站的事件调查报告中，列车 78443 被授权越过 3023 进站信号机后，何时（日期和时间）发生了列车 95218 最终启动了行驶，并最终导致两列车存在碰撞风险？
+==================================================
+
+难度等级: basic
+加载重排序模型: BAAI/bge-reranker-large
+使用策略: BasicRAGStrategy
+
+正在检索相关文档...
+You're using a XLMRobertaTokenizerFast tokenizer. Please note that with a fast tokenizer, using the `__call__` method is faster than using a method to encode the text followed by a call to the `pad` method to get a padded encoding.
+
+==================================================
+回答结果
+==================================================
+
+
+
+在 Manresa 车站的事件调查报告中，列车 95218 最终启动行驶并导致两列车存在碰撞风险的具体时间为 **2022年8月15日18:41**。这一时间与文档中描述的整个事件发生时间一致，即两列车的碰撞风险发生于该时刻。来源：【ES-10306-2022700815 IF Manresa (english version).txt, P1】。
+
+引用来源:
+  - 【ES-10306- 202270 0815 IF Manresa (english version).txt, P1】
+
+耗时: 29.53秒
+✓ 完成
+
+[6/10] I001 (中级题)
+问题: 南京地铁 S7 号线的运营里程，在江苏省内已运营地铁长度中排第几？...
+
+==================================================
+问题ID: I001
+问题: 南京地铁 S7 号线的运营里程，在江苏省内已运营地铁长度中排第几？
+==================================================
+
+难度等级: intermediate
+使用策略: IntermediateRAGStrategy
+
+正在检索相关文档...
+✗ 错误: <html>
+<head><title>504 Gateway Time-out</title></head>
+<body>
+<center><h1>504 Gateway Time-out</h1></center>
+<hr><center>openresty</center>
+</body>
+</html>
+
+[7/10] I002 (中级题)
+问题: 车辆外部移动实体的场景要素：根据 GB/T 43267—2023（预期功能安全），在场景要素结构中，...
+
+==================================================
+问题ID: I002
+问题: 车辆外部移动实体的场景要素：根据 GB/T 43267—2023（预期功能安全），在场景要素结构中，可移动实体的第 2 层要素和第 3 层要素 分别是什么？（需完整列出第 3 层中所有实体类型）。
+==================================================
+
+难度等级: intermediate
+使用策略: IntermediateRAGStrategy
+
+正在检索相关文档...
+
+==================================================
+回答结果
+==================================================
+
+
+
+根据GB/T 43267-2023标准中提供的场景要素结构（表B.4），**车辆外部移动实体**的层级要素定义如下：
+
+### **第2层要素**
+- **实体类型**
+  （来源：段落1表B.4中“可移动实体”部分的第2层分类）
+
+### **第3层要素（所有实体类型）**
+1. **车辆类**
+   - 小轿车
+   - 卡车
+   - 大巴
+   - 轻轨
+   - 摩托车
+   - 应急车辆
+   - 农用车
+   - 脚踏车
+
+2. **行人及生命体类**
+   - 婴儿
+   - 行人（含幼儿、成人）
+   - 动物
+
+3. **其他目标**
+   - 目标（注：此处可能指未明确分类的动态实体）
+
+（来源：段落1表B.4中“可移动实体”部分的第3层具体列举，包括车辆、行人、动物等实体类型。）
+
+---
+
+### **补充说明**
+- 表B.4的层级定义中，**第4层**进一步细化了实体类型的操作和交互（如速度变化、变道、转向等），但用户问题仅要求第2、3层要素。     
+- 标准明确说明场景要素结构为非穷举示例，实际应用可能需扩展其他因素（段落1末尾注1）。
+
+以上内容综合自文档段落1表B.4的结构描述及实体类型分类。
+
+引用来源:
+  - 【GB∕T 43267-2023道路车辆预期功能安全.txt, P1】
+
+耗时: 38.70秒
+✓ 完成
+
+[8/10] I003 (中级题)
+问题: 根据文档《2024_Communications-Based Train Control》，图 5....
+
+==================================================
+问题ID: I003
+问题: 根据文档《2024_Communications-Based Train Control》，图 5.11 所示的网状控制回路结构，ATO 子系统是如何实现自身的控制回路的？请阐述其如何获取输入（Messglieder），如何形成车辆轨迹（Fahrzeugtrajektorie），以及如何将轨迹作为目标值传递给列车的控制设备（Steuergerät）。
+==================================================
+
+难度等级: intermediate
+使用策略: IntermediateRAGStrategy
+
+正在检索相关文档...
+
+==================================================
+回答结果
+==================================================
+
+
+
+根据文档《2024_Communications-Based Train Control》中关于ATO子系统控制回路的描述，其实现机制可系统分析如下：
+
+1. **输入获取（Messglieder）**
+   ATO子系统通过多源数据融合获取输入信息：
+   - 车载传感器实时采集列车的位置（Weginformationen）和速度（Geschwindigkeitsinformationen）作为基础测量量【P1】；
+   - 接收来自ATS（Automatic Train Supervision）的运营级指令，包括时刻表调整、路径变更等调度要求【P4】；
+   - 结合ATP（Automatic Train Protection）提供的安全限制参数（如最大允许速度、制动曲线等）【P2】；
+   - 利用车载计算机中的"Streckenatlas"（线路数字地图）作为静态路径参考【P2】。
+
+2. **车辆轨迹生成（Fahrzeugtrajektorie）**
+   ATO通过分层控制结构实现轨迹规划：
+   - 在上级控制层，ATO基于ATS的运营目标（如节能优化、准点率）和ATP的安全约束，通过预测算法生成动态轨迹。例如，通过"energieoptimale Fahrweise"（节能驾驶模式）计算加速度和速度曲线【P1】；
+   - 结合实时位置反馈与线路地图数据，动态修正轨迹以应对突发情况（如临时限速或路径变更）【P2,P5】；
+   - 轨迹生成过程考虑了车辆动力学特性（如最大加速度/减速率），这些参数在车载系统配置时已预定义【P7】。
+
+3. **目标值传递至车辆控制器（Steuergerät）**
+   ATO通过闭环控制架构与底层系统交互：
+   - 生成的轨迹作为"Führungsgrößen"（设定值）传递给列车控制设备，形成叠加在车辆基础控制回路上的二级控制层【P1】；
+   - 控制设备将ATO指令转化为具体执行动作，通过"Stellglieder"（执行机构）控制牵引系统和制动系统，实现速度与位置的精确跟踪【P1】 ；
+   - 在网状控制结构中，ATO的轨迹指令需与ATP的实时安全监控协同工作，确保动态调整过程中始终满足移动授权（Movement Authority）限制【P6】。
+
+**系统特性补充**
+ATO的控制回路具有以下特点：
+- 采用"vermaschte Regelkreisstruktur"（网状控制结构），实现与ATP、ATS的多层级耦合【P1,P6】；
+- 支持动态重规划能力，例如ATS在严重运营干扰时通过调整"Führungsgrößen"实现路径优化【P4】；
+- 依赖高精度定位（通过"Zuglaufverfolgung"功能）和实时通信保障控制时效性【P5】。
+
+（来源标注：【P1】【P2】【P4】【P5】【P6】【P7】）
+
+引用来源:
+  - 【2024_Communications-Based Train Control (CBTC) Komponenten, Funktionen und Betrieb (German Edition) _LarsSchnieder.txt, P1】
+
+耗时: 60.97秒
+✓ 完成
+
+[9/10] A001 (高级题)
+问题: 在 CBTC 互联互通规范体系中，关于列车启动、加速、巡航和制动的自动控制功能，其在《系统总体要求》...
+
+==================================================
+问题ID: A001
+问题: 在 CBTC 互联互通规范体系中，关于列车启动、加速、巡航和制动的自动控制功能，其在《系统总体要求》中的分配归属于哪个子系统？ 并在《CBTC 部分测试及验证》中体现在哪个功能的测试中，测试需求编号是什么？
+==================================================
+
+难度等级: advanced
+使用策略: AdvancedRAGStrategy
+
+正在检索相关文档...
+✗ 错误: Error code: 400
+
+[10/10] A002 (高级题)
+问题: ERTMS/ETCS 列车牵引系统数据定义演变： 比较 SUBSET-026 Baseline 3 ...
+
+==================================================
+问题ID: A002
+问题: ERTMS/ETCS 列车牵引系统数据定义演变： 比较 SUBSET-026 Baseline 3 (v3.4.0) 和 Baseline 4 (v4.0.0) 版本中 Validated Train Data (Packet 11) 的内容定义：1）请指出该数据包中用于表示牵引系统标识的变量名称？2）当该变量不为零时，需要包含哪些额外的牵引数据 变量？
+==================================================
+
+难度等级: advanced
+使用策略: AdvancedRAGStrategy
+
+正在检索相关文档...
+
+==================================================
+回答结果
+==================================================
+
+
+
+### 综合回答（基于提供的SUBSET-026标准文档）：
+
+---
+
+#### **1. 牵引系统标识变量名称**
+- **Baseline 3 (v3.4.0/v3.6.0)**
+  变量名称：**`M_TRACTION`**
+  来源：文档3（Baseline3-r2_subset-026_v360.txt）明确列出Packet 11中包含 `M_TRACTION`，定义为牵引系统类型标识（Type of traction system）。
+
+- **Baseline 4 (v4.0.0)**
+  变量名称：**`M_TRACTION`**
+  来源：文档1（Baseline4-r1_subset-026_v400.txt）中Packet 11的字段定义与Baseline 3一致，仍保留 `M_TRACTION` 变量。
+
+---
+
+#### **2. 当牵引标识变量非零时的额外数据变量**
+- **Baseline 3 (v3.4.0/v3.6.0)**
+  当 `M_TRACTION ≠ 0` 时，需包含以下迭代数据：
+  - **`N_ITER`**：迭代次数（5 bits），表示后续牵引系统类型的重复次数。
+  - **`NID_NTC(k)`**（8 bits）：国家系统类型标识，每个迭代项对应一个具体牵引系统的国家编码。
+  来源：文档3（Baseline3-r2_subset-026_v360.txt）中Packet 11的结构定义明确要求 `M_TRACTION` 后跟随 `N_ITER` 和 `NID_NTC(k)` 的 迭代字段。
+
+- **Baseline 4 (v4.0.0)**
+  当 `M_TRACTION ≠ 0` 时，需包含与Baseline 3相同的迭代结构：
+  - **`N_ITER`** 和 **`NID_NTC(k)`**。
+  来源：文档1（Baseline4-r1_subset-026_v400.txt）中Packet 11的字段定义与Baseline 3完全一致，未发现新增或变更字段。
+
+---
+
+### 版本差异总结
+- **变量名称一致性**：两个版本中牵引系统标识变量均为 `M_TRACTION`，未发生变更。
+- **额外数据要求**：两个版本在 `M_TRACTION ≠ 0` 时均要求包含 `N_ITER` 和 `NID_NTC(k)` 的迭代数据，Baseline 4未引入新变量。     
+- **标准演进**：从文档5（Baseline4-r1_subset-026_v400.txt）可看出，Baseline 4主要更新了管理性内容（如版本兼容性），未修改Packet 11的核心数据定义。
+
+---
+
+### 附：关键文档引用
+- **Baseline 3**：文档3（Baseline3-r2_subset-026_v360.txt）
+  > "Content Variable [...] M_TRACTION (k) 8 Type of traction system N_ITER 5 NID_NTC (k) 8 Type of National System available" 
+
+
+- **Baseline 4**：文档1（Baseline4-r1_subset-026_v400.txt）
+  > "Content Variable [...] M_TRACTION [...] N_ITER 5 NID_NTC (k) 8"
+
+---
+
+以上分析基于用户提供的SUBSET-026标准文档，未依赖外部规范。
+
+引用来源:
+  - 【2024_Communications-Based Train Control (CBTC) Komponenten, Funktionen und Betrieb (German Edition) _LarsSchnieder.txt, P1】
+  - 【Baseline3-mr1_subset-026_v340.txt, P1】
+  - 【Baseline3-r2_subset-026_v360.txt, P1】
+  - 【Baseline4-r1_subset-026_v400.txt, P1】
+  - 【ES-10306- 202270 0815 IF Manresa (english version).txt, P1】
+  - 【GB∕T 20438.6-2017 电气,电子,可编程电子安全相关系统的功能安全 第6部分.txt, P1】
+  - 【GB∕T 20438.7-2017 电气电子可编程电子安全相关系统的功能安全　第7部分技术和措施概述.txt, P1】
+  - 【T_CAMET 04011.2-2018-城市轨道交通 基于通信的列车运行控制系统(CBTC)互联互通接口规范第2部分-CBTC系统车地连续通信协议.txt, P1】
+
+耗时: 385.77秒
+
+子问题分解:
+  1. SUBSET-026 Baseline 3 (v3.4.0) 版本中，Validated Train Data Packet 11定义的牵引系统标识变量名称是什么？
+  2. SUBSET-026 Baseline 4 (v4.0.0) 版本中，Validated Train Data Packet 11定义的牵引系统标识变量名称是什么？
+  3. 在Baseline 3版本中，当牵引系统标识变量不为零时，需要包含哪些额外的牵引数据变量？
+  4. 在Baseline 4版本中，当牵引系统标识变量不为零时，需要包含哪些额外的牵引数据变量？
+  5. 注：这种分解方式满足：
+  6. - 独立处理两个版本的标准差异
+  7. - 分别针对变量名称和关联变量两个维度
+  8. - 保持每个子问题聚焦单一版本和单一分析维度
+  9. - 答案组合后可完整回答原始比较需求
+✓ 完成
+
+============================================================
+✓ 答卷已保存到: answersheet.json
