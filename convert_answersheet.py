@@ -19,14 +19,19 @@ def convert_answersheet():
     # 转换每个答案条目
     for answer in old_data.get("answers", []):
         # 提取召回内容的文本
-        retrieved_contexts = [
-            item.get("content", "") 
-            for item in answer.get("result", [])
-        ]
+        retrieved_contexts = answer.get("retrieved_contexts", [])
+        
+        # 如果 retrieved_contexts 是字符串列表，则直接使用
+        # 否则尝试从 "result" 字段提取内容
+        if not retrieved_contexts:
+            retrieved_contexts = [
+                item.get("content", "") 
+                for item in answer.get("result", [])
+            ]
         
         # 构建新条目
         new_item = {
-            "question": answer.get("query", ""),
+            "question": answer.get("question", ""),
             "retrieved_contexts": retrieved_contexts,
             "answer": answer.get("answer", "")
         }
